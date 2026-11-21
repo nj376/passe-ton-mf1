@@ -1,0 +1,111 @@
+{{ define "main" }}
+<div class="tirage" data-tirage data-donnees="{{ partial "donnees-url.html" . }}">
+
+  <div class="entete-page">
+    <div class="entete-page__ligne">
+      <h1 class="titre-page">S’entraîner à construire une séance</h1>
+      <button type="button" class="bouton-contour bureau" aria-haspopup="dialog" data-ouvrir="fenetre-vrais-sujets">Vrais sujets d’examen</button>
+    </div>
+    <p class="sous-titre-page">Choisis l’épreuve et le niveau, tire un thème, puis construis ta séance avec le MFT sous la main.</p>
+  </div>
+
+
+  {{/* Réglages du tirage */}}
+  <section class="carte reglages" aria-label="Réglages du tirage">
+    <div class="reglages__epreuve">
+      <span id="lbl-ep" class="reglages__libelle">Épreuve</span>
+      <div class="choix" role="group" aria-labelledby="lbl-ep">
+        <button type="button" class="choix__bouton" aria-pressed="false" data-epreuve="any">Au hasard</button>
+        <button type="button" class="choix__bouton" aria-pressed="true" data-epreuve="prat">Pratique</button>
+        <button type="button" class="choix__bouton" aria-pressed="false" data-epreuve="theo">Théorique</button>
+        <button type="button" class="choix__bouton" aria-pressed="false" data-epreuve="orga">Organisationnelle</button>
+      </div>
+    </div>
+    <div class="reglages__niveau">
+      <label for="niv" class="reglages__libelle">Niveau des élèves</label>
+      <select id="niv" class="reglages__select" data-niveau>
+        <option value="tous">Tous les niveaux</option>
+        <option value="RANDO">Randosub</option>
+        <option value="PE12">PE12</option>
+        <option value="N1">N1</option>
+        <option value="PA12">PA12</option>
+        <option value="N2">N2 (PA20, PE40)</option>
+        <option value="N3">N3</option>
+        <option value="N4">GP-N4</option>
+        <option value="N5">DP-N5</option>
+        <option value="RIFAP">RIFAP</option>
+      </select>
+    </div>
+    <button type="button" class="bouton bouton--principal reglages__tirer" data-tirer>Tirer un thème</button>
+  </section>
+
+  {{/* Thème tiré et chrono */}}
+  <section class="theme-zone" aria-labelledby="sujet">
+    <div class="carte theme" data-theme aria-live="polite">
+      <span class="theme__format" data-theme-format>Thème d’entraînement</span>
+      <h2 id="sujet" class="theme__titre" data-theme-titre tabindex="-1">…</h2>
+      <div class="theme__puces" data-theme-puces></div>
+      <p class="theme__avertissement">Ce n’est pas un sujet d’examen : les vrais sujets se travaillent avec tes tuteurs MF2. <button type="button" class="lien-bouton lien-bouton--brun" aria-haspopup="dialog" data-ouvrir="fenetre-vrais-sujets">Où trouver de vrais sujets</button></p>
+    </div>
+    <div class="chrono" data-chrono>
+      <div class="chrono__entete">
+        <span class="chrono__libelle">Préparation</span>
+        <span class="chrono__suite" data-chrono-suite>puis 30 min devant le jury</span>
+      </div>
+      <span class="chrono__temps" role="timer" aria-label="Temps restant 30 minutes" data-chrono-temps>30:00</span>
+      <div class="chrono__boutons">
+        <button type="button" class="chrono__bouton" data-chrono-lancer>Lancer le chrono</button>
+        <button type="button" class="chrono__bouton chrono__bouton--secondaire" data-chrono-zero hidden>Remettre à zéro</button>
+      </div>
+      <span class="visuellement-cache" aria-live="assertive" data-chrono-annonce></span>
+    </div>
+  </section>
+
+  {{/* Grille de préparation */}}
+  <section class="carte grille" aria-label="Grille de préparation" data-grille>
+    <div class="grille__entete">
+      <div class="grille__titres">
+        <h2 class="grille__titre">Ta grille</h2>
+        <span class="grille__source">les intitulés du livret pédagogique MF1</span>
+      </div>
+      <button type="button" class="bouton-contour grille__comparer bureau" aria-pressed="false" data-comparer-mft>Comparer avec le MFT</button>
+    </div>
+
+    {{/* Téléphone : une étape à la fois */}}
+    <div class="etapes mobile" data-etapes-entete>
+      <div class="etapes__ligne">
+        <span class="etapes__numero" data-etape-numero>Étape 1 sur 8</span>
+        <span class="etapes__section" data-etape-section></span>
+      </div>
+      <div class="etapes__barre" aria-hidden="true"><div class="etapes__avance" data-etape-avance></div></div>
+    </div>
+
+    <div class="grille__sections" data-grille-sections></div>
+
+    <p class="grille__rappel mobile">Pense-bête conçu par un stagiaire MF1 : erreurs possibles, vérifie toujours dans le MFT. Ton tuteur MF2 reste ta référence.</p>
+
+    <div class="grille__actions" data-grille-actions>
+      <span class="grille__statut" aria-live="polite" data-statut></span>
+      <button type="button" class="bouton bouton--secondaire" data-imprimer>Imprimer / enregistrer en PDF</button>
+      <button type="button" class="bouton bouton--danger" data-effacer>Effacer ma grille</button>
+      <button type="button" class="bouton bouton--principal" data-enregistrer>Enregistrer ce thème</button>
+    </div>
+  </section>
+
+  {{/* Téléphone : navigation entre les étapes */}}
+  <nav class="etapes-nav mobile" aria-label="Étapes">
+    <button type="button" class="etapes-nav__precedent" data-etape-precedente>Précédent</button>
+    <button type="button" class="etapes-nav__suivant" data-etape-suivante>Suivant</button>
+  </nav>
+</div>
+
+<noscript><p class="encart-orange">Le tirage des thèmes et le chrono ont besoin de JavaScript.</p></noscript>
+
+{{/* Version imprimée de la grille, remplie au moment d’imprimer (étape 3.1) */}}
+<div class="impression" data-impression aria-hidden="true"></div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/tirage.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

@@ -1,0 +1,1198 @@
+{
+  "niveau": "RIFAP",
+  "source": "Référentiel de formation fédéral RIFA-Plongée (réactions et interventions face aux accidents subaquatiques, spécialité plongée sous-marine), version mai 2026",
+  "statut": "Proposition de stagiaire, hors référentiel, à valider avec un MF2",
+  "competences": [
+    {
+      "id": "RIFAP-C1",
+      "competence": "C1 · Communiquer entre plongeurs lors d'un accident",
+      "evaluation_mft": "Identifier sans délai une situation anormale. Rapidité d'intervention. Sécurisation en surface et prise en charge adaptée de l'accidenté.",
+      "techniques": [
+        {
+          "nom": "Connaître les signes normalisés de la FFESSM",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "jour → nuit"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découvrir les signes",
+              "objectif": "Connaître les signes de malaise et de détresse.",
+              "situation": "Au sec : signes entre plongeurs d'une palanquée, et entre la palanquée et la surface.",
+              "critere": "Il réalise et reconnaît chaque signe."
+            },
+            {
+              "n": 2,
+              "titre": "Jour et nuit",
+              "objectif": "Connaître les différences de jour et de nuit.",
+              "situation": "Au sec, avec une lampe.",
+              "critere": "Signes de jour et de nuit justes."
+            },
+            {
+              "n": 3,
+              "titre": "Signal de détresse en surface",
+              "objectif": "Faire et reconnaître le signal de détresse.",
+              "situation": "En surface, vu depuis le bateau ou le bord du bassin.",
+              "critere": "Signal vu et compris immédiatement."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Communiquer un accident.",
+              "situation": "Accident simulé, en surface et en immersion.",
+              "critere": "Signes justes et immédiats. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Reconnaître, sans délai, une situation anormale en surface",
+          "curseurs": [
+            "signe observable → signe discret",
+            "dans l'eau → au sec après la plongée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Comportements anormaux",
+              "objectif": "Connaître les signes observables et non observables.",
+              "situation": "Au sec : exemples de comportements anormaux en surface et après la plongée.",
+              "critere": "Il cite des signes observables et explique pourquoi il faut discuter entre plongeurs."
+            },
+            {
+              "n": 2,
+              "titre": "Le délai d'apparition",
+              "objectif": "Savoir que des signes peuvent apparaître plusieurs heures après la sortie de l'eau.",
+              "situation": "Échange à partir de cas vécus.",
+              "critere": "Il explique pourquoi la vigilance continue après la plongée."
+            },
+            {
+              "n": 3,
+              "titre": "Repérer en situation",
+              "objectif": "Identifier vite un comportement anormal.",
+              "situation": "Exercice annoncé : accident simulé en surface, sans dire à l'avance qui sera la victime.",
+              "critere": "Repérage immédiat.",
+              "securite": "Accident simulé : la victime est jouée par un stagiaire ou un formateur qui peut arrêter l'exercice à tout moment."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Identifier sans délai une situation anormale.",
+              "situation": "Cas concrets variés.",
+              "critere": "Situation identifiée sans délai. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Apporter une première réponse rapide et appropriée",
+          "curseurs": [
+            "contact visuel → corporel → oral"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les trois contacts",
+              "objectif": "Connaître la prise en charge par le contact.",
+              "situation": "Au sec : contact visuel permanent, contact corporel, contact oral. Signe OK pour rassurer.",
+              "critere": "Il décrit les trois contacts."
+            },
+            {
+              "n": 2,
+              "titre": "En surface",
+              "objectif": "Prendre contact avec la victime.",
+              "situation": "Victime simulée en surface.",
+              "critere": "Contact visuel gardé en permanence, victime rassurée.",
+              "securite": "Accident simulé : la victime est jouée par un stagiaire ou un formateur qui peut arrêter l'exercice à tout moment."
+            },
+            {
+              "n": 3,
+              "titre": "Rapidité",
+              "objectif": "Intervenir sans perdre de temps.",
+              "situation": "Accident simulé, distance courte puis plus longue.",
+              "critere": "Intervention rapide et appropriée."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Apporter une première réponse.",
+              "situation": "Cas concrets.",
+              "critere": "Rapidité d'intervention, réponse adaptée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Sécuriser le plongeur en surface",
+          "curseurs": [
+            "gilet → voies aériennes → contact verbal"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Gonfler le gilet de la victime",
+              "objectif": "Mettre la victime en flottabilité positive.",
+              "situation": "Victime simulée en surface.",
+              "critere": "Gilet gonflé sans délai."
+            },
+            {
+              "n": 2,
+              "titre": "Protéger les voies aériennes",
+              "objectif": "Garder les voies aériennes hors de l'eau.",
+              "situation": "Même situation, avec un peu de clapot si possible.",
+              "critere": "Voies aériennes protégées en permanence."
+            },
+            {
+              "n": 3,
+              "titre": "Garder le contact verbal",
+              "objectif": "Parler à la victime si possible.",
+              "situation": "Pendant la sécurisation.",
+              "critere": "Contact verbal conservé."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Sécuriser le plongeur en surface.",
+              "situation": "Cas concrets.",
+              "critere": "Plongeur sécurisé, prise en charge adaptée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RIFAP-C2",
+      "competence": "C2 · Mettre en sécurité l'accidenté",
+      "evaluation_mft": "Technique de tractage et de hissage réalisée de façon sécurisante. Techniques sûres et adaptées au contexte. Accidenté mis en sécurité.",
+      "techniques": [
+        {
+          "nom": "Garantir à la victime une ventilation dans de bonnes conditions",
+          "curseurs": [
+            "à sec → dans l'eau"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le principe",
+              "objectif": "Comprendre que la ventilation de la victime doit être garantie en permanence.",
+              "situation": "Au sec.",
+              "critere": "Il explique pourquoi on maintient le détendeur en bouche."
+            },
+            {
+              "n": 2,
+              "titre": "Détendeur en bouche",
+              "objectif": "Maintenir le détendeur de la victime.",
+              "situation": "En surface, victime simulée.",
+              "critere": "Détendeur maintenu sans interruption.",
+              "securite": "Accident simulé : la victime est jouée par un stagiaire ou un formateur qui peut arrêter l'exercice à tout moment."
+            },
+            {
+              "n": 3,
+              "titre": "Position et flottabilité",
+              "objectif": "Mettre la victime sur le dos, desserrer légèrement les sangles, gonfler son gilet.",
+              "situation": "Même situation.",
+              "critere": "Victime sur le dos, en flottabilité positive, détendeur maintenu."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Garantir la ventilation.",
+              "situation": "Cas concrets.",
+              "critere": "Ventilation garantie à toutes les étapes. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Remorquer la victime vers le point de sortie de l'eau",
+          "curseurs": [
+            "prise arrière → prise avant",
+            "sans scaphandre → avec scaphandre"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Position de départ",
+              "objectif": "Se placer à côté de la victime, une main sous le bloc ou entre les omoplates.",
+              "situation": "En surface.",
+              "critere": "Position correcte, voies aériennes hors de l'eau."
+            },
+            {
+              "n": 2,
+              "titre": "Prise arrière",
+              "objectif": "Tracter avec une prise arrière.",
+              "situation": "Avec et sans scaphandre : saisie sous le bras, tête de la victime sur l'épaule, propulsion dorsale.",
+              "critere": "Voies aériennes bien tenues sur toute la distance.",
+              "theorie": "La prise arrière tient bien les voies aériennes, mais elle est plus lente et gêne l'orientation."
+            },
+            {
+              "n": 3,
+              "titre": "Prise avant",
+              "objectif": "Tracter avec une prise avant.",
+              "situation": "Avec et sans scaphandre : propulsion ventrale en poussant la victime devant.",
+              "critere": "Propulsion efficace, surveillance de la victime, arrivée prête pour la sortie."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Remorquer vers le point de sortie.",
+              "situation": "Cas concrets, distance réaliste.",
+              "critere": "Tractage sécurisant, technique adaptée au contexte. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Déséquiper la victime et se déséquiper",
+          "curseurs": [
+            "gilet ajustable → gilet enveloppant",
+            "victime → sauveteur"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Gilet ajustable",
+              "objectif": "Déséquiper une victime équipée d'un gilet ajustable.",
+              "situation": "Sangles, lest, harnais, léger dégonflage, dégagement.",
+              "critere": "Victime libérée, voies aériennes hors de l'eau."
+            },
+            {
+              "n": 2,
+              "titre": "Gilet enveloppant",
+              "objectif": "Déséquiper une victime équipée d'un gilet enveloppant.",
+              "situation": "Une des techniques présentées par le formateur, adaptée au matériel et à la morphologie.",
+              "critere": "Victime libérée sans trop lâcher son détendeur, retiré le plus tard possible."
+            },
+            {
+              "n": 3,
+              "titre": "Se déséquiper",
+              "objectif": "Se déséquiper sans lâcher la victime.",
+              "situation": "Le sauveteur se déséquipe après la victime et garde son gilet comme plan dur.",
+              "critere": "Aucune sangle oubliée, victime tenue en permanence."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Déséquiper en sécurité.",
+              "situation": "Cas concrets, près du point de sortie.",
+              "critere": "Techniques sûres et adaptées au contexte. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Assurer la sortie de l'eau d'un plongeur en difficulté",
+          "curseurs": [
+            "un support → les supports du club",
+            "à un sauveteur → à deux"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le support du club",
+              "objectif": "Sortir la victime sur le support habituel.",
+              "situation": "Selon le club : échelle, bateau ponté, pneumatique, plage ou berge, bord de piscine.",
+              "critere": "Sortie réalisée sans mettre la victime en danger.",
+              "securite": "Accident simulé : la victime est jouée par un stagiaire ou un formateur qui peut arrêter l'exercice à tout moment. Attention au dos du sauveteur et à la courbure lombaire de la victime."
+            },
+            {
+              "n": 2,
+              "titre": "À deux sauveteurs",
+              "objectif": "Partager l'effort.",
+              "situation": "Un sauveteur dans l'eau, un à bord.",
+              "critere": "Sortie coordonnée, efforts limités."
+            },
+            {
+              "n": 3,
+              "titre": "Autres supports",
+              "objectif": "Connaître les techniques des autres supports.",
+              "situation": "Harnais, sangle ou aussière, plan dur ou civière, selon le matériel disponible.",
+              "critere": "Il choisit la technique adaptée au support."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Sortir la victime de l'eau.",
+              "situation": "Cas concrets, selon le milieu de pratique.",
+              "critere": "Hissage réalisé de façon sécurisante. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "La mise en sécurité de la victime",
+          "curseurs": [
+            "sortie → position de confort"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Zone sécurisée",
+              "objectif": "Installer la victime à l'abri du sur-accident.",
+              "situation": "À bord ou au sol : chute d'objet, froid, chaleur.",
+              "critere": "Zone choisie et sécurisée."
+            },
+            {
+              "n": 2,
+              "titre": "Position de confort",
+              "objectif": "Adapter la position à l'état de la victime.",
+              "situation": "Différents états simulés.",
+              "critere": "Position adaptée."
+            },
+            {
+              "n": 3,
+              "titre": "Enchaîner",
+              "objectif": "Relier la sortie de l'eau et la prise en charge.",
+              "situation": "Accident simulé complet.",
+              "critere": "Victime installée sans délai."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Mettre la victime en sécurité.",
+              "situation": "Cas concrets.",
+              "critere": "Accidenté mis en sécurité. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RIFAP-C3",
+      "competence": "C3 · Récupérer les plongeurs de la palanquée",
+      "evaluation_mft": "Fiche de sécurité renseignée. Fiche d'évacuation mise en œuvre. Recueil d'éléments exhaustif de la palanquée permettant la prise en charge et la surveillance de la palanquée. L'examen de la victime sera réalisé en C5/C6. Matériel regroupé et arrimé.",
+      "techniques": [
+        {
+          "nom": "Prendre en charge une palanquée dont l'un des membres est accidenté",
+          "curseurs": [
+            "composition → paramètres → surveillance"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La fiche de sécurité",
+              "objectif": "Connaître et utiliser la fiche de sécurité.",
+              "situation": "Au sec : présentation de la fiche.",
+              "critere": "Il sait y lire et y noter les paramètres."
+            },
+            {
+              "n": 2,
+              "titre": "Vérifier la palanquée",
+              "objectif": "Vérifier la composition et l'état des autres membres.",
+              "situation": "Cas simulé.",
+              "critere": "Composition vérifiée, intégrité de chacun contrôlée."
+            },
+            {
+              "n": 3,
+              "titre": "Paramètres et désaturation",
+              "objectif": "Relever les paramètres et vérifier la désaturation.",
+              "situation": "Cas simulé.",
+              "critere": "Paramètres relevés, désaturation vérifiée, palanquée surveillée."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Prendre en charge la palanquée.",
+              "situation": "Cas concrets.",
+              "critere": "Recueil exhaustif, palanquée surveillée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Prendre en charge les palanquées encore en immersion",
+          "curseurs": [
+            "recueillir → rappeler → vérifier"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Moyens de rappel",
+              "objectif": "Connaître les moyens de rappel disponibles.",
+              "situation": "Au sec, selon le club et le site.",
+              "critere": "Il cite les moyens de rappel."
+            },
+            {
+              "n": 2,
+              "titre": "Recueillir les informations",
+              "objectif": "Connaître les équipes encore à l'eau.",
+              "situation": "Nombre, temps de plongée, paliers selon les consignes du DP.",
+              "critere": "Informations complètes."
+            },
+            {
+              "n": 3,
+              "titre": "Vérifier le retour",
+              "objectif": "Pointer le retour des palanquées sur la fiche de sécurité.",
+              "situation": "Cas simulé.",
+              "critere": "Toutes les palanquées pointées."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Gérer les palanquées encore à l'eau.",
+              "situation": "Cas concrets.",
+              "critere": "Fiche de sécurité renseignée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Regrouper le matériel",
+          "curseurs": [
+            "identifier → regrouper → arrimer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Pourquoi",
+              "objectif": "Comprendre les risques du matériel épars.",
+              "situation": "Sur-accident, gêne des secours, hélitreuillage.",
+              "critere": "Il explique les risques."
+            },
+            {
+              "n": 2,
+              "titre": "Regrouper",
+              "objectif": "Mettre le matériel en sécurité.",
+              "situation": "Sur le bateau ou au bord.",
+              "critere": "Matériel regroupé."
+            },
+            {
+              "n": 3,
+              "titre": "Arrimer",
+              "objectif": "Fixer le matériel.",
+              "situation": "Cas simulé avec hélitreuillage possible.",
+              "critere": "Matériel arrimé."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Regrouper le matériel.",
+              "situation": "Cas concrets.",
+              "critere": "Matériel regroupé et arrimé. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Recueillir les informations utiles",
+          "curseurs": [
+            "présenter → renseigner"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La fiche d'évacuation",
+              "objectif": "Connaître la fiche d'évacuation du Code du sport.",
+              "situation": "Présentation de la fiche, et de la fiche de prise d'alerte du CROSS.",
+              "critere": "Il connaît chaque rubrique."
+            },
+            {
+              "n": 2,
+              "titre": "Renseigner tôt",
+              "objectif": "Remplir la fiche le plus tôt possible.",
+              "situation": "Cas simulé : heure, symptômes, actions menées.",
+              "critere": "Fiche commencée sans délai."
+            },
+            {
+              "n": 3,
+              "titre": "Remettre aux secours",
+              "objectif": "Préparer la transmission.",
+              "situation": "Arrivée simulée des secours.",
+              "critere": "Fiche complète remise."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Recueillir les informations.",
+              "situation": "Cas concrets.",
+              "critere": "Fiche d'évacuation mise en œuvre. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RIFAP-C4",
+      "competence": "C4 · Coordonner et partager les opérations",
+      "evaluation_mft": "Gestion de crise maitrisée. Palanquées et actions contrôlées, gestion de l'accidenté efficace, communication des infos aux différents acteurs, documents complétés (fiche de sécurité et fiche d'évacuation).",
+      "techniques": [
+        {
+          "nom": "Répartir un rôle à chacun en fonction des compétences présentes",
+          "curseurs": [
+            "désigner le coordinateur → répartir les rôles"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le coordinateur",
+              "objectif": "Comprendre le rôle du coordinateur.",
+              "situation": "Échange à partir du vécu des stagiaires : centraliser les informations dès l'appel de détresse.",
+              "critere": "Il explique le rôle du coordinateur.",
+              "theorie": "Plan d'organisation de la surveillance et des secours (POSS). Emplacement du matériel de secours."
+            },
+            {
+              "n": 2,
+              "titre": "Les rôles",
+              "objectif": "Connaître les rôles à répartir.",
+              "situation": "Évaluation de la victime, matériel d'urgence, gestes de secours, vérification des palanquées, matériel, fiche d'évacuation, alerte.",
+              "critere": "Il cite tous les rôles."
+            },
+            {
+              "n": 3,
+              "titre": "Répartir",
+              "objectif": "Répartir les rôles selon les compétences présentes.",
+              "situation": "Cas concret, chaque stagiaire joue au moins une fois le coordinateur.",
+              "critere": "Rôles répartis vite et à bon escient."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Répartir les rôles.",
+              "situation": "Cas concrets.",
+              "critere": "Gestion de crise maîtrisée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Gérer le retour à bord des plongeurs",
+          "curseurs": [
+            "connaître → appliquer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Consignes de rappel",
+              "objectif": "Connaître les consignes de rappel avant toute plongée.",
+              "situation": "Selon l'organisation du club.",
+              "critere": "Il les connaît avant la plongée."
+            },
+            {
+              "n": 2,
+              "titre": "Récupérer les plongeurs en difficulté",
+              "objectif": "Connaître les modalités de récupération.",
+              "situation": "Déplacement des plongeurs ou du bateau.",
+              "critere": "Modalités connues."
+            },
+            {
+              "n": 3,
+              "titre": "Appliquer",
+              "objectif": "Appliquer la consigne de récupération.",
+              "situation": "Cas concret après un appel de détresse.",
+              "critere": "Plongeurs récupérés et pointés."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Gérer le retour à bord.",
+              "situation": "Cas concrets.",
+              "critere": "Palanquées contrôlées. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Assurer la liaison entre les divers intervenants",
+          "curseurs": [
+            "un rôle → tous les rôles",
+            "agir → suivre"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Circulation des informations",
+              "objectif": "Faire circuler l'information entre les acteurs.",
+              "situation": "Cas concret : coordinateur, alerte, gestes sur la victime.",
+              "critere": "Informations transmises sans perte."
+            },
+            {
+              "n": 2,
+              "titre": "Suivre les actions",
+              "objectif": "Veiller au suivi des actions en cours.",
+              "situation": "Cas concret.",
+              "critere": "Rien n'est oublié."
+            },
+            {
+              "n": 3,
+              "titre": "Tous les rôles",
+              "objectif": "Être mis en situation sur chacun des rôles.",
+              "situation": "Rotation des rôles au fil des cas concrets.",
+              "critere": "Il tient chaque rôle."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Coordonner l'ensemble.",
+              "situation": "Cas concrets sur l'ensemble des tâches.",
+              "critere": "Actions contrôlées, documents complétés. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RIFAP-C5",
+      "competence": "C5 · Réagir face à un accident, techniques de base",
+      "evaluation_mft": "Les gestes sont adaptés à la situation rencontrée. Une surveillance de l'accidenté est organisée.",
+      "techniques": [
+        {
+          "nom": "La victime se plaint d'un malaise",
+          "curseurs": [
+            "malaise en général → malaise après une plongée",
+            "interroger → agir"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Reconnaître un malaise",
+              "objectif": "Partir du malaise en général vers l'activité subaquatique.",
+              "situation": "Fiche Malaise du PSC1, exemples : effort, accident de désaturation, surpression pulmonaire, hypothermie, hypoglycémie.",
+              "critere": "Il reconnaît un malaise et ses signes de gravité.",
+              "theorie": "Un malaise après une plongée est traité en priorité comme un accident de plongée : oxygène (C6) et alerte (C7). Près de 70 % des accidents traités sont sans faute de procédure."
+            },
+            {
+              "n": 2,
+              "titre": "Interroger",
+              "objectif": "Recueillir les informations utiles.",
+              "situation": "Chronologie des troubles, localisation, déroulement de la plongée, qualité de la décompression.",
+              "critere": "Questions pertinentes, réponses notées."
+            },
+            {
+              "n": 3,
+              "titre": "Mettre au repos et protéger",
+              "objectif": "Adopter la conduite à tenir.",
+              "situation": "Cas simulé.",
+              "critere": "Victime au repos, protégée, oxygène et alerte déclenchés.",
+              "securite": "Accident simulé : la victime est jouée par un stagiaire ou un formateur qui peut arrêter l'exercice à tout moment."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Réagir à un malaise.",
+              "situation": "Cas concrets.",
+              "critere": "Gestes adaptés, surveillance organisée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Les hémorragies externes",
+          "curseurs": [
+            "reconnaître → agir avec le matériel disponible"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Reconnaître",
+              "objectif": "Reconnaître une hémorragie.",
+              "situation": "Fiches PSC1 : hémorragies externes, compression locale, pansement compressif, garrot.",
+              "critere": "Il reconnaît la situation.",
+              "theorie": "Gestes décrits dans le référentiel national PSC1 (ou PSE selon le cas), auquel renvoie le RIFAP."
+            },
+            {
+              "n": 2,
+              "titre": "Le matériel de l'activité",
+              "objectif": "Utiliser ce qu'on a sous la main.",
+              "situation": "Serviette, tee-shirt, ceinture, trousse de secours du bateau.",
+              "critere": "Choix adapté."
+            },
+            {
+              "n": 3,
+              "titre": "Agir",
+              "objectif": "Faire le geste adapté.",
+              "situation": "Cas simulé : tôle d'épave, rocher coupant.",
+              "critere": "Geste juste, sur un partenaire ou un mannequin."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Réagir face à une hémorragie.",
+              "situation": "Cas concrets.",
+              "critere": "Gestes adaptés à la situation. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Les plaies, les brûlures et les traumatismes",
+          "curseurs": [
+            "situation courante → situation propre à l'activité"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Situations courantes",
+              "objectif": "Reconnaître et agir face aux plaies, brûlures, traumatismes.",
+              "situation": "Fiches PSC1, trousse de secours du lieu de pratique.",
+              "critere": "Conduite à tenir connue.",
+              "theorie": "Gestes décrits dans le référentiel national PSC1 (ou PSE selon le cas), auquel renvoie le RIFAP."
+            },
+            {
+              "n": 2,
+              "titre": "Situations de l'activité",
+              "objectif": "Adapter au milieu.",
+              "situation": "Piqûres et brûlures de la faune et de la flore (méduse, corail de feu), chutes sur pont glissant, coups de soleil, chocs avec le matériel.",
+              "critere": "Il cite les risques de son lieu de pratique."
+            },
+            {
+              "n": 3,
+              "titre": "Agir",
+              "objectif": "Faire les gestes adaptés.",
+              "situation": "Cas simulés.",
+              "critere": "Gestes justes."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Réagir face à ces situations.",
+              "situation": "Cas concrets.",
+              "critere": "Gestes adaptés à la situation. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "La victime présente une perte de connaissance",
+          "curseurs": [
+            "reconnaître → libérer les voies aériennes → PLS → oxygène"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Reconnaître",
+              "objectif": "Reconnaître une perte de connaissance.",
+              "situation": "Fiches PSC1 : perte de connaissance, libération des voies aériennes, position latérale de sécurité.",
+              "critere": "Il reconnaît la situation.",
+              "theorie": "Gestes décrits dans le référentiel national PSC1 (ou PSE selon le cas), auquel renvoie le RIFAP."
+            },
+            {
+              "n": 2,
+              "titre": "Les gestes",
+              "objectif": "Libérer les voies aériennes et mettre en PLS.",
+              "situation": "Sur un partenaire volontaire.",
+              "critere": "Gestes justes."
+            },
+            {
+              "n": 3,
+              "titre": "L'oxygène",
+              "objectif": "Mettre en œuvre rapidement l'oxygène au masque à haute concentration.",
+              "situation": "Cas simulé : syncope anoxique, début de noyade, évolution d'un accident de désaturation.",
+              "critere": "Oxygène mis en place sans délai (lien C6).",
+              "securite": "Manipuler l'oxygène avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Réagir à une perte de connaissance.",
+              "situation": "Cas concrets.",
+              "critere": "Gestes adaptés, surveillance organisée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "La victime ne respire pas",
+          "curseurs": [
+            "arrêt cardiaque → noyade et syncope en apnée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Reconnaître un arrêt cardiaque",
+              "objectif": "Reconnaître la situation et la conduite à tenir.",
+              "situation": "Fiches PSC1 : arrêt cardiaque, insufflations, compressions thoraciques.",
+              "critere": "Il reconnaît la situation.",
+              "theorie": "Gestes décrits dans le référentiel national PSC1 (ou PSE selon le cas), auquel renvoie le RIFAP. Le DEA est présenté, mais son apprentissage ne fait pas partie du référentiel."
+            },
+            {
+              "n": 2,
+              "titre": "Les gestes sur mannequin",
+              "objectif": "Réaliser insufflations et compressions.",
+              "situation": "Sur mannequin, puis avec l'insufflateur manuel (BAVU) et le ballon réservoir.",
+              "critere": "Gestes justes et réguliers.",
+              "securite": "Compressions thoraciques et insufflations uniquement sur mannequin, jamais sur une personne."
+            },
+            {
+              "n": 3,
+              "titre": "Noyade et syncope en apnée",
+              "objectif": "Connaître les spécificités.",
+              "situation": "Fiche noyade du PSE : oxygène, insufflations initiales avant de débuter les compressions.",
+              "critere": "Il applique la séquence propre à la noyade.",
+              "securite": "Compressions thoraciques et insufflations uniquement sur mannequin, jamais sur une personne."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Réagir face à une victime qui ne respire pas.",
+              "situation": "Cas concrets sur mannequin.",
+              "critere": "Gestes adaptés à la situation. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Couverture isothermique",
+          "curseurs": [
+            "à l'abri → en extérieur, avec vent, en mer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le principe",
+              "objectif": "Comprendre pourquoi envelopper totalement la victime, tête comprise.",
+              "situation": "Au sec.",
+              "critere": "Il explique la déperdition par la tête."
+            },
+            {
+              "n": 2,
+              "titre": "Mise en place",
+              "objectif": "Envelopper la victime avec la capuche.",
+              "situation": "Sur un partenaire, à l'abri.",
+              "critere": "Victime entièrement couverte."
+            },
+            {
+              "n": 3,
+              "titre": "Conditions réelles",
+              "objectif": "Mettre la couverture dehors.",
+              "situation": "Avec du vent, sur un bateau.",
+              "critere": "Couverture tenue en place."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Éviter le refroidissement de l'accidenté.",
+              "situation": "Cas concrets.",
+              "critere": "Couverture mise en place correctement. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RIFAP-C6",
+      "competence": "C6 · Techniques complémentaires : oxygène et recommandations CMPN",
+      "evaluation_mft": "Le plongeur connait les recommandations de la CMPN. Il utilise l'oxygénothérapie par inhalation et par insufflation de façon adaptée.",
+      "techniques": [
+        {
+          "nom": "Administrer de l'oxygène selon les recommandations de la CMPN",
+          "curseurs": [
+            "respiration spontanée → détresse ou coma"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La recommandation",
+              "objectif": "Connaître le débit recommandé.",
+              "situation": "Au sec : 15 litres par minute dans toutes les situations, jusqu'à la prise en charge par les services spécialisés.",
+              "critere": "Il cite la recommandation sans erreur."
+            },
+            {
+              "n": 2,
+              "titre": "Par inhalation",
+              "objectif": "Administrer l'oxygène au masque à haute concentration.",
+              "situation": "Victime simulée en respiration spontanée.",
+              "critere": "Masque bien placé, débit de 15 L/min.",
+              "securite": "Manipuler l'oxygène avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+            },
+            {
+              "n": 3,
+              "titre": "Par insufflation",
+              "objectif": "Administrer l'oxygène avec l'insufflateur manuel.",
+              "situation": "Sur mannequin, masque de taille adaptée.",
+              "critere": "Insufflations régulières sous oxygène.",
+              "securite": "Compressions thoraciques et insufflations uniquement sur mannequin, jamais sur une personne. Manipuler l'oxygène avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Administrer l'oxygène de façon adaptée.",
+              "situation": "Cas concrets.",
+              "critere": "Inhalation et insufflation utilisées à bon escient. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Réhydrater",
+          "curseurs": [
+            "connaître → appliquer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La recommandation",
+              "objectif": "Savoir quoi faire boire.",
+              "situation": "Eau plate, sans sucre, environ 1 litre la première heure en fractionnant.",
+              "critere": "Il cite la recommandation."
+            },
+            {
+              "n": 2,
+              "titre": "Les contre-indications",
+              "objectif": "Savoir quand ne pas faire boire.",
+              "situation": "Victime peu coopérative ou inconsciente, nausées ou vomissements, suspicion de lésion du tube digestif.",
+              "critere": "Il cite les trois cas."
+            },
+            {
+              "n": 3,
+              "titre": "Appliquer",
+              "objectif": "Décider en situation.",
+              "situation": "Cas simulés variés.",
+              "critere": "Décision juste."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Réhydrater selon la CMPN.",
+              "situation": "Cas concrets.",
+              "critere": "Recommandation appliquée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Alerter pour une évacuation du plongeur accidenté",
+          "curseurs": [
+            "savoir qui → savoir quand"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les services",
+              "objectif": "Connaître les services à alerter.",
+              "situation": "CROSS en mer, SCMM à terre, vers un centre hyperbare.",
+              "critere": "Il cite les services."
+            },
+            {
+              "n": 2,
+              "titre": "Toute mise sous oxygène implique l'alerte",
+              "objectif": "Faire le lien entre oxygène et alerte.",
+              "situation": "Cas simulé.",
+              "critere": "Alerte déclenchée dès la mise sous oxygène."
+            },
+            {
+              "n": 3,
+              "titre": "Pas de réimmersion",
+              "objectif": "Connaître l'interdit.",
+              "situation": "Au sec.",
+              "critere": "Il sait qu'on ne pratique jamais de recompression par réimmersion."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Alerter pour l'évacuation.",
+              "situation": "Cas concrets (voir C7).",
+              "critere": "Alerte déclenchée sans délai. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Utiliser le kit d'oxygénothérapie",
+          "curseurs": [
+            "montage → utilisation → entretien"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Présentation",
+              "objectif": "Connaître le matériel du lieu de pratique.",
+              "situation": "Bouteille, manodétendeur, débit-litre, masques, insufflateur.",
+              "critere": "Il nomme chaque élément.",
+              "securite": "Manipuler l'oxygène avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+            },
+            {
+              "n": 2,
+              "titre": "Montage",
+              "objectif": "Monter le kit.",
+              "situation": "Au sec, plusieurs fois.",
+              "critere": "Montage juste et rapide."
+            },
+            {
+              "n": 3,
+              "titre": "Autonomie et entretien",
+              "objectif": "Évaluer l'autonomie, nettoyer et désinfecter.",
+              "situation": "Environ une heure à 15 L/min pour une bouteille de 5 litres à 200 bars. Nettoyage et désinfection après usage.",
+              "critere": "Autonomie estimée, matériel remis en état."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Utiliser le kit d'oxygénothérapie.",
+              "situation": "Cas concrets.",
+              "critere": "Kit mis en œuvre conformément aux recommandations. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Surveiller la victime jusqu'à la prise en charge par les secours",
+          "curseurs": [
+            "observer → noter → transmettre"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les fonctions vitales",
+              "objectif": "Savoir quoi surveiller.",
+              "situation": "Conscience, ventilation, circulation, pâleur, marbrures, couleur des lèvres.",
+              "critere": "Il cite les éléments."
+            },
+            {
+              "n": 2,
+              "titre": "Noter l'évolution",
+              "objectif": "Noter périodiquement l'état.",
+              "situation": "Cas simulé, sur la fiche d'évacuation.",
+              "critere": "Évolution notée régulièrement."
+            },
+            {
+              "n": 3,
+              "titre": "Parler et faire parler",
+              "objectif": "Garder le contact avec la victime.",
+              "situation": "Cas simulé, attente des secours.",
+              "critere": "Surveillance continue.",
+              "theorie": "Délai moyen de prise en charge en mer : environ 90 minutes."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Surveiller jusqu'aux secours.",
+              "situation": "Cas concrets.",
+              "critere": "Surveillance continue et notée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RIFAP-C7",
+      "competence": "C7 · Alerter les secours et assurer le suivi",
+      "evaluation_mft": "Chaine des secours en mer et sur terre connues. Procédure d'alerte conforme au plan de secours adapté au lieu de pratique. Fiche d'évacuation renseignée de façon fiable et exhaustive. Les éléments concernant la victime et la situation de l'accident sont transmis auprès des organismes de secours.",
+      "techniques": [
+        {
+          "nom": "Connaître et visualiser la chaîne des secours en mer",
+          "curseurs": [
+            "acteurs → interactions"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les acteurs",
+              "objectif": "Connaître le bateau de plongée, le CROSS et le SCMM.",
+              "situation": "Au sec : rôles et missions.",
+              "critere": "Il décrit chaque acteur."
+            },
+            {
+              "n": 2,
+              "titre": "Les interactions",
+              "objectif": "Comprendre comment ils travaillent ensemble.",
+              "situation": "Exemples tirés du vécu des stagiaires.",
+              "critere": "Il décrit la chaîne."
+            },
+            {
+              "n": 3,
+              "titre": "Quand appeler",
+              "objectif": "Décider d'appeler les secours.",
+              "situation": "Cas : risque, vie en danger, suspicion d'accident de plongée, mise sous oxygène.",
+              "critere": "Il appelle dans chaque cas, même en cas de doute."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Connaître la chaîne des secours.",
+              "situation": "Cas concrets.",
+              "critere": "Chaîne des secours connue. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Procédures d'appel en mer",
+          "curseurs": [
+            "VHF → ASN → téléphone"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La VHF",
+              "objectif": "Utiliser la VHF sur le canal 16.",
+              "situation": "Manœuvre de la VHF, alternat, message PAN-PAN trois fois.",
+              "critere": "Appel correct en simulation."
+            },
+            {
+              "n": 2,
+              "titre": "L'ASN",
+              "objectif": "Utiliser la fonction ASN.",
+              "situation": "Sélection du message et bouton « distress ».",
+              "critere": "Manœuvre connue."
+            },
+            {
+              "n": 3,
+              "titre": "Le téléphone",
+              "objectif": "Appeler le 196 à défaut de VHF.",
+              "situation": "Simulation d'appel.",
+              "critere": "Appel correct, accident de plongée annoncé."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Alerter en mer.",
+              "situation": "Simulation d'appel avec les deux moyens, fiche d'évacuation par victime.",
+              "critere": "Procédure conforme au plan de secours. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Procédures d'appel à terre",
+          "curseurs": [
+            "littoral → eaux intérieures"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les numéros",
+              "objectif": "Choisir le bon numéro.",
+              "situation": "196 depuis le littoral, 15 ou 112 dans les eaux intérieures.",
+              "critere": "Il choisit le numéro selon le lieu."
+            },
+            {
+              "n": 2,
+              "titre": "Le contexte de plongée",
+              "objectif": "Faire prendre en compte l'accident de plongée.",
+              "situation": "Simulation : demander le CROSS ou le SCMM.",
+              "critere": "Contexte de plongée annoncé clairement."
+            },
+            {
+              "n": 3,
+              "titre": "Le plan de secours",
+              "objectif": "Retrouver les procédures dans le plan de secours.",
+              "situation": "Plan de secours du club.",
+              "critere": "Il trouve la procédure du site."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Alerter à terre.",
+              "situation": "Simulations.",
+              "critere": "Procédure conforme au plan de secours. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        },
+        {
+          "nom": "Contenu du message d'alerte",
+          "curseurs": [
+            "message → dialogue → suivi"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le message",
+              "objectif": "Construire le message d'alerte.",
+              "situation": "Identité et embarcation, localisation précise, nature (accident de plongée), risques, gravité, nombre de personnes, premières mesures.",
+              "critere": "Message complet, dans l'ordre."
+            },
+            {
+              "n": 2,
+              "titre": "Le dialogue",
+              "objectif": "Répondre aux questions des secours.",
+              "situation": "Simulation avec un formateur dans le rôle du CROSS.",
+              "critere": "Réponses claires, instructions attendues avant de raccrocher."
+            },
+            {
+              "n": 3,
+              "titre": "Le suivi",
+              "objectif": "Signaler toute évolution.",
+              "situation": "État de la victime, nouvelle victime, autonomie en oxygène.",
+              "critere": "Évolutions transmises."
+            },
+            {
+              "n": 4,
+              "titre": "Cas concret (évaluation)",
+              "objectif": "Transmettre les informations et assurer le suivi.",
+              "situation": "Cas concrets.",
+              "critere": "Éléments transmis aux secours, fiche d'évacuation fiable et exhaustive. Correspond aux critères de réalisation ou d'évaluation du référentiel."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

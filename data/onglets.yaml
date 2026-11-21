@@ -1,0 +1,71 @@
+# Onglets de niveau (Explore le MFT, Progression, Réviser), dans l’ordre du cursus : Randosub, puis
+# Jeunes (onglet de la page Progression seulement, voir data/jeunes.yaml), PE12 … DP-N5, et le RIFAP en dernier.
+# niveaux : valeurs du champ « niveau » de mft_data.json rangées sous l’onglet.
+# titre / titreMobile : en-tête de la courbe (bureau / téléphone).
+# chapitre : utilisé dans « D’après le MFT … » en bas de chaque fiche.
+# comparer : groupe utilisé par le bouton « Comparer N1 · N2 · N3 ».
+- id: RANDO
+  libelle: Randosub
+  niveaux: [RANDO]
+  titre: "Randosub · randonnée subaquatique"
+  titreMobile: "Randosub"
+  chapitre: "Randosub"
+  # Pas de MFT : la source est une fiche de préconisations fédérales.
+  sourceBureau: "D’après la fiche conseil n°4 Randosub, version consultée en"
+  sourceMobile: "Fiche conseil n°4, consultée en"
+  arrivee: "Ce que dit la fiche conseil"
+- id: PE12
+  libelle: PE12
+  niveaux: [PE12]
+  titre: "PE12 · encadré à 12 m"
+  titreMobile: "PE12"
+  chapitre: "PE12"
+- id: N1
+  libelle: N1
+  niveaux: [N1]
+  titre: "N1 · PE20 encadré à 20 m"
+  titreMobile: "N1 · PE20"
+  chapitre: "N1"
+  comparer: N1
+- id: PA12
+  libelle: PA12
+  niveaux: [PA12]
+  titre: "PA12 · autonome à 12 m"
+  titreMobile: "PA12"
+  chapitre: "PA12"
+- id: N2
+  libelle: N2
+  niveaux: [PA20, PE40, PA20+PE40]
+  titre: "N2 · PA20 autonome à 20 m, PE40 encadré à 40 m"
+  titreMobile: "N2 · PA20 et PE40"
+  chapitre: "N2"
+  comparer: N2
+- id: N3
+  libelle: N3
+  niveaux: [PA40, PE60, PA60, PA40+PE60+PA60]
+  titre: "N3 · PA40 autonome à 40 m, PE60 encadré à 60 m, PA60 autonome à 60 m"
+  titreMobile: "N3 · PA40, PE60 et PA60"
+  chapitre: "N3"
+  comparer: N3
+- id: N4
+  libelle: GP-N4
+  niveaux: [N4]
+  titre: "GP-N4 · guide de palanquée en exploration"
+  titreMobile: "GP-N4"
+  chapitre: "GP-N4"
+- id: N5
+  libelle: DP-N5
+  niveaux: [N5]
+  titre: "DP-N5 · directeur de plongée en exploration"
+  titreMobile: "DP-N5"
+  chapitre: "DP-N5"
+- id: RIFAP
+  libelle: RIFAP
+  niveaux: [RIFAP]
+  titre: "RIFAP · réactions et intervention face à un accident de plongée"
+  titreMobile: "RIFAP"
+  chapitre: "RIFAP"
+  # Pas de MFT : la source est le référentiel de formation fédéral RIFA-Plongée.
+  sourceBureau: "D’après le référentiel RIFA-Plongée, version consultée en"
+  sourceMobile: "Référentiel RIFA-Plongée, consulté en"
+  arrivee: "Critères de réalisation ou d’évaluation"

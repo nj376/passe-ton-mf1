@@ -1,0 +1,2669 @@
+{
+ "niveaux": [
+  {
+   "id": "randosub",
+   "court": "Randosub",
+   "nom": "Randonnée subaquatique",
+   "source": "01 - Randonnée subaquatique/mindmaps/MindMaps_Randosub.drawio",
+   "empreinte": "f47aadf3b50d4f43436c111310e7d825489a708d",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/randosub/cadre-reglementaire.svg",
+     "mini": "/mindmaps/randosub/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Randosub_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2296.0,
+     "sections": [
+      {
+       "titre": "C'est quoi, la Randosub ?",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 402.0
+      },
+      {
+       "titre": "Conditions d'accès",
+       "x": 0.0,
+       "y": 686.0,
+       "l": 700.0,
+       "h": 210.0
+      },
+      {
+       "titre": "Évoluer en Randosub encadrée",
+       "x": 0.0,
+       "y": 960.0,
+       "l": 700.0,
+       "h": 484.0
+      },
+      {
+       "titre": "Évoluer en Randosub autonome",
+       "x": 0.0,
+       "y": 1508.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Le matériel à tenir sur le lieu de mise à l'eau",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Organisation matérielle",
+       "x": 1280.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 150.0
+      },
+      {
+       "titre": "Qui encadre ?",
+       "x": 1280.0,
+       "y": 856.0,
+       "l": 700.0,
+       "h": 402.0
+      },
+      {
+       "titre": "Encadrée ou autonome : ce qui change",
+       "x": 0.0,
+       "y": 1958.0,
+       "l": 1180.0,
+       "h": 336.0
+      },
+      {
+       "titre": "Devenir Guide de Randosub par équivalence",
+       "x": 1250.0,
+       "y": 1958.0,
+       "l": 730.0,
+       "h": 276.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/randosub/competences.svg",
+     "mini": "/mindmaps/randosub/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Randosub_competences.png",
+     "largeur": 1982.0,
+     "hauteur": 1540.0,
+     "sections": [
+      {
+       "titre": "Le randonneur encadré découvre",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 440.0
+      },
+      {
+       "titre": "Côté Guide de Randosub",
+       "x": 0.0,
+       "y": 724.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "L'attestation de randonneur : 4 compétences",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Ce que vise la formation autonome",
+       "x": 1280.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Ce que la fiche ne dit pas",
+       "x": 1280.0,
+       "y": 960.0,
+       "l": 700.0,
+       "h": 150.0
+      },
+      {
+       "titre": "De la découverte à l'autonomie",
+       "x": 0.0,
+       "y": 1202.0,
+       "l": 1980.0,
+       "h": 336.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/randosub/connaissances-theoriques.svg",
+     "mini": "/mindmaps/randosub/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Randosub_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 1328.0,
+     "sections": [
+      {
+       "titre": "Le milieu",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 276.0
+      },
+      {
+       "titre": "Respirer et faire une apnée",
+       "x": 0.0,
+       "y": 560.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Flotter et se protéger",
+       "x": 0.0,
+       "y": 878.0,
+       "l": 700.0,
+       "h": 276.0
+      },
+      {
+       "titre": "La sécurité en surface",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 506.0
+      },
+      {
+       "titre": "La fédération",
+       "x": 1280.0,
+       "y": 790.0,
+       "l": 700.0,
+       "h": 276.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jeunes-plongeurs",
+   "court": "Jeunes plongeurs",
+   "nom": "Jeunes plongeurs",
+   "source": "02 - Jeunes Plongeurs/mindmaps/MindMaps_Jeunes_plongeurs.drawio",
+   "empreinte": "600024467fa74eed336cf12a3bf132224a1b42c1",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/jeunes-plongeurs/cadre-reglementaire.svg",
+     "mini": "/mindmaps/jeunes-plongeurs/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Jeunes-plongeurs_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2776.0,
+     "sections": [
+      {
+       "titre": "Six brevets, deux familles",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 692.0
+      },
+      {
+       "titre": "Les qualifications complémentaires",
+       "x": 0.0,
+       "y": 976.0,
+       "l": 700.0,
+       "h": 588.0
+      },
+      {
+       "titre": "Le parcours adolescents",
+       "x": 0.0,
+       "y": 1628.0,
+       "l": 700.0,
+       "h": 462.0
+      },
+      {
+       "titre": "La règle d'or",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 538.0,
+       "l": 700.0,
+       "h": 276.0
+      },
+      {
+       "titre": "Conditions de pratique",
+       "x": 1280.0,
+       "y": 878.0,
+       "l": 700.0,
+       "h": 462.0
+      },
+      {
+       "titre": "Jeune en situation de handicap",
+       "x": 1280.0,
+       "y": 1404.0,
+       "l": 700.0,
+       "h": 150.0
+      },
+      {
+       "titre": "Milieu naturel et fosse de plus de 6 m : qui va où, avec qui",
+       "x": 0.0,
+       "y": 2182.0,
+       "l": 1180.0,
+       "h": 592.0
+      },
+      {
+       "titre": "Les textes à connaître",
+       "x": 1250.0,
+       "y": 2182.0,
+       "l": 730.0,
+       "h": 288.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/jeunes-plongeurs/competences.svg",
+     "mini": "/mindmaps/jeunes-plongeurs/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Jeunes-plongeurs_competences.png",
+     "largeur": 1982.0,
+     "hauteur": 4850.0,
+     "sections": [
+      {
+       "titre": "1 · S'équiper et se déséquiper",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 0
+      },
+      {
+       "titre": "2 · Se mettre à l'eau et en sortir",
+       "x": 0.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 0
+      },
+      {
+       "titre": "3 · S'immerger",
+       "x": 0.0,
+       "y": 1064.0,
+       "l": 700.0,
+       "h": 402.0,
+       "groupe": 0
+      },
+      {
+       "titre": "4 · Se propulser",
+       "x": 0.0,
+       "y": 1530.0,
+       "l": 700.0,
+       "h": 380.0,
+       "groupe": 0
+      },
+      {
+       "titre": "5 · Se ventiler",
+       "x": 0.0,
+       "y": 1974.0,
+       "l": 700.0,
+       "h": 402.0,
+       "groupe": 0
+      },
+      {
+       "titre": "6 · Respecter le milieu",
+       "x": 0.0,
+       "y": 2440.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 0
+      },
+      {
+       "titre": "7 · Communiquer",
+       "x": 0.0,
+       "y": 2862.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 0
+      },
+      {
+       "titre": "Et le plongeur d'or ?",
+       "x": 0.0,
+       "y": 3284.0,
+       "l": 700.0,
+       "h": 380.0,
+       "groupe": 0
+      },
+      {
+       "titre": "1 · S'équiper et se déséquiper",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 380.0,
+       "groupe": 1
+      },
+      {
+       "titre": "2 · Se mettre à l'eau et en sortir",
+       "x": 1280.0,
+       "y": 664.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 1
+      },
+      {
+       "titre": "3 · S'immerger",
+       "x": 1280.0,
+       "y": 1086.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 1
+      },
+      {
+       "titre": "4 · Se propulser",
+       "x": 1280.0,
+       "y": 1508.0,
+       "l": 700.0,
+       "h": 336.0,
+       "groupe": 1
+      },
+      {
+       "titre": "5 · Se ventiler",
+       "x": 1280.0,
+       "y": 1908.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 1
+      },
+      {
+       "titre": "6 · S'équilibrer",
+       "x": 1280.0,
+       "y": 2330.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 1
+      },
+      {
+       "titre": "7 · Respecter le milieu",
+       "x": 1280.0,
+       "y": 2752.0,
+       "l": 700.0,
+       "h": 314.0,
+       "groupe": 1
+      },
+      {
+       "titre": "8 · Communiquer",
+       "x": 1280.0,
+       "y": 3130.0,
+       "l": 700.0,
+       "h": 402.0,
+       "groupe": 1
+      },
+      {
+       "titre": "9 · Retourner en surface",
+       "x": 1280.0,
+       "y": 3596.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 1
+      },
+      {
+       "titre": "10 · Évoluer en sécurité",
+       "x": 1280.0,
+       "y": 4018.0,
+       "l": 700.0,
+       "h": 358.0,
+       "groupe": 1
+      },
+      {
+       "titre": "Les qualifications en un coup d'œil",
+       "x": 0.0,
+       "y": 4468.0,
+       "l": 1980.0,
+       "h": 380.0
+      }
+     ],
+     "groupes": [
+      {
+       "titre": "Jeunes bulles : 7 compétences, sans scaphandre",
+       "x": 0.0,
+       "y": 170.0,
+       "l": 700.0,
+       "h": 3494.0
+      },
+      {
+       "titre": "Bronze et argent : 10 compétences, en scaphandre",
+       "x": 1280.0,
+       "y": 170.0,
+       "l": 700.0,
+       "h": 4206.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/jeunes-plongeurs/connaissances-theoriques.svg",
+     "mini": "/mindmaps/jeunes-plongeurs/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Jeunes-plongeurs_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 1984.0,
+     "sections": [
+      {
+       "titre": "Les oreilles et la pression",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Respirer, flotter, ne pas se noyer",
+       "x": 0.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 276.0
+      },
+      {
+       "titre": "Le matériel",
+       "x": 0.0,
+       "y": 982.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Le milieu et l'environnement",
+       "x": 0.0,
+       "y": 1300.0,
+       "l": 700.0,
+       "h": 298.0
+      },
+      {
+       "titre": "Comment on transmet",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Signes et procédures",
+       "x": 1280.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Mises à l'eau et sécurité",
+       "x": 1280.0,
+       "y": 960.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Réglementation",
+       "x": 1280.0,
+       "y": 1152.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Plus tard, avec les qualifications",
+       "x": 1280.0,
+       "y": 1344.0,
+       "l": 700.0,
+       "h": 172.0
+      },
+      {
+       "titre": "Le tableau du MFT, brevet par brevet",
+       "x": 0.0,
+       "y": 1690.0,
+       "l": 1980.0,
+       "h": 292.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bapteme",
+   "court": "Baptême",
+   "nom": "Baptême",
+   "source": "03 - Baptême/mindmaps/MindMaps_Bapteme.drawio",
+   "empreinte": "a4933cba5bc0a399beb970846e88192b481447d0",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/bapteme/cadre-reglementaire.svg",
+     "mini": "/mindmaps/bapteme/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Bapteme_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 1638.0,
+     "sections": [
+      {
+       "titre": "Ce que dit le Code du sport",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 380.0
+      },
+      {
+       "titre": "Qu'est-ce qu'un baptême ?",
+       "x": 0.0,
+       "y": 664.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "En piscine ou fosse de 6 m maximum",
+       "x": 0.0,
+       "y": 982.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Ce que demande la FFESSM",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Les baptêmes d'enfants (MFT Jeunes plongeurs)",
+       "x": 1280.0,
+       "y": 516.0,
+       "l": 700.0,
+       "h": 418.0
+      },
+      {
+       "titre": "Les textes de référence",
+       "x": 1280.0,
+       "y": 998.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Qui peut baptiser, où et combien ?",
+       "x": 0.0,
+       "y": 1344.0,
+       "l": 1980.0,
+       "h": 292.0
+      }
+     ]
+    },
+    {
+     "id": "deroule",
+     "titre": "Déroulé",
+     "page": "Déroulé",
+     "svg": "/mindmaps/bapteme/deroule.svg",
+     "mini": "/mindmaps/bapteme/deroule-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Bapteme_deroule.png",
+     "largeur": 2034.0,
+     "hauteur": 1474.0,
+     "sections": [
+      {
+       "titre": "1 · Accueil et entretien (5 à 10 min)",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 460.0,
+       "h": 544.0
+      },
+      {
+       "titre": "2 · Équipement (10 min)",
+       "x": 524.0,
+       "y": 220.0,
+       "l": 460.0,
+       "h": 380.0
+      },
+      {
+       "titre": "3 · Briefing (5 à 10 min)",
+       "x": 1048.0,
+       "y": 220.0,
+       "l": 460.0,
+       "h": 566.0
+      },
+      {
+       "titre": "4 · Mise à l'eau et surface (5 min)",
+       "x": 1572.0,
+       "y": 220.0,
+       "l": 460.0,
+       "h": 418.0
+      },
+      {
+       "titre": "5 · Descente et plongée (15 à 25 min)",
+       "x": 0.0,
+       "y": 906.0,
+       "l": 460.0,
+       "h": 566.0
+      },
+      {
+       "titre": "6 · Remontée et sortie (5 min)",
+       "x": 524.0,
+       "y": 906.0,
+       "l": 460.0,
+       "h": 358.0
+      },
+      {
+       "titre": "7 · Débriefing (5 à 10 min)",
+       "x": 1048.0,
+       "y": 906.0,
+       "l": 460.0,
+       "h": 566.0
+      },
+      {
+       "titre": "Le fil conducteur",
+       "x": 1572.0,
+       "y": 906.0,
+       "l": 460.0,
+       "h": 380.0
+      }
+     ]
+    },
+    {
+     "id": "securite-et-pieges",
+     "titre": "Sécurité et pièges",
+     "page": "Sécurité et pièges",
+     "svg": "/mindmaps/bapteme/securite-et-pieges.svg",
+     "mini": "/mindmaps/bapteme/securite-et-pieges-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_Bapteme_securite-et-pieges.png",
+     "largeur": 1982.0,
+     "hauteur": 1430.0,
+     "sections": [
+      {
+       "titre": "Les points de sécurité à ne jamais oublier",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 692.0
+      },
+      {
+       "titre": "Les erreurs classiques de l'encadrant",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 692.0
+      },
+      {
+       "titre": "Pour évaluer la compréhension",
+       "x": 0.0,
+       "y": 1004.0,
+       "l": 1980.0,
+       "h": 424.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pe12",
+   "court": "PE12",
+   "nom": "PE12",
+   "source": "04 - PE12/mindmaps/MindMaps_PE12.drawio",
+   "empreinte": "83599412131d3b27d135bc16008b352a10b9ad39",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/pe12/cadre-reglementaire.svg",
+     "mini": "/mindmaps/pe12/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_PE12_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 1700.0,
+     "sections": [
+      {
+       "titre": "Prérogatives",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "L'esprit de la qualification",
+       "x": 0.0,
+       "y": 516.0,
+       "l": 700.0,
+       "h": 314.0
+      },
+      {
+       "titre": "Conditions d'accès",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Les 3 plongées d'initiation",
+       "x": 1280.0,
+       "y": 516.0,
+       "l": 700.0,
+       "h": 462.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 1042.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "PE12 et PA12 : ne pas confondre",
+       "x": 0.0,
+       "y": 1366.0,
+       "l": 1180.0,
+       "h": 332.0
+      },
+      {
+       "titre": "Mises à jour du MFT (version mai 2024)",
+       "x": 1250.0,
+       "y": 1366.0,
+       "l": 730.0,
+       "h": 200.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/pe12/competences.svg",
+     "mini": "/mindmaps/pe12/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_PE12_competences.png",
+     "largeur": 1982.0,
+     "hauteur": 1364.0,
+     "sections": [
+      {
+       "titre": "Avant et à l'entrée dans l'eau",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 270.0
+      },
+      {
+       "titre": "Sous l'eau",
+       "x": 0.0,
+       "y": 554.0,
+       "l": 700.0,
+       "h": 210.0
+      },
+      {
+       "titre": "Le retour",
+       "x": 0.0,
+       "y": 828.0,
+       "l": 700.0,
+       "h": 106.0
+      },
+      {
+       "titre": "Avec les autres",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Le fil rouge des 3 plongées",
+       "x": 1280.0,
+       "y": 412.0,
+       "l": 700.0,
+       "h": 188.0
+      },
+      {
+       "titre": "Ce que le MFT ne dit pas",
+       "x": 1280.0,
+       "y": 664.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Une plongée PE12, du bord au retour",
+       "x": 0.0,
+       "y": 1026.0,
+       "l": 1980.0,
+       "h": 336.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/pe12/connaissances-theoriques.svg",
+     "mini": "/mindmaps/pe12/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_PE12_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 1136.0,
+     "sections": [
+      {
+       "titre": "Le cadre de la plongée",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Le matériel",
+       "x": 0.0,
+       "y": 538.0,
+       "l": 700.0,
+       "h": 150.0
+      },
+      {
+       "titre": "Les signes",
+       "x": 0.0,
+       "y": 752.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Descendre et remonter",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Le milieu et la sécurité",
+       "x": 1280.0,
+       "y": 516.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Et après ?",
+       "x": 1280.0,
+       "y": 812.0,
+       "l": 700.0,
+       "h": 150.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pa12",
+   "court": "PA12",
+   "nom": "PA12",
+   "source": "05 - PA12/mindmaps/MindMaps_PA12.drawio",
+   "empreinte": "6f576af183b3a72f0e26b901e703f23354a23f8a",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/pa12/cadre-reglementaire.svg",
+     "mini": "/mindmaps/pa12/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_PA12_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 1930.0,
+     "sections": [
+      {
+       "titre": "Statut de la qualification",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Prérogatives",
+       "x": 0.0,
+       "y": 516.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Et pour un mineur ?",
+       "x": 0.0,
+       "y": 812.0,
+       "l": 700.0,
+       "h": 336.0
+      },
+      {
+       "titre": "Conditions d'accès à la formation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 336.0
+      },
+      {
+       "titre": "Formation et évaluation",
+       "x": 1280.0,
+       "y": 1042.0,
+       "l": 700.0,
+       "h": 462.0
+      },
+      {
+       "titre": "N1 → PA12 : ce qui change",
+       "x": 0.0,
+       "y": 1596.0,
+       "l": 1180.0,
+       "h": 332.0
+      },
+      {
+       "titre": "Mises à jour du MFT (version mai 2026)",
+       "x": 1250.0,
+       "y": 1596.0,
+       "l": 730.0,
+       "h": 288.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/pa12/competences.svg",
+     "mini": "/mindmaps/pa12/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_PA12_competences.png",
+     "largeur": 1982.0,
+     "hauteur": 1704.0,
+     "sections": [
+      {
+       "titre": "1 · Organiser et gérer la plongée selon les consignes du DP",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 884.0
+      },
+      {
+       "titre": "2 · Respecter le milieu et l'environnement",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 484.0
+      },
+      {
+       "titre": "3 · Intervenir et porter assistance à un plongeur en difficulté",
+       "x": 1280.0,
+       "y": 768.0,
+       "l": 700.0,
+       "h": 550.0
+      },
+      {
+       "titre": "Les compétences en un coup d'œil",
+       "x": 0.0,
+       "y": 1410.0,
+       "l": 1980.0,
+       "h": 292.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/pa12/connaissances-theoriques.svg",
+     "mini": "/mindmaps/pa12/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_PA12_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 1600.0,
+     "sections": [
+      {
+       "titre": "Accidents",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Procédures de désaturation",
+       "x": 0.0,
+       "y": 538.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Milieu et environnement",
+       "x": 0.0,
+       "y": 856.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Le socle et l'évaluation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Réglementation",
+       "x": 1280.0,
+       "y": 516.0,
+       "l": 700.0,
+       "h": 336.0
+      },
+      {
+       "titre": "Le tableau du MFT en un coup d'œil",
+       "x": 0.0,
+       "y": 1306.0,
+       "l": 1980.0,
+       "h": 292.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "court": "N1",
+   "nom": "Niveau 1",
+   "source": "06 - N1/mindmaps/MindMaps_N1.drawio",
+   "empreinte": "7c9c34d1492c47dfa943bd46a42f21aff235dd28",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/n1/cadre-reglementaire.svg",
+     "mini": "/mindmaps/n1/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N1_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 1752.0,
+     "sections": [
+      {
+       "titre": "Le brevet",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Prérogatives",
+       "x": 0.0,
+       "y": 412.0,
+       "l": 700.0,
+       "h": 158.0
+      },
+      {
+       "titre": "Conditions d'accès à la formation",
+       "x": 0.0,
+       "y": 634.0,
+       "l": 700.0,
+       "h": 292.0
+      },
+      {
+       "titre": "Évaluation",
+       "x": 0.0,
+       "y": 990.0,
+       "l": 700.0,
+       "h": 292.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 654.0
+      },
+      {
+       "titre": "Fiche de suivi (simple proposition)",
+       "x": 1280.0,
+       "y": 938.0,
+       "l": 700.0,
+       "h": 262.0
+      },
+      {
+       "titre": "N1 → N2 : ce qui change",
+       "x": 0.0,
+       "y": 1374.0,
+       "l": 1038.0,
+       "h": 376.0
+      },
+      {
+       "titre": "Mises à jour du MFT (version décembre 2025)",
+       "x": 1110.0,
+       "y": 1374.0,
+       "l": 870.0,
+       "h": 288.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/n1/competences.svg",
+     "mini": "/mindmaps/n1/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N1_competences.png",
+     "largeur": 2222.0,
+     "hauteur": 3294.0,
+     "sections": [
+      {
+       "titre": "S'équiper et se déséquiper",
+       "x": 0.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 554.0
+      },
+      {
+       "titre": "Se mettre à l'eau et sortir de l'eau",
+       "x": 0.0,
+       "y": 1148.0,
+       "l": 700.0,
+       "h": 488.0
+      },
+      {
+       "titre": "Communiquer",
+       "x": 0.0,
+       "y": 1700.0,
+       "l": 700.0,
+       "h": 444.0
+      },
+      {
+       "titre": "Retourner en surface",
+       "x": 0.0,
+       "y": 2208.0,
+       "l": 700.0,
+       "h": 664.0
+      },
+      {
+       "titre": "S'immerger",
+       "x": 760.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 444.0
+      },
+      {
+       "titre": "Se propulser",
+       "x": 760.0,
+       "y": 1038.0,
+       "l": 700.0,
+       "h": 510.0
+      },
+      {
+       "titre": "Se ventiler",
+       "x": 760.0,
+       "y": 1612.0,
+       "l": 700.0,
+       "h": 576.0
+      },
+      {
+       "titre": "S'équilibrer",
+       "x": 760.0,
+       "y": 2252.0,
+       "l": 700.0,
+       "h": 466.0
+      },
+      {
+       "titre": "Respecter le milieu et l'environnement",
+       "x": 760.0,
+       "y": 2782.0,
+       "l": 700.0,
+       "h": 510.0
+      },
+      {
+       "titre": "Évoluer en sécurité",
+       "x": 1520.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 598.0
+      },
+      {
+       "titre": "Points de vigilance",
+       "x": 1520.0,
+       "y": 1212.0,
+       "l": 700.0,
+       "h": 416.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/n1/connaissances-theoriques.svg",
+     "mini": "/mindmaps/n1/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N1_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 1694.0,
+     "sections": [
+      {
+       "titre": "Notions de physique",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 344.0
+      },
+      {
+       "titre": "Accidents",
+       "x": 0.0,
+       "y": 628.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Froid et dangers du milieu",
+       "x": 0.0,
+       "y": 946.0,
+       "l": 700.0,
+       "h": 192.0
+      },
+      {
+       "titre": "Procédures de désaturation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 302.0
+      },
+      {
+       "titre": "Réglementation",
+       "x": 1280.0,
+       "y": 586.0,
+       "l": 700.0,
+       "h": 260.0
+      },
+      {
+       "titre": "Milieu et environnement",
+       "x": 1280.0,
+       "y": 910.0,
+       "l": 700.0,
+       "h": 216.0
+      },
+      {
+       "titre": "Comment on évalue la théorie",
+       "x": 0.0,
+       "y": 1230.0,
+       "l": 1980.0,
+       "h": 150.0
+      },
+      {
+       "titre": "Lecture croisée (outil de préparation, pas un texte du MFT)",
+       "x": 0.0,
+       "y": 1472.0,
+       "l": 1980.0,
+       "h": 220.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "court": "N2",
+   "nom": "Niveau 2",
+   "source": "07 - N2/mindmaps/MindMaps_N2.drawio",
+   "empreinte": "cc4d3f715b214e840f5888d8d2810d2a4d75636f",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/n2/cadre-reglementaire.svg",
+     "mini": "/mindmaps/n2/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N2_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2122.0,
+     "sections": [
+      {
+       "titre": "Le brevet",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 212.0
+      },
+      {
+       "titre": "Prérogatives PE40",
+       "x": 0.0,
+       "y": 496.0,
+       "l": 700.0,
+       "h": 302.0
+      },
+      {
+       "titre": "Prérogatives PA20",
+       "x": 0.0,
+       "y": 862.0,
+       "l": 700.0,
+       "h": 312.0
+      },
+      {
+       "titre": "Cadre commun d'exercice",
+       "x": 0.0,
+       "y": 1238.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Évaluation",
+       "x": 0.0,
+       "y": 1430.0,
+       "l": 700.0,
+       "h": 198.0
+      },
+      {
+       "titre": "Conditions d'accès à la formation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 384.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 668.0,
+       "l": 700.0,
+       "h": 598.0
+      },
+      {
+       "titre": "Fiche de suivi (simple proposition)",
+       "x": 1280.0,
+       "y": 1330.0,
+       "l": 700.0,
+       "h": 158.0
+      },
+      {
+       "titre": "N1 → N2 : ce qui change",
+       "x": 0.0,
+       "y": 1720.0,
+       "l": 1038.0,
+       "h": 400.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/n2/competences.svg",
+     "mini": "/mindmaps/n2/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N2_competences.png",
+     "largeur": 2222.0,
+     "hauteur": 3372.0,
+     "sections": [
+      {
+       "titre": "Être attentif au matériel de ses équipiers",
+       "x": 0.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 576.0
+      },
+      {
+       "titre": "Évoluer en autonomie",
+       "x": 0.0,
+       "y": 1170.0,
+       "l": 700.0,
+       "h": 620.0
+      },
+      {
+       "titre": "Planifier la plongée selon les consignes du DP",
+       "x": 0.0,
+       "y": 1854.0,
+       "l": 700.0,
+       "h": 598.0
+      },
+      {
+       "titre": "Intervenir et porter assistance à un plongeur en difficulté",
+       "x": 0.0,
+       "y": 2516.0,
+       "l": 700.0,
+       "h": 620.0
+      },
+      {
+       "titre": "S'équiper et se déséquiper, se mettre à l'eau et en sortir",
+       "x": 760.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 554.0
+      },
+      {
+       "titre": "S'immerger, se propulser, se ventiler",
+       "x": 760.0,
+       "y": 1148.0,
+       "l": 700.0,
+       "h": 620.0
+      },
+      {
+       "titre": "Respecter le milieu et l'environnement",
+       "x": 760.0,
+       "y": 1832.0,
+       "l": 700.0,
+       "h": 488.0
+      },
+      {
+       "titre": "Se ventiler et s'équilibrer",
+       "x": 1520.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 532.0
+      },
+      {
+       "titre": "Communiquer avec le guide de palanquée",
+       "x": 1520.0,
+       "y": 1126.0,
+       "l": 700.0,
+       "h": 510.0
+      },
+      {
+       "titre": "Retourner en surface",
+       "x": 1520.0,
+       "y": 1700.0,
+       "l": 700.0,
+       "h": 554.0
+      },
+      {
+       "titre": "Intervenir en relai sur un équipier en difficulté",
+       "x": 1520.0,
+       "y": 2318.0,
+       "l": 700.0,
+       "h": 532.0
+      },
+      {
+       "titre": "Points de vigilance",
+       "x": 0.0,
+       "y": 3220.0,
+       "l": 2220.0,
+       "h": 150.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/n2/connaissances-theoriques.svg",
+     "mini": "/mindmaps/n2/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N2_connaissances-theoriques.png",
+     "largeur": 1842.0,
+     "hauteur": 2984.0,
+     "sections": [
+      {
+       "titre": "Théorie de l'activité",
+       "x": 0.0,
+       "y": 474.0,
+       "l": 1840.0,
+       "h": 306.0
+      },
+      {
+       "titre": "Accidents",
+       "x": 0.0,
+       "y": 828.0,
+       "l": 1840.0,
+       "h": 262.0
+      },
+      {
+       "titre": "Procédures de désaturation",
+       "x": 0.0,
+       "y": 1138.0,
+       "l": 1840.0,
+       "h": 262.0
+      },
+      {
+       "titre": "Matériel",
+       "x": 0.0,
+       "y": 1448.0,
+       "l": 1840.0,
+       "h": 240.0
+      },
+      {
+       "titre": "Réglementation",
+       "x": 0.0,
+       "y": 1736.0,
+       "l": 1840.0,
+       "h": 306.0
+      },
+      {
+       "titre": "Milieu et environnement",
+       "x": 0.0,
+       "y": 2090.0,
+       "l": 1840.0,
+       "h": 218.0
+      },
+      {
+       "titre": "Comment on évalue la théorie",
+       "x": 0.0,
+       "y": 2416.0,
+       "l": 1840.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Lecture croisée (outil de préparation, pas un texte du MFT)",
+       "x": 0.0,
+       "y": 2740.0,
+       "l": 1840.0,
+       "h": 242.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "court": "N3",
+   "nom": "Niveau 3",
+   "source": "08 - N3/mindmaps/MindMaps_N3.drawio",
+   "empreinte": "3f617359e4477f888f38924893c8261ddca85823",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/n3/cadre-reglementaire.svg",
+     "mini": "/mindmaps/n3/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N3_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2236.0,
+     "sections": [
+      {
+       "titre": "Le brevet",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 396.0
+      },
+      {
+       "titre": "Prérogatives PE60",
+       "x": 0.0,
+       "y": 680.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Prérogatives PA40",
+       "x": 0.0,
+       "y": 872.0,
+       "l": 700.0,
+       "h": 302.0
+      },
+      {
+       "titre": "Prérogatives PA60 · niveau 3",
+       "x": 0.0,
+       "y": 1238.0,
+       "l": 700.0,
+       "h": 242.0
+      },
+      {
+       "titre": "Évaluation",
+       "x": 0.0,
+       "y": 1544.0,
+       "l": 700.0,
+       "h": 178.0
+      },
+      {
+       "titre": "Conditions d'accès à la formation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 360.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 644.0,
+       "l": 700.0,
+       "h": 738.0
+      },
+      {
+       "titre": "Fiche de suivi (simple proposition)",
+       "x": 1280.0,
+       "y": 1446.0,
+       "l": 700.0,
+       "h": 242.0
+      },
+      {
+       "titre": "N2 → N3 : ce qui change",
+       "x": 0.0,
+       "y": 1814.0,
+       "l": 1038.0,
+       "h": 420.0
+      },
+      {
+       "titre": "Mises à jour du MFT (version décembre 2025)",
+       "x": 1110.0,
+       "y": 1814.0,
+       "l": 870.0,
+       "h": 376.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/n3/competences.svg",
+     "mini": "/mindmaps/n3/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N3_competences.png",
+     "largeur": 2222.0,
+     "hauteur": 2762.0,
+     "sections": [
+      {
+       "titre": "Planifier la plongée",
+       "x": 0.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 686.0
+      },
+      {
+       "titre": "Évoluer en autonomie (0 à 40 m)",
+       "x": 0.0,
+       "y": 1280.0,
+       "l": 700.0,
+       "h": 642.0
+      },
+      {
+       "titre": "Intervenir et porter assistance à un plongeur en difficulté",
+       "x": 0.0,
+       "y": 1986.0,
+       "l": 700.0,
+       "h": 774.0
+      },
+      {
+       "titre": "S'adapter à la profondeur",
+       "x": 760.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 620.0
+      },
+      {
+       "titre": "Respecter le milieu et l'environnement",
+       "x": 760.0,
+       "y": 1324.0,
+       "l": 700.0,
+       "h": 510.0
+      },
+      {
+       "titre": "Ce que valide chaque certification",
+       "x": 760.0,
+       "y": 1898.0,
+       "l": 700.0,
+       "h": 258.0
+      },
+      {
+       "titre": "Organiser la plongée",
+       "x": 1520.0,
+       "y": 530.0,
+       "l": 700.0,
+       "h": 642.0
+      },
+      {
+       "titre": "Évoluer en autonomie (0 à 60 m)",
+       "x": 1520.0,
+       "y": 1236.0,
+       "l": 700.0,
+       "h": 576.0
+      },
+      {
+       "titre": "RIFA Plongée",
+       "x": 1520.0,
+       "y": 1876.0,
+       "l": 700.0,
+       "h": 280.0
+      },
+      {
+       "titre": "Points de vigilance",
+       "x": 1520.0,
+       "y": 2220.0,
+       "l": 700.0,
+       "h": 460.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/n3/connaissances-theoriques.svg",
+     "mini": "/mindmaps/n3/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_N3_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 2294.0,
+     "sections": [
+      {
+       "titre": "Théorie de l'activité",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 236.0
+      },
+      {
+       "titre": "Accidents",
+       "x": 0.0,
+       "y": 520.0,
+       "l": 700.0,
+       "h": 278.0
+      },
+      {
+       "titre": "Procédures de désaturation",
+       "x": 0.0,
+       "y": 862.0,
+       "l": 700.0,
+       "h": 258.0
+      },
+      {
+       "titre": "Réglementation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 256.0
+      },
+      {
+       "titre": "Milieu et environnement",
+       "x": 1280.0,
+       "y": 540.0,
+       "l": 700.0,
+       "h": 236.0
+      },
+      {
+       "titre": "Pas de rubrique matériel",
+       "x": 1280.0,
+       "y": 840.0,
+       "l": 700.0,
+       "h": 192.0
+      },
+      {
+       "titre": "Le cas du PE60",
+       "x": 1280.0,
+       "y": 1096.0,
+       "l": 700.0,
+       "h": 346.0
+      },
+      {
+       "titre": "Comment on évalue la théorie",
+       "x": 0.0,
+       "y": 1534.0,
+       "l": 1980.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Lecture croisée (outil de préparation, pas un texte du MFT)",
+       "x": 0.0,
+       "y": 1754.0,
+       "l": 1980.0,
+       "h": 220.0
+      },
+      {
+       "titre": "La désaturation, une montée en trois marches",
+       "x": 0.0,
+       "y": 2066.0,
+       "l": 1980.0,
+       "h": 226.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "court": "GP-N4",
+   "nom": "Niveau 4",
+   "source": "09 - N4/mindmaps/MindMaps_N4.drawio",
+   "empreinte": "77da076e493f308053d1454d880cb8c5c7c342c8",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/n4/cadre-reglementaire.svg",
+     "mini": "/mindmaps/n4/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_GP-N4_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2944.0,
+     "sections": [
+      {
+       "titre": "Statut du brevet",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 242.0
+      },
+      {
+       "titre": "Prérogatives",
+       "x": 0.0,
+       "y": 526.0,
+       "l": 700.0,
+       "h": 342.0
+      },
+      {
+       "titre": "Accès à l'examen",
+       "x": 0.0,
+       "y": 932.0,
+       "l": 700.0,
+       "h": 352.0
+      },
+      {
+       "titre": "Les 4 attestations d'aptitude (A1 à A4)",
+       "x": 0.0,
+       "y": 1348.0,
+       "l": 700.0,
+       "h": 460.0
+      },
+      {
+       "titre": "Conservation des groupes non acquis",
+       "x": 0.0,
+       "y": 1872.0,
+       "l": 700.0,
+       "h": 482.0
+      },
+      {
+       "titre": "Organisation de l'examen",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 426.0
+      },
+      {
+       "titre": "Le jury",
+       "x": 1280.0,
+       "y": 710.0,
+       "l": 700.0,
+       "h": 506.0
+      },
+      {
+       "titre": "Notation et obtention",
+       "x": 1280.0,
+       "y": 1280.0,
+       "l": 700.0,
+       "h": 470.0
+      },
+      {
+       "titre": "Délivrance du diplôme",
+       "x": 1280.0,
+       "y": 1814.0,
+       "l": 700.0,
+       "h": 338.0
+      },
+      {
+       "titre": "Conditions matérielles des épreuves",
+       "x": 1280.0,
+       "y": 2216.0,
+       "l": 700.0,
+       "h": 258.0
+      },
+      {
+       "titre": "Cursus plongeur → N4 : ce qui change",
+       "x": 0.0,
+       "y": 2566.0,
+       "l": 1038.0,
+       "h": 332.0
+      },
+      {
+       "titre": "Mises à jour du MFT (version mai 2026)",
+       "x": 1110.0,
+       "y": 2566.0,
+       "l": 870.0,
+       "h": 376.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/n4/competences.svg",
+     "mini": "/mindmaps/n4/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_GP-N4_competences.png",
+     "largeur": 2222.0,
+     "hauteur": 2710.0,
+     "sections": [
+      {
+       "titre": "Accueillir les plongeurs",
+       "x": 0.0,
+       "y": 380.0,
+       "l": 700.0,
+       "h": 440.0
+      },
+      {
+       "titre": "Organiser et sécuriser l'activité",
+       "x": 0.0,
+       "y": 884.0,
+       "l": 700.0,
+       "h": 440.0
+      },
+      {
+       "titre": "Connaissances théoriques",
+       "x": 0.0,
+       "y": 1388.0,
+       "l": 700.0,
+       "h": 272.0
+      },
+      {
+       "titre": "Guider une palanquée en exploration",
+       "x": 760.0,
+       "y": 380.0,
+       "l": 700.0,
+       "h": 148.0
+      },
+      {
+       "titre": "Référentiel de l'épreuve n° 4",
+       "x": 760.0,
+       "y": 592.0,
+       "l": 700.0,
+       "h": 624.0
+      },
+      {
+       "titre": "Respecter l'environnement",
+       "x": 760.0,
+       "y": 1280.0,
+       "l": 700.0,
+       "h": 506.0
+      },
+      {
+       "titre": "Les 13 épreuves de l'examen",
+       "x": 1520.0,
+       "y": 380.0,
+       "l": 700.0,
+       "h": 1014.0
+      },
+      {
+       "titre": "Les points techniques à connaître par cœur",
+       "x": 1520.0,
+       "y": 1458.0,
+       "l": 700.0,
+       "h": 638.0
+      },
+      {
+       "titre": "Points de vigilance",
+       "x": 1520.0,
+       "y": 2160.0,
+       "l": 700.0,
+       "h": 548.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/n4/connaissances-theoriques.svg",
+     "mini": "/mindmaps/n4/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_GP-N4_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 2714.0,
+     "sections": [
+      {
+       "titre": "Épreuve n° 10 · Désaturation",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 710.0
+      },
+      {
+       "titre": "Épreuve n° 11 · Anatomie, physiologie, physiopathologie",
+       "x": 0.0,
+       "y": 994.0,
+       "l": 700.0,
+       "h": 940.0
+      },
+      {
+       "titre": "Épreuve n° 12 · Cadre réglementaire",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 622.0
+      },
+      {
+       "titre": "Épreuve n° 13 · Matériel de plongée",
+       "x": 1280.0,
+       "y": 906.0,
+       "l": 700.0,
+       "h": 852.0
+      },
+      {
+       "titre": "Comment on évalue la théorie",
+       "x": 0.0,
+       "y": 2026.0,
+       "l": 1980.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Lecture croisée (outil de préparation, pas un texte du MFT)",
+       "x": 0.0,
+       "y": 2350.0,
+       "l": 1980.0,
+       "h": 362.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "court": "DP-N5",
+   "nom": "Niveau 5",
+   "source": "10 - N5/mindmaps/MindMaps_N5.drawio",
+   "empreinte": "3116c1c338dad568dd386695935fc7538d5d94dd",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/n5/cadre-reglementaire.svg",
+     "mini": "/mindmaps/n5/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_DP-N5_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 1826.0,
+     "sections": [
+      {
+       "titre": "Statut du brevet",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Prérogatives",
+       "x": 0.0,
+       "y": 538.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Position dans le cursus",
+       "x": 0.0,
+       "y": 834.0,
+       "l": 700.0,
+       "h": 336.0
+      },
+      {
+       "titre": "Conditions d'accès à la formation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 522.0
+      },
+      {
+       "titre": "Organisation et délivrance",
+       "x": 1280.0,
+       "y": 806.0,
+       "l": 700.0,
+       "h": 462.0
+      },
+      {
+       "titre": "N4 → N5 : ce qui change",
+       "x": 0.0,
+       "y": 1360.0,
+       "l": 1180.0,
+       "h": 464.0
+      },
+      {
+       "titre": "Mises à jour du MFT (version mai 2026)",
+       "x": 1250.0,
+       "y": 1360.0,
+       "l": 730.0,
+       "h": 244.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/n5/competences.svg",
+     "mini": "/mindmaps/n5/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_DP-N5_competences.png",
+     "largeur": 2262.0,
+     "hauteur": 1882.0,
+     "sections": [
+      {
+       "titre": "Les 3 objectifs",
+       "x": 0.0,
+       "y": 470.0,
+       "l": 700.0,
+       "h": 600.0
+      },
+      {
+       "titre": "Les 5 objectifs",
+       "x": 780.0,
+       "y": 470.0,
+       "l": 700.0,
+       "h": 742.0
+      },
+      {
+       "titre": "Les 6 objectifs",
+       "x": 1560.0,
+       "y": 470.0,
+       "l": 700.0,
+       "h": 1000.0
+      },
+      {
+       "titre": "Le 4e bloc : connaissances théoriques",
+       "x": 0.0,
+       "y": 1134.0,
+       "l": 700.0,
+       "h": 128.0
+      },
+      {
+       "titre": "Points de vigilance",
+       "x": 780.0,
+       "y": 1276.0,
+       "l": 700.0,
+       "h": 604.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/n5/connaissances-theoriques.svg",
+     "mini": "/mindmaps/n5/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_DP-N5_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 1870.0,
+     "sections": [
+      {
+       "titre": "Réglementation de l'exploration",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 460.0
+      },
+      {
+       "titre": "Responsabilité du DP",
+       "x": 0.0,
+       "y": 744.0,
+       "l": 700.0,
+       "h": 308.0
+      },
+      {
+       "titre": "Assurances",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 218.0
+      },
+      {
+       "titre": "Spécificité des différents publics",
+       "x": 1280.0,
+       "y": 502.0,
+       "l": 700.0,
+       "h": 240.0
+      },
+      {
+       "titre": "Certificat médical (CACI)",
+       "x": 1280.0,
+       "y": 806.0,
+       "l": 700.0,
+       "h": 244.0
+      },
+      {
+       "titre": "Comment on évalue la théorie",
+       "x": 0.0,
+       "y": 1144.0,
+       "l": 1980.0,
+       "h": 148.0
+      },
+      {
+       "titre": "Lecture croisée (outil de préparation, pas un texte du MFT)",
+       "x": 0.0,
+       "y": 1384.0,
+       "l": 1980.0,
+       "h": 484.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mf1",
+   "court": "MF1",
+   "nom": "MF1",
+   "source": "11 - MF1/mindmaps/MindMaps_MF1.drawio",
+   "empreinte": "7cfdfc826271c5c119c490d753eb506b7fc965e5",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/mf1/cadre-reglementaire.svg",
+     "mini": "/mindmaps/mf1/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_MF1_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2176.0,
+     "sections": [
+      {
+       "titre": "Ce que le brevet atteste",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Les prérogatives fédérales en plus du Code du sport",
+       "x": 0.0,
+       "y": 538.0,
+       "l": 700.0,
+       "h": 402.0
+      },
+      {
+       "titre": "Deux filières pour y arriver",
+       "x": 0.0,
+       "y": 1004.0,
+       "l": 700.0,
+       "h": 468.0
+      },
+      {
+       "titre": "Le stage initial",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 610.0
+      },
+      {
+       "titre": "Le module complémentaire 20-40 m (capitalisation)",
+       "x": 1280.0,
+       "y": 894.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Le stage final",
+       "x": 1280.0,
+       "y": 1212.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Les délais à surveiller",
+       "x": 1280.0,
+       "y": 1530.0,
+       "l": 700.0,
+       "h": 298.0
+      },
+      {
+       "titre": "Les allègements prévus par le MFT (vide = rien de prévu dans le tableau)",
+       "x": 0.0,
+       "y": 1920.0,
+       "l": 1980.0,
+       "h": 254.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/mf1/competences.svg",
+     "mini": "/mindmaps/mf1/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_MF1_competences.png",
+     "largeur": 1982.0,
+     "hauteur": 2248.0,
+     "sections": [
+      {
+       "titre": "Concevoir la séance",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 572.0
+      },
+      {
+       "titre": "Réaliser la séance",
+       "x": 0.0,
+       "y": 856.0,
+       "l": 700.0,
+       "h": 424.0
+      },
+      {
+       "titre": "Évaluer",
+       "x": 0.0,
+       "y": 1344.0,
+       "l": 700.0,
+       "h": 298.0
+      },
+      {
+       "titre": "Organiser et sécuriser l'activité",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 572.0
+      },
+      {
+       "titre": "Organiser un cursus de formation",
+       "x": 1280.0,
+       "y": 856.0,
+       "l": 700.0,
+       "h": 320.0
+      },
+      {
+       "titre": "Le stage pédagogique en situation",
+       "x": 1280.0,
+       "y": 1240.0,
+       "l": 700.0,
+       "h": 594.0
+      },
+      {
+       "titre": "Les 7 modules du stage en situation",
+       "x": 0.0,
+       "y": 1926.0,
+       "l": 1980.0,
+       "h": 320.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-theoriques",
+     "titre": "Connaissances théoriques",
+     "page": "Théorie",
+     "svg": "/mindmaps/mf1/connaissances-theoriques.svg",
+     "mini": "/mindmaps/mf1/connaissances-theoriques-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_MF1_connaissances-theoriques.png",
+     "largeur": 1982.0,
+     "hauteur": 2527.0,
+     "sections": [
+      {
+       "titre": "Les règles du module",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 676.0
+      },
+      {
+       "titre": "Cadre réglementaire",
+       "x": 0.0,
+       "y": 960.0,
+       "l": 700.0,
+       "h": 550.0
+      },
+      {
+       "titre": "Anatomie, physiologie, physiopathologie",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 868.0
+      },
+      {
+       "titre": "Désaturation",
+       "x": 1280.0,
+       "y": 1152.0,
+       "l": 700.0,
+       "h": 468.0
+      },
+      {
+       "titre": "Aspects théoriques de l'activité",
+       "x": 1280.0,
+       "y": 1684.0,
+       "l": 700.0,
+       "h": 528.0
+      },
+      {
+       "titre": "Les 4 écrits du module capacitaire",
+       "x": 0.0,
+       "y": 2304.0,
+       "l": 1980.0,
+       "h": 221.0
+      }
+     ]
+    },
+    {
+     "id": "examen",
+     "titre": "Examen",
+     "page": "Examen",
+     "svg": "/mindmaps/mf1/examen.svg",
+     "mini": "/mindmaps/mf1/examen-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_MF1_examen.png",
+     "largeur": 1982.0,
+     "hauteur": 2006.0,
+     "sections": [
+      {
+       "titre": "Pour se présenter",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 550.0
+      },
+      {
+       "titre": "Le jury",
+       "x": 0.0,
+       "y": 834.0,
+       "l": 700.0,
+       "h": 336.0
+      },
+      {
+       "titre": "Les trois épreuves de pédagogie",
+       "x": 0.0,
+       "y": 1234.0,
+       "l": 700.0,
+       "h": 424.0
+      },
+      {
+       "titre": "L'IPD : intervention sur un plongeur en difficulté à 25 m (coef 4)",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 720.0
+      },
+      {
+       "titre": "Pour être reçu",
+       "x": 1280.0,
+       "y": 1004.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Après l'examen",
+       "x": 1280.0,
+       "y": 1322.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Les 4 épreuves en un coup d'œil",
+       "x": 0.0,
+       "y": 1750.0,
+       "l": 1980.0,
+       "h": 254.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rifap",
+   "court": "RIFAP",
+   "nom": "RIFAP",
+   "source": "12 - RIFAP/mindmaps/MindMaps_RIFAP.drawio",
+   "empreinte": "da61ee40bed537ce6371a4e88c0bd1760d059caf",
+   "cartes": [
+    {
+     "id": "cadre-reglementaire",
+     "titre": "Cadre réglementaire",
+     "page": "Cadre réglementaire",
+     "svg": "/mindmaps/rifap/cadre-reglementaire.svg",
+     "mini": "/mindmaps/rifap/cadre-reglementaire-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_RIFAP_cadre-reglementaire.png",
+     "largeur": 1982.0,
+     "hauteur": 2236.0,
+     "sections": [
+      {
+       "titre": "Ce qu'est le RIFAP",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 358.0
+      },
+      {
+       "titre": "Conditions de candidature",
+       "x": 0.0,
+       "y": 642.0,
+       "l": 700.0,
+       "h": 232.0
+      },
+      {
+       "titre": "Qui enseigne et valide quoi ?",
+       "x": 0.0,
+       "y": 938.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Pour quels brevets est-il exigé ?",
+       "x": 0.0,
+       "y": 1256.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Organisation de la formation",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 380.0
+      },
+      {
+       "titre": "Délivrance et carte",
+       "x": 1280.0,
+       "y": 664.0,
+       "l": 700.0,
+       "h": 254.0
+      },
+      {
+       "titre": "Équivalences",
+       "x": 1280.0,
+       "y": 982.0,
+       "l": 700.0,
+       "h": 566.0
+      },
+      {
+       "titre": "Après la carte",
+       "x": 1280.0,
+       "y": 1612.0,
+       "l": 700.0,
+       "h": 276.0
+      },
+      {
+       "titre": "Allègement possible selon les acquis à l'entrée (annexe 1)",
+       "x": 0.0,
+       "y": 1980.0,
+       "l": 1980.0,
+       "h": 254.0
+      }
+     ]
+    },
+    {
+     "id": "competences",
+     "titre": "Compétences",
+     "page": "Compétences",
+     "svg": "/mindmaps/rifap/competences.svg",
+     "mini": "/mindmaps/rifap/competences-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_RIFAP_competences.png",
+     "largeur": 1982.0,
+     "hauteur": 2516.0,
+     "sections": [
+      {
+       "titre": "C1 · Communiquer et sécuriser l'arrivée en surface",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 484.0
+      },
+      {
+       "titre": "C2 · Mettre l'accidenté en sécurité",
+       "x": 0.0,
+       "y": 768.0,
+       "l": 700.0,
+       "h": 786.0
+      },
+      {
+       "titre": "C3 · Récupérer les plongeurs de la palanquée",
+       "x": 0.0,
+       "y": 1618.0,
+       "l": 700.0,
+       "h": 484.0
+      },
+      {
+       "titre": "C4 · Coordonner et partager les opérations",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 572.0
+      },
+      {
+       "titre": "C5 et C6 · Réagir, donner l'oxygène",
+       "x": 1280.0,
+       "y": 856.0,
+       "l": 700.0,
+       "h": 528.0
+      },
+      {
+       "titre": "C7 · Alerter et suivre",
+       "x": 1280.0,
+       "y": 1448.0,
+       "l": 700.0,
+       "h": 380.0
+      },
+      {
+       "titre": "Les 7 capacités d'un coup d'œil",
+       "x": 0.0,
+       "y": 2194.0,
+       "l": 1980.0,
+       "h": 320.0
+      }
+     ]
+    },
+    {
+     "id": "connaissances-a-maitriser",
+     "titre": "Connaissances à maîtriser",
+     "page": "Connaissances",
+     "svg": "/mindmaps/rifap/connaissances-a-maitriser.svg",
+     "mini": "/mindmaps/rifap/connaissances-a-maitriser-mini.png",
+     "png": "/mindmaps/png/passe-ton-mf1_RIFAP_connaissances-a-maitriser.png",
+     "largeur": 1982.0,
+     "hauteur": 2240.0,
+     "sections": [
+      {
+       "titre": "Reconnaître un accident de plongée (C5)",
+       "x": 0.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 572.0
+      },
+      {
+       "titre": "Les situations travaillées, version plongée (C5)",
+       "x": 0.0,
+       "y": 856.0,
+       "l": 700.0,
+       "h": 572.0
+      },
+      {
+       "titre": "Les recommandations de la CMPN (C6)",
+       "x": 1280.0,
+       "y": 220.0,
+       "l": 700.0,
+       "h": 632.0
+      },
+      {
+       "titre": "Surveiller jusqu'à l'arrivée des secours (C6)",
+       "x": 1280.0,
+       "y": 916.0,
+       "l": 700.0,
+       "h": 276.0
+      },
+      {
+       "titre": "La chaîne des secours (C7)",
+       "x": 1280.0,
+       "y": 1256.0,
+       "l": 700.0,
+       "h": 484.0
+      },
+      {
+       "titre": "Le message d'alerte, rubrique par rubrique",
+       "x": 0.0,
+       "y": 1832.0,
+       "l": 1180.0,
+       "h": 406.0
+      },
+      {
+       "titre": "Les numéros et les sigles",
+       "x": 1250.0,
+       "y": 1832.0,
+       "l": 730.0,
+       "h": 386.0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+{{/* Apostrophe droite entre deux lettres -> apostrophe typographique. */}}
+{{- return (replaceRE `(\pL)'(\pL)` "$1’$2" .) -}}

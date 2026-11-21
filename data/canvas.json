@@ -1,0 +1,204 @@
+{
+ "niveaux": [
+  {
+   "id": "jp",
+   "court": "Jeunes plongeurs",
+   "nom": "Jeunes plongeurs",
+   "cartesDe": "Cartes des Jeunes plongeurs",
+   "jeux": [
+    {
+     "id": "jp",
+     "nom": null,
+     "groupes": [
+      "Compétences",
+      "Gestes techniques",
+      "Théorie"
+     ],
+     "comptes": [
+      24,
+      149,
+      17
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pe12",
+   "court": "PE12",
+   "nom": "PE12",
+   "cartesDe": "Cartes du PE12",
+   "jeux": [
+    {
+     "id": "pe12",
+     "nom": null,
+     "groupes": [
+      "Aptitudes",
+      "Gestes techniques",
+      "Cadre"
+     ],
+     "comptes": [
+      10,
+      35,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pa12",
+   "court": "PA12",
+   "nom": "PA12",
+   "cartesDe": "Cartes du PA12",
+   "jeux": [
+    {
+     "id": "pa12",
+     "nom": null,
+     "groupes": [
+      "Compétences",
+      "Techniques",
+      "Connaissances théoriques"
+     ],
+     "comptes": [
+      3,
+      23,
+      17
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "court": "N1",
+   "nom": "Niveau 1",
+   "cartesDe": "Cartes du Niveau 1",
+   "jeux": [
+    {
+     "id": "n1",
+     "nom": "PE20",
+     "groupes": [
+      "Compétences",
+      "Techniques",
+      "Connaissances théoriques"
+     ],
+     "comptes": [
+      10,
+      63,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "court": "N2",
+   "nom": "Niveau 2",
+   "cartesDe": "Cartes du Niveau 2",
+   "jeux": [
+    {
+     "id": "pa20",
+     "nom": "PA20",
+     "groupes": [
+      "Compétences",
+      "Techniques",
+      "Connaissances théoriques"
+     ],
+     "comptes": [
+      7,
+      55,
+      35
+     ]
+    },
+    {
+     "id": "pe40",
+     "nom": "PE40",
+     "groupes": [
+      "Compétences",
+      "Techniques",
+      "Connaissances théoriques"
+     ],
+     "comptes": [
+      7,
+      51,
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "court": "N3",
+   "nom": "Niveau 3",
+   "cartesDe": "Cartes du Niveau 3",
+   "jeux": [
+    {
+     "id": "n3",
+     "nom": "N3",
+     "groupes": [
+      "Compétences",
+      "Techniques",
+      "Connaissances théoriques"
+     ],
+     "comptes": [
+      8,
+      73,
+      33
+     ]
+    },
+    {
+     "id": "pa60",
+     "nom": "PA60",
+     "groupes": [
+      "Compétences",
+      "Techniques",
+      "Connaissances théoriques"
+     ],
+     "comptes": [
+      7,
+      71,
+      33
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "court": "N4",
+   "nom": "Niveau 4",
+   "cartesDe": "Cartes du Niveau 4",
+   "jeux": [
+    {
+     "id": "n4",
+     "nom": null,
+     "groupes": [
+      "Épreuves",
+      "Contenus"
+     ],
+     "comptes": [
+      18,
+      154
+     ]
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "court": "N5",
+   "nom": "Niveau 5",
+   "cartesDe": "Cartes du Niveau 5",
+   "jeux": [
+    {
+     "id": "n5",
+     "nom": null,
+     "groupes": [
+      "Compétences",
+      "Contenus"
+     ],
+     "comptes": [
+      4,
+      82
+     ]
+    }
+   ]
+  }
+ ]
+}

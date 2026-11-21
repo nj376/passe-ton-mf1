@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Progressions pédagogiques Passe-ton-MF1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["niveau", "source", "statut", "competences"],
+  "properties": {
+    "niveau": { "type": "string" },
+    "source": { "type": "string" },
+    "statut": { "type": "string" },
+    "competences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "competence", "evaluation_mft", "techniques"],
+        "properties": {
+          "id": { "type": "string", "description": "Identique à competences[].id dans mft_data.json" },
+          "competence": { "type": "string" },
+          "evaluation_mft": { "type": "string", "description": "Modalités d'évaluation recopiées mot pour mot du MFT" },
+          "techniques": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["nom", "curseurs", "etapes"],
+              "properties": {
+                "nom": { "type": "string" },
+                "curseurs": { "type": "array", "items": { "type": "string" } },
+                "etapes": {
+                  "type": "array",
+                  "minItems": 4,
+                  "maxItems": 6,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["n", "titre", "objectif", "situation", "critere"],
+                    "properties": {
+                      "n": { "type": "integer", "minimum": 1 },
+                      "titre": { "type": "string" },
+                      "objectif": { "type": "string" },
+                      "situation": { "type": "string" },
+                      "critere": { "type": "string", "description": "Critère observable pour passer à l'étape suivante" },
+                      "theorie": { "type": "string", "description": "Facultatif" },
+                      "securite": { "type": "string", "description": "Facultatif : précaution particulière à afficher en évidence" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

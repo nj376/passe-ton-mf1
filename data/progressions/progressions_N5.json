@@ -1,0 +1,770 @@
+{
+  "niveau": "N5",
+  "source": "MFT Directeur de plongée en exploration Niveau 5 (DP-N5), version mai 2026",
+  "statut": "Proposition de stagiaire, hors MFT, à valider avec un MF2",
+  "competences": [
+    {
+      "id": "N5-site",
+      "competence": "Choisir un site de plongée",
+      "evaluation_mft": "L'ensemble des compétences du référentiel doit être acquis en situation réelle. Le brevet est délivré dans le cadre d'une évaluation continue des compétences. Il n'y a pas de chronologie imposée pour l'acquisition de celles-ci.",
+      "techniques": [
+        {
+          "nom": "Prendre en compte les plongeurs, les guides de palanquée et le support surface",
+          "curseurs": [
+            "plongeurs connus → inconnus",
+            "groupe homogène → groupe hétérogène",
+            "observer → décider"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Observer un DP",
+              "objectif": "Repérer ce qu'un DP prend en compte avant de choisir un site.",
+              "situation": "Sortie club : l'élève accompagne le DP dans sa préparation et note ses questions.",
+              "critere": "Il liste au débriefing les éléments pris en compte par le DP."
+            },
+            {
+              "n": 2,
+              "titre": "Faire connaissance",
+              "objectif": "S'intéresser aux attentes et aux motivations des plongeurs.",
+              "situation": "Avant une sortie : échanges avec les plongeurs qu'il ne connaît pas, consultation des carnets, cartes, passeports, dernières plongées.",
+              "critere": "Il connaît le niveau, l'expérience, l'équipement et le moyen de désaturation de chacun.",
+              "securite": "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité. Le stagiaire agit sous son contrôle."
+            },
+            {
+              "n": 3,
+              "titre": "Analyser le groupe",
+              "objectif": "Tirer de ces informations les besoins du groupe et des guides.",
+              "situation": "Groupe hétérogène : niveaux, nombre de GP disponibles, support surface (bateau ou autre).",
+              "critere": "Il formule les contraintes que le site devra respecter."
+            },
+            {
+              "n": 4,
+              "titre": "Prévoir un site approprié",
+              "objectif": "Proposer un site adapté au contexte.",
+              "situation": "Il propose un site au DP en titre et justifie son choix.",
+              "critere": "Choix approprié aux plongeurs, aux GP et au support."
+            },
+            {
+              "n": 5,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Prendre en compte plongeurs, guides et support pour choisir le site.",
+              "situation": "Sorties réelles, groupes variés.",
+              "critere": "Contexte analysé et site approprié prévu. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Recueillir les informations relatives au site",
+          "curseurs": [
+            "site connu → site méconnu",
+            "une source → plusieurs sources"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les informations utiles au DP",
+              "objectif": "Connaître la nature des informations dont le DP a besoin.",
+              "situation": "Au sec : bulletins météo, annuaire des marées, vents dominants, courants, état de la mer, trajet, mouillage, fréquentation, profondeurs, points d'intérêt.",
+              "critere": "Il cite chaque information et dit à quoi elle sert."
+            },
+            {
+              "n": 2,
+              "titre": "Sites accessibles et autorisés",
+              "objectif": "S'informer sur les sites autorisés.",
+              "situation": "Cartes marines, affaires maritimes, pilote du bateau, mairies.",
+              "critere": "Il sait où trouver l'information et vérifie qu'un site est autorisé."
+            },
+            {
+              "n": 3,
+              "titre": "Exploiter les informations",
+              "objectif": "Utiliser ces informations de façon judicieuse.",
+              "situation": "Cas réel : bulletin du jour et marées. Il en déduit les sites et les horaires possibles.",
+              "critere": "Conclusion juste et utile pour la sortie."
+            },
+            {
+              "n": 4,
+              "titre": "Site méconnu",
+              "objectif": "Recueillir les informations auprès des personnes compétentes.",
+              "situation": "Sortie sur un site qu'il ne connaît pas : pilote, clubs locaux, documents.",
+              "critere": "Informations suffisantes pour décider en sécurité."
+            },
+            {
+              "n": 5,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Recueillir les informations relatives au site.",
+              "situation": "Sorties réelles, sites connus et méconnus.",
+              "critere": "Informations recueillies et exploitées avec justesse. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Analyser les conditions environnementales sur le site et s'y adapter",
+          "curseurs": [
+            "conditions stables → conditions qui évoluent",
+            "analyse → décision"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Mettre en relation les conditions",
+              "objectif": "Relier vent, houle, visibilité, trafic, courant, température.",
+              "situation": "Sur le site, avec le DP en titre : observation et lecture des conditions.",
+              "critere": "Il décrit les conditions et leur évolution prévisible."
+            },
+            {
+              "n": 2,
+              "titre": "Vérifier la faisabilité",
+              "objectif": "Confronter les conditions au niveau des plongeurs et aux moyens disponibles.",
+              "situation": "Niveau de chaque plongeur, nombre de plongeurs et de guides, équipements individuels, collectifs et de sécurité.",
+              "critere": "Il dit si les plongées prévues sont faisables, et pourquoi.",
+              "securite": "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité. Le stagiaire agit sous son contrôle."
+            },
+            {
+              "n": 3,
+              "titre": "S'adapter",
+              "objectif": "Modifier le projet quand les conditions changent.",
+              "situation": "Conditions qui évoluent : changement de site, de zone, de paramètres, ou annulation.",
+              "critere": "Décision sûre et argumentée, y compris le renoncement."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Analyser les conditions et s'y adapter.",
+              "situation": "Sorties réelles, conditions variées.",
+              "critere": "Faisabilité vérifiée et décisions adaptées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N5-organiser",
+      "competence": "Organiser l'activité",
+      "evaluation_mft": "L'ensemble des compétences du référentiel doit être acquis en situation réelle. Le brevet est délivré dans le cadre d'une évaluation continue des compétences. Il n'y a pas de chronologie imposée pour l'acquisition de celles-ci.",
+      "techniques": [
+        {
+          "nom": "Composer les palanquées",
+          "curseurs": [
+            "groupe simple → groupe hétérogène",
+            "normes → affinités"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les normes d'encadrement",
+              "objectif": "Connaître les règles de composition des palanquées.",
+              "situation": "Au sec, à partir du Code du sport et du MFT.",
+              "critere": "Il compose des palanquées conformes sur des cas écrits."
+            },
+            {
+              "n": 2,
+              "titre": "Cas réel simple",
+              "objectif": "Composer les palanquées d'une sortie.",
+              "situation": "Sortie club, groupe homogène, sous le contrôle du DP en titre.",
+              "critere": "Palanquées conformes aux normes.",
+              "securite": "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité. Le stagiaire agit sous son contrôle."
+            },
+            {
+              "n": 3,
+              "titre": "Groupe hétérogène et affinités",
+              "objectif": "Tenir compte des attentes et des affinités.",
+              "situation": "Groupe de niveaux variés, plongeurs qui souhaitent plonger ensemble.",
+              "critere": "Palanquées conformes, attentes et affinités prises en compte quand c'est possible."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Composer les palanquées.",
+              "situation": "Sorties réelles variées.",
+              "critere": "Palanquées conformes et adaptées aux plongeurs. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Fixer les paramètres de plongée",
+          "curseurs": [
+            "paramètres simples → décompression adaptée",
+            "instruments identiques → instruments variés"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Profondeur, durée, durée totale de remontée",
+              "objectif": "Fixer les paramètres de chaque palanquée.",
+              "situation": "Cas écrits puis sortie réelle.",
+              "critere": "Paramètres cohérents avec le site, le niveau et les conditions."
+            },
+            {
+              "n": 2,
+              "titre": "Zone et profil",
+              "objectif": "Définir la zone d'évolution et le profil.",
+              "situation": "Site connu, palanquées de niveaux différents.",
+              "critere": "Zone et profil adaptés à chaque palanquée."
+            },
+            {
+              "n": 3,
+              "titre": "Décompression adaptée",
+              "objectif": "Définir la décompression selon le contexte et les instruments.",
+              "situation": "Plongée sans palier, durée de palier limitée, diversité des ordinateurs des plongeurs.",
+              "critere": "Consigne de décompression claire et applicable par tous."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Fixer les paramètres de plongée.",
+              "situation": "Sorties réelles variées.",
+              "critere": "Paramètres, zone, profil et décompression adaptés. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Rédiger la fiche de sécurité",
+          "curseurs": [
+            "remplir → tenir à jour"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La fiche et la réglementation",
+              "objectif": "Connaître ce que doit contenir la fiche de sécurité.",
+              "situation": "Au sec, sur un modèle de fiche.",
+              "critere": "Il remplit une fiche conforme sur un cas écrit."
+            },
+            {
+              "n": 2,
+              "titre": "Avant la plongée",
+              "objectif": "Préparer la fiche d'une sortie réelle.",
+              "situation": "Palanquées, paramètres prévus, heures.",
+              "critere": "Fiche complète avant la mise à l'eau.",
+              "securite": "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité. Le stagiaire agit sous son contrôle."
+            },
+            {
+              "n": 3,
+              "titre": "Pendant et après",
+              "objectif": "Tenir la fiche à jour.",
+              "situation": "Heures d'immersion et de sortie, paramètres réalisés.",
+              "critere": "Fiche exacte jusqu'au retour de la dernière palanquée."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Rédiger la fiche de sécurité.",
+              "situation": "Sorties réelles.",
+              "critere": "Fiche remplie en respectant la réglementation en vigueur. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Présenter le site",
+          "curseurs": [
+            "site connu → site méconnu"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Décrire un site connu",
+              "objectif": "Présenter les zones, les intérêts, les conditions probables et les dangers.",
+              "situation": "Briefing de sortie sur un site connu.",
+              "critere": "Présentation claire, utile aux GP et aux plongeurs."
+            },
+            {
+              "n": 2,
+              "titre": "Évoluer sans perturber le milieu",
+              "objectif": "Intégrer le respect du milieu dans la présentation.",
+              "situation": "Il explique comment évoluer sur ce site sans le dégrader.",
+              "critere": "Consignes de respect du milieu concrètes et adaptées au site."
+            },
+            {
+              "n": 3,
+              "titre": "Site méconnu",
+              "objectif": "Recueillir puis présenter les informations d'un site qu'il ne connaît pas.",
+              "situation": "Il s'appuie sur le pilote ou une personne qui connaît le site.",
+              "critere": "Présentation fiable, sources citées."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Présenter le site.",
+              "situation": "Sorties réelles, sites connus et méconnus.",
+              "critere": "Site présenté avec justesse. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Désigner un suppléant en cas de plongée du DP",
+          "curseurs": [
+            "comprendre → désigner"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le rôle du suppléant",
+              "objectif": "Comprendre ce que la suppléance implique.",
+              "situation": "Au sec : aptitude du suppléant, informations à lui transmettre, responsabilité du DP en titre.",
+              "critere": "Il explique que le DP en titre conserve sa responsabilité, même en immersion."
+            },
+            {
+              "n": 2,
+              "titre": "Choisir le suppléant",
+              "objectif": "S'assurer de l'aptitude de la personne volontaire.",
+              "situation": "Cas réel : plusieurs volontaires possibles.",
+              "critere": "Choix justifié."
+            },
+            {
+              "n": 3,
+              "titre": "Transmettre les consignes",
+              "objectif": "Donner au suppléant ce dont il a besoin.",
+              "situation": "Informations nécessaires et durée approximative de l'immersion.",
+              "critere": "Transmission complète et vérifiée."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Désigner un suppléant.",
+              "situation": "Sortie où le DP plonge.",
+              "critere": "Suppléant apte, informé, durée annoncée. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N5-securiser",
+      "competence": "Sécuriser l'activité",
+      "evaluation_mft": "L'ensemble des compétences du référentiel doit être acquis en situation réelle. Le brevet est délivré dans le cadre d'une évaluation continue des compétences. Il n'y a pas de chronologie imposée pour l'acquisition de celles-ci.",
+      "techniques": [
+        {
+          "nom": "S'assurer de la compréhension et de la prise en compte des consignes données par le DP",
+          "curseurs": [
+            "donner → vérifier la compréhension",
+            "consignes simples → décompression commune"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le contenu des consignes",
+              "objectif": "Savoir quelles consignes donner.",
+              "situation": "Au sec : paramètres et zone, gestion commune de la décompression (ordinateurs, majoration, paliers profonds, palier de principe à 3 m, vitesses), moyen de rappel, perte de palanquée, givrage en eau froide, narcose, essoufflement, refroidissement.",
+              "critere": "Liste complète et justifiée."
+            },
+            {
+              "n": 2,
+              "titre": "Briefer les GP",
+              "objectif": "Donner les consignes aux guides de palanquée.",
+              "situation": "Briefing réel des GP, sous le contrôle du DP en titre.",
+              "critere": "Consignes claires et complètes.",
+              "securite": "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité. Le stagiaire agit sous son contrôle."
+            },
+            {
+              "n": 3,
+              "titre": "Vérifier la compréhension",
+              "objectif": "S'assurer que les consignes sont comprises et prises en compte.",
+              "situation": "Questions aux GP et aux plongeurs autonomes après le briefing.",
+              "critere": "Il repère un point mal compris et le reprend."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "S'assurer de la compréhension des consignes.",
+              "situation": "Sorties réelles.",
+              "critere": "Consignes comprises et prises en compte par toutes les palanquées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Connaître les risques liés aux différentes pratiques et les mesures de prévention associées",
+          "curseurs": [
+            "pratique habituelle → pratiques spécifiques",
+            "public adulte → publics particuliers"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Pratiques et environnements spécifiques",
+              "objectif": "Connaître les risques et la prévention.",
+              "situation": "Au sec : plongée de nuit, sous glace, dérivante, filets, grottes, épaves.",
+              "critere": "Pour chaque pratique, il cite les risques et la prévention."
+            },
+            {
+              "n": 2,
+              "titre": "Publics particuliers",
+              "objectif": "Tenir compte des particularités des publics.",
+              "situation": "Jeunes, seniors, restrictions d'ordre médical.",
+              "critere": "Mesures adaptées à chaque public."
+            },
+            {
+              "n": 3,
+              "titre": "Appliquer à une sortie réelle",
+              "objectif": "Intégrer ces risques dans l'organisation.",
+              "situation": "Sortie présentant une particularité (nuit, public jeune, épave).",
+              "critere": "Mesures de prévention prévues et annoncées."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Prendre en compte les risques et la prévention.",
+              "situation": "Sorties réelles variées.",
+              "critere": "Risques identifiés et prévenus. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Surveiller l'activité et réaliser des actions de prévention",
+          "curseurs": [
+            "installer → surveiller → anticiper"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Moyens de sécurité et de confort",
+              "objectif": "Installer ce qui sécurise la plongée.",
+              "situation": "Pendeur, ligne de vie, bloc de sécurité.",
+              "critere": "Moyens installés et adaptés au site.",
+              "securite": "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité. Le stagiaire agit sous son contrôle."
+            },
+            {
+              "n": 2,
+              "titre": "Informer sur l'environnement",
+              "objectif": "Prévenir des risques liés au site.",
+              "situation": "Au briefing : courant, trafic, faune dangereuse.",
+              "critere": "Information juste et utile."
+            },
+            {
+              "n": 3,
+              "titre": "Désaturation de secours",
+              "objectif": "Prévoir les procédures de rattrapage et le plan de secours.",
+              "situation": "Cas : palanquée qui a manqué ses paliers.",
+              "critere": "Procédure de rattrapage et plan prévus avant la plongée."
+            },
+            {
+              "n": 4,
+              "titre": "Surveiller",
+              "objectif": "Garder la vue d'ensemble pendant l'activité.",
+              "situation": "Sortie réelle : suivi des palanquées, heures, surface.",
+              "critere": "Il sait à tout moment où en est chaque palanquée."
+            },
+            {
+              "n": 5,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Surveiller et prévenir.",
+              "situation": "Sorties réelles.",
+              "critere": "Activité surveillée, prévention en place. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Vérifier et utiliser le matériel de secours",
+          "curseurs": [
+            "connaître → vérifier → utiliser"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis RIFAP",
+              "objectif": "Vérifier la maîtrise du matériel de secours.",
+              "situation": "Rappel des compétences du RIFA Plongée.",
+              "critere": "Il utilise le matériel sans hésitation.",
+              "theorie": "Cette compétence est acquise par le RIFAP."
+            },
+            {
+              "n": 2,
+              "titre": "Trousse de secours",
+              "objectif": "Connaître et vérifier le contenu de la trousse.",
+              "situation": "Avant chaque sortie, vérification de la trousse.",
+              "critere": "Contenu vérifié, manques signalés."
+            },
+            {
+              "n": 3,
+              "titre": "Localiser et vérifier",
+              "objectif": "Vérifier l'état et le fonctionnement du matériel de secours.",
+              "situation": "Oxygène, matériel de secours du bateau ou du site.",
+              "critere": "Matériel localisé, état et fonctionnement vérifiés."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Vérifier et utiliser le matériel de secours.",
+              "situation": "Sorties réelles.",
+              "critere": "Matériel prêt à chaque sortie. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "S'informer des règlementations locales éventuelles, des règles de protection de l'environnement et les faire respecter",
+          "curseurs": [
+            "s'informer → informer → faire respecter"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "S'informer",
+              "objectif": "Connaître les dispositions locales.",
+              "situation": "Espèces protégées, zones interdites, auprès du pilote ou de personnes compétentes.",
+              "critere": "Il présente les dispositions du site."
+            },
+            {
+              "n": 2,
+              "titre": "Informer les plongeurs",
+              "objectif": "Rappeler les règles et donner des conseils.",
+              "situation": "Au briefing : règles générales de protection et dispositions locales.",
+              "critere": "Rappel clair et concret."
+            },
+            {
+              "n": 3,
+              "titre": "Faire respecter",
+              "objectif": "Agir quand une règle n'est pas respectée.",
+              "situation": "Cas : plongeur qui prélève, palanquée hors zone.",
+              "critere": "Intervention adaptée et ferme."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Faire respecter les règles locales et de protection.",
+              "situation": "Sorties réelles.",
+              "critere": "Règles connues, rappelées et respectées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N5-accident",
+      "competence": "Réagir en cas d'accident",
+      "evaluation_mft": "L'ensemble des compétences du référentiel doit être acquis en situation réelle. Le brevet est délivré dans le cadre d'une évaluation continue des compétences. Il n'y a pas de chronologie imposée pour l'acquisition de celles-ci.",
+      "techniques": [
+        {
+          "nom": "Savoir réagir en cas d'accident",
+          "curseurs": [
+            "connaître → simuler → coordonner"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis RIFAP",
+              "objectif": "Vérifier la prise en charge de la victime.",
+              "situation": "Rappel des compétences du RIFA Plongée.",
+              "critere": "Prise en charge maîtrisée.",
+              "theorie": "Savoir s'occuper de la victime : compétence acquise par le RIFAP."
+            },
+            {
+              "n": 2,
+              "titre": "Plan d'évacuation et d'organisation des secours",
+              "objectif": "Connaître le plan du site et de la structure.",
+              "situation": "Au sec : alerte, moyens de communication, point de débarquement, centre de soins.",
+              "critere": "Il décrit le plan pour le site du jour."
+            },
+            {
+              "n": 3,
+              "titre": "Gérer les autres palanquées",
+              "objectif": "Garder la sécurité de ceux qui sont encore à l'eau.",
+              "situation": "Exercice annoncé : accident simulé pendant que des palanquées plongent.",
+              "critere": "Palanquées rappelées ou suivies, personne n'est oublié."
+            },
+            {
+              "n": 4,
+              "titre": "Fiche d'évacuation et de prise en charge",
+              "objectif": "Rédiger la fiche qui accompagne la victime.",
+              "situation": "Exercice : fiche remplie pendant la simulation.",
+              "critere": "Fiche complète et lisible."
+            },
+            {
+              "n": 5,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Savoir réagir en cas d'accident.",
+              "situation": "Évaluation continue, exercices réalistes en sortie.",
+              "critere": "Plan connu, palanquées gérées, fiche rédigée. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N5-theorie",
+      "competence": "Connaissances théoriques du DP",
+      "evaluation_mft": "L'ensemble des compétences du référentiel doit être acquis en situation réelle. Le brevet est délivré dans le cadre d'une évaluation continue des compétences. Il n'y a pas de chronologie imposée pour l'acquisition de celles-ci.",
+      "techniques": [
+        {
+          "nom": "Règlementation relative à l'organisation et aux conditions de pratique de la plongée en exploration citées dans le Code du Sport et le MFT, règlementations locales spécifiques",
+          "curseurs": [
+            "connaître → appliquer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Normes et prérogatives",
+              "objectif": "Connaître les normes d'encadrement et les prérogatives.",
+              "situation": "Normes en exploration, prérogatives des plongeurs et du DP.",
+              "critere": "Réponses justes sur des cas concrets."
+            },
+            {
+              "n": 2,
+              "titre": "Équipements et matériel obligatoires",
+              "objectif": "Connaître ce qui est exigé.",
+              "situation": "Équipements des plongeurs et des encadrants, matériel obligatoire sur le lieu de plongée.",
+              "critere": "Il vérifie la conformité d'une sortie réelle."
+            },
+            {
+              "n": 3,
+              "titre": "Mélanges, recycleurs, jeunes plongeurs",
+              "objectif": "Connaître les conditions particulières.",
+              "situation": "Plongée aux mélanges et en recycleur, qualifications supplémentaires du DP, jeunes plongeurs à la FFESSM.",
+              "critere": "Il dit quand il peut ou ne peut pas diriger une plongée."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Appliquer la réglementation.",
+              "situation": "Organisation de sorties réelles.",
+              "critere": "Réglementation appliquée sans erreur. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Responsabilité du DP",
+          "curseurs": [
+            "notions → cas concrets"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les notions",
+              "objectif": "Connaître la responsabilité civile et pénale.",
+              "situation": "Mise en danger d'autrui, obligation de moyens et de résultats.",
+              "critere": "Définitions justes."
+            },
+            {
+              "n": 2,
+              "titre": "Cas concrets",
+              "objectif": "Appliquer ces notions à la direction de plongée.",
+              "situation": "Cas d'accidents et d'incidents.",
+              "critere": "Analyse juste de la responsabilité du DP."
+            },
+            {
+              "n": 3,
+              "titre": "Dans ses décisions",
+              "objectif": "Intégrer sa responsabilité dans ses choix.",
+              "situation": "Au débriefing d'une sortie, il explique comment ses décisions l'engagent.",
+              "critere": "Décisions justifiées au regard de sa responsabilité."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Connaître le cadre de sa responsabilité.",
+              "situation": "Sorties réelles.",
+              "critere": "Responsabilité comprise et prise en compte. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Assurances",
+          "curseurs": [
+            "connaître → conseiller"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Responsabilité civile et licence",
+              "objectif": "Connaître la responsabilité civile au tiers et l'assurance de la licence.",
+              "situation": "Au sec.",
+              "critere": "Explications justes."
+            },
+            {
+              "n": 2,
+              "titre": "Assurances complémentaires",
+              "objectif": "Connaître les assurances individuelles complémentaires.",
+              "situation": "Au sec, cas de plongeurs.",
+              "critere": "Il explique leur intérêt."
+            },
+            {
+              "n": 3,
+              "titre": "Conseiller",
+              "objectif": "Répondre aux questions des plongeurs.",
+              "situation": "Questions posées en sortie.",
+              "critere": "Réponses justes ou plongeur bien orienté."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Maîtriser les questions d'assurance.",
+              "situation": "Sorties réelles.",
+              "critere": "Connaissances justes et utiles. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Spécificité des différents publics",
+          "curseurs": [
+            "connaître → adapter"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Caractéristiques des publics",
+              "objectif": "Connaître les caractéristiques des différents publics.",
+              "situation": "Physiologiques, morphologiques, psychomotrices, socio-affectives : jeunes, adultes, seniors, aptitudes médicales spécifiques.",
+              "critere": "Il cite les points d'attention pour chaque public."
+            },
+            {
+              "n": 2,
+              "titre": "Adapter l'organisation",
+              "objectif": "Tenir compte du public dans l'organisation.",
+              "situation": "Cas : sortie avec des jeunes ou des seniors.",
+              "critere": "Organisation adaptée (site, paramètres, encadrement)."
+            },
+            {
+              "n": 3,
+              "titre": "En sortie",
+              "objectif": "Appliquer ces adaptations.",
+              "situation": "Sortie réelle avec un public particulier.",
+              "critere": "Adaptations mises en œuvre."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Tenir compte des publics.",
+              "situation": "Sorties réelles.",
+              "critere": "Spécificités des publics prises en compte. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        },
+        {
+          "nom": "Certificat médical d'absence de contre-indication à la pratique sportive (CACI)",
+          "curseurs": [
+            "connaître → vérifier"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Champ d'application",
+              "objectif": "Connaître le champ d'application du CACI en plongée.",
+              "situation": "Au sec, règles fédérales en vigueur.",
+              "critere": "Explications justes."
+            },
+            {
+              "n": 2,
+              "titre": "Cas particuliers",
+              "objectif": "Savoir quoi faire quand le CACI pose question.",
+              "situation": "Cas écrits.",
+              "critere": "Décision conforme aux règles."
+            },
+            {
+              "n": 3,
+              "titre": "Vérifier en sortie",
+              "objectif": "Contrôler les documents des plongeurs.",
+              "situation": "Sortie réelle.",
+              "critere": "Vérification faite avant la mise à l'eau."
+            },
+            {
+              "n": 4,
+              "titre": "En situation réelle (évaluation)",
+              "objectif": "Connaître le champ d'application du CACI.",
+              "situation": "Sorties réelles.",
+              "critere": "Règles appliquées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

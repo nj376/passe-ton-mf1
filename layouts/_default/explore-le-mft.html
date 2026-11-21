@@ -1,0 +1,128 @@
+{{ define "main" }}
+{{- $D := site.Data.mft_data -}}
+{{- $moments := site.Data.moments -}}
+{{- $chevron := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg>` | safeHTML -}}
+
+<div class="mft-entete">
+  <div class="mft-entete__textes">
+    <h1 class="titre-page">Explore le MFT</h1>
+    <p class="sous-titre-page">Choisis un niveau, puis un moment de la plongée.</p>
+  </div>
+  <label class="recherche">
+    <input type="search" class="recherche__champ" placeholder="Rechercher une compétence, un chiffre…" aria-label="Rechercher dans le MFT" data-recherche-mft>
+  </label>
+</div>
+
+
+{{/* Résultats de recherche (remplis par le script) */}}
+<section class="resultats" aria-live="polite" data-resultats hidden>
+  <h2 class="resultats__titre" data-resultats-titre></h2>
+  <div class="resultats__liste" data-resultats-liste></div>
+</section>
+
+<div class="mft" data-mft>
+  {{/* Ligne des niveaux, avec à droite (sous la recherche) l’accès à Flashcard MFT (page /reviser/) et à Mindmaps (page /mindmaps/), hors du menu. */}}
+  <div class="mft-niveaux">
+    <div class="onglets-niveau" role="tablist" aria-label="Niveau">
+      {{- range $i, $o := site.Data.onglets }}
+      <button type="button" role="tab" class="onglet-niveau" id="onglet-{{ $o.id }}" aria-controls="panneau-{{ $o.id }}" aria-selected="{{ if eq $o.id "N1" }}true{{ else }}false{{ end }}" tabindex="{{ if eq $o.id "N1" }}0{{ else }}-1{{ end }}" data-niv="{{ $o.id }}">{{ $o.libelle }}</button>
+      {{- end }}
+    </div>
+    <div class="mft-acces">
+      <a class="bouton-contour mft-reviser" href="{{ "/reviser/" | relURL }}"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="12" rx="2"></rect><path d="M7 3h12a2 2 0 0 1 2 2v10"></path></svg>Flashcard MFT</a>
+      <a class="bouton-contour mft-reviser" href="{{ "/mindmaps/" | relURL }}"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><circle cx="4.5" cy="5" r="2"></circle><circle cx="19.5" cy="5" r="2"></circle><circle cx="4.5" cy="19" r="2"></circle><circle cx="19.5" cy="19" r="2"></circle><path d="M9.8 9.9 6 6.4M14.2 9.9 18 6.4M9.8 14.1 6 17.6M14.2 14.1 18 17.6"></path></svg>Mindmaps</a>
+    </div>
+  </div>
+
+  {{- range $o := site.Data.onglets }}
+  {{- $comps := where $D.competences "niveau" "in" $o.niveaux }}
+  <section class="panneau-niveau" id="panneau-{{ $o.id }}" role="tabpanel" aria-labelledby="onglet-{{ $o.id }}" data-panneau="{{ $o.id }}"{{ if ne $o.id "N1" }} hidden{{ end }}>
+    <div class="courbe carte">
+      <div class="courbe__entete">
+        <div class="titre-aide">
+          <h2 class="courbe__titre"><span class="bureau">{{ $o.titre }}</span><span class="mobile">{{ $o.titreMobile }}</span></h2>
+          <button type="button" class="aide-bouton bureau" aria-label="Aide sur la courbe" aria-expanded="false" aria-controls="aide-courbe-{{ $o.id }}" data-bascule>?</button>
+        </div>
+        <span class="courbe__compte"><span class="bureau">{{ len $comps }} compétence{{ if gt (len $comps) 1 }}s{{ end }}</span><span class="mobile">{{ len $comps }} compétence{{ if gt (len $comps) 1 }}s{{ end }}, dans l’ordre de la plongée</span></span>
+      </div>
+      <div id="aide-courbe-{{ $o.id }}" class="note-aide bureau" role="note" hidden>
+        <p>La courbe représente une plongée, de la mise à l’eau au retour. Chaque moment regroupe les compétences du niveau qui s’y jouent ; « Tout au long » réunit celles qui servent pendant toute la plongée.</p>
+      </div>
+
+      <svg class="courbe__dessin bureau" viewBox="0 0 1100 200" width="100%" role="img" aria-label="Profil de plongée : surface, descente, fond, remontée avec palier, retour en surface">
+        <line x1="0" y1="40" x2="1100" y2="40" stroke="#D5DDE5" stroke-dasharray="4 6"></line>
+        <path d="M0 40 H160 L300 160 H700 L800 90 H860 L910 40 H1100" fill="none" stroke="#0B5AA6" stroke-width="3" stroke-linejoin="round"></path>
+        <rect x="0" y="20" width="160" height="160" rx="8" fill="#0B5AA6" opacity="0.07" data-zone-bureau></rect>
+      </svg>
+      <svg class="courbe__dessin mobile" viewBox="0 0 340 70" width="100%" height="70" role="img" aria-label="Profil de plongée, le moment ouvert est surligné">
+        <line x1="0" y1="12" x2="340" y2="12" stroke="#D5DDE5" stroke-dasharray="3 5"></line>
+        <rect x="0" y="4" width="48" height="62" rx="6" fill="#0B5AA6" opacity="0.08" data-zone-mobile></rect>
+        <path d="M0 12 H48 L92 58 H214 L246 34 H264 L282 12 H340" fill="none" stroke="#0B5AA6" stroke-width="2.5" stroke-linejoin="round"></path>
+      </svg>
+
+      {{- /* Moment ouvert au départ : le premier qui a au moins une compétence. */ -}}
+      {{- $premier := "" }}
+      {{- range $moments }}{{ $mid := .id }}{{ if not $premier }}{{ range $comps }}{{ if or (eq .phase $mid) (eq (index . "phase2") $mid) }}{{ $premier = $mid }}{{ end }}{{ end }}{{ end }}{{ end }}
+      {{- if $comps }}
+      <div class="moments bureau" role="tablist" aria-label="Moment de la plongée">
+        {{- range $j, $m := $moments }}
+        {{- $n := 0 }}{{ range $comps }}{{ if or (eq .phase $m.id) (eq (index . "phase2") $m.id) }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+        <button type="button" role="tab" class="moment" id="moment-{{ $o.id }}-{{ $m.id }}" aria-controls="phase-{{ $o.id }}-{{ $m.id }}" aria-selected="{{ if eq $m.id $premier }}true{{ else }}false{{ end }}" tabindex="{{ if eq $m.id $premier }}0{{ else }}-1{{ end }}"{{ if eq $n 0 }} disabled aria-disabled="true"{{ end }} data-moment="{{ $m.id }}" data-x="{{ $m.bureau.x }}" data-l="{{ $m.bureau.l }}" data-xm="{{ $m.mobile.x }}" data-lm="{{ $m.mobile.l }}">
+          <span class="moment__nom">{{ $m.libelle }}</span><span class="moment__compte">{{ $n }} compétence{{ if gt $n 1 }}s{{ end }}</span>
+        </button>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+
+      {{/* Sur téléphone, les moments deviennent une liste dépliable à l’intérieur de la carte */}}
+      {{- if $comps }}
+      <div class="phases">
+        {{- range $j, $m := $moments }}
+        {{- $liste := slice }}{{ range $comps }}{{ if or (eq .phase $m.id) (eq (index . "phase2") $m.id) }}{{ $liste = $liste | append . }}{{ end }}{{ end }}
+        <div class="phase{{ if eq $m.id $premier }} phase--active phase--depliee{{ end }}{{ if not $liste }} phase--vide{{ end }}" id="phase-{{ $o.id }}-{{ $m.id }}" role="tabpanel" aria-labelledby="moment-{{ $o.id }}-{{ $m.id }}" data-phase="{{ $m.id }}">
+          <button type="button" class="phase__entete mobile" aria-expanded="{{ if eq $m.id $premier }}true{{ else }}false{{ end }}"{{ if not $liste }} disabled aria-disabled="true"{{ end }} data-phase-bouton data-xm="{{ $m.mobile.x }}" data-lm="{{ $m.mobile.l }}">
+            <span class="phase__textes"><span class="phase__nom">{{ $m.libelle }}</span><span class="phase__compte">{{ len $liste }} compétence{{ if gt (len $liste) 1 }}s{{ end }}</span></span>
+            <span class="phase__chevron">{{ $chevron }}</span>
+          </button>
+          <div class="phase__fiches">
+            {{- range $k, $c := $liste }}
+            {{ partial "fiche.html" (dict "c" $c "onglet" $o "moment" $m.id "premier" (eq $k 0)) }}
+            {{- end }}
+          </div>
+        </div>
+        {{- end }}
+      </div>
+      {{- else }}
+      {{- range where $D.niveaux "id" "in" $o.niveaux }}
+      <div class="niveau-sans-fiche">
+        <p><strong>{{ .nom }}</strong> · {{ .profondeur }} · dès {{ .age }}</p>
+        <p>{{ .cadre }}</p>
+        <p>{{ .limites }}</p>
+        {{- $nid := .id }}
+        {{- range site.Data.progressions }}{{ if and (eq .niveau $nid) (not (in (site.Params.masquesPistes | default slice) .niveau)) }}{{ with index .competences 0 }}
+        <p><a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower .id }}">Voir la progression proposée →</a></p>
+        {{- end }}{{ end }}{{ end }}
+      </div>
+      {{- end }}
+      {{- end }}
+  </section>
+  {{- end }}
+</div>
+{{ end }}
+
+{{ define "fenetres" }}
+<dialog tabindex="-1" class="fenetre fenetre--large" id="fenetre-comparer" aria-labelledby="comparer-titre">
+  <div class="fenetre__bloc">
+    <h2 id="comparer-titre" class="fenetre__titre">Comparer N1 · N2 · N3</h2>
+    <p class="fenetre__texte fenetre__texte--doux" data-comparer-nom></p>
+  </div>
+  <div class="comparer" data-comparer-colonnes></div>
+  <button type="button" class="bouton bouton--principal fenetre__fermer" data-fermer>Fermer</button>
+</dialog>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/mft.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

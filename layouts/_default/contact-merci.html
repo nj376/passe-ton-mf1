@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{- /* Page de remerciement : n8n y redirige après l’envoi (303 vers /contact/merci/). */ -}}
+<div class="capa">
+  <section class="capa-entete">
+    <h1 class="capa-titre">Message envoyé</h1>
+    <p class="capa-accroche">Merci ! Ton message est bien parti. Je te réponds dès que possible.</p>
+  </section>
+  <p><a class="bouton bouton--principal" href="{{ "/" | relURL }}">Revenir à l’accueil</a></p>
+</div>
+{{ end }}

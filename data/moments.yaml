@@ -1,0 +1,32 @@
+# Moments de la plongée (identifiants du champ « phase » de mft_data.json),
+# avec leur zone surlignée sur la courbe : bureau (viewBox 1100) et téléphone (viewBox 340).
+- id: avant
+  complet: "Avant la plongée"
+  libelle: Avant
+  bureau: { x: 0, l: 160 }
+  mobile: { x: 0, l: 48 }
+- id: descente
+  complet: "Descente"
+  libelle: Descente
+  bureau: { x: 160, l: 140 }
+  mobile: { x: 48, l: 44 }
+- id: fond
+  complet: "Au fond"
+  libelle: Fond
+  bureau: { x: 300, l: 400 }
+  mobile: { x: 92, l: 122 }
+- id: remontee
+  complet: "Remontée"
+  libelle: Remontée
+  bureau: { x: 700, l: 230 }
+  mobile: { x: 214, l: 70 }
+- id: apres
+  complet: "Après la plongée"
+  libelle: Retour
+  bureau: { x: 930, l: 170 }
+  mobile: { x: 284, l: 56 }
+- id: transversal
+  complet: "Tout au long de la plongée"
+  libelle: Tout au long
+  bureau: { x: 0, l: 1100 }
+  mobile: { x: 0, l: 340 }

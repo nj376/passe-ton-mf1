@@ -1,0 +1,170 @@
+{{ define "main" }}
+{{- /* Page « Construire ma progression détaillée » : formulaire de préparation de cours, enregistré dans le navigateur,
+       imprimable et copiable. Seul le point d’arrivée du MFT est repris de la compétence choisie. */ -}}
+{{- $D := site.Data.mft_data -}}
+
+{{- /* Point d’arrivée de chaque compétence : le texte du MFT des fichiers de progression s’il existe, sinon celui de la base. */ -}}
+{{- $arrivees := dict -}}
+{{- range site.Data.progressions }}{{ range .competences }}{{ $arrivees = merge $arrivees (dict .id .evaluation_mft) }}{{ end }}{{ end -}}
+
+{{- /* Compétences par onglet, dans l’ordre du site ; le cursus jeunes (hors base) juste après la Randosub. */ -}}
+{{- $groupes := slice -}}
+{{- $jeunes := slice -}}
+{{- with site.Data.progressions.progressions_JP }}{{ range .competences }}{{ $jeunes = $jeunes | append (dict "id" .id "competence" .competence "niveau" "Jeunes" "arrivee" .evaluation_mft "arriveeTitre" "") }}{{ end }}{{ end -}}
+{{- range $o := site.Data.onglets }}
+  {{- $liste := slice }}
+  {{- range where $D.competences "niveau" "in" $o.niveaux }}
+    {{- $liste = $liste | append (dict "id" .id "competence" .competence "niveau" $o.libelle "arrivee" (or (index $arrivees .id) .evaluation) "arriveeTitre" ($o.arrivee | default "")) }}
+  {{- end }}
+  {{- /* PE12 : aucune fiche dans la base, les aptitudes viennent du fichier de progression. */ -}}
+  {{- if not $liste }}{{ range site.Data.progressions }}{{ if eq .niveau $o.id }}{{ range .competences }}
+    {{- $liste = $liste | append (dict "id" .id "competence" .competence "niveau" $o.libelle "arrivee" .evaluation_mft "arriveeTitre" "Aptitudes visées par le MFT") }}
+  {{- end }}{{ end }}{{ end }}{{ end }}
+  {{- if $liste }}{{ $groupes = $groupes | append (dict "libelle" $o.libelle "liste" $liste) }}{{ end }}
+  {{- if and $jeunes (eq $o.id "RANDO") }}{{ $groupes = $groupes | append (dict "libelle" "Jeunes" "liste" $jeunes) }}{{ end }}
+{{- end -}}
+{{- $toutes := slice }}{{ range $groupes }}{{ range .liste }}{{ $toutes = $toutes | append (dict "id" (lower .id) "competence" (partial "typo.html" .competence) "niveau" .niveau "arrivee" (partial "typo.html" .arrivee) "arriveeTitre" .arriveeTitre) }}{{ end }}{{ end -}}
+
+<div class="construire" data-construire>
+  <div class="entete-page">
+    <h1 class="titre-page">Construire ma progression détaillée</h1>
+    <p class="sous-titre-page">Prends ton temps, prépare soigneusement ton cours, puis imprime-le ou copie-le pour en discuter avec ton tuteur MF2. Après tout, mieux vaut essuyer quelques remarques à sec que boire la tasse le jour de l’examen !</p>
+  </div>
+
+
+  <div class="encart-orange construire__sauvegarde" role="note" data-sauvegarde>
+    <div class="construire__etat">
+      <p><strong>Ta progression s’enregistre automatiquement dans ce navigateur, au fil de la saisie.</strong> Un seul enregistrement est conservé : dès que tu écris, il remplace le précédent. Imprime ou copie un cours avant d’en commencer un autre.</p>
+      <p class="construire__etat-detail" data-etat aria-live="polite"></p>
+    </div>
+    <button type="button" class="bouton-petit bouton-rouge" aria-haspopup="dialog" data-ouvrir="fenetre-rappel-construire" data-rappel hidden>Rappeler le dernier enregistrement</button>
+  </div>
+
+  <section class="carte construire__bloc" aria-labelledby="t-depart">
+    <h2 id="t-depart" class="construire__titre-bloc">Point de départ</h2>
+    <div class="construire__champ">
+      <label for="c-competence" class="champ__nom">Compétence</label>
+      <select id="c-competence" class="reglages__select construire__select" data-competence>
+        <option value="">Choisis une compétence</option>
+        {{- range $groupes }}
+        <optgroup label="{{ .libelle }}">
+          {{- range .liste }}<option value="{{ lower .id }}">{{ partial "typo.html" .competence }}</option>{{ end }}
+        </optgroup>
+        {{- end }}
+      </select>
+    </div>
+    <div class="champ__mft construire__arrivee" data-arrivee hidden>
+      <span class="champ__mft-titre" data-arrivee-titre>Point d’arrivée fixé par le MFT</span>
+      <p class="champ__mft-texte" data-arrivee-texte></p>
+    </div>
+  </section>
+
+  <section class="carte construire__bloc" aria-labelledby="t-cours">
+    <h2 id="t-cours" class="construire__titre-bloc">Le cours</h2>
+    <div class="construire__champ">
+      <label for="c-titre" class="champ__nom">Rappel du titre</label>
+      <input id="c-titre" class="construire__ligne" type="text" data-champ="titre" autocomplete="off">
+    </div>
+    <div class="construire__champ">
+      <label for="c-objectif" class="champ__nom">Objectif du cours</label>
+      <textarea id="c-objectif" class="champ__texte" data-champ="objectif"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-prerogatives" class="champ__nom">Prérogatives</label>
+      <textarea id="c-prerogatives" class="champ__texte" data-champ="prerogatives"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-justification" class="champ__nom">Justification</label>
+      <p class="champ__aide" id="a-justification">Par exemple : en mer, un embout peut être arraché par un coup de palme. Il faut savoir le récupérer sans paniquer.</p>
+      <textarea id="c-justification" class="champ__texte" data-champ="justification" aria-describedby="a-justification"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-position" class="champ__nom">Position du cours dans la formation</label>
+      <textarea id="c-position" class="champ__texte" data-champ="position"></textarea>
+    </div>
+    <div class="construire__deux">
+      <div class="construire__champ">
+        <label for="c-materiels" class="champ__nom">Moyens matériels <span class="construire__facultatif">(si applicables)</span></label>
+        <textarea id="c-materiels" class="champ__texte" data-champ="materiels"></textarea>
+      </div>
+      <div class="construire__champ">
+        <label for="c-humains" class="champ__nom">Moyens humains <span class="construire__facultatif">(si applicables)</span></label>
+        <textarea id="c-humains" class="champ__texte" data-champ="humains"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <section class="carte construire__bloc" aria-labelledby="t-contenu">
+    <h2 id="t-contenu" class="construire__titre-bloc">Contenu de formation</h2>
+    <div class="construire__champ">
+      <label for="c-savoir" class="champ__nom">Savoir</label>
+      <p class="champ__aide" id="a-savoir">Connaissances théoriques, protocoles d’action. Par exemple : prévention des accidents liés aux chutes de la bouteille et des équipements sous pression.</p>
+      <textarea id="c-savoir" class="champ__texte" data-champ="savoir" aria-describedby="a-savoir"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-savoirfaire" class="champ__nom">Savoir-faire</label>
+      <p class="champ__aide" id="a-savoirfaire">Geste technique, condition physique. Par exemple : gréage et dégréage.</p>
+      <textarea id="c-savoirfaire" class="champ__texte" data-champ="savoirFaire" aria-describedby="a-savoirfaire"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-savoiretre" class="champ__nom">Savoir-être</label>
+      <p class="champ__aide" id="a-savoiretre">Comportement. Par exemple : développe les notions de palanquée, d’entraide et de solidarité entre les plongeurs.</p>
+      <textarea id="c-savoiretre" class="champ__texte" data-champ="savoirEtre" aria-describedby="a-savoiretre"></textarea>
+    </div>
+  </section>
+
+  <section class="carte construire__bloc" aria-labelledby="t-progression">
+    <h2 id="t-progression" class="construire__titre-bloc">Progression</h2>
+    <p class="champ__aide">Toujours aller du plus simple vers le plus compliqué, du plus facile vers le plus difficile.</p>
+    <ol class="construire__etapes" data-etapes></ol>
+    <button type="button" class="bouton-petit bouton-petit--secondaire construire__ajouter" data-ajouter>+ Ajouter une étape</button>
+  </section>
+
+  <section class="carte construire__bloc" aria-labelledby="t-fin">
+    <h2 id="t-fin" class="construire__titre-bloc">Pour finir</h2>
+    <div class="construire__champ">
+      <label for="c-criteres" class="champ__nom">Critères d’évaluation</label>
+      <textarea id="c-criteres" class="champ__texte" data-champ="criteres"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-prochain" class="champ__nom">Prochain cours</label>
+      <textarea id="c-prochain" class="champ__texte" data-champ="prochain"></textarea>
+    </div>
+    <div class="construire__champ">
+      <label for="c-commentaire" class="champ__nom">Commentaire</label>
+      <textarea id="c-commentaire" class="champ__texte" data-champ="commentaire"></textarea>
+    </div>
+  </section>
+
+  <section class="carte construire__bloc" aria-labelledby="t-schemas">
+    <h2 id="t-schemas" class="construire__titre-bloc">Schémas <span class="construire__facultatif">(facultatif)</span></h2>
+    <p class="champ__aide" id="a-schemas">Ajoute une image JPG ou PNG (un schéma, une photo de tableau) : elle sera imprimée avec ton cours. 4 images au plus.</p>
+    <ul class="construire__schemas" data-schemas></ul>
+    <label class="bouton-petit bouton-petit--secondaire construire__ajouter construire__fichier">
+      + Ajouter une image
+      <input type="file" accept="image/jpeg,image/png" class="visuellement-cache" data-ajouter-image aria-describedby="a-schemas">
+    </label>
+    <p class="construire__alerte" data-alerte-image aria-live="polite"></p>
+  </section>
+
+  <div class="construire__actions">
+    <button type="button" class="bouton bouton--principal" data-imprimer>Imprimer ou enregistrer en PDF</button>
+    <button type="button" class="bouton bouton--secondaire" data-copier>Copier tous les textes</button>
+    <span class="construire__copie" data-copie aria-live="polite"></span>
+    <button type="button" class="bouton bouton--danger construire__effacer" aria-haspopup="dialog" data-ouvrir="fenetre-effacer-construire">Tout effacer</button>
+  </div>
+  <p class="construire__note">Rien ne quitte ton appareil : la progression reste dans ce navigateur. Pour la garder ailleurs, imprime-la ou copie-la.</p>
+</div>
+
+{{/* Version imprimée, remplie au moment d’imprimer */}}
+<div class="impression" data-impression aria-hidden="true"></div>
+
+<script type="application/json" id="donnees-construire">{{ $toutes | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ define "fenetres" }}{{ partial "fenetres/rappel-construire.html" . }}{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/construire.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

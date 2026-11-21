@@ -1,0 +1,439 @@
+{
+  "niveau": "PE12",
+  "source": "MFT Qualification Plongeur encadré 12 m (PE12), version mai 2024",
+  "statut": "Proposition de stagiaire, hors MFT, à valider avec un MF2. Le MFT PE12 ne définit ni compétences, ni techniques, ni modalités d'évaluation : découpage en aptitudes proposé par le stagiaire.",
+  "competences": [
+    {
+      "id": "PE12-equiper",
+      "competence": "Maîtriser l'utilisation de son équipement personnel",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Utilisation de l'équipement personnel",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "aide du moniteur → aide minimale",
+            "découvrir → utiliser"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découverte au sec",
+              "objectif": "Connaître son équipement et à quoi il sert.",
+              "situation": "Le moniteur présente masque, tuba, palmes, combinaison, gilet, détendeur et manomètre. L'élève essaie un masque par aspiration et enfile sa combinaison.",
+              "critere": "Il nomme les pièces principales et choisit un masque qui tient.",
+              "securite": "Le bloc reste debout et calé, ou couché. L'élève ne le manipule pas seul."
+            },
+            {
+              "n": 2,
+              "titre": "S'équiper avec aide",
+              "objectif": "S'équiper avant la plongée 1.",
+              "situation": "Avant la plongée 1 : il enfile sa combinaison et son masque. Le moniteur l'aide à capeler et à mettre ses palmes au bon moment.",
+              "critere": "Il accepte l'aide et sait où va chaque élément."
+            },
+            {
+              "n": 3,
+              "titre": "Utiliser son matériel dans l'eau",
+              "objectif": "Se servir de son masque, de son détendeur et de son gilet.",
+              "situation": "Plongées 1 et 2 : il met son détendeur en bouche, ajuste son masque, gonfle et vide son gilet avec le moniteur.",
+              "critere": "Il utilise chaque élément au bon moment, avec une aide de plus en plus légère."
+            },
+            {
+              "n": 4,
+              "titre": "S'équiper avec moins d'aide",
+              "objectif": "S'équiper et se déséquiper presque seul.",
+              "situation": "Plongée 3 : il s'équipe en ne demandant de l'aide que pour le bloc. Après la plongée, il se déséquipe et rince son matériel.",
+              "critere": "Équipement mis dans le bon ordre, matériel rincé et rangé.",
+              "theorie": "Entretien simple : rinçage à l'eau douce, séchage."
+            },
+            {
+              "n": 5,
+              "titre": "Équipement maîtrisé (aptitude visée)",
+              "objectif": "Maîtriser l'utilisation de son équipement personnel.",
+              "situation": "Fin de formation, en palanquée guidée.",
+              "critere": "Il s'équipe et se déséquipe avec une aide minimale et utilise son matériel sans hésiter. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-eau",
+      "competence": "Maîtriser la mise à l'eau",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Mise à l'eau",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "technique la plus simple → technique usuelle du site",
+            "guidé → en palanquée sur consigne"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découverte au sec",
+              "objectif": "Connaître la mise à l'eau du jour et ses règles.",
+              "situation": "Le moniteur présente la mise à l'eau prévue (bord, échelle, saut droit ou bascule) et les règles : attendre le feu vert, vérifier que la zone est libre, une main sur le masque et le détendeur.",
+              "critere": "Il redit les règles et montre le geste à sec."
+            },
+            {
+              "n": 2,
+              "titre": "La mise à l'eau la plus simple",
+              "objectif": "Entrer dans l'eau sans appréhension.",
+              "situation": "Plongée 1 : entrée par le bord, l'échelle ou depuis une faible hauteur, avec l'aide du moniteur.",
+              "critere": "Il entre dans l'eau calmement, masque et détendeur en place.",
+              "securite": "Gilet gonflé, moniteur dans l'eau pour l'accueillir."
+            },
+            {
+              "n": 3,
+              "titre": "La technique usuelle du site",
+              "objectif": "Se mettre à l'eau comme les autres plongeurs.",
+              "situation": "Plongée 2 : saut droit ou bascule arrière depuis une faible hauteur, selon l'embarcation.",
+              "critere": "Masque et détendeur restent en place, il s'écarte de la zone et fait le signe OK.",
+              "securite": "Zone d'eau libre vérifiée avant chaque mise à l'eau."
+            },
+            {
+              "n": 4,
+              "titre": "Sur consigne, en palanquée",
+              "objectif": "Se mettre à l'eau au bon moment.",
+              "situation": "Plongée 3 : il attend la consigne du DP ou du GP, se met à l'eau et rejoint sa palanquée.",
+              "critere": "Il attend le feu vert, se met à l'eau seul et rejoint le GP."
+            },
+            {
+              "n": 5,
+              "titre": "Mise à l'eau maîtrisée (aptitude visée)",
+              "objectif": "Maîtriser la mise à l'eau.",
+              "situation": "Fin de formation.",
+              "critere": "Mise à l'eau sûre, consignes respectées. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-immerger",
+      "competence": "Maîtriser l'immersion",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Immersion",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "le long d'un repère avec le moniteur → avec la palanquée",
+            "3 m → 6 m → incursion 6-12 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Équilibrer ses oreilles au sec",
+              "objectif": "Savoir équilibrer ses oreilles avant de descendre.",
+              "situation": "Au sec : le moniteur explique pourquoi les oreilles « poussent » et montre comment équilibrer en douceur.",
+              "critere": "Il sait équilibrer au sec et dit qu'il faut le faire tôt et souvent.",
+              "theorie": "Prévention des douleurs d'oreilles : équilibrer dès le début de la descente, ne jamais forcer."
+            },
+            {
+              "n": 2,
+              "titre": "Première descente le long d'un repère",
+              "objectif": "Descendre lentement en équilibrant ses oreilles.",
+              "situation": "Plongée 1 (le baptême, si l'élève n'en a pas déjà fait un) : descente lente le long d'un bout ou d'une pente douce, le moniteur au contact.",
+              "critere": "Il équilibre ses oreilles et descend calmement.",
+              "securite": "Enfant de 10 à 14 ans : 3 m maximum lors de la première immersion. En cas de douleur, on s'arrête et on remonte un peu. On ne force jamais."
+            },
+            {
+              "n": 3,
+              "titre": "Descendre en vidant son gilet",
+              "objectif": "Comprendre comment on descend.",
+              "situation": "Plongée 2 : il vide son gilet avec l'aide du moniteur, souffle et descend le long du repère.",
+              "critere": "Il déclenche sa descente et équilibre ses oreilles sans rappel."
+            },
+            {
+              "n": 4,
+              "titre": "Descendre avec la palanquée",
+              "objectif": "S'immerger en même temps que les autres.",
+              "situation": "Plongée 3 : descente avec la palanquée jusqu'à 6 m maximum, le moniteur à côté.",
+              "critere": "Il descend avec la palanquée sans s'en éloigner, oreilles équilibrées."
+            },
+            {
+              "n": 5,
+              "titre": "Immersion maîtrisée (aptitude visée)",
+              "objectif": "Maîtriser l'immersion.",
+              "situation": "Fin de formation, avec une incursion possible dans la zone 6-12 m.",
+              "critere": "Descente calme et contrôlée, oreilles équilibrées, près du GP. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12).",
+              "securite": "Zone 6-12 m seulement en fin de formation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-surface",
+      "competence": "Maîtriser le retour en surface à vitesse contrôlée",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Retour en surface à vitesse contrôlée",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "tenu par le moniteur → à côté du moniteur → avec la palanquée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Comprendre au sec",
+              "objectif": "Savoir pourquoi on remonte doucement.",
+              "situation": "Au sec : on remonte lentement, en respirant normalement, sans jamais bloquer sa respiration. Le gilet se purge pendant la remontée.",
+              "critere": "Il explique avec ses mots comment on remonte.",
+              "theorie": "L'air se dilate en remontant : on ne bloque jamais sa respiration."
+            },
+            {
+              "n": 2,
+              "titre": "Remontée tenue par le moniteur",
+              "objectif": "Remonter lentement en respirant normalement.",
+              "situation": "Plongée 1 (le baptême, si l'élève n'en a pas déjà fait un) : remontée le long du repère, le moniteur tient l'élève et règle la vitesse.",
+              "critere": "Il respire normalement et ne cherche pas à remonter vite.",
+              "securite": "Le moniteur contrôle la vitesse et purge le gilet si besoin."
+            },
+            {
+              "n": 3,
+              "titre": "Remontée à côté du moniteur",
+              "objectif": "Participer au contrôle de sa vitesse.",
+              "situation": "Plongée 2 : il purge son gilet avec l'aide du moniteur pendant la remontée.",
+              "critere": "Remontée lente, purge faite au bon moment."
+            },
+            {
+              "n": 4,
+              "titre": "Remontée avec la palanquée",
+              "objectif": "Remonter au rythme du GP.",
+              "situation": "Plongée 3 : remontée avec la palanquée, gilet gonflé à l'arrivée en surface avec aide si besoin.",
+              "critere": "Il reste au niveau du GP et gonfle son gilet en surface."
+            },
+            {
+              "n": 5,
+              "titre": "Remontée maîtrisée (aptitude visée)",
+              "objectif": "Maîtriser le retour en surface à vitesse contrôlée.",
+              "situation": "Fin de formation.",
+              "critere": "Remontée lente, respiration normale, mise en sécurité en surface. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-ventiler",
+      "competence": "Maîtriser sa ventilation",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Ventilation",
+          "curseurs": [
+            "surface → immersion",
+            "immobile → en déplacement",
+            "guidé → il signale lui-même"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Respirer sur détendeur en surface",
+              "objectif": "Découvrir la respiration sur détendeur.",
+              "situation": "En surface ou en eau peu profonde, tête dans l'eau : respiration lente, expiration longue par la bouche.",
+              "critere": "Il respire calmement, visage dans l'eau."
+            },
+            {
+              "n": 2,
+              "titre": "Respirer sous l'eau, immobile",
+              "objectif": "Garder une respiration calme sous l'eau.",
+              "situation": "Plongée 1 (le baptême, si l'élève n'en a pas déjà fait un) : immobile à faible profondeur, il respire lentement.",
+              "critere": "Ventilation calme et régulière.",
+              "securite": "Enfant de 10 à 14 ans : 3 m maximum lors de la première immersion."
+            },
+            {
+              "n": 3,
+              "titre": "Respirer en se déplaçant",
+              "objectif": "Garder une respiration calme en palmant.",
+              "situation": "Plongée 2 : déplacement lent avec le moniteur.",
+              "critere": "Respiration calme pendant le déplacement."
+            },
+            {
+              "n": 4,
+              "titre": "Repérer l'essoufflement",
+              "objectif": "Savoir ralentir et prévenir.",
+              "situation": "Plongée 3 : il ralentit s'il respire trop vite et prévient le GP par un signe.",
+              "critere": "Il reste calme ou signale à temps.",
+              "theorie": "Essoufflement : on s'arrête, on souffle longuement, on prévient le GP."
+            },
+            {
+              "n": 5,
+              "titre": "Ventilation maîtrisée (aptitude visée)",
+              "objectif": "Maîtriser sa ventilation.",
+              "situation": "Fin de formation, en palanquée guidée.",
+              "critere": "Respiration calme pendant toute la plongée. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-equilibrer",
+      "competence": "Maintenir son équilibre",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Équilibre",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "gilet réglé par le moniteur → petites injections avec aide",
+            "immobile → en déplacement"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découvrir le gilet au sec",
+              "objectif": "Savoir gonfler et vider son gilet.",
+              "situation": "Au sec : inflateur, purge. Le moniteur explique que la respiration fait aussi monter et descendre.",
+              "critere": "Il montre comment gonfler et vider son gilet."
+            },
+            {
+              "n": 2,
+              "titre": "Sentir l'effet de la respiration",
+              "objectif": "Découvrir qu'on monte en inspirant et qu'on descend en expirant.",
+              "situation": "Plongée 1 (le baptême, si l'élève n'en a pas déjà fait un) : le moniteur règle le lest et le gilet. L'élève sent l'effet de sa respiration.",
+              "critere": "Il dit ou montre qu'il monte en inspirant et descend en expirant.",
+              "securite": "Lest réglé par le moniteur, sans surlestage."
+            },
+            {
+              "n": 3,
+              "titre": "Décoller du fond",
+              "objectif": "S'équilibrer avec de petites injections.",
+              "situation": "Plongée 2 : petites injections dans le gilet avec l'aide du moniteur, jusqu'à décoller doucement.",
+              "critere": "Il décolle sans remonter brutalement.",
+              "securite": "Le moniteur reste à portée de main. Injections courtes."
+            },
+            {
+              "n": 4,
+              "titre": "Évoluer sans toucher le fond",
+              "objectif": "Rester à la hauteur du GP en se déplaçant.",
+              "situation": "Plongée 3 : il suit le GP à sa hauteur, sans toucher le fond.",
+              "critere": "Il garde son niveau sans s'aider du fond."
+            },
+            {
+              "n": 5,
+              "titre": "Équilibre maîtrisé (aptitude visée)",
+              "objectif": "Maintenir son équilibre.",
+              "situation": "Fin de formation, en palanquée guidée.",
+              "critere": "Équilibre maintenu en déplacement, sans toucher le fond. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-signes",
+      "competence": "Connaître les signes usuels",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Signes usuels",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "immobile → en déplacement",
+            "répondre → signaler de lui-même"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découverte au sec",
+              "objectif": "Connaître les signes usuels et leurs réponses.",
+              "situation": "Au sec, en jeu de questions et réponses : les signes usuels présentés par le moniteur, par exemple OK, ça ne va pas, monter, descendre.",
+              "critere": "Il fait chaque signe et donne la bonne réponse."
+            },
+            {
+              "n": 2,
+              "titre": "Répondre dans l'eau",
+              "objectif": "Répondre au moniteur sous l'eau.",
+              "situation": "Plongée 1 (le baptême, si l'élève n'en a pas déjà fait un) : le moniteur demande régulièrement si ça va.",
+              "critere": "Il répond tout de suite par le bon signe."
+            },
+            {
+              "n": 3,
+              "titre": "Répondre en se déplaçant",
+              "objectif": "Communiquer sans s'arrêter.",
+              "situation": "Plongée 2 : questions du moniteur pendant le déplacement.",
+              "critere": "Réponse rapide et lisible."
+            },
+            {
+              "n": 4,
+              "titre": "Signaler de lui-même",
+              "objectif": "Prévenir le GP sans attendre sa question.",
+              "situation": "Plongée 3 : il signale de lui-même ce qui ne va pas (oreilles, froid, fatigue).",
+              "critere": "Il signale spontanément et au bon moment."
+            },
+            {
+              "n": 5,
+              "titre": "Signes connus (aptitude visée)",
+              "objectif": "Connaître les signes usuels.",
+              "situation": "Fin de formation, en palanquée guidée.",
+              "critere": "Signes compris et réalisés sans hésiter. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PE12-palanquee",
+      "competence": "S'intégrer dans une palanquée guidée en respectant l'environnement et les règles de sécurité",
+      "evaluation_mft": "Au cours des séances, le plongeur doit développer des aptitudes lui permettant de maîtriser l'utilisation de son équipement personnel, la mise à l'eau, l'immersion et le retour en surface à vitesse contrôlée. Il doit également maîtriser sa ventilation, maintenir son équilibre, connaitre les signes usuels et pouvoir s'intégrer dans une palanquée guidée dans la zone 0-12 mètres en respectant l'environnement et les règles de sécurité.",
+      "techniques": [
+        {
+          "nom": "Intégration dans une palanquée guidée",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "au contact du moniteur → près du GP sans contact",
+            "suivre → observer et montrer",
+            "0-6 m → incursion 6-12 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les règles au sec",
+              "objectif": "Connaître les règles de la palanquée et du milieu.",
+              "situation": "Au sec : rôle du DP et du GP, rester près du GP, ne rien toucher, ne rien prélever, ne pas nourrir les animaux.",
+              "critere": "Il redit les règles avec ses mots.",
+              "theorie": "Règles simples de respect du milieu et de sécurité en palanquée."
+            },
+            {
+              "n": 2,
+              "titre": "Au contact du moniteur",
+              "objectif": "Rester avec le moniteur.",
+              "situation": "Plongée 1 (le baptême, si l'élève n'en a pas déjà fait un) : il reste au contact du moniteur, la main tenue si besoin.",
+              "critere": "Il reste à côté du moniteur pendant toute la plongée.",
+              "securite": "Enfant de 10 à 14 ans : 3 m maximum lors de la première immersion."
+            },
+            {
+              "n": 3,
+              "titre": "Suivre sans contact",
+              "objectif": "Suivre le moniteur sans toucher le fond ni la faune.",
+              "situation": "Plongée 2 : il suit le moniteur à sa hauteur, sans contact.",
+              "critere": "Il reste près du moniteur, ne touche rien."
+            },
+            {
+              "n": 4,
+              "titre": "Observer et montrer",
+              "objectif": "Profiter de la plongée en restant dans la palanquée.",
+              "situation": "Plongée 3 : palanquée avec le GP. Il regarde sans toucher et montre ce qu'il voit.",
+              "critere": "Il reste dans la palanquée et observe sans toucher."
+            },
+            {
+              "n": 5,
+              "titre": "Palanquée guidée 0-12 m (aptitude visée)",
+              "objectif": "S'intégrer dans une palanquée guidée en respectant l'environnement et les règles de sécurité.",
+              "situation": "Fin de formation, avec une incursion possible dans la zone 6-12 m.",
+              "critere": "Il reste près du GP, respecte le milieu et les consignes. Correspond à l'aptitude décrite par le MFT (pas de modalités d'évaluation dans le MFT PE12).",
+              "securite": "Zone 6-12 m seulement en fin de formation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

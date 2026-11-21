@@ -1,0 +1,92 @@
+baseURL = "https://passe-ton-mf1.com/"
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = "Passe-ton-MF1"
+disableKinds = ["taxonomy", "term", "RSS"]
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+  unsafe = false
+[markup.goldmark.extensions]
+  typographer = false
+
+[minify]
+  minifyOutput = true
+
+# ------------------------------------------------------------------
+# Réglages modifiables sans toucher aux gabarits
+# ------------------------------------------------------------------
+[params]
+  # Niveaux masqués (rien n'est supprimé : retirer un identifiant de la liste suffit à le réafficher).
+  # pistes : onglets de la page Pistes (identifiants de data/onglets.yaml et data/jeunes.yaml).
+  # canvas : pastilles de niveau du Canvas (identifiants de data/canvas.json).
+  masquesPistes = ["RANDO", "JP"]
+  masquesCanvas = ["jp"]
+  # Description par défaut (balise meta et aperçus de partage) quand une page n’a pas la sienne.
+  description = "Le pense-bête gratuit d’un stagiaire MF1 : thèmes d’entraînement, MFT sur la courbe de plongée, progressions types, Code du sport et révisions."
+  # Image des aperçus de partage (1200 × 630), dans static/.
+  imagePartage = "images/partage.png"
+  imagePartageAlt = "Passe-ton-MF1.com : comprends le MFT, une séance après l’autre. Courbe de plongée sur fond marine."
+  # Date de consultation du MFT et du Code du sport, affichée dans le pied
+  # de page et en bas de chaque fiche (« consulté en … »).
+  mftConsulte = "11/2026"
+
+
+  # Sources officielles
+  mftUrl = "https://mft.ffessm.fr/pages/documents"
+  cdsUrl = "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000025393884"
+
+  # Sites des CTR, fenêtre « Vrais sujets d’examen »
+  [[params.ctr]]
+    region = "Île-de-France"
+    description = "Page de la commission technique. Les sujets se trouvent en bas de page."
+    url = "https://ffessm-idf.fr/liste-des-commissions/technique/"
+    domaine = "ffessm-idf.fr"
+  [[params.ctr]]
+    region = "Aquitaine"
+    description = "Page consacrée au MF1 sur le site du comité."
+    url = "https://plongee.ffessm-csna.fr/w/le-mf1"
+    domaine = "plongee.ffessm-csna.fr"
+  [[params.ctr]]
+    region = "Bretagne Pays de la Loire"
+    description = "Sujets de pédagogie MF1 publiés par le comité."
+    url = "https://www.cibpl.fr/technique/enseigner/moniteur-federal-1er-degre/sujets-de-pedagogie-mf1/"
+    domaine = "cibpl.fr"
+
+# Navigation principale, dans l’ordre de la maquette
+[menus]
+  [[menus.main]]
+    name = "Accueil"
+    pageRef = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Capacitaire"
+    pageRef = "/capacitaire"
+    weight = 2
+  [[menus.main]]
+    name = "S’entraîner"
+    pageRef = "/s-entrainer"
+    weight = 3
+  [[menus.main]]
+    name = "Pistes"
+    pageRef = "/progression"
+    weight = 6
+    # Séparateur avant « Pistes » : sépare les deux groupes de modalités de travail (Pistes, Canvas).
+    [menus.main.params]
+      separateurAvant = true
+  [[menus.main]]
+    name = "MFT"
+    pageRef = "/explore-le-mft"
+    weight = 4
+  [[menus.main]]
+    name = "CdS"
+    pageRef = "/explore-le-cds"
+    weight = 5
+  [[menus.main]]
+    name = "Canvas"
+    pageRef = "/canvas"
+    weight = 7
+  [[menus.main]]
+    name = "Ressources"
+    pageRef = "/ressources"
+    weight = 8

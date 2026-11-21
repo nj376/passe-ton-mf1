@@ -1,0 +1,14 @@
+<footer class="pied">
+  <div class="pied__interieur">
+    <span class="pied__mention">© 2026 - <a href="https://buschini.com">Philippe Buschini</a> - Site non affilié à la FFESSM.</span>
+    {{- /* Version du site : fichier VERSION, augmenté d’un cran à chaque commit par outils/incrementer-version.sh. */}}
+    {{- $version := os.ReadFile "VERSION" | strings.TrimSpace }}
+    <span class="pied__version">v.{{ $version }}</span>
+    {{- if .Params.sourceCds }}
+    <span>Sources : <a href="{{ site.Params.mftUrl }}">MFT (mft.ffessm.fr)</a> · <a href="{{ site.Params.cdsUrl }}">Code du sport (Légifrance)</a>, consultés en {{ site.Params.mftConsulte }}</span>
+    {{- else }}
+    <span>Sources : <a href="{{ site.Params.mftUrl }}">MFT (mft.ffessm.fr)</a>, consultés en {{ site.Params.mftConsulte }}</span>
+    {{- end }}
+    {{/* Emplacement réservé au futur lien « Mentions légales » (hors de cette phase). */}}
+  </div>
+</footer>

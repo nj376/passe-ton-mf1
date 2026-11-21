@@ -1,0 +1,84 @@
+{{ define "main" }}
+{{- /* Mindmaps (maquettes _passation/mindmaps/*.dc.html). Styles propres à la page : classes « mm- ».
+       Données : data/mindmaps.json et static/mindmaps/, produits par outils/mindmaps.py à partir des fichiers draw.io.
+       La visionneuse (zoom, déplacement, sommaire, mini-carte) est dans assets/js/mindmaps.js. */ -}}
+{{- $niveaux := site.Data.mindmaps.niveaux }}
+<div class="mm" data-mm data-base="{{ "/" | relURL }}" data-contact="{{ "/contact/" | relURL }}">
+
+  <section class="mm-entete">
+    <h1 class="mm-titre">Mindmaps</h1>
+    <p class="mm-intro">Les cartes mentales de chaque niveau : le cadre réglementaire, les compétences, les connaissances théoriques et, selon le niveau, d’autres thèmes.</p>
+  </section>
+
+  {{/* Téléphone : pas de visionneuse. */}}
+  <section class="mm-telephone">
+    <span class="mm-telephone__icone"><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></span>
+    <h2 class="mm-telephone__titre">À ouvrir sur une tablette ou un ordinateur</h2>
+    <p class="mm-telephone__texte">Les mindmaps sont trop grandes pour rester lisibles sur l’écran d’un téléphone.</p>
+  </section>
+
+  <div class="mm-appli">
+    <section class="mm-choix" aria-label="Choix de la mindmap">
+      <div class="mm-niveaux" role="group" aria-label="Niveau">
+        <span class="mm-niveaux__libelle">Niveau</span>
+        {{- range $niveaux }}
+        {{- if .cartes }}
+        <button type="button" class="mm-pastille" aria-pressed="{{ if eq .id "n1" }}true{{ else }}false{{ end }}" data-niveau="{{ .id }}">{{ .court }}</button>
+        {{- end }}
+        {{- end }}
+      </div>
+      <div class="mm-ligne">
+        <div class="mm-onglets" role="tablist" aria-label="Mindmap" data-onglets></div>
+        <span class="mm-rappel" data-rappel></span>
+      </div>
+    </section>
+
+    <label class="mm-aller">Aller à
+      <select data-aller></select>
+    </label>
+
+    <section class="mm-corps">
+      <div class="mm-sommaire">
+        <nav aria-label="Sections de la mindmap" class="mm-sommaire__nav">
+          <span class="mm-sommaire__titre">Sections</span>
+          <ul class="mm-sections" data-sections></ul>
+        </nav>
+      </div>
+
+      <div class="mm-vue" id="mm-vue" role="tabpanel" tabindex="0" aria-describedby="mm-raccourcis" data-vue>
+        <div class="mm-toile" data-toile></div>
+        <p class="visuellement-cache" id="mm-raccourcis">Glisse pour te déplacer. Raccourcis : plus et moins pour zoomer, zéro pour ajuster à l’écran, flèches pour te déplacer.</p>
+        <div class="mm-outils" role="toolbar" aria-label="Zoom">
+          <button class="mm-outil" type="button" aria-label="Dézoomer" data-action="moins"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path></svg></button>
+          <span class="mm-zoom" data-zoom aria-live="polite">100 %</span>
+          <button class="mm-outil" type="button" aria-label="Zoomer" data-action="plus"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg></button>
+          <span class="mm-outils__sep" aria-hidden="true"></span>
+          <button class="mm-outil" type="button" aria-label="Ajuster à l’écran" data-action="ajuster"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg></button>
+          <button class="mm-outil" type="button" aria-label="Plein écran" data-action="plein"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"></path><path d="M3 3l6 6M21 3l-6 6M3 21l6-6M21 21l-6-6"></path></svg></button>
+        </div>
+        <span class="mm-astuce" data-astuce><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12M11 11.5v-7a1.5 1.5 0 0 1 3 0V12M14 11.5V6a1.5 1.5 0 0 1 3 0v8.5a6.5 6.5 0 0 1-6.5 6.5h-.6a6 6 0 0 1-4.6-2.2L3 15.5a1.6 1.6 0 0 1 2.4-2l2.6 2.2"></path></svg><span class="mm-astuce__ordi">Glisse pour te déplacer, molette ou pincement pour zoomer</span><span class="mm-astuce__tablette">Glisse pour te déplacer, pince pour zoomer</span></span>
+        <div class="mm-mini" aria-hidden="true" data-mini>
+          <div class="mm-mini__carte" data-mini-carte>
+            <img class="mm-mini__image" alt="" data-mini-image>
+            <span class="mm-mini__cadre" data-mini-cadre></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mm-pied">
+      <span>Construites à partir du MFT (version décembre 2025), mais pas fournies par le MFT.</span>
+      <span class="mm-liens">
+        <a class="mm-telecharger" href="#" download data-telecharger><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>Télécharger en PNG</a>
+        <a class="mm-signaler" href="{{ "/contact/" | relURL }}" data-signaler><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"></path></svg>Signaler une erreur</a>
+      </span>
+    </div>
+  </div>
+</div>
+<script type="application/json" id="mm-donnees">{{ $niveaux | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/mindmaps.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

@@ -1,0 +1,20 @@
+<dialog tabindex="-1" class="fenetre fenetre--large" id="fenetre-vrais-sujets" aria-labelledby="vs-titre">
+  <div class="fenetre__bloc">
+    <h2 id="vs-titre" class="fenetre__titre">S’entraîner sur de vrais sujets d’examen</h2>
+    <p class="fenetre__texte fenetre__texte--doux">Plusieurs commissions techniques régionales publient leurs sujets de pédagogie MF1. Les liens ci-dessous mènent directement à leurs sites officiels.</p>
+  </div>
+  <div class="encart-orange" role="note">
+    <p><strong>Ces sujets ne sont ni expliqués ni corrigés sur ce site.</strong> Travaille-les avec ton ou tes tuteurs MF2.</p>
+  </div>
+  <div class="ctr">
+    {{- range site.Params.ctr }}
+    <a class="ctr__carte" href="{{ .url }}">
+      <span class="ctr__region">{{ .region }}</span>
+      <span class="ctr__description">{{ .description }}</span>
+      <span class="ctr__domaine">{{ .domaine }} ↗</span>
+    </a>
+    {{- end }}
+  </div>
+  <p class="fenetre__note">Ta région publie aussi ses sujets ? Envoie-moi le lien par le <a href="{{ "/contact/" | relURL }}?sujet=Sujets%20d%E2%80%99examen%20de%20ma%20r%C3%A9gion">formulaire de contact</a> pour qu’il soit ajouté.</p>
+  <button type="button" class="bouton bouton--principal fenetre__fermer" data-fermer>Fermer</button>
+</dialog>

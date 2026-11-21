@@ -1,0 +1,2913 @@
+{
+  "niveau": "JP",
+  "source": "MFT Cursus jeunes bulles, jeunes plongeurs, adolescents, version juin 2026",
+  "statut": "Proposition de stagiaire, hors MFT, à valider avec un MF2",
+  "competences": [
+    {
+      "id": "ETOILE-equiper",
+      "competence": "Étoiles de mer : s'équiper et se déséquiper",
+      "evaluation_mft": "Le jeune est capable de gérer son équipement de façon de plus en plus autonome. Il est progressivement capable de s'équiper au sec, d'aider activement au rinçage et au rangement. Il prend soin de son matériel.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1",
+          "curseurs": [
+            "montrer → manipuler",
+            "avec aide → avec moins d'aide"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découvrir le PMT",
+              "objectif": "Voir et toucher palmes, masque et tuba.",
+              "situation": "Au bord, sous forme de jeu : le moniteur présente chaque élément, l'enfant le touche et dit à quoi il sert.",
+              "critere": "Il montre chaque élément quand on le nomme."
+            },
+            {
+              "n": 2,
+              "titre": "Essayer",
+              "objectif": "Mettre son masque et ses palmes avec aide.",
+              "situation": "Au bord, le moniteur aide à ajuster le masque et à chausser les palmes.",
+              "critere": "Il se laisse équiper et dit si quelque chose le gêne.",
+              "securite": "Matériel adapté à la morphologie de l'enfant."
+            },
+            {
+              "n": 3,
+              "titre": "Utiliser dans l'eau",
+              "objectif": "Garder son équipement en place en jouant.",
+              "situation": "Petit jeu dans l'eau, avec le PMT.",
+              "critere": "Masque et palmes restent en place."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 1 (évaluation)",
+              "objectif": "Identifier les éléments du matériel PMT.",
+              "situation": "Contrôle continu au fil des séances.",
+              "critere": "Il découvre le matériel PMT et en identifie les éléments. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 2",
+          "curseurs": [
+            "beaucoup d'aide → moins d'aide"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "S'équiper avec un peu d'aide",
+              "objectif": "Mettre son PMT en demandant de l'aide seulement si besoin.",
+              "situation": "Début de séance.",
+              "critere": "Il fait seul ce qu'il sait faire et demande pour le reste."
+            },
+            {
+              "n": 2,
+              "titre": "Se déséquiper",
+              "objectif": "Retirer son matériel sans le perdre.",
+              "situation": "Fin de séance.",
+              "critere": "Matériel retiré et posé au bon endroit."
+            },
+            {
+              "n": 3,
+              "titre": "Ranger avec le groupe",
+              "objectif": "Participer au rangement.",
+              "situation": "Fin de séance, en jeu de rangement.",
+              "critere": "Il range son matériel avec les autres."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 2 (évaluation)",
+              "objectif": "Avoir de moins en moins besoin d'aide.",
+              "situation": "Contrôle continu.",
+              "critere": "Il a de moins en moins besoin d'aide pour s'équiper et se déséquiper. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 3",
+          "curseurs": [
+            "aide → seul",
+            "s'équiper → préparer, rincer, ranger"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Préparer son matériel",
+              "objectif": "Rassembler son PMT avant la séance.",
+              "situation": "Avant la séance, il vérifie qu'il a tout.",
+              "critere": "Rien ne manque."
+            },
+            {
+              "n": 2,
+              "titre": "S'équiper seul",
+              "objectif": "Mettre son PMT sans aide.",
+              "situation": "Au bord.",
+              "critere": "Masque ajusté, palmes chaussées, tuba en place, sans aide."
+            },
+            {
+              "n": 3,
+              "titre": "Rincer et ranger",
+              "objectif": "Prendre soin de son matériel.",
+              "situation": "Après la séance : rinçage et rangement.",
+              "critere": "Rinçage et rangement faits activement.",
+              "theorie": "Les connaissances sont pratiques et répondent à la curiosité des enfants."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 3 (évaluation)",
+              "objectif": "Gérer son équipement seul.",
+              "situation": "Contrôle continu.",
+              "critere": "Il prépare son matériel, s'équipe et se déséquipe seul, participe au rinçage et au rangement. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ETOILE-eau",
+      "competence": "Étoiles de mer : se mettre à l'eau et sortir de l'eau",
+      "evaluation_mft": "Le jeune démontre sa capacité à se mettre à l'eau et à en sortir en PMT dans le respect des consignes du moniteur. Les techniques simples sont mises en œuvre. Les zones de mise à l'eau sont protégées.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1",
+          "curseurs": [
+            "avec la main du moniteur → seul",
+            "marches, plage → échelle"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Entrer doucement",
+              "objectif": "Entrer dans l'eau sans appréhension.",
+              "situation": "Départ plage ou marches, la main du moniteur si besoin.",
+              "critere": "Il entre dans l'eau calmement.",
+              "securite": "Encadrement E1, guide de Randosub ou IE1 apnée minimum. Profondeur 0-1 m (étoile 1), 0-2 m (étoiles 2 et 3)."
+            },
+            {
+              "n": 2,
+              "titre": "Par l'échelle",
+              "objectif": "Utiliser l'échelle en PMT.",
+              "situation": "Descente et montée à l'échelle, palmes à la main ou au pied selon l'échelle.",
+              "critere": "Il descend et remonte sans glisser.",
+              "securite": "Ne jamais marcher en avant avec les palmes aux pieds."
+            },
+            {
+              "n": 3,
+              "titre": "Sortir de l'eau",
+              "objectif": "Sortir en sécurité.",
+              "situation": "Sortie par la plage ou l'échelle.",
+              "critere": "Sortie sans chute."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 1 (évaluation)",
+              "objectif": "Entrer et sortir progressivement en PMT.",
+              "situation": "Contrôle continu, zone protégée.",
+              "critere": "Il entre dans l'eau et en sort progressivement en PMT (départ plage ou échelle). Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 2 et 3",
+          "curseurs": [
+            "entrée progressive → saut droit",
+            "bord bas → consignes du moniteur"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le saut droit au sec",
+              "objectif": "Comprendre le geste.",
+              "situation": "Au bord : grand pas, une main sur le masque.",
+              "critere": "Il montre le geste."
+            },
+            {
+              "n": 2,
+              "titre": "Premier saut droit",
+              "objectif": "Sauter depuis un bord bas.",
+              "situation": "Bord bas, eau assez profonde, zone libre vérifiée par le moniteur.",
+              "critere": "Il saute, garde son masque et revient en surface calmement.",
+              "theorie": "Risques : chute, percussion d'un autre plongeur.",
+              "securite": "Profondeur suffisante et zone libre vérifiées avant chaque saut."
+            },
+            {
+              "n": 3,
+              "titre": "Sortir en sécurité",
+              "objectif": "Sortir de l'eau sans se mettre en danger.",
+              "situation": "Sortie par l'échelle ou le bord.",
+              "critere": "Sortie sûre, sans bousculer les autres."
+            },
+            {
+              "n": 4,
+              "titre": "Étoiles de mer 2 et 3 (évaluation)",
+              "objectif": "Se mettre à l'eau plus directement.",
+              "situation": "Contrôle continu, zone protégée.",
+              "critere": "Il se met à l'eau en saut droit en PMT et sort de l'eau en sécurité. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ETOILE-immerger",
+      "competence": "Étoiles de mer : s'immerger",
+      "evaluation_mft": "Le jeune doit pouvoir progressivement utiliser les deux techniques du canard et du phoque en respectant les consignes du moniteur. Il doit être capable d'équilibrer ses oreilles lors de l'immersion.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1",
+          "curseurs": [
+            "visage → tête entière",
+            "regarder → attraper"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le visage dans l'eau",
+              "objectif": "Mettre le visage dans l'eau avec le masque.",
+              "situation": "Jeu : regarder un objet au fond, visage dans l'eau.",
+              "critere": "Il met le visage dans l'eau sans appréhension."
+            },
+            {
+              "n": 2,
+              "titre": "La tête sous l'eau",
+              "objectif": "Immerger toute la tête.",
+              "situation": "Jeu : passer sous une frite.",
+              "critere": "Il passe la tête sous l'eau et ressort calmement."
+            },
+            {
+              "n": 3,
+              "titre": "Attraper des objets",
+              "objectif": "Repérer et prendre un objet dans l'eau.",
+              "situation": "Objets à faible profondeur.",
+              "critere": "Il attrape l'objet et revient en surface.",
+              "securite": "Pas d'hyperventilation. Récupération en surface entre deux apnées. Le moniteur garde chaque enfant en vue."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 1 (évaluation)",
+              "objectif": "Immerger la tête et prendre des objets.",
+              "situation": "Contrôle continu.",
+              "critere": "Il immerge la tête, repère et prend des objets dans l'eau. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 2",
+          "curseurs": [
+            "courte immersion → canard ou phoque",
+            "oreilles : découvrir → équilibrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Courtes immersions",
+              "objectif": "S'immerger brièvement.",
+              "situation": "Jeux d'immersion courte à faible profondeur.",
+              "critere": "Il s'immerge et récupère en surface.",
+              "securite": "Pas d'hyperventilation. Récupération en surface entre deux apnées. Le moniteur garde chaque enfant en vue."
+            },
+            {
+              "n": 2,
+              "titre": "Équilibrer ses oreilles",
+              "objectif": "Découvrir l'équilibrage.",
+              "situation": "Le moniteur présente plusieurs méthodes et fait ressentir.",
+              "critere": "Il équilibre sans forcer.",
+              "theorie": "Prévention du barotraumatisme de l'oreille : si Valsalva, ne jamais forcer."
+            },
+            {
+              "n": 3,
+              "titre": "Canard ou phoque",
+              "objectif": "S'immerger avec l'une des deux techniques.",
+              "situation": "En PMT, faible profondeur.",
+              "critere": "Il s'immerge avec une technique et revient en surface en gérant sa récupération."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 2 (évaluation)",
+              "objectif": "S'immerger avec une technique et équilibrer.",
+              "situation": "Contrôle continu.",
+              "critere": "Courtes immersions, équilibrage appris, canard ou phoque, retour et récupération. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 3",
+          "curseurs": [
+            "une technique → les deux",
+            "immersion isolée → enchaînement"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les deux techniques",
+              "objectif": "Maîtriser le canard et le phoque.",
+              "situation": "En PMT, dans l'espace 0-2 m.",
+              "critere": "Il utilise les deux techniques à la demande.",
+              "securite": "Pas d'hyperventilation. Récupération en surface entre deux apnées. Le moniteur garde chaque enfant en vue."
+            },
+            {
+              "n": 2,
+              "titre": "Enchaîner",
+              "objectif": "Alterner immersion, courte apnée et retour.",
+              "situation": "Parcours ludique.",
+              "critere": "Enchaînement fluide, récupération respectée."
+            },
+            {
+              "n": 3,
+              "titre": "Lestage et oreilles",
+              "objectif": "Ajuster son lestage avec l'aide du moniteur s'il porte un shorty, équilibrer avec une méthode choisie.",
+              "situation": "Le moniteur aide à ajuster le lestage et fait ressentir l'équilibrage.",
+              "critere": "Il équilibre ses oreilles avec la méthode qui lui convient."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 3 (évaluation)",
+              "objectif": "Enchaîner immersions et apnées en sécurité.",
+              "situation": "Contrôle continu.",
+              "critere": "Il enchaîne et alterne immersion (deux techniques), courte apnée et retour en surface, et équilibre ses oreilles. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ETOILE-propulser",
+      "competence": "Étoiles de mer : se propulser",
+      "evaluation_mft": "A l'étoile de mer 1, le jeune peut être équipé d'une ceinture de flottabilité ou d'un élément lui permettant de se maintenir en surface (planche, bouée ou autre). Les deux types de nage de surface (libre et PMT) doivent être évaluées. Il faut progressivement emmener le jeune vers des zones où il n'a pas pied. Pour l'étoile de mer 2, les déplacements sont de l'ordre d'une dizaine de mètres. Pour l'étoile de mer 3, le jeune doit pouvoir parcourir 25 mètres en libre et 50 mètres en PMT. Il n'y a pas d'épreuve chronométrée, la capacité à effectuer un parcours en surface dans de bonnes conditions (absence d'appréhension et d'essoufflement) doit être le seul critère de performance.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1",
+          "curseurs": [
+            "avec aide à la flottabilité → appui réduit",
+            "sensation → petit parcours"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Sentir l'appui des palmes",
+              "objectif": "Découvrir que les palmes font avancer.",
+              "situation": "Avec une planche ou une ceinture, il bat des jambes.",
+              "critere": "Il avance et le remarque."
+            },
+            {
+              "n": 2,
+              "titre": "Petits déplacements",
+              "objectif": "Se déplacer sur quelques mètres.",
+              "situation": "Avec aide à la flottabilité.",
+              "critere": "Il avance sans appréhension."
+            },
+            {
+              "n": 3,
+              "titre": "Suivre un parcours balisé",
+              "objectif": "Aller d'une bouée à l'autre.",
+              "situation": "Petit parcours balisé en surface.",
+              "critere": "Il suit le parcours.",
+              "securite": "Encadrement E1, guide de Randosub ou IE1 apnée minimum. Profondeur 0-1 m (étoile 1), 0-2 m (étoiles 2 et 3)."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 1 (évaluation)",
+              "objectif": "Découvrir la propulsion.",
+              "situation": "Contrôle continu, aide à la flottabilité possible.",
+              "critere": "Recherche d'une sensation d'appui, petit parcours balisé suivi. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 2",
+          "curseurs": [
+            "avec appui → sans appui",
+            "libre → PMT"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Nager sans appui",
+              "objectif": "Se déplacer sans planche ni bouée.",
+              "situation": "Sur quelques mètres, là où il a pied.",
+              "critere": "Il nage sans appui."
+            },
+            {
+              "n": 2,
+              "titre": "Une nage en libre",
+              "objectif": "Utiliser le crawl ou la brasse.",
+              "situation": "Sans matériel, sur une courte distance.",
+              "critere": "Nage reconnaissable et efficace."
+            },
+            {
+              "n": 3,
+              "titre": "Palmage ventral",
+              "objectif": "Palmer en PMT.",
+              "situation": "Une dizaine de mètres en PMT.",
+              "critere": "Palmage régulier, sans s'arrêter."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 2 (évaluation)",
+              "objectif": "Se déplacer sur de courtes distances sans appui.",
+              "situation": "Contrôle continu, déplacements de l'ordre d'une dizaine de mètres.",
+              "critere": "Nage libre et palmage ventral sans appui. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 3",
+          "curseurs": [
+            "avoir pied → ne pas avoir pied",
+            "courtes → moyennes distances"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Se maintenir en surface",
+              "objectif": "Tenir en surface sans appui.",
+              "situation": "Palmage de sustentation là où il n'a pas pied.",
+              "critere": "Il reste en surface sans s'agripper.",
+              "securite": "Le moniteur reste à côté dans les zones sans pied."
+            },
+            {
+              "n": 2,
+              "titre": "Allonger en libre",
+              "objectif": "Nager 25 m en libre.",
+              "situation": "Distances croissantes.",
+              "critere": "25 m sans appréhension ni essoufflement."
+            },
+            {
+              "n": 3,
+              "titre": "Allonger en PMT",
+              "objectif": "Palmer 50 m.",
+              "situation": "Distances croissantes en palmage ventral.",
+              "critere": "50 m sans essoufflement."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 3 (évaluation)",
+              "objectif": "Se déplacer sur des distances moyennes.",
+              "situation": "Contrôle continu, pas de chronomètre.",
+              "critere": "25 m en libre et 50 m en PMT, sans appui, sans appréhension ni essoufflement. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ETOILE-ventiler",
+      "competence": "Étoiles de mer : se ventiler",
+      "evaluation_mft": "Le jeune montre sa capacité à ventiler sur tuba, de façon régulière, sur des durées de plus en plus longues. Il vide son tuba suite à une immersion. A l'étoile de mer 3, le jeune ventile sur tuba pour parcourir 50 mètres en surface dans un contexte normal (sans courant). Le jeune est capable de faire sans difficulté des déplacements en apnée sur quelques mètres en apnée inspiratoire. A l'étoile de mer 3, le jeune est capable de vider son masque partiellement rempli d'eau en apnée et sans l'enlever. L'efficacité du vidage est visée.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1 et 2",
+          "curseurs": [
+            "tête hors de l'eau → visage dans l'eau",
+            "respirer → vider le tuba",
+            "surface → courte apnée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Respirer sur tuba",
+              "objectif": "Respirer calmement avec le tuba.",
+              "situation": "Au bord, visage dans l'eau, plusieurs cycles.",
+              "critere": "Il respire calmement sur plusieurs cycles."
+            },
+            {
+              "n": 2,
+              "titre": "Vider le tuba",
+              "objectif": "Chasser l'eau du tuba d'un souffle.",
+              "situation": "Il immerge la tête puis souffle fort en revenant.",
+              "critere": "Tuba vidé, inspiration prudente ensuite.",
+              "theorie": "Prévention de la noyade : inspirer prudemment après un vidage."
+            },
+            {
+              "n": 3,
+              "titre": "Courtes apnées",
+              "objectif": "Retenir sa respiration, tête sous l'eau.",
+              "situation": "Jeux d'apnée inspiratoire très courte.",
+              "critere": "Apnée calme, retour serein.",
+              "securite": "Pas d'hyperventilation. Récupération en surface entre deux apnées. Le moniteur garde chaque enfant en vue."
+            },
+            {
+              "n": 4,
+              "titre": "Étoiles de mer 1 et 2 (évaluation)",
+              "objectif": "Ventiler sur tuba et vider le tuba.",
+              "situation": "Contrôle continu.",
+              "critere": "Plusieurs cycles sur tuba, tuba vidé en surface, courtes apnées inspiratoires. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 3",
+          "curseurs": [
+            "ventilation au repos → à l'effort",
+            "masque sec → masque avec un peu d'eau"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Ventiler en se déplaçant",
+              "objectif": "Adapter sa respiration à l'effort.",
+              "situation": "Palmage sur tuba, distances croissantes jusqu'à 50 m.",
+              "critere": "Respiration régulière jusqu'au bout."
+            },
+            {
+              "n": 2,
+              "titre": "Un peu d'eau dans le masque",
+              "objectif": "Rester calme avec un peu d'eau.",
+              "situation": "Il continue à respirer sur tuba avec un peu d'eau dans le masque.",
+              "critere": "Pas de stress, pas d'arrêt."
+            },
+            {
+              "n": 3,
+              "titre": "Vider le masque en apnée",
+              "objectif": "Vider un masque partiellement rempli sans l'enlever.",
+              "situation": "Sous l'eau, en apnée, faible profondeur.",
+              "critere": "Vidage efficace sans retirer le masque.",
+              "securite": "Pas d'hyperventilation. Récupération en surface entre deux apnées. Le moniteur garde chaque enfant en vue."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 3 (évaluation)",
+              "objectif": "Gérer sa ventilation en surface et en apnée.",
+              "situation": "Contrôle continu, sans courant.",
+              "critere": "50 m sur tuba, déplacements de quelques mètres en apnée inspiratoire, masque vidé en apnée. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ETOILE-milieu",
+      "competence": "Étoiles de mer : respecter le milieu et l'environnement",
+      "evaluation_mft": "Au cours des plongées en milieu naturel, le comportement respectueux et responsable du jeune plongeur est évalué.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1, 2 et 3",
+          "curseurs": [
+            "avec appui → sans appui",
+            "regarder → observer et raconter"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Se déplacer sans s'agripper",
+              "objectif": "Se déplacer sans prendre appui.",
+              "situation": "Jeux de déplacement sans toucher le fond.",
+              "critere": "Il se déplace sans appui."
+            },
+            {
+              "n": 2,
+              "titre": "Palmer en douceur",
+              "objectif": "Palmer sans soulever le fond.",
+              "situation": "Parcours près du fond.",
+              "critere": "Palmage maîtrisé, eau claire derrière lui."
+            },
+            {
+              "n": 3,
+              "titre": "Observer",
+              "objectif": "Développer sa curiosité pour le « sous l'eau ».",
+              "situation": "En milieu naturel : le moniteur montre, l'enfant raconte ce qu'il a vu.",
+              "critere": "Il observe sans toucher et raconte.",
+              "theorie": "Faune et flore courantes, respect de la tranquillité de la faune, début de sensibilisation à la Charte internationale du plongeur responsable. Bonnes habitudes de rinçage du matériel."
+            },
+            {
+              "n": 4,
+              "titre": "En milieu naturel (évaluation)",
+              "objectif": "Adopter un comportement respectueux.",
+              "situation": "Plongées en milieu naturel.",
+              "critere": "Comportement respectueux et responsable. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ETOILE-communiquer",
+      "competence": "Étoiles de mer : communiquer",
+      "evaluation_mft": "Les deux aspects de la communication sont évalués, compréhension et réalisation. Les situations d'évaluation doivent être variées (statiques, dynamiques, individuelles ou en palanquée). L'exactitude et la promptitude de la réalisation des gestes sont attendues. Le jeune doit être efficace dans sa communication. Il n'a pas à connaître les interventions faisant suite aux signes demandant de l'assistance.",
+      "techniques": [
+        {
+          "nom": "Étoile de mer 1",
+          "curseurs": [
+            "voir → comprendre"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découvrir les signes",
+              "objectif": "Voir qu'on peut se parler avec les mains.",
+              "situation": "Jeu au bord : le moniteur fait des signes, les enfants devinent.",
+              "critere": "Il devine plusieurs signes."
+            },
+            {
+              "n": 2,
+              "titre": "Comprendre dans l'eau",
+              "objectif": "Comprendre un signe sous l'eau.",
+              "situation": "Jeu dans l'eau, visage immergé.",
+              "critere": "Il comprend le signe et réagit."
+            },
+            {
+              "n": 3,
+              "titre": "Répondre",
+              "objectif": "Répondre au OK du moniteur.",
+              "situation": "Pendant les jeux.",
+              "critere": "Réponse immédiate."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 1 (évaluation)",
+              "objectif": "Comprendre divers signes communs sous l'eau.",
+              "situation": "Contrôle continu.",
+              "critere": "Il comprend divers signes communs sous l'eau. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 2",
+          "curseurs": [
+            "au bord → dans l'eau",
+            "comprendre → faire"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les signes de déplacement",
+              "objectif": "Connaître OK, direction, montée, descente, stop, regarder, ne pas toucher.",
+              "situation": "Jeu au bord.",
+              "critere": "Il fait et comprend chaque signe."
+            },
+            {
+              "n": 2,
+              "titre": "Sur un parcours",
+              "objectif": "Suivre les signes sur un parcours aménagé.",
+              "situation": "Le moniteur guide par signes.",
+              "critere": "Il suit les signes sans hésiter."
+            },
+            {
+              "n": 3,
+              "titre": "Faire les signes",
+              "objectif": "Utiliser les signes de lui-même.",
+              "situation": "Il guide un camarade par signes.",
+              "critere": "Signes justes et nets."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 2 (évaluation)",
+              "objectif": "Maîtriser les signes de déplacement.",
+              "situation": "Contrôle continu, situations variées.",
+              "critere": "Signes exacts et rapides : OK, direction, montée, descente, stop, regarder, ne pas toucher. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Étoile de mer 3",
+          "curseurs": [
+            "signes de déplacement → signes usuels",
+            "répondre → prendre l'initiative"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les signes usuels",
+              "objectif": "Connaître ça ne va pas, j'ai froid, essoufflement, souffler, équilibrer les oreilles.",
+              "situation": "Jeu au bord.",
+              "critere": "Il fait et comprend chaque signe.",
+              "theorie": "Connaissance des signes et des réponses possibles."
+            },
+            {
+              "n": 2,
+              "titre": "Répondre dans l'eau",
+              "objectif": "Répondre vite et juste.",
+              "situation": "Questions du moniteur pendant l'activité.",
+              "critere": "Réponse exacte et rapide."
+            },
+            {
+              "n": 3,
+              "titre": "Prendre l'initiative",
+              "objectif": "Prévenir sans attendre la question.",
+              "situation": "Pendant les séances, il signale froid ou souci.",
+              "critere": "Il signale de lui-même."
+            },
+            {
+              "n": 4,
+              "titre": "Étoile de mer 3 (évaluation)",
+              "objectif": "Maîtriser les signes usuels.",
+              "situation": "Contrôle continu, situations variées.",
+              "critere": "Signes usuels exacts et rapides, initiative. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-equiper",
+      "competence": "Plongeur de bronze et d'argent : s'équiper et se déséquiper",
+      "evaluation_mft": "Le jeune est capable de gérer son équipement de façon de plus en plus autonome. Il est progressivement capable de s'équiper au sec puis dans l'eau dans des conditions calmes et protégées. Il prend soin de son matériel avant et après la plongée.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "découvrir → participer",
+            "avec aide → aide adaptée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Découvrir le scaphandre",
+              "objectif": "Connaître gilet, bouteille, détendeur.",
+              "situation": "Au sec, le moniteur présente chaque élément sous forme ludique.",
+              "critere": "Il nomme les éléments et dit à quoi ils servent.",
+              "securite": "Bouteille toujours calée. L'enfant ne la manipule pas seul."
+            },
+            {
+              "n": 2,
+              "titre": "Participer au gréage",
+              "objectif": "Aider à monter et démonter son équipement.",
+              "situation": "Gréage et dégréage avec le moniteur, qui manipule la bouteille.",
+              "critere": "Il participe activement et connaît l'ordre.",
+              "securite": "Robinet ouvert par le moniteur, lentement, manomètre détourné."
+            },
+            {
+              "n": 3,
+              "titre": "S'équiper en surface avec aide",
+              "objectif": "Capeler et décapeler avec le moniteur.",
+              "situation": "En surface, eau calme, aide adaptée aux conditions.",
+              "critere": "Il se laisse aider et fait sa part."
+            },
+            {
+              "n": 4,
+              "titre": "Rincer et ranger",
+              "objectif": "Prendre soin du matériel.",
+              "situation": "Après la séance.",
+              "critere": "Il rince et range avec le groupe."
+            },
+            {
+              "n": 5,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "Participer activement à la mise en œuvre de son matériel.",
+              "situation": "Contrôle continu.",
+              "critere": "Participation active au gréage, au dégréage, au rinçage et au rangement, équipement en surface avec aide. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "aide du moniteur → aide ponctuelle",
+            "au sec → capelage dans l'eau"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Gréer avec une aide ponctuelle",
+              "objectif": "Gréer et dégréer presque seul.",
+              "situation": "Le moniteur aide seulement pour la bouteille, le lest ou l'inflateur.",
+              "critere": "Gréage dans le bon ordre, sans oubli.",
+              "securite": "Bouteille toujours calée. Les équipements lourds restent manipulés avec un adulte."
+            },
+            {
+              "n": 2,
+              "titre": "Capeler dans l'eau",
+              "objectif": "Capeler et décapeler en surface.",
+              "situation": "Eau calme et protégée, gilet gonflé.",
+              "critere": "Capelage et décapelage autonomes."
+            },
+            {
+              "n": 3,
+              "titre": "Rigueur",
+              "objectif": "Ne rien oublier et prendre soin de son matériel.",
+              "situation": "Avant et après chaque plongée.",
+              "critere": "Matériel complet, rincé et rangé, avec l'aide d'un adulte si besoin."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "Gérer son équipement de façon de plus en plus autonome.",
+              "situation": "Contrôle continu, conditions calmes et protégées.",
+              "critere": "Gréage et dégréage avec aide ponctuelle, capelage et décapelage autonomes en surface. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-eau",
+      "competence": "Plongeur de bronze et d'argent : se mettre à l'eau et sortir de l'eau",
+      "evaluation_mft": "Le jeune démontre progressivement sa capacité à se mettre à l'eau et à en sortir en scaphandre, sans appréhension, dans le respect des consignes du moniteur et du DP. L'efficacité du capelage et du décapelage en surface est recherchée. Les techniques sont réalisées dans des conditions calmes et protégées. Les situations d'apprentissage et d'évaluation en milieu artificiel doivent être les plus proches possible de la réalité (constitution de la palanquée, consignes du DP et mise en œuvre).",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "PMT → scaphandre",
+            "une technique → plusieurs"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Mises à l'eau en PMT",
+              "objectif": "Maîtriser saut droit, bascule arrière, départ plage et échelle en PMT.",
+              "situation": "Bord bas, zone libre, une technique à la fois.",
+              "critere": "Chaque technique réalisée sans appréhension.",
+              "theorie": "Risques : chute, percussion du bateau ou d'un autre plongeur.",
+              "securite": "Zone d'eau libre et profondeur suffisante vérifiées avant chaque mise à l'eau."
+            },
+            {
+              "n": 2,
+              "titre": "En scaphandre, s'équiper en surface",
+              "objectif": "S'équiper et se déséquiper dans l'eau avec le moniteur.",
+              "situation": "Eau calme, gilet gonflé, aide du moniteur.",
+              "critere": "Il s'équipe en surface sans s'affoler."
+            },
+            {
+              "n": 3,
+              "titre": "Consignes du moniteur",
+              "objectif": "Se mettre à l'eau au signal.",
+              "situation": "Mise à l'eau organisée comme une vraie sortie.",
+              "critere": "Il attend le signal et respecte les consignes."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "Se mettre à l'eau et en sortir sans appréhension.",
+              "situation": "Contrôle continu, conditions calmes et protégées.",
+              "critere": "Techniques en PMT maîtrisées, équipement en surface avec aide. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "PMT → scaphandre",
+            "bord → embarcation si les conditions le permettent"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Saut droit en scaphandre",
+              "objectif": "Sauter en gardant son matériel.",
+              "situation": "Bord bas, gilet partiellement gonflé, main sur masque et détendeur.",
+              "critere": "Matériel en place, il s'écarte et fait OK.",
+              "securite": "Zone libre vérifiée. Hauteur adaptée au gabarit de l'enfant."
+            },
+            {
+              "n": 2,
+              "titre": "Bascule arrière en scaphandre",
+              "objectif": "Basculer en gardant son matériel.",
+              "situation": "Bord ou pneumatique, mer calme.",
+              "critere": "Bascule propre, matériel en place."
+            },
+            {
+              "n": 3,
+              "titre": "Dans une organisation réelle",
+              "objectif": "Respecter les consignes du DP.",
+              "situation": "Palanquée constituée, consignes du DP.",
+              "critere": "Mise à l'eau au signal, attention aux autres."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "Se mettre à l'eau en scaphandre selon les conditions.",
+              "situation": "Contrôle continu, ou dans le cadre des qualifications bateau.",
+              "critere": "Saut droit et bascule arrière en scaphandre si les conditions le permettent. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-immerger",
+      "competence": "Plongeur de bronze et d'argent : s'immerger",
+      "evaluation_mft": "Les techniques du canard, du phoque, de la coulée sont progressivement maitrisées. Il est essentiel de faire ressentir l'équilibrage des oreilles afin de le rendre efficace sans forcer. Le jeune doit être capable de s'immerger de façon de plus en plus autonome, sur un fond visible et limité à 6m maximum, en suivant les indications données.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "au sec → dans l'eau",
+            "avec aide → face au moniteur"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Équilibrer ses oreilles",
+              "objectif": "Ressentir et réussir l'équilibrage.",
+              "situation": "Plusieurs méthodes présentées, au sec puis en surface.",
+              "critere": "Il équilibre sans forcer.",
+              "theorie": "Prévention des barotraumatismes de l'oreille, des sinus et du placage de masque."
+            },
+            {
+              "n": 2,
+              "titre": "Lestage",
+              "objectif": "Être équilibré à 3 m.",
+              "situation": "Le moniteur ajuste le lest.",
+              "critere": "Lest permettant l'équilibre à 3 m."
+            },
+            {
+              "n": 3,
+              "titre": "S'immerger face au moniteur",
+              "objectif": "Descendre avec le moniteur.",
+              "situation": "Fond visible, faible profondeur, aide si besoin.",
+              "critere": "Descente calme, oreilles équilibrées.",
+              "securite": "Espace 0-6 m, plongée sans palier, une seule plongée par jour avant 12 ans, matériel adapté à la morphologie de l'enfant."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "S'immerger face au moniteur.",
+              "situation": "Contrôle continu.",
+              "critere": "Oreilles équilibrées, immersion face au moniteur, lestage ajusté. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "une technique → phoque, canard, coulée",
+            "point fixe → mouillage"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Phoque et canard",
+              "objectif": "Utiliser les deux techniques.",
+              "situation": "Fond visible, faible profondeur.",
+              "critere": "Les deux techniques à la demande."
+            },
+            {
+              "n": 2,
+              "titre": "La coulée",
+              "objectif": "Découvrir la coulée.",
+              "situation": "Démonstration puis essai, fond visible.",
+              "critere": "Coulée réalisée calmement."
+            },
+            {
+              "n": 3,
+              "titre": "Le long du mouillage",
+              "objectif": "Descendre sur un point fixe ou le long du mouillage.",
+              "situation": "Avec le moniteur, jusqu'à 6 m maximum.",
+              "critere": "Descente contrôlée, oreilles équilibrées.",
+              "securite": "Espace 0-6 m, plongée sans palier, une seule plongée par jour avant 12 ans, matériel adapté à la morphologie de l'enfant."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "S'immerger de façon de plus en plus autonome.",
+              "situation": "Contrôle continu, fond visible, 6 m maximum.",
+              "critere": "Phoque, canard et coulée progressivement maîtrisés, indications suivies. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-propulser",
+      "competence": "Plongeur de bronze et d'argent : se propulser",
+      "evaluation_mft": "Il n'y a pas d'épreuve chronométrée. La capacité à effectuer sans appui un parcours en surface, dans des conditions calmes et protégées, dans de bonnes conditions physiques (sans essoufflement) est le seul critère de performance. Le plongeur de bronze doit pouvoir se déplacer en surface sur une distance de 25m sans matériel, 50m en PMT et 25m en scaphandre. Le plongeur d'argent doit pouvoir parcourir environ 100m en PMT et 50m en scaphandre.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze et d'argent",
+          "curseurs": [
+            "surface → immersion → nage capelée",
+            "distances bronze → distances argent"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Palmages de surface",
+              "objectif": "Maîtriser sustentation et ventral, voire dorsal et costal.",
+              "situation": "Jeux et parcours en surface.",
+              "critere": "Geste de qualité, efficace."
+            },
+            {
+              "n": 2,
+              "titre": "Palmage en immersion",
+              "objectif": "Se déplacer sous l'eau près du moniteur.",
+              "situation": "Faible profondeur, à côté du moniteur.",
+              "critere": "Il reste à proximité et à la profondeur demandée.",
+              "theorie": "Types de palmes, palmage respectueux du milieu."
+            },
+            {
+              "n": 3,
+              "titre": "Nage capelée",
+              "objectif": "Nager en surface avec le scaphandre.",
+              "situation": "Gilet gonflé, distances courtes.",
+              "critere": "Il avance sans s'essouffler."
+            },
+            {
+              "n": 4,
+              "titre": "Distances du bronze",
+              "objectif": "Atteindre les distances du plongeur de bronze.",
+              "situation": "25 m sans matériel, 50 m en PMT, 25 m en scaphandre.",
+              "critere": "Parcours sans appui ni essoufflement."
+            },
+            {
+              "n": 5,
+              "titre": "Distances de l'argent (évaluation)",
+              "objectif": "Atteindre les distances du plongeur d'argent.",
+              "situation": "Environ 100 m en PMT et 50 m en scaphandre, pas de chronomètre.",
+              "critere": "Qualité et efficacité du geste, sans essoufflement. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-ventiler",
+      "competence": "Plongeur de bronze et d'argent : se ventiler",
+      "evaluation_mft": "Le jeune plongeur montre sa capacité à gérer sa ventilation dans des conditions calmes. Il est capable de faire des déplacements courts en apnée (quelques mètres) sans précipitation. Il est capable de vider son masque, partiellement puis totalement rempli, dans des conditions calmes, sur un fond, et de faire plusieurs cycles ventilatoires avant de le remettre. On peut aller jusqu'à faire retirer le masque pour le plongeur d'argent si les conditions le permettent.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "respirer → lâcher-reprise → vidage partiel"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Respirer sur détendeur",
+              "objectif": "Ventiler normalement sous l'eau.",
+              "situation": "À genoux sur le fond, faible profondeur.",
+              "critere": "Fréquence et amplitude normales.",
+              "theorie": "Ne jamais bloquer sa respiration, surtout en remontant."
+            },
+            {
+              "n": 2,
+              "titre": "Lâcher-reprise d'embout",
+              "objectif": "Vider l'embout par expiration et par le bouton de surpression.",
+              "situation": "À genoux, faible profondeur.",
+              "critere": "Les deux techniques sans avaler d'eau."
+            },
+            {
+              "n": 3,
+              "titre": "Masque partiellement rempli",
+              "objectif": "Vider son masque en soufflant par le nez.",
+              "situation": "À genoux, un peu d'eau dans le masque.",
+              "critere": "Masque vidé, ventilation normale.",
+              "securite": "Jamais de situation brutale. On arrête et on rassure si l'enfant stresse."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "Gérer sa ventilation et vider un masque partiellement rempli.",
+              "situation": "Contrôle continu, conditions calmes, sur un fond.",
+              "critere": "Ventilation maîtrisée, lâcher-reprise, vidage partiel. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "masque partiel → masque plein → masque retiré",
+            "immobile → apnée en déplacement"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Masque totalement rempli",
+              "objectif": "Vider un masque plein.",
+              "situation": "À genoux, sur un fond.",
+              "critere": "Vidage sans appréhension."
+            },
+            {
+              "n": 2,
+              "titre": "Retrait du masque",
+              "objectif": "Respirer quelques cycles sans masque puis le remettre.",
+              "situation": "Si les conditions le permettent, sur un fond, moniteur au contact.",
+              "critere": "Plusieurs cycles calmes, remise et vidage.",
+              "securite": "Retrait fait par l'enfant lui-même, faible profondeur, moniteur au contact."
+            },
+            {
+              "n": 3,
+              "titre": "Apnées en déplacement",
+              "objectif": "Se déplacer quelques mètres en apnée.",
+              "situation": "Faible profondeur, déplacement horizontal.",
+              "critere": "Quelques mètres sans précipitation.",
+              "securite": "Déplacement horizontal, jamais de remontée en apnée, moniteur à côté."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "Gérer sa ventilation et vider un masque plein.",
+              "situation": "Contrôle continu, conditions calmes.",
+              "critere": "Vidage d'un masque plein, retrait possible, apnées courtes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-equilibrer",
+      "competence": "Plongeur de bronze et d'argent : s'équilibrer",
+      "evaluation_mft": "Le jeune parvient progressivement à s'équilibrer à la demande du moniteur. Le niveau d'immersion à maintenir peut se définir par rapport au fond (1m au dessus) ou à la surface (2m en dessous). La gestion de la stabilisation doit se faire prioritairement au poumon ballast. Les situations d'évaluation doivent être variées et ludiques, dans des conditions calmes. La compétence est évaluée de manière répétitive.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "gilet géré par le moniteur → premier maniement",
+            "surface → immersion"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le gilet en surface",
+              "objectif": "Gonfler son gilet à l'inflateur pour flotter.",
+              "situation": "En surface.",
+              "critere": "Il flotte sans palmer."
+            },
+            {
+              "n": 2,
+              "titre": "Les purges",
+              "objectif": "Dégonfler son gilet pour s'immerger.",
+              "situation": "Purges lentes et rapides, hautes et basses.",
+              "critere": "Gilet vidé avant l'immersion."
+            },
+            {
+              "n": 3,
+              "titre": "Poumon ballast",
+              "objectif": "Monter et descendre avec sa respiration.",
+              "situation": "Gilet géré par le moniteur, lest ajusté avec lui.",
+              "critere": "Il décolle et redescend en respirant."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "S'initier au gilet et au poumon ballast.",
+              "situation": "Contrôle continu, situations ludiques.",
+              "critere": "Premier maniement du gilet, stabilisation au poumon ballast. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "gilet par le moniteur → gilet seul",
+            "grosses injections → petites quantités"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Petites injections",
+              "objectif": "S'équilibrer au gilet avec peu d'air.",
+              "situation": "À genoux puis en pleine eau.",
+              "critere": "Équilibre obtenu sans remonter."
+            },
+            {
+              "n": 2,
+              "titre": "Purger vite",
+              "objectif": "Purger rapidement en cas de besoin.",
+              "situation": "Exercice de purge rapide.",
+              "critere": "Purge immédiate au bon endroit.",
+              "securite": "Purger dès que la remontée s'accélère. Moniteur à portée de main."
+            },
+            {
+              "n": 3,
+              "titre": "Tenir un niveau",
+              "objectif": "Rester à 1 m du fond ou à 2 m sous la surface.",
+              "situation": "Jeux variés et répétés.",
+              "critere": "Niveau tenu, surtout au poumon ballast."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "S'équilibrer à la demande.",
+              "situation": "Contrôle continu, situations variées et ludiques.",
+              "critere": "Équilibre à la demande, gilet limité, poumon ballast prioritaire. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-milieu",
+      "competence": "Plongeur de bronze et d'argent : respecter le milieu et l'environnement",
+      "evaluation_mft": "Au cours des plongées en milieu naturel, le comportement respectueux du jeune plongeur est valorisé.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze et d'argent",
+          "curseurs": [
+            "avec le moniteur → de plus en plus seul",
+            "observer → nommer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Avec l'assistance du moniteur",
+              "objectif": "Se déplacer sans appui.",
+              "situation": "Le moniteur tient ou guide l'enfant près du fond.",
+              "critere": "Aucun contact avec le fond."
+            },
+            {
+              "n": 2,
+              "titre": "De plus en plus seul",
+              "objectif": "Se déplacer équilibré, palmage maîtrisé.",
+              "situation": "Parcours près du fond.",
+              "critere": "Pas de sédiment soulevé."
+            },
+            {
+              "n": 3,
+              "titre": "Observer et nommer",
+              "objectif": "Nommer les animaux les plus courants (argent).",
+              "situation": "Le moniteur montre, l'enfant nomme au débriefing.",
+              "critere": "Il observe sans toucher et nomme quelques animaux courants.",
+              "theorie": "Respect de la tranquillité de la faune, absence de dégradation."
+            },
+            {
+              "n": 4,
+              "titre": "En milieu naturel (évaluation)",
+              "objectif": "Évoluer en respectant le milieu.",
+              "situation": "Plongées en milieu naturel.",
+              "critere": "Comportement respectueux valorisé. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-communiquer",
+      "competence": "Plongeur de bronze et d'argent : communiquer",
+      "evaluation_mft": "Les deux aspects de la communication sont évalués, compréhension et réalisation. Les situations d'évaluation doivent être variées (statiques, dynamiques, individuelles puis en palanquée en fin de formation) et réalisées au fur et à mesure des séances. L'exactitude et l'absence d'hésitation dans la réalisation des gestes sont attendues. Les interventions faisant suite aux signes demandant de l'assistance n'ont pas à être connues (hormis recevoir de l'air).",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "comprendre → réaliser",
+            "au sec → dans l'eau"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Signes à comprendre",
+              "objectif": "Identifier toi, moi, monter, descendre, souffler, équilibrer les oreilles, stop, regarder, ne pas toucher.",
+              "situation": "Jeu au sec.",
+              "critere": "Il comprend chaque signe."
+            },
+            {
+              "n": 2,
+              "titre": "Signes à faire",
+              "objectif": "Réaliser OK, ça ne va pas, mi-pression, réserve, panne d'air, essoufflement, froid, fin de plongée ou d'exercice.",
+              "situation": "Jeu au sec puis dans l'eau.",
+              "critere": "Signes exacts et nets."
+            },
+            {
+              "n": 3,
+              "titre": "Dans l'eau",
+              "objectif": "Répondre au moniteur sans hésiter.",
+              "situation": "Questions du moniteur pendant la plongée.",
+              "critere": "Réponse rapide et juste."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "Communiquer avec le moniteur.",
+              "situation": "Contrôle continu, situations variées.",
+              "critere": "Compréhension et réalisation exactes, sans hésitation. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "signes du bronze → je n'ai plus d'air",
+            "individuel → en palanquée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Je n'ai plus d'air",
+              "objectif": "Réaliser le signe sans hésiter.",
+              "situation": "Au sec puis dans l'eau.",
+              "critere": "Signe exact et immédiat."
+            },
+            {
+              "n": 2,
+              "titre": "Recevoir de l'air",
+              "objectif": "Savoir ce qui se passe après ce signe.",
+              "situation": "Le moniteur montre comment il donne son détendeur de secours.",
+              "critere": "Il sait qu'il recevra l'octopus du moniteur."
+            },
+            {
+              "n": 3,
+              "titre": "En palanquée",
+              "objectif": "Communiquer en palanquée de deux jeunes.",
+              "situation": "Fin de formation.",
+              "critere": "Signes justes, attention aux autres."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "Communiquer en palanquée.",
+              "situation": "Contrôle continu, situations variées.",
+              "critere": "Tous les signes maîtrisés, y compris « je n'ai plus d'air ». Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-surface",
+      "competence": "Plongeur de bronze et d'argent : retourner en surface",
+      "evaluation_mft": "Le jeune plongeur parvient à gérer sa remontée en suivant son moniteur puis en autonomie. Il sait également se mettre en sécurité en surface. Pour la remontée en expiration, aucun critère de temps n'est recherché, l'apprentissage de l'automatisme expiratoire est recherché.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "tenu par le moniteur → face au moniteur",
+            "remonter → se mettre en sécurité"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Remonter lentement",
+              "objectif": "Remonter doucement face au moniteur.",
+              "situation": "Le moniteur tient l'enfant et règle la vitesse.",
+              "critere": "Remontée lente, respiration normale.",
+              "theorie": "Pas de Valsalva à la remontée, risque de surpression pulmonaire.",
+              "securite": "Le moniteur contrôle la vitesse."
+            },
+            {
+              "n": 2,
+              "titre": "Gonfler son gilet en surface",
+              "objectif": "Se maintenir en surface.",
+              "situation": "À l'arrivée en surface.",
+              "critere": "Gilet gonflé tout de suite."
+            },
+            {
+              "n": 3,
+              "titre": "Tour d'horizon",
+              "objectif": "Regarder autour de soi en arrivant.",
+              "situation": "À chaque remontée.",
+              "critere": "Tour d'horizon fait avec le moniteur."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "Remonter lentement et se maintenir en surface.",
+              "situation": "Contrôle continu.",
+              "critere": "Vitesse lente face au moniteur, gilet gonflé en surface. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "suivre le moniteur → autonomie",
+            "remontée → expiration et perte de l'encadrant"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Sécurité en sortie d'eau",
+              "objectif": "Faire seul tour d'horizon et gonflage.",
+              "situation": "À chaque remontée.",
+              "critere": "Les deux sans rappel."
+            },
+            {
+              "n": 2,
+              "titre": "Remonter en expirant",
+              "objectif": "Remonter de 6 à 3 m en expirant.",
+              "situation": "Gilet vide, détendeur en bouche, inspiration normale, rejet d'air continu, moniteur face à l'enfant.",
+              "critere": "Rejet d'air continu, sans précipitation.",
+              "securite": "Inspiration normale. Le moniteur tient l'enfant et peut freiner."
+            },
+            {
+              "n": 3,
+              "titre": "Perte de l'encadrant",
+              "objectif": "Appliquer la procédure.",
+              "situation": "Au sec puis simulation annoncée à faible profondeur.",
+              "critere": "Remontée lente et contrôlée, mise en sécurité en surface.",
+              "securite": "Simulation à faible profondeur, moniteur proche."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "Gérer sa remontée en autonomie.",
+              "situation": "Contrôle continu.",
+              "critere": "Remontée en expiration de 6 à 3 m, procédure de perte de l'encadrant, mise en sécurité. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPBA-securite",
+      "competence": "Plongeur de bronze et d'argent : évoluer en sécurité",
+      "evaluation_mft": "L'ensemble des situations nécessitant une intervention du moniteur doit être évalué. Le jeune plongeur est familiarisé avec la procédure mise en œuvre par le moniteur, il l'accepte en gardant son calme. L'accoutumance doit reposer sur la répétition au cours des séances et la variété des situations d'évaluation.",
+      "techniques": [
+        {
+          "nom": "Plongeur de bronze",
+          "curseurs": [
+            "au sec → dans l'eau"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Au sec",
+              "objectif": "Savoir ce que fait le moniteur en cas de réserve ou de froid.",
+              "situation": "Explication et jeu de rôle.",
+              "critere": "Il dit quel signe faire et ce qui se passe."
+            },
+            {
+              "n": 2,
+              "titre": "Réserve",
+              "objectif": "Vivre la procédure dans l'eau.",
+              "situation": "Signe réserve, le moniteur organise la remontée.",
+              "critere": "Il suit calmement."
+            },
+            {
+              "n": 3,
+              "titre": "Froid",
+              "objectif": "Signaler et accepter la fin de plongée.",
+              "situation": "Signe froid, le moniteur met fin à la plongée.",
+              "critere": "Il accepte calmement."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur de bronze (évaluation)",
+              "objectif": "Être familiarisé avec les procédures usuelles.",
+              "situation": "Répétition au cours des séances.",
+              "critere": "Procédures acceptées calmement. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeur d'argent",
+          "curseurs": [
+            "procédures usuelles → incidents",
+            "annoncé → répété"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Au sec",
+              "objectif": "Comprendre panne d'air et essoufflement.",
+              "situation": "Explication et jeu de rôle avec l'octopus.",
+              "critere": "Il dit ce qu'il fait et ce que fait le moniteur."
+            },
+            {
+              "n": 2,
+              "titre": "Panne d'air",
+              "objectif": "Demander de l'air et utiliser l'octopus du moniteur.",
+              "situation": "À genoux, faible profondeur, annoncé.",
+              "critere": "Signe, prise de l'octopus, respiration calme.",
+              "securite": "Faible profondeur, moniteur au contact. Jamais de vraie coupure d'air."
+            },
+            {
+              "n": 3,
+              "titre": "Essoufflement",
+              "objectif": "Signaler et se laisser prendre en charge.",
+              "situation": "Simulation annoncée.",
+              "critere": "Signe immédiat, procédure acceptée."
+            },
+            {
+              "n": 4,
+              "titre": "Plongeur d'argent (évaluation)",
+              "objectif": "Être familiarisé avec les procédures d'incident.",
+              "situation": "Répétition et variété au cours des séances.",
+              "critere": "Réaction immédiate et calme. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bord-equiper",
+      "competence": "Plongée du bord : s'équiper et se déséquiper",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "S'équiper et se déséquiper",
+          "curseurs": [
+            "plongée 1 → plongée 2 → plongée 3"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Plongée 1 : préparer avec aide",
+              "objectif": "Connaître et préparer son matériel.",
+              "situation": "Il rassemble et prépare son matériel, l'adulte aide pour les éléments lourds.",
+              "critere": "Il connaît le matériel nécessaire et participe activement."
+            },
+            {
+              "n": 2,
+              "titre": "Plongée 2 : s'équiper",
+              "objectif": "Mettre en œuvre son équipement au bord.",
+              "situation": "Il s'équipe sur le site (plage, rochers, ponton).",
+              "critere": "Équipement mis sans oubli."
+            },
+            {
+              "n": 3,
+              "titre": "Plongée 3 : après la plongée",
+              "objectif": "Se déséquiper, rincer, préparer la suite.",
+              "situation": "Il se déséquipe, rince et prépare son matériel pour la plongée suivante.",
+              "critere": "Tout est fait sans rappel."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Montrer son autonomie avec son matériel.",
+              "situation": "Trois plongées du bord en milieu naturel.",
+              "critere": "Il connaît, prépare, met en œuvre et entretient son matériel. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bord-eau",
+      "competence": "Plongée du bord : se mettre à l'eau et en sortir",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "Se mettre à l'eau et en sortir",
+          "curseurs": [
+            "site simple → site plus exigeant"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Plongée 1 : site simple",
+              "objectif": "Entrer et sortir par un accès facile.",
+              "situation": "Plage de sable ou ponton.",
+              "critere": "Mise à l'eau et sortie sans chute.",
+              "securite": "Le moniteur choisit des conditions calmes."
+            },
+            {
+              "n": 2,
+              "titre": "Plongée 2 : autre type de site",
+              "objectif": "Adapter sa mise à l'eau au site.",
+              "situation": "Rochers ou autre accès.",
+              "critere": "Procédure d'équipement adaptée, matériel protégé."
+            },
+            {
+              "n": 3,
+              "titre": "Plongée 3 : respecter le site",
+              "objectif": "Adapter son comportement au site.",
+              "situation": "Usage et protection du matériel, respect du site.",
+              "critere": "Comportement adapté sans rappel."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Se mettre à l'eau et sortir de façon adaptée au site.",
+              "situation": "Trois plongées du bord en milieu naturel.",
+              "critere": "Mise à l'eau et sortie adaptées au site. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bord-evoluer",
+      "competence": "Plongée du bord : évoluer dans l'eau",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "Évoluer dans l'eau",
+          "curseurs": [
+            "plongée 1 → plongée 2 → plongée 3"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Écouter les consignes",
+              "objectif": "Retenir les consignes de préparation.",
+              "situation": "Briefing du moniteur avant la plongée.",
+              "critere": "Il redit les consignes."
+            },
+            {
+              "n": 2,
+              "titre": "Les appliquer en plongée",
+              "objectif": "Suivre les consignes pendant la plongée.",
+              "situation": "Plongée du bord avec le moniteur.",
+              "critere": "Consignes respectées."
+            },
+            {
+              "n": 3,
+              "titre": "Sans rappel",
+              "objectif": "Appliquer les consignes de lui-même.",
+              "situation": "Troisième plongée.",
+              "critere": "Aucun rappel nécessaire."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Respecter les consignes du moniteur.",
+              "situation": "Trois plongées du bord en milieu naturel.",
+              "critere": "Consignes respectées lors de la préparation et pendant la plongée. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bateau-equiper",
+      "competence": "Bateau 1 et 2 : s'équiper et se déséquiper",
+      "evaluation_mft": "Le choix de la technique de mise à l'eau laissée à l'appréciation du moniteur en fonction du gabarit du jeune et de l'état de la mer. La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "S'équiper et se déséquiper",
+          "curseurs": [
+            "à quai → en mer",
+            "aide → autonomie"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Regrouper et caler",
+              "objectif": "Ranger son matériel près de sa palanquée.",
+              "situation": "Sur le bateau, avant le départ.",
+              "critere": "Matériel regroupé, bouteille calée, détendeur rangé.",
+              "securite": "Bouteille toujours calée sur le bateau."
+            },
+            {
+              "n": 2,
+              "titre": "Préparer son bloc",
+              "objectif": "Gréer correctement et rapidement.",
+              "situation": "Sur le bateau, avant la plongée.",
+              "critere": "Bloc prêt sans erreur."
+            },
+            {
+              "n": 3,
+              "titre": "Après la plongée",
+              "objectif": "Regrouper et ranger à nouveau.",
+              "situation": "Retour à bord.",
+              "critere": "Matériel rangé, bouteille calée."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Être autonome vis-à-vis de son matériel sur un bateau.",
+              "situation": "Trois plongées en milieu naturel depuis le bateau.",
+              "critere": "Matériel regroupé, bloc préparé correctement et rapidement. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bateau-eau",
+      "competence": "Bateau 1 et 2 : se mettre à l'eau et en sortir",
+      "evaluation_mft": "Le choix de la technique de mise à l'eau laissée à l'appréciation du moniteur en fonction du gabarit du jeune et de l'état de la mer. La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "Se mettre à l'eau et en sortir",
+          "curseurs": [
+            "bateau 1 (barge, pneumatique) → bateau 2 (vedette, chalutier)"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Dernière vérification",
+              "objectif": "Vérifier son matériel et la zone avant la mise à l'eau.",
+              "situation": "Avant chaque mise à l'eau.",
+              "critere": "Vérification faite, zone dégagée."
+            },
+            {
+              "n": 2,
+              "titre": "Bateau 1 : bascule arrière",
+              "objectif": "Basculer en sécurité sans perdre son matériel.",
+              "situation": "Barge ou pneumatique, mer calme.",
+              "critere": "Bascule sûre, matériel en place, capelage et décapelage autonomes en surface.",
+              "securite": "Technique choisie par le moniteur selon le gabarit et l'état de la mer."
+            },
+            {
+              "n": 3,
+              "titre": "Bateau 2 : saut droit et échelle",
+              "objectif": "Sauter et remonter équipé à l'échelle.",
+              "situation": "Vedette ou chalutier.",
+              "critere": "Saut sûr, remontée à l'échelle sans danger.",
+              "securite": "Jamais sous l'échelle ni sous un plongeur qui monte."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Se mettre à l'eau et en sortir en sécurité selon l'embarcation.",
+              "situation": "Trois plongées en milieu naturel.",
+              "critere": "Capelage autonome en surface, bascule (bateau 1) ou saut droit et échelle (bateau 2) sans perdre son matériel. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bateau-evoluer",
+      "competence": "Bateau 1 et 2 : évoluer dans l'eau",
+      "evaluation_mft": "Le choix de la technique de mise à l'eau laissée à l'appréciation du moniteur en fonction du gabarit du jeune et de l'état de la mer. La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "Évoluer dans l'eau",
+          "curseurs": [
+            "avec le moniteur → à côté du moniteur",
+            "tête en haut → tête en bas"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Descendre le long du mouillage",
+              "objectif": "S'immerger tête en haut le long d'un repère.",
+              "situation": "Mouillage ou pendeur, face au moniteur.",
+              "critere": "Descente calme le long du repère."
+            },
+            {
+              "n": 2,
+              "titre": "Tête en bas",
+              "objectif": "S'immerger tête en bas.",
+              "situation": "Le long du mouillage, à côté du moniteur.",
+              "critere": "Immersion contrôlée."
+            },
+            {
+              "n": 3,
+              "titre": "En face ou à côté",
+              "objectif": "Choisir sa position selon la consigne.",
+              "situation": "Immersion en palanquée.",
+              "critere": "Position respectée."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "S'immerger depuis un bateau.",
+              "situation": "Trois plongées en milieu naturel.",
+              "critere": "Immersion tête en haut ou en bas, le long du mouillage ou d'un pendeur. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-bateau-embarcation",
+      "competence": "Bateau 1 et 2 : évoluer sur une embarcation support de plongée",
+      "evaluation_mft": "Le choix de la technique de mise à l'eau laissée à l'appréciation du moniteur en fonction du gabarit du jeune et de l'état de la mer. La validation de cette qualification se fait en milieu naturel dans le cadre de trois plongées.",
+      "techniques": [
+        {
+          "nom": "Évoluer sur une embarcation support de plongée",
+          "curseurs": [
+            "connaître → appliquer",
+            "bateau 1 → bateau 2"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les consignes à bord",
+              "objectif": "Connaître les règles de sécurité sur un bateau.",
+              "situation": "Au quai : ne pas se pencher, pas de ceinture de lest pendant le trajet, matériel immobilisé.",
+              "critere": "Il cite les consignes.",
+              "theorie": "Initiation au matelotage : nœuds élémentaires, quelques termes marins."
+            },
+            {
+              "n": 2,
+              "titre": "Bateau 1",
+              "objectif": "Rester assis à l'intérieur.",
+              "situation": "Trajet en barge ou pneumatique.",
+              "critere": "Consignes appliquées pendant tout le trajet."
+            },
+            {
+              "n": 3,
+              "titre": "Bateau 2",
+              "objectif": "Ne pas courir ni se déplacer.",
+              "situation": "Trajet en vedette ou chalutier.",
+              "critere": "Consignes appliquées."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Avoir un comportement responsable à bord.",
+              "situation": "Trois plongées en milieu naturel.",
+              "critere": "Consignes de sécurité connues et appliquées. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-prof-stabilisation",
+      "competence": "Profondeur accompagnée : stabilisation",
+      "evaluation_mft": "Ces qualifications sont le résultat d'évaluations validées par plusieurs plongées en milieu naturel par un cadre E3 minimum.",
+      "techniques": [
+        {
+          "nom": "Stabilisation",
+          "curseurs": [
+            "20 m → 30 m → 40 m, par tranches de 2 ou 3 m",
+            "plongée simple → plongée successive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan à 20 m",
+              "objectif": "Vérifier l'équilibre jusqu'à 20 m.",
+              "situation": "Plongée à 20 m, compétences du PE20.",
+              "critere": "Acquis solides. Sinon, on consolide avant d'aller plus profond.",
+              "securite": "Qualification à partir de 14 ans, sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Entre 20 et 30 m",
+              "objectif": "S'équilibrer en profondeur.",
+              "situation": "Stabilisation en pleine eau au-delà de 20 m.",
+              "critere": "Équilibre tenu sans effort.",
+              "securite": "Approche par tranches de 2 ou 3 m. Le cadre observe fatigue, ressenti et réactions."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 20-30",
+              "objectif": "Valider la qualification 20-30.",
+              "situation": "Plusieurs plongées dans la zone 20-30 m.",
+              "critere": "Équilibre en profondeur et en pleine eau."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 30 et 40 m",
+              "objectif": "S'équilibrer entre 30 et 40 m.",
+              "situation": "Descente, fond, remontée, en pleine eau.",
+              "critere": "Équilibre tenu en toutes circonstances.",
+              "securite": "Approche par tranches de 2 ou 3 m, vigilance sur les plongées successives."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 30-40 (évaluation)",
+              "objectif": "Savoir s'équilibrer en profondeur et en pleine eau.",
+              "situation": "Plusieurs plongées en milieu naturel, cadre E3 minimum.",
+              "critere": "Équilibre maîtrisé en toutes circonstances jusqu'à 40 m. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-prof-ventilation",
+      "competence": "Profondeur accompagnée : ventilation",
+      "evaluation_mft": "Ces qualifications sont le résultat d'évaluations validées par plusieurs plongées en milieu naturel par un cadre E3 minimum.",
+      "techniques": [
+        {
+          "nom": "Ventilation",
+          "curseurs": [
+            "20 m → 30 m → 40 m, par tranches de 2 ou 3 m",
+            "plongée simple → plongée successive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan à 20 m",
+              "objectif": "Vérifier la ventilation jusqu'à 20 m.",
+              "situation": "Plongée à 20 m, compétences du PE20.",
+              "critere": "Acquis solides. Sinon, on consolide avant d'aller plus profond.",
+              "securite": "Qualification à partir de 14 ans, sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Entre 20 et 30 m",
+              "objectif": "Adapter sa respiration à la profondeur.",
+              "situation": "Déplacements calmes au-delà de 20 m.",
+              "critere": "Respiration calme, sans essoufflement.",
+              "theorie": "Essoufflement en profondeur : prévention.",
+              "securite": "Approche par tranches de 2 ou 3 m. Le cadre observe fatigue, ressenti et réactions."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 20-30",
+              "objectif": "Valider la qualification 20-30.",
+              "situation": "Plusieurs plongées dans la zone 20-30 m.",
+              "critere": "Respiration adaptée."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 30 et 40 m",
+              "objectif": "Adapter sa respiration entre 30 et 40 m.",
+              "situation": "Effort modéré en profondeur.",
+              "critere": "Ventilation régulée.",
+              "securite": "Approche par tranches de 2 ou 3 m, vigilance sur les plongées successives."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 30-40 (évaluation)",
+              "objectif": "Savoir adapter sa respiration à l'évolution en profondeur.",
+              "situation": "Plusieurs plongées en milieu naturel, cadre E3 minimum.",
+              "critere": "Ventilation adaptée jusqu'à 40 m. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-prof-evolution",
+      "competence": "Profondeur accompagnée : évolution sous l'eau",
+      "evaluation_mft": "Ces qualifications sont le résultat d'évaluations validées par plusieurs plongées en milieu naturel par un cadre E3 minimum.",
+      "techniques": [
+        {
+          "nom": "Évolution sous l'eau",
+          "curseurs": [
+            "20 m → 30 m → 40 m, par tranches de 2 ou 3 m",
+            "plongée simple → plongée successive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan à 20 m",
+              "objectif": "Vérifier l'évolution jusqu'à 20 m.",
+              "situation": "Plongée à 20 m, compétences du PE20.",
+              "critere": "Acquis solides. Sinon, on consolide avant d'aller plus profond.",
+              "securite": "Qualification à partir de 14 ans, sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Entre 20 et 30 m",
+              "objectif": "Adapter son évolution à la profondeur.",
+              "situation": "Pleine eau, luminosité et température différentes.",
+              "critere": "Évolution calme près du GP.",
+              "securite": "Approche par tranches de 2 ou 3 m. Le cadre observe fatigue, ressenti et réactions."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 20-30",
+              "objectif": "Valider la qualification 20-30.",
+              "situation": "Plusieurs plongées dans la zone 20-30 m.",
+              "critere": "Évolution adaptée."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 30 et 40 m",
+              "objectif": "Évoluer entre 30 et 40 m.",
+              "situation": "Plongées plus profondes, plongées successives.",
+              "critere": "Évolution adaptée, fatigue signalée.",
+              "securite": "Approche par tranches de 2 ou 3 m, vigilance sur les plongées successives."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 30-40 (évaluation)",
+              "objectif": "Savoir adapter son évolution à la profondeur.",
+              "situation": "Plusieurs plongées en milieu naturel, cadre E3 minimum.",
+              "critere": "Évolution adaptée jusqu'à 40 m. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-prof-communication",
+      "competence": "Profondeur accompagnée : communication",
+      "evaluation_mft": "Ces qualifications sont le résultat d'évaluations validées par plusieurs plongées en milieu naturel par un cadre E3 minimum.",
+      "techniques": [
+        {
+          "nom": "Communication",
+          "curseurs": [
+            "20 m → 30 m → 40 m, par tranches de 2 ou 3 m",
+            "plongée simple → plongée successive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan à 20 m",
+              "objectif": "Vérifier les signes jusqu'à 20 m.",
+              "situation": "Plongée à 20 m, compétences du PE20.",
+              "critere": "Acquis solides. Sinon, on consolide avant d'aller plus profond.",
+              "securite": "Qualification à partir de 14 ans, sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Entre 20 et 30 m",
+              "objectif": "Connaître les nouveaux signes de la profondeur.",
+              "situation": "Signes de narcose, de consommation et de désaturation, au sec puis dans l'eau.",
+              "critere": "Signes compris et réalisés.",
+              "securite": "Approche par tranches de 2 ou 3 m. Le cadre observe fatigue, ressenti et réactions."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 20-30",
+              "objectif": "Valider la qualification 20-30.",
+              "situation": "Plusieurs plongées dans la zone 20-30 m.",
+              "critere": "Réactions appropriées aux nouveaux signes."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 30 et 40 m",
+              "objectif": "Réagir entre 30 et 40 m.",
+              "situation": "Questions du cadre en profondeur.",
+              "critere": "Réaction appropriée et rapide.",
+              "securite": "Approche par tranches de 2 ou 3 m, vigilance sur les plongées successives."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 30-40 (évaluation)",
+              "objectif": "Savoir réagir de façon appropriée aux nouveaux signes.",
+              "situation": "Plusieurs plongées en milieu naturel, cadre E3 minimum.",
+              "critere": "Communication efficace jusqu'à 40 m. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-prof-connaissances",
+      "competence": "Profondeur accompagnée : connaissances",
+      "evaluation_mft": "Ces qualifications sont le résultat d'évaluations validées par plusieurs plongées en milieu naturel par un cadre E3 minimum.",
+      "techniques": [
+        {
+          "nom": "Connaissances",
+          "curseurs": [
+            "20 m → 30 m → 40 m, par tranches de 2 ou 3 m",
+            "plongée simple → plongée successive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan à 20 m",
+              "objectif": "Vérifier les connaissances jusqu'à 20 m.",
+              "situation": "Plongée à 20 m, compétences du PE20.",
+              "critere": "Acquis solides. Sinon, on consolide avant d'aller plus profond.",
+              "securite": "Qualification à partir de 14 ans, sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Entre 20 et 30 m",
+              "objectif": "Comprendre les phénomènes liés à la profondeur.",
+              "situation": "Désaturation, essoufflement, narcose, expliqués simplement.",
+              "critere": "Il explique avec ses mots.",
+              "securite": "Approche par tranches de 2 ou 3 m. Le cadre observe fatigue, ressenti et réactions."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 20-30",
+              "objectif": "Valider la qualification 20-30.",
+              "situation": "Questions en lien avec les plongées faites.",
+              "critere": "Explications justes."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 30 et 40 m",
+              "objectif": "Approfondir.",
+              "situation": "Phénomènes vécus ou observés au-delà de 30 m.",
+              "critere": "Il relie ce qu'il sait à ce qu'il a ressenti.",
+              "securite": "Approche par tranches de 2 ou 3 m, vigilance sur les plongées successives."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 30-40 (évaluation)",
+              "objectif": "Comprendre les phénomènes liés à l'évolution en profondeur.",
+              "situation": "Plusieurs plongées en milieu naturel, cadre E3 minimum.",
+              "critere": "Compréhension juste des phénomènes de la profondeur. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-prof-comportement",
+      "competence": "Profondeur accompagnée : comportement",
+      "evaluation_mft": "Ces qualifications sont le résultat d'évaluations validées par plusieurs plongées en milieu naturel par un cadre E3 minimum.",
+      "techniques": [
+        {
+          "nom": "Comportement",
+          "curseurs": [
+            "20 m → 30 m → 40 m, par tranches de 2 ou 3 m",
+            "plongée simple → plongée successive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan à 20 m",
+              "objectif": "Vérifier le respect des procédures jusqu'à 20 m.",
+              "situation": "Plongée à 20 m, compétences du PE20.",
+              "critere": "Acquis solides. Sinon, on consolide avant d'aller plus profond.",
+              "securite": "Qualification à partir de 14 ans, sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Entre 20 et 30 m",
+              "objectif": "Entrer dans les protocoles de désaturation.",
+              "situation": "Remontée et palier de principe au-delà de 20 m.",
+              "critere": "Remontée et palier respectés.",
+              "securite": "Approche par tranches de 2 ou 3 m. Le cadre observe fatigue, ressenti et réactions."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 20-30",
+              "objectif": "Valider la qualification 20-30.",
+              "situation": "Plusieurs plongées dans la zone 20-30 m.",
+              "critere": "Protocoles appliqués."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 30 et 40 m",
+              "objectif": "Appliquer les protocoles entre 30 et 40 m.",
+              "situation": "Plongées simples et successives.",
+              "critere": "Protocoles appliqués sans rappel.",
+              "securite": "Approche par tranches de 2 ou 3 m, vigilance sur les plongées successives."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 30-40 (évaluation)",
+              "objectif": "Avoir un comportement adapté, notamment rentrer dans les protocoles de désaturation.",
+              "situation": "Plusieurs plongées en milieu naturel, cadre E3 minimum.",
+              "critere": "Remontée et palier de principe respectés jusqu'à 40 m. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-orientation",
+      "competence": "Autonomie accompagnée : orientation en évolution",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Orientation en évolution (observation et boussole)",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Découvrir l'orientation par le paysage et la boussole.",
+              "situation": "Le cadre montre repères et cap.",
+              "critere": "Il reconnaît les repères montrés.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Mener la palanquée sur un parcours simple.",
+              "situation": "Le cadre suit et corrige si besoin.",
+              "critere": "Retour au point prévu avec peu d'aide."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Parcours suivi et retour au point prévu, sans intervention du cadre."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "S'orienter sur un parcours plus profond et plus long.",
+              "situation": "Parcours entre 20 et 40 m.",
+              "critere": "Retour au point prévu.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Savoir se diriger sous l'eau par observation du paysage et à la boussole.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Parcours suivi et retour au point prévu, sans intervention du cadre. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-consommation",
+      "competence": "Autonomie accompagnée : consommation d'air",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Consommation d'air",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Comprendre la gestion de l'air.",
+              "situation": "Mi-bouteille, réserve, contrôles réguliers.",
+              "critere": "Il explique les seuils.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Gérer son air et organiser son parcours.",
+              "situation": "Contrôles réguliers, demi-tour à la bonne pression.",
+              "critere": "Seuils respectés avec peu de rappels."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Parcours et remontée organisés selon son stock d'air."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "Gérer l'air plus profond.",
+              "situation": "Consommation plus forte entre 20 et 40 m.",
+              "critere": "Marges adaptées.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Gérer sa plongée selon son stock d'air.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Parcours et remontée organisés selon son stock d'air. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-profondeur",
+      "competence": "Autonomie accompagnée : profondeur",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Profondeur",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Connaître ses limites de profondeur.",
+              "situation": "Prérogatives et consignes du DP.",
+              "critere": "Il dit sa profondeur maximale.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Respecter la profondeur pendant la plongée.",
+              "situation": "Contrôle régulier de l'ordinateur.",
+              "critere": "Profondeur respectée."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Profondeurs toujours respectées."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "Respecter la profondeur entre 20 et 40 m.",
+              "situation": "Plongées plus profondes.",
+              "critere": "Profondeur respectée sans rappel.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Respecter les profondeurs selon ses prérogatives et les consignes du DP.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Profondeurs toujours respectées. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-signes",
+      "competence": "Autonomie accompagnée : signes de l'autonomie et réactions",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Signes de l'autonomie et réactions",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Connaître les signes de l'autonomie.",
+              "situation": "Au sec puis dans l'eau.",
+              "critere": "Signes compris et réalisés.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Communiquer avec ses équipiers.",
+              "situation": "Échanges réguliers en palanquée.",
+              "critere": "Communication efficace, réactions justes."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Signes reconnus, réactions autonomes."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "Communiquer plus profond.",
+              "situation": "Entre 20 et 40 m.",
+              "critere": "Réactions autonomes et justes.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Communiquer efficacement et réagir de façon autonome.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Signes reconnus, réactions autonomes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-consignes",
+      "competence": "Autonomie accompagnée : respect des consignes du DP",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Respect des consignes du DP",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Écouter et retenir les consignes.",
+              "situation": "Briefing du DP.",
+              "critere": "Il redit les consignes.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Organiser sa plongée selon les consignes.",
+              "situation": "Parcours, durée, sortie de l'eau.",
+              "critere": "Consignes respectées."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Parcours, durée et sortie conformes aux consignes."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "Appliquer les consignes entre 20 et 40 m.",
+              "situation": "Plongées plus profondes.",
+              "critere": "Consignes respectées sans rappel.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Organiser sa plongée en respectant les consignes du DP.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Parcours, durée et sortie conformes aux consignes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-deroulement",
+      "competence": "Autonomie accompagnée : déroulement d'une plongée et protocoles de désaturation",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Déroulement d'une plongée et protocoles de désaturation",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Comprendre le déroulement d'une plongée.",
+              "situation": "Le cadre explique et montre.",
+              "critere": "Il décrit les étapes.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Gérer le déroulement avec ses équipiers.",
+              "situation": "Parcours, profondeur, désaturation, consignes.",
+              "critere": "Plongée bien menée avec peu d'aide."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Plongée gérée sans intervention du cadre."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "Gérer plus profond.",
+              "situation": "Entre 20 et 40 m, paliers de principe.",
+              "critere": "Désaturation gérée.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Gérer son parcours en tenant compte de tous les paramètres de l'autonomie.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Plongée gérée sans intervention du cadre. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-auto-signaler",
+      "competence": "Autonomie accompagnée : signaler",
+      "evaluation_mft": "La validation de cette qualification se fait en milieu naturel.",
+      "techniques": [
+        {
+          "nom": "Signaler",
+          "curseurs": [
+            "cadre qui intervient → cadre qui observe",
+            "0-20 m → 20-40 m"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le cadre montre",
+              "objectif": "Savoir quoi signaler.",
+              "situation": "Le cadre explique ce qu'il faut signaler au DP.",
+              "critere": "Il cite des exemples.",
+              "securite": "Autonomie accompagnée 0-20 m à partir de 14 ans sous le contrôle d'un E2 minimum. 20-40 m à partir de 16 ans sous le contrôle d'un E3 minimum."
+            },
+            {
+              "n": 2,
+              "titre": "Le jeune gère, le cadre corrige",
+              "objectif": "Signaler après la plongée.",
+              "situation": "Retour à bord.",
+              "critere": "Il signale spontanément ce qui s'est passé."
+            },
+            {
+              "n": 3,
+              "titre": "Qualification 0-20",
+              "objectif": "Valider l'autonomie accompagnée 0-20 m.",
+              "situation": "Plongées en milieu naturel, cadre qui n'intervient plus que pour la sécurité.",
+              "critere": "Événements signalés au DP sans oubli."
+            },
+            {
+              "n": 4,
+              "titre": "Entre 20 et 40 m",
+              "objectif": "Signaler aussi plus profond.",
+              "situation": "Plongées 20-40 m.",
+              "critere": "Signalement spontané et exact.",
+              "securite": "À partir de 16 ans, sous le contrôle d'un E3 minimum, approche progressive."
+            },
+            {
+              "n": 5,
+              "titre": "Qualification 20-40 (évaluation)",
+              "objectif": "Informer le DP des événements en plongée ou après.",
+              "situation": "Plongées en milieu naturel, le cadre veille seulement à la sécurité et au respect des directives du DP.",
+              "critere": "Événements signalés au DP sans oubli. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-aide-equiper",
+      "competence": "Aide moniteur : s'équiper et se déséquiper",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "S'équiper et se déséquiper",
+          "curseurs": [
+            "observer → aider sur consigne"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Observer le moniteur",
+              "objectif": "Voir comment le moniteur aide les plongeurs à s'équiper.",
+              "situation": "Séance du club.",
+              "critere": "Il décrit l'ordre d'équipement.",
+              "securite": "Toujours sous le contrôle du moniteur, qui délimite son rôle. À partir de 10 ans."
+            },
+            {
+              "n": 2,
+              "titre": "Aider sur consigne",
+              "objectif": "Rappeler l'ordre d'équipement et aider.",
+              "situation": "Le moniteur lui confie un ou deux plongeurs.",
+              "critere": "Aide efficace, problèmes signalés au moniteur."
+            },
+            {
+              "n": 3,
+              "titre": "Après la plongée",
+              "objectif": "Aider au déséquipement et au rangement.",
+              "situation": "Fin de séance.",
+              "critere": "Organisation et préparation de la suite."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Aider les autres plongeurs avec leur matériel.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Aide efficace, signalement des problèmes, implication dans le rangement. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-aide-eau",
+      "competence": "Aide moniteur : se mettre à l'eau et en sortir",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Se mettre à l'eau et en sortir",
+          "curseurs": [
+            "relayer → soutenir"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Connaître les consignes",
+              "objectif": "Retenir les consignes de mise à l'eau.",
+              "situation": "Briefing du moniteur.",
+              "critere": "Il redit les consignes."
+            },
+            {
+              "n": 2,
+              "titre": "Relayer",
+              "objectif": "Rappeler les consignes à ses camarades.",
+              "situation": "Mise à l'eau d'un groupe.",
+              "critere": "Consignes relayées sans erreur."
+            },
+            {
+              "n": 3,
+              "titre": "Soutenir",
+              "objectif": "Aider un camarade à la mise à l'eau ou à la sortie.",
+              "situation": "Sur demande du moniteur.",
+              "critere": "Soutien efficace."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Être un relais du moniteur.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Consignes relayées, directives respectées, soutien aux coéquipiers. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-aide-evoluer",
+      "competence": "Aide moniteur : évoluer dans l'eau",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Évoluer dans l'eau",
+          "curseurs": [
+            "à côté du moniteur → serre-file"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Le rôle de serre-file",
+              "objectif": "Comprendre ce que veut dire fermer la palanquée.",
+              "situation": "Au sec, explication.",
+              "critere": "Il explique son rôle."
+            },
+            {
+              "n": 2,
+              "titre": "Serre-file accompagné",
+              "objectif": "Fermer la palanquée près du moniteur.",
+              "situation": "Plongée avec le moniteur proche.",
+              "critere": "Personne derrière lui, il reste groupé."
+            },
+            {
+              "n": 3,
+              "titre": "Signaler et soutenir",
+              "objectif": "Signaler un problème et aider.",
+              "situation": "Pendant la plongée.",
+              "critere": "Problème signalé au moniteur sans délai."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Jouer un rôle structurant dans la palanquée.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Serre-file tenu, problèmes signalés, soutien aux coéquipiers. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-equiper",
+      "competence": "Assistant moniteur : s'équiper et se déséquiper",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "S'équiper et se déséquiper",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : gréage et dégréage du PMT, de la bouteille, du détendeur et du gilet.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Démontrer le gréage devant un groupe.",
+              "situation": "Le moniteur encadre la séance.",
+              "critere": "Démonstration lente, étape par étape."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-eau",
+      "competence": "Assistant moniteur : se mettre à l'eau et en sortir",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Se mettre à l'eau et en sortir",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : saut droit et bascule arrière.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Démontrer saut droit et bascule.",
+              "situation": "Devant un groupe, zone libre.",
+              "critere": "Démonstration sûre."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-evoluer",
+      "competence": "Assistant moniteur : évoluer dans l'eau",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "S'immerger, se propulser, ventiler, s'équilibrer",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : palmage, vidage de masque, vidage du tuba, échange d'embout en simulation, expiration contrôlée horizontale et verticale, utilisation du gilet.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Démontrer devant un groupe.",
+              "situation": "Le moniteur choisit les gestes.",
+              "critere": "Démonstration lisible, sous le regard du moniteur."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-milieu",
+      "competence": "Assistant moniteur : respecter le milieu et l'environnement",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Respecter le milieu et l'environnement",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : comportement en évolution subaquatique et mesures de respect du milieu.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Montrer l'exemple.",
+              "situation": "En plongée avec un groupe.",
+              "critere": "Comportement exemplaire."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-communiquer",
+      "competence": "Assistant moniteur : communiquer",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Communiquer",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : code des signes.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Montrer les signes à un groupe.",
+              "situation": "Séance de découverte.",
+              "critere": "Signes justes et lisibles."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-securite",
+      "competence": "Assistant moniteur : évoluer en sécurité",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Évoluer en sécurité",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : règles de base de sécurité.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Rappeler les règles à un groupe.",
+              "situation": "Avant la plongée.",
+              "critere": "Règles justes, rappelées clairement."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JPQ-assistant-theorie",
+      "competence": "Assistant moniteur : connaissances théoriques",
+      "evaluation_mft": "La validation de cette qualification peut se faire en milieu artificiel ou naturel.",
+      "techniques": [
+        {
+          "nom": "Connaissances théoriques",
+          "curseurs": [
+            "faire → expliquer → démontrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Maîtriser le geste",
+              "objectif": "Réaliser parfaitement le geste.",
+              "situation": "Le moniteur vérifie : barotraumatismes, déroulement d'une plongée, flottabilité.",
+              "critere": "Geste propre et sûr.",
+              "securite": "Toujours sous le contrôle du moniteur. À partir de 12 ans, titulaire du N1."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer",
+              "objectif": "Expliquer le geste avec des mots simples.",
+              "situation": "Il explique au moniteur, puis à un camarade.",
+              "critere": "Explication claire et juste."
+            },
+            {
+              "n": 3,
+              "titre": "Démontrer",
+              "objectif": "Expliquer une notion à un camarade.",
+              "situation": "Après une plongée.",
+              "critere": "Explication simple et juste."
+            },
+            {
+              "n": 4,
+              "titre": "Qualification (évaluation)",
+              "objectif": "Expliquer et démontrer.",
+              "situation": "Séances en milieu naturel ou artificiel.",
+              "critere": "Explication et démonstration justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

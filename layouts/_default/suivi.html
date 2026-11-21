@@ -1,0 +1,93 @@
+{{ define "main" }}
+{{- /* Page « Suivi » (maquettes _passation/suivi/Suivi.dc.html et MobileSuivi.dc.html).
+       Tout est calculé dans le navigateur par assets/js/suivi.js à partir des données enregistrées ;
+       sauvegarde et restauration : assets/js/donnees.js. Styles propres à la page : classes « suivi- ». */ -}}
+{{- /* Nom lisible des compétences (« N1 · S’équiper… »), pour la carte « Ma progression détaillée ». */ -}}
+{{- $D := site.Data.mft_data -}}
+{{- $noms := dict -}}
+{{- range $o := site.Data.onglets }}
+  {{- range where $D.competences "niveau" "in" $o.niveaux }}{{ $noms = merge $noms (dict (lower .id) (printf "%s · %s" $o.libelle .competence)) }}{{ end }}
+  {{- range site.Data.progressions }}{{ if eq .niveau $o.id }}{{ range .competences }}{{ $noms = merge $noms (dict (lower .id) (printf "%s · %s" $o.libelle .competence)) }}{{ end }}{{ end }}{{ end }}
+{{- end }}
+{{- with site.Data.progressions.progressions_JP }}{{ range .competences }}{{ $noms = merge $noms (dict (lower .id) (printf "Jeunes · %s" .competence)) }}{{ end }}{{ end -}}
+
+<div class="suivi" data-suivi>
+  <section class="suivi-entete">
+    <h1 class="suivi-titre">Où j’en suis dans ma préparation</h1>
+    <p class="suivi-intro">L’avancement de chaque module et tes données, au même endroit.</p>
+    <div class="suivi-date">
+      <form class="carte suivi-date__form" data-date-form hidden>
+        <label class="suivi-date__label">Date de mon examen final<input type="date" class="suivi-date__champ" data-date-champ required></label>
+        <button type="submit" class="suivi-btn suivi-btn--principal suivi-date__enregistrer">Enregistrer la date</button>
+      </form>
+      <aside class="suivi-examen" aria-labelledby="suivi-examen-titre" data-date-carte hidden>
+        <span id="suivi-examen-titre" class="suivi-examen__titre"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>Examen final MF1</span>
+        <span class="suivi-examen__compte"><span class="suivi-examen__nombre" data-date-nombre></span><span class="suivi-examen__unite" data-date-unite></span></span>
+        <span class="suivi-examen__date" data-date-texte></span>
+        <span class="suivi-examen__liens"><button type="button" class="suivi-examen__lien" data-date-modifier>Modifier la date</button><button type="button" class="suivi-examen__lien" data-date-retirer>Retirer</button></span>
+      </aside>
+    </div>
+  </section>
+
+  <section class="suivi-section" aria-labelledby="suivi-modules">
+    <div class="suivi-section__tete"><p class="suivi-surtitre">Avancement</p><h2 id="suivi-modules" class="suivi-h2">Mes modules</h2></div>
+    <div class="suivi-modules">
+      <div class="carte suivi-module">
+        <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span class="suivi-module__nom">Capacitaire</span><span class="suivi-badge suivi-badge--on">Actif</span></div>
+        <span class="suivi-module__chiffre" data-capa-chiffre></span>
+        <span class="suivi-module__texte" data-capa-texte></span>
+        <div class="suivi-barres" data-capa-barres></div>
+        <a class="suivi-lien" href="{{ "/capacitaire/" | relURL }}">Voir le module <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="carte suivi-module">
+        <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2 2M9 2h6"></path></svg></span><span class="suivi-module__nom">S’entraîner</span><span class="suivi-badge suivi-badge--on">Actif</span></div>
+        <span class="suivi-module__chiffre" data-entr-chiffre></span>
+        <span class="suivi-module__texte" data-entr-texte></span>
+        <div class="suivi-barres" data-entr-barres></div>
+        <a class="suivi-lien" href="{{ "/s-entrainer/" | relURL }}">S’entraîner <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="carte suivi-module">
+        <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h4v-4h4v-4h4V6h4"></path></svg></span><span class="suivi-module__nom">Ma progression détaillée</span><span class="suivi-badge suivi-badge--on">Actif</span></div>
+        <span class="suivi-module__chiffre" data-prog-chiffre></span>
+        <span class="suivi-module__texte" data-prog-texte></span>
+        <a class="suivi-lien" href="{{ "/construire/" | relURL }}">Ouvrir ma progression <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="carte suivi-module">
+        <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="12" rx="2"></rect><path d="M7 3h12a2 2 0 0 1 2 2v10"></path></svg></span><span class="suivi-module__nom">Flashcard MFT</span><span class="suivi-badge suivi-badge--on">Actif</span></div>
+        <span class="suivi-module__chiffre" data-flash-chiffre></span>
+        <span class="suivi-module__texte" data-flash-texte></span>
+        <span class="suivi-module__texte" data-flash-temps></span>
+        <div class="suivi-barres" data-flash-barres></div>
+        <a class="suivi-lien" href="{{ "/reviser/" | relURL }}">Flashcard MFT <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carte suivi-donnees" aria-labelledby="suivi-donnees-titre" data-donnees>
+    <div class="suivi-donnees__tete"><h2 id="suivi-donnees-titre" class="suivi-donnees__titre">Mes données</h2><button type="button" class="suivi-effacer" aria-haspopup="dialog" data-ouvrir="fenetre-remise-a-zero"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg>Tout effacer</button></div>
+    <p class="suivi-donnees__note"><span class="suivi-donnees__note-icone"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg></span><span>Tout ce que tu fais sur passe-ton-mf1.com est enregistré <strong>dans ce navigateur</strong>, sur cet appareil, et nulle part ailleurs. La sauvegarde crée un fichier qui reste chez toi : il te permet de tout récupérer après avoir vidé le cache, ou de passer sur un autre appareil.</span></p>
+    <div class="suivi-donnees__boutons">
+      <button type="button" class="suivi-btn suivi-btn--principal" data-exporter><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>Sauvegarder mes données</button>
+      <label class="suivi-btn suivi-donnees__restaurer"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V9M7 14l5-5 5 5M5 4h14"></path></svg>Restaurer une sauvegarde<input type="file" accept=".json,application/json" class="visuellement-cache" data-importer></label>
+      <button type="button" class="suivi-btn" aria-expanded="false" aria-controls="suivi-stockage" data-voir-donnees><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>Voir mes données</button>
+    </div>
+    <p class="donnees__message" data-donnees-message aria-live="polite"></p>
+    <div class="suivi-stockage" id="suivi-stockage" hidden>
+      <div class="suivi-stockage__tete"><span class="suivi-stockage__titre">Ce qui est stocké dans ce navigateur</span><span class="suivi-stockage__total" data-stockage-total></span></div>
+      <table class="suivi-stockage__table"><tbody data-stockage-lignes></tbody></table>
+    </div>
+  </section>
+</div>
+{{- $capa := slice }}{{ range site.Data.capacitaire.ecrits }}{{ $ids := slice }}{{ range .rubriques }}{{ $ids = $ids | append .id }}{{ end }}{{ $capa = $capa | append (dict "titre" .court "ids" $ids) }}{{ end }}
+<script type="application/json" id="suivi-capa">{{ $capa | jsonify | safeJS }}</script>
+<script type="application/json" id="suivi-noms">{{ $noms | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ define "fenetres" }}{{ partial "fenetres/remise-a-zero.html" . }}{{ partial "fenetres/import.html" . }}{{ end }}
+
+{{ define "scripts" }}
+{{- $suivi := resources.Get "js/suivi.js" | minify | fingerprint }}
+<script src="{{ $suivi.RelPermalink }}" integrity="{{ $suivi.Data.Integrity }}" defer></script>
+{{- $donnees := resources.Get "js/donnees.js" | minify | fingerprint }}
+<script src="{{ $donnees.RelPermalink }}" integrity="{{ $donnees.Data.Integrity }}" defer></script>
+{{ end }}

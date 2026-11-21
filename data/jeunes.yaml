@@ -1,0 +1,42 @@
+# Onglet « Jeunes » de la page Progression : le cursus jeunes n'a aucune fiche dans mft_data.json.
+# Les fiches viennent uniquement de data/progressions/progressions_JP.json, regroupées par parcours
+# selon le préfixe de leur identifiant, dans l'ordre ci-dessous.
+onglet:
+  # Placé juste après l'onglet indiqué par « apres » (data/onglets.yaml).
+  apres: RANDO
+  id: JP
+  libelle: Jeunes
+  chapitre: "Cursus jeunes"
+parcours:
+  - prefixe: "ETOILE-"
+    titre: "Jeunes bulles : étoiles de mer 1, 2 et 3"
+    brevets: true
+  - prefixe: "JPBA-"
+    titre: "Jeunes plongeurs : plongeur de bronze et d'argent"
+    brevets: true
+    puisOr: true
+  - prefixe: "JPQ-bord-"
+    titre: "Qualification plongée du bord"
+  - prefixe: "JPQ-bateau-"
+    titre: "Qualifications bateau 1 et 2"
+  - prefixe: "JPQ-prof-"
+    titre: "Qualifications profondeur accompagnée 20-30 et 30-40"
+  - prefixe: "JPQ-auto-"
+    titre: "Qualifications autonomie accompagnée 0-20 et 20-40"
+  - prefixe: "JPQ-aide-"
+    titre: "Qualification aide moniteur"
+  - prefixe: "JPQ-assistant-"
+    titre: "Qualification assistant moniteur"
+# Plongeur d'or : pas de progression propre, renvoi vers le N1 avec les limites du MFT (citées sans reformulation).
+or:
+  titre: "Plongeur d'or"
+  intro: "Pas de progression propre : selon le MFT, ses compétences « sont celles énoncées dans les contenus de formation du plongeur niveau 1 ». Reprends les progressions du N1, avec ces limites du MFT :"
+  limites:
+    - competence: N1-equiper
+      titre: "S'équiper et se déséquiper"
+      texte: "Pour les plus jeunes, l'aide du moniteur reste normale et souvent indispensable pour la manipulation de la bouteille ou du lest à quai ou sur le bateau."
+    - competence: N1-surface
+      titre: "Retourner en surface"
+      texte: "Le jeune approfondit sa maîtrise du gilet. Il peut remonter à la palme en s'aidant de son gilet et en contrôlant sa vitesse de remontée (pas de remontée contrôlée, ni d'intervention)."
+    - titre: "Connaissances théoriques"
+      texte: "En ce qui concerne les phénomènes physiques, le moniteur privilégiera une approche intuitive ou concrète plutôt qu'un enseignement conceptuel et scolaire."

@@ -1,0 +1,168 @@
+# Grilles de préparation de la page « S’entraîner ».
+# Intitulés (nom) : livret pédagogique MF1 (_MFT/05 - Formation de cadres/Livret pédagogique MF1.pdf).
+#   - Pratique et théorique : même grille (p. 11-13 et p. 23-25 du livret).
+#   - Organisationnelle : grille « Organiser et sécuriser l’activité » (p. 32-34),
+#     et grille « Élaborer un cursus de formation » (p. 36-37) pour le thème « Organisation d’une formation ».
+# aide : texte du « ? » ; exemple : texte gris dans le champ vide.
+# source : d’où vient le résumé du MFT affiché en face du champ (« Comparer avec le MFT »).
+#
+# ÉTAT : intitulés alignés sur le livret (validé le 19/11/2026). Aides et exemples validés.
+
+pratique:
+  - titre: "Concevoir"
+    champs:
+      - id: obj
+        nom: "Définir les objectifs de formation"
+        exemple: "À la fin, l’élève est capable de…"
+        aide: "Formule un comportement observable que tu pourras vérifier dans l’eau. Le MFT donne la compétence attendue : reformule-la pour ta séance."
+        source: objectif
+      - id: pos
+        nom: "Positionner le thème dans le cursus"
+        exemple: "Ce que l’élève sait déjà, ce qui vient après"
+        aide: "Dis ce qui précède (prérequis) et ce qui suit. Le jury attend que tu situes la séance dans la formation, pas seulement l’exercice."
+        source: positionner
+      - id: jus
+        nom: "Justifier la séance"
+        exemple: "Pourquoi cette séance, pour quelles prérogatives"
+        aide: "Relie la séance aux prérogatives visées et à une situation réelle de plongée."
+        source: justifier
+      - id: str
+        nom: "Définir une stratégie d’enseignement"
+        exemple: "Exercices dans l’ordre, ce que tu fais varier"
+        aide: "Liste tes exercices du plus simple au plus complet, en tournant un curseur à la fois : annoncé puis inopiné, statique puis en déplacement, faible puis plus grande profondeur."
+        source: strategie
+  - titre: "Réaliser"
+    champs:
+      - id: acc
+        nom: "Accueillir les plongeurs"
+        exemple: "Espace d’évolution, encadrement, signes, consignes"
+        aide: "Annonce le cadre : profondeur, qui encadre, les signes utilisés et ce qui arrête l’exercice."
+        source: accueil
+      - id: ani
+        nom: "Animer une séance et communiquer"
+        exemple: "Points clés, théorie à glisser, corrections"
+        aide: "Prévois deux ou trois points clés et la notion théorique que tu glisses au briefing."
+        source: theorie
+      - id: mise
+        nom: "Mettre en œuvre une stratégie de formation"
+        exemple: "Démonstration, place de chacun, corrections dans l’eau"
+        aide: "Dis comment tu conduis tes exercices dans l’eau : démonstration, place de chacun, signes, et ce que tu fais si l’élève n’y arrive pas."
+        source: comportement
+  - titre: "Évaluer"
+    champs:
+      - id: eva
+        nom: "Réaliser une évaluation adaptée (initiale, finale, formative,…)"
+        exemple: "Critères de réussite : initiale, formative, finale"
+        aide: "Écris des critères que tu peux observer. Ils viennent des modalités d’évaluation du MFT."
+        source: evaluation
+
+theorique:
+  - titre: "Concevoir"
+    champs:
+      - id: obj
+        nom: "Définir les objectifs de formation"
+        exemple: "À la fin, l’élève sait expliquer…"
+        aide: "Dis ce que tes élèves sauront expliquer ou appliquer en plongée. Reste au niveau de détail que le MFT fixe pour ce public."
+        source: theo-competences
+      - id: pos
+        nom: "Positionner le thème dans le cursus"
+        exemple: "Ce qu’ils savent déjà, le niveau de détail attendu"
+        aide: "Situe le cours : ce que les élèves ont déjà vu, ce qu’ils verront au niveau suivant, et jusqu’où aller avec ce public."
+        source: theo-limites
+      - id: jus
+        nom: "Justifier la séance"
+        exemple: "À quel moment de la plongée ça sert, quelle prévention"
+        aide: "Relie la notion à un moment de la plongée et à un geste pratique : le jury attend que la théorie serve dans l’eau."
+        source: theo-competences
+      - id: str
+        nom: "Définir une stratégie d’enseignement"
+        exemple: "Fil rouge, accroche vécue, supports"
+        aide: "Choisis un fil rouge tiré d’une plongée vécue, puis l’ordre de tes idées et les supports : tableau, planches, matériel."
+        source: aucune
+  - titre: "Réaliser"
+    champs:
+      - id: acc
+        nom: "Accueillir les plongeurs"
+        exemple: "Mise en route, ce que les élèves savent déjà"
+        aide: "Prévois l’entrée en matière : présenter le thème, vérifier ce que les élèves savent déjà, annoncer la durée."
+        source: aucune
+      - id: ani
+        nom: "Animer une séance et communiquer"
+        exemple: "Déroulé en 3 ou 4 temps, questions aux élèves"
+        aide: "Découpe ton cours en trois ou quatre temps et prévois les questions qui font participer les élèves."
+        source: aucune
+      - id: mise
+        nom: "Mettre en œuvre une stratégie de formation"
+        exemple: "Tableau, schémas, démonstration, exemples"
+        aide: "Dis comment tu utilises tes supports au fil du cours, et ce que tu fais si un élève décroche."
+        source: aucune
+  - titre: "Évaluer"
+    champs:
+      - id: eva
+        nom: "Réaliser une évaluation adaptée (initiale, finale, formative,…)"
+        exemple: "Comment tu vérifies que c’est compris"
+        aide: "Prévois une ou deux questions de vérification. Le MFT dit comment la théorie est évaluée à ce niveau : à l’oral, en situation ou à l’écrit."
+        source: theo-evaluation
+
+organisationnelle:
+  - titre: "Organiser et sécuriser l’activité"
+    champs:
+      - id: acc
+        nom: "Accueillir les plongeurs"
+        exemple: "Documents, niveaux, attentes, matériel"
+        aide: "Pense à ce que tu vérifies à l’arrivée : licence, certificat, niveau, carnet, et ce que chacun attend de sa plongée."
+        source: N4-accueil
+      - id: site
+        nom: "Choisir un site de plongée"
+        exemple: "Météo, marée, trajet, mouillage, profondeurs"
+        aide: "Justifie le site par les conditions du jour et par le niveau des plongeurs, et prévois un site de repli."
+        source: N5-site
+      - id: pal
+        nom: "Composer les palanquées en exploration et en enseignement"
+        exemple: "Normes d’encadrement, prérogatives, affinités"
+        aide: "Pars des prérogatives de chacun et des effectifs du Code du sport, puis tiens compte de l’expérience et des envies."
+        source: N5-organiser
+      - id: par
+        nom: "Fixer les paramètres de la plongée"
+        exemple: "Profondeur, durée, désaturation, heure de retour"
+        aide: "Donne à chaque palanquée une profondeur, une durée et une heure de sortie, compatibles avec le bateau et la sécurité."
+        source: N5-organiser
+      - id: pre
+        nom: "Présenter le site"
+        exemple: "Intérêts, dangers, conduite à tenir"
+        aide: "Ce que les plongeurs vont voir, les pièges du site et ce qu’il faut faire si quelque chose se passe mal."
+        source: N5-organiser
+      - id: sec
+        nom: "Sécuriser et surveiller"
+        exemple: "Consignes, rappel, matériel de secours, surveillance"
+        aide: "Qui surveille la surface, comment on rappelle les plongeurs, où est le matériel de secours."
+        source: N5-securiser
+      - id: rea
+        nom: "Réagir en cas d’accident"
+        exemple: "Coordination, O2, alerte, autres palanquées…"
+        aide: "Pense coordination : qui s’occupe de la victime, qui gère les palanquées encore à l’eau, qui alerte."
+        source: N5-accident
+
+cursus:
+  - titre: "Élaborer un cursus de formation"
+    champs:
+      - id: nat
+        nom: "Identifier la nature du cursus à organiser"
+        exemple: "Niveau visé, public, conditions d’accès"
+        aide: "Dis quel brevet tu prépares, pour qui, et ce que les élèves doivent avoir avant d’entrer en formation."
+        source: cursus-niveau
+      - id: pla
+        nom: "Planifier"
+        exemple: "Séances, ordre des compétences, calendrier"
+        aide: "Range les compétences dans l’ordre où tu les enseignes, avec le nombre de séances et les étapes de validation."
+        source: cursus-competences
+      - id: log
+        nom: "Définir une logistique matérielle"
+        exemple: "Lieux, bassin, fosse, bateau, matériel pédagogique"
+        aide: "Ce dont tu as besoin et quand : piscine, fosse, sorties en milieu naturel, matériel prêté."
+        source: aucune
+      - id: hum
+        nom: "Définir les moyens humains"
+        exemple: "Encadrants, niveau requis, répartition"
+        aide: "Combien d’encadrants, de quel niveau selon l’espace d’évolution, et qui valide les compétences."
+        source: cursus-encadrement

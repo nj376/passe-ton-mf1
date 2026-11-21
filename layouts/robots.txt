@@ -1,0 +1,6 @@
+# robots.txt de passe-ton-mf1.com (généré par Hugo à partir de layouts/robots.txt).
+# Tous les robots peuvent parcourir le site ; le plan du site les guide.
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}

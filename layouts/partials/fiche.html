@@ -1,0 +1,76 @@
+{{/* Fiche de compétence.
+     Paramètres : c (compétence), onglet, moment (id du moment affiché),
+     premier (première fiche du moment : ouverte par défaut). */}}
+{{- $c := .c -}}
+{{- $onglet := .onglet -}}
+{{- $uid := printf "%s-%s" $c.id .moment -}}
+{{- $momentNom := "" -}}
+{{- range site.Data.moments }}{{ if eq .id $c.phase }}{{ $momentNom = .libelle }}{{ end }}{{ end -}}
+{{- $niveauAffiche := replace $c.niveau "+" " + " -}}
+{{- $famille := index (split $c.id "-") 1 -}}
+
+{{- /* « Ce qui change » : « Par rapport au N1 : … » devient « Ce qui change depuis le N1 ». */ -}}
+{{- $changeTitre := "Ce qui change" -}}
+{{- $changeTexte := $c.nouveau -}}
+{{- $m := findRESubmatch `^Par rapport (au |à la |à l['’]|aux )([^:(]+?)\s*:\s*(.+)$` $c.nouveau 1 -}}
+{{- with $m }}
+  {{- $art := index (index . 0) 1 -}}
+  {{- $article := cond (eq $art "au ") "le " (cond (eq $art "à la ") "la " (cond (eq $art "aux ") "les " "l’")) -}}
+  {{- $changeTitre = printf "Ce qui change depuis %s%s" $article (index (index . 0) 2) -}}
+  {{- $reste := index (index . 0) 3 -}}
+  {{- $changeTexte = printf "%s%s" (upper (substr $reste 0 1)) (substr $reste 1) -}}
+{{- end -}}
+{{- $sujet := printf "Erreur sur la fiche %s - %s" $c.niveau $c.competence -}}
+{{- $aProgression := false -}}
+{{- /* Pas de lien vers une progression dont l'onglet est masqué dans Pistes (hugo.toml, masquesPistes). */ -}}
+{{- range site.Data.progressions }}{{ if not (in (site.Params.masquesPistes | default slice) .niveau) }}{{ range .competences }}{{ if eq .id $c.id }}{{ $aProgression = true }}{{ end }}{{ end }}{{ end }}{{ end -}}
+
+<article class="fiche{{ if .premier }} fiche--details fiche--ouverte{{ end }}" data-fiche="{{ $c.id }}" data-famille="{{ $famille }}" data-groupe="{{ $onglet.comparer }}" data-nom="{{ $c.competence }}">
+  <div class="fiche__puces">
+    <span class="puce puce--niveau">{{ $niveauAffiche }}</span>
+    <span class="puce bureau">{{ $momentNom }}</span>
+  </div>
+  <h3 class="fiche__titre">{{ $c.competence }}</h3>
+
+  <div class="fiche__corps">
+    <p class="fiche__objectif">{{ $c.objectif }}</p>
+    {{- with $c.nouveau }}
+    <div class="fiche__change">
+      <span class="fiche__change-titre">{{ $changeTitre }}</span>
+      <p>{{ $changeTexte }}</p>
+    </div>
+    {{- end }}
+
+    <button type="button" class="fiche__details-bouton" aria-expanded="{{ if .premier }}true{{ else }}false{{ end }}" aria-controls="details-{{ $uid }}" data-details>
+      <span class="bureau">Voir l’évaluation, la technique et la théorie</span><span class="mobile">Évaluation, technique et théorie</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg>
+    </button>
+    <dl class="fiche__details" id="details-{{ $uid }}">
+      <dt>Évaluation</dt><dd>{{ $c.evaluation }}</dd>
+      <dt>Technique</dt><dd>{{ $c.technique }}</dd>
+      <dt>Théorie</dt><dd>{{ $c.theorie }}</dd>
+      {{- with $c.comportement }}<dt>Comportement</dt><dd>{{ . }}</dd>{{ end }}
+      {{- with $c.curseurs }}<dt>Curseurs</dt><dd>{{ . }}</dd>{{ end }}
+    </dl>
+
+    <div class="fiche__actions">
+      <a class="bouton-petit bouton-petit--principal" href="{{ "/s-entrainer/" | relURL }}?competence={{ $c.id }}">Préparer une séance sur ce thème</a>
+      {{- if $onglet.comparer }}
+      <button type="button" class="bouton-petit bouton-petit--secondaire" aria-haspopup="dialog" data-comparer="{{ $c.id }}" hidden>Comparer N1 · N2 · N3</button>
+      {{- end }}
+    </div>
+
+    <div class="fiche__pied">
+      <span><span class="bureau">{{ with $onglet.sourceBureau }}{{ . }}{{ else }}D’après le MFT {{ $onglet.chapitre }}, version consultée en{{ end }} {{ site.Params.mftConsulte }}</span><span class="mobile">{{ with $onglet.sourceMobile }}{{ . }}{{ else }}MFT {{ $onglet.chapitre }}, consulté en{{ end }} {{ site.Params.mftConsulte }}</span></span>
+      <span class="fiche__liens">
+      {{- if $aProgression }}<a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower $c.id }}">Voir la progression proposée →</a>
+      {{- else }}{{ with index site.Data.complements_progression $c.id }}{{ if .renvoi }}<a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower .renvoi }}">{{ .renvoiTexte }}</a>{{ end }}{{ end }}{{ end }}
+      <a class="fiche__signaler" href="{{ "/contact/" | relURL }}?sujet={{ $sujet }}"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-1.5 4L16 12H5"></path></svg>Signaler une erreur</a>
+      </span>
+    </div>
+  </div>
+
+  <button type="button" class="fiche__ouvrir mobile" aria-expanded="{{ if .premier }}true{{ else }}false{{ end }}" data-ouvrir-fiche>Ouvrir la fiche
+    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg>
+  </button>
+</article>

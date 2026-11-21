@@ -1,0 +1,11 @@
+<dialog tabindex="-1" class="fenetre fenetre--petite" id="fenetre-import" role="alertdialog" aria-labelledby="import-titre" aria-describedby="import-texte">
+  <h2 id="import-titre" class="fenetre__titre fenetre__titre--petit">Remplacer tes données par celles du fichier ?</h2>
+  <div id="import-texte" class="fenetre__texte">
+    <p class="import__resume" data-import-resume></p>
+    <p>Tes données actuelles dans ce navigateur seront remplacées. Impossible de revenir en arrière : exporte-les d’abord si tu veux les garder.</p>
+  </div>
+  <div class="fenetre__actions">
+    <button type="button" class="bouton bouton--secondaire" data-fermer>Annuler</button>
+    <button type="button" class="bouton bouton--danger" data-import-confirmer>Importer</button>
+  </div>
+</dialog>

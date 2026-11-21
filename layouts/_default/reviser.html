@@ -1,0 +1,119 @@
+{{ define "main" }}
+{{- /* Flashcard MFT (maquettes _passation/flashcard/*.dc.html). Styles propres à la page : classes « fc- ».
+       Le fonctionnement (tirage, répétition espacée, raccourcis, enregistrement) est dans assets/js/reviser.js. */ -}}
+<div class="reviser fc" data-reviser data-donnees="{{ partial "donnees-url.html" . }}" data-contact="{{ "/contact/" | relURL }}">
+
+  <section class="fc-entete">
+    <div class="fc-entete__textes">
+      <h1 class="fc-titre">Flashcard MFT</h1>
+      <p class="fc-sous-titre">Cartes mémoire et recherche chronométrée dans le MFT.</p>
+    </div>
+    <div class="fc-onglets" role="tablist" aria-label="Mode de révision">
+      <button type="button" role="tab" class="fc-onglet" id="onglet-cartes" aria-controls="panneau-cartes" aria-selected="true" tabindex="0" data-mode="cartes">Cartes mémoire</button>
+      <button type="button" role="tab" class="fc-onglet" id="onglet-retrouver" aria-controls="panneau-retrouver" aria-selected="false" tabindex="-1" data-mode="retrouver">Retrouver dans le MFT</button>
+    </div>
+  </section>
+
+  {{/* ---------- Cartes mémoire ---------- */}}
+  <section id="panneau-cartes" role="tabpanel" aria-labelledby="onglet-cartes" class="reviser__panneau fc-panneau" data-panneau-mode="cartes">
+    <div class="fc-reglages" role="group" aria-label="Réglages et avancement">
+      <div class="fc-reglages__gauche">
+        <label class="fc-niveau" for="cartes-niveau">Niveau</label>
+        <select id="cartes-niveau" class="fc-select" data-cartes-niveau>
+          <option value="tous">Tous les niveaux</option>
+          {{- range site.Data.onglets }}{{ if ne .id "PE12" }}
+          <option value="{{ .id }}">{{ .libelle }}</option>
+          {{- end }}{{ end }}
+        </select>
+      </div>
+      <div class="fc-compteurs" role="group" aria-label="Répartition des cartes par boîte">
+        <span class="fc-chip"><span class="fc-dot fc-dot--revoir" aria-hidden="true"></span>À revoir <b data-boite="0">0</b></span>
+        <span class="fc-chip"><span class="fc-dot fc-dot--cours" aria-hidden="true"></span>En cours <b data-boite="1">0</b></span>
+        <span class="fc-chip"><span class="fc-dot fc-dot--acquises" aria-hidden="true"></span>Acquises <b data-boite="2">0</b></span>
+      </div>
+    </div>
+
+    <div class="fc-colonne">
+      <div class="note-aide fc-aide-note" role="note">
+        <p><strong>Comment ça marche ?</strong> Lis la question, réponds dans ta tête, puis retourne la carte. Sois honnête : c’est toi qui dis si tu savais. Tu savais ? La carte revient plus tard, et de plus en plus tard à chaque fois (jusqu’à un mois). Tu la revois juste avant de l’oublier : c’est comme ça qu’on retient longtemps. Tu ne savais pas ? Elle revient à la fin de la séance, puis demain.<br>Les compteurs : <strong>À revoir</strong>, pas encore sue ; <strong>En cours</strong>, ratée puis retrouvée ; <strong>Acquises</strong>, sue.</p>
+      </div>
+      <div class="fc-avancement">
+        <div class="fc-avancement__ligne"><span data-carte-compte></span><span class="fc-avancement__jour" data-cartes-jour></span></div>
+        <div class="fc-segments" aria-hidden="true" data-segments></div>
+      </div>
+
+      <div class="fc-paquet">
+        <div class="fc-paquet__fond fc-paquet__fond--1" aria-hidden="true"></div>
+        <div class="fc-paquet__fond fc-paquet__fond--2" aria-hidden="true"></div>
+        <article class="fc-carte" aria-label="Carte" data-carte>
+          <div class="fc-carte__tete">
+            <div class="fc-carte__badges"><span class="fc-pastille" data-carte-niveau></span><span class="fc-type">Compétence</span></div>
+            <p class="fc-carte__intitule" data-carte-competence></p>
+            <h2 class="fc-carte__question" data-carte-question></h2>
+          </div>
+          <div class="fc-attente" aria-hidden="true" data-carte-attente><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"></path><path d="M20 4v5h-5"></path><path d="M20 12a8 8 0 0 1-14 5.3L4 15"></path><path d="M4 20v-5h5"></path></svg></div>
+          <div class="fc-reponse" data-carte-reponse hidden>
+            <span class="fc-reponse__titre">Réponse</span>
+            <p class="fc-reponse__texte" data-carte-texte></p>
+          </div>
+          <div class="fc-actions fc-actions--recto" data-carte-recto>
+            <button type="button" class="fc-btn fc-btn--bleu fc-btn--retourner" data-retourner><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"></path><path d="M20 4v5h-5"></path><path d="M20 12a8 8 0 0 1-14 5.3L4 15"></path><path d="M4 20v-5h5"></path></svg>Retourner la carte<span class="fc-kbd fc-kbd--clair bureau" aria-hidden="true">Espace</span></button>
+          </div>
+          <div class="fc-actions fc-actions--verso" data-carte-verso hidden>
+            <button type="button" class="fc-btn fc-btn--revoir" data-repondre="0"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg>À revoir<span class="fc-kbd fc-kbd--orange bureau" aria-hidden="true">1</span></button>
+            <button type="button" class="fc-btn fc-btn--savais" data-repondre="1"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Je savais<span class="fc-kbd fc-kbd--clair bureau" aria-hidden="true">2</span></button>
+          </div>
+          <p class="visuellement-cache" aria-live="polite" data-carte-annonce></p>
+        </article>
+        <article class="fc-carte fc-carte--ajour" aria-labelledby="ajour-titre" data-ajour hidden>
+          <h2 id="ajour-titre" class="fc-carte__question">Tu es à jour pour aujourd’hui</h2>
+          <p class="fc-ajour__texte" data-ajour-texte></p>
+          <div class="fc-actions fc-actions--verso">
+            <button type="button" class="fc-btn fc-btn--neutre" data-ajour-libre>Réviser quand même</button>
+          </div>
+          <p class="fc-ajour__note">« Réviser quand même » ne change pas les dates de révision de tes cartes.</p>
+        </article>
+      </div>
+
+      <div class="fc-pied">
+        <p class="fc-raccourcis"><span class="bureau">Raccourcis clavier : <kbd class="fc-kbd fc-kbd--touche">Espace</kbd> pour retourner la carte, <kbd class="fc-kbd fc-kbd--touche">1</kbd> pour « À revoir », <kbd class="fc-kbd fc-kbd--touche">2</kbd> pour « Je savais ».</span><a class="fc-signaler" href="#" data-carte-signaler><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"></path></svg>Signaler une erreur</a></p>
+        <p class="fc-note">L’avancement de tes cartes est enregistré dans ce navigateur uniquement. Il repart à zéro si tu changes de navigateur ou si tu effaces ses données. Tu peux le sauvegarder ou le remettre à zéro depuis la page <a href="{{ "/suivi/" | relURL }}">Suivi</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  {{/* ---------- Retrouver dans le MFT : contenu et fonctionnement inchangés, style harmonisé avec les cartes ---------- */}}
+  <section id="panneau-retrouver" role="tabpanel" aria-labelledby="onglet-retrouver" class="reviser__panneau fc-panneau" data-panneau-mode="retrouver" hidden>
+    <div class="fc-colonne">
+      <div class="fc-paquet">
+        <div class="fc-paquet__fond fc-paquet__fond--1" aria-hidden="true"></div>
+        <div class="fc-paquet__fond fc-paquet__fond--2" aria-hidden="true"></div>
+        <article class="fc-carte fc-carte--recherche" data-recherche>
+          <div class="fc-carte__haut">
+            <span class="fc-type">Information à retrouver dans ton MFT</span>
+            <span class="fc-chrono" role="timer" aria-label="Temps écoulé" data-recherche-temps>00:00</span>
+          </div>
+          <blockquote class="fc-citation" data-recherche-texte></blockquote>
+          <div class="fc-reponse" data-recherche-reponse hidden>
+            <p class="fc-reponse__texte"><strong data-recherche-resultat></strong></p>
+            <p class="fc-reponse__texte" data-recherche-source></p>
+          </div>
+          <div class="fc-actions fc-actions--verso">
+            <button type="button" class="fc-btn fc-btn--savais" data-trouvee><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Je l’ai trouvée</button>
+            <button type="button" class="fc-btn fc-btn--neutre" data-montrer>Montrer la réponse</button>
+            <button type="button" class="fc-btn fc-btn--bleu" data-suivante hidden>Information suivante</button>
+          </div>
+        </article>
+      </div>
+      <div class="fc-pied">
+        <p class="fc-note">Tes temps de recherche sont enregistrés dans ce navigateur uniquement ; la moyenne s’affiche sur la page <a href="{{ "/suivi/" | relURL }}">Suivi</a>.</p>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/reviser.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

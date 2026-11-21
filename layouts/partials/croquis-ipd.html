@@ -1,0 +1,11 @@
+{{/* Croquis du profil de remontée, colonne 0 à 3 de la grille IPD. */}}
+{{- $axes := `<line x1="4" y1="8" x2="116" y2="8" stroke="#C9D3DD" stroke-dasharray="3 3"></line><line x1="4" y1="48" x2="116" y2="48" stroke="#E1E7ED"></line>` -}}
+{{- $croquis := slice
+  (dict "label" "Croquis : remontée trop rapide, ligne très raide, ou trop lente, ligne presque plate" "trace" `<path d="M10 48 L32 8" fill="none" stroke="#0B5AA6" stroke-width="2.5" stroke-linecap="round"></path><path d="M44 48 L114 32" fill="none" stroke="#0B5AA6" stroke-width="2.5" stroke-linecap="round"></path>`)
+  (dict "label" "Croquis : remontée chaotique, en marches irrégulières avec un léger retour vers le fond" "trace" `<path d="M10 48 L24 48 L30 34 L44 34 L50 40 L60 40 L66 20 L82 20 L88 14 L112 10" fill="none" stroke="#0B5AA6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>`)
+  (dict "label" "Croquis : remontée régulière avec un ou deux paliers non voulus" "trace" `<path d="M10 48 L42 32 L56 32 L86 17 L96 17 L112 8" fill="none" stroke="#0B5AA6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>`)
+  (dict "label" "Croquis : remontée maîtrisée, ligne droite et régulière du fond jusqu’à l’arrêt" "trace" `<path d="M10 48 L112 8" fill="none" stroke="#0B5AA6" stroke-width="2.5" stroke-linecap="round"></path>`)
+-}}
+{{- with index $croquis . -}}
+<svg width="120" height="56" viewBox="0 0 120 56" role="img" aria-label="{{ .label }}">{{ $axes | safeHTML }}{{ .trace | safeHTML }}</svg>
+{{- end -}}

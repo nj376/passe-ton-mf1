@@ -1,0 +1,127 @@
+{{ define "main" }}
+{{- $C := site.Data.cds -}}
+{{- $chevron := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg>` | safeHTML -}}
+<div class="cds" data-cds>
+
+  <div class="entete-page">
+    <h1 class="titre-page">Explore le CdS</h1>
+    <p class="sous-titre-page"><span class="bureau">Les règles du Code du sport sur la plongée, telles que reprises dans le MFT (version juin 2026), classées par question. Chaque réponse indique l’article d’origine.</span><span class="mobile">Les règles du Code du sport sur la plongée, classées par question.</span></p>
+  </div>
+
+
+  {{/* Qui peut plonger où, et avec qui ? */}}
+  <section class="carte cds-tableau" aria-labelledby="tab-titre">
+    <div class="cds-tableau__entete">
+      <h2 id="tab-titre" class="cds-tableau__titre">Qui peut plonger où, et avec qui ? <span class="ref">Annexes III-16a et III-16b</span></h2>
+      <div class="segments" role="tablist" aria-label="Type de plongée">
+        <button type="button" role="tab" class="segments__bouton" id="onglet-explo" aria-controls="panneau-explo" aria-selected="true" tabindex="0" data-type="explo">Exploration</button>
+        <button type="button" role="tab" class="segments__bouton" id="onglet-ens" aria-controls="panneau-ens" aria-selected="false" tabindex="-1" data-type="ens">Enseignement</button>
+      </div>
+    </div>
+
+    <div id="panneau-explo" role="tabpanel" aria-labelledby="onglet-explo" data-panneau-type="explo">
+      <p class="cds-tableau__intro bureau">Plongée à l’air, en milieu naturel. {{ $C.exploration.intro }}</p>
+      <div class="cds-tableau__defilement bureau">
+        <table class="tableau">
+          <thead><tr><th scope="col">Espace</th><th scope="col">Plongeurs encadrés</th><th scope="col">Encadrant minimum</th><th scope="col">Effectif max</th><th scope="col">Plongeurs autonomes</th><th scope="col">Effectif max</th></tr></thead>
+          <tbody>
+            {{- range $C.exploration.lignes }}
+            <tr><th scope="row">{{ .espace }}</th><td>{{ .encadres }}</td><td>{{ .encadrant }}</td><td>{{ .effectif }}</td><td>{{ .autonomes }}</td><td>{{ .effectifAutonomes }}</td></tr>
+            {{- end }}
+          </tbody>
+        </table>
+      </div>
+      <div class="espaces mobile">
+        {{- range $C.exploration.lignes }}
+        <div class="espace">
+          <span class="espace__nom">{{ .espace }}</span>
+          <div class="espace__ligne"><span class="espace__libelle">Encadrés</span><span class="espace__valeur"><strong>{{ .encadres }}</strong> · {{ .effectif }} max</span></div>
+          <div class="espace__ligne"><span class="espace__libelle">Encadrant mini</span><span class="espace__valeur">{{ .encadrant }}</span></div>
+          {{- if .autonomes }}
+          <div class="espace__ligne"><span class="espace__libelle">Autonomes</span><span class="espace__valeur"><strong>{{ .autonomes }}</strong> · {{ .effectifAutonomes }} max</span></div>
+          {{- else }}
+          <div class="espace__vide">Pas d’autonomie dans cet espace</div>
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+    <div id="panneau-ens" role="tabpanel" aria-labelledby="onglet-ens" data-panneau-type="ens" hidden>
+      <p class="cds-tableau__intro bureau">Plongée à l’air, en milieu naturel. {{ $C.enseignement.intro }}</p>
+      <div class="cds-tableau__defilement bureau">
+        <table class="tableau">
+          <thead><tr><th scope="col">Espace</th><th scope="col">Élèves</th><th scope="col">Enseignant minimum</th><th scope="col">Effectif max</th></tr></thead>
+          <tbody>
+            {{- range $C.enseignement.lignes }}
+            <tr><th scope="row">{{ .espace }}</th><td>{{ .eleves }}</td><td>{{ .enseignant }}</td><td>{{ .effectif }}</td></tr>
+            {{- end }}
+          </tbody>
+        </table>
+      </div>
+      <div class="espaces mobile">
+        {{- range $C.enseignement.lignes }}
+        <div class="espace">
+          <span class="espace__nom">{{ .espace }}</span>
+          <div class="espace__ligne"><span class="espace__libelle">Élèves</span><span class="espace__valeur"><strong>{{ .eleves }}</strong> · {{ .effectif }} max</span></div>
+          <div class="espace__ligne"><span class="espace__libelle">Enseignant mini</span><span class="espace__valeur">{{ .enseignant }}</span></div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+    <p class="cds-tableau__note"><span class="bureau">* L’encadrant peut ajouter un plongeur supplémentaire à la palanquée, au minimum guide de palanquée (GP) ou plongeur niveau 4 (P4). Effectifs donnés sans compter l’encadrant.</span><span class="mobile">* Un plongeur supplémentaire possible, au minimum GP ou P4. Effectifs sans compter l’encadrant.</span></p>
+  </section>
+
+  {{/* Questions : fiches sur bureau, liste dépliable sur téléphone */}}
+  <section class="questions" aria-labelledby="questions-titre">
+    <h2 id="questions-titre" class="questions__titre"><span class="mobile">Questions fréquentes</span><span class="visuellement-cache bureau">Questions</span></h2>
+    {{/* Suivi des réponses, comme dans Réviser : enregistré dans ce navigateur (clé ptmf1:cds). */}}
+    <div class="cds-suivi" aria-label="Où tu en es sur ces questions">
+      <span class="cds-suivi__libelle">Où tu en es</span>
+      <span class="boites">
+        <span class="boite boite--revoir">À revoir <span data-cds-compte="0">0</span></span>
+        <span class="boite boite--acquises">Je savais <span data-cds-compte="1">0</span></span>
+        <span class="boite boite--cours">Pas encore faites <span data-cds-compte="vide">{{ len $C.questions }}</span></span>
+      </span>
+    </div>
+    {{- range $i, $q := $C.questions }}
+    <article class="question" data-question data-cds-id="{{ $q.question | urlize }}">
+      <h3 class="question__titre bureau">{{ $q.question }} <span class="ref">{{ $q.ref }}</span> <span class="question__etat" data-cds-etat hidden></span></h3>
+      <h3 class="question__titre-mobile mobile">
+        <button type="button" class="question__bouton" aria-expanded="false" aria-controls="reponse-{{ $i }}" data-question-bouton>
+          <span class="question__textes"><span class="question__intitule">{{ $q.question }}</span><span class="question__ref">{{ $q.ref }} <span class="question__etat" data-cds-etat hidden></span></span></span>
+          <span class="question__chevron">{{ $chevron }}</span>
+        </button>
+      </h3>
+      <div class="question__reponse" id="reponse-{{ $i }}">
+        {{- /* Réponse masquée (comme une carte de Réviser) : on cherche d’abord, on affiche ensuite. */}}
+        <button type="button" class="question__afficher" aria-expanded="false" aria-controls="contenu-{{ $i }}" data-afficher>
+          <span data-afficher-libelle>Afficher la réponse</span><span class="visuellement-cache"> : {{ $q.question }}</span>
+        </button>
+        <div class="question__contenu" id="contenu-{{ $i }}" hidden>
+          <ul>
+            {{- range $q.reponses }}
+            <li>{{ . | markdownify }}</li>
+            {{- end }}
+          </ul>
+          {{- with $q.note }}<p class="question__note">{{ . }}</p>{{ end }}
+          <div class="question__auto">
+            <span class="question__auto-libelle">Tu la savais ?</span>
+            <button type="button" class="question__revoir" data-cds-repondre="0">À revoir</button>
+            <button type="button" class="question__savais" data-cds-repondre="1">Je savais</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    {{- end }}
+  </section>
+
+  <p class="cds__officiel"><span class="bureau">Texte officiel en vigueur : <a href="{{ site.Params.cdsUrl }}">Code du sport, section consacrée à la plongée subaquatique, sur Légifrance ↗</a></span><span class="mobile"><a href="{{ site.Params.cdsUrl }}">Texte officiel sur Légifrance ↗</a></span></p>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/cds.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

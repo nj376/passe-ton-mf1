@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{- /* Accueil (maquettes _passation/accueil/Accueil2.dc.html et MobileAccueil2.dc.html).
+       Styles propres à la page : classes « home- ». Le suivi est sur la page /suivi/. */ -}}
+<section class="home-hero">
+  <div class="home-hero__interieur">
+    <div class="home-hero__textes">
+      <h1 class="home-titre">Comprends le MFT, une séance après l’autre.</h1>
+      <p class="home-intro">Je pensais donc être préparé à affronter la complexité du monde. C’était avant de m’inscrire au MF1. Entre les subtilités du MFT, les fiches pédagogiques et les précieux conseils de nos MF2, j’ai découvert qu’apprendre à enseigner la plongée était une aventure à part entière. Alors, pour mettre un peu d’ordre dans mes connaissances (et tenter de réduire mon incertitude pédagogique), j’ai créé ce site. D’abord pour moi, puis pour tous ceux qui partagent cette belle galère. Ce n’est ni un outil officiel ni un substitut à nos formateurs, simplement un compagnon de route, perfectible et ouvert aux contributions. Pour découvrir l’histoire de ce projet, ses limites et les quelques paradoxes quantiques qui l’accompagnent, rendez-vous sur la page <a href="{{ "/a-propos/" | relURL }}">À propos</a>.</p>
+    </div>
+    <aside class="carte home-commencer bureau" aria-labelledby="home-commencer-titre">
+      <p id="home-commencer-titre" class="home-commencer__titre">Par où commencer</p>
+      <a class="home-rapide" href="{{ "/capacitaire/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">Capacitaire</span><span class="home-rapide__texte">Le module à réussir avant l’examen</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+      <a class="home-rapide" href="{{ "/s-entrainer/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2 2M9 2h6"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">S’entraîner</span><span class="home-rapide__texte">Tirer un thème, 30 min de préparation</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+      <a class="home-rapide" href="{{ "/progression/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h4v-4h4v-4h4V6h4"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">Projets</span><span class="home-rapide__texte">Des pistes d’étapes, technique par technique</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+      <a class="home-rapide" href="{{ "/explore-le-mft/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h4l4 10h6l2-4h2"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">MFT</span><span class="home-rapide__texte">Chaque compétence sur la courbe de plongée</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+      <a class="home-rapide" href="{{ "/reviser/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="12" rx="2"></rect><path d="M7 3h12a2 2 0 0 1 2 2v10"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">Réviser</span><span class="home-rapide__texte">Cartes mémoire et recherche chronométrée</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+    </aside>
+  </div>
+</section>
+
+<div class="home-contenu">
+  <section class="home-parcours" aria-labelledby="parcours">
+    <div class="home-parcours__tete">
+      <p class="home-surtitre">L’examen</p>
+      <div class="home-parcours__ligne">
+        <h2 id="parcours" class="home-h2">Le parcours jusqu’au MF1</h2>
+        <button type="button" class="aide-bouton bureau" aria-label="Aide sur l’examen" aria-expanded="false" aria-controls="aide-epreuves" data-bascule>?</button>
+      </div>
+      <div id="aide-epreuves" class="note-aide bureau" role="note" hidden>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B5AA6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg>
+        <p>Pour réussir, il faut au moins 150 points sur 300, aucune note sous 5, et la moyenne à l’ensemble des trois pédagogies comme à l’IPD. Le MFT non annoté est autorisé pendant la préparation des trois pédagogies.</p>
+      </div>
+    </div>
+    <div class="home-etapes">
+      <div class="home-etape home-etape--1">
+        <span class="home-etape__libelle">Étape 1 · d’abord</span>
+        <a class="carte home-capa" href="{{ "/capacitaire/" | relURL }}">
+          <span class="home-capa__haut"><span class="home-capa__prerequis"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Prérequis</span><span class="home-wip">En construction</span></span>
+          <span class="home-capa__titre">Module capacitaire</span>
+          <span class="home-capa__texte">Quatre écrits de 45 min au plus : cadre réglementaire, aspects théoriques, anatomie et physiologie, désaturation.</span>
+          <span class="home-capa__texte"><strong>À réussir avant de se présenter aux épreuves de l’examen.</strong> Valable 4 ans.</span>
+          <span class="home-capa__lien">Voir le module <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+        </a>
+      </div>
+      <div class="home-etapes__fleche" aria-hidden="true"><span class="bureau"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><span class="mobile"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></span></div>
+      <div class="home-etape home-etape--2">
+        <span class="home-etape__libelle">Étape 2 · les 4 épreuves de l’examen</span>
+        <div class="home-epreuves">
+          <a class="carte home-epreuve" href="{{ "/s-entrainer/?epreuve=prat" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 1</span><span class="home-coef">Coefficient 4</span></span><span class="home-epreuve__titre">Pédagogie pratique</span><span class="home-epreuve__texte">Une séance dans l’eau, du débutant au DP-N5 et en Randosub.</span><span class="home-duree">30 min + 30 min</span></a>
+          <a class="carte home-epreuve" href="{{ "/s-entrainer/?epreuve=orga" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 2</span><span class="home-coef">Coefficient 3</span></span><span class="home-epreuve__titre">Pédagogie organisationnelle</span><span class="home-epreuve__texte">Bateau, palanquées, sécurité, secours ou cursus de formation.</span><span class="home-duree">30 min + 10 min + 20 min</span></a>
+          <a class="carte home-epreuve" href="{{ "/s-entrainer/?epreuve=theo" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 3</span><span class="home-coef">Coefficient 4</span></span><span class="home-epreuve__titre">Pédagogie théorique</span><span class="home-epreuve__texte">Un cours en salle, du débutant au candidat GP-N4.</span><span class="home-duree">30 min + 30 min</span></a>
+          <a class="carte home-epreuve" href="{{ "/ipd-25-m/" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 4</span><span class="home-coef">Coefficient 4</span></span><span class="home-epreuve__titre">Intervention à 25 m</span><span class="home-epreuve__texte">Vitesse maîtrisée au plus tard à 20 m, arrêt franc entre 8 et 6 m, parachute.</span><span class="home-duree">Déroulement et grille de notation</span></a>
+        </div>
+      </div>
+    </div>
+    <p class="home-recu"><span class="home-recu__icone bureau"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg></span><span><strong>Pour être reçu :</strong> <span class="bureau">au moins 150 points au total, aucune note sous 5/20, toutes les épreuves réalisées, et 10/20 de moyenne à la fois sur les trois pédagogies et à l’intervention à 25 m. Le MFT non annoté est autorisé pour préparer les trois pédagogies.</span><span class="mobile">au moins 150 points, aucune note sous 5/20, toutes les épreuves réalisées, et 10/20 de moyenne sur les trois pédagogies comme à l’intervention à 25 m.</span></span></p>
+  </section>
+</div>
+{{ end }}

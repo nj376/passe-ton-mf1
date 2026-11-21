@@ -1,0 +1,82 @@
+{{ define "main" }}
+{{- /* Page « Module capacitaire ». Référentiel des quatre écrits : data/capacitaire.yaml (MFT MF1, juillet 2026, p. 18 à 24).
+       Auto-évaluation par rubrique (« Je maîtrise » / « À revoir ») : assets/js/capacitaire.js, clé ptmf1:capa.
+       Styles propres à la page : classes « capa- » (et « home- » pour les badges des écrits). */ -}}
+{{- $C := site.Data.capacitaire -}}
+<div class="capa">
+  <section class="capa-entete">
+    <div class="capa-entete__ligne"><span class="home-wip">En construction</span></div>
+    <h1 class="capa-titre">Module capacitaire</h1>
+    <p class="capa-accroche">Le passage obligé avant l’examen MF1 : on ne peut pas se présenter aux quatre épreuves sans l’avoir réussi.</p>
+  </section>
+
+  <section class="capa-conditions" aria-label="Accès et validation">
+    <div class="carte capa-condition"><h2 class="capa-condition__titre">Pour y accéder</h2><ul><li>Licence FFESSM en cours de validité</li><li>17 ans révolus à l’entrée en formation</li><li>GP-N4 FFESSM, GP associé, N4 ANMP ou BPJEPS</li></ul></div>
+    <div class="carte capa-condition capa-condition--valider"><h2 class="capa-condition__titre">Pour le valider</h2><p>Au moins 10/20 en cadre réglementaire, et 10/20 de moyenne sur les trois autres matières. Une fois acquis, il est valable 4 ans.</p></div>
+    <div class="carte capa-condition"><h2 class="capa-condition__titre">GP-N4 obtenu avant 2026</h2><p>Seule l’évaluation du cadre réglementaire est demandée (au moins 10/20), en amont de l’examen ou au plus tard pendant celui-ci.</p></div>
+  </section>
+
+  <section class="capa-programme" aria-labelledby="capa-programme-titre" data-capa>
+    <div class="capa-programme__tete">
+      <h2 id="capa-programme-titre" class="capa-programme__titre">Le programme des quatre écrits</h2>
+      <p class="capa-programme__texte">Ce que le MFT demande de connaître pour chaque matière, et comment c’est évalué. Pour chaque rubrique, indique si tu la maîtrises : ton avancement apparaît sur chaque écrit et sur la page <a href="{{ "/suivi/" | relURL }}">Suivi</a>.</p>
+    </div>
+    <div class="capa-ecrits" role="tablist" aria-label="Les quatre écrits">
+      {{- range $i, $e := $C.ecrits }}
+      <button type="button" role="tab" class="carte capa-ecrit" id="onglet-{{ $e.id }}" aria-controls="ecrit-{{ $e.id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}" data-capa-onglet="{{ $e.id }}">
+        <span class="home-epreuve__haut"><span class="home-num">Écrit {{ $e.n }}</span><span class="home-coef"><span class="bureau">Coefficient </span><span class="mobile">Coef. </span>{{ $e.coef }}</span></span>
+        <span class="capa-ecrit__titre">{{ $e.titre }}</span>
+        <span class="capa-ecrit__texte">{{ $e.resume }}</span>
+        <span class="capa-ecrit__bas"><span class="home-duree">45 min au plus</span><span class="capa-ecrit__avancement" data-capa-avancement="{{ $e.id }}">{{ len $e.rubriques }} rubriques</span></span>
+        <span class="capa-ecrit__barre" aria-hidden="true"><span data-capa-barre="{{ $e.id }}"></span></span>
+      </button>
+      {{- end }}
+    </div>
+
+    {{- range $i, $e := $C.ecrits }}
+    <div class="capa-panneau" role="tabpanel" id="ecrit-{{ $e.id }}" aria-labelledby="onglet-{{ $e.id }}" data-capa-panneau="{{ $e.id }}">
+      <h3 class="capa-panneau__titre">Écrit {{ $e.n }} · {{ $e.titre }}</h3>
+      {{- range $e.rubriques }}
+      {{- $sujet := printf "Erreur sur la fiche capacitaire - %s" .titre }}
+      <article class="fiche capa-fiche" data-capa-id="{{ .id }}">
+        <div class="fiche__puces">
+          <span class="puce puce--niveau">Écrit {{ $e.n }} · {{ $e.court }}</span>
+          <span class="question__etat" data-capa-etat hidden></span>
+        </div>
+        <h4 class="fiche__titre capa-fiche__titre">{{ .titre }}</h4>
+        <div class="capa-fiche__savoir">
+          <span class="capa-fiche__libelle">Ce qu’il faut savoir</span>
+          {{- with .intro }}<p class="capa-fiche__intro">{{ . }}</p>{{ end }}
+          <ul class="capa-fiche__points">
+            {{- range .points }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+        {{- with .evaluation }}
+        <div class="fiche__change">
+          <span class="fiche__change-titre">Comment c’est évalué</span>
+          <p>{{ . }}</p>
+        </div>
+        {{- end }}
+        <div class="question__auto capa-fiche__auto">
+          <span class="question__auto-libelle">Tu maîtrises cette rubrique ?</span>
+          <button type="button" class="question__revoir" aria-pressed="false" data-capa-repondre="0">À revoir</button>
+          <button type="button" class="question__savais" aria-pressed="false" data-capa-repondre="1">Je maîtrise</button>
+        </div>
+        <div class="fiche__pied">
+          <span>D’après le MFT MF1, version juillet 2026, {{ $e.pages }}</span>
+          <span class="fiche__liens"><a class="fiche__signaler" href="{{ "/contact/" | relURL }}?sujet={{ $sujet }}"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-1.5 4L16 12H5"></path></svg>Signaler une erreur</a></span>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+    {{- end }}
+  </section>
+
+  <p class="capa-fin">Organisation et dates : renseigne-toi auprès de ta CTR. Le texte officiel fait foi : <a href="{{ site.Params.mftUrl }}">MFT, chapitre MF1</a>.</p>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/capacitaire.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

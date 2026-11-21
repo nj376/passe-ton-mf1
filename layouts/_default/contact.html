@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{- /* Formulaire de contact : envoyé en POST à /formulaires/contact (même origine), que le serveur (Caddy)
+       relaie vers le webhook n8n « contact-mf1 » (serveur/n8n-contact-passe-ton-mf1.json).
+       Champs attendus par le workflow : prenom, nom, email, message, langue ; site_web est un piège à robots. */ -}}
+<div class="capa">
+  <section class="capa-entete contact-entete">
+    <h1 class="capa-titre">Contact</h1>
+    <p class="capa-accroche">Une erreur, un oubli, une idée ou une question ? Écris-moi : chaque retour améliore l’outil pour tout le monde.</p>
+  </section>
+
+  <form class="carte contact" method="post" action="{{ "/formulaires/contact" | relURL }}" accept-charset="utf-8">
+    <input type="hidden" name="langue" value="fr">
+    <div class="contact__deux">
+      <div class="contact__champ">
+        <label for="c-prenom" class="champ__nom">Prénom</label>
+        <input id="c-prenom" name="prenom" type="text" class="contact__ligne" autocomplete="given-name">
+      </div>
+      <div class="contact__champ">
+        <label for="c-nom" class="champ__nom">Nom</label>
+        <input id="c-nom" name="nom" type="text" class="contact__ligne" autocomplete="family-name">
+      </div>
+    </div>
+    <div class="contact__champ">
+      <label for="c-email" class="champ__nom">Email <span class="contact__requis">(obligatoire)</span></label>
+      <input id="c-email" name="email" type="email" class="contact__ligne" autocomplete="email" required>
+    </div>
+    <div class="contact__champ">
+      <label for="c-message" class="champ__nom">Message <span class="contact__requis">(obligatoire)</span></label>
+      <textarea id="c-message" name="message" class="champ__texte contact__message" required></textarea>
+    </div>
+    {{/* Piège à robots : invisible et hors du parcours au clavier ; un humain le laisse vide. */}}
+    <div class="contact__piege" aria-hidden="true">
+      <label for="c-site">Ne pas remplir ce champ</label>
+      <input id="c-site" name="site_web" type="text" tabindex="-1" autocomplete="off">
+    </div>
+    <p class="contact__note">Ton adresse sert uniquement à te répondre. Voir les <a href="{{ "/mentions-legales/" | relURL }}">mentions légales</a>.</p>
+    <button type="submit" class="bouton bouton--principal contact__envoyer">Envoyer le message</button>
+  </form>
+  {{/* « Signaler une erreur » et « proposer un lien » arrivent avec ?sujet=… : le message commence par ce sujet. */}}
+  <script>(function(){try{var s=new URLSearchParams(location.search).get("sujet");var m=document.getElementById("c-message");if(s&&m&&!m.value){m.value=s.slice(0,200)+"\n\n";}}catch(e){}})();</script>
+</div>
+{{ end }}

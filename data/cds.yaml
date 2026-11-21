@@ -1,0 +1,76 @@
+# Contenu de la page « Explore le CdS » (textes de la maquette validée).
+# Source : MFT, « Code du sport », version juin 2026 (_MFT/06 - Documents règlementaires/Extrait du Code du Sport.pdf).
+# Les réponses acceptent le gras en Markdown (**…**).
+
+exploration:
+  intro: "Exploration : plongée en dehors de toute action d’enseignement (A322-75)."
+  lignes:
+    - { espace: "0 à 6 m", encadres: "Débutants", encadrant: "E1, GP ou P4", effectif: "4*", autonomes: "", effectifAutonomes: "" }
+    - { espace: "0 à 12 m", encadres: "PE-12", encadrant: "E2, GP ou P4", effectif: "4*", autonomes: "PA-12", effectifAutonomes: "3" }
+    - { espace: "0 à 20 m", encadres: "PE-20", encadrant: "E2, GP ou P4", effectif: "4*", autonomes: "PA-20", effectifAutonomes: "3" }
+    - { espace: "0 à 40 m", encadres: "PE-40", encadrant: "E3, GP ou P4", effectif: "4*", autonomes: "PA-40", effectifAutonomes: "3" }
+    - { espace: "0 à 60 m", encadres: "PE-60", encadrant: "E4", effectif: "4", autonomes: "PA-60", effectifAutonomes: "3" }
+
+enseignement:
+  intro: "Enseignement : palanquée en cours de formation technique."
+  lignes:
+    - { espace: "0 à 6 m", eleves: "Baptême", enseignant: "E1", effectif: "1*" }
+    - { espace: "0 à 6 m", eleves: "Débutants", enseignant: "E1", effectif: "4*" }
+    - { espace: "0 à 12 m", eleves: "Débutants en formation vers PE-12 ou PA-12", enseignant: "E2", effectif: "4*" }
+    - { espace: "0 à 20 m", eleves: "Débutants ou PE-12 en formation vers PE-20 ou PA-20", enseignant: "E2", effectif: "4*" }
+    - { espace: "0 à 40 m", eleves: "PE-20 ou PA-20 en formation vers PE-40 ou PA-40", enseignant: "E3", effectif: "4*" }
+    - { espace: "0 à 60 m", eleves: "PE-40 ou PA-40 en formation vers PE-60 ou PA-60", enseignant: "E4", effectif: "4" }
+
+questions:
+  - question: "Quel est le rôle du directeur de plongée ?"
+    ref: "A322-72"
+    reponses:
+      - "Il est présent sur le lieu de mise à l’eau et responsable de l’organisation, de la sécurité et du déclenchement des secours."
+      - "Il fixe les caractéristiques de la plongée et établit la fiche de sécurité : noms, aptitudes et fonction de chaque plongeur, paramètres prévus et réalisés. Elle est conservée un an."
+      - "Qualification minimale (annexe III-15a) : DP en exploration ou niveau 5 pour l’exploration à l’air ou au nitrox ; E3 (MF1) pour l’enseignement et l’exploration à l’air ou au nitrox."
+  - question: "Qui est E1, E2, E3, E4 ?"
+    ref: "A322-74 · III-15b"
+    reponses:
+      - "**Exploration** : guide de palanquée (GP) ou plongeur niveau 4 (P4)."
+      - "**E1** : initiateur."
+      - "**E2** : initiateur et GP, ou stagiaire pédagogique MF1."
+      - "**E3** : MF1. **E4** : MF2 ou BEPPA."
+    note: "Les équivalences avec les diplômes d’État (BPJEPS, DEJEPS, DESJEPS…) figurent dans l’annexe."
+  - question: "Qui peut plonger en autonomie ?"
+    ref: "A322-73 · A322-89 · A322-99"
+    reponses:
+      - "Toujours sur décision du DP : PA-12 dès 16 ans jusqu’à 12 m, PA-20 dès 16 ans jusqu’à 20 m, PA-40 dès 17 ans jusqu’à 40 m, PA-60 majeurs jusqu’à 60 m."
+      - "Pour les mineurs, l’autonomie est limitée à l’air et au nitrox."
+      - "Sans DP : des PA-60 peuvent plonger jusqu’à 40 m, sur décision de l’exploitant, prévenu du site choisi."
+      - "Une palanquée mixte ne dépasse jamais les conditions du plongeur le plus limité."
+  - question: "Quel matériel de secours sur le site ?"
+    ref: "A322-78-1 · A322-78-2"
+    reponses:
+      - "Un plan de secours écrit et un moyen d’alerte (VHF en mer depuis une embarcation)."
+      - "Eau douce potable, BAVU avec réserve d’O2 et trois masques, masque haute concentration, oxygénothérapie normobare, couverture isothermique, fiches d’évacuation."
+      - "Matériel d’assistance : bouteille de secours avec détendeur, moyen de rappel depuis une embarcation, tablette immergeable, tables de décompression au-delà de 6 m."
+  - question: "Quel équipement pour chaque plongeur ?"
+    ref: "A322-80"
+    reponses:
+      - "Tous : un manomètre et, en milieu naturel, un gilet gonflable au gaz comprimé."
+      - "Encadrés au-delà de 20 m et autonomes : un détendeur de secours sans partage d’embout et de quoi contrôler sa plongée et sa remontée."
+      - "Encadrant : deux sorties indépendantes et deux détendeurs complets, un gilet, de quoi contrôler la plongée de sa palanquée."
+      - "Chaque palanquée : un parachute de palier."
+  - question: "Quelles limites de profondeur et de gaz ?"
+    ref: "A322-76 · A322-92"
+    reponses:
+      - "Air et nitrox : 60 m au maximum."
+      - "Trimix et héliox : 80 m en encadré, 120 m en autonomie."
+      - "Pression partielle d’oxygène inspiré : entre 0,16 et 1,6 bar."
+  - question: "Et en piscine ou en fosse ?"
+    ref: "A322-98"
+    reponses:
+      - "Au-delà de 6 m de profondeur, une fosse suit les règles du milieu naturel."
+      - "Jusqu’à 6 m : DP au minimum E1, pas de fiche de sécurité obligatoire. Les PE-12 peuvent y être autonomes, et les GP ou P4 y faire des baptêmes."
+  - question: "Comment un plongeur prouve-t-il son niveau ?"
+    ref: "A322-77 · III-14a · III-14b"
+    reponses:
+      - "Par son brevet et, si besoin, son carnet de plongée."
+      - "Sans justificatif, le DP évalue ses aptitudes sur une ou plusieurs plongées."
+      - "Les aptitudes PE et PA de 12 à 60 m sont détaillées dans l’annexe III-14a."
+      - "Correspondance des brevets (annexe III-14b) : P1 = PE-20 ; P1 avec autonomie = PE-20 et PA-12 ; P2 = PE-40 et PA-20 ; P3 = PE-60 et PA-60."

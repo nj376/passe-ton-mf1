@@ -1,0 +1,13 @@
+{{/* Publie la base de contenu et les listes en un seul fichier JSON (mis en cache),
+     pour les parties interactives. Renvoie son adresse. */}}
+{{- $d := dict
+  "competences" site.Data.mft_data.competences
+  "niveaux" site.Data.mft_data.niveaux
+  "phases" site.Data.mft_data.phases
+  "moments" site.Data.moments
+  "onglets" site.Data.onglets
+  "tirage" site.Data.tirage
+  "grilles" site.Data.grilles
+-}}
+{{- $r := resources.FromString "donnees/mft.json" ($d | jsonify) | fingerprint -}}
+{{- return $r.RelPermalink -}}

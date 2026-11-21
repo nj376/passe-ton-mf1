@@ -1,0 +1,12 @@
+{{- /* Avis aux visiteurs sur téléphone (600 px de large au plus), affiché une seule fois, à la première visite.
+       Ouverture et mémorisation (clé ptmf1-avis-mobile) : assets/js/interface.js. */ -}}
+<dialog tabindex="-1" class="fenetre fenetre--petite" id="fenetre-avis-mobile" aria-label="La version mobile a ses limites" aria-describedby="avis-mobile-texte">
+  <div id="avis-mobile-texte" class="fenetre__texte avis-mobile">
+    <p>J’ai beau avoir mis tout mon cœur (et quelques neurones) dans le développement de <strong>passe-ton-mf1.com</strong>, la version mobile présente encore quelques limites, tant en matière d’ergonomie que de fonctionnalités. Certaines ont même dû rester à quai, faute de pouvoir embarquer sur un écran aussi petit.</p>
+    <p>Désolé pour ces désagréments ! Pour profiter pleinement du site, <strong>je te recommande de passer sur un ordinateur ou une tablette</strong>.</p>
+    <p>Après tout, préparer le MF1 est déjà suffisamment compliqué. Inutile d’y ajouter les contraintes d’un écran de poche !</p>
+  </div>
+  <div class="fenetre__actions">
+    <button type="button" class="bouton bouton--principal" data-fermer>J’ai compris</button>
+  </div>
+</dialog>

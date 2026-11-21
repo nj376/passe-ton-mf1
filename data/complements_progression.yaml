@@ -1,0 +1,17 @@
+# Compléments affichés sur la page Progression et dans Explore le MFT, par identifiant de compétence.
+# Ils ne viennent pas des fichiers de progression (dont aucun texte n'est modifié) mais des consignes d'intégration.
+#   encadrement : ligne « Enseigné et validé par »
+#   rappel      : encart en tête de la progression
+#   renvoi      : fiche sans progression propre qui renvoie vers une autre (lien dans Explore le MFT)
+RIFAP-C1: { encadrement: "E1 minimum" }
+RIFAP-C2: { encadrement: "E1 minimum" }
+RIFAP-C3: { encadrement: "E1 minimum" }
+RIFAP-C4: { encadrement: "E1 minimum, ou un licencié ANTEOR ou un médecin fédéral" }
+RIFAP-C5:
+  encadrement: "un licencié ANTEOR ou un médecin fédéral"
+  rappel: "Les gestes de secourisme relèvent des référentiels nationaux PSC1 et PSE, auxquels le RIFAP renvoie. Cette progression ne les décrit pas : suis les fiches PSC1 et PSE."
+RIFAP-C6:
+  encadrement: "un licencié ANTEOR ou un médecin fédéral"
+  rappel: "Les gestes de secourisme relèvent des référentiels nationaux PSC1 et PSE, auxquels le RIFAP renvoie. Cette progression ne les décrit pas : suis les fiches PSC1 et PSE."
+RIFAP-C7: { encadrement: "E1 minimum, ou un licencié ANTEOR ou un médecin fédéral" }
+N3-rifa: { renvoi: RIFAP-C1, renvoiTexte: "Voir les progressions des 7 capacités du RIFAP →" }

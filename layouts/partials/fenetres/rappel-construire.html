@@ -1,0 +1,24 @@
+<dialog tabindex="-1" class="fenetre fenetre--petite" id="fenetre-rappel-construire" role="alertdialog" aria-labelledby="rappel-titre" aria-describedby="rappel-texte">
+  <h2 id="rappel-titre" class="fenetre__titre fenetre__titre--petit">Rappeler le dernier enregistrement ?</h2>
+  <p id="rappel-texte" class="fenetre__texte">Tout ce qui est actuellement dans les champs sera remplacé par le dernier enregistrement. Impossible de revenir en arrière.</p>
+  <div class="fenetre__actions">
+    <button type="button" class="bouton bouton--secondaire" data-fermer>Annuler</button>
+    <button type="button" class="bouton bouton--danger" data-rappel-confirmer>Rappeler</button>
+  </div>
+</dialog>
+<dialog tabindex="-1" class="fenetre fenetre--petite" id="fenetre-effacer-construire" role="alertdialog" aria-labelledby="effacer-titre" aria-describedby="effacer-texte">
+  <h2 id="effacer-titre" class="fenetre__titre fenetre__titre--petit">Tout effacer ?</h2>
+  <p id="effacer-texte" class="fenetre__texte">Tous les champs, les étapes et les images seront vidés, et l’enregistrement de ce navigateur sera supprimé. Seuls la compétence et son point d’arrivée restent affichés. Impossible de revenir en arrière.</p>
+  <div class="fenetre__actions">
+    <button type="button" class="bouton bouton--secondaire" data-fermer>Annuler</button>
+    <button type="button" class="bouton bouton--danger" data-effacer-confirmer>Tout effacer</button>
+  </div>
+</dialog>
+<dialog tabindex="-1" class="fenetre fenetre--petite" id="fenetre-ecraser-construire" role="alertdialog" aria-labelledby="ecraser-titre" aria-describedby="ecraser-texte">
+  <h2 id="ecraser-titre" class="fenetre__titre fenetre__titre--petit">Remplacer ton dernier enregistrement ?</h2>
+  <p id="ecraser-texte" class="fenetre__texte">Ce navigateur ne garde qu’une seule progression : <span data-ecraser-nom></span>. Si tu continues, elle sera remplacée par celle que tu commences. Pour la retrouver, utilise plutôt « Rappeler le dernier enregistrement ».</p>
+  <div class="fenetre__actions">
+    <button type="button" class="bouton bouton--secondaire" data-fermer data-ecraser-annuler>Garder l’ancienne</button>
+    <button type="button" class="bouton bouton--danger" data-ecraser-confirmer>Remplacer</button>
+  </div>
+</dialog>

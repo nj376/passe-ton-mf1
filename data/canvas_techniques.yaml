@@ -1,0 +1,172 @@
+# Correspondance entre les techniques des progressions types (data/progressions/*.json, champ « nom »)
+# et les cartes techniques du jeu du Canvas (identifiants de static/canvas/<jeu>.json, jeu donné par data/canvas_liens.yaml).
+# Utilisée par « Continuer dans le Canvas » : chaque technique devient un cadre, avec ces cartes et ses étapes en annotations.
+# Liste vide : pas de carte équivalente fiable ; le cadre et les étapes sont quand même posés.
+# Écrit à la main ; à revoir si une planche de cartes ou une progression change.
+PE12-equiper:
+  "Utilisation de l'équipement personnel": [EQU-01, EQU-02, EQU-03]
+PE12-eau:
+  "Mise à l'eau": [MEO-01, MEO-02]
+PE12-immerger:
+  "Immersion": [IMM-01, IMM-02, IMM-03]
+PE12-surface:
+  "Retour en surface à vitesse contrôlée": [SUR-01, SUR-02, SUR-03]
+PE12-ventiler:
+  "Ventilation": [VEN-01, VEN-02, VEN-03]
+PE12-equilibrer:
+  "Équilibre": [EQL-01, EQL-02, EQL-03]
+PE12-signes:
+  "Signes usuels": [COM-01, COM-02, COM-03]
+PE12-palanquee:
+  "Intégration dans une palanquée guidée": [PAL-01, PAL-02, PAL-03]
+N1-equiper:
+  "Gréage et dégréage": [EQU-01, EQU-02]
+  "Capelage et décapelage": [EQU-04, EQU-05]
+  "Choix de son matériel personnel": [EQU-06, EQU-07]
+N1-eau:
+  "Saut droit": [MEO-01, MEO-02]
+  "Bascule arrière": [MEO-03]
+  "Départ plage": [MEO-04]
+  "Sortir de l'eau": [MEO-05, MEO-06]
+N1-immerger:
+  "Phoque": [IMM-03, IMM-04]
+  "Canard": [IMM-01, IMM-02]
+N1-propulser:
+  "Palmage ventral en surface": [PRO-01]
+  "Palmage dorsal": [PRO-02]
+  "Palmage de sustentation": [PRO-04]
+  "Palmage en immersion": [PRO-05]
+  "Nage en capelé": [PRO-07]
+N1-ventiler:
+  "Ventilation en immersion": [VEN-01]
+  "Ventilation sur tuba et vidage du tuba": [VEN-02, VEN-03]
+  "Vidage du masque": [VEN-04, VEN-05]
+  "Lâcher et reprise d'embout": [VEN-06, VEN-07]
+N1-equilibrer:
+  "Poumon ballast": [EQL-03]
+  "Gestion du gilet de stabilisation": [EQL-01, EQL-02]
+N1-milieu:
+  "Aisance aquatique": [MIL-01, MIL-02]
+N1-communiquer:
+  "Exécution des signes conventionnels": [COM-01, COM-02, COM-03]
+N1-surface:
+  "Maîtrise de la vitesse de remontée": [SUR-01, SUR-02]
+  "Tenue d'un palier": [SUR-03, SUR-04]
+  "Tour d'horizon": [SUR-05]
+  "Gonflage du gilet en surface": [SUR-06]
+  "Remontée en expiration contrôlée": [SUR-07]
+N1-securite:
+  "Application des procédures mises en œuvre par le GP": [SEC-01, SEC-02, SEC-10]
+  "Intervention en relais": [SEC-04, SEC-05, SEC-06]
+PA12-organiser:
+  "Compréhension et application des directives du DP": [ORG-01, ORG-02, ORG-03]
+  "Compréhension de la topologie du site de plongée, orientation": [ORG-04, ORG-05]
+  "Gestion de son matériel et prise de connaissance du matériel des équipiers": [ORG-06, ORG-07, ORG-08, ORG-09]
+PA12-milieu:
+  "Aisance aquatique": [MIL-01, MIL-02]
+PA12-assistance:
+  "Observation, compréhension et réaction face à un incident": [ASS-01, ASS-02, ASS-03]
+N2-equiper:
+  "Gréage et dégréage": [SEQ-02]
+  "Capelage et décapelage": [SEQ-04]
+  "Saut droit et bascule arrière, remontée à l'échelle": [SEQ-05, SEQ-06, SEQ-07]
+N2-immerger:
+  "Canard et phoque": [IPV-01, IPV-02]
+  "Palmages": [IPV-04, IPV-06]
+  "Remontée en expiration contrôlée REC": [IPV-09]
+  "Descente et remontée": [IPV-07, IPV-08]
+N2-milieu:
+  "Aisance aquatique": [MIL-01, MIL-02]
+PA20-materiel:
+  "Mise en œuvre de son propre matériel": [MAT-01, MAT-02]
+  "Connaissance du matériel des équipiers": [MAT-03, MAT-04, MAT-05, MAT-06, MAT-07]
+PA20-autonomie:
+  "Sécurité de la palanquée": [AUT-07, AUT-08]
+PA20-planifier:
+  "Compréhension des directives du DP": [PLA-01, PLA-02]
+  "Compréhension de la topologie du site de plongée, orientation": [PLA-03, PLA-04, PLA-05]
+  "Détermination du profil de la plongée et des différentes procédures en immersion": [PLA-06, PLA-07, PLA-08]
+PA20-assistance:
+  "Observation, compréhension et réaction face à un incident": [ASS-01, ASS-02, ASS-03]
+PE40-ventiler:
+  "Ventilation en surface et en immersion": [VEQ-01, VEQ-02, VEQ-04]
+  "Vidage du masque": [VEQ-06, VEQ-07]
+  "Stabilisation": [VEQ-08, VEQ-09]
+PE40-communiquer:
+  "Connaissance de tous les signes et codes": [COM-01, COM-02, COM-03, COM-04]
+PE40-surface:
+  "Gestion de la désaturation": [SUR-01, SUR-02, SUR-03, SUR-04]
+  "Gestion d'une remontée isolée": [SUR-05, SUR-06, SUR-07]
+PE40-relai:
+  "Intervention en relai": [REL-01, REL-02, REL-03]
+PA40-planifier:
+  "Prise en compte des directives du DP": [PLA-01, PLA-02, PLA-03]
+  "Compréhension de la topologie du site, orientation": [PLA-05, PLA-06]
+  "Détermination du profil de la plongée et des différentes procédures en immersion": [PLA-07, PLA-08, PLA-09]
+PA40-autonomie:
+  "Orientation": [AUT-01, AUT-02, AUT-03]
+  "Évolution subaquatique": [AUT-04, AUT-05, AUT-06]
+  "Désaturation": [AUT-11, AUT-12, AUT-13]
+PA40-assistance:
+  "Observation, compréhension et réaction face à un incident": [ASS-01, ASS-02, ASS-03]
+PE60-profondeur:
+  "Stabilisation": [PRO-01, PRO-02, PRO-03, PRO-04]
+  "Mise en œuvre de l'ensemble des autres techniques": [PRO-05, PRO-06, PRO-07]
+PA60-organiser:
+  "Choix du site": [ORG-01, ORG-02]
+  "Organisation des conditions de la plongée": [ORG-03, ORG-05, ORG-06]
+  "Sécurisation de l'activité": [ORG-07, ORG-09, ORG-10]
+PA60-autonomie:
+  "Orientation": [AU6-05]
+  "Évolution subaquatique": [AU6-01, AU6-03, AU6-04]
+  "Désaturation": [AU6-02]
+N3-milieu:
+  "Aisance aquatique": [MIL-01, MIL-02]
+N4-briefing:
+  "Écouter et intégrer les consignes du DP": [CDP-01]
+  "S'informer auprès du DP": [CDP-02]
+  "Accueillir, prendre en charge et informer la palanquée sur le déroulement de la plongée en tenant compte du niveau des plongeurs": [CDP-03, CDP-04]
+  "Organiser et gérer la mise à l'eau en sécurité": [CDP-06]
+  "Organiser et gérer l'immersion en sécurité": [CDP-07]
+N4-descente:
+  "Gérer la descente": [CDP-08, CDP-09]
+  "Gérer le regroupement au fond": [CDP-10]
+N4-guider:
+  "Assurer le déroulement de la plongée dans le respect des consignes du DP": [CDP-11, CDP-12]
+  "S'adapter aux situations imprévues dans le sens de la sécurité": [CDP-13]
+  "S'orienter": [CDP-14, CDP-15]
+  "Agrémenter la plongée": [CDP-16]
+  "Intervenir en fonction du comportement des membres de la palanquée": [CDP-17]
+N4-findeplongee:
+  "Gérer la fin de la plongée et le retour en surface": [CDP-18, CDP-19]
+N4-retour:
+  "Gérer le retour au bateau": [CDP-20]
+  "Assurer le débriefing, commenter le déroulement de la plongée": [CDP-21]
+  "Observer et surveiller": []
+N4-ipd:
+  "Intervention sur un plongeur en difficulté à 40 m": [IPD-01, IPD-02, IPD-03]
+N4-techniques:
+  "Descente, stabilisation et vidage de masque à 40 m": [DSV-01, DSV-04, DSV-08]
+  "DTMR de 25 m": [DTM-01, DTM-03, DTM-11]
+N5-site:
+  "Prendre en compte les plongeurs, les guides de palanquée et le support surface": [SIT-01, SIT-05, SIT-06]
+  "Recueillir les informations relatives au site": [SIT-08, SIT-09, SIT-15]
+  "Analyser les conditions environnementales sur le site et s'y adapter": [SIT-10, SIT-12, SIT-18]
+N5-organiser:
+  "Composer les palanquées": [ORG-01, ORG-02]
+  "Fixer les paramètres de plongée": [ORG-03, ORG-04, ORG-05]
+  "Rédiger la fiche de sécurité": [ORG-08]
+  "Présenter le site": [ORG-09, ORG-11, ORG-12]
+  "Désigner un suppléant en cas de plongée du DP": [ORG-14, ORG-15, ORG-16]
+N5-securiser:
+  "S'assurer de la compréhension et de la prise en compte des consignes données par le DP": [SEC-01, SEC-02]
+  "Connaître les risques liés aux différentes pratiques et les mesures de prévention associées": [SEC-11, SEC-13, SEC-14]
+  "Surveiller l'activité et réaliser des actions de prévention": [SEC-16, SEC-17, SEC-22]
+  "Vérifier et utiliser le matériel de secours": [SEC-19, SEC-20]
+  "S'informer des règlementations locales éventuelles, des règles de protection de l'environnement et les faire respecter": [SEC-24, SEC-26]
+N5-theorie:
+  "Règlementation relative à l'organisation et aux conditions de pratique de la plongée en exploration citées dans le Code du Sport et le MFT, règlementations locales spécifiques": [TH-01, TH-02, TH-03]
+  "Responsabilité du DP": [TH-10, TH-11]
+  "Assurances": [TH-14, TH-15]
+  "Spécificité des différents publics": [TH-16, TH-17]
+  "Certificat médical d'absence de contre-indication à la pratique sportive (CACI)": [TH-19]

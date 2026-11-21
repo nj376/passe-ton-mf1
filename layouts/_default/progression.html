@@ -1,0 +1,234 @@
+{{ define "main" }}
+{{- /* Page « Progression » : niveau, puis compétence, puis frise d’étapes par technique.
+       Construite à partir de data/progressions/*.json : seules les progressions rédigées apparaissent. */ -}}
+{{- $D := site.Data.mft_data -}}
+
+{{- /* Toutes les progressions, avec leur compétence de la base */ -}}
+{{- $progs := slice -}}
+{{- range $fichier := site.Data.progressions }}
+  {{- range $p := $fichier.competences }}
+    {{- with index (where $D.competences "id" $p.id) 0 }}
+      {{- $progs = $progs | append (dict "p" $p "c" . "f" $fichier "horsBase" false) }}
+    {{- else }}
+      {{- /* Niveau sans compétence dans le MFT (PE12) : le fichier propose ses propres « compétences ». */ -}}
+      {{- $c := dict "id" $p.id "competence" $p.competence "niveau" $fichier.niveau "phase" "" "objectif" "" }}
+      {{- $progs = $progs | append (dict "p" $p "c" $c "f" $fichier "horsBase" true) }}
+    {{- end }}
+  {{- end }}
+{{- end -}}
+
+{{- /* Onglets de niveau qui ont au moins une progression, dans l’ordre d’Explore le MFT.
+       Les onglets listés dans site.Params.masquesPistes (hugo.toml) sont masqués, pas supprimés. */ -}}
+{{- $masques := site.Params.masquesPistes | default slice -}}
+{{- /* Cursus jeunes : absent de la base et d'Explore le MFT, onglet décrit dans data/jeunes.yaml */ -}}
+{{- $jeunes := dict }}
+{{- with site.Data.jeunes }}
+  {{- $o := merge .onglet (dict "niveaux" (slice .onglet.id) "parcours" .parcours "or" .or) }}
+  {{- $liste := slice }}
+  {{- range $progs }}{{ if eq .c.niveau $o.id }}{{ $liste = $liste | append . }}{{ end }}{{ end }}
+  {{- if and $liste (not (in $masques $o.id)) }}{{ $jeunes = dict "o" $o "liste" $liste }}{{ end }}
+{{- end -}}
+{{- $onglets := slice -}}
+{{- range site.Data.onglets }}
+  {{- $o := . }}
+  {{- $liste := slice }}
+  {{- range $progs }}{{ if in $o.niveaux .c.niveau }}{{ $liste = $liste | append . }}{{ end }}{{ end }}
+  {{- if and $liste (not (in $masques $o.id)) }}{{ $onglets = $onglets | append (dict "o" $o "liste" $liste) }}{{ end }}
+  {{- if and $jeunes (eq $o.id $jeunes.o.apres) }}{{ $onglets = $onglets | append $jeunes }}{{ $jeunes = dict }}{{ end }}
+{{- end -}}
+{{- if $jeunes }}{{ $onglets = $onglets | append $jeunes }}{{ end -}}
+
+{{- $drapeau := `<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-1.5 4L16 12H5"></path></svg>` | safeHTML -}}
+{{- $chevron := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg>` | safeHTML -}}
+{{- $alerte := `<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#8A2E10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="etape__alerte"><path d="M12 3 2 20h20L12 3z"></path><path d="M12 10v4M12 17v.5"></path></svg>` | safeHTML -}}
+
+<div class="progression-page" data-progression-page>
+  <div class="entete-page">
+    <h1 class="titre-page">Imaginer le début d’une progression</h1>
+  </div>
+
+
+  <div class="encart-orange volet-prog__avertissement" role="note">
+    <p><strong>Attention, ceci n’est pas une réponse d’examen. Et surtout, ne va pas l’apprendre par cœur !</strong> Il s’agit simplement d’une piste de réflexion, hors MFT, qui prend pour point de départ l’objectif final fixé par le MFT et propose un chemin possible pour y conduire l’élève. Bref, un petit pense-bête pour éviter le syndrome de la page blanche. Le jour de l’examen, le jury attend une véritable progression pédagogique, construite et argumentée, certainement pas un copier-coller de celle-ci. Alors, à toi de jouer : construis ta propre progression et fais-la valider par ton tuteur MF2. Après tout, c’est toi qui passes l’examen, pas le pense-bête !</p>
+  </div>
+
+  {{- if not $onglets }}
+  <p class="sous-titre-page">Aucune progression n’est encore rédigée.</p>
+  {{- else }}
+
+  {{/* ---------- Niveaux ---------- */}}
+  <div class="onglets-niveau" role="tablist" aria-label="Niveau">
+    {{- range $i, $n := $onglets }}
+    <button type="button" role="tab" class="onglet-niveau" id="prog-onglet-{{ $n.o.id }}" aria-controls="prog-niveau-{{ $n.o.id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}" data-prog-niveau="{{ $n.o.id }}">{{ $n.o.libelle }}</button>
+    {{- end }}
+  </div>
+
+  {{- range $i, $n := $onglets }}
+  <section class="prog-niveau" id="prog-niveau-{{ $n.o.id }}" role="tabpanel" aria-labelledby="prog-onglet-{{ $n.o.id }}" data-prog-panneau="{{ $n.o.id }}"{{ if ne $i 0 }} hidden{{ end }}>
+
+    {{- $premier := index $n.liste 0 }}
+    {{- /* Prérogatives du niveau (RIFAP : conditions de candidature), mot pour mot du MFT : data/prerogatives.yaml.
+           Repliées sur deux lignes, avec « Lire la suite » / « Réduire ». */ -}}
+    {{- with index site.Data.prerogatives $n.o.id }}
+    {{- $idp := printf "prerog-%s" (lower $n.o.id) }}
+    <section class="carte prerog" aria-labelledby="{{ $idp }}-titre">
+      <h2 class="cote-bloc__titre" id="{{ $idp }}-titre">{{ .titre }}</h2>
+      <div class="prerog__contenu prerog__contenu--replie" id="{{ $idp }}">
+        {{- range .blocs }}
+        {{- with .sous }}<h3 class="prerog__sous">{{ . }}</h3>{{ end }}
+        {{- with .p }}<p>{{ partial "typo.html" . }}</p>{{ end }}
+        {{- with .liste }}<ul>{{ range . }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul>{{ end }}
+        {{- end }}
+        <p class="prerog__source">{{ .source }}</p>
+      </div>
+      <button type="button" class="lien-texte cote-bloc__deplier" aria-expanded="false" aria-controls="{{ $idp }}" data-deplier data-classe-replie="prerog__contenu--replie">Lire la suite</button>
+    </section>
+    {{- end }}
+
+    {{/* ---------- Compétences du niveau ---------- */}}
+    {{- $groupes := slice }}
+    {{- if $n.o.parcours }}
+      {{- range $n.o.parcours }}{{ $pa := . }}
+        {{- $l := slice }}{{ range $n.liste }}{{ if hasPrefix .c.id $pa.prefixe }}{{ $l = $l | append . }}{{ end }}{{ end }}
+        {{- if $l }}{{ $groupes = $groupes | append (dict "titre" $pa.titre "liste" $l "brevets" $pa.brevets "puisOr" $pa.puisOr) }}{{ end }}
+      {{- end }}
+    {{- else }}
+      {{- $groupes = slice (dict "titre" "" "liste" $n.liste) }}
+    {{- end }}
+    {{- range $groupes }}
+    {{- with .titre }}<h2 class="prog-parcours">{{ partial "typo.html" . }}</h2>{{ end }}
+    <div class="prog-competences" role="group" aria-label="{{ or .titre "Compétence" | partial "typo.html" }}">
+      {{- $brevets := .brevets }}
+      {{- range $x := .liste }}
+      {{- $moment := "" }}{{ range site.Data.moments }}{{ if eq .id $x.c.phase }}{{ $moment = .complet }}{{ end }}{{ end }}
+      {{- $nb := len $x.p.techniques }}
+      <button type="button" class="prog-competence" aria-pressed="{{ if eq $x.c.id $premier.c.id }}true{{ else }}false{{ end }}" data-prog-competence="{{ lower $x.c.id }}">
+        <span class="prog-competence__nom">{{ partial "typo.html" $x.c.competence }}</span>
+        <span class="prog-competence__detail">{{ if not $n.o.parcours }}{{ if eq $x.c.niveau $n.o.id }}{{ $n.o.libelle }}{{ else }}{{ replace $x.c.niveau "+" " + " }}{{ end }}{{ with $moment }} · {{ . }}{{ end }} · {{ end }}{{ $nb }} {{ if $brevets }}brevet{{ else }}technique{{ end }}{{ if gt $nb 1 }}s{{ end }}</span>
+      </button>
+      {{- end }}
+    </div>
+    {{- if and .puisOr $n.o.or }}{{ with $n.o.or }}
+    <section class="carte aptitudes prog-or" aria-labelledby="titre-or">
+      <h2 id="titre-or" class="prog-parcours">{{ partial "typo.html" .titre }}</h2>
+      <p class="cote-bloc__texte">{{ partial "typo.html" .intro }}</p>
+      <ul class="prog-or__limites">
+        {{- range .limites }}
+        <li><p class="etiquette">{{ with .competence }}<a href="{{ "/progression/" | relURL }}#{{ lower . }}">{{ end }}{{ partial "typo.html" .titre }}{{ with .competence }}</a>{{ end }}</p><p class="cote-bloc__texte">« {{ partial "typo.html" .texte }} »</p></li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}{{ end }}
+    {{- end }}
+
+    {{- range $j, $x := $n.liste }}
+    {{- $c := $x.c }}{{ $p := $x.p }}
+    {{- $cle := lower $c.id }}
+    {{- $sujet := printf "Progression %s - %s" $c.niveau $c.competence }}
+    {{- $brevets := false }}{{ range $n.o.parcours }}{{ if and .brevets (hasPrefix $c.id .prefixe) }}{{ $brevets = true }}{{ end }}{{ end }}
+    <article class="prog-detail" data-prog-detail="{{ $cle }}" aria-labelledby="titre-{{ $cle }}"{{ if ne $c.id $premier.c.id }} hidden{{ end }}>
+      <div class="prog-detail__tete">
+        <h2 id="titre-{{ $cle }}" class="prog-detail__titre">{{ partial "typo.html" $c.competence }}</h2>
+        {{- $plus := index site.Data.complements_progression $c.id }}
+        {{- if not $x.horsBase }}
+        <p class="prog-detail__objectif">{{ $c.objectif }}</p>
+        <a class="lien-texte prog-detail__fiche" href="{{ printf "/explore-le-mft/#%s/%s" $n.o.id $c.phase | relURL }}">Voir la fiche dans Explore le MFT →</a>
+        {{- end }}
+        {{- with $plus }}{{ with .encadrement }}
+        <p class="prog-detail__encadrement"><span>Enseigné et validé par :</span> {{ . }}</p>
+        {{- end }}{{ with .rappel }}
+        <div class="encart-orange prog-detail__rappel" role="note"><p>{{ partial "typo.html" . }}</p></div>
+        {{- end }}{{ end }}
+      </div>
+
+      <div class="volet-prog">
+        <div class="volet-prog__principal">
+          <div class="volet-prog__techniques">
+            <span id="lbl-tech-{{ $cle }}" class="reglages__libelle bureau">{{ if $brevets }}Brevet{{ else }}Technique{{ end }}</span>
+            <div class="techniques" role="group" aria-labelledby="lbl-tech-{{ $cle }}">
+              {{- range $k, $t := $p.techniques }}
+              <button type="button" class="technique" aria-pressed="{{ if eq $k 0 }}true{{ else }}false{{ end }}" data-technique="{{ $k }}">{{ partial "typo.html" $t.nom }}</button>
+              {{- end }}
+            </div>
+          </div>
+
+          {{- range $k, $t := $p.techniques }}
+          {{- $nb := len $t.etapes }}
+          <ol class="etapes-frise" data-frise="{{ $k }}"{{ if ne $k 0 }} hidden{{ end }}>
+            {{- range $m, $e := $t.etapes }}
+            {{- $fin := findRESubmatch `^(.*?)\s*\((évaluation|aptitude visée)\)\s*$` $e.titre 1 }}
+            {{- $eval := gt (len $fin) 0 }}
+            {{- $titre := cond $eval (index (index $fin 0) 1) $e.titre }}
+            {{- $badge := cond $eval (cond (eq (index (index $fin 0) 2) "évaluation") "Évaluation" "Aptitude visée") "" }}
+            {{- $uid := printf "etape-%s-%d-%d" $cle $k $m }}
+            <li class="etape{{ if $eval }} etape--evaluation{{ end }}{{ if eq $m 0 }} etape--ouverte{{ end }}" data-etape>
+              <div class="etape__repere">
+                <span class="etape__numero" aria-hidden="true">{{ $e.n }}</span>
+                {{- if lt (add $m 1) $nb }}<span class="etape__trait" aria-hidden="true"></span>{{ end }}
+              </div>
+              <div class="etape__carte">
+                <button type="button" class="etape__bouton" aria-expanded="{{ if eq $m 0 }}true{{ else }}false{{ end }}" aria-controls="{{ $uid }}" data-etape-bouton>
+                  <span class="etape__entete">
+                    <span class="etape__ligne"><span class="etape__titre">{{ partial "typo.html" $titre }}</span>{{ if $eval }}<span class="badge-evaluation">{{ $badge }}</span>{{ end }}</span>
+                    <span class="etape__objectif">{{ partial "typo.html" $e.objectif }}</span>
+                  </span>
+                  <span class="etape__chevron">{{ $chevron }}</span>
+                </button>
+                <div class="etape__detail" id="{{ $uid }}">
+                  <div><p class="etiquette">Situation</p><p class="texte-etape">{{ partial "typo.html" $e.situation }}</p></div>
+                  <div class="etape__critere"><p class="etiquette">Pour passer à la suite</p><p class="texte-etape">{{ partial "typo.html" $e.critere }}</p></div>
+                  {{- with $e.theorie }}<div><p class="etiquette">Théorie à glisser ici</p><p class="texte-etape">{{ partial "typo.html" . }}</p></div>{{ end }}
+                  {{- with $e.securite }}<div class="etape__securite">{{ $alerte }}<div><p class="etiquette">Sécurité</p><p class="texte-etape">{{ partial "typo.html" . }}</p></div></div>{{ end }}
+                </div>
+              </div>
+            </li>
+            {{- end }}
+          </ol>
+          {{- end }}
+        </div>
+
+        <aside class="volet-prog__cote">
+          <section class="carte cote-bloc">
+            <h3 class="cote-bloc__titre">{{ with $n.o.arrivee }}{{ . }}{{ else }}Point d’arrivée : l’évaluation du MFT{{ end }}</h3>
+            {{- if gt (len $p.evaluation_mft) 500 }}
+            {{- /* Texte long (N4 : critères d'épreuves assemblés) : replié, avec un bouton pour le déplier. */ -}}
+            <p class="cote-bloc__texte cote-bloc__texte--replie" id="arrivee-{{ $cle }}">{{ partial "typo.html" $p.evaluation_mft }}</p>
+            <button type="button" class="lien-texte cote-bloc__deplier" aria-expanded="false" aria-controls="arrivee-{{ $cle }}" data-deplier>Lire la suite</button>
+            {{- else }}
+            <p class="cote-bloc__texte">{{ partial "typo.html" $p.evaluation_mft }}</p>
+            {{- end }}
+            {{- if $x.horsBase }}{{ with $x.f.statut }}<p class="aptitudes__statut">{{ partial "typo.html" . }}</p>{{ end }}{{ end }}
+          </section>
+          <section class="carte cote-bloc bureau">
+            <div class="cote-bloc__ligne"><h3 class="cote-bloc__titre">Les curseurs</h3><span class="cote-bloc__compte" data-nb-etapes></span></div>
+            <p class="cote-bloc__note">On n’en tourne qu’un à la fois, d’une étape à l’autre.</p>
+            {{- range $k, $t := $p.techniques }}
+            <ul class="curseurs" data-curseurs="{{ $k }}" data-nb="{{ len $t.etapes }}"{{ if ne $k 0 }} hidden{{ end }}>
+              {{- range $t.curseurs }}<li>{{ partial "typo.html" . }}</li>{{ end }}
+            </ul>
+            {{- end }}
+          </section>
+          <a class="bouton bouton--principal cote-bloc__construire" href="{{ "/construire/" | relURL }}?competence={{ lower $c.id }}">Construire ma progression détaillée</a>
+          {{- /* Canvas : ouvre une séance du bon jeu, avec la compétence posée (data/canvas_liens.yaml). Pas sur téléphone. */}}
+          {{- with index site.Data.canvas_liens $c.id }}
+          {{- $morceaux := split . "/" }}
+          <a class="bouton bouton--principal cote-bloc__construire bureau" href="{{ "/canvas/" | relURL }}?jeu={{ index $morceaux 0 }}{{ with index $morceaux 1 }}&amp;carte={{ . }}{{ end }}&amp;progression={{ $c.id }}">Continuer dans le Canvas</a>
+          {{- end }}
+          <div class="cote-bloc__pied">
+            <span><span class="bureau">{{ with $n.o.sourceBureau }}{{ . }}{{ else }}D’après le MFT {{ $n.o.chapitre }}, version consultée en{{ end }} {{ site.Params.mftConsulte }}</span><span class="mobile">{{ with $n.o.sourceMobile }}{{ . }}{{ else }}MFT {{ $n.o.chapitre }}, consulté en{{ end }} {{ site.Params.mftConsulte }}</span></span>
+            <a class="fiche__signaler" href="{{ "/contact/" | relURL }}?sujet={{ $sujet }}">{{ $drapeau }}Signaler une erreur</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+    {{- end }}
+  </section>
+  {{- end }}
+  {{- end }}
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/progression.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

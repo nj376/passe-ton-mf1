@@ -1,0 +1,121 @@
+# Listes utilisées par le tirage des thèmes d’entraînement (page « S’entraîner »).
+# Reprises du prototype « Mémo MFT » (_passation/donnees/memo_mft.html).
+
+# ---------- Pédagogie pratique ----------
+# « milieuNaturel: true » : lieu exclu pour les compétences qui ne se travaillent pas en bassin.
+lieux:
+  - { libelle: "Fosse de 6 m", milieuNaturel: false }
+  - { libelle: "Piscine de 4 m", milieuNaturel: false }
+  - { libelle: "Mer, départ du bord", milieuNaturel: true }
+  - { libelle: "Mer, depuis un bateau", milieuNaturel: true }
+  - { libelle: "Carrière ou lac", milieuNaturel: true }
+
+publics:
+  - "Élève de 12 ans"
+  - "Élève adulte anxieux"
+  - "Sportif pressé de valider"
+  - "Élève qui a déjà échoué sur cet exercice"
+  - "Groupe de 3 élèves de niveaux proches"
+
+# Compétences qui ne se prêtent pas à une séance dans l’eau : jamais tirées en pédagogie pratique.
+pasEnPratique: [N3-rifa, N4-theorie, N5-theorie, N4-physique, RS-securite]
+
+# Niveau d’entrée de chaque niveau (champ « Positionner le thème dans le cursus »).
+prerequis:
+  N1: "Baptême"
+  PA12: "N1 et 4 plongées en milieu naturel"
+  PA20+PE40: "N1 et 4 plongées en milieu naturel"
+  PA20: "N1 et 4 plongées en milieu naturel"
+  PE40: "N1 et 4 plongées en milieu naturel"
+  PA40: "N2"
+  PE60: "PE40 et 20 plongées dont 5 entre 35 et 40 m"
+  PA60: "N2 ou PA40, et RIFA Plongée"
+  PA40+PE60+PA60: "N2"
+  RIFAP: "12 ans, licence et certificat d’absence de contre-indication"
+  N4: "N3 et RIFAP"
+  N5: "GP-N4, RIFAP et 15 plongées en situation de guide"
+  RANDO: "Aucune formation pour la Randosub encadrée ; licence et attestation de randonneur pour l’autonomie"
+
+# ---------- Pédagogie théorique ----------
+# min : niveau minimal du public (0 = N1, 1 = N2, 2 = N3, 3 = GP-N4).
+# motsCles : servent à retrouver les compétences du MFT qui en parlent.
+publicsTheo:
+  - { id: N1, libelle: "Élèves N1", niveaux: [N1, PA12], rang: 0 }
+  - { id: N2, libelle: "Élèves N2 (PA20, PE40)", niveaux: [PA20+PE40, PA20, PE40], rang: 1 }
+  - { id: N3, libelle: "Élèves N3 (PA40, PE60, PA60)", niveaux: [PA40, PE60, PA60, PA40+PE60+PA60], rang: 2 }
+  - { id: N4, libelle: "Candidats GP-N4", niveaux: [N4], rang: 3 }
+
+themesTheo:
+  - nom: "Anatomie, physiologie et physiopathologie du plongeur"
+    sujets:
+      - { libelle: "l’oreille et les barotraumatismes", motsCles: [barotrauma, oreille, valsalva], min: 0 }
+      - { libelle: "la surpression pulmonaire", motsCles: [surpression, approche de la surface], min: 0 }
+      - { libelle: "l’essoufflement", motsCles: [essoufflement, co2], min: 0 }
+      - { libelle: "l’accident de désaturation", motsCles: [accident de désaturation, add, foramen], min: 0 }
+      - { libelle: "la narcose", motsCles: [narcose], min: 1 }
+      - { libelle: "le froid et la déshydratation", motsCles: [froid, déshydratation], min: 0 }
+  - nom: "La décompression : tables fédérales MN90 et ordinateurs"
+    sujets:
+      - { libelle: "la courbe de plongée sans palier", motsCles: [sans palier, courbe], min: 0 }
+      - { libelle: "l’ordinateur de plongée", motsCles: [ordinateur, gf], min: 0 }
+      - { libelle: "la table fédérale", motsCles: [table], min: 1 }
+      - { libelle: "les procédures de remontée anormale", motsCles: [remontée anormale, rattrapage, remontée isolée], min: 0 }
+      - { libelle: "des moyens de désaturation différents dans une palanquée", motsCles: [cohabitation, moyens de désaturation, procédures différentes, différents moyens], min: 1 }
+      - { libelle: "les modèles de décompression", motsCles: [haldane, modèle, m-values, zhl], min: 2 }
+  - nom: "Les aspects théoriques de l’activité (physique)"
+    sujets:
+      - { libelle: "la flottabilité et le lestage", motsCles: [flottabilité, lestage], min: 0 }
+      - { libelle: "la loi de Mariotte", motsCles: [mariotte, variations de volume], min: 0 }
+      - { libelle: "la consommation et l’autonomie", motsCles: [consommation, autonomie], min: 0 }
+      - { libelle: "la vision et l’audition sous l’eau", motsCles: [couleurs, sons, perception], min: 0 }
+      - { libelle: "les pressions partielles", motsCles: [pressions partielles, toxicité], min: 1 }
+  - nom: "Le matériel de plongée et la station de gonflage"
+    sujets:
+      - { libelle: "le détendeur", motsCles: [détendeur], min: 0 }
+      - { libelle: "le bloc et sa robinetterie", motsCles: [bouteille, bloc, robinet, sous pression], min: 0 }
+      - { libelle: "le gilet stabilisateur", motsCles: [gilet], min: 0 }
+      - { libelle: "le compresseur et la station de gonflage", motsCles: [compresseur, gonflage], min: 3 }
+      - { libelle: "l’entretien du matériel", motsCles: [entretien, hygiène, rinçage], min: 0 }
+  - nom: "Le milieu marin, la faune et la flore locales, la protection de l’environnement"
+    sujets:
+      - { libelle: "la faune et la flore locales", motsCles: [faune, espèces], min: 0 }
+      - { libelle: "la Charte internationale du plongeur responsable", motsCles: [charte], min: 0 }
+      - { libelle: "les dangers du milieu", motsCles: [dangers], min: 0 }
+      - { libelle: "l’impact du plongeur sur le milieu", motsCles: [impact], min: 0 }
+
+# ---------- Pédagogie organisationnelle ----------
+# coeur : champs de la grille marqués « Cœur du sujet » pour ce thème.
+themesOrga:
+  - { id: bateau, nom: "Gestion d’un bateau de plongée", coeur: [sec, par] }
+  - { id: accueil, nom: "Accueil des plongeurs", coeur: [acc, pre] }
+  - { id: palanquees, nom: "Organisation des palanquées", coeur: [pal, par] }
+  - { id: securite, nom: "Organisation de la sécurité sur site", coeur: [sec, pre] }
+  - { id: secours, nom: "Organisation des secours", coeur: [rea, sec] }
+  - { id: formation, nom: "Organisation d’une formation", coeur: [] }
+
+sites:
+  - "Semi-rigide de 12 places, site à 15 min du port"
+  - "Bateau ponté de 20 places, épave à 35 m"
+  - "Départ du bord, crique abritée"
+  - "Carrière avec plateformes à 6 et 20 m"
+  - "Bateau ponté, site que le club ne connaît pas"
+
+meteo:
+  - "Mer calme, bonne visibilité"
+  - "Vent qui forcit l’après-midi"
+  - "Courant de surface annoncé"
+  - "Eau à 13 °C, visibilité 5 m"
+  - "Houle résiduelle, mise à l’eau délicate"
+
+groupes:
+  - "12 plongeurs : 4 N1 en formation, 3 PE40, 2 PA20, 1 N3, 2 GP"
+  - "8 plongeurs : 2 PE12 de 11 ans, 3 N1, 2 N2, 1 GP"
+  - "16 plongeurs : 6 N2 en formation N3, 6 N3, 2 GP, 2 E3"
+  - "10 plongeurs dont 4 étrangers sans carnet, 2 GP"
+  - "6 N3 qui veulent plonger en autonomie à 40 m, 1 GP"
+
+contextesFormation:
+  - "Club de 15 élèves, saison d’octobre à juin, fosse le jeudi soir"
+  - "Stage intensif d’une semaine en mer"
+  - "5 élèves adultes, un seul E3 disponible"
+  - "Groupe d’adolescents de 14 et 15 ans"

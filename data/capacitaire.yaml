@@ -1,0 +1,225 @@
+# Module capacitaire MF1 : référentiel des quatre écrits.
+# Source : MFT FFESSM, chapitre MF1, version juillet 2026, p. 18 (organisation) et p. 19 à 24 (connaissances).
+# Transcription fidèle ; seules les fautes de frappe évidentes sont corrigées.
+# Ordre des écrits : celui de la page « Règles d'organisation » (p. 18).
+# Chaque rubrique : id (stable, sert à l'enregistrement dans le navigateur), titre (« Connaissances »),
+# points (« Commentaires »), evaluation (mention « Évaluation », absente pour certaines rubriques).
+
+ecrits:
+  - id: cadre
+    n: 1
+    titre: "Cadre réglementaire"
+    court: "Cadre réglementaire"
+    coef: 2
+    pages: "p. 19-20"
+    resume: "Code du sport, MFT, prérogatives, responsabilités, assurances, CACI, EPI, blocs (TIV), respect du milieu."
+    rubriques:
+      - id: cadre-reglementation
+        titre: "Réglementation relative à l’organisation et aux conditions de pratique de la plongée en enseignement et en exploration citées dans le Code du sport et le MFT"
+        points:
+          - "Normes d’encadrement concernant la plongée en exploration et en enseignement."
+          - "Prérogatives des différents niveaux de plongeurs et aptitudes temporaires (PA, PE)."
+          - "Prérogatives et obligations du MF1."
+          - "Équipements obligatoires et facultatifs des plongeurs et des encadrants."
+          - "Matériel obligatoire sur le lieu de plongée."
+          - "Conditions d’évolution des plongeurs en exploration utilisant des mélanges autres que l’air et/ou des recycleurs. Qualifications supplémentaires que doit posséder le MF1 pour diriger ces plongées."
+          - "Conditions d’évolution des jeunes plongeurs à la FFESSM."
+          - "Réglementations locales spécifiques."
+          - "Retour d’expérience en plongée et activités subaquatiques (REX)."
+      - id: cadre-organisation
+        titre: "Organisation de la plongée en France et dans le monde"
+        points:
+          - "Établissement d’APS, associations."
+          - "FFESSM : statuts et règlements."
+          - "Principales organisations françaises et internationales, la CMAS."
+      - id: cadre-mft
+        titre: "Contenus de formation (MFT)"
+        points:
+          - "Savoir où trouver les informations nécessaires."
+      - id: cadre-responsabilite
+        titre: "Responsabilité civile et pénale de l’encadrant et du Directeur de Plongée"
+        points:
+          - "Responsabilités civile et pénale."
+          - "Mise en danger d’autrui."
+          - "Obligations de moyens et de résultat."
+      - id: cadre-assurances
+        titre: "Assurances liées à la licence fédérale"
+        points:
+          - "Responsabilité civile au tiers."
+          - "Assurance associée à la licence fédérale."
+          - "Assurances individuelles complémentaires."
+      - id: cadre-caci
+        titre: "Certificat médical d’absence de contre-indication à la pratique sportive (CACI)"
+        points:
+          - "Connaître son champ d’application en plongée."
+      - id: cadre-epi
+        titre: "Les équipements de protection individuelle (EPI)"
+        points:
+          - "Définition."
+          - "Structures concernées : clubs associatifs et SCA."
+          - "Obligations de marquage, de suivi et d’archivage."
+      - id: cadre-blocs
+        titre: "Blocs de plongée"
+        points:
+          - "Précautions d’utilisation et d’entretien."
+          - "Régime TIV."
+      - id: cadre-milieu
+        titre: "Connaître et respecter le milieu naturel"
+        points:
+          - "Décrire la faune et la flore : espèces courantes dans les sites de pratique concernés."
+          - "Citer les règles relatives au respect de l’environnement et expliquer leur esprit."
+          - "Faire évoluer sa palanquée et réaliser les exercices sans nuire à l’environnement."
+          - "Connaître la charte du plongeur responsable et les sites ressources : DORIS, CROMIS, etc."
+
+  - id: theorie
+    n: 2
+    titre: "Aspects théoriques de l’activité"
+    court: "Aspects théoriques"
+    coef: 2
+    pages: "p. 24"
+    resume: "Flottabilité, compressibilité des gaz, pressions partielles, optique, acoustique, activité de directeur de plongée."
+    rubriques:
+      - id: theorie-flottabilite
+        titre: "Flottabilité"
+        points:
+          - "Notions de densité et de masse volumique."
+          - "Notions de poids apparent, poids réel, poussée d’Archimède et lestage des plongeurs."
+        evaluation: "Problèmes simples et en lien avec la pratique."
+      - id: theorie-compressibilite
+        titre: "Compressibilité des gaz"
+        points:
+          - "Consommation des plongeurs en surface et en immersion, conséquences pratiques."
+          - "Influence de la densité des gaz respirés."
+          - "Influence de la température sur la pression des blocs."
+        evaluation: "Se limiter à des problèmes dont les données chiffrées sont simples."
+      - id: theorie-pressions
+        titre: "Pressions partielles"
+        points:
+          - "Limites de toxicité de l’oxygène et de l’azote en fonction de la profondeur."
+          - "Gonflage des blocs à l’air."
+          - "Les mélanges autres que l’air ne sont pas traités."
+        evaluation: "Se limiter à des problèmes dont les données chiffrées sont simples."
+      - id: theorie-optique
+        titre: "Optique"
+        intro: "Description et conséquences pour le plongeur :"
+        points:
+          - "De l’absorption des couleurs en fonction de la profondeur."
+          - "De la réflexion et de la réfraction des rayons lumineux dans l’eau en plongée diurne et nocturne."
+          - "Du rétrécissement du champ de vision en immersion."
+        evaluation: "Pas de calculs ni d’utilisation de formules trigonométriques. Les explications peuvent être illustrées par des situations en lien avec l’activité d’encadrant."
+      - id: theorie-acoustique
+        titre: "Acoustique"
+        points:
+          - "Description et conséquences pour le plongeur des différences de vitesse de propagation du son dans l’air et dans l’eau."
+        evaluation: "Les explications peuvent être illustrées par des calculs simples."
+      - id: theorie-dp
+        titre: "Activité de directeur de plongée (DP)"
+        points:
+          - "Notions théoriques d’organisation de plongée."
+          - "Organisation de plongées particulières : jeunes plongeurs, plongées de nuit, dérivantes, etc."
+        evaluation: "Étude de cas pratiques."
+
+  - id: anatomie
+    n: 3
+    titre: "Anatomie, physiologie, physiopathologie du plongeur"
+    court: "Anatomie, physiologie"
+    coef: 4
+    pages: "p. 21-22"
+    resume: "Oreille, barotraumatismes, essoufflement, œdème pulmonaire d’immersion, apnée, froid, déshydratation, entraînement physique."
+    rubriques:
+      - id: anatomie-oreille
+        titre: "Oreille et plongée"
+        points:
+          - "Anatomie simple de l’oreille : savoir localiser sur un schéma et décrire brièvement le rôle des éléments de l’oreille externe, moyenne et interne."
+          - "Savoir quels éléments sont impliqués dans l’audition et l’équilibre."
+          - "Accidents barotraumatiques de l’oreille : symptômes, mécanismes, conduite à tenir et prévention."
+        evaluation: "Capacité à décrire les mécanismes et les comportements adaptés. Utilisation possible de planches muettes pour expliquer un fonctionnement."
+      - id: anatomie-barotraumatismes
+        titre: "Accidents barotraumatiques"
+        points:
+          - "Anatomie simple des poumons et des sinus."
+          - "Accidents barotraumatiques des poumons, des sinus et des dents, placage du masque."
+          - "Symptômes, mécanismes, conduite à tenir et prévention."
+        evaluation: "Capacité à décrire les mécanismes et les comportements adaptés. Utilisation possible de planches muettes pour expliquer un fonctionnement."
+      - id: anatomie-essoufflement
+        titre: "Essoufflement en plongée"
+        points:
+          - "Anatomie simple de l’appareil ventilatoire."
+          - "Mécanique ventilatoire : inspiration, expiration, muscles concernés ; volumes pulmonaires."
+          - "Anatomie simple : alvéoles pulmonaires, paroi alvéolo-capillaire."
+          - "Notion d’échanges gazeux (O₂, CO₂, CO)."
+          - "Modifications de la ventilation en immersion. Constance de la Pp CO₂ alvéolaire en fonction de la profondeur."
+          - "Symptômes, mécanismes (notions de rétention de CO₂ et d’hypercapnie), facteurs favorisants, conduite à tenir et prévention."
+        evaluation: "Capacité à décrire les mécanismes et les comportements adaptés. Utilisation possible de planches muettes pour expliquer un fonctionnement. Les valeurs des pressions partielles ne sont pas exigibles en évaluation."
+      - id: anatomie-opi
+        titre: "Œdème pulmonaire d’immersion"
+        points:
+          - "Causes, symptômes, facteurs favorisants et conduite à tenir."
+        evaluation: "Capacité à décrire les mécanismes et les comportements adaptés. Étude de cas."
+      - id: anatomie-apnee
+        titre: "Accidents liés à la pratique de l’apnée"
+        points:
+          - "Syncope hypoxique, perte de contrôle moteur (samba), prévention."
+        evaluation: "Capacité à décrire les mécanismes et les comportements adaptés. Étude de cas."
+      - id: anatomie-froid
+        titre: "Incidents liés au froid en plongée"
+        points:
+          - "Mécanismes des pertes caloriques et réaction de l’organisme en plongée."
+          - "Symptômes, conduite à tenir et prévention en tant que DP."
+          - "Syncope thermo-différentielle : mécanisme et prévention."
+        evaluation: "Capacité à décrire les mécanismes et les comportements adaptés. Étude de cas."
+      - id: anatomie-deshydratation
+        titre: "Déshydratation en plongée"
+        points:
+          - "Causes, facteurs favorisants (diurèse d’immersion et liée au froid), risques."
+          - "Conduite à tenir et prévention en tant que GP."
+        evaluation: "Étude de cas pratiques en tant que GP. Capacité à citer les situations et décrire les comportements adaptés."
+      - id: anatomie-entrainement
+        titre: "Entraînement physique en plongée"
+        points:
+          - "Filières énergétiques : description, relations avec les épreuves d’examen."
+          - "Préparation physique générale."
+          - "Adaptation et régulation de la ventilation et de la circulation à l’effort."
+          - "Notions de travail en endurance (foncier) et en intensité."
+          - "Fréquences cardiaques et zones de travail, récupération."
+        evaluation: "Planification de l’entraînement physique pour les différents niveaux de plongée et les épreuves GP-N4."
+
+  - id: desaturation
+    n: 4
+    titre: "Désaturation"
+    court: "Désaturation"
+    coef: 3
+    pages: "p. 23"
+    resume: "Modèle de Haldane et dérivés (MN90, Bühlmann, RGBM), facteurs de gradient, DCIEM, bulles, accidents de désaturation."
+    rubriques:
+      - id: desaturation-haldane
+        titre: "Modèle de Haldane et dérivés"
+        points:
+          - "Principes du modèle : compartiments en parallèle ; équation de calcul de la saturation ; conditions de la remontée : Sc, M-values et facteurs de gradients (GF)."
+          - "Jeux de paramètres haldaniens : MN90, Bühlmann (ZHL-16C), RGBM."
+          - "Non-modélisation des plongées successives ou multiples, principe de la majoration."
+        evaluation: "Réponse à des questions simples sur les modèles, jeux de paramètres, M-values et facteurs de gradient (GF). Incidence de l’application des GF sur les paliers."
+      - id: desaturation-dciem
+        titre: "Autre modèle"
+        intro: "Principe du modèle DCIEM :"
+        points:
+          - "Compartiments en série."
+          - "Gestion native des plongées successives."
+        evaluation: "Compréhension des différences avec le modèle de Haldane."
+      - id: desaturation-bulles
+        titre: "Formation et croissance des bulles"
+        points:
+          - "Micronoyaux gazeux préexistants."
+          - "Charge en azote (Prt index = profondeur × racine carrée du temps)."
+          - "Naissance et croissance des bulles : remontée, yoyo, remontées rapides."
+          - "Acclimatation à la désaturation : plongée de réadaptation."
+        evaluation: "Capacité à décrire ces notions en lien avec la pratique des niveaux 1 à 4. Connaître et expliquer les préconisations fédérales et les procédures de rattrapage."
+      - id: desaturation-accidents
+        titre: "Accidents de désaturation"
+        points:
+          - "Mécanismes, principaux symptômes."
+          - "Cœur, foramen ovale perméable (FOP)."
+          - "Shunts pulmonaires."
+          - "Facteurs de prévention : respect des procédures, facteurs favorisants, comportements avant, pendant, après la plongée et profils de plongée à risques, acclimatation à la désaturation, plongées de réadaptation."
+          - "Traitement : se limiter à la prise en charge enseignée lors du RIFAP."
+        evaluation: "Étude de cas pratiques en tant que MF1. L’utilisation de schémas comme support d’explication est possible."

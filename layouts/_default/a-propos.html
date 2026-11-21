@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{- /* Page « À propos » (maquette _passation/redesign/APropos.dc.html et MobileAPropos.dc.html).
+       Textes : content/a-propos.md (blocs en paramètres, récit dans le corps), apostrophes typographiques.
+       Styles propres à la page : classes « about- » dans assets/css/main.css. */ -}}
+{{- $coche := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="about-liste__icone"><path d="M5 12l5 5L20 7"></path></svg>` | safeHTML -}}
+{{- $croix := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" class="about-liste__icone"><path d="M6 6l12 12M18 6L6 18"></path></svg>` | safeHTML -}}
+
+{{- /* Récit : trois temps forts en intertitres et la question en exergue (styles seulement, texte inchangé). */ -}}
+{{- $recit := partial "typo.html" (string .Content) -}}
+{{- $recit = replaceRE `<p><strong>(C’était avant de m’inscrire au MF1\.)</strong></p>` `<p class="about-temps-fort">$1</p>` $recit -}}
+{{- $recit = replaceRE `<p>(Et puis est arrivé le stage initial MF1\.)</p>` `<p class="about-temps-fort">$1</p>` $recit -}}
+{{- $recit = replaceRE `<p>C’est ainsi qu’est né <strong>passe-ton-mf1\.com</strong>\.</p>` `<p class="about-temps-fort">C’est ainsi qu’est né passe-ton-mf1.com.</p>` $recit -}}
+{{- $recit = replaceRE `<p><strong>(«[^<]*galère[^<]*»)</strong></p>` `<blockquote class="about-exergue"><p>$1</p></blockquote>` $recit -}}
+
+<div class="about">
+  <section class="about-entete">
+    <div class="about-entete__textes">
+      <h1 class="about-titre">Un pense-bête de stagiaire, partagé avec les autres stagiaires.</h1>
+      <p class="about-accroche"><span class="bureau">Site indépendant, non affilié à la FFESSM, construit pendant une formation MF1. Il évolue encore : chaque correction est la bienvenue.</span><span class="mobile">Site indépendant, non affilié à la FFESSM. Il évolue encore : chaque correction est la bienvenue.</span></p>
+    </div>
+    <aside class="carte about-contact" aria-labelledby="about-contact-titre">
+      <h2 id="about-contact-titre" class="about-contact__titre">Une erreur, un oubli, une idée ?</h2>
+      <p class="about-contact__texte">Écris-moi : chaque retour améliore l’outil pour tout le monde.</p>
+      <a class="about-contact__bouton" href="{{ "/contact/" | relURL }}"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>Écris-moi</a>
+    </aside>
+  </section>
+
+  <section class="about-cadre" aria-label="Ce que ce site est et n’est pas">
+    <div class="carte about-carte about-carte--est">
+      <h2 class="about-carte__titre">Ce que ce site est</h2>
+      <ul class="about-liste">
+        {{- range .Params.est }}
+        <li>{{ $coche }}<span>{{ . | markdownify | partial "typo.html" | safeHTML }}</span></li>
+        {{- end }}
+      </ul>
+    </div>
+    <div class="carte about-carte about-carte--nest-pas">
+      <h2 class="about-carte__titre">Ce que ce site n’est pas</h2>
+      <p class="about-carte__intro">{{ .Params.nestPasIntro | markdownify | partial "typo.html" | safeHTML }}</p>
+      <ul class="about-liste">
+        {{- range .Params.nestPas }}
+        <li>{{ $croix }}<span>{{ . | markdownify | partial "typo.html" | safeHTML }}</span></li>
+        {{- end }}
+      </ul>
+      <a class="about-carte__lien" href="#vrais-sujets">Où trouver de vrais sujets d’examen →</a>
+    </div>
+  </section>
+
+  <section class="about-histoire" aria-labelledby="about-qui">
+    <div class="about-histoire__tete">
+      <p class="about-surtitre">L’histoire</p>
+      <h2 id="about-qui" class="about-histoire__titre">Pourquoi ce site</h2>
+    </div>
+    <img class="about-photo" src="{{ "images/phil-b.jpg" | relURL }}" alt="Philippe Buschini" width="400" height="400" loading="lazy">
+    <div class="about-recit">
+      {{ $recit | safeHTML }}
+    </div>
+    <figure class="about-merci">
+      <figcaption class="about-merci__titre"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>Merci</figcaption>
+      <div class="about-merci__texte">{{ .Params.merci | .RenderString (dict "display" "block") | partial "typo.html" | safeHTML }}</div>
+    </figure>
+    <p class="about-ps">{{ .Params.ps | markdownify | partial "typo.html" | safeHTML }}</p>
+  </section>
+
+  <section id="vrais-sujets" class="carte about-sujets" aria-labelledby="about-sujets-titre">
+    <div class="about-sujets__textes">
+      <h2 id="about-sujets-titre" class="about-sujets__titre"><span class="bureau">S’entraîner sur de vrais sujets d’examen</span><span class="mobile">Vrais sujets d’examen</span></h2>
+      <p class="about-sujets__texte">Plusieurs commissions techniques régionales publient leurs sujets de pédagogie MF1. Les liens ci-dessous mènent directement à leurs sites officiels.</p>
+      <p class="about-sujets__texte"><strong class="about-sujets__alerte">Ces sujets ne sont ni expliqués ni corrigés sur ce site.</strong> Travaille-les avec ton ou tes tuteurs MF2.</p>
+      <p class="about-sujets__note">Ta région publie aussi ses sujets ? Envoie-moi le lien par le <a href="{{ "/contact/" | relURL }}?sujet=Sujets%20d%E2%80%99examen%20de%20ma%20r%C3%A9gion">formulaire de contact</a> pour qu’il soit ajouté.</p>
+    </div>
+    <div class="about-sujets__liste">
+      {{- range site.Params.ctr }}
+      <a class="about-ctr" href="{{ .url }}"><span class="about-ctr__region">{{ .region }}</span><span class="about-ctr__domaine bureau">{{ .domaine }} ↗</span><span class="about-ctr__fleche mobile" aria-hidden="true">↗</span></a>
+      {{- end }}
+    </div>
+  </section>
+</div>
+{{ end }}

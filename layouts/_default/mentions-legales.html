@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{- /* Page « Mentions légales » : texte de content/mentions-legales.md, apostrophes typographiques. */ -}}
+<div class="capa">
+  <section class="capa-entete">
+    <h1 class="capa-titre">Mentions légales</h1>
+  </section>
+  <div class="carte mentions">
+    {{ partial "typo.html" (string .Content) | safeHTML }}
+  </div>
+</div>
+{{ end }}

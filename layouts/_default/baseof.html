@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if eq .Kind "404" }}Passe-ton-MF1 · Page introuvable{{ else }}{{ .Title }}{{ end }}</title>
+{{ partial "partage.html" . }}
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="preload" href="{{ "fonts/ibm-plex-sans-latin-400.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body>
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+<div class="page">
+  {{ partial "en-tete.html" . }}
+  {{- /* Barre « Mon suivi » : partout, sauf l'Aide, « À propos » et Suivi. */}}
+  {{- if not (in (slice ("/aide/" | relURL) ("/a-propos/" | relURL) ("/suivi/" | relURL)) .RelPermalink) }}{{ partial "barre-suivi.html" . }}{{ end }}
+  <main id="contenu" tabindex="-1" class="principal{{ with .Params.classePrincipal }} {{ . }}{{ end }}">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "pied.html" . }}
+</div>
+{{- /* Retour en haut de la page : apparaît après un défilement (assets/js/interface.js). */}}
+<a class="haut-page" href="#contenu" aria-label="Revenir en haut de la page" title="Revenir en haut de la page" hidden data-haut-page><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></a>
+{{ partial "fenetres/vrais-sujets.html" . }}
+{{ partial "fenetres/avis-mobile.html" . }}
+{{ block "fenetres" . }}{{ end }}
+{{- $js := slice (resources.Get "js/stockage.js") (resources.Get "js/interface.js") | resources.Concat "js/commun.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ block "scripts" . }}{{ end }}
+</body>
+</html>

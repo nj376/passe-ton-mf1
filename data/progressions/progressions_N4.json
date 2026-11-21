@@ -1,0 +1,1627 @@
+{
+  "niveau": "N4",
+  "source": "MFT Guide de palanquée Niveau 4 (GP-N4), version mai 2026",
+  "statut": "Proposition de stagiaire, hors MFT, à valider avec un MF2",
+  "competences": [
+    {
+      "id": "N4-accueil",
+      "competence": "Accueillir les plongeurs",
+      "evaluation_mft": "Évaluation : épreuve N°4 « Conduite de palanquée ». L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Adopter en toutes circonstances un comportement respectueux des valeurs du sport et de la Fédération",
+          "curseurs": [
+            "observer → pratiquer",
+            "plongeurs connus → inconnus",
+            "situation simple → situation tendue"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Observer un accueil",
+              "objectif": "Repérer ce qui rend un accueil réussi.",
+              "situation": "Sortie club : l'élève observe un GP ou un DP accueillir les plongeurs.",
+              "critere": "Au débriefing, il décrit les attitudes qui mettent les plongeurs en confiance."
+            },
+            {
+              "n": 2,
+              "titre": "Accueillir des plongeurs connus",
+              "objectif": "Se présenter de façon avenante, être à l'écoute et disponible.",
+              "situation": "Sortie club, plongeurs du club. Il se présente et prend le temps d'écouter chacun.",
+              "critere": "Accueil avenant, disponible, sans précipitation."
+            },
+            {
+              "n": 3,
+              "titre": "Situation plus délicate",
+              "objectif": "Garder une attitude respectueuse quand la situation se tend.",
+              "situation": "Situation jouée par le moniteur : plongeur en retard, inquiet, ou qui veut plonger hors de ses prérogatives.",
+              "critere": "Il reste avenant, respecte la déontologie et préserve l'intégrité physique du plongeur, quitte à refuser.",
+              "theorie": "Déontologie sportive et règlements fédéraux."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Adopter ce comportement dans une conduite de palanquée.",
+              "situation": "Conduite de palanquée sur sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Comportement respectueux des valeurs du sport et de la Fédération du début à la fin. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Accueillir, informer et prendre en charge les plongeurs",
+          "curseurs": [
+            "questions → prise en charge",
+            "plongeur seul → palanquée hétérogène",
+            "informer → orienter"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Évaluer l'expérience",
+              "objectif": "Obtenir vite les informations utiles sur chaque plongeur.",
+              "situation": "Au sec, avec des plongeurs du club : niveau, nombre de plongées, date de la dernière, moyen de désaturation, état du jour.",
+              "critere": "Il obtient l'essentiel en peu de questions."
+            },
+            {
+              "n": 2,
+              "titre": "Vérifier le matériel",
+              "objectif": "S'assurer que chaque plongeur utilise un matériel adapté.",
+              "situation": "Avant la plongée : matériel adapté au plongeur et à la plongée prévue.",
+              "critere": "Il repère un matériel inadapté et propose une solution."
+            },
+            {
+              "n": 3,
+              "titre": "Informer et orienter",
+              "objectif": "Orienter les plongeurs selon leurs attentes et leurs besoins.",
+              "situation": "Questions de plongeurs sur la suite de leur parcours, les qualifications ou leur assurance.",
+              "critere": "Réponses justes, plongeur orienté vers la bonne formation ou la bonne personne.",
+              "theorie": "Cursus, diplômes, qualifications et assurances fédérales."
+            },
+            {
+              "n": 4,
+              "titre": "Palanquée hétérogène",
+              "objectif": "Prendre en charge des plongeurs de niveaux différents.",
+              "situation": "Palanquée jouée allant du PE12 débutant au PE40 confirmé.",
+              "critere": "Prise en charge adaptée à chacun, personne n'est oublié."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Accueillir, informer et prendre en charge une palanquée.",
+              "situation": "Conduite de palanquée sur sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Expérience évaluée, matériel vérifié, plongeurs informés et pris en charge. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Promouvoir la structure et la FFESSM",
+          "curseurs": [
+            "connaître → informer → fidéliser"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Connaître l'offre",
+              "objectif": "Connaître les activités du club et de la Fédération.",
+              "situation": "Au sec : activités du club, commissions fédérales, formations proposées.",
+              "critere": "Il présente en quelques phrases l'offre du club et les activités fédérales.",
+              "theorie": "Structure de la FFESSM et ses commissions (lien avec l'épreuve 12)."
+            },
+            {
+              "n": 2,
+              "titre": "Inciter à la pratique",
+              "objectif": "Proposer une activité adaptée à un plongeur.",
+              "situation": "Échange avec un plongeur sur ses envies.",
+              "critere": "Proposition pertinente d'une activité ou d'une formation."
+            },
+            {
+              "n": 3,
+              "titre": "Fidéliser",
+              "objectif": "Donner envie de revenir.",
+              "situation": "Fin de sortie : il propose une suite (sortie, formation, autre activité).",
+              "critere": "Proposition concrète, faite au bon moment."
+            },
+            {
+              "n": 4,
+              "titre": "En situation (aptitude visée)",
+              "objectif": "Promouvoir la structure et la FFESSM.",
+              "situation": "Sorties club au fil de la formation.",
+              "critere": "Il incite à la pratique et fidélise. Le MFT ne prévoit pas d'évaluation spécifique pour cet objectif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-organiser",
+      "competence": "Participer à l'organisation et à la sécurisation de l'activité (matelotage)",
+      "evaluation_mft": "C'est une épreuve pratique qui doit permettre d'évaluer les qualités d'un futur guide de palanquée en tant qu'équipier du directeur de plongée attentif à la sécurité et l'environnement maritime. Évaluation pratique à partir de cas simples décrits par le jury.",
+      "techniques": [
+        {
+          "nom": "Participer aux manœuvres et à la mise en place du matériel de sécurité",
+          "curseurs": [
+            "au sec → en situation",
+            "nœuds → manœuvres → supports de sécurité"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les nœuds au sec",
+              "objectif": "Faire les nœuds usuels.",
+              "situation": "Au sec : nœuds de chaise, de cabestan, d'arrêt et de taquet.",
+              "critere": "Chaque nœud fait sans hésiter et défait facilement."
+            },
+            {
+              "n": 2,
+              "titre": "Les nœuds en situation",
+              "objectif": "Faire ces nœuds là où on en a besoin.",
+              "situation": "Sur le bateau ou au port : autour d'une bitte d'amarrage, d'un taquet, d'un anneau.",
+              "critere": "Nœud juste et rapide dans chaque situation."
+            },
+            {
+              "n": 3,
+              "titre": "Aider le pilote",
+              "objectif": "Participer aux manœuvres.",
+              "situation": "Sorties réelles : appareillage, amarrage, mouillage, accostage. Procédures de mise à l'eau et de récupération des plongeurs.",
+              "critere": "Il anticipe les demandes du pilote et exécute sans erreur.",
+              "securite": "Les consignes du pilote priment. Jamais de main ni de pied entre la coque et le quai. Attention à l'hélice lors de la récupération des plongeurs."
+            },
+            {
+              "n": 4,
+              "titre": "Installer les supports de sécurité",
+              "objectif": "Mettre en place le matériel de sécurité du site.",
+              "situation": "Pendeur, bloc de secours, ligne de vie, parachute d'ancre. Moyens de rappel des plongeurs et matériel d'assistance et de secours imposé par le Code du sport.",
+              "critere": "Installation correcte, il explique le rôle de chaque élément."
+            },
+            {
+              "n": 5,
+              "titre": "Cas simples (évaluation)",
+              "objectif": "Montrer sa capacité d'équipier du DP.",
+              "situation": "Épreuve 6 : cas simples décrits par le jury.",
+              "critere": "Réponses et gestes justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Participer au choix du site de plongée",
+          "curseurs": [
+            "site connu → site à analyser",
+            "un niveau → niveaux différents"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Caractéristiques d'un site",
+              "objectif": "Décrire un site connu.",
+              "situation": "Au sec : profondeurs, relief, abri, exposition au courant et au vent.",
+              "critere": "Description complète et juste."
+            },
+            {
+              "n": 2,
+              "titre": "Site et parcours selon les plongeurs",
+              "objectif": "Adapter le site et le parcours au niveau et aux capacités des plongeurs.",
+              "situation": "Cas : même site pour des PE12 et pour des PE40.",
+              "critere": "Choix de zone et de parcours adaptés et justifiés."
+            },
+            {
+              "n": 3,
+              "titre": "Site et conditions du jour",
+              "objectif": "Choisir la zone selon la météo et le courant du jour.",
+              "situation": "Cas : même site, vent ou courant différents. Il propose la zone et le parcours les plus sûrs.",
+              "critere": "Choix cohérent avec les conditions et le niveau des plongeurs."
+            },
+            {
+              "n": 4,
+              "titre": "Cas simples (évaluation)",
+              "objectif": "Participer au choix du site.",
+              "situation": "Épreuve 6 : cas simples décrits par le jury.",
+              "critere": "Caractéristiques du site et parcours définis selon le niveau des plongeurs. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Connaissance des règles élémentaires de sécurité et de navigation en mer",
+          "curseurs": [
+            "s'informer → se repérer",
+            "amers → cartes → instruments"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Où s'informer",
+              "objectif": "Savoir où prendre les informations indispensables.",
+              "situation": "Météo, zones interdites, réserves : sources officielles.",
+              "critere": "Il trouve et résume les informations utiles pour une sortie."
+            },
+            {
+              "n": 2,
+              "titre": "Amers et enseignures",
+              "objectif": "Se repérer à vue sur un site.",
+              "situation": "Sur le bateau : repérage d'un site par amers et enseignures.",
+              "critere": "Il retrouve un site connu par alignements."
+            },
+            {
+              "n": 3,
+              "titre": "Cartes marines",
+              "objectif": "Lire les symboles courants.",
+              "situation": "Au sec, sur une carte marine.",
+              "critere": "Lecture juste des symboles courants."
+            },
+            {
+              "n": 4,
+              "titre": "GPS et sonar",
+              "objectif": "Connaître le principe du repérage par instruments.",
+              "situation": "Sur le bateau, avec le pilote.",
+              "critere": "Il explique le principe et retrouve un point enregistré avec le pilote."
+            },
+            {
+              "n": 5,
+              "titre": "Cas simples (évaluation)",
+              "objectif": "Montrer ses connaissances de sécurité et de navigation.",
+              "situation": "Épreuve 6 : cas simples décrits par le jury.",
+              "critere": "Réponses justes et pratiques. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-briefing",
+      "competence": "Conduite de palanquée : avant l'immersion",
+      "evaluation_mft": "L'épreuve se décompose en deux parties : une partie en surface avec un briefing avant et un débriefing après l'immersion (coefficient 2, 15 points pour le briefing et 5 points pour le débriefing). L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Écouter et intégrer les consignes du DP",
+          "curseurs": [
+            "restituer → trier → intégrer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Restituer le briefing du DP",
+              "objectif": "Retenir toutes les consignes.",
+              "situation": "Après un briefing réel du DP, il restitue les consignes.",
+              "critere": "Restitution complète et exacte."
+            },
+            {
+              "n": 2,
+              "titre": "Trier ce qui sert au GP",
+              "objectif": "Repérer les éléments qui organisent son action.",
+              "situation": "À partir d'un sujet écrit : paramètres, site, niveau des plongeurs, consignes particulières.",
+              "critere": "Il souligne ce qui conditionne sa plongée et dit pourquoi."
+            },
+            {
+              "n": 3,
+              "titre": "Intégrer dans son plan",
+              "objectif": "Construire sa plongée à partir des consignes.",
+              "situation": "Sujet tiré, 10 minutes de préparation comme à l'examen.",
+              "critere": "Plan de plongée entièrement compatible avec les consignes du DP."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Intégrer les consignes du DP dans sa conduite de palanquée.",
+              "situation": "Sujet tiré, 10 minutes de préparation. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Consignes du DP prises en compte. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "S'informer auprès du DP",
+          "curseurs": [
+            "liste connue → sujet incomplet",
+            "question au hasard → question utile"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Ce dont le GP a besoin",
+              "objectif": "Savoir quelles informations relèvent du DP.",
+              "situation": "Au sec : liste des informations utiles (paramètres, site, conditions, niveau et matériel des plongeurs).",
+              "critere": "Il distingue ce qu'il demande au DP de ce qu'il décide lui-même."
+            },
+            {
+              "n": 2,
+              "titre": "Sujet incomplet",
+              "objectif": "Identifier les éléments manquants et utiles.",
+              "situation": "Exercice annoncé : sujet volontairement incomplet.",
+              "critere": "Il pose les questions utiles, et seulement celles-là."
+            },
+            {
+              "n": 3,
+              "titre": "Pendant les 10 minutes de préparation",
+              "objectif": "S'informer dans le temps imparti de l'examen.",
+              "situation": "Sujet tiré, préparation chronométrée de 10 minutes, questions au moniteur dans le rôle du DP.",
+              "critere": "Questions utiles posées à temps, préparation terminée dans les 10 minutes."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "S'informer auprès du DP.",
+              "situation": "Sujet tiré, demandes d'informations possibles pendant la préparation.",
+              "critere": "Éléments manquants et utiles identifiés et demandés. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Accueillir, prendre en charge et informer la palanquée sur le déroulement de la plongée en tenant compte du niveau des plongeurs",
+          "curseurs": [
+            "trame → briefing complet",
+            "un niveau → niveau réel de chacun",
+            "au sec → en situation"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "La trame d'un briefing",
+              "objectif": "Construire un briefing complet.",
+              "situation": "Au sec : présentation, déroulement, paramètres, mise à l'eau, signes, procédures, retour.",
+              "critere": "Briefing complet, ordonné, compréhensible.",
+              "theorie": "Prérogatives des plongeurs PE12, PE20 et PE40 encadrés (Code du sport)."
+            },
+            {
+              "n": 2,
+              "titre": "Briefer un niveau donné",
+              "objectif": "Adapter son briefing à des plongeurs d'un même niveau.",
+              "situation": "Briefing à des plongeurs PE20 joués.",
+              "critere": "Contenu adapté, sans excès ni oubli."
+            },
+            {
+              "n": 3,
+              "titre": "Niveau réel et état de chacun",
+              "objectif": "Tenir compte du niveau réel, de l'état global, de l'expérience et des moyens de désaturation.",
+              "situation": "Palanquée jouée hétérogène, avec des informations à découvrir par ses questions.",
+              "critere": "Briefing adapté à chaque plongeur, consignes du DP intégrées."
+            },
+            {
+              "n": 4,
+              "titre": "En sortie réelle",
+              "objectif": "Prendre en charge une palanquée jusqu'à l'immersion.",
+              "situation": "Sortie club. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen. Ou bien en binôme avec un encadrant qualifié qui reste responsable de la palanquée.",
+              "critere": "Prise en charge rassurante et claire jusqu'à l'immersion."
+            },
+            {
+              "n": 5,
+              "titre": "Briefing de l'épreuve 4 (évaluation)",
+              "objectif": "Réussir le briefing noté sur 15.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Qualité de la prise en charge, intégration des consignes du DP. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Organiser et gérer la mise à l'eau en sécurité",
+          "curseurs": [
+            "vérifier → organiser",
+            "plongeurs confirmés → débutants"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Vérifier le matériel des plongeurs",
+              "objectif": "Contrôler l'équipement de chacun avant la mise à l'eau.",
+              "situation": "Robinets ouverts, inflateurs branchés, lest, détendeurs, instruments.",
+              "critere": "Vérification systématique et rapide."
+            },
+            {
+              "n": 2,
+              "titre": "Mise à l'eau de plongeurs confirmés",
+              "objectif": "Organiser une mise à l'eau efficace.",
+              "situation": "Palanquée jouée de PE40.",
+              "critere": "Ordre et consignes clairs, mise à l'eau sûre."
+            },
+            {
+              "n": 3,
+              "titre": "Mise à l'eau de débutants",
+              "objectif": "Adapter l'organisation à des plongeurs débutants.",
+              "situation": "Palanquée jouée de PE12, aide à la mise à l'eau.",
+              "critere": "Aide adaptée, aucune mise en danger."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Gérer la mise à l'eau en sécurité.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Comportement sûr, organisation efficace. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Organiser et gérer l'immersion en sécurité",
+          "curseurs": [
+            "eau calme → clapot, courant",
+            "regrouper → immerger"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Regrouper en surface",
+              "objectif": "Rassembler sa palanquée avant l'immersion.",
+              "situation": "Après la mise à l'eau : regroupement, OK de chacun.",
+              "critere": "Palanquée groupée, chacun prêt."
+            },
+            {
+              "n": 2,
+              "titre": "Choisir la technique d'immersion",
+              "objectif": "Adapter l'immersion au niveau des plongeurs.",
+              "situation": "Immersion le long du pendeur ou en pleine eau selon le niveau.",
+              "critere": "Choix adapté, palanquée qui s'immerge ensemble."
+            },
+            {
+              "n": 3,
+              "titre": "Conditions moins favorables",
+              "objectif": "Gérer l'immersion avec du clapot ou du courant.",
+              "situation": "Regroupement rapide près du pendeur ou de la ligne de mouillage.",
+              "critere": "Immersion groupée sans dérive.",
+              "securite": "Les conditions restent celles que le DP juge compatibles."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Gérer l'immersion en sécurité.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Regroupement et attitude sûrs. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-descente",
+      "competence": "Conduite de palanquée : descente et regroupement",
+      "evaluation_mft": "Une partie en immersion (coefficient 3), qui se déroule : En temps réel : la durée de l'immersion est déterminée selon la profondeur et l'appréciation du jury entre 10 et 25 minutes. Sans aucune simulation du jury nécessitant une assistance ou un sauvetage. L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Gérer la descente",
+          "curseurs": [
+            "pendeur → pleine eau",
+            "eau claire → turbide, courant",
+            "plongeurs confirmés → débutants"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Descente le long du pendeur",
+              "objectif": "Faire descendre une palanquée groupée.",
+              "situation": "Descente au pendeur, GP placé pour voir chacun.",
+              "critere": "Palanquée groupée, chacun sous son regard.",
+              "theorie": "Prévention des barotraumatismes de l'oreille : rôle du GP.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 2,
+              "titre": "Descente en pleine eau",
+              "objectif": "Garder la palanquée groupée sans repère.",
+              "situation": "Descente en pleine eau, vitesse adaptée au plus lent.",
+              "critere": "Cohésion maintenue jusqu'au fond."
+            },
+            {
+              "n": 3,
+              "titre": "Contexte plus difficile",
+              "objectif": "Adapter la descente au niveau, au site, à la clarté et au courant.",
+              "situation": "Descente avec des débutants, en eau turbide ou avec du courant.",
+              "critere": "Choix techniques pertinents, sécurité de chacun assurée."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Gérer la descente en conduite de palanquée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Comportement, efficacité et pertinence des actions. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Gérer le regroupement au fond",
+          "curseurs": [
+            "regrouper → vérifier",
+            "conditions faciles → difficiles"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Regrouper et communiquer",
+              "objectif": "Assurer la cohésion avant l'exploration.",
+              "situation": "Arrivée au fond : regroupement, OK de chacun.",
+              "critere": "Personne ne part avant le regroupement complet."
+            },
+            {
+              "n": 2,
+              "titre": "Vérifier que tout va bien",
+              "objectif": "Contrôler l'état et les paramètres avant de démarrer.",
+              "situation": "Pression, état, flottabilité de chaque plongeur.",
+              "critere": "Vérification rapide et complète."
+            },
+            {
+              "n": 3,
+              "titre": "Courant ou visibilité réduite",
+              "objectif": "Regrouper quand les conditions compliquent la cohésion.",
+              "situation": "Regroupement en courant ou en visibilité réduite.",
+              "critere": "Palanquée regroupée sans dérive.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Gérer le regroupement au fond.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Comportement et attention portée aux plongeurs. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-guider",
+      "competence": "Conduite de palanquée : exploration",
+      "evaluation_mft": "Une partie en immersion (coefficient 3), qui se déroule : En temps réel : la durée de l'immersion est déterminée selon la profondeur et l'appréciation du jury entre 10 et 25 minutes. Sans aucune simulation du jury nécessitant une assistance ou un sauvetage. L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Assurer le déroulement de la plongée dans le respect des consignes du DP",
+          "curseurs": [
+            "parcours annoncé → parcours adapté",
+            "suivre → surveiller"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Suivre le parcours annoncé",
+              "objectif": "Conduire la plongée prévue au briefing.",
+              "situation": "Plongée guidée, palanquée jouée.",
+              "critere": "Paramètres du DP et indications du briefing respectés.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 2,
+              "titre": "Adapter le parcours",
+              "objectif": "Ajuster le parcours selon l'intérêt et les capacités des plongeurs.",
+              "situation": "Palanquée jouée de niveaux différents.",
+              "critere": "Parcours adapté sans sortir des consignes du DP."
+            },
+            {
+              "n": 3,
+              "titre": "Surveiller les paramètres de chacun",
+              "objectif": "Suivre consommation et désaturation de la palanquée.",
+              "situation": "Contrôles réguliers de chaque plongeur pendant la plongée.",
+              "critere": "Aucun plongeur ne sort de ses paramètres."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Assurer le déroulement de la plongée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Respect des consignes du DP et des indications du briefing. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "S'adapter aux situations imprévues dans le sens de la sécurité",
+          "curseurs": [
+            "au sec → en plongée",
+            "scénario annoncé → situation réelle"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Cas au sec",
+              "objectif": "Choisir la réponse sûre à un imprévu.",
+              "situation": "Cas : courant au fond, eau turbide, eau froide.",
+              "critere": "Décision dans le sens de la sécurité (temps réduit, parcours modifié, profondeur réduite).",
+              "theorie": "Essoufflement, narcose, froid, déshydratation : rôle du GP."
+            },
+            {
+              "n": 2,
+              "titre": "Scénario annoncé",
+              "objectif": "Appliquer sa décision sous l'eau.",
+              "situation": "Imprévu annoncé avant la plongée, déclenché par le moniteur.",
+              "critere": "Réaction rapide et pertinente."
+            },
+            {
+              "n": 3,
+              "titre": "Imprévu réel",
+              "objectif": "S'adapter à ce que le milieu impose.",
+              "situation": "Plongées où les conditions changent réellement.",
+              "critere": "Adaptation sûre, palanquée protégée.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "S'adapter aux situations imprévues.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Réaction pertinente, sécurité de la palanquée assurée. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "S'orienter",
+          "curseurs": [
+            "s'orienter seul → guider une palanquée",
+            "site connu → site inconnu"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis N3",
+              "objectif": "Vérifier l'orientation avec et sans instrument.",
+              "situation": "Parcours varié en autonomie.",
+              "critere": "Retour près du bateau. Sinon, on reprend la progression N3."
+            },
+            {
+              "n": 2,
+              "titre": "S'orienter en guidant",
+              "objectif": "Garder son orientation en surveillant une palanquée.",
+              "situation": "Palanquée jouée à surveiller pendant le parcours.",
+              "critere": "Itinéraire tenu malgré la surveillance des plongeurs."
+            },
+            {
+              "n": 3,
+              "titre": "Site inconnu",
+              "objectif": "Respecter le retour annoncé sur un site nouveau.",
+              "situation": "Site jamais plongé, à partir des informations du DP.",
+              "critere": "Retour conforme au briefing."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "S'orienter en conduite de palanquée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Orientation maîtrisée avec ou sans instrument, retour conforme au briefing. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Agrémenter la plongée",
+          "curseurs": [
+            "repérer → montrer → expliquer"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Repérer les intérêts du site",
+              "objectif": "Connaître ce qu'il y a à voir.",
+              "situation": "Plongée de repérage sur le site.",
+              "critere": "Il cite les intérêts du site (faune, flore, relief)."
+            },
+            {
+              "n": 2,
+              "titre": "Montrer",
+              "objectif": "Mettre en valeur les ressources du site.",
+              "situation": "Il montre à la palanquée ce qu'il a repéré, avec la bonne position et la lampe.",
+              "critere": "Chaque plongeur voit ce qui est montré."
+            },
+            {
+              "n": 3,
+              "titre": "Action éducative",
+              "objectif": "Expliquer simplement ce qu'on voit.",
+              "situation": "Au débriefing, il explique une espèce ou un élément du site.",
+              "critere": "Explication simple et juste (lien avec Respecter l'environnement)."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Agrémenter la plongée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Ressources du site exploitées, comportement exemplaire. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Intervenir en fonction du comportement des membres de la palanquée",
+          "curseurs": [
+            "repérer → intervenir",
+            "situation annoncée → situation jouée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Repérer un comportement",
+              "objectif": "Voir ce qui ne va pas chez un plongeur.",
+              "situation": "Le moniteur joue : ventilation rapide, flottabilité mal gérée, stress, froid.",
+              "critere": "Il repère vite chaque comportement."
+            },
+            {
+              "n": 2,
+              "titre": "Intervenir simplement",
+              "objectif": "Réagir de façon adaptée sans assistance.",
+              "situation": "Ralentir, stabiliser un plongeur, l'aider à équilibrer, communiquer.",
+              "critere": "Intervention efficace et calme."
+            },
+            {
+              "n": 3,
+              "titre": "Situations jouées en plongée",
+              "objectif": "Rester attentif pendant toute la plongée.",
+              "situation": "Situations jouées par le moniteur au cours de la plongée, sans assistance à réaliser.",
+              "critere": "Réaction rapide et adaptée à chaque fois."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Intervenir en fonction du comportement des plongeurs.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen. L'assistance proprement dite est évaluée à l'épreuve 5.",
+              "critere": "Attention, pertinence, réactivité et efficacité. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-findeplongee",
+      "competence": "Conduite de palanquée : fin de plongée et paliers",
+      "evaluation_mft": "Une partie en immersion (coefficient 3), qui se déroule : En temps réel : la durée de l'immersion est déterminée selon la profondeur et l'appréciation du jury entre 10 et 25 minutes. Sans aucune simulation du jury nécessitant une assistance ou un sauvetage. L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Gérer la fin de la plongée et le retour en surface",
+          "curseurs": [
+            "décider → organiser la désaturation → paliers",
+            "moyens identiques → moyens différents",
+            "conditions calmes → courant"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Décider de la fin de plongée",
+              "objectif": "Engager la remontée au bon moment.",
+              "situation": "À partir des paramètres de chaque plongeur (air, désaturation, consignes du DP).",
+              "critere": "Remontée engagée à temps pour tous."
+            },
+            {
+              "n": 2,
+              "titre": "Organiser la désaturation",
+              "objectif": "Choisir une gestion pertinente pour toute la palanquée.",
+              "situation": "Ordinateurs différents dans la palanquée, cas au sec puis en plongée.",
+              "critere": "Procédure adaptée au plongeur le plus contraint.",
+              "theorie": "Ordinateurs différents dans une palanquée, conservatisme, préconisations fédérales et procédures de rattrapage."
+            },
+            {
+              "n": 3,
+              "titre": "Les paliers",
+              "objectif": "Tenir des paliers en palanquée.",
+              "situation": "Regroupement, communication, maintien des profondeurs, surveillance des instruments, parachute si nécessaire.",
+              "critere": "Palanquée groupée et stable, paliers complets.",
+              "securite": "Parachute : jamais attaché au plongeur, ligne libre."
+            },
+            {
+              "n": 4,
+              "titre": "Palanquée hétérogène, courant",
+              "objectif": "Gérer la fin de plongée dans des conditions moins favorables.",
+              "situation": "Plongeurs de niveaux différents, léger courant au palier.",
+              "critere": "Cohésion et paliers maintenus.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Gérer la fin de la plongée et le retour en surface.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Gestion pertinente de la désaturation, comportement aux paliers. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-retour",
+      "competence": "Conduite de palanquée : retour et débriefing",
+      "evaluation_mft": "L'épreuve se décompose en deux parties : une partie en surface avec un briefing avant et un débriefing après l'immersion (coefficient 2, 15 points pour le briefing et 5 points pour le débriefing). L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Gérer le retour au bateau",
+          "curseurs": [
+            "eau calme → clapot",
+            "consignes → aide à la sortie"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Retour groupé",
+              "objectif": "Ramener la palanquée au bateau sans effort inutile.",
+              "situation": "Surface : gilets gonflés, palanquée groupée, consignes de nage.",
+              "critere": "Personne ne s'épuise ni ne s'éloigne."
+            },
+            {
+              "n": 2,
+              "titre": "Sortie de l'eau",
+              "objectif": "Gérer la sortie selon l'embarcation.",
+              "situation": "Ordre de sortie, aide au matériel, surveillance de ceux qui attendent.",
+              "critere": "Sortie sûre pour chacun."
+            },
+            {
+              "n": 3,
+              "titre": "Clapot ou courant",
+              "objectif": "Adapter le retour aux conditions.",
+              "situation": "Retour avec clapot ou courant.",
+              "critere": "Consignes pertinentes, efforts gérés."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Gérer le retour au bateau.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Comportement, attention aux plongeurs, pertinence des consignes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Assurer le débriefing, commenter le déroulement de la plongée",
+          "curseurs": [
+            "faits → explications → conseils"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les faits marquants",
+              "objectif": "Résumer la plongée.",
+              "situation": "Après une plongée : faits marquants et éléments observés.",
+              "critere": "Résumé court et juste."
+            },
+            {
+              "n": 2,
+              "titre": "Expliquer ses interventions",
+              "objectif": "Donner du sens à ce qu'on a fait sous l'eau.",
+              "situation": "Explication des interventions faites pendant la plongée.",
+              "critere": "Explications claires et sans reproche."
+            },
+            {
+              "n": 3,
+              "titre": "Recadrer si nécessaire",
+              "objectif": "Conseiller dans le respect des prérogatives.",
+              "situation": "Cas joué : plongeur qui a dépassé ses limites.",
+              "critere": "Recadrage bienveillant, conseil pertinent."
+            },
+            {
+              "n": 4,
+              "titre": "Débriefing de l'épreuve 4 (évaluation)",
+              "objectif": "Réussir le débriefing noté sur 5.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Pertinence des commentaires et bien-fondé des remarques. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Observer et surveiller",
+          "curseurs": [
+            "présence → consignes → alerte"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Rester en contact",
+              "objectif": "Accompagner la palanquée après la plongée.",
+              "situation": "Après la sortie de l'eau : aide au déséquipement, présence auprès des plongeurs.",
+              "critere": "Il reste disponible jusqu'à la fin."
+            },
+            {
+              "n": 2,
+              "titre": "Rappeler les consignes",
+              "objectif": "Inciter les plongeurs à signaler tout signe inhabituel.",
+              "situation": "Rappel : s'informer, communiquer, prévenir.",
+              "critere": "Consignes données à chacun.",
+              "theorie": "Signes d'accident pouvant apparaître après la plongée (lien avec le RIFAP)."
+            },
+            {
+              "n": 3,
+              "titre": "Repérer et alerter",
+              "objectif": "Réagir à un signe inhabituel.",
+              "situation": "Cas joué : plongeur fatigué ou qui se plaint après la plongée.",
+              "critere": "Il alerte le DP sans délai."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Observer et surveiller après la plongée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Action et comportement adaptés, conseils pertinents. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-environnement",
+      "competence": "Respecter l'environnement",
+      "evaluation_mft": "Évaluation : épreuve N°4 « conduite de palanquée ». L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "techniques": [
+        {
+          "nom": "Évoluer en limitant son impact sur le milieu",
+          "curseurs": [
+            "pour soi → en guidant",
+            "matériel libre → matériel fixé"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis N3",
+              "objectif": "Vérifier stabilisation, palmage et ventilation.",
+              "situation": "Plongée en autonomie près du fond.",
+              "critere": "Aucun contact, aucun nuage de sédiment."
+            },
+            {
+              "n": 2,
+              "titre": "Fixer ses accessoires",
+              "objectif": "Éviter que son matériel abîme le milieu.",
+              "situation": "Détendeur de secours, lampe, phare, parachute, appareil photo ou vidéo fixés.",
+              "critere": "Rien ne pend ni ne traîne sur le fond."
+            },
+            {
+              "n": 3,
+              "titre": "Exemplaire en guidant",
+              "objectif": "Rester un exemple tout en conduisant une palanquée.",
+              "situation": "Plongée guidée, palanquée jouée.",
+              "critere": "Aucun impact sur le milieu malgré la charge de guidage."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Évoluer en limitant son impact sur le milieu.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Comportement exemplaire. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Faire preuve de techniques d'approche propices à l'observation",
+          "curseurs": [
+            "position → matériel → perturbations"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Position et vitesse",
+              "objectif": "Placer la palanquée pour que chacun observe.",
+              "situation": "Il adapte sa vitesse et sa position par rapport aux plongeurs guidés.",
+              "critere": "Chaque plongeur voit sans gêner les autres."
+            },
+            {
+              "n": 2,
+              "titre": "Matériel d'observation",
+              "objectif": "S'équiper pour favoriser l'observation.",
+              "situation": "Lampe, planchettes ou autre support.",
+              "critere": "Matériel utilisé à bon escient."
+            },
+            {
+              "n": 3,
+              "titre": "Maîtriser les perturbations",
+              "objectif": "Limiter lumière, bruit et bulles.",
+              "situation": "Approche d'animaux sensibles.",
+              "critere": "Animaux observés sans fuite."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Favoriser l'observation de la palanquée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Techniques d'approche adaptées. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Connaître la charte internationale du plongeur responsable",
+          "curseurs": [
+            "connaître → appliquer → corriger"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Les chartes mer et eau douce",
+              "objectif": "Connaître les gestes et attitudes attendus.",
+              "situation": "Au sec, présentation des chartes.",
+              "critere": "Il cite les principaux engagements."
+            },
+            {
+              "n": 2,
+              "titre": "Appliquer",
+              "objectif": "Mettre les gestes de la charte en pratique.",
+              "situation": "En plongée, guidée ou en autonomie.",
+              "critere": "Gestes et attitudes conformes à la charte."
+            },
+            {
+              "n": 3,
+              "titre": "Identifier et corriger",
+              "objectif": "Repérer un comportement inadéquat et le corriger.",
+              "situation": "Le moniteur joue un plongeur qui touche, nourrit ou prélève.",
+              "critere": "Correction immédiate, sans brusquer, expliquée au débriefing."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Appliquer la charte en conduite de palanquée.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Charte appliquée, comportements inadéquats corrigés. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Commenter l'environnement subaquatique",
+          "curseurs": [
+            "décrire → nommer → expliquer → répondre"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Décrire le site",
+              "objectif": "Décrire l'environnement du site, en mer ou en eau douce.",
+              "situation": "Après une plongée, description du milieu, de la faune et de la flore.",
+              "critere": "Description juste et vivante."
+            },
+            {
+              "n": 2,
+              "titre": "Nommer",
+              "objectif": "Connaître les noms communs des espèces rencontrées.",
+              "situation": "Au fil des plongées, il nomme les espèces animales et végétales.",
+              "critere": "Noms communs justes pour les espèces fréquentes.",
+              "theorie": "Ressources : DORIS et autres sites de référence."
+            },
+            {
+              "n": 3,
+              "titre": "Expliquer",
+              "objectif": "Donner de brèves explications sur le comportement, le mode de vie et l'habitat.",
+              "situation": "Au débriefing, une ou deux espèces commentées.",
+              "critere": "Explications simples et exactes."
+            },
+            {
+              "n": 4,
+              "titre": "Répondre aux questions",
+              "objectif": "Répondre simplement aux questions courantes des plongeurs.",
+              "situation": "Questions posées par les plongeurs joués.",
+              "critere": "Réponses justes ou recherche proposée."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 4 (évaluation)",
+              "objectif": "Commenter l'environnement.",
+              "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
+              "critere": "Environnement commenté avec justesse. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Savoir préparer une sortie",
+          "curseurs": [
+            "s'informer → agir"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Contexte environnemental",
+              "objectif": "S'informer sur la région et ses espèces.",
+              "situation": "Avant une sortie : milieux, espèces, fragilité, dangerosité, comportement, statut de protection.",
+              "critere": "Il présente le contexte en quelques points."
+            },
+            {
+              "n": 2,
+              "titre": "Limiter l'impact du mouillage",
+              "objectif": "Protéger les fonds au mouillage.",
+              "situation": "Avec le DP ou en sortie autonome : parachute d'ancre ou autre moyen (lien matelotage).",
+              "critere": "Mouillage installé sans abîmer les fonds."
+            },
+            {
+              "n": 3,
+              "titre": "Transmettre au briefing",
+              "objectif": "Faire profiter la palanquée de sa préparation.",
+              "situation": "Au briefing : espèces à observer, espèces fragiles ou dangereuses, règles de protection du site.",
+              "critere": "Informations courtes, justes et utiles aux plongeurs."
+            },
+            {
+              "n": 4,
+              "titre": "En situation (aptitude visée)",
+              "objectif": "Savoir préparer une sortie.",
+              "situation": "Sorties au fil de la formation.",
+              "critere": "Sortie préparée en tenant compte de l'environnement. Le MFT ne prévoit pas d'évaluation spécifique pour cet objectif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-ipd",
+      "competence": "Intervention sur un plongeur en difficulté à 40 m",
+      "evaluation_mft": "L'intervention est évaluée sur 20 points; La non maîtrise du déploiement du parachute peut entrainer une perte de points. Sont pris en compte : La qualité et l'efficacité de la prise en charge. Le contrôle de la vitesse de remontée. Le profil de la remontée. Le respect de la profondeur plafond (entre 8 et 6 m) et le tour d'horizon. Dans tous les cas, si une vitesse de remontée rapide est tolérée en début de remontée, celle-ci doit être définitivement maîtrisée au plus tard à l'arrivée à 35 m. L'utilisation du gilet doit être privilégiée. L'utilisation des palmes et le regonflage au cours de la remontée sont pénalisant pour l'évaluation. Sont éliminatoires : Tout comportement impactant la sécurité. Un manque de réactivité au fond. Une redescente de plus de 2 m à tout moment : au fond, à la remontée et au palier. Percer la surface sans marquer l'arrêt au palier.",
+      "techniques": [
+        {
+          "nom": "Intervention sur un plongeur en difficulté à 40 m",
+          "curseurs": [
+            "acquis PA40 → exigences de l'épreuve 5",
+            "25 m → 40 m",
+            "situation fixe → situation évolutive"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis PA40",
+              "objectif": "Vérifier l'assistance complète depuis 40 m.",
+              "situation": "Assistance intégrale depuis 40 m, comme au PA40.",
+              "critere": "Assistance sûre. Sinon, on reprend la progression PA40.",
+              "securite": "L'assisté est le moniteur. Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 2,
+              "titre": "Remontée au gilet depuis 25 m",
+              "objectif": "Remonter l'assisté au gilet, sans palmes ni regonflage.",
+              "situation": "Depuis 25 m, en lien avec la DTMR : gestion des gilets et de la ventilation.",
+              "critere": "Vitesse régulière, pas de palmage propulsif, pas de regonflage."
+            },
+            {
+              "n": 3,
+              "titre": "Depuis 40 m, au-dessus d'un fond plus important",
+              "objectif": "Prendre en charge et maîtriser la vitesse au plus tard à 35 m.",
+              "situation": "Examinateur conscient, stabilisé à 40 m sur un fond plus important. Remontée sur son signe.",
+              "critere": "Prise en charge immédiate, vitesse maîtrisée au plus tard à 35 m, jamais de redescente de plus de 2 m.",
+              "securite": "Accoutumance progressive à 40 m. Le moniteur assisté peut interrompre l'exercice à tout moment."
+            },
+            {
+              "n": 4,
+              "titre": "Situation évolutive",
+              "objectif": "S'adapter quand la situation change pendant la remontée.",
+              "situation": "Perte de conscience, lâcher du détendeur ou panne d'air, simulés par l'examinateur.",
+              "critere": "Adaptation immédiate, surveillance continue, attitude sécurisante."
+            },
+            {
+              "n": 5,
+              "titre": "Arrêt, tour d'horizon et parachute",
+              "objectif": "Terminer l'intervention en zone de palier.",
+              "situation": "Arrêt franc entre 8 et 6 m, tour d'horizon en gardant son niveau, puis désolidarisation et parachute sur le signe fin d'exercice.",
+              "critere": "Arrêt marqué, niveau conservé, parachute déployé sans perte de profondeur.",
+              "securite": "Parachute : jamais attaché au plongeur, ligne libre."
+            },
+            {
+              "n": 6,
+              "titre": "Épreuve 5 (évaluation)",
+              "objectif": "Réussir l'intervention à 40 m.",
+              "situation": "Après l'épreuve 7, dans les mêmes conditions de profondeur et de stabilisation.",
+              "critere": "Prise en charge, vitesse, profil, profondeur plafond et tour d'horizon conformes, aucun critère éliminatoire. Correspond aux modalités d'évaluation du MFT (aptitude A2)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-techniques",
+      "competence": "Descente, stabilisation et vidage de masque à 40 m ; DTMR de 25 m",
+      "evaluation_mft": "Épreuve 7. Sont pris en compte : Pendant la phase de descente : La maîtrise de la position et de l'équilibre : verticalité et absence de vrille. La maîtrise de la vitesse, entre 20 et 30 m/min, constante, et éventuellement plus lente sur la fin. Le retournement, qui ne doit pas intervenir avant 35 m. Pendant la phase de stabilisation et vidage de masque : Le temps nécessaire à la stabilisation à 40 m. La précision du maintien de la profondeur de stabilisation à 40 m durant la totalité de l'exécution de cette phase. La stabilisation est réalisée à l'aide de la ventilation et du gilet pour compenser la profondeur. Seul un léger palmage de positionnement est autorisé. La rapidité du retrait du masque sur signe de l'évaluateur. La régularité de la ventilation et le respect des 3 cycles respiratoires imposés. Le vidage du masque totalement réalisé en une seule fois. Une variation de +/- 2 m autour de la profondeur plancher est éliminatoire. Épreuve 8. La maitrise de la remontée est évaluée sur 20 points. La non maitrise du déploiement du parachute peut entrainer une perte de points. Sont éliminatoires (note inferieure à 5) : Redescendre de plus de 2 mètres : au décollage, pendant la remontée, de la profondeur d'arrêt, entre 8 et 6 mètres. Regonfler le gilet plus de 2 fois pendant la remontée. S'arrêter à moins de 4 mètres de la surface. Avoir une durée de remontée jusqu'à l'arrêt entre 8 et 6 mètres : supérieure à 2'40'' (vitesse inferieure à environ 7 m/min) ou inferieure à 1' (vitesse supérieure à 20 m/min). Avoir un palmage propulsif pendant la remontée. Tout comportement impactant la sécurité.",
+      "techniques": [
+        {
+          "nom": "Descente, stabilisation et vidage de masque à 40 m",
+          "curseurs": [
+            "faible profondeur → 40 m",
+            "pendeur → pleine eau",
+            "descente → stabilisation → vidage de masque"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis",
+              "objectif": "Vérifier stabilisation et vidage de masque avec retrait.",
+              "situation": "À 20 m : stabilisation, retrait, remise et vidage du masque.",
+              "critere": "Stabilisation tenue, masque vidé sans stress."
+            },
+            {
+              "n": 2,
+              "titre": "Descente tête en bas, à faible profondeur",
+              "objectif": "Construire la position verticale sans vrille.",
+              "situation": "De 3 m à 15 m le long d'un pendeur, vitesse contrôlée sur l'ordinateur.",
+              "critere": "Verticalité, pas de vrille, vitesse constante.",
+              "securite": "Tête en bas, les oreilles s'équilibrent plus difficilement : équilibrer tôt, interrompre en cas de douleur."
+            },
+            {
+              "n": 3,
+              "titre": "Descente jusqu'à 40 m",
+              "objectif": "Tenir la vitesse et se stabiliser sans délai.",
+              "situation": "De 3 m à 30 m puis 40 m, en pleine eau, sans utiliser l'évaluateur comme repère. Vitesse entre 20 et 30 m/min, retournement pas avant 35 m.",
+              "critere": "Vitesse constante, retournement après 35 m, stabilisation immédiate.",
+              "theorie": "Loi de Mariotte, flottabilité et usage du gilet en profondeur.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur. Narcose possible : le moniteur reste au contact."
+            },
+            {
+              "n": 4,
+              "titre": "Stabilisation et vidage de masque à 40 m",
+              "objectif": "Rester stable pendant tout le vidage de masque.",
+              "situation": "À 40 m : retrait du masque au signal, 3 cycles ventilatoires, remise et vidage en une seule fois, puis signe OK.",
+              "critere": "Profondeur tenue à moins de 2 m près, ventilation régulière, vidage en une fois.",
+              "securite": "Jamais de situation brutale. Le moniteur reste au contact."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 7 (évaluation)",
+              "objectif": "Réussir la démonstration technique.",
+              "situation": "Au départ de l'épreuve 5, depuis 3 m, au signal du jury.",
+              "critere": "Critères de descente et de stabilisation du MFT respectés, aucune variation de plus de 2 m. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "DTMR de 25 m",
+          "curseurs": [
+            "seul → binôme solidaire",
+            "15 m → 25 m",
+            "remontée → arrêt, parachute et désaturation"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan : remontée au gilet seul",
+              "objectif": "Contrôler sa propre vitesse au gilet et à la ventilation.",
+              "situation": "Remontée seul depuis 15 m, profil linéaire.",
+              "critere": "Vitesse régulière sans palmes."
+            },
+            {
+              "n": 2,
+              "titre": "Binôme solidaire depuis 15 m",
+              "objectif": "Gérer seul les deux gilets.",
+              "situation": "Face à face, saisie de l'évaluateur, remontée à 10-12 m/min, purges et ventilation.",
+              "critere": "Profil linéaire, aucun regonflage, pas de palmage propulsif."
+            },
+            {
+              "n": 3,
+              "titre": "Depuis 25 m",
+              "objectif": "Tenir la vitesse de référence sur toute la remontée.",
+              "situation": "Départ stabilisé à 25 m en pleine eau, remontée sur le signe « remonte ».",
+              "critere": "Départ sans délai, vitesse de 10 à 12 m/min, jamais de redescente de plus de 2 m.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 4,
+              "titre": "Arrêt, parachute et désaturation",
+              "objectif": "Finir la DTMR en zone de palier.",
+              "situation": "Arrêt franc entre 8 et 6 m, tour d'horizon, désolidarisation, parachute gonflé au détendeur de secours, gestion de la désaturation, au moins 1 minute à 6 m.",
+              "critere": "Tour d'horizon complet et stabilisé, parachute efficace, profondeur d'arrêt maintenue.",
+              "securite": "Parachute : jamais attaché au plongeur, ligne libre."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 8 (évaluation)",
+              "objectif": "Réussir la DTMR.",
+              "situation": "Binôme solidaire depuis 25 m.",
+              "critere": "Critères techniques du MFT respectés, aucun critère éliminatoire. Correspond aux modalités d'évaluation du MFT (aptitude A3)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-physique",
+      "competence": "Condition physique",
+      "evaluation_mft": "Total des points attribués pour ce groupe : 100 points, moyenne du groupe : 50 points. L'épreuve est individuelle et consiste à réaliser un parcours déterminé de 500 m en moins de 16 minutes. Fait / Non Fait.",
+      "techniques": [
+        {
+          "nom": "Épreuve du mannequin",
+          "curseurs": [
+            "parties séparées → enchaînement",
+            "sans chrono → moins de 8 minutes"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Remorquer le mannequin",
+              "objectif": "Maîtriser la prise classique et le remorquage.",
+              "situation": "Remorquage sur le dos, bras sous l'aisselle, main sur la poitrine, tête du mannequin sur l'épaule, sur des distances croissantes.",
+              "critere": "Voies aériennes du mannequin toujours hors de l'eau.",
+              "theorie": "Accidents liés à l'apnée : risques, importance de l'échauffement, règles de sécurité."
+            },
+            {
+              "n": 2,
+              "titre": "Apnée en déplacement à 4-6 m",
+              "objectif": "Tenir 20 secondes d'apnée en déplacement.",
+              "situation": "Canard, descente entre 4 et 6 m, déplacement en apnée, récupération courte en surface.",
+              "critere": "20 secondes tenues, récupération de 10 secondes au maximum.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation."
+            },
+            {
+              "n": 3,
+              "titre": "Enchaînement partiel",
+              "objectif": "Relier les parties de l'épreuve.",
+              "situation": "100 m PMT, apnée, récupération du mannequin, signal de détresse.",
+              "critere": "Enchaînement sans arrêt.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation."
+            },
+            {
+              "n": 4,
+              "titre": "Parcours complet chronométré",
+              "objectif": "Réaliser le parcours en moins de 8 minutes.",
+              "situation": "Parcours complet défini par le moniteur, chronométré.",
+              "critere": "Moins de 8 minutes, aucun critère éliminatoire.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 1 (évaluation)",
+              "objectif": "Réussir l'épreuve du mannequin.",
+              "situation": "Parcours défini par le jury, une seule tentative.",
+              "critere": "Moins de 8 minutes, apnée de 20 s tenue, récupération de 10 s maximum, face du mannequin jamais immergée 5 s. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Nage PMT sur 800 m",
+          "curseurs": [
+            "distance → vitesse",
+            "entraînement → chrono"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan",
+              "objectif": "Mesurer son niveau de départ.",
+              "situation": "Nage PMT chronométrée sur une distance connue.",
+              "critere": "Temps de référence noté."
+            },
+            {
+              "n": 2,
+              "titre": "Entraînement aérobie",
+              "objectif": "Développer l'endurance.",
+              "situation": "Séances régulières de nage PMT, distances et rythme croissants.",
+              "critere": "Progression du temps d'une séance à l'autre."
+            },
+            {
+              "n": 3,
+              "titre": "800 m chronométré",
+              "objectif": "Se situer sur le barème du MFT.",
+              "situation": "800 m chronométrés en milieu naturel.",
+              "critere": "Temps comparé au barème (10/20 à 15 min 30 pour les hommes, 16 min 30 pour les femmes)."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 2 (évaluation)",
+              "objectif": "Réussir la nage PMT de 800 m.",
+              "situation": "Départ groupé, parcours déterminé de 800 m.",
+              "critere": "Note selon le barème du MFT. Correspond aux modalités d'évaluation du MFT (aptitude A4)."
+            }
+          ]
+        },
+        {
+          "nom": "Plongée libre à 10 m",
+          "curseurs": [
+            "5 m → 8 m → 10 m",
+            "descente → stabilisation et protocole de sortie"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Apnée stabilisée à 5 m",
+              "objectif": "Descendre et se stabiliser en apnée.",
+              "situation": "Canard efficace, stabilisation face au moniteur à 5 m, signe OK.",
+              "critere": "Stabilisation calme, remontée avec tour d'horizon.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation."
+            },
+            {
+              "n": 2,
+              "titre": "Vers 8 m",
+              "objectif": "Augmenter la profondeur progressivement.",
+              "situation": "Même protocole à des profondeurs croissantes.",
+              "critere": "Aisance au fond et remontée maîtrisée.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation."
+            },
+            {
+              "n": 3,
+              "titre": "À 10 m, protocole complet",
+              "objectif": "Réaliser l'épreuve dans son déroulement complet.",
+              "situation": "Descente jusqu'à l'examinateur à 10 m, stabilisation, signe OK, identification, remontée avec tour d'horizon, tuba hors de la bouche, signe OK en surface, 30 s sous contrôle.",
+              "critere": "Protocole complet, aucun signe de perte de contrôle.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation. L'examinateur ou le moniteur est à 10 m."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 3 (évaluation)",
+              "objectif": "Réussir la plongée libre à 10 m.",
+              "situation": "Un seul essai.",
+              "critere": "10 m atteints, stabilisation et retour en surface en sécurité. Ni perte de contrôle moteur ni syncope. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Nage capelée sur 500 m",
+          "curseurs": [
+            "300 m → 500 m",
+            "sans chrono → moins de 16 minutes"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis N3",
+              "objectif": "Vérifier la nage capelée de 300 m.",
+              "situation": "300 m capelé.",
+              "critere": "Sans essoufflement."
+            },
+            {
+              "n": 2,
+              "titre": "Technique de l'épreuve",
+              "objectif": "Nager capelé sur le tuba, sans les bras.",
+              "situation": "Scaphandre sur le dos, bouteille ouverte, détendeur en main, nage ventrale, distances croissantes.",
+              "critere": "Pas d'aide des bras, pas d'utilisation du scaphandre.",
+              "securite": "Bouteille ouverte et détendeur en main pendant toute la nage."
+            },
+            {
+              "n": 3,
+              "titre": "500 m chronométré",
+              "objectif": "Nager 500 m en moins de 16 minutes.",
+              "situation": "500 m chronométrés en milieu naturel.",
+              "critere": "Moins de 16 minutes."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 9 (évaluation)",
+              "objectif": "Réussir la nage capelée.",
+              "situation": "Départ groupé, parcours déterminé de 500 m.",
+              "critere": "Fait en moins de 16 minutes. Correspond aux modalités d'évaluation du MFT (aptitude A4)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-theorie",
+      "competence": "Connaissances théoriques",
+      "evaluation_mft": "Les épreuves théoriques N° 10 à 12 sont des épreuves écrites, l'épreuve N° 13 est orale. La durée de chacune des trois épreuves écrites N° 10, 11 et 12, ne doit pas excéder 30 minutes.",
+      "techniques": [
+        {
+          "nom": "Risques de l'activité, mesures de prévention et bonnes pratiques",
+          "curseurs": [
+            "connaissances N3 → rôle du GP",
+            "mécanisme → cas pratique"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Bilan des acquis N3",
+              "objectif": "Vérifier les connaissances des niveaux précédents.",
+              "situation": "Questions sur les accidents vus au N3.",
+              "critere": "Réponses justes. Sinon, révision ciblée."
+            },
+            {
+              "n": 2,
+              "titre": "Oreille et ventilation",
+              "objectif": "Comprendre l'oreille en plongée et l'installation de l'essoufflement.",
+              "situation": "Anatomie simple de l'appareil ventilatoire, mécanique ventilatoire, rétention de CO2, cercle vicieux de l'essoufflement.",
+              "critere": "Il explique l'essoufflement avec un schéma et dit ce que fait le GP."
+            },
+            {
+              "n": 3,
+              "titre": "Narcose, OPI, apnée, froid, déshydratation",
+              "objectif": "Connaître les autres accidents et le rôle du GP.",
+              "situation": "Symptômes, facteurs favorisants, prévention. Premiers signes de narcose et crise narcotique. Syncope thermo-différentielle.",
+              "critere": "Pour chaque accident, il cite les situations et les comportements adaptés du GP."
+            },
+            {
+              "n": 4,
+              "titre": "Accidents de désaturation",
+              "objectif": "Comprendre les mécanismes et la prévention.",
+              "situation": "Mécanismes, symptômes, FOP, shunts pulmonaires, facteurs de prévention, profils à risques. Traitement limité au RIFAP.",
+              "critere": "Il explique la prévention en tant que GP, schéma à l'appui."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuves 10 et 11 (évaluation)",
+              "objectif": "Répondre en tant que GP.",
+              "situation": "Écrits de 30 minutes, études de cas pratiques.",
+              "critere": "Réponses justes, orientées sur le rôle du GP. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Outils et procédures de désaturation",
+          "curseurs": [
+            "saturation → modèles → ordinateurs → palanquée"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Dissolution de l'azote",
+              "objectif": "Connaître les états de saturation.",
+              "situation": "Transport et diffusion des gaz, sous-saturation, saturation, sursaturation, sursaturation critique.",
+              "critere": "Réponses justes selon les phases de la plongée."
+            },
+            {
+              "n": 2,
+              "titre": "Modèles",
+              "objectif": "Comprendre la modélisation des ordinateurs.",
+              "situation": "Jeux de paramètres haldaniens (ZHL-16C), absence de certification des logiciels.",
+              "critere": "Il explique le principe et ses limites."
+            },
+            {
+              "n": 3,
+              "titre": "Ordinateurs",
+              "objectif": "Lire, paramétrer et utiliser les ordinateurs courants.",
+              "situation": "Captures d'écran, courbes de plongée : affichages, conservatisme, planification, carnet. GF à l'air entre 85 et 90 %, pas de paliers profonds à l'air. Préconisations fédérales et procédures de rattrapage.",
+              "critere": "Analyse juste de chaque capture, comportement adapté en tant que GP."
+            },
+            {
+              "n": 4,
+              "titre": "Procédures différentes dans une palanquée",
+              "objectif": "Gérer des plongeurs aux moyens et conservatismes différents.",
+              "situation": "Cas : niveaux de saturation, marques, modèles et conservatismes différents.",
+              "critere": "Situation identifiée avant la plongée, action adaptée avant ou pendant."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 10 (évaluation)",
+              "objectif": "Réussir l'écrit de désaturation.",
+              "situation": "Écrit de 30 minutes : connaissances et études de cas.",
+              "critere": "Réponses justes. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Réglementation relative à l'activité",
+          "curseurs": [
+            "responsabilités → FFESSM → Code du sport → normes"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Responsabilité du GP",
+              "objectif": "Connaître la responsabilité civile et pénale du GP.",
+              "situation": "Obligations de moyens et de résultat, mise en danger d'autrui, exemples concrets.",
+              "critere": "Il applique ces notions à des cas de plongée."
+            },
+            {
+              "n": 2,
+              "titre": "La FFESSM",
+              "objectif": "Connaître la structure et les obligations fédérales.",
+              "situation": "Commissions, comité directeur, licence, assurances, CACI, diplômes FFESSM et CMAS, honorabilité, signalement des violences, REX, carnet de plongée numérique.",
+              "critere": "Réponses justes et succinctes."
+            },
+            {
+              "n": 3,
+              "titre": "Code du sport",
+              "objectif": "Connaître les prérogatives du GP et le rôle du DP.",
+              "situation": "Prérogatives en autonomie et en encadrement, matériel obligatoire, rôle du DP.",
+              "critere": "Il situe ses prérogatives dans chaque situation."
+            },
+            {
+              "n": 4,
+              "titre": "Les normes",
+              "objectif": "Comprendre le principe de protection des normes.",
+              "situation": "Définition, obligations des fabricants, maintien des caractéristiques d'origine.",
+              "critere": "Il explique le principe de protection."
+            },
+            {
+              "n": 5,
+              "titre": "Épreuve 12 (évaluation)",
+              "objectif": "Réussir l'écrit de réglementation.",
+              "situation": "Écrit de 30 minutes.",
+              "critere": "Réponses justes dans le cadre des prérogatives du GP. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        },
+        {
+          "nom": "Connaissance du matériel de plongée",
+          "curseurs": [
+            "compresseur et blocs → détendeurs → instruments",
+            "schéma → explication orale"
+          ],
+          "etapes": [
+            {
+              "n": 1,
+              "titre": "Compresseur et blocs",
+              "objectif": "Connaître le gonflage et les blocs.",
+              "situation": "Schéma de principe du compresseur, gonflage en sécurité, pannes courantes. Inspection visuelle, requalification, robinet.",
+              "critere": "Il commente un schéma et cite les règles de sécurité.",
+              "securite": "Gonflage uniquement sous la responsabilité d'une personne habilitée."
+            },
+            {
+              "n": 2,
+              "titre": "Détendeurs",
+              "objectif": "Expliquer le fonctionnement d'un détendeur.",
+              "situation": "Siège, clapet, pressions, compensation. Premiers étages à piston et à membrane, deuxièmes étages, surcompensation, Venturi, Vortex, givrage.",
+              "critere": "Il décrit les forces qui ouvrent et ferment le clapet, sans calcul."
+            },
+            {
+              "n": 3,
+              "titre": "Manomètre, gilet, ordinateur",
+              "objectif": "Connaître les autres équipements.",
+              "situation": "Principe du manomètre, modèles de gilets, fonctions et réglages de son ordinateur.",
+              "critere": "Il décrit son ordinateur et justifie ses choix, lit les écrans courants."
+            },
+            {
+              "n": 4,
+              "titre": "Épreuve 13 (évaluation)",
+              "objectif": "Réussir l'oral de matériel.",
+              "situation": "Oral à partir de planches, de dessins ou d'éclatés.",
+              "critere": "Explications justes et simples. Correspond aux modalités d'évaluation du MFT."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
