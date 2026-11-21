@@ -1228,6 +1228,10 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .home-recu { margin: 0; display: flex; gap: 10px; align-items: flex-start; padding: 14px 18px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); color: var(--texte-3); font-size: 14px; line-height: 1.6; }
 .home-recu strong { font-weight: 600; }
 .home-recu__icone { flex: 0 0 auto; display: inline-flex; margin-top: 2px; }
+/* Encart orangé : dépôt GitHub public */
+.home-recu--github { margin-top: -10px; background: var(--orange-fond); border-color: var(--orange-bordure); color: var(--orange-texte); }
+.home-recu--github a { color: var(--orange-texte); font-weight: 600; }
+.home-recu--github a:hover { color: var(--texte); }
 .donnees__message:empty { display: none; }
 
 /* =================================================================
