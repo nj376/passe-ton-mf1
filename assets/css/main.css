@@ -1114,6 +1114,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .about-merci p { margin: 0; font-size: 15px; line-height: 1.7; color: var(--texte-2); }
 .about-merci__texte { display: flex; flex-direction: column; gap: 12px; }
 .about-merci strong { font-weight: 600; color: var(--texte); }
+.about-recit p.about-github { margin-top: 44px; padding: 14px 18px; border-radius: 10px; background: var(--orange-fond); border: 1px solid var(--orange-bordure); color: var(--orange-texte); }
+.about-recit p.about-github a { color: var(--orange-texte); font-weight: 600; }
+.about-recit p.about-github a:hover { color: var(--texte); }
 .about-ps { grid-area: ps; margin: 0 6px; background: var(--postit-fond); border-radius: 4px; padding: 16px 20px; font-size: 15px; line-height: 1.6; color: var(--postit-texte); transform: rotate(-1deg); box-shadow: 0 6px 16px rgba(74, 58, 6, 0.12); }
 .about-ps p { margin: 0; display: inline; }
 .about-ps strong { font-weight: 600; }

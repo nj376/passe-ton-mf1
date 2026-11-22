@@ -11,6 +11,8 @@
 {{- $recit = replaceRE `<p>(Et puis est arrivé le stage initial MF1\.)</p>` `<p class="about-temps-fort">$1</p>` $recit -}}
 {{- $recit = replaceRE `<p>C’est ainsi qu’est né <strong>passe-ton-mf1\.com</strong>\.</p>` `<p class="about-temps-fort">C’est ainsi qu’est né passe-ton-mf1.com.</p>` $recit -}}
 {{- $recit = replaceRE `<p><strong>(«[^<]*galère[^<]*»)</strong></p>` `<blockquote class="about-exergue"><p>$1</p></blockquote>` $recit -}}
+{{- /* Dépôt GitHub public : dans un encadré, comme sur l’accueil, pour qu’on le voie bien. */ -}}
+{{- $recit = replaceRE `<p>(Le code et les contenus du site sont aussi publics sur GitHub[\s\S]*?)</p>` `<p class="about-github">$1</p>` $recit -}}
 
 <div class="about">
   <section class="about-entete">
