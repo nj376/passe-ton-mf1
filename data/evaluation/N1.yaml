@@ -1,0 +1,907 @@
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N1.
+# Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
+# (tel qu'il figure dans data/progressions/progressions_N1.json). Les fichiers de progression ne sont pas modifiés.
+#
+# evaluer.question : la question directrice
+# evaluer.vecu / sait / esprit : son vécu, ce qu'il sait ou croit savoir, son état d'esprit (listes)
+# evaluer.comment : comment le savoir (situation d'observation)
+# evaluer.adapter : où commencer selon ce qu'on a observé (liste)
+# bilan.situation : la situation finale sur laquelle porte le bilan
+# bilan.criteres : critères de la situation finale (liste)
+# bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
+
+N1-equiper:
+  "Gréage et dégréage":
+    evaluer:
+      question: "De quelles ressources l'élève dispose-t-il déjà pour apprendre à gréer et dégréer son scaphandre ?"
+      vecu:
+        - "A-t-il fait un baptême ? Si oui, a-t-il vu gréer le bloc, ou l'a-t-il reçu tout prêt ?"
+        - "A-t-il déjà manipulé du matériel de plongée, ou un autre matériel technique (escalade, voile, apnée) ?"
+        - "Connaît-il le matériel du club, ou a-t-il son propre matériel ?"
+      sait:
+        - "Sait-il nommer les pièces et dire à quoi elles servent ?"
+        - "A-t-il des idées fausses ? Par exemple : « la bouteille contient de l'oxygène », ou « le direct system, c'est un détendeur de secours »."
+        - "Sait-il qu'une bouteille est sous pression et qu'elle peut tomber ?"
+      esprit:
+        - "Est-il curieux, hésitant, inquiet, ou déjà familiarisé avec le matériel ?"
+        - "Craint-il de casser quelque chose, ou au contraire va-t-il trop vite ?"
+      comment: "Au sec, devant une bouteille calée et un équipement démonté, lui demander : « Montre-moi comment tu t'y prendrais. » On l'observe sans corriger, sauf pour la sécurité : on l'arrête avant qu'il ouvre le robinet face au manomètre ou qu'il lâche la bouteille. On écoute aussi la façon dont il nomme les pièces."
+      adapter:
+        - "Il ne connaît pas le matériel : on commence à l'étape 1, « Découverte »."
+        - "Il nomme les pièces mais ne connaît pas l'ordre : on vérifie rapidement l'étape 1, puis on passe à l'étape 2, « Gréage guidé »."
+        - "Il grée déjà seul, dans le bon ordre : on vérifie les points de sécurité, puis on passe à l'étape 3 ou 4."
+        - "Il est inquiet : on prend plus de temps au sec, on manipule davantage, et on lui explique avant de lui faire faire."
+    bilan:
+      situation: "l'étape 5 : sortie club, matériel inconnu, sans aide"
+      criteres:
+        - "Il grée et dégrée seul, sans aide de l'encadrant et sans liste."
+        - "Il fait les trois vérifications : pression, inflateur, respiration sur les deux détendeurs en regardant le manomètre."
+        - "Il signale toute anomalie (pression basse, fuite, aiguille qui chute)."
+        - "Il ne gêne pas les autres, puis il rince et range son matériel."
+      securite:
+        - "La bouteille est toujours calée, y compris dans le rack sur le bateau."
+        - "Le robinet est ouvert lentement, manomètre détourné, sans personne dans l'axe."
+        - "Rien n'est démonté sous pression : robinet fermé et circuit purgé d'abord."
+      eca: "oublie de purger avant de démonter → reprendre l'étape 4"
+  "Capelage et décapelage":
+    evaluer:
+      question: "Que sait déjà faire l'élève pour capeler et décapeler son scaphandre, au sec comme dans l'eau ?"
+      vecu:
+        - "A-t-il fait un baptême ? Si oui, s'est-il équipé lui-même, ou a-t-on capelé le bloc pour lui ?"
+        - "A-t-il déjà porté un sac lourd à sangles (randonnée, escalade) ou réglé un harnais ?"
+        - "A-t-il déjà plongé depuis un bateau, ou seulement en piscine ?"
+      sait:
+        - "Connaît-il l'ordre du capelage ? Sait-il que le lest se met en dernier et s'enlève en premier ?"
+        - "A-t-il des idées fausses ? Par exemple : « le lest doit être bien serré pour ne pas tomber », ou « on enfile le bloc debout, c'est plus simple »."
+        - "Sait-il qu'un gilet gonflé fait flotter l'ensemble en surface ?"
+      esprit:
+        - "Est-il à l'aise, ou gêné par le poids et l'encombrement du bloc ?"
+        - "Redoute-t-il de s'équiper dans l'eau, surtout là où il n'a pas pied ?"
+        - "Accepte-t-il l'aide d'un équipier, ou veut-il tout faire seul ?"
+      comment: "Au sec, assis sur un banc, bouteille gréée posée derrière lui, lui demander : « Équipe-toi comme tu penses qu'il faut le faire. » On l'observe sans corriger, sauf pour la sécurité : on l'arrête s'il soulève le bloc à bout de bras ou s'il le laisse debout sans être calé. On regarde l'ordre des sangles et la place du lest."
+      adapter:
+        - "Il ne connaît pas l'ordre : on commence à l'étape 1, « Capelage aidé au sec »."
+        - "Il capelle seul au sec, lest en dernier et largable : on passe à l'étape 3, « Capelage et décapelage dans l'eau, avec pied »."
+        - "Il est déjà à l'aise dans l'eau avec pied : on vérifie rapidement, puis on passe à l'étape 4, « Capelage et décapelage dans l'eau, sans pied »."
+        - "Il redoute l'eau profonde : on reste plus longtemps à l'étape 3, gilet gonflé, avant d'aller là où il n'a pas pied."
+    bilan:
+      situation: "l'étape 6 : au sec comme dans l'eau, sans aide (évaluation)"
+      criteres:
+        - "Il s'équipe et se déséquipe seul au sec comme dans l'eau."
+        - "Son comportement est adapté à la palanquée : prêt à temps, sans gêner, il aide et accepte d'être aidé."
+        - "Il respecte les précautions d'usage : lest largable, bloc jamais laissé debout sans être calé."
+      securite:
+        - "On capelle assis ou avec le bloc posé en hauteur ; sur bateau, on capelle assis."
+        - "Le lest se met en dernier et s'enlève en premier. Rien ne doit le bloquer."
+        - "Dans l'eau sans pied, gilet gonflé avant tout, moniteur à proximité."
+        - "Sur bateau, on ne se déplace pas bloc sur le dos sans y être invité."
+      eca: "met son lest avant de serrer ses sangles → reprendre l'étape 2"
+  "Choix de son matériel personnel":
+    evaluer:
+      question: "Comment l'élève choisit-il aujourd'hui son masque, ses palmes, sa combinaison et son lest ?"
+      vecu:
+        - "A-t-il déjà son propre matériel (masque, palmes de snorkeling, combinaison de surf) ou utilise-t-il celui du club ?"
+        - "A-t-il eu froid, mal aux pieds ou un masque qui fuit lors de son baptême ou en piscine ?"
+        - "A-t-il déjà plongé en mer et en eau douce ?"
+      sait:
+        - "Sait-il essayer un masque sans la sangle, par aspiration ?"
+        - "A-t-il des idées fausses ? Par exemple : « plus la combinaison est épaisse, mieux c'est », ou « plus on met de plombs, plus on est en sécurité »."
+        - "Sait-il dire ce qui fait varier son lest : combinaison, bouteille, eau douce ou salée ?"
+      esprit:
+        - "Se fie-t-il au prix, à la marque ou aux conseils du vendeur plutôt qu'au confort ?"
+        - "Est-il pressé d'acheter, ou au contraire hésite-t-il à s'équiper ?"
+      comment: "Au sec, devant un choix de masques, de palmes et de combinaisons, lui demander : « Choisis ce qui te convient et explique-moi pourquoi. » Puis lui demander quel lest il prendrait pour la plongée du jour. On écoute ses raisons sans corriger."
+      adapter:
+        - "Il ne connaît pas le rôle de chaque élément : on commence à l'étape 1, « Découverte du matériel personnel »."
+        - "Il choisit bien masque et palmes mais pas sa combinaison : on passe à l'étape 2, « Combinaison et confort »."
+        - "Il ne sait pas de quoi dépend son lest : on travaille l'étape 3, « Lestage guidé »."
+        - "Il choisit et justifie déjà son matériel : on vérifie l'étape 4, « Entretien et hygiène », puis on passe à l'étape 5."
+    bilan:
+      situation: "l'étape 6 : il arrive prêt (évaluation)"
+      criteres:
+        - "Son matériel est adapté à la plongée prévue et en bon état."
+        - "Son lest est cohérent avec le milieu et le matériel."
+        - "Il justifie ses choix à l'oral si on lui pose la question."
+        - "Il prépare son matériel personnel et son lest sans aide."
+      securite: []
+      eca: "garde le même lest en passant de la piscine à la mer → reprendre l'étape 5"
+
+N1-eau:
+  "Saut droit":
+    evaluer:
+      question: "Avec quel vécu et quelles appréhensions l'élève aborde-t-il le saut droit ?"
+      vecu:
+        - "A-t-il l'habitude de sauter dans l'eau (piscine, plongeoir, rochers) ?"
+        - "A-t-il fait son baptême depuis un bateau ? Comment s'est-il mis à l'eau ?"
+        - "A-t-il déjà perdu son masque en sautant ou en plongeant ?"
+      sait:
+        - "Sait-il pourquoi on plaque le masque et le détendeur avec la main ?"
+        - "A-t-il des idées fausses ? Par exemple : « on saute en regardant l'eau », ou « on peut sauter dès qu'on est prêt »."
+        - "Sait-il qu'il faut vérifier la zone avant et la dégager après ?"
+      esprit:
+        - "Appréhende-t-il la hauteur, ou le saut avec le poids du bloc ?"
+        - "Est-il au contraire trop pressé, prêt à sauter sans regarder ?"
+      comment: "En PMT, au bord du grand bain, faible hauteur, lui demander : « Mets-toi à l'eau en sautant, comme tu le sens. » On regarde le regard, la main sur le masque, les jambes, et ce qu'il fait une fois dans l'eau. On vérifie soi-même la profondeur et la zone libre avant le saut."
+      adapter:
+        - "Il n'a jamais sauté ou il est inquiet : on commence à l'étape 1, « Découverte en PMT », sans le bloc."
+        - "Il saute droit en PMT et dégage la zone : on passe à l'étape 2, « Saut droit en scaphandre »."
+        - "Il saute déjà proprement en scaphandre : on passe à l'étape 3, « Hauteur plus importante », puis à l'étape 4."
+        - "Il saute sans regarder ni attendre : on insiste sur les vérifications dès l'étape 1, puis sur l'attente du feu vert à l'étape 4."
+    bilan:
+      situation: "l'étape 5 : situation réelle (évaluation)"
+      criteres:
+        - "Le saut est maîtrisé : masque et détendeur restent en place."
+        - "Il respecte les consignes du DP et attend le feu vert."
+        - "Il prend en compte la sécurité des autres : zone vérifiée, puis dégagée tout de suite."
+      securite:
+        - "Profondeur suffisante et zone d'eau libre vérifiées avant chaque saut."
+        - "Jamais de mise à l'eau sans l'accord du DP ou du GP."
+      eca: "saute sans vérifier que la zone est libre → reprendre l'étape 4"
+  "Bascule arrière":
+    evaluer:
+      question: "Comment l'élève vit-il l'idée de se laisser tomber en arrière dans l'eau, sans voir où il va ?"
+      vecu:
+        - "A-t-il fait son baptême depuis un pneumatique ? A-t-il basculé, ou est-il entré autrement ?"
+        - "A-t-il déjà fait des chutes arrière (plongeon, jeux de piscine, kayak) ?"
+        - "Est-il déjà monté sur un pneumatique en mer ?"
+      sait:
+        - "Sait-il pourquoi on rentre le menton et on tient masque et détendeur ?"
+        - "A-t-il des idées fausses ? Par exemple : « on bascule chacun quand on est prêt », ou « on ne peut pas se faire mal en tombant dans l'eau »."
+        - "Sait-il qu'il faut s'écarter du bateau aussitôt ?"
+      esprit:
+        - "Est-il inquiet de ne pas voir derrière lui, ou de se retrouver la tête en bas ?"
+        - "Se crispe-t-il au moment de basculer ?"
+      comment: "En PMT, assis au bord de la piscine, dos à l'eau, lui demander : « Laisse-toi basculer en arrière, en gardant ton masque. » Avant, on vérifie avec lui la zone libre. On regarde le menton, la main sur le masque et sa façon de retrouver la surface."
+      adapter:
+        - "Il n'a jamais basculé ou il est inquiet : on commence à l'étape 1, « Découverte en PMT »."
+        - "Il bascule calmement en PMT : on passe à l'étape 2, « Bascule en scaphandre »."
+        - "Il bascule déjà proprement en scaphandre : on passe à l'étape 3, « Depuis une embarcation »."
+        - "Il a déjà basculé d'un pneumatique : on vérifie la bascule au signal, puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 5 : situation réelle (évaluation)"
+      criteres:
+        - "La bascule est maîtrisée : rien ne se décroche, il refait surface calmement."
+        - "Il bascule au signal, avec les autres, en respectant les consignes."
+        - "Il se soucie de la sécurité des autres : il s'écarte du bateau et rejoint le regroupement."
+      securite:
+        - "La zone est confirmée libre avant de basculer : il regarde par-dessus l'épaule, le moniteur confirme."
+        - "Les conditions restent celles que le DP juge compatibles avec un débutant."
+      eca: "bascule avant le signal → reprendre l'étape 3"
+  "Départ plage":
+    evaluer:
+      question: "Que sait déjà l'élève de l'entrée dans l'eau depuis une plage, avec palmes et bloc ?"
+      vecu:
+        - "A-t-il fait du snorkeling ou de la randonnée palmée depuis une plage ?"
+        - "A-t-il l'habitude des vagues, des galets ou des fonds rocheux (baignade, surf) ?"
+        - "A-t-il déjà marché avec un bloc sur le dos hors de l'eau ?"
+      sait:
+        - "Sait-il comment on se déplace palmes aux pieds ?"
+        - "A-t-il des idées fausses ? Par exemple : « on chausse ses palmes sur le sable », ou « on met le détendeur en bouche une fois au large »."
+        - "Sait-il qu'une vague peut le déséquilibrer avec le poids du bloc ?"
+      esprit:
+        - "Craint-il de tomber ou d'être roulé par une vague ?"
+        - "Accepte-t-il de s'appuyer sur un équipier ?"
+      comment: "En PMT, sur une plage calme à fond régulier, lui demander : « Mets-toi à l'eau et chausse tes palmes. » On regarde où il chausse ses palmes, comment il se déplace et s'il cherche un appui. On l'arrête s'il marche en avant palmes aux pieds."
+      adapter:
+        - "Il ne connaît pas la technique : on commence à l'étape 1, « Découverte en PMT »."
+        - "Il entre proprement en PMT : on passe à l'étape 2, « Départ plage en scaphandre »."
+        - "Il est à l'aise en scaphandre sur fond régulier : on passe à l'étape 3, « Fond irrégulier ou léger ressac »."
+        - "Il craint les vagues : on reste sur plage calme aux étapes 1 et 2, et on travaille l'étape 4, « Retour à la plage », avant le ressac."
+    bilan:
+      situation: "l'étape 5 : situation réelle (évaluation), depuis une plage en milieu naturel"
+      criteres:
+        - "Le départ et le retour sont maîtrisés, sans chute ni perte de matériel."
+        - "Il s'entraide avec ses équipiers : appui pour chausser et retirer les palmes, équipiers attendus."
+        - "Il respecte les consignes du DP."
+      securite:
+        - "On ne marche jamais en avant avec les palmes aux pieds : on recule ou on avance de côté."
+        - "Masque en place et détendeur en bouche avant d'entrer dans la zone où les vagues cassent."
+        - "Le DP juge les conditions."
+      eca: "chausse ses palmes trop tôt et chute → reprendre l'étape 2"
+  "Sortir de l'eau":
+    evaluer:
+      question: "Comment l'élève sort-il de l'eau aujourd'hui, et que sait-il de la sortie sur une embarcation ?"
+      vecu:
+        - "A-t-il fait son baptême depuis un bateau ? Comment est-il remonté à bord ?"
+        - "A-t-il déjà retiré son bloc-gilet dans l'eau, ou toujours au bord ?"
+        - "A-t-il l'habitude de remonter sur un bateau ou un ponton (baignade, kayak) ?"
+      sait:
+        - "Sait-il qu'on gonfle le gilet avant de défaire les sangles ?"
+        - "A-t-il des idées fausses ? Par exemple : « on remonte à l'échelle avec tout son matériel », ou « on peut retirer son masque dès qu'on est en surface »."
+        - "Sait-il que l'ordre de passage du matériel est donné par le GP ou le pilote ?"
+      esprit:
+        - "Est-il fatigué ou pressé de sortir en fin de plongée ?"
+        - "Craint-il de perdre son matériel ou de ne pas réussir à remonter sur le support ?"
+      comment: "En piscine, au bord, en fin de séance, lui demander : « Sors de l'eau avec ton matériel. » On regarde s'il gonfle son gilet, s'il garde une main sur le bloc et comment il le passe. On l'arrête s'il défait ses sangles gilet vide."
+      adapter:
+        - "Il ne sait pas retirer son bloc-gilet en surface : on commence à l'étape 1, « Retirer son bloc-gilet en surface »."
+        - "Il retire son bloc-gilet sans le lâcher : on passe à l'étape 2, « Passer le matériel au support »."
+        - "Il passe déjà son matériel et remonte seul : on passe à l'étape 3, « Embarcation en milieu naturel »."
+        - "Il est pressé ou fatigué : on travaille l'attente calme de l'étape 4, « Plusieurs plongeurs, léger clapot »."
+    bilan:
+      situation: "l'étape 5 : situation réelle (évaluation)"
+      criteres:
+        - "Le retrait du bloc-gilet et le passage au support sont maîtrisés."
+        - "Il respecte les consignes du DP, du GP ou du pilote."
+        - "Il se soucie des autres : il attend son tour et aide si besoin."
+      securite:
+        - "Gilet gonflé avant de défaire les sangles, pour que le bloc flotte."
+        - "Rien n'est lâché avant que la personne à bord ait pris le matériel."
+        - "Masque en place tant qu'il est dans l'eau."
+        - "Jamais près de l'arrière du bateau sans l'accord du pilote."
+      eca: "lâche son bloc avant qu'on l'ait pris → reprendre l'étape 2"
+
+N1-immerger:
+  "Phoque":
+    evaluer:
+      question: "De quelles ressources l'élève dispose-t-il pour s'immerger en phoque, sans palmer ?"
+      vecu:
+        - "A-t-il déjà fait de l'apnée, ou plongé au fond d'une piscine ?"
+        - "A-t-il eu mal aux oreilles lors de son baptême ou en allant chercher un objet au fond ?"
+        - "Lors de son baptême, a-t-il eu du mal à descendre ?"
+      sait:
+        - "Sait-il équilibrer ses oreilles, et à quel moment ?"
+        - "A-t-il des idées fausses ? Par exemple : « on descend en palmant vers le bas », ou « si ça fait mal, il faut forcer un peu »."
+        - "Sait-il que l'expiration aide à descendre ?"
+      esprit:
+        - "Appréhende-t-il la descente, la profondeur ou la douleur aux oreilles ?"
+        - "A-t-il tendance à se précipiter, ou à bloquer sa respiration ?"
+      comment: "En PMT, à faible profondeur, le long d'un mur ou d'une échelle, lui demander : « Descends de quelques mètres sans palmer. » On regarde la position, l'expiration et le moment où il équilibre ses oreilles. On surveille depuis la surface et on vérifie qu'il ne s'hyperventile pas avant."
+      adapter:
+        - "Il ne connaît pas la technique ou il équilibre mal : on commence à l'étape 1, « Phoque en PMT »."
+        - "Il descend en phoque en PMT : on passe à l'étape 2, « Phoque en scaphandre le long d'un repère »."
+        - "Il descend avec le bloc mais doit palmer ou se sent lourd : on travaille l'étape 3, « Lestage et équilibre à 3 m »."
+        - "Il est inquiet pour ses oreilles : on reste le long d'un repère, plus lentement, avant la pleine eau de l'étape 4."
+    bilan:
+      situation: "l'étape 5 : à la commande du GP (évaluation)"
+      criteres:
+        - "Il s'immerge sans délai au signe du GP, en PMT comme en scaphandre."
+        - "Il reste près du GP."
+        - "Ses oreilles sont équilibrées."
+      securite:
+        - "Pas d'hyperventilation avant l'apnée."
+        - "En cas de douleur, on s'arrête et on remonte un peu. On ne force jamais."
+        - "En PMT, faible profondeur et surveillance permanente depuis la surface."
+      eca: "doit palmer pour démarrer la descente → reprendre l'étape 3"
+  "Canard":
+    evaluer:
+      question: "Que sait déjà faire l'élève pour s'immerger en canard, tête la première ?"
+      vecu:
+        - "A-t-il déjà fait des canards en natation, en apnée ou en snorkeling ?"
+        - "Va-t-il volontiers chercher un objet au fond d'une piscine ?"
+        - "A-t-il eu mal aux oreilles en descendant tête en bas ?"
+      sait:
+        - "Sait-il que c'est le poids des jambes hors de l'eau qui le fait descendre ?"
+        - "A-t-il des idées fausses ? Par exemple : « on palme fort dès le départ pour descendre », ou « on équilibre une fois au fond »."
+        - "Sait-il que, tête en bas, les oreilles se compriment vite ?"
+      esprit:
+        - "Est-il à l'aise la tête en bas, ou désorienté ?"
+        - "Appréhende-t-il de toucher le fond ou de remonter trop vite ?"
+      comment: "En PMT, en petit fond, lui demander : « Va toucher le fond en partant de la surface. » On regarde la bascule du buste, les jambes, le palmage en surface et le moment où il équilibre. On surveille depuis la surface et on vérifie qu'il ne s'hyperventile pas."
+      adapter:
+        - "Il plie mal le buste ou palme en surface : on commence à l'étape 1, « Découverte en PMT »."
+        - "Il fait un canard correct mais peu efficace : on passe à l'étape 2, « Canard en PMT jusqu'au fond »."
+        - "Il est efficace en PMT : on passe à l'étape 3, « Canard en scaphandre »."
+        - "Il est désorienté tête en bas : on garde un repère et une faible profondeur avant la pleine eau de l'étape 4."
+    bilan:
+      situation: "l'étape 5 : à la commande du GP (évaluation)"
+      criteres:
+        - "Il applique sans délai la technique annoncée par le GP."
+        - "Il reste près du GP."
+        - "Sa descente est contrôlée, oreilles équilibrées."
+      securite:
+        - "Pas d'hyperventilation."
+        - "En PMT, profondeur modérée et surveillance depuis la surface par un équipier ou le moniteur."
+        - "Équilibrer tôt, ne jamais forcer."
+      eca: "heurte le fond en passant à l'horizontale → reprendre l'étape 3"
+
+N1-milieu:
+  "Aisance aquatique":
+    evaluer:
+      question: "Comment l'élève évolue-t-il près du fond, et quel regard porte-t-il sur le milieu ?"
+      vecu:
+        - "A-t-il fait du snorkeling ou de la randonnée palmée en mer ?"
+        - "Lors de son baptême, a-t-il touché le fond ou les animaux, ou s'est-il fait tenir ?"
+        - "Connaît-il déjà la faune et la flore locales ?"
+      sait:
+        - "Sait-il se déplacer sans s'aider des mains ni du fond ?"
+        - "A-t-il des idées fausses ? Par exemple : « toucher un poisson ou une étoile de mer, ce n'est pas grave », ou « un coquillage vide, on peut le rapporter »."
+        - "Connaît-il les espèces piquantes ou urticantes du lieu ?"
+      esprit:
+        - "Est-il curieux du milieu, ou concentré sur ses sensations et son matériel ?"
+        - "Craint-il certains animaux, ou au contraire veut-il les approcher ?"
+      comment: "En piscine, en petit fond, lui demander : « Va jusqu'au bout du bassin, juste au-dessus du fond. » On regarde s'il touche le fond ou les parois, s'il s'aide des mains et s'il soulève des sédiments. Avant une première sortie, on lui demande ce qu'il ferait face à un animal."
+      adapter:
+        - "Il s'aide des mains ou touche le fond : on commence à l'étape 1, « Déplacements sans appui »."
+        - "Il se déplace sans appui : on passe à l'étape 2, « Parcours précis »."
+        - "Il est précis en piscine : on passe à l'étape 3, « Premières plongées en milieu naturel »."
+        - "Il est surtout occupé par lui-même : on attend l'étape 4 pour développer l'observation, d'abord guidée."
+    bilan:
+      situation: "l'étape 5 : comportement en plongée (évaluation)"
+      criteres:
+        - "Son comportement est respectueux et responsable tout au long de la plongée."
+        - "Aucun contact avec le fond ou les êtres vivants, distance respectée."
+        - "Il signale ses observations sans trop s'approcher."
+      securite:
+        - "Les dangers du milieu local (espèces piquantes ou urticantes, froid) sont présentés avant la plongée."
+      eca: "se pose sur le fond pour observer → reprendre l'étape 2"
+
+N1-propulser:
+  "Palmage ventral en surface":
+    evaluer:
+      question: "Sur quelles bases l'élève peut-il construire un palmage ventral ample et efficace en surface ?"
+      vecu:
+        - "A-t-il déjà palmé : snorkeling en vacances, nage avec palmes, baptême, apnée ?"
+        - "Est-il nageur ? Pratique-t-il le crawl, avec un battement de jambes rapide et genoux pliés ?"
+        - "A-t-il l'habitude du PMT, ou découvre-t-il le masque et le tuba ensemble ?"
+      sait:
+        - "Sait-il que la force vient de la hanche, jambes presque tendues, et non du genou ?"
+        - "A-t-il des idées fausses ? Par exemple : « plus je palme vite, plus j'avance », ou « des palmes plus longues, c'est toujours mieux »."
+        - "Sait-il qu'il faut lever la tête de temps en temps pour garder sa direction ?"
+      esprit:
+        - "Est-il à l'aise, le visage dans l'eau, ou relève-t-il souvent la tête ?"
+        - "Cherche-t-il la vitesse, au risque de s'essouffler, ou ose-t-il à peine avancer ?"
+      comment: "En piscine, en PMT, lui demander une longueur de bassin à son rythme, sans consigne technique. On l'observe de côté et sous l'eau : genoux qui plient, palmes qui sortent de l'eau, tête qui se relève, ventilation sur le tuba."
+      adapter:
+        - "Il pédale ou frappe la surface : on commence à l'étape 1, « Le geste, tenu au bord »."
+        - "Le geste est correct mais la trajectoire ou la ventilation se dégrade : on passe à l'étape 2, « Courte distance »."
+        - "Il tient déjà une longueur proprement et calmement : on passe à l'étape 3, « Allonger la distance »."
+        - "Il est gêné par le visage dans l'eau : on reprend d'abord la ventilation sur tuba au bord, puis l'étape 1."
+    bilan:
+      situation: "l'étape 5 : parcours de surface de l'ordre de 100 m en PMT, sans chronomètre"
+      criteres:
+        - "Le geste est de qualité : ample, parti de la hanche, palmes sous la surface."
+        - "Le palmage est efficace : il avance droit et garde sa direction."
+        - "Il termine sans essoufflement."
+      securite: []
+      eca: "s'essouffle en fin de parcours en accélérant le rythme → reprendre l'étape 3"
+
+  "Palmage dorsal":
+    evaluer:
+      question: "De quelles ressources l'élève dispose-t-il pour palmer sur le dos, sans voir où il va ?"
+      vecu:
+        - "Nage-t-il le dos crawlé, ou fait-il la planche facilement ?"
+        - "A-t-il déjà palmé sur le dos, par exemple en snorkeling ou lors d'un baptême ?"
+        - "A-t-il pratiqué un sport où l'on se repère sans voir devant soi (aviron, dos crawlé) ?"
+      sait:
+        - "Sait-il que le geste repose sur les mêmes principes qu'en ventral : jambes presque tendues, appui de la palme ?"
+        - "A-t-il une idée fausse ? Par exemple : « sur le dos, on pédale comme à vélo »."
+        - "Sait-il à quoi sert le dorsal en plongée, notamment pour le retour au bateau capelé ?"
+      esprit:
+        - "Est-il détendu sur le dos, ou inquiet d'avoir de l'eau sur le visage ?"
+        - "Est-il gêné de ne pas voir où il va ?"
+      comment: "En piscine, sur le dos avec une planche ou le gilet gonflé, lui demander de palmer sur une demi-longueur. On observe les genoux, les éclaboussures en surface, la trajectoire et la façon dont il vérifie sa direction."
+      adapter:
+        - "Ses genoux sortent de l'eau ou ses palmes frappent la surface : on commence à l'étape 1, « Le geste sur le dos »."
+        - "Le geste est propre mais il dévie : on passe à l'étape 2, « Garder sa direction »."
+        - "Il avance droit et régulier : on passe à l'étape 3, « Distance plus longue »."
+        - "Il est mal à l'aise sur le dos : on garde plus longtemps une flottabilité ajoutée et une distance courte."
+    bilan:
+      situation: "l'étape 4 : retour au bateau capelé sur le dos, en lien avec la nage capelée"
+      criteres:
+        - "Le geste est de qualité : genoux dans l'eau, palmes qui ne frappent pas la surface."
+        - "Le palmage est efficace : il garde sa direction en regardant par-dessus l'épaule."
+        - "Il termine sans essoufflement."
+      securite: []
+      eca: "dévie sans vérifier sa direction → reprendre l'étape 2"
+
+  "Palmage de sustentation":
+    evaluer:
+      question: "L'élève sait-il déjà se maintenir la tête hors de l'eau sans appui, et avec quel geste ?"
+      vecu:
+        - "Sait-il faire du surplace en nage, avec ou sans palmes (rétropédalage, waterpolo, natation synchronisée) ?"
+        - "A-t-il déjà attendu en surface, en mer, sans pouvoir s'accrocher (snorkeling, baptême) ?"
+        - "Est-il à l'aise en grand bain, sans pied ?"
+      sait:
+        - "Sait-il que le geste pousse l'eau vers le bas pour maintenir la tête hors de l'eau ?"
+        - "A-t-il une idée fausse ? Par exemple : « on tient avec les bras », ou « il suffit de gonfler le gilet, la sustentation ne sert à rien »."
+      esprit:
+        - "Est-il serein loin du bord, ou cherche-t-il vite un appui ?"
+        - "S'agite-t-il dès que l'eau monte au menton ?"
+      comment: "En PMT, grand bain, lui demander de rester à la verticale, la tête hors de l'eau, pendant qu'on échange quelques phrases avec lui, d'abord près du bord. On observe le geste des jambes, l'usage des mains, la ventilation et la tranquillité du regard."
+      adapter:
+        - "Il ne tient qu'en s'accrochant ou en brassant fort avec les bras : on commence à l'étape 1, « Découverte avec appui »."
+        - "Il tient au bord en relâchant les mains : on passe à l'étape 2, « Sans appui »."
+        - "Il tient sans les mains, calmement : on passe à l'étape 3, « En scaphandre »."
+        - "Il est inquiet en grand bain : on reste longtemps à l'étape 1, près du bord, et on le rassure."
+    bilan:
+      situation: "l'étape 4 : attente en surface et regroupement de la palanquée en milieu naturel"
+      criteres:
+        - "La sustentation est efficace : tête hors de l'eau, sans besoin de s'accrocher."
+        - "Il l'utilise à bon escient pour libérer ses mains."
+        - "Il reste sans essoufflement."
+      securite:
+        - "En scaphandre, le gilet reste gonflable à tout moment."
+        - "Le moniteur est à côté pendant l'apprentissage en scaphandre."
+      eca: "s'essouffle en ajustant son masque en surface → reprendre l'étape 3"
+
+  "Palmage en immersion":
+    evaluer:
+      question: "Comment l'élève se déplace-t-il déjà sous l'eau, et quelles habitudes faudra-t-il garder ou corriger ?"
+      vecu:
+        - "A-t-il fait un baptême ? Se laissait-il guider par la main, ou palmait-il seul ?"
+        - "A-t-il pratiqué l'apnée ou le snorkeling, avec des descentes et des déplacements sous l'eau ?"
+        - "Est-il nageur ? A-t-il le réflexe de brasser avec les bras ?"
+      sait:
+        - "Sait-il que l'effort fait consommer plus d'air ?"
+        - "A-t-il une idée fausse ? Par exemple : « on nage avec les bras sous l'eau », ou « palmer vite pour suivre, c'est sans conséquence »."
+        - "Sait-il qu'un palmage près du fond soulève le sédiment et abîme le milieu ?"
+      esprit:
+        - "Est-il détendu sous l'eau, ou crispé, avec des gestes saccadés ?"
+        - "Veut-il aller vite et voir beaucoup, ou reste-t-il collé au fond ?"
+      comment: "En petit fond, gilet réglé avec l'aide du moniteur, lui demander de le suivre sur un court trajet. On observe la position du corps, l'amplitude du palmage, les bras, la ventilation et la distance au fond."
+      adapter:
+        - "Il est vertical, touche le fond ou palme genoux pliés : on commence à l'étape 1, « Découverte à faible profondeur »."
+        - "Il avance à l'horizontale mais s'aide des bras ou s'essouffle : on passe à l'étape 2, « Économiser son effort »."
+        - "Il se déplace calmement, bras immobiles : on passe à l'étape 3, « Trajets près du fond »."
+        - "Il est crispé sous l'eau : on reste à l'étape 1, en trajets courts, et on travaille la ventilation en même temps."
+    bilan:
+      situation: "l'étape 5 : déplacements autonomes, plongées en milieu naturel, en palanquée"
+      criteres:
+        - "Le palmage est efficace et l'effort est géré."
+        - "Il reste près du GP et respecte sa profondeur."
+        - "Il ne touche pas le fond et ne soulève pas de sédiment."
+      securite: []
+      eca: "s'éloigne du GP et change de profondeur sans s'en rendre compte → reprendre l'étape 4"
+
+  "Nage en capelé":
+    evaluer:
+      question: "L'élève est-il prêt à nager en surface avec le bloc sur le dos, et dans quelle position ?"
+      vecu:
+        - "A-t-il déjà nagé capelé, par exemple après un baptême en mer, pour rejoindre le bateau ?"
+        - "Comment palme-t-il en PMT, en ventral et en dorsal ?"
+        - "A-t-il déjà ressenti la fatigue d'une nage en surface avec du clapot ?"
+      sait:
+        - "Sait-il que le gilet doit rester gonflé en surface pendant la nage ?"
+        - "A-t-il une idée fausse ? Par exemple : « avec le bloc, on nage comme sans », ou « il faut forcer pour arriver vite au bateau »."
+        - "Sait-il qu'il peut choisir le ventral ou le dorsal selon ce qui lui coûte le moins ?"
+      esprit:
+        - "Est-il à l'aise avec le poids et l'encombrement du scaphandre en surface ?"
+        - "Craint-il de s'essouffler, ou va-t-il partir trop vite ?"
+      comment: "En piscine, capelé, gilet gonflé, lui demander une demi-longueur dans la position de son choix. On observe la position adoptée, la qualité du geste, la ventilation et l'état à l'arrivée."
+      adapter:
+        - "Il avance mal ou s'essouffle vite : on commence à l'étape 1, « Découverte en piscine »."
+        - "Il avance bien mais n'a essayé qu'une position : on passe à l'étape 2, « Choisir sa position »."
+        - "Il connaît sa position et tient une longueur calmement : on passe à l'étape 3, « Jusqu'à environ 50 m »."
+        - "Son palmage en PMT est encore fragile : on reprend d'abord le palmage ventral ou dorsal."
+    bilan:
+      situation: "l'étape 5 : parcours de surface de l'ordre de 50 m capelé, en simulation de retour au bateau, sans chronomètre"
+      criteres:
+        - "Le geste est de qualité et efficace."
+        - "Il garde une ventilation calme et termine sans essoufflement."
+      securite:
+        - "Le gilet reste gonflé en surface pendant toute la nage."
+      eca: "part trop vite et finit essoufflé → reprendre l'étape 2"
+
+N1-ventiler:
+  "Ventilation en immersion":
+    evaluer:
+      question: "Comment l'élève respire-t-il déjà sur détendeur, et que croit-il savoir sur la respiration sous l'eau ?"
+      vecu:
+        - "A-t-il fait un baptême ? Comment s'est passée la première respiration sous l'eau ?"
+        - "Pratique-t-il l'apnée, le snorkeling, le chant, le yoga ou un sport d'endurance, où l'on travaille le souffle ?"
+        - "A-t-il déjà été essoufflé dans l'eau, ou vécu une sensation de manque d'air ?"
+      sait:
+        - "Sait-il qu'en scaphandre on ne bloque jamais sa respiration ?"
+        - "A-t-il des idées fausses ? Par exemple : « il faut économiser l'air en respirant le moins possible », ou « il faut retenir sa respiration pour descendre »."
+        - "Sait-il que l'expiration complète aide à garder un rythme calme ?"
+      esprit:
+        - "Est-il serein, ou appréhende-t-il de respirer sous l'eau ?"
+        - "Respire-t-il vite et court dès qu'il est immergé ?"
+      comment: "En petit fond, d'abord tête dans l'eau debout, puis à genoux, lui demander de respirer tranquillement sur le détendeur. On observe le rythme, l'amplitude, la durée de l'expiration, les bulles, le regard et les signes de crispation."
+      adapter:
+        - "Il découvre le détendeur ou respire vite et court : on commence à l'étape 1, « Découverte du détendeur »."
+        - "Il respire calmement à genoux mais s'accélère parfois : on passe à l'étape 2, « Volume courant et apnées de contrôle »."
+        - "Sa ventilation reste calme au fond : on passe à l'étape 3, « En déplacement »."
+        - "Il est inquiet : on reste debout, tête dans l'eau, le temps qu'il faut, avant de descendre à genoux."
+    bilan:
+      situation: "l'étape 5 : effort normal à modéré dans la zone 0-6 m, face à un léger courant ou au retour au bateau"
+      criteres:
+        - "Sa ventilation est gérée et régulée pendant l'effort."
+        - "Elle reste dans la zone de confort."
+      securite:
+        - "En scaphandre, on ne bloque jamais sa respiration."
+      eca: "ne revient pas seul à une ventilation calme après l'effort → reprendre l'étape 4"
+
+  "Ventilation sur tuba et vidage du tuba":
+    evaluer:
+      question: "L'élève sait-il déjà respirer sur tuba, le visage dans l'eau, et chasser l'eau qui y entre ?"
+      vecu:
+        - "A-t-il fait du snorkeling en vacances, ou de l'apnée ?"
+        - "A-t-il déjà avalé de l'eau par le tuba ? Comment a-t-il réagi ?"
+        - "Est-il nageur, habitué à respirer en tournant la tête, plutôt que visage dans l'eau ?"
+      sait:
+        - "Sait-il qu'on vide le tuba par une expiration forte ?"
+        - "Sait-il qu'il faut toujours une inspiration prudente après un vidage ?"
+        - "A-t-il une idée fausse ? Par exemple : « l'eau ne peut pas entrer dans le tuba », ou « il faut relever la tête pour le vider »."
+      esprit:
+        - "Est-il détendu, le visage dans l'eau, ou relève-t-il la tête au moindre doute ?"
+        - "Garde-t-il un mauvais souvenir d'une gorgée d'eau ?"
+      comment: "Au bord, en PMT, lui demander de respirer la tête dans l'eau, puis d'immerger la tête quelques secondes et de revenir. On observe s'il expire franchement, s'il inspire prudemment et s'il relève la tête ou tousse."
+      adapter:
+        - "Il relève souvent la tête ou respire de façon saccadée : on commence à l'étape 1, « Respirer sur tuba »."
+        - "Il respire calmement mais ne sait pas vider : on passe à l'étape 2, « Vidage par expiration »."
+        - "Il vide d'un souffle au bord : on passe à l'étape 3, « Après une immersion en PMT »."
+        - "Il garde un mauvais souvenir d'une gorgée d'eau : on rassure et on prend plus de temps à l'étape 1."
+    bilan:
+      situation: "l'étape 4 : palmage en surface en milieu naturel, léger clapot, entrée d'eau inattendue"
+      criteres:
+        - "Il vide son tuba sans s'arrêter."
+        - "Il continue sans s'affoler."
+        - "Sa ventilation reste gérée pendant l'effort."
+      securite:
+        - "Toujours une inspiration prudente après un vidage."
+      eca: "s'arrête et relève la tête à chaque entrée d'eau → reprendre l'étape 3"
+
+  "Vidage du masque":
+    evaluer:
+      question: "Comment l'élève vit-il l'eau sur le visage et dans le masque, et sait-il déjà le vider ?"
+      vecu:
+        - "A-t-il fait un baptême ? A-t-il eu de l'eau dans le masque, et comment a-t-il réagi ?"
+        - "Nage-t-il sans pince-nez ? Est-il gêné par l'eau dans le nez ?"
+        - "A-t-il pratiqué le snorkeling ou l'apnée, avec un masque qui prend l'eau ?"
+      sait:
+        - "Sait-il qu'on vide le masque en soufflant par le nez, tête légèrement relevée, en appuyant sur le haut du masque ?"
+        - "A-t-il une idée fausse ? Par exemple : « avec de l'eau dans le masque, il faut remonter », ou « on ne peut pas respirer par la bouche quand le nez est dans l'eau »."
+        - "Sait-il qu'il faut souffler un peu d'air par le nez en descente pour éviter le placage de masque ?"
+      esprit:
+        - "Est-il serein, ou l'idée de l'eau dans le masque l'angoisse-t-elle ?"
+        - "A-t-il le réflexe de retenir son souffle ou de remonter quand l'eau touche son nez ?"
+      comment: "En surface ou en petit fond, masque relevé, lui demander de respirer par la bouche le nez dans l'eau. Selon son aisance, lui demander ensuite de laisser entrer un peu d'eau dans le masque et de le vider. On observe la ventilation, le geste et les signes de stress, et on arrête au moindre malaise."
+      adapter:
+        - "Il est gêné par l'eau dans le nez : on commence à l'étape 1, « Respirer le nez dans l'eau »."
+        - "Il respire calmement le nez dans l'eau mais ne connaît pas le geste : on passe à l'étape 2, « Masque entrouvert »."
+        - "Il vide un peu d'eau sans difficulté : on passe à l'étape 3, « Masque à moitié puis plein »."
+        - "Il est très appréhensif : on reste à l'étape 1, à faible profondeur, et on avance par petits pas sans jamais le surprendre."
+    bilan:
+      situation: "l'étape 6 : situations variées dans la zone 0-6 m, dont le retrait et la remise du masque, sans situation brutale"
+      criteres:
+        - "Il vide son masque sans stress."
+        - "Il le fait y compris après retrait et remise."
+        - "Sa ventilation reste maintenue."
+      securite:
+        - "Jamais de situation brutale : masque arraché ou inondation surprise."
+        - "Le masque est retiré par l'élève lui-même, à faible profondeur, moniteur au contact."
+        - "Si l'élève stresse, on arrête et on rassure."
+      eca: "cherche à remonter quand le masque est plein → reprendre l'étape 3"
+
+  "Lâcher et reprise d'embout":
+    evaluer:
+      question: "L'élève sait-il déjà lâcher et reprendre son embout, et comprend-il pourquoi on laisse toujours sortir l'air ?"
+      vecu:
+        - "A-t-il fait un baptême ? Lui a-t-on fait lâcher l'embout ?"
+        - "Pratique-t-il l'apnée, en piscine ou en snorkeling ? Est-il habitué à bloquer sa respiration ?"
+        - "A-t-il déjà avalé de l'eau en remettant un embout ou un tuba ?"
+      sait:
+        - "Sait-il qu'il faut souffler un filet d'air quand l'embout est hors de la bouche ?"
+        - "Connaît-il les deux techniques de vidage : expiration et bouton de surpression ?"
+        - "A-t-il une idée fausse ? Par exemple : « on retient sa respiration le temps de reprendre l'embout », comme en apnée."
+      esprit:
+        - "Est-il serein à l'idée de rester quelques secondes sans détendeur, ou inquiet de manquer d'air ?"
+        - "Se précipite-t-il pour remettre l'embout ?"
+      comment: "À genoux en petit fond, moniteur à côté, lui demander de retirer l'embout, puis de le remettre et de reprendre sa respiration, à sa façon. On observe s'il souffle ou bloque, comment il vide l'embout et s'il inspire prudemment."
+      adapter:
+        - "Il bloque sa respiration ou avale de l'eau : on commence à l'étape 1, « Lâcher et vidage par expiration »."
+        - "Il vide par expiration mais ne connaît pas le bouton : on passe à l'étape 2, « Vidage par le bouton de surpression »."
+        - "Il maîtrise les deux vidages à genoux : on passe à l'étape 3, « En déplacement »."
+        - "Il est inquiet : on fait des lâchers très brefs, à genoux, avant d'allonger."
+    bilan:
+      situation: "l'étape 5 : plongées dans la zone 0-6 m"
+      criteres:
+        - "Il maîtrise le lâcher-reprise avec les deux techniques de vidage."
+        - "Il se déplace quelques mètres en apnée inspiratoire et expiratoire sans difficulté."
+        - "Il reprend son embout et une ventilation calme."
+      securite:
+        - "Embout hors de la bouche, il laisse toujours sortir l'air."
+        - "Apnées en déplacement strictement horizontal, à profondeur constante : jamais de remontée en apnée."
+        - "Le moniteur est à côté avec son octopus pendant les apnées."
+      eca: "bloque sa respiration quand l'embout est hors de la bouche → reprendre l'étape 1"
+
+N1-equilibrer:
+  "Poumon ballast":
+    evaluer:
+      question: "Que sait déjà l'élève de l'effet de sa respiration sur sa flottabilité ?"
+      vecu:
+        - "Pratique-t-il l'apnée, la natation ou la nage avec palmes ? A-t-il déjà senti qu'il coule en vidant ses poumons ?"
+        - "Au baptême, l'a-t-on maintenu au fond, ou a-t-il déjà évolué seul en pleine eau ?"
+        - "A-t-il fait la planche en piscine ou à la mer, en sentant le corps monter à l'inspiration ?"
+      sait:
+        - "Sait-il ce que veulent dire flotter, couler et être neutre ?"
+        - "A-t-il des idées fausses ? Par exemple : « on reste au fond grâce aux plombs, la respiration n'y change rien », ou « pour monter, on palme »."
+        - "Fait-il le lien entre le volume de ses poumons et sa flottabilité ?"
+      esprit:
+        - "Est-il détendu, ou crispé au point de garder les poumons pleins sans s'en rendre compte ?"
+        - "Cherche-t-il à se rattraper avec les mains ou les palmes dès qu'il bouge ?"
+      comment: "En petit fond, allongé ou à genoux, gilet réglé par le moniteur près de l'équilibre, lui demander : « Sans les mains, essaie de monter un peu puis de redescendre. » On regarde s'il joue sur l'amplitude de sa ventilation, ou s'il palme, s'aide des mains ou cherche l'inflateur."
+      adapter:
+        - "Il ne fait pas le lien entre ventilation et flottabilité : on commence à l'étape 1, « Sentir l'effet de la ventilation »."
+        - "Il fait monter son buste mais décolle en s'aidant des mains : on passe à l'étape 2, « Décoller et se reposer »."
+        - "Il décolle et se repose sans aide : on vérifie l'étape 2, puis on passe à l'étape 3, « En pleine eau, statique »."
+        - "Il est crispé et bloque sa ventilation : on reste plus longtemps à l'étape 1, au fond, en insistant sur l'expiration."
+    bilan:
+      situation: "l'étape 5 : à la demande du GP, situations répétées et variées, statiques et dynamiques"
+      criteres:
+        - "Il maintient une profondeur stable à plus ou moins 1 m sur poumon ballast."
+        - "Il y parvient en statique comme en déplacement, à la demande."
+        - "Il corrige par l'amplitude de sa ventilation, sans toucher le gilet ni palmer pour compenser."
+      securite: []
+      eca: "touche le gilet pour corriger en déplacement → reprendre l'étape 4"
+
+  "Gestion du gilet de stabilisation":
+    evaluer:
+      question: "Quelle idée l'élève se fait-il du gilet, et sait-il déjà s'en servir ?"
+      vecu:
+        - "Au baptême, était-ce le moniteur qui gérait son gilet ?"
+        - "A-t-il déjà porté un gilet de sauvetage, en voile ou en kayak, qu'il pourrait confondre avec le gilet de plongée ?"
+        - "A-t-il déjà vu des purges, ou n'a-t-il jamais touché que l'inflateur ?"
+      sait:
+        - "Sait-il localiser l'inflateur et les différentes purges ?"
+        - "A-t-il des idées fausses ? Par exemple : « le gilet sert à remonter », ou « plus on descend, plus il faut de plombs »."
+        - "Sait-il que l'air du gilet se dilate quand on remonte ?"
+      esprit:
+        - "A-t-il peur de couler, au point de garder trop d'air dans le gilet ?"
+        - "Appuie-t-il longuement sur l'inflateur, ou hésite-t-il à s'en servir ?"
+      comment: "Au sec, gilet gréé, lui demander : « Montre-moi comment tu gonfles et comment tu vides ton gilet, debout, puis allongé. » Puis à genoux en petit fond : « Décolle doucement en utilisant ton gilet. » On observe la taille des injections, s'il attend l'effet, et quelle purge il choisit."
+      adapter:
+        - "Il ne connaît pas les commandes : on commence à l'étape 1, « Connaître son gilet »."
+        - "Il connaît les commandes mais ne vide pas entièrement son gilet avant de s'immerger : on passe à l'étape 2, « En surface »."
+        - "Il injecte de grandes quantités d'air et remonte brutalement : on travaille l'étape 3, « Atteindre l'équilibre »."
+        - "Il s'équilibre déjà par petites touches : on passe à l'étape 4, « Variations de profondeur », moniteur à portée de main."
+    bilan:
+      situation: "l'étape 6 : à la demande du GP, situations variées, répétées, statiques et dynamiques"
+      criteres:
+        - "Il obtient l'équilibre à la demande et le tient à plus ou moins 1 m."
+        - "Il anticipe : il purge dès qu'il commence à monter, il injecte quand il s'alourdit."
+        - "Il combine gilet pour le réglage d'ensemble et poumon ballast pour les corrections fines."
+      securite:
+        - "Purger dès qu'on monte, pour éviter une remontée incontrôlée."
+        - "Le moniteur reste à portée de main pendant les variations de profondeur."
+      eca: "réagit trop tard quand il commence à monter → reprendre l'étape 4"
+
+N1-communiquer:
+  "Exécution des signes conventionnels":
+    evaluer:
+      question: "Quels signes l'élève connaît-il déjà, et sait-il les faire et les comprendre ?"
+      vecu:
+        - "Au baptême, quels signes lui a-t-on appris ? En a-t-il utilisé un dans l'eau ?"
+        - "Pratique-t-il un sport où l'on communique par gestes (voile, sports collectifs, chantier) ?"
+        - "A-t-il déjà vu des plongeurs communiquer, en vidéo ou au club ?"
+      sait:
+        - "Connaît-il les dix signes du MFT et la réponse attendue à chacun ?"
+        - "A-t-il des idées fausses ? Par exemple : « pouce levé, ça veut dire OK », ou « ça ne va pas et panne d'air, c'est pareil »."
+        - "Sait-il qu'à chaque signe du GP il doit répondre ?"
+      esprit:
+        - "Est-il à l'aise, ou gêné de faire des gestes devant les autres ?"
+        - "Craint-il de ne pas pouvoir se faire comprendre sous l'eau ?"
+      comment: "Au sec, dans le désordre, le moniteur fait quelques signes et demande : « Qu'est-ce que je te dis, et que me réponds-tu ? » Puis on inverse : « Dis-moi que tu as froid », « Dis-moi que tu es à mi-pression. » On observe l'exactitude, la netteté du geste et le temps de réponse."
+      adapter:
+        - "Il ne connaît que OK, ou confond pouce levé et OK : on commence à l'étape 1, « Découverte au sec »."
+        - "Il connaît les signes mais hésite sur les réponses : on passe à l'étape 2, « Questions et réponses au sec »."
+        - "Il répond juste et vite au sec : on passe à l'étape 3, « Dans l'eau, en statique », avec la lecture du manomètre."
+        - "Il est gêné de faire des gestes : on multiplie les échanges au sec, sous forme de jeu, avant d'aller dans l'eau."
+    bilan:
+      situation: "l'étape 6 : situations variées, statiques, dynamiques, individuelles et en palanquée"
+      criteres:
+        - "Il exécute les signes avec exactitude et promptitude."
+        - "Il comprend les signes du GP et y répond."
+        - "Il prend l'initiative : il signale spontanément mi-pression, froid ou fin d'exercice."
+        - "Ses signes sont nets, faits dans le champ de vision du GP."
+      securite: []
+      eca: "attend que le GP lui demande sa pression → reprendre l'étape 5"
+
+N1-surface:
+  "Maîtrise de la vitesse de remontée":
+    evaluer:
+      question: "Que sait l'élève des dangers d'une remontée trop rapide, et comment remonte-t-il spontanément ?"
+      vecu:
+        - "Au baptême, a-t-il été remonté par le moniteur, ou a-t-il remonté lui-même ?"
+        - "Pratique-t-il l'apnée ou la chasse sous-marine, où l'on remonte vite, en palmant ?"
+        - "A-t-il déjà ressenti une gêne aux oreilles ou aux sinus en remontant ?"
+      sait:
+        - "Sait-il que l'air du gilet et des poumons se dilate en remontant, surtout près de la surface ?"
+        - "A-t-il des idées fausses ? Par exemple : « on remonte en retenant sa respiration », ou « le gilet sert à remonter »."
+        - "A-t-il entendu parler de surpression pulmonaire ou d'accident de désaturation ?"
+      esprit:
+        - "Est-il pressé de retrouver la surface, notamment s'il est inquiet ou a froid ?"
+        - "Est-il à l'aise ou anxieux en pleine eau, sans rien à quoi se tenir ?"
+      comment: "En piscine, depuis 3 m, le long d'un mur ou d'un pendeur, moniteur face à lui et prêt à le tenir, lui demander : « Remonte comme tu le sens. » On observe sa vitesse, s'il purge son gilet, s'il continue de ventiler, et s'il palme fort."
+      adapter:
+        - "Il remonte vite ou bloque sa respiration : on commence à l'étape 1, « Remontée le long d'un repère », en insistant sur la surpression pulmonaire."
+        - "Il remonte lentement mais sans regarder ses instruments : on passe à l'étape 2, « Contrôler sa vitesse avec ses instruments »."
+        - "Il maîtrise sa vitesse le long du repère : on passe à l'étape 3, « En pleine eau, sans repère »."
+        - "Il est inquiet en pleine eau : on reste plus longtemps le long du repère, moniteur au contact."
+    bilan:
+      situation: "l'étape 5 : seul ou en palanquée, remontées de fin de plongée et remontées d'exercice"
+      criteres:
+        - "Il maîtrise sa vitesse aux palmes et au gilet."
+        - "Il y parvient avec et sans repère."
+        - "Il gère sa remontée seul, ou reste au niveau du GP en palanquée."
+      securite:
+        - "On ne bloque jamais sa respiration."
+        - "Le moniteur tient l'élève et freine s'il accélère, tant que la vitesse n'est pas maîtrisée."
+        - "La profondeur augmente progressivement, selon l'encadrement."
+      eca: "accélère en pleine eau, purges tardives → reprendre l'étape 3"
+
+  "Tenue d'un palier":
+    evaluer:
+      question: "L'élève sait-il s'arrêter et rester à une profondeur fixe près de la surface ?"
+      vecu:
+        - "A-t-il déjà fait un palier, au baptême ou lors d'une plongée découverte ?"
+        - "Pratique-t-il l'apnée, où l'on cherche plutôt à rejoindre la surface au plus vite ?"
+        - "Sait-il déjà tenir une profondeur sur poumon ballast et au gilet ?"
+      sait:
+        - "Sait-il à quoi sert un palier ?"
+        - "A-t-il des idées fausses ? Par exemple : « le palier, c'est pour attendre les autres », ou « un palier se fait en se tenant au mouillage »."
+        - "Sait-il lire la profondeur sur son ordinateur ou son profondimètre ?"
+      esprit:
+        - "Est-il impatient de sortir, surtout s'il a froid ou si l'eau bouge ?"
+        - "Est-il gêné par la houle ou le clapot près de la surface ?"
+      comment: "À 3 m, le long d'un pendeur ou d'un mur, lui demander : « Arrête-toi ici et reste à cette profondeur. » On observe s'il tire sur le repère, s'il monte et descend, et s'il jette un œil à sa profondeur."
+      adapter:
+        - "Il s'agrippe au repère ou ne tient pas sa profondeur : on commence à l'étape 1, « Palier le long d'un repère »."
+        - "Il tient sa profondeur sans contact mais ne regarde pas son instrument : on passe à l'étape 2, « Avec son profondimètre »."
+        - "Il tient un palier stable le long du repère : on passe à l'étape 3, « En pleine eau », en palanquée."
+        - "Il est impatient ou a froid : on commence par des paliers courts, et on allonge la durée progressivement."
+    bilan:
+      situation: "l'étape 5 : fins de plongée en palanquée, y compris en pleine eau"
+      criteres:
+        - "Il tient son palier, y compris en pleine eau."
+        - "Il le tient jusqu'au signe du GP, sans remonter ni s'éloigner."
+        - "Il contrôle régulièrement sa profondeur et reste groupé avec la palanquée."
+      securite: []
+      eca: "remonte avant le signe du GP quand il y a du clapot → reprendre l'étape 4"
+
+  "Tour d'horizon":
+    evaluer:
+      question: "L'élève sait-il qu'on peut rencontrer un danger en arrivant en surface, et que fait-il en remontant ?"
+      vecu:
+        - "Au baptême, a-t-il vu le moniteur lever le bras et tourner sur lui-même en remontant ?"
+        - "Pratique-t-il la voile, le kayak ou le jet-ski, et connaît-il la circulation des bateaux près des côtes ?"
+        - "A-t-il déjà remonté sous un obstacle (ligne d'eau, bateau, autre nageur) ?"
+      sait:
+        - "Sait-il ce qu'on cherche en arrivant en surface : bateaux, obstacles, autres plongeurs ?"
+        - "A-t-il des idées fausses ? Par exemple : « on regarde autour de soi une fois sorti », ou « le bateau de plongée nous protège des autres bateaux »."
+        - "Connaît-il le geste : bras levé, rotation complète, regard vers le haut ?"
+      esprit:
+        - "Est-il pressé de sortir la tête, au point d'oublier de regarder ?"
+        - "Le geste lui semble-t-il inutile en piscine ?"
+      comment: "Au sec, lui demander : « Tu arrives près de la surface. Qu'est-ce qui peut t'attendre là-haut, et que fais-tu ? » Puis on l'observe lors de ses remontées d'exercice en piscine, sans rien lui rappeler."
+      adapter:
+        - "Il ne voit pas l'intérêt du geste : on commence à l'étape 1, « Comprendre pourquoi »."
+        - "Il connaît le geste mais l'oublie ou le fait à moitié : on passe à l'étape 2, « En piscine », à chaque remontée."
+        - "Il le fait systématiquement en piscine : on passe à l'étape 3, « En milieu naturel, en palanquée »."
+        - "Il le fait déjà en milieu naturel : on vérifie qu'il le garde sans guide, à l'étape 4, « Seul »."
+    bilan:
+      situation: "l'étape 5 : à chaque remontée, seul ou en palanquée"
+      criteres:
+        - "Il fait son tour d'horizon de façon systématique."
+        - "Bras levé, rotation complète, regard vers la surface, sans précipitation."
+        - "Il le fait sans que personne ne le lui rappelle."
+      securite: []
+      eca: "oublie le tour d'horizon quand personne ne le guide → reprendre l'étape 4"
+
+  "Gonflage du gilet en surface":
+    evaluer:
+      question: "Que fait l'élève en arrivant en surface pour se mettre en sécurité ?"
+      vecu:
+        - "Au baptême, est-ce le moniteur qui gonflait son gilet en surface ?"
+        - "Est-il bon nageur, habitué à tenir en surface en palmant ?"
+        - "A-t-il déjà été en surface avec du clapot, en mer ou en lac ?"
+      sait:
+        - "Sait-il gonfler son gilet au direct system ?"
+        - "A-t-il des idées fausses ? Par exemple : « je nage bien, je n'ai pas besoin de gonfler mon gilet », ou « je peux enlever mon détendeur dès que j'ai la tête hors de l'eau »."
+        - "Connaît-il l'enchaînement de fin de remontée : tour d'horizon, gonflage, regroupement, signalement ?"
+      esprit:
+        - "Est-il pressé d'enlever son masque et son détendeur pour parler ?"
+        - "S'inquiète-t-il quand l'eau bouge, ou si le bateau semble loin ?"
+      comment: "En piscine, à la fin d'une remontée d'exercice, on ne dit rien et on observe : gonfle-t-il immédiatement ? garde-t-il son détendeur en bouche ? palme-t-il pour se maintenir ? se regroupe-t-il ?"
+      adapter:
+        - "Il ne gonfle pas, ou palme pour se maintenir : on commence à l'étape 1, « Gonfler dès l'arrivée »."
+        - "Il gonfle mais oublie une partie de l'enchaînement, ou enlève son détendeur trop tôt : on passe à l'étape 2, « Enchaîner la fin de remontée »."
+        - "Il enchaîne tout en piscine : on passe à l'étape 3, « En milieu naturel, eau qui bouge »."
+    bilan:
+      situation: "l'étape 4 : seul ou en palanquée, fins de plongée et remontées d'exercice"
+      criteres:
+        - "Il se met en sécurité en surface de façon systématique."
+        - "Il gonfle son gilet tout de suite et flotte sans palmer."
+        - "Il enchaîne tour d'horizon, gonflage, regroupement et signalement, sans rappel et avec calme."
+      securite:
+        - "Il garde son détendeur en bouche tant que son gilet n'est pas gonflé."
+      eca: "retire son détendeur avant d'avoir gonflé son gilet → reprendre l'étape 2"
+
+  "Remontée en expiration contrôlée":
+    evaluer:
+      question: "Que sait l'élève de la dilatation de l'air en remontant, et comment réagit-il à l'idée de remonter sans respirer sur son détendeur ?"
+      vecu:
+        - "Pratique-t-il l'apnée, où l'on remonte poumons pleins ? A-t-il cette habitude ?"
+        - "Fait-il de la natation, et sait-il expirer longtemps sous l'eau ?"
+        - "A-t-il déjà vécu un essoufflement ou une sensation de manque d'air dans l'eau ?"
+      sait:
+        - "Sait-il pourquoi on expire en remontant ?"
+        - "A-t-il des idées fausses ? Par exemple : « on remonte en retenant sa respiration pour économiser l'air », ou « il faut remonter le plus vite possible »."
+        - "Sait-il qu'il faut partir sur une inspiration normale, et non une grande inspiration ?"
+      esprit:
+        - "Appréhende-t-il de manquer d'air, ou de vider complètement ses poumons ?"
+        - "Associe-t-il l'exercice à la panne d'air, ce qui peut l'inquiéter ?"
+      comment: "Au sec, lui demander : « À ton avis, pourquoi souffle-t-on en remontant ? » Puis : « Sur une inspiration normale, souffle le plus longtemps possible, en faisant un son. » On écoute son explication et on observe si l'expiration est longue et régulière, ou brève et forcée."
+      adapter:
+        - "Il ne sait pas pourquoi on expire ou expire en force : on commence à l'étape 1, « Comprendre et souffler au sec »."
+        - "Il expire longuement au sec : on passe à l'étape 2, « Expiration continue à l'horizontale »."
+        - "Il expire en continu à l'horizontale, sans gêne : on passe à l'étape 3, « Première REC le long d'un repère », moniteur face à lui."
+        - "Il est inquiet : on prolonge l'étape 2, à l'horizontale, sur des distances très courtes, avant toute remontée."
+    bilan:
+      situation: "l'étape 5 : depuis 6 m maximum, départ du fond, sur une inspiration normale"
+      criteres:
+        - "Rejet d'air continu jusqu'à la surface."
+        - "Sans précipitation, sans stress, à une vitesse correcte."
+        - "Aucun critère de temps n'est recherché."
+      securite:
+        - "Inspiration normale au départ, jamais une grande inspiration."
+        - "Gilet purgé au départ."
+        - "Le moniteur accompagne chaque REC, reste au contact et peut freiner la remontée à tout moment."
+      eca: "accélère dans les derniers mètres → reprendre l'étape 4"
+
+N1-securite:
+  "Application des procédures mises en œuvre par le GP":
+    evaluer:
+      question: "L'élève sait-il signaler un problème au GP, et accepte-t-il d'être pris en charge ?"
+      vecu:
+        - "Au baptême, a-t-il eu un souci (oreilles, froid, essoufflement) ? Comment l'a-t-il signalé, et comment a-t-il réagi ?"
+        - "A-t-il déjà vécu une situation stressante dans l'eau : tasse, crampe, perte de repères ?"
+        - "Pratique-t-il un sport où l'on suit les consignes d'un responsable en cas d'incident (voile, escalade, montagne) ?"
+      sait:
+        - "Connaît-il les signes de réserve, froid, panne d'air, essoufflement, ça ne va pas ?"
+        - "A-t-il des idées fausses ? Par exemple : « en panne d'air, je remonte tout de suite en surface », ou « si ça ne va pas, je me débrouille seul »."
+        - "Sait-il ce que fera le GP, et ce qu'on attend de lui ?"
+      esprit:
+        - "L'idée de la panne d'air lui fait-elle peur ?"
+        - "Accepte-t-il facilement qu'on le tienne et qu'on le guide, ou a-t-il tendance à se débattre ?"
+      comment: "Au sec, lui demander pour chaque situation (réserve, froid, panne d'air, essoufflement, crampe, malaise) : « Que fais-tu, et que va faire le GP ? » On écoute ses réponses, et on repère les situations qui l'inquiètent."
+      adapter:
+        - "Il ne connaît pas les signes ou les procédures : on commence à l'étape 1, « Découverte au sec »."
+        - "Il connaît les procédures au sec : on passe à l'étape 2, « Panne d'air : apnée expiratoire jusqu'au GP », sur une courte distance."
+        - "Il rejoint le GP mais se crispe ensuite : on travaille l'étape 3, « Se laisser prendre en charge »."
+        - "La panne d'air l'inquiète : on augmente la distance très progressivement, et on commence par les situations annoncées les moins stressantes."
+    bilan:
+      situation: "l'étape 6 : toutes les situations nécessitant une intervention du GP, répétées et variées"
+      criteres:
+        - "Il accepte chaque procédure en gardant son calme."
+        - "Il fait le signe correct et immédiat, y compris quand la situation n'est pas annoncée."
+        - "Il ventile normalement et ne lutte pas contre la prise en charge."
+      securite:
+        - "Déplacement strictement horizontal, profondeur constante, jamais de remontée en apnée."
+        - "Le moniteur arrête l'exercice au moindre doute."
+      eca: "se crispe quand la situation n'est pas annoncée → reprendre l'étape 5"
+
+  "Intervention en relais":
+    evaluer:
+      question: "L'élève sait-il qu'il peut avoir à donner de l'air à un équipier, et s'en sent-il capable ?"
+      vecu:
+        - "A-t-il déjà vu ou utilisé un octopus, au baptême ou au club ?"
+        - "A-t-il déjà porté secours ou aidé quelqu'un en difficulté, dans l'eau ou ailleurs ?"
+        - "A-t-il fait des exercices de panne d'air du côté de celui qui reçoit l'air ?"
+      sait:
+        - "Sait-il où est son octopus et à quoi il sert ?"
+        - "A-t-il des idées fausses ? Par exemple : « l'octopus, c'est pour moi si mon détendeur lâche », ou « je donne mon détendeur et je prends l'octopus »."
+        - "Reconnaît-il le signe panne d'air, et sait-il qu'il doit aussi prévenir le GP ?"
+      esprit:
+        - "Craint-il de manquer d'air lui-même s'il partage ?"
+        - "Se sent-il capable d'aider, ou pense-t-il que c'est seulement le rôle du moniteur ?"
+      comment: "Au sec, équipé, le moniteur fait le signe panne d'air sans prévenir et dit : « Montre-moi ce que tu fais. » On observe s'il trouve son octopus sans chercher, le présente embout dans le bon sens, tient l'équipier et pense au GP."
+      adapter:
+        - "Il cherche son octopus ou le présente mal : on commence à l'étape 1, « Découverte au sec »."
+        - "Il le présente correctement au sec : on passe à l'étape 2, « Passage de l'octopus en statique »."
+        - "Il donne son octopus sans hésiter en statique : on passe à l'étape 3, « Simulation d'échange d'embout », puis à l'étape 4."
+        - "Il craint de manquer d'air : on insiste à l'étape 2 sur sa propre ventilation calme pendant le partage."
+    bilan:
+      situation: "l'étape 5 : situations répétées et variées au fil des plongées"
+      criteres:
+        - "Il interprète correctement le signe panne d'air."
+        - "Il agit immédiatement : source d'air, aide, appel au GP."
+        - "Il reste calme et garde le contact avec l'équipier."
+      securite:
+        - "Pendant la simulation d'échange d'embout, chacun garde son propre détendeur en bouche."
+        - "Le moniteur est au contact pendant la simulation."
+      eca: "donne l'octopus mais oublie de solliciter le GP → reprendre l'étape 4"

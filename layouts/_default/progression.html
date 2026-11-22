@@ -85,7 +85,24 @@
     </section>
     {{- end }}
 
+    {{- /* Point d'arrivée de la compétence choisie (évaluation du MFT), sous les prérogatives. */ -}}
+    {{- range $x := $n.liste }}
+    {{- $p := $x.p }}{{ $cle := lower $x.c.id }}
+    <section class="carte cote-bloc prog-arrivee" data-prog-arrivee="{{ $cle }}" aria-label="Point d’arrivée : {{ partial "typo.html" $x.c.competence }}"{{ if ne $x.c.id $premier.c.id }} hidden{{ end }}>
+      <h2 class="cote-bloc__titre">{{ with $n.o.arrivee }}{{ . }}{{ else }}Point d’arrivée : l’évaluation du MFT{{ end }} <span class="prog-arrivee__comp">· {{ partial "typo.html" $x.c.competence }}</span></h2>
+      {{- if gt (len $p.evaluation_mft) 500 }}
+      {{- /* Texte long (N4 : critères d'épreuves assemblés) : replié, avec un bouton pour le déplier. */ -}}
+      <p class="cote-bloc__texte cote-bloc__texte--replie" id="arrivee-{{ $cle }}">{{ partial "typo.html" $p.evaluation_mft }}</p>
+      <button type="button" class="lien-texte cote-bloc__deplier" aria-expanded="false" aria-controls="arrivee-{{ $cle }}" data-deplier>Lire la suite</button>
+      {{- else }}
+      <p class="cote-bloc__texte">{{ partial "typo.html" $p.evaluation_mft }}</p>
+      {{- end }}
+      {{- if $x.horsBase }}{{ with $x.f.statut }}<p class="aptitudes__statut">{{ partial "typo.html" . }}</p>{{ end }}{{ end }}
+    </section>
+    {{- end }}
+
     {{/* ---------- Compétences du niveau ---------- */}}
+    <h2 class="prog-sous-titre">Compétence</h2>
     {{- $groupes := slice }}
     {{- if $n.o.parcours }}
       {{- range $n.o.parcours }}{{ $pa := . }}
@@ -144,7 +161,7 @@
       <div class="volet-prog">
         <div class="volet-prog__principal">
           <div class="volet-prog__techniques">
-            <span id="lbl-tech-{{ $cle }}" class="reglages__libelle bureau">{{ if $brevets }}Brevet{{ else }}Technique{{ end }}</span>
+            <h3 id="lbl-tech-{{ $cle }}" class="prog-sous-titre">{{ if $brevets }}Brevets associés{{ else }}Techniques associées{{ end }}</h3>
             <div class="techniques" role="group" aria-labelledby="lbl-tech-{{ $cle }}">
               {{- range $k, $t := $p.techniques }}
               <button type="button" class="technique" aria-pressed="{{ if eq $k 0 }}true{{ else }}false{{ end }}" data-technique="{{ $k }}">{{ partial "typo.html" $t.nom }}</button>
@@ -154,20 +171,23 @@
 
           {{- range $k, $t := $p.techniques }}
           {{- $nb := len $t.etapes }}
+          {{- /* Cartes « Évaluer l'élève » et « Bilan » (data/evaluation/<niveau>.yaml), quand elles sont rédigées. */ -}}
+          {{- $ev := index (index (index site.Data.evaluation $x.f.niveau | default dict) $p.id | default dict) $t.nom }}
           <ol class="etapes-frise" data-frise="{{ $k }}"{{ if ne $k 0 }} hidden{{ end }}>
+            {{- with $ev }}{{ partial "carte-eval.html" (dict "type" "evaluer" "ev" . "t" $t "p" $p "uid" (printf "eval-%s-%d" $cle $k) "trait" true) }}{{ end }}
             {{- range $m, $e := $t.etapes }}
             {{- $fin := findRESubmatch `^(.*?)\s*\((évaluation|aptitude visée)\)\s*$` $e.titre 1 }}
             {{- $eval := gt (len $fin) 0 }}
             {{- $titre := cond $eval (index (index $fin 0) 1) $e.titre }}
             {{- $badge := cond $eval (cond (eq (index (index $fin 0) 2) "évaluation") "Évaluation" "Aptitude visée") "" }}
             {{- $uid := printf "etape-%s-%d-%d" $cle $k $m }}
-            <li class="etape{{ if $eval }} etape--evaluation{{ end }}{{ if eq $m 0 }} etape--ouverte{{ end }}" data-etape>
+            <li class="etape{{ if $eval }} etape--evaluation{{ end }}{{ if and (eq $m 0) (not $ev) }} etape--ouverte{{ end }}" data-etape>
               <div class="etape__repere">
                 <span class="etape__numero" aria-hidden="true">{{ $e.n }}</span>
-                {{- if lt (add $m 1) $nb }}<span class="etape__trait" aria-hidden="true"></span>{{ end }}
+                {{- if or $ev (lt (add $m 1) $nb) }}<span class="etape__trait" aria-hidden="true"></span>{{ end }}
               </div>
               <div class="etape__carte">
-                <button type="button" class="etape__bouton" aria-expanded="{{ if eq $m 0 }}true{{ else }}false{{ end }}" aria-controls="{{ $uid }}" data-etape-bouton>
+                <button type="button" class="etape__bouton" aria-expanded="{{ if and (eq $m 0) (not $ev) }}true{{ else }}false{{ end }}" aria-controls="{{ $uid }}" data-etape-bouton>
                   <span class="etape__entete">
                     <span class="etape__ligne"><span class="etape__titre">{{ partial "typo.html" $titre }}</span>{{ if $eval }}<span class="badge-evaluation">{{ $badge }}</span>{{ end }}</span>
                     <span class="etape__objectif">{{ partial "typo.html" $e.objectif }}</span>
@@ -183,23 +203,16 @@
               </div>
             </li>
             {{- end }}
+            {{- with $ev }}{{ partial "carte-eval.html" (dict "type" "bilan" "ev" . "t" $t "p" $p "uid" (printf "bilan-%s-%d" $cle $k) "trait" false) }}{{ end }}
           </ol>
           {{- end }}
-        </div>
 
-        <aside class="volet-prog__cote">
-          <section class="carte cote-bloc">
-            <h3 class="cote-bloc__titre">{{ with $n.o.arrivee }}{{ . }}{{ else }}Point d’arrivée : l’évaluation du MFT{{ end }}</h3>
-            {{- if gt (len $p.evaluation_mft) 500 }}
-            {{- /* Texte long (N4 : critères d'épreuves assemblés) : replié, avec un bouton pour le déplier. */ -}}
-            <p class="cote-bloc__texte cote-bloc__texte--replie" id="arrivee-{{ $cle }}">{{ partial "typo.html" $p.evaluation_mft }}</p>
-            <button type="button" class="lien-texte cote-bloc__deplier" aria-expanded="false" aria-controls="arrivee-{{ $cle }}" data-deplier>Lire la suite</button>
-            {{- else }}
-            <p class="cote-bloc__texte">{{ partial "typo.html" $p.evaluation_mft }}</p>
-            {{- end }}
-            {{- if $x.horsBase }}{{ with $x.f.statut }}<p class="aptitudes__statut">{{ partial "typo.html" . }}</p>{{ end }}{{ end }}
-          </section>
-          <section class="carte cote-bloc bureau">
+        <div class="prog-pied">
+          {{- /* Curseurs : repris dans la carte « Évaluer l'élève ». L'encart ne reste que si une technique n'a pas encore sa carte. */ -}}
+          {{- $sansEval := false }}
+          {{- range $p.techniques }}{{ if not (index (index (index site.Data.evaluation $x.f.niveau | default dict) $p.id | default dict) .nom) }}{{ $sansEval = true }}{{ end }}{{ end }}
+          {{- if $sansEval }}
+          <section class="carte cote-bloc prog-pied__curseurs bureau">
             <div class="cote-bloc__ligne"><h3 class="cote-bloc__titre">Les curseurs</h3><span class="cote-bloc__compte" data-nb-etapes></span></div>
             <p class="cote-bloc__note">On n’en tourne qu’un à la fois, d’une étape à l’autre.</p>
             {{- range $k, $t := $p.techniques }}
@@ -208,17 +221,21 @@
             </ul>
             {{- end }}
           </section>
+          {{- end }}
+          <div class="prog-pied__boutons">
           <a class="bouton bouton--principal cote-bloc__construire" href="{{ "/construire/" | relURL }}?competence={{ lower $c.id }}">Construire ma progression détaillée</a>
           {{- /* Canvas : ouvre une séance du bon jeu, avec la compétence posée (data/canvas_liens.yaml). Pas sur téléphone. */}}
           {{- with index site.Data.canvas_liens $c.id }}
           {{- $morceaux := split . "/" }}
           <a class="bouton bouton--principal cote-bloc__construire bureau" href="{{ "/canvas/" | relURL }}?jeu={{ index $morceaux 0 }}{{ with index $morceaux 1 }}&amp;carte={{ . }}{{ end }}&amp;progression={{ $c.id }}">Continuer dans le Canvas</a>
           {{- end }}
+          </div>
           <div class="cote-bloc__pied">
             <span><span class="bureau">{{ with $n.o.sourceBureau }}{{ . }}{{ else }}D’après le MFT {{ $n.o.chapitre }}, version consultée en{{ end }} {{ site.Params.mftConsulte }}</span><span class="mobile">{{ with $n.o.sourceMobile }}{{ . }}{{ else }}MFT {{ $n.o.chapitre }}, consulté en{{ end }} {{ site.Params.mftConsulte }}</span></span>
             <a class="fiche__signaler" href="{{ "/contact/" | relURL }}?sujet={{ $sujet }}">{{ $drapeau }}Signaler une erreur</a>
           </div>
-        </aside>
+        </div>
+        </div>
       </div>
     </article>
     {{- end }}

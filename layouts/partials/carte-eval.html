@@ -1,0 +1,48 @@
+{{- /* Carte « Évaluer l'élève » (type "evaluer", avant l'étape 1) ou « Bilan » (type "bilan", après la dernière étape)
+       d'une technique, dans la frise de la page Pistes. Données : data/evaluation/<niveau>.yaml.
+       Paramètres : type, ev (entrée de la technique), t (technique), p (compétence de la progression), uid, trait. */ -}}
+{{- $ev := .ev }}{{ $t := .t }}{{ $p := .p }}
+{{- $loupe := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"></circle><path d="M15 15l5 5"></path></svg>` | safeHTML }}
+{{- $coche := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>` | safeHTML }}
+{{- $chevron := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg>` | safeHTML }}
+{{- $alerte := `<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#8A2E10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="etape__alerte"><path d="M12 3 2 20h20L12 3z"></path><path d="M12 10v4M12 17v.5"></path></svg>` | safeHTML }}
+{{- $evaluer := eq .type "evaluer" }}
+<li class="etape etape--{{ if $evaluer }}diagnostic{{ else }}bilan{{ end }}{{ if $evaluer }} etape--ouverte{{ end }}" data-etape>
+  <div class="etape__repere">
+    <span class="etape__numero" aria-hidden="true">{{ if $evaluer }}{{ $loupe }}{{ else }}{{ $coche }}{{ end }}</span>
+    {{- if .trait }}<span class="etape__trait" aria-hidden="true"></span>{{ end }}
+  </div>
+  <div class="etape__carte">
+    <button type="button" class="etape__bouton" aria-expanded="{{ if $evaluer }}true{{ else }}false{{ end }}" aria-controls="{{ .uid }}" data-etape-bouton>
+      <span class="etape__entete">
+        <span class="etape__ligne"><span class="etape__titre">{{ if $evaluer }}Évaluer l’élève{{ else }}Bilan{{ end }}</span><span class="badge-stagiaire">Proposition de stagiaire (hors MFT)</span></span>
+        <span class="etape__objectif">{{ if $evaluer }}{{ partial "typo.html" $ev.evaluer.question }}{{ else }}Acquis (A), en cours d’acquisition (ECA) ou non travaillé (NT) ?{{ end }}</span>
+      </span>
+      <span class="etape__chevron">{{ $chevron }}</span>
+    </button>
+    <div class="etape__detail" id="{{ .uid }}">
+      {{- if $evaluer }}{{ with $ev.evaluer }}
+      <div class="eval__colonnes">
+        <div><p class="etiquette">Son vécu</p><ul class="eval__liste">{{ range .vecu }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div>
+        <div><p class="etiquette">Ce qu’il sait ou croit savoir</p><ul class="eval__liste">{{ range .sait }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div>
+        <div><p class="etiquette">Son état d’esprit</p><ul class="eval__liste">{{ range .esprit }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div>
+      </div>
+      <div><p class="etiquette">Comment le savoir</p><p class="texte-etape">{{ partial "typo.html" .comment }}</p></div>
+      {{- with $t.curseurs }}
+      <div><p class="etiquette">Où en est-il sur les curseurs ?</p><ul class="eval__liste">{{ range . }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div>
+      {{- end }}
+      <div class="eval__adapter"><p class="etiquette">Adapter la séance</p><ul class="eval__liste">{{ range .adapter }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div>
+      {{- end }}{{ else }}{{ with $ev.bilan }}
+      <p class="texte-etape">Pour chaque critère : <strong>A</strong> (Acquis), <strong>ECA</strong> (En cours d’acquisition) ou <strong>NT</strong> (Non travaillé). Le bilan se fait sur la situation finale, {{ partial "typo.html" .situation }}.</p>
+      <div class="etape__critere"><p class="etiquette">Critères de la situation finale</p><ul class="eval__liste texte-etape">{{ range .criteres }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div>
+      {{- with .securite }}
+      <div class="etape__securite">{{ $alerte }}<div><p class="etiquette">Sécurité : aucun compromis possible</p><p class="texte-etape">Un seul de ces points manqué suffit pour que la technique reste ECA, même si tout le reste est réussi.</p><ul class="eval__liste texte-etape">{{ range . }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div></div>
+      {{- end }}
+      <p class="texte-etape">La technique est <strong>Acquise</strong> quand tous les critères{{ if .securite }} et tous les points de sécurité{{ end }} le sont. Elle est <strong>NT</strong> si la situation finale n’a pas encore pu être proposée.</p>
+      {{- with .eca }}<div><p class="etiquette">Si c’est ECA</p><p class="texte-etape">Noter ce qu’il reste à travailler et l’étape à reprendre. Par exemple : « {{ partial "typo.html" . }} ».</p></div>{{ end }}
+      {{- $noms := slice }}{{ range $p.techniques }}{{ $noms = $noms | append (partial "typo.html" .nom) }}{{ end }}
+      <div><p class="etiquette">Vers la compétence</p><p class="texte-etape">« {{ partial "typo.html" $p.competence }} » est acquise quand {{ if gt (len $noms) 1 }}ses {{ len $noms }} techniques le sont ({{ delimit $noms ", " " et " }}){{ else }}cette technique l’est{{ end }}, et que l’élève répond à l’évaluation du MFT (encadré « Point d’arrivée »).</p></div>
+      {{- end }}{{ end }}
+    </div>
+  </div>
+</li>

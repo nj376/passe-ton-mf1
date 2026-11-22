@@ -2,7 +2,7 @@
    Données : #cv-niveaux (data/canvas.json) et static/canvas/<jeu>.json, produits par outils/canvas.py.
    Stockage : clé « ptmf1:canvas » (window.Stockage), prise en compte par la sauvegarde de la page Suivi.
    Format : { version: 1, ouverte, astuce, seances: [{ id, nom, niveau, jeu, creee, modifiee, vue: {x, y, s},
-     cartes: [{u, c, t, x, y, f}], liens: [{u, a, b}], notes: [{u, texte, rouge, x, y, l, h}], cadres: [{u, titre, x, y, l, h}] }] }
+     cartes: [{u, c, t, x, y, f}], liens: [{u, a, b}], notes: [{u, texte, rouge, type, x, y, l, h}] (type : absent, "evaluer" ou "bilan"), cadres: [{u, titre, x, y, l, h}] }] }
    Les cartes posées gardent l'identifiant de la carte (c) et son titre au moment de la pose (t), seulement pour
    repérer une carte retirée ou renumérotée du jeu ; le texte affiché vient toujours du jeu à jour.
    Pas de tableau sur téléphone : rien n'est chargé sous 768 px. */
@@ -413,11 +413,11 @@
     });
   }
   function domNote(n) {
-    var d = el("div", "cv-note" + (n.rouge ? " cv-note--rouge" : ""));
+    var d = el("div", "cv-note" + (n.type ? " cv-note--" + n.type : n.rouge ? " cv-note--rouge" : ""));
     d.setAttribute("data-u", n.u);
     d.setAttribute("tabindex", "0");
     d.setAttribute("role", "button");
-    d.setAttribute("aria-label", "Annotation, " + (n.rouge ? "précaution" : "indication") + " : " + (n.texte || "vide"));
+    d.setAttribute("aria-label", "Annotation, " + genreNote(n) + " : " + (n.texte || "vide"));
     d.style.left = n.x + "px"; d.style.top = n.y + "px"; d.style.width = n.l + "px"; d.style.height = n.h + "px";
     if (edition && edition.u === n.u) {
       var t = el("textarea", "cv-note__saisie");
@@ -599,10 +599,20 @@
     bulleMinuterie = setTimeout(cacherBulle, 9000);
   }
   function cacherBulle() { $("[data-bulle]").hidden = true; }
-  function ajouterNote() {
-    var m = centreVue(), n = { u: uid(), texte: "", rouge: false, x: Math.round(m.x - 100), y: Math.round(m.y - 44), l: 200, h: 88 };
-    modifier(function () { seance.notes.push(n); sel = { k: "note", u: n.u }; edition = { u: n.u, nouveau: true, avant: "" }; });
-    annoncer("Annotation ajoutée. Tape ton texte, puis Échap.");
+  // Types d'annotation : indication (blanche), précaution (rouge), « Évaluer l'élève » (orange, en début de séance)
+  // et « Bilan » (sombre, en fin de séance). Les deux derniers partent d'une trame à compléter.
+  var TYPES_NOTE = [["Indication", false, ""], ["Précaution", true, ""], ["Évaluer l’élève", false, "evaluer"], ["Bilan", false, "bilan"]];
+  var TRAMES = {
+    evaluer: "Évaluer l’élève\nSon vécu : \nCe qu’il sait ou croit savoir : \nSon état d’esprit : \nAdapter la séance : ",
+    bilan: "Bilan : A, ECA ou NT\nCritères de la situation finale : \nÀ retravailler : "
+  };
+  function genreNote(n) { return n.type === "evaluer" ? "évaluer l’élève" : n.type === "bilan" ? "bilan" : n.rouge ? "précaution" : "indication"; }
+  function ajouterNote(type) {
+    var trame = TRAMES[type] || "", grande = !!trame;
+    var m = centreVue(), n = { u: uid(), texte: trame, rouge: false, x: Math.round(m.x - (grande ? 150 : 100)), y: Math.round(m.y - (grande ? 70 : 44)), l: grande ? 300 : 200, h: grande ? 140 : 88 };
+    if (type) n.type = type;
+    modifier(function () { seance.notes.push(n); sel = { k: "note", u: n.u }; edition = { u: n.u, nouveau: true, avant: trame }; });
+    annoncer((type === "evaluer" ? "Carte « Évaluer l’élève » ajoutée" : type === "bilan" ? "Carte « Bilan » ajoutée" : "Annotation ajoutée") + ". Tape ton texte, puis Échap.");
   }
   function ajouterCadre() {
     var m = centreVue(), f = { u: uid(), titre: "Nouveau cadre", x: Math.round(m.x - 260), y: Math.round(m.y - 160), l: 520, h: 320 };
@@ -901,6 +911,8 @@
     if (a === "png" || a === "pdf") ev.preventDefault();
     switch (a) {
       case "annotation": ajouterNote(); break;
+      case "evaluer": ajouterNote("evaluer"); break;
+      case "bilan": ajouterNote("bilan"); break;
       case "cadre": ajouterCadre(); break;
       case "annuler": annuler(); break;
       case "retablir": retablir(); break;
@@ -1233,10 +1245,16 @@
   function contenuNote(z, n) {
     var corps = el("div", "cv-details__corps");
     var lab = el("div", "cv-details__libelle"); lab.appendChild(el("span", null, "Type"));
-    var seg = el("span", "cv-seg"); seg.setAttribute("role", "radiogroup"); seg.setAttribute("aria-label", "Type d’annotation");
-    [["Indication", false], ["Précaution", true]].forEach(function (p) {
-      var b = el("button", null, p[0]); b.type = "button"; b.setAttribute("role", "radio"); b.setAttribute("aria-checked", n.rouge === p[1] ? "true" : "false");
-      b.addEventListener("click", function () { if (n.rouge !== p[1]) { modifier(function () { n.rouge = p[1]; }); annoncer("Annotation : " + p[0].toLowerCase() + "."); var x = $("[data-details] [role=\"radio\"][aria-checked=\"true\"]"); if (x) x.focus(); } });
+    var seg = el("span", "cv-seg cv-seg--grille"); seg.setAttribute("role", "radiogroup"); seg.setAttribute("aria-label", "Type d’annotation");
+    TYPES_NOTE.forEach(function (p) {
+      var actif = (n.type || "") === p[2] && (p[2] || !!n.rouge === p[1]);
+      var b = el("button", null, p[0]); b.type = "button"; b.setAttribute("role", "radio"); b.setAttribute("aria-checked", actif ? "true" : "false");
+      b.addEventListener("click", function () {
+        if ((n.type || "") === p[2] && (p[2] || !!n.rouge === p[1])) return;
+        modifier(function () { n.rouge = p[1]; if (p[2]) n.type = p[2]; else delete n.type; });
+        annoncer("Annotation : " + p[0].toLowerCase() + ".");
+        var x = $("[data-details] [role=\"radio\"][aria-checked=\"true\"]"); if (x) x.focus();
+      });
       seg.appendChild(b);
     });
     lab.appendChild(seg); corps.appendChild(lab);
@@ -1542,9 +1560,10 @@
       }
     });
     seance.notes.forEach(function (n) {
-      R(n.x, n.y, n.l, n.h, { r: 8, fill: n.rouge ? "#FBEDE6" : "#FFFFFF", stroke: n.rouge ? ROUGE : "#B9C4CF", sw: 1.5 });
+      var st = n.type === "evaluer" ? ["#FDF3E4", ORANGE, "#4A3206"] : n.type === "bilan" ? ["#EEF2F6", "#13212E", "#13212E"] : n.rouge ? ["#FBEDE6", ROUGE, "#5A1E0A"] : ["#FFFFFF", "#B9C4CF", "#13212E"];
+      R(n.x, n.y, n.l, n.h, { r: 8, fill: st[0], stroke: st[1], sw: n.type ? 2 : 1.5 });
       var ls = couper(n.texte, n.l - 24, 14, 400, Math.max(1, Math.floor((n.h - 20) / 19.6)));
-      lignes(n.x + 12, n.y + 10, ls, 14, 19.6, 400, n.rouge ? "#5A1E0A" : "#13212E");
+      lignes(n.x + 12, n.y + 10, ls, 14, 19.6, 400, st[2]);
     });
     seance.cartes.forEach(function (pc) {
       var c = carteDe(pc), x = pc.x, y = pc.y;
@@ -1716,7 +1735,13 @@
   }
   function colonne() {
     var cote = el("aside", "cv-page__cote");
-    var rouges = seance.notes.filter(function (n) { return n.rouge && n.texte.trim(); });
+    var evals = seance.notes.filter(function (n) { return n.type === "evaluer" && n.texte.trim(); });
+    if (evals.length) {
+      var s0 = el("section"); s0.appendChild(el("h2", null, "Évaluer l’élève"));
+      evals.forEach(function (n) { s0.appendChild(point("evaluer", carteCommentee(n), n.texte)); });
+      cote.appendChild(s0);
+    }
+    var rouges = seance.notes.filter(function (n) { return !n.type && n.rouge && n.texte.trim(); });
     var oranges = seance.liens.map(analyser).filter(function (i) { return i && i.cas; });
     if (rouges.length || oranges.length) {
       var s1 = el("section"); s1.appendChild(el("h2", null, "Points d’attention"));
@@ -1724,11 +1749,17 @@
       oranges.forEach(function (i) { s1.appendChild(point("orange", "Lien à vérifier", phrase(i))); });
       cote.appendChild(s1);
     }
-    var blancs = seance.notes.filter(function (n) { return !n.rouge && n.texte.trim(); });
+    var blancs = seance.notes.filter(function (n) { return !n.type && !n.rouge && n.texte.trim(); });
     if (blancs.length) {
       var s2 = el("section"); s2.appendChild(el("h2", null, "Annotations"));
       blancs.forEach(function (n) { s2.appendChild(point("blanc", carteCommentee(n), n.texte)); });
       cote.appendChild(s2);
+    }
+    var bilans = seance.notes.filter(function (n) { return n.type === "bilan" && n.texte.trim(); });
+    if (bilans.length) {
+      var s4 = el("section"); s4.appendChild(el("h2", null, "Bilan : A, ECA ou NT"));
+      bilans.forEach(function (n) { s4.appendChild(point("bilan", carteCommentee(n), n.texte)); });
+      cote.appendChild(s4);
     }
     var s3 = el("section", "cv-page__legende"); s3.appendChild(el("h2", null, "Légende"));
     var ul = el("ul"), n = jeu.noms, coul = (jeu.cartes.filter(function (c) { return c.type === "competence" && !c.libre; })[0] || {}).couleur || "#6B5B3E";
@@ -1741,7 +1772,7 @@
     lignes.push(["<svg width=\"30\" height=\"10\" aria-hidden=\"true\"><path d=\"M0 5h30\" stroke=\"#8796A5\" stroke-width=\"2\"></path></svg>", "Lien"]);
     lignes.push(["<svg width=\"30\" height=\"10\" aria-hidden=\"true\"><path d=\"M0 5h30\" stroke=\"#3A4A59\" stroke-width=\"3\"></path></svg>", "Enchaînement (dans l’ordre de la séance)"]);
     lignes.push(["<svg width=\"30\" height=\"10\" aria-hidden=\"true\"><path d=\"M0 5h30\" stroke=\"#D9822B\" stroke-width=\"3\"></path></svg>", "Lien à vérifier"]);
-    lignes.push(["<svg width=\"30\" height=\"10\" aria-hidden=\"true\"><path d=\"M0 5h30\" stroke=\"#8796A5\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"></path></svg>", "Annotation (rouge : précaution)"]);
+    lignes.push(["<svg width=\"30\" height=\"10\" aria-hidden=\"true\"><path d=\"M0 5h30\" stroke=\"#8796A5\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"></path></svg>", "Annotation (rouge : précaution ; orange : évaluer l’élève ; sombre : bilan)"]);
     lignes.forEach(function (l) { var li = el("li"); li.innerHTML = l[0] + "<span>" + echapper(l[1]) + "</span>"; ul.appendChild(li); });
     s3.appendChild(ul); cote.appendChild(s3);
     return cote;
@@ -1749,7 +1780,7 @@
 
   /* ---------- Progression type transmise par « Continuer dans le Canvas » (page Pistes) ---------- */
   // La compétence à gauche, puis un cadre par technique, de gauche à droite : ses cartes en haut (reliées à la
-  // compétence si elles en relèvent), une annotation blanche par étape (titre et objectif), et une annotation rouge
+  // compétence si elles en relèvent), une carte « Évaluer l'élève », une annotation blanche par étape (titre et objectif), une annotation rouge
   // qui regroupe les points de sécurité de la technique. Le tout s'annule en une fois.
   function construireProgression(prog, idComp) {
     var comp = idComp && jeu.parId[idComp];
@@ -1767,6 +1798,13 @@
         if (pcComp && (c.comp === comp.id || comp.libre)) liens.push({ u: uid(), a: pcComp.u, b: pc.u });
       });
       if (poses.length) y = HAUT + Math.ceil(poses.length / 2) * (CH + 16) + 8;
+      // Carte « Évaluer l'élève » en tête du cadre, « Bilan » à la fin (quand elles sont rédigées : data/evaluation/).
+      function poserType(texte, type) {
+        var h = hauteurNote(texte);
+        notes.push({ u: uid(), texte: texte, rouge: false, type: type, x: x + MARGE, y: y, l: LN, h: h });
+        y += h + 12;
+      }
+      if (t.evaluer) poserType(t.evaluer, "evaluer");
       var securite = [];
       t.etapes.forEach(function (e) {
         var texte = "Étape " + e.n + " · " + e.titre + (e.objectif ? "\n" + e.objectif : "");
@@ -1780,6 +1818,7 @@
         notes.push({ u: uid(), texte: ts, rouge: true, x: x + MARGE, y: y, l: LN, h: hs });
         y += hs + 12;
       }
+      if (t.bilan) poserType(t.bilan, "bilan");
       f.h = y + MARGE - 12;
       cadres.push(f);
       plusHaut = Math.max(plusHaut, f.h);

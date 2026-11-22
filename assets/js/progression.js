@@ -43,6 +43,7 @@
     var panneau = bouton.closest("[data-prog-panneau]");
     tous("[data-prog-competence]", panneau).forEach(function (x) { x.setAttribute("aria-pressed", x === bouton ? "true" : "false"); });
     tous("[data-prog-detail]", panneau).forEach(function (d) { d.hidden = d.getAttribute("data-prog-detail") !== cle; });
+    tous("[data-prog-arrivee]", panneau).forEach(function (d) { d.hidden = d.getAttribute("data-prog-arrivee") !== cle; });
     var detail = panneau.querySelector('[data-prog-detail="' + cle + '"]');
     var tech = detail.querySelector('[data-technique][aria-pressed="true"]') || detail.querySelector("[data-technique]");
     if (tech) choisirTechnique(tech);

@@ -1,0 +1,902 @@
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du RIFAP.
+# Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
+# (tel qu'il figure dans data/progressions/progressions_RIFAP.json). Les fichiers de progression ne sont pas modifiés.
+#
+# evaluer.question : la question directrice
+# evaluer.vecu / sait / esprit : son vécu, ce qu'il sait ou croit savoir, son état d'esprit (listes)
+# evaluer.comment : comment le savoir (situation d'observation)
+# evaluer.adapter : où commencer selon ce qu'on a observé (liste)
+# bilan.situation : la situation finale sur laquelle porte le bilan
+# bilan.criteres : critères de la situation finale (liste)
+# bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
+
+
+RIFAP-C1:
+  "Connaître les signes normalisés de la FFESSM":
+    evaluer:
+      question: "Quels signes de malaise et de détresse l'élève connaît-il déjà, et sait-il les faire comme les reconnaître ?"
+      vecu:
+        - "Quel est son niveau de plongée ? A-t-il déjà utilisé ces signes en palanquée ?"
+        - "A-t-il déjà plongé de nuit, avec une lampe ?"
+        - "A-t-il déjà vu un plongeur faire le signal de détresse en surface, depuis le bateau ou le bord ?"
+      sait:
+        - "Sait-il distinguer un signe de malaise d'un signe de détresse ?"
+        - "Sait-il quels signes servent entre plongeurs, et lesquels servent entre la palanquée et la surface ?"
+        - "A-t-il des idées fausses ? Par exemple : « de nuit, on fait les mêmes signes qu'en plein jour », ou « en surface, on salue le bateau d'un grand geste du bras »."
+      esprit:
+        - "Pense-t-il connaître les signes depuis longtemps, au risque de les faire de façon approximative ?"
+        - "Hésite-t-il à faire un signe de détresse, de peur de déranger pour rien ?"
+      comment: "Au sec, lui demander : « Montre-moi ce que tu fais si tu as un problème, puis si tu vois un équipier en difficulté. » Puis lui faire reconnaître quelques signes faits par le formateur, de jour puis avec une lampe. On observe sans corriger."
+      adapter:
+        - "Il confond les signes ou en ignore une partie : on commence à l'étape 1, « Découvrir les signes »."
+        - "Il connaît les signes de jour mais pas de nuit : on passe à l'étape 2, « Jour et nuit »."
+        - "Il connaît tous les signes au sec : on vérifie l'étape 3, « Signal de détresse en surface », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), accident simulé en surface et en immersion"
+      criteres:
+        - "Ses signes sont justes et immédiats, en surface comme en immersion."
+        - "Il reconnaît chaque signe de malaise et de détresse fait par un autre plongeur."
+        - "Ses signes de nuit, avec la lampe, sont justes."
+        - "Son signal de détresse en surface est vu et compris immédiatement."
+      securite: []
+      eca: "confond les signes de nuit avec la lampe → reprendre l'étape 2"
+  "Reconnaître, sans délai, une situation anormale en surface":
+    evaluer:
+      question: "Que sait déjà repérer l'élève d'un comportement anormal, en surface et après la plongée ?"
+      vecu:
+        - "A-t-il déjà vu un plongeur en difficulté en surface, ou un équipier mal en point après une plongée ?"
+        - "A-t-il une expérience de surveillance (BNSSA, encadrement, secourisme) ?"
+        - "Lui est-il arrivé de ne pas se sentir bien après une plongée, sans en parler ?"
+      sait:
+        - "Sait-il citer des signes observables, et sait-il que certains signes ne se voient pas ?"
+        - "Sait-il pourquoi on discute entre plongeurs après la plongée ?"
+        - "A-t-il des idées fausses ? Par exemple : « un accident se voit tout de suite à la sortie de l'eau », ou « s'il ne dit rien, c'est qu'il va bien »."
+      esprit:
+        - "Est-il attentif aux autres, ou centré sur sa propre plongée ?"
+        - "Craint-il de s'alarmer pour rien, ou de passer pour quelqu'un qui dramatise ?"
+      comment: "Au sec, lui décrire quelques fins de plongée et lui demander : « Qu'est-ce qui te paraîtrait anormal ? » On écoute les signes qu'il cite, et s'il pense à ce qui peut arriver une fois sortis de l'eau. On ne corrige pas."
+      adapter:
+        - "Il cite peu de signes : on commence à l'étape 1, « Comportements anormaux »."
+        - "Il cite des signes mais pense que le risque s'arrête à la sortie de l'eau : on passe à l'étape 2, « Le délai d'apparition »."
+        - "Il connaît les signes et le délai : on passe à l'étape 3, « Repérer en situation », puis à l'étape 4."
+        - "Il est peu attentif aux autres : on multiplie les exercices de l'étape 3, sans annoncer qui sera la victime."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets variés"
+      criteres:
+        - "Il identifie la situation anormale sans délai."
+        - "Il repère les signes discrets autant que les signes observables."
+        - "Sa vigilance continue après la plongée : il fait parler les plongeurs."
+      securite:
+        - "La victime simulée, stagiaire ou formateur, peut arrêter l'exercice à tout moment."
+      eca: "ne pense plus à observer une fois tout le monde sorti de l'eau → reprendre l'étape 2"
+  "Apporter une première réponse rapide et appropriée":
+    evaluer:
+      question: "Comment l'élève réagirait-il aujourd'hui face à un plongeur en difficulté en surface ?"
+      vecu:
+        - "A-t-il une formation de secourisme (PSC1, PSE, BNSSA) ? Y a-t-il appris à aborder une victime ?"
+        - "A-t-il déjà porté secours, ou vu quelqu'un le faire, dans l'eau ou ailleurs ?"
+        - "Quel est son niveau de plongée ? Est-il à l'aise en surface ?"
+      sait:
+        - "Connaît-il les trois contacts : visuel, corporel, oral ?"
+        - "Sait-il à quoi sert le signe OK une fois au contact de la victime ?"
+        - "A-t-il des idées fausses ? Par exemple : « il faut d'abord aller chercher du matériel », ou « parler à la victime fait perdre du temps »."
+      esprit:
+        - "Appréhende-t-il le contact avec la victime ? La peur de mal faire le freine-t-elle ?"
+        - "Se précipite-t-il au contraire, sans garder la victime à l'œil ?"
+      comment: "En surface, un formateur joue une victime à courte distance. On dit à l'élève : « Ton équipier a un problème, à toi. » On observe le délai de réaction, le contact visuel pendant l'approche et ce qu'il dit à la victime. On ne corrige pas pendant l'exercice."
+      adapter:
+        - "Il ne connaît pas la prise en charge par le contact : on commence à l'étape 1, « Les trois contacts »."
+        - "Il s'approche mais perd la victime de vue : on passe à l'étape 2, « En surface »."
+        - "Le contact est bon mais il tarde à agir : on travaille l'étape 3, « Rapidité », sur une distance courte puis plus longue."
+        - "Il réagit vite et juste : on vérifie l'étape 3, puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Il intervient rapidement, sans perdre de temps."
+        - "Sa réponse est adaptée à la situation."
+        - "Il garde le contact visuel en permanence et rassure la victime."
+      securite:
+        - "La victime simulée, stagiaire ou formateur, peut arrêter l'exercice à tout moment."
+      eca: "perd la victime de vue pendant l'approche → reprendre l'étape 2"
+  "Sécuriser le plongeur en surface":
+    evaluer:
+      question: "Une fois au contact d'un plongeur en difficulté en surface, que ferait l'élève pour le mettre en sécurité ?"
+      vecu:
+        - "A-t-il déjà gonflé le gilet d'un autre plongeur, ou aidé un équipier en surface ?"
+        - "A-t-il déjà nagé ou plongé avec du clapot ?"
+        - "A-t-il une formation de sauvetage aquatique (BNSSA) ?"
+      sait:
+        - "Sait-il gonfler un gilet d'un autre modèle que le sien ?"
+        - "Sait-il que les voies aériennes de la victime doivent rester hors de l'eau en permanence ?"
+        - "A-t-il des idées fausses ? Par exemple : « gonfler son gilet peut attendre le bateau », ou « une fois le gilet gonflé, la victime est en sécurité »."
+      esprit:
+        - "Est-il à l'aise en surface en tenant un autre plongeur, ou craint-il de couler avec lui ?"
+        - "Ose-t-il parler à la victime ?"
+      comment: "En surface, victime simulée, lui dire : « Ton équipier ne va pas bien, mets-le en sécurité. » On regarde ce qu'il fait en premier, le temps qu'il met à gonfler le gilet, et si les voies aériennes restent hors de l'eau."
+      adapter:
+        - "Il hésite ou tarde à gonfler le gilet : on commence à l'étape 1, « Gonfler le gilet de la victime »."
+        - "Le gilet est gonflé mais le visage touche l'eau : on passe à l'étape 2, « Protéger les voies aériennes », avec un peu de clapot si possible."
+        - "Il sécurise bien mais reste muet : on travaille l'étape 3, « Garder le contact verbal »."
+        - "Il enchaîne déjà les trois actions : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Il gonfle le gilet de la victime sans délai."
+        - "Les voies aériennes sont protégées en permanence, même avec du clapot."
+        - "Il garde le contact verbal pendant la sécurisation."
+      securite: []
+      eca: "laisse le visage de la victime toucher l'eau dans le clapot → reprendre l'étape 2"
+
+RIFAP-C2:
+  "Garantir à la victime une ventilation dans de bonnes conditions":
+    evaluer:
+      question: "Que sait l'élève de la ventilation d'une victime en surface, et que ferait-il de son détendeur ?"
+      vecu:
+        - "A-t-il déjà vu ou aidé un plongeur en difficulté qui avait lâché son détendeur ?"
+        - "A-t-il une formation de secourisme (PSC1, PSE) ?"
+        - "Quel est son niveau de plongée ? Est-il à l'aise avec son propre détendeur en surface ?"
+      sait:
+        - "Sait-il pourquoi on maintient le détendeur dans la bouche de la victime ?"
+        - "Sait-il qu'on met la victime sur le dos, sangles légèrement desserrées, gilet gonflé ?"
+        - "A-t-il des idées fausses ? Par exemple : « en surface, on retire le détendeur pour qu'il respire l'air libre »."
+      esprit:
+        - "Est-il gêné de manipuler le visage d'un autre plongeur ?"
+        - "Craint-il de faire mal ou d'aggraver la situation ?"
+      comment: "Au sec, lui demander : « Ton équipier est en difficulté en surface, détendeur en bouche. Qu'en fais-tu, et pourquoi ? » Puis, en surface, victime simulée, on observe s'il garde le détendeur en place pendant qu'il la place."
+      adapter:
+        - "Il ne voit pas l'intérêt du détendeur : on commence à l'étape 1, « Le principe »."
+        - "Il connaît le principe : on passe à l'étape 2, « Détendeur en bouche »."
+        - "Il tient le détendeur mais le lâche en plaçant la victime : on travaille l'étape 3, « Position et flottabilité »."
+        - "Il garde le détendeur à toutes les étapes : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La ventilation de la victime est garantie à toutes les étapes."
+        - "Le détendeur est maintenu sans interruption."
+        - "La victime est sur le dos, en flottabilité positive."
+      securite:
+        - "La victime simulée, stagiaire ou formateur, peut arrêter l'exercice à tout moment."
+      eca: "lâche le détendeur pour gonfler le gilet → reprendre l'étape 3"
+  "Remorquer la victime vers le point de sortie de l'eau":
+    evaluer:
+      question: "Quelles techniques de remorquage l'élève connaît-il, et comment se débrouille-t-il avec une victime équipée ?"
+      vecu:
+        - "A-t-il appris le remorquage en sauvetage aquatique (BNSSA) ou dans sa formation de plongeur ?"
+        - "A-t-il déjà remorqué un plongeur en scaphandre ? Sur quelle distance ?"
+        - "Est-il à l'aise en propulsion dorsale ?"
+      sait:
+        - "Connaît-il la prise arrière et la prise avant, et l'intérêt de chacune ?"
+        - "Sait-il que les voies aériennes doivent rester hors de l'eau sur toute la distance ?"
+        - "A-t-il des idées fausses ? Par exemple : « la prise la plus rapide est toujours la meilleure », ou « on tire la victime par le bloc, peu importe sa tête »."
+      esprit:
+        - "Craint-il l'effort, ou de ne pas tenir la distance ?"
+        - "Veut-il aller vite au détriment de la victime ?"
+      comment: "En surface, victime simulée en scaphandre, sur une distance courte, lui dire : « Ramène-le au point de sortie. » On observe sa position de départ, la prise choisie, la tenue des voies aériennes et son orientation."
+      adapter:
+        - "Il ne sait pas où se placer : on commence à l'étape 1, « Position de départ »."
+        - "Il se place bien mais les voies aériennes s'immergent : on passe à l'étape 2, « Prise arrière »."
+        - "Sa prise arrière est sûre mais lente, ou il perd son orientation : on travaille l'étape 3, « Prise avant »."
+        - "Il maîtrise les deux prises : on passe à l'étape 4, sur une distance réaliste."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), distance réaliste"
+      criteres:
+        - "Le tractage est sécurisant : voies aériennes tenues sur toute la distance."
+        - "La technique est adaptée au contexte."
+        - "Il surveille la victime et arrive prêt pour la sortie."
+      securite: []
+      eca: "laisse les voies aériennes s'immerger en prise arrière → reprendre l'étape 2"
+  "Déséquiper la victime et se déséquiper":
+    evaluer:
+      question: "Que sait l'élève du déséquipement d'une victime dans l'eau, selon son type de gilet ?"
+      vecu:
+        - "Connaît-il les gilets ajustables et les gilets enveloppants ? Lequel utilise-t-il ?"
+        - "A-t-il déjà aidé un équipier à se déséquiper dans l'eau, au bateau ou à l'échelle ?"
+        - "Se déséquipe-t-il seul dans l'eau sans difficulté ?"
+      sait:
+        - "Sait-il dans quel ordre libérer sangles, lest et harnais ?"
+        - "Sait-il que son propre gilet peut servir de plan dur ?"
+        - "A-t-il des idées fausses ? Par exemple : « on retire d'abord le détendeur de la victime », ou « le sauveteur se déséquipe en premier pour être plus libre »."
+      esprit:
+        - "Est-il perdu devant un matériel qu'il ne connaît pas ?"
+        - "Craint-il de lâcher la victime en se déséquipant ?"
+      comment: "En surface, près du point de sortie, victime simulée équipée d'un gilet qu'il ne connaît pas forcément. Lui dire : « Déséquipe-le, puis déséquipe-toi. » On regarde l'ordre suivi, la tenue des voies aériennes, le moment où il retire le détendeur, et s'il garde la victime en main."
+      adapter:
+        - "Il ne sait pas par où commencer : on commence à l'étape 1, « Gilet ajustable »."
+        - "Il déséquipe un gilet ajustable mais pas un gilet enveloppant : on passe à l'étape 2, « Gilet enveloppant »."
+        - "Il libère la victime mais la lâche pour se déséquiper : on travaille l'étape 3, « Se déséquiper »."
+        - "Il enchaîne sans erreur : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), près du point de sortie"
+      criteres:
+        - "Les techniques sont sûres et adaptées au contexte et au matériel."
+        - "La victime est libérée, voies aériennes hors de l'eau, détendeur retiré le plus tard possible."
+        - "Il se déséquipe après la victime, sans oublier de sangle et sans la lâcher."
+      securite: []
+      eca: "lâche la victime pour retirer son propre lest → reprendre l'étape 3"
+  "Assurer la sortie de l'eau d'un plongeur en difficulté":
+    evaluer:
+      question: "Comment l'élève sortirait-il de l'eau un plongeur en difficulté, sur le support de son club ?"
+      vecu:
+        - "D'où plonge-t-il habituellement : échelle, bateau ponté, pneumatique, plage ou berge, bord de piscine ?"
+        - "A-t-il déjà vu hisser un plongeur, ou aidé à le faire ?"
+        - "A-t-il une fragilité du dos ou une gêne physique à signaler ?"
+      sait:
+        - "Connaît-il une technique de sortie adaptée au support de son club ?"
+        - "Sait-il qu'il existe d'autres moyens : harnais, sangle ou aussière, plan dur ou civière ?"
+        - "A-t-il des idées fausses ? Par exemple : « on hisse à la force des bras, d'un seul coup », ou « seul, on y arrive toujours »."
+      esprit:
+        - "Craint-il de ne pas avoir la force ?"
+        - "Mesure-t-il le risque pour son dos et pour celui de la victime ?"
+      comment: "Au bord, sur le support habituel du club, lui demander d'abord : « Explique-moi comment tu la sortirais. » Puis, victime simulée, on le laisse commencer. On l'arrête à la moindre posture à risque pour son dos ou pour la courbure lombaire de la victime."
+      adapter:
+        - "Il ne connaît pas de technique pour son support : on commence à l'étape 1, « Le support du club »."
+        - "Il sort la victime seul, mais au prix d'un gros effort : on passe à l'étape 2, « À deux sauveteurs »."
+        - "Il maîtrise la sortie à deux sur son support : on passe à l'étape 3, « Autres supports », puis à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), selon le milieu de pratique"
+      criteres:
+        - "Le hissage est réalisé de façon sécurisante, sans mettre la victime en danger."
+        - "À deux, la sortie est coordonnée et les efforts limités."
+        - "Il choisit la technique adaptée au support disponible."
+      securite:
+        - "La victime simulée, stagiaire ou formateur, peut arrêter l'exercice à tout moment."
+        - "On préserve le dos du sauveteur et la courbure lombaire de la victime."
+      eca: "hisse seul alors qu'un second sauveteur est disponible → reprendre l'étape 2"
+  "La mise en sécurité de la victime":
+    evaluer:
+      question: "Une fois la victime sortie de l'eau, où et comment l'élève l'installerait-il ?"
+      vecu:
+        - "A-t-il une formation de secourisme (PSC1, PSE) ?"
+        - "Connaît-il le bateau ou le bord d'où il plonge : où installerait-on une victime ?"
+        - "A-t-il déjà vu un accident à bord ou au bord de l'eau ?"
+      sait:
+        - "Sait-il repérer les risques de sur-accident : chute d'objet, froid, chaleur ?"
+        - "Sait-il que la position dépend de l'état de la victime ?"
+        - "A-t-il des idées fausses ? Par exemple : « on l'allonge là où on l'a sortie », ou « la même position convient à toutes les victimes »."
+      esprit:
+        - "Se sent-il dépassé une fois la victime à bord, sans savoir par quoi commencer ?"
+        - "Craint-il de mal la positionner ?"
+      comment: "À bord ou au sol, après une sortie de l'eau simulée, lui demander : « Elle est sortie. Et maintenant ? » On observe l'endroit choisi, les risques qu'il écarte et le temps qu'il met à installer la victime."
+      adapter:
+        - "Il installe la victime n'importe où : on commence à l'étape 1, « Zone sécurisée »."
+        - "La zone est bonne mais la position ne tient pas compte de l'état de la victime : on passe à l'étape 2, « Position de confort »."
+        - "Il sait faire, mais perd du temps entre la sortie et l'installation : on travaille l'étape 3, « Enchaîner »."
+        - "Il enchaîne sans délai : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "L'accidenté est mis en sécurité, à l'abri du sur-accident."
+        - "La position est adaptée à l'état de la victime."
+        - "La victime est installée sans délai après la sortie de l'eau."
+      securite: []
+      eca: "laisse la victime en plein soleil, sans abri → reprendre l'étape 1"
+
+RIFAP-C3:
+  "Prendre en charge une palanquée dont l'un des membres est accidenté":
+    evaluer:
+      question: "Que ferait l'élève des autres membres de la palanquée quand l'un d'eux est accidenté ?"
+      vecu:
+        - "A-t-il déjà vu une fiche de sécurité, ou aidé un DP à la remplir ?"
+        - "A-t-il vécu ou vu un accident ? Se souvient-il de ce qu'on a fait des équipiers ?"
+        - "Quel est son niveau de plongée ? Lit-il déjà les paramètres de son ordinateur ?"
+      sait:
+        - "Sait-il lire et noter les paramètres sur la fiche de sécurité ?"
+        - "Sait-il pourquoi on vérifie la désaturation des autres membres ?"
+        - "A-t-il des idées fausses ? Par exemple : « seul l'accidenté compte », ou « les équipiers ont fait la même plongée sans problème, donc ils vont bien »."
+      esprit:
+        - "Est-il absorbé par la victime au point d'oublier le reste de la palanquée ?"
+        - "Se sent-il légitime pour questionner des plongeurs plus expérimentés ?"
+      comment: "Au sec, lui présenter une fiche de sécurité remplie et un cas simple : « Un plongeur de cette palanquée est accidenté. Que fais-tu pour les autres ? » On écoute s'il pense à la composition, à l'état de chacun, aux paramètres et à la désaturation."
+      adapter:
+        - "Il ne sait pas lire la fiche : on commence à l'étape 1, « La fiche de sécurité »."
+        - "Il lit la fiche mais oublie les équipiers : on passe à l'étape 2, « Vérifier la palanquée »."
+        - "Il vérifie la composition mais pas les paramètres : on travaille l'étape 3, « Paramètres et désaturation »."
+        - "Il pense à tout : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Le recueil d'éléments sur la palanquée est exhaustif."
+        - "La composition est vérifiée et l'intégrité de chacun contrôlée."
+        - "Les paramètres sont relevés, la désaturation vérifiée, la palanquée surveillée."
+      securite: []
+      eca: "oublie de vérifier la désaturation des équipiers → reprendre l'étape 3"
+  "Prendre en charge les palanquées encore en immersion":
+    evaluer:
+      question: "Que sait l'élève de la prise en charge des palanquées encore à l'eau quand un accident survient ?"
+      vecu:
+        - "A-t-il déjà assisté à un rappel des plongeurs ? Par quel moyen ?"
+        - "A-t-il déjà été rappelé lui-même en cours de plongée ?"
+        - "Connaît-il l'organisation de son club : qui tient la fiche de sécurité ?"
+      sait:
+        - "Connaît-il les moyens de rappel de son club et de son site ?"
+        - "Sait-il quelles informations recueillir : nombre, temps de plongée, paliers ?"
+        - "A-t-il des idées fausses ? Par exemple : « l'accident ne concerne pas les palanquées encore à l'eau »."
+      esprit:
+        - "Pense-t-il à ceux qu'il ne voit pas, ou seulement à la victime ?"
+        - "Est-il à l'aise pour compter et pointer dans l'agitation ?"
+      comment: "Au sec, à partir d'une fiche de sécurité où des palanquées sont encore à l'eau, lui demander : « Un accident vient d'arriver à bord. Que fais-tu pour ceux qui plongent encore ? » On écoute s'il pense au rappel, aux informations à recueillir et au pointage."
+      adapter:
+        - "Il ne connaît pas les moyens de rappel : on commence à l'étape 1, « Moyens de rappel »."
+        - "Il pense au rappel mais pas aux informations : on passe à l'étape 2, « Recueillir les informations »."
+        - "Il recueille les informations mais oublie le pointage : on travaille l'étape 3, « Vérifier le retour »."
+        - "Il pense à tout : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La fiche de sécurité est renseignée."
+        - "Les informations sur les équipes encore à l'eau sont complètes."
+        - "Toutes les palanquées sont pointées à leur retour."
+      securite: []
+      eca: "oublie de pointer une palanquée sur la fiche → reprendre l'étape 3"
+  "Regrouper le matériel":
+    evaluer:
+      question: "L'élève voit-il le matériel épars comme un risque lors d'un accident ?"
+      vecu:
+        - "Plonge-t-il depuis un bateau, un bord ou une plage ? Comment le matériel y est-il rangé ?"
+        - "A-t-il déjà vu un pont encombré pendant un incident ?"
+        - "A-t-il déjà vu ou entendu raconter un hélitreuillage ?"
+      sait:
+        - "Sait-il expliquer les risques : sur-accident, gêne des secours, hélitreuillage ?"
+        - "Sait-il comment on fixe le matériel sur son bateau ?"
+        - "A-t-il des idées fausses ? Par exemple : « le matériel, c'est secondaire, on verra après »."
+      esprit:
+        - "Juge-t-il cette tâche inutile, loin de l'action ?"
+        - "Accepte-t-il ce rôle s'il lui est confié ?"
+      comment: "Sur le bateau ou au bord, matériel laissé en désordre, lui demander : « Les secours arrivent, peut-être par hélicoptère. Que fais-tu du matériel, et pourquoi ? » On écoute ses raisons, puis on regarde ce qu'il range et ce qu'il fixe."
+      adapter:
+        - "Il ne voit pas le risque : on commence à l'étape 1, « Pourquoi »."
+        - "Il explique les risques : on passe à l'étape 2, « Regrouper »."
+        - "Il regroupe sans fixer : on travaille l'étape 3, « Arrimer », avec un hélitreuillage possible."
+        - "Il regroupe et arrime déjà : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Le matériel est regroupé et arrimé."
+        - "Il explique les risques du matériel épars."
+        - "Il tient compte d'un hélitreuillage possible."
+      securite: []
+      eca: "regroupe le matériel sans le fixer → reprendre l'étape 3"
+  "Recueillir les informations utiles":
+    evaluer:
+      question: "L'élève connaît-il la fiche d'évacuation, et pense-t-il à la remplir dès le début ?"
+      vecu:
+        - "A-t-il déjà vu une fiche d'évacuation, ou la fiche de prise d'alerte du CROSS ?"
+        - "A-t-il déjà dû remplir un document pendant une urgence, en secourisme ou dans son métier ?"
+        - "A-t-il vu un accident où l'on avait du mal à retrouver l'heure ou les symptômes ?"
+      sait:
+        - "Connaît-il les rubriques de la fiche d'évacuation, et sait-il qu'elle vient du Code du sport ?"
+        - "Sait-il ce qu'on y note d'abord : heure, symptômes, actions menées ?"
+        - "A-t-il des idées fausses ? Par exemple : « on remplit la fiche quand tout est terminé », ou « les secours savent déjà tout »."
+      esprit:
+        - "Voit-il la fiche comme de la paperasse ?"
+        - "Reste-t-il méthodique sous pression, ou se disperse-t-il ?"
+      comment: "Au sec, lui donner une fiche d'évacuation vierge et le court récit d'un accident. Lui demander : « Remplis ce que tu peux. » On regarde ce qu'il renseigne en premier et ce qu'il oublie."
+      adapter:
+        - "Il ne connaît pas la fiche : on commence à l'étape 1, « La fiche d'évacuation »."
+        - "Il connaît les rubriques mais attend la fin pour remplir : on passe à l'étape 2, « Renseigner tôt »."
+        - "Il remplit tôt et bien : on travaille l'étape 3, « Remettre aux secours », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La fiche d'évacuation est mise en œuvre."
+        - "Elle est commencée sans délai : heure, symptômes, actions menées."
+        - "Une fiche complète est remise aux secours."
+      securite: []
+      eca: "commence la fiche à l'arrivée des secours → reprendre l'étape 2"
+
+RIFAP-C4:
+  "Répartir un rôle à chacun en fonction des compétences présentes":
+    evaluer:
+      question: "Que sait l'élève de l'organisation des secours, et saurait-il répartir les rôles ?"
+      vecu:
+        - "A-t-il déjà vécu une urgence où chacun agissait sans coordination ?"
+        - "Encadre-t-il ou organise-t-il déjà (guide de palanquée, directeur de plongée, métier, secourisme) ?"
+        - "Connaît-il le POSS de son club et l'emplacement du matériel de secours ?"
+      sait:
+        - "Sait-il ce que fait le coordinateur ?"
+        - "Sait-il citer les rôles : évaluation de la victime, matériel d'urgence, gestes de secours, vérification des palanquées, matériel, fiche d'évacuation, alerte ?"
+        - "A-t-il des idées fausses ? Par exemple : « le plus gradé fait tout lui-même », ou « tout le monde s'occupe de la victime »."
+      esprit:
+        - "Ose-t-il prendre la place du coordinateur et donner des consignes ?"
+        - "Préfère-t-il agir lui-même plutôt que déléguer ?"
+      comment: "Au sec, avec quelques stagiaires, annoncer : « Un plongeur vient d'être sorti de l'eau, il ne va pas bien. Organise-nous. » On observe s'il prend la coordination, quels rôles il distribue et s'il tient compte de ce que chacun sait faire."
+      adapter:
+        - "Il ne voit pas l'intérêt d'un coordinateur : on commence à l'étape 1, « Le coordinateur »."
+        - "Il connaît le rôle du coordinateur mais oublie des rôles : on passe à l'étape 2, « Les rôles »."
+        - "Il cite tous les rôles mais les distribue au hasard : on travaille l'étape 3, « Répartir »."
+        - "Il répartit vite et à bon escient : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La gestion de crise est maîtrisée."
+        - "Les rôles sont répartis vite et à bon escient, selon les compétences présentes."
+        - "Le coordinateur centralise les informations dès l'appel de détresse."
+      securite: []
+      eca: "se charge lui-même des gestes de secours et ne coordonne plus → reprendre l'étape 3"
+  "Gérer le retour à bord des plongeurs":
+    evaluer:
+      question: "L'élève connaît-il les consignes de rappel et de récupération des plongeurs de son club ?"
+      vecu:
+        - "Écoute-t-il les consignes de rappel données avant ses plongées ?"
+        - "A-t-il déjà vu un bateau aller chercher une palanquée en difficulté ?"
+        - "A-t-il une expérience de la navigation ou du pilotage ?"
+      sait:
+        - "Sait-il qu'on connaît les consignes de rappel avant toute plongée ?"
+        - "Sait-il qu'on peut déplacer les plongeurs ou le bateau pour récupérer quelqu'un ?"
+        - "A-t-il des idées fausses ? Par exemple : « les palanquées rentrent d'elles-mêmes, inutile de les pointer »."
+      esprit:
+        - "Se sent-il concerné par l'organisation, ou la laisse-t-il au DP ?"
+        - "Garde-t-il son calme quand plusieurs choses arrivent en même temps ?"
+      comment: "Avant une plongée, lui demander : « Quelles sont les consignes de rappel aujourd'hui ? » Puis, au sec, lui exposer un appel de détresse et lui demander comment on récupère les plongeurs."
+      adapter:
+        - "Il ne connaît pas les consignes de rappel : on commence à l'étape 1, « Consignes de rappel »."
+        - "Il connaît le rappel mais pas la récupération : on passe à l'étape 2, « Récupérer les plongeurs en difficulté »."
+        - "Il connaît les deux : on travaille l'étape 3, « Appliquer », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Les palanquées sont contrôlées."
+        - "Les plongeurs sont récupérés et pointés."
+        - "Il connaît les consignes de rappel avant la plongée."
+      securite: []
+      eca: "récupère les plongeurs sans les pointer → reprendre l'étape 3"
+  "Assurer la liaison entre les divers intervenants":
+    evaluer:
+      question: "Comment l'élève fait-il circuler l'information entre les acteurs d'un accident ?"
+      vecu:
+        - "A-t-il vécu une urgence où une information s'est perdue entre deux personnes ?"
+        - "A-t-il l'habitude du travail en équipe sous pression (secours, soins, métier) ?"
+        - "A-t-il déjà tenu, en cas concret, un autre rôle que celui de la victime ?"
+      sait:
+        - "Sait-il qui doit savoir quoi : coordinateur, personne qui alerte, personnes qui font les gestes ?"
+        - "Sait-il qu'il faut suivre les actions en cours, pas seulement les lancer ?"
+        - "A-t-il des idées fausses ? Par exemple : « une fois l'alerte donnée, tout est réglé »."
+      esprit:
+        - "Est-il à l'aise dans tous les rôles, ou seulement dans un ?"
+        - "Se laisse-t-il absorber par une tâche au point de ne plus transmettre ?"
+      comment: "En cas concret, lui confier un rôle et observer ce qu'il transmet, à qui et quand. Après le cas, lui demander : « Qui savait quoi, et à quel moment ? »"
+      adapter:
+        - "Les informations se perdent : on commence à l'étape 1, « Circulation des informations »."
+        - "Il transmet mais ne vérifie pas que les actions sont faites : on passe à l'étape 2, « Suivre les actions »."
+        - "Il n'est à l'aise que dans un rôle : on travaille l'étape 3, « Tous les rôles », en faisant tourner les rôles."
+        - "Il tient chaque rôle : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets sur l'ensemble des tâches"
+      criteres:
+        - "Les actions sont contrôlées : rien n'est oublié."
+        - "Les informations sont transmises sans perte entre les acteurs."
+        - "Les documents sont complétés."
+        - "Il tient chaque rôle."
+      securite: []
+      eca: "transmet l'information sans vérifier que l'action est faite → reprendre l'étape 2"
+
+RIFAP-C5:
+  "La victime se plaint d'un malaise":
+    evaluer:
+      question: "Que sait l'élève du malaise, et le relie-t-il à la plongée ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? De quand date-t-il ?"
+        - "A-t-il déjà eu ou vu un malaise après une plongée ?"
+        - "Quel est son niveau de plongée ? Que sait-il déjà des accidents de plongée ?"
+      sait:
+        - "Sait-il qu'un malaise après une plongée est traité en priorité comme un accident de plongée ?"
+        - "Sait-il quelles questions poser : chronologie des troubles, localisation, déroulement de la plongée, qualité de la décompression ?"
+        - "A-t-il des idées fausses ? Par exemple : « il a fait ses paliers, ce ne peut pas être un accident de désaturation », ou « c'est sûrement la fatigue, on attend »."
+      esprit:
+        - "Craint-il de dramatiser un « petit » malaise ?"
+        - "Se sent-il capable d'interroger une victime sans l'inquiéter ?"
+      comment: "Au sec, un formateur joue un plongeur qui dit, après la plongée : « Je ne me sens pas bien. » On demande à l'élève : « Que fais-tu ? » On écoute les questions qu'il pose et sa décision, sans corriger."
+      adapter:
+        - "Il ne reconnaît pas le malaise ou l'écarte : on commence à l'étape 1, « Reconnaître un malaise », à partir de la fiche Malaise du PSC1."
+        - "Il reconnaît le malaise mais n'interroge pas : on passe à l'étape 2, « Interroger »."
+        - "Il interroge bien mais tarde à agir : on travaille l'étape 3, « Mettre au repos et protéger »."
+        - "Il enchaîne sans hésiter : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Les gestes sont adaptés à la situation."
+        - "La victime est au repos et protégée, oxygène et alerte déclenchés."
+        - "Une surveillance de l'accidenté est organisée."
+      securite:
+        - "La victime simulée, stagiaire ou formateur, peut arrêter l'exercice à tout moment."
+      eca: "écarte l'accident de plongée parce que les paliers ont été faits → reprendre l'étape 1"
+  "Les hémorragies externes":
+    evaluer:
+      question: "Que sait l'élève face à une hémorragie, et avec quel matériel agirait-il sur un lieu de plongée ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? De quand date-t-il ?"
+        - "A-t-il déjà été blessé, ou vu une blessure, en plongée (épave, rocher) ?"
+        - "Sait-il où se trouve la trousse de secours du bateau ou du club ?"
+      sait:
+        - "Connaît-il la conduite à tenir face à une hémorragie externe, telle que la décrit le PSC1 ?"
+        - "Pense-t-il à utiliser ce qu'il a sous la main : serviette, tee-shirt, ceinture ?"
+        - "A-t-il des idées reçues, des gestes « vus à la télé » qui ne correspondent pas au référentiel ?"
+      esprit:
+        - "Est-il impressionné par la vue du sang ?"
+        - "Craint-il de mal faire et d'aggraver ?"
+      comment: "Au sec, lui décrire un plongeur qui s'est coupé sur une tôle d'épave et lui demander : « Que fais-tu, et avec quoi ? » On écoute s'il reconnaît la situation et ce qu'il choisit dans le matériel disponible. On compare sa réponse au référentiel PSC1, sans corriger tout de suite."
+      adapter:
+        - "Il ne reconnaît pas la situation ou n'a pas de secourisme : on commence à l'étape 1, « Reconnaître », avec les fiches PSC1."
+        - "Il connaît le PSC1 mais ne pense qu'au matériel de secourisme : on passe à l'étape 2, « Le matériel de l'activité »."
+        - "Il connaît la conduite à tenir et le matériel : on travaille l'étape 3, « Agir », sur un partenaire ou un mannequin, puis on passe à l'étape 4."
+        - "Il est impressionné : on reste au calme à l'étape 1 avant tout cas simulé."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Les gestes sont adaptés à la situation, conformes au référentiel PSC1 (ou PSE)."
+        - "Le matériel choisi est adapté à ce qu'on a sous la main."
+        - "Il reconnaît la situation."
+      securite: []
+      eca: "cherche la trousse alors qu'une serviette est à portée de main → reprendre l'étape 2"
+  "Les plaies, les brûlures et les traumatismes":
+    evaluer:
+      question: "L'élève connaît-il la conduite à tenir face aux plaies, brûlures et traumatismes, et les risques propres à son lieu de plongée ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? De quand date-t-il ?"
+        - "A-t-il déjà été piqué ou brûlé par la faune ou la flore (méduse, corail de feu), ou glissé sur un pont ?"
+        - "Où plonge-t-il : mer, lac, carrière, mers chaudes ?"
+      sait:
+        - "Connaît-il les fiches PSC1 correspondantes et la trousse de secours de son lieu de pratique ?"
+        - "Sait-il citer les risques de son lieu de pratique ?"
+        - "A-t-il des idées reçues, des « remèdes » entendus sur le bateau ou vus à la télé ?"
+      esprit:
+        - "Minimise-t-il ces accidents, jugés banals ?"
+        - "Est-il à l'aise pour s'occuper d'une blessure ?"
+      comment: "Au sec, lui demander : « Quels sont les risques de blessure là où tu plonges, et que ferais-tu ? » Puis lui présenter un cas simple. On compare ce qu'il dit au référentiel PSC1, sans corriger tout de suite."
+      adapter:
+        - "Il ne connaît pas la conduite à tenir : on commence à l'étape 1, « Situations courantes »."
+        - "Il connaît le PSC1 mais pas les risques de l'activité : on passe à l'étape 2, « Situations de l'activité »."
+        - "Il connaît les deux : on travaille l'étape 3, « Agir », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Les gestes sont adaptés à la situation, conformes au référentiel PSC1 (ou PSE)."
+        - "Il cite les risques de son lieu de pratique."
+        - "Il connaît la trousse de secours du lieu de pratique."
+      securite: []
+      eca: "ne pense pas aux piqûres et brûlures de la faune de son site → reprendre l'étape 2"
+  "La victime présente une perte de connaissance":
+    evaluer:
+      question: "Que sait l'élève de la perte de connaissance, et pense-t-il à l'oxygène ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? A-t-il pratiqué la PLS récemment ?"
+        - "A-t-il déjà vu une perte de connaissance, en plongée, en apnée ou ailleurs ?"
+        - "A-t-il déjà vu ou manipulé un kit d'oxygène ?"
+      sait:
+        - "Sait-il reconnaître une perte de connaissance, telle que la décrit le PSC1 ?"
+        - "Fait-il le lien avec la plongée : syncope anoxique, début de noyade, évolution d'un accident de désaturation ?"
+        - "A-t-il des idées fausses sur l'oxygène ? Par exemple : « l'oxygène, c'est réservé aux médecins », ou « l'oxygène peut attendre qu'elle se réveille »."
+      esprit:
+        - "La peur de mal faire le paralyse-t-elle face à une victime inconsciente ?"
+        - "Manipule-t-il l'oxygène avec appréhension ?"
+      comment: "Au sec, lui décrire un plongeur sorti de l'eau qui ne répond plus et lui demander : « Que fais-tu ? » On écoute l'ordre de ses actions et s'il pense à l'oxygène. Les gestes sont vérifiés ensuite, sur un partenaire volontaire."
+      adapter:
+        - "Il ne reconnaît pas la situation : on commence à l'étape 1, « Reconnaître », avec les fiches PSC1."
+        - "Il reconnaît la situation : on passe à l'étape 2, « Les gestes »."
+        - "Ses gestes sont justes mais il oublie l'oxygène : on travaille l'étape 3, « L'oxygène »."
+        - "Il enchaîne gestes et oxygène : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Les gestes sont adaptés à la situation, conformes au référentiel PSC1 (ou PSE)."
+        - "L'oxygène est mis en place sans délai."
+        - "Une surveillance de l'accidenté est organisée."
+      securite:
+        - "L'oxygène se manipule avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+      eca: "met la victime en PLS mais oublie l'oxygène → reprendre l'étape 3"
+  "La victime ne respire pas":
+    evaluer:
+      question: "Que sait l'élève de l'arrêt cardiaque, et connaît-il les spécificités de la noyade ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? A-t-il déjà pratiqué sur mannequin, et quand ?"
+        - "A-t-il déjà vu une réanimation, en vrai ou en exercice ?"
+        - "Pratique-t-il l'apnée ? Connaît-il la syncope en apnée ?"
+      sait:
+        - "Sait-il reconnaître un arrêt cardiaque, tel que le décrit le PSC1 ?"
+        - "Sait-il que la noyade a sa propre séquence, décrite dans le PSE ?"
+        - "A-t-il des idées reçues, des gestes « vus à la télé », ou croit-il que le DEA fait partie du référentiel RIFAP ?"
+      esprit:
+        - "Est-il impressionné par la gravité de la situation ?"
+        - "Craint-il d'aggraver l'état de la victime en agissant ?"
+      comment: "Sur mannequin uniquement, lui dire : « Il ne respire pas. À toi. » On observe s'il reconnaît la situation et la régularité de ses gestes, puis on lui demande ce qui change pour un noyé. On compare au référentiel PSC1 et PSE, sans corriger pendant l'exercice."
+      adapter:
+        - "Il ne reconnaît pas la situation : on commence à l'étape 1, « Reconnaître un arrêt cardiaque », avec les fiches PSC1."
+        - "Il reconnaît la situation : on passe à l'étape 2, « Les gestes sur mannequin »."
+        - "Ses gestes sont justes et réguliers : on travaille l'étape 3, « Noyade et syncope en apnée »."
+        - "Il connaît déjà la séquence propre à la noyade : on vérifie l'étape 2 avec l'insufflateur manuel, puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets sur mannequin"
+      criteres:
+        - "Les gestes sont adaptés à la situation, conformes au référentiel PSC1 (ou PSE)."
+        - "Les gestes sur mannequin sont justes et réguliers, y compris avec l'insufflateur manuel."
+        - "Il applique la séquence propre à la noyade."
+      securite:
+        - "Compressions thoraciques et insufflations uniquement sur mannequin, jamais sur une personne."
+      eca: "applique à un noyé la séquence de l'arrêt cardiaque → reprendre l'étape 3"
+  "Couverture isothermique":
+    evaluer:
+      question: "L'élève sait-il pourquoi et comment envelopper une victime dans une couverture isothermique ?"
+      vecu:
+        - "A-t-il déjà utilisé une couverture isothermique, en secourisme, en randonnée ou en course ?"
+        - "A-t-il déjà eu froid après une plongée, ou vu un plongeur grelotter à bord ?"
+        - "Plonge-t-il depuis un bateau exposé au vent ?"
+      sait:
+        - "Sait-il qu'on enveloppe totalement la victime, tête comprise ?"
+        - "Sait-il que le vent complique la mise en place ?"
+        - "A-t-il des idées fausses ? Par exemple : « on pose la couverture sur le corps, la tête n'a pas d'importance », ou « c'est seulement utile en hiver »."
+      esprit:
+        - "Considère-t-il ce geste comme secondaire ?"
+        - "S'agace-t-il face à une couverture qui s'envole ?"
+      comment: "À l'abri, lui donner une couverture isothermique et un partenaire allongé : « Couvre-le. » On regarde si la tête est couverte et si la couverture tient. On lui demande ensuite pourquoi il fait ainsi."
+      adapter:
+        - "Il ne couvre pas la tête : on commence à l'étape 1, « Le principe »."
+        - "Il explique le principe : on passe à l'étape 2, « Mise en place »."
+        - "Il couvre bien à l'abri : on travaille l'étape 3, « Conditions réelles », avec du vent, sur un bateau."
+        - "La couverture tient déjà dehors : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La couverture est mise en place correctement."
+        - "La victime est entièrement couverte, tête comprise."
+        - "La couverture tient en place dehors, avec du vent."
+      securite: []
+      eca: "la couverture s'envole sur le bateau → reprendre l'étape 3"
+
+RIFAP-C6:
+  "Administrer de l'oxygène selon les recommandations de la CMPN":
+    evaluer:
+      question: "Que sait l'élève de l'oxygène en cas d'accident de plongée, et de la recommandation de la CMPN ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? A-t-il déjà administré de l'oxygène ?"
+        - "A-t-il déjà vu un plongeur sous oxygène à bord ?"
+        - "Connaît-il le kit d'oxygène de son club ?"
+      sait:
+        - "Connaît-il le débit recommandé par la CMPN ?"
+        - "Sait-il qu'on n'emploie pas le même matériel pour une victime qui respire et pour une victime qui ne respire pas ?"
+        - "A-t-il des idées fausses ? Par exemple : « on réduit le débit pour économiser la bouteille », ou « on arrête l'oxygène dès que la victime va mieux »."
+      esprit:
+        - "L'oxygène lui fait-il peur ?"
+        - "Craint-il de se tromper de débit ?"
+      comment: "Au sec, devant le kit du club, lui demander : « Ton équipier a un malaise après la plongée et respire. Que fais-tu avec ce matériel ? Et s'il ne respirait plus ? » On écoute le débit annoncé et le matériel choisi, sans corriger."
+      adapter:
+        - "Il ne connaît pas la recommandation : on commence à l'étape 1, « La recommandation »."
+        - "Il cite la recommandation : on passe à l'étape 2, « Par inhalation »."
+        - "Il maîtrise l'inhalation : on travaille l'étape 3, « Par insufflation », sur mannequin."
+        - "Il choisit déjà le bon matériel selon la situation : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Il cite sans erreur la recommandation de la CMPN."
+        - "Inhalation et insufflation sont utilisées à bon escient."
+        - "Le masque est bien placé, au débit de 15 L/min."
+      securite:
+        - "L'oxygène se manipule avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+        - "Insufflations uniquement sur mannequin, jamais sur une personne."
+      eca: "baisse le débit quand la victime semble aller mieux → reprendre l'étape 1"
+  "Réhydrater":
+    evaluer:
+      question: "Que sait l'élève de la réhydratation d'un plongeur accidenté ?"
+      vecu:
+        - "A-t-il entendu parler de l'hydratation du plongeur, avant et après la plongée ?"
+        - "A-t-il déjà vu donner à boire à un plongeur accidenté ?"
+        - "Boit-il lui-même après ses plongées ?"
+      sait:
+        - "Sait-il quoi faire boire, et comment ?"
+        - "Connaît-il les cas où il ne faut pas faire boire ?"
+        - "A-t-il des idées fausses ? Par exemple : « une boisson sucrée, c'est mieux », ou « on fait boire dans tous les cas »."
+      esprit:
+        - "Voit-il ce geste comme anodin, sans risque ?"
+        - "Hésite-t-il à refuser à boire à une victime qui le demande ?"
+      comment: "Au sec, lui présenter deux ou trois courtes situations de victimes et lui demander : « Tu lui donnes à boire ? Quoi, et comment ? » On écoute sa décision et ses raisons."
+      adapter:
+        - "Il ne connaît pas la recommandation : on commence à l'étape 1, « La recommandation »."
+        - "Il connaît la recommandation mais fait boire tout le monde : on passe à l'étape 2, « Les contre-indications »."
+        - "Il connaît les deux : on travaille l'étape 3, « Appliquer », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La recommandation de la CMPN est appliquée : eau plate, sans sucre, en fractionnant."
+        - "Il ne fait pas boire dans les trois cas de contre-indication."
+        - "Sa décision est juste en situation."
+      securite: []
+      eca: "fait boire une victime qui a des nausées → reprendre l'étape 2"
+  "Alerter pour une évacuation du plongeur accidenté":
+    evaluer:
+      question: "L'élève sait-il qui alerter, et quand, pour évacuer un plongeur accidenté ?"
+      vecu:
+        - "A-t-il déjà appelé les secours, en plongée ou ailleurs ?"
+        - "A-t-il vu ou entendu raconter une évacuation vers un centre hyperbare ?"
+        - "Plonge-t-il en mer, en eaux intérieures, ou les deux ?"
+      sait:
+        - "Connaît-il le CROSS en mer et le SCMM à terre ?"
+        - "Sait-il que toute mise sous oxygène implique l'alerte ?"
+        - "A-t-il des idées fausses ? Par exemple : « on attend de voir si l'oxygène suffit avant d'appeler », ou « on peut redescendre la victime pour la recomprimer »."
+      esprit:
+        - "Craint-il de déranger les secours pour rien ?"
+        - "Pourrait-il se laisser convaincre par une victime qui refuse qu'on appelle ?"
+      comment: "Au sec, lui proposer un cas : « Ton équipier est sous oxygène et dit qu'il va mieux. Que fais-tu ? » On écoute s'il alerte, qui il appelle, et ce qu'il répond si quelqu'un propose de réimmerger la victime."
+      adapter:
+        - "Il ne connaît pas les services : on commence à l'étape 1, « Les services »."
+        - "Il connaît les services mais attend pour alerter : on passe à l'étape 2, « Toute mise sous oxygène implique l'alerte »."
+        - "Il envisage une réimmersion : on travaille l'étape 3, « Pas de réimmersion »."
+        - "Il alerte sans délai et refuse la réimmersion : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets (voir C7)"
+      criteres:
+        - "L'alerte est déclenchée sans délai."
+        - "Elle est déclenchée dès la mise sous oxygène."
+        - "Il sait qu'on ne pratique jamais de recompression par réimmersion."
+      securite:
+        - "Jamais de recompression par réimmersion."
+      eca: "attend l'effet de l'oxygène avant d'alerter → reprendre l'étape 2"
+  "Utiliser le kit d'oxygénothérapie":
+    evaluer:
+      question: "L'élève connaît-il le kit d'oxygénothérapie de son lieu de pratique, et sait-il le mettre en œuvre ?"
+      vecu:
+        - "A-t-il déjà vu ou ouvert le kit de son club ? Sait-il où il est rangé ?"
+        - "A-t-il déjà manipulé de l'oxygène, en secourisme ou dans son métier ?"
+        - "A-t-il déjà vu le kit utilisé lors d'un accident ?"
+      sait:
+        - "Sait-il nommer les éléments : bouteille, manodétendeur, débit-litre, masques, insufflateur ?"
+        - "Sait-il estimer l'autonomie de la bouteille ?"
+        - "A-t-il des idées fausses ? Par exemple : « la bouteille d'oxygène se manipule comme une bouteille de plongée », ou « un peu de graisse aide à visser le manodétendeur »."
+      esprit:
+        - "L'oxygène l'intimide-t-il ?"
+        - "Manipule-t-il trop vite, sans précaution ?"
+      comment: "Au sec, kit démonté, bouteille calée, lui demander : « Monte-le, puis dis-moi combien de temps il tiendra. » On observe sans corriger, sauf pour la sécurité : mains grasses, flamme à proximité, bouteille non calée."
+      adapter:
+        - "Il ne connaît pas le matériel : on commence à l'étape 1, « Présentation »."
+        - "Il nomme les éléments mais hésite au montage : on passe à l'étape 2, « Montage »."
+        - "Il monte le kit vite et juste : on travaille l'étape 3, « Autonomie et entretien », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Le kit est mis en œuvre conformément aux recommandations."
+        - "Le montage est juste et rapide."
+        - "L'autonomie est estimée, le matériel nettoyé, désinfecté et remis en état."
+      securite:
+        - "L'oxygène se manipule avec précaution : pas de corps gras, pas de flamme, bouteille calée."
+      eca: "ne sait pas estimer l'autonomie de la bouteille → reprendre l'étape 3"
+  "Surveiller la victime jusqu'à la prise en charge par les secours":
+    evaluer:
+      question: "Que surveillerait l'élève chez une victime en attendant les secours, et comment ?"
+      vecu:
+        - "A-t-il un PSC1 ou un PSE ? De quand date-t-il ?"
+        - "A-t-il déjà attendu les secours auprès d'une victime ?"
+        - "Plonge-t-il en mer, où l'attente des secours peut être longue ?"
+      sait:
+        - "Sait-il quoi surveiller : conscience, ventilation, circulation, pâleur, marbrures, couleur des lèvres ?"
+        - "Sait-il où noter l'évolution de l'état de la victime ?"
+        - "A-t-il des idées fausses ? Par exemple : « une fois l'alerte donnée, il n'y a plus qu'à attendre », ou « si elle va mieux, inutile de noter »."
+      esprit:
+        - "Est-il mal à l'aise pour parler longtemps à une victime ?"
+        - "Risque-t-il de relâcher son attention avec le temps ?"
+      comment: "Au sec, victime simulée installée, lui dire : « Les secours arrivent dans un moment. Occupe-toi d'elle. » On regarde ce qu'il observe, s'il note sur la fiche d'évacuation et s'il garde le contact avec la victime."
+      adapter:
+        - "Il ne sait pas quoi surveiller : on commence à l'étape 1, « Les fonctions vitales »."
+        - "Il surveille sans rien noter : on passe à l'étape 2, « Noter l'évolution »."
+        - "Il note mais reste muet auprès de la victime : on travaille l'étape 3, « Parler et faire parler »."
+        - "Il surveille, note et garde le contact : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La surveillance est continue et notée."
+        - "L'évolution est notée régulièrement sur la fiche d'évacuation."
+        - "Il garde le contact avec la victime jusqu'à l'arrivée des secours."
+      securite: []
+      eca: "surveille sans rien noter → reprendre l'étape 2"
+
+RIFAP-C7:
+  "Connaître et visualiser la chaîne des secours en mer":
+    evaluer:
+      question: "Que sait l'élève de la chaîne des secours en mer, et de la place de son bateau dans cette chaîne ?"
+      vecu:
+        - "Plonge-t-il en mer ? Depuis quel bateau ?"
+        - "A-t-il déjà vu une intervention de secours en mer, ou en a-t-il entendu le récit ?"
+        - "A-t-il une expérience de la navigation (permis bateau, voile) ?"
+      sait:
+        - "Connaît-il le rôle du CROSS et celui du SCMM ?"
+        - "Sait-il dans quels cas appeler les secours ?"
+        - "A-t-il des idées fausses ? Par exemple : « on appelle seulement quand c'est grave », ou « on rentre au port et on verra là-bas »."
+      esprit:
+        - "Hésite-t-il à appeler en cas de doute ?"
+        - "Les secours en mer lui paraissent-ils lointains ou abstraits ?"
+      comment: "Au sec, lui demander de dessiner ou de raconter : « Un accident arrive sur le bateau. Qui intervient, et qui prévient qui ? » On écoute les acteurs qu'il cite et les liens qu'il fait entre eux."
+      adapter:
+        - "Il ne connaît pas les acteurs : on commence à l'étape 1, « Les acteurs »."
+        - "Il cite les acteurs mais pas leurs liens : on passe à l'étape 2, « Les interactions »."
+        - "Il décrit la chaîne mais hésite à appeler : on travaille l'étape 3, « Quand appeler »."
+        - "Il décrit la chaîne et appelle à bon escient : on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "La chaîne des secours en mer est connue."
+        - "Il décrit chaque acteur et la façon dont ils travaillent ensemble."
+        - "Il appelle dans chaque cas, même en cas de doute."
+      securite: []
+      eca: "n'appelle pas tant que l'accident ne lui paraît pas grave → reprendre l'étape 3"
+  "Procédures d'appel en mer":
+    evaluer:
+      question: "L'élève sait-il alerter les secours depuis un bateau, à la VHF comme au téléphone ?"
+      vecu:
+        - "A-t-il un permis bateau ou un certificat radio ?"
+        - "A-t-il déjà utilisé une VHF ?"
+        - "Le bateau de son club est-il équipé d'une VHF avec fonction ASN ?"
+      sait:
+        - "Connaît-il le canal 16, l'alternat et le message PAN-PAN ?"
+        - "Connaît-il la fonction ASN et le bouton « distress » ?"
+        - "A-t-il des idées fausses ? Par exemple : « on appelle d'abord avec son portable, c'est plus simple »."
+      esprit:
+        - "La radio l'intimide-t-elle ?"
+        - "Craint-il de mal s'exprimer devant tout le monde ?"
+      comment: "Devant la VHF du bateau, en simulation, lui demander : « Montre-moi comment tu donnerais l'alerte. » On observe le canal choisi, l'alternat et le message, sans corriger."
+      adapter:
+        - "Il ne sait pas utiliser la VHF : on commence à l'étape 1, « La VHF »."
+        - "Il passe un appel VHF correct : on passe à l'étape 2, « L'ASN »."
+        - "Il maîtrise la VHF et l'ASN : on travaille l'étape 3, « Le téléphone », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), simulation d'appel avec les deux moyens, fiche d'évacuation par victime"
+      criteres:
+        - "La procédure est conforme au plan de secours."
+        - "L'appel VHF est correct : canal 16, alternat, message PAN-PAN."
+        - "Au téléphone, l'accident de plongée est annoncé."
+        - "Une fiche d'évacuation est renseignée par victime."
+      securite: []
+      eca: "oublie l'alternat à la VHF → reprendre l'étape 1"
+  "Procédures d'appel à terre":
+    evaluer:
+      question: "L'élève sait-il quel numéro appeler à terre, et comment faire prendre en compte un accident de plongée ?"
+      vecu:
+        - "Plonge-t-il sur le littoral, en eaux intérieures (lac, carrière), ou les deux ?"
+        - "A-t-il déjà appelé le 15 ou le 112 ?"
+        - "A-t-il déjà lu le plan de secours de son club ?"
+      sait:
+        - "Sait-il qu'on appelle le 196 depuis le littoral, le 15 ou le 112 dans les eaux intérieures ?"
+        - "Sait-il qu'il faut annoncer un accident de plongée et demander le CROSS ou le SCMM ?"
+        - "A-t-il des idées fausses ? Par exemple : « les secours comprendront d'eux-mêmes qu'il s'agit d'un accident de plongée »."
+      esprit:
+        - "Craint-il de ne pas être pris au sérieux au téléphone ?"
+        - "Est-il stressé à l'idée de parler aux secours ?"
+      comment: "Au sec, lui demander : « Tu plonges sur ce site, un accident arrive. Qui appelles-tu, et que dis-tu en premier ? » Puis lui demander de retrouver la procédure dans le plan de secours du club."
+      adapter:
+        - "Il ne sait pas quel numéro appeler : on commence à l'étape 1, « Les numéros »."
+        - "Il choisit le bon numéro mais n'annonce pas la plongée : on passe à l'étape 2, « Le contexte de plongée »."
+        - "Il annonce clairement l'accident de plongée : on travaille l'étape 3, « Le plan de secours », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), simulations"
+      criteres:
+        - "La procédure est conforme au plan de secours."
+        - "Le numéro est choisi selon le lieu."
+        - "Le contexte de plongée est annoncé clairement."
+      securite: []
+      eca: "n'annonce pas qu'il s'agit d'un accident de plongée → reprendre l'étape 2"
+  "Contenu du message d'alerte":
+    evaluer:
+      question: "L'élève sait-il construire un message d'alerte complet et dialoguer avec les secours ?"
+      vecu:
+        - "A-t-il déjà passé un appel d'urgence ? Comment s'est-il passé ?"
+        - "A-t-il appris à transmettre une alerte en PSC1 ou en PSE ?"
+        - "A-t-il une expérience de la radio ou des transmissions ?"
+      sait:
+        - "Connaît-il les éléments du message : identité et embarcation, localisation précise, nature, risques, gravité, nombre de personnes, premières mesures ?"
+        - "Sait-il qu'il faut signaler toute évolution : état de la victime, nouvelle victime, autonomie en oxygène ?"
+        - "A-t-il des idées fausses ? Par exemple : « on donne l'essentiel et on raccroche vite pour agir »."
+      esprit:
+        - "Perd-il ses moyens au téléphone, sous pression ?"
+        - "Veut-il raccrocher au plus vite pour retourner auprès de la victime ?"
+      comment: "En simulation, un formateur joue le CROSS. Lui dire : « Donne l'alerte pour cet accident. » On écoute l'ordre et la complétude du message, ses réponses aux questions, et s'il attend les instructions avant de raccrocher."
+      adapter:
+        - "Son message est incomplet ou désordonné : on commence à l'étape 1, « Le message »."
+        - "Le message est complet mais il raccroche trop vite : on passe à l'étape 2, « Le dialogue »."
+        - "Il dialogue bien : on travaille l'étape 3, « Le suivi », puis on passe à l'étape 4."
+    bilan:
+      situation: "l'étape 4 : cas concret (évaluation), cas concrets"
+      criteres:
+        - "Les éléments concernant la victime et l'accident sont transmis aux secours, dans l'ordre."
+        - "Ses réponses sont claires, et il attend les instructions avant de raccrocher."
+        - "Il transmet toute évolution."
+        - "La fiche d'évacuation est fiable et exhaustive."
+      securite: []
+      eca: "raccroche avant d'avoir reçu les instructions → reprendre l'étape 2"

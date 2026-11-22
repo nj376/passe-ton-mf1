@@ -1,0 +1,684 @@
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N2.
+# Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
+# (tel qu'il figure dans data/progressions/progressions_N2.json). Les fichiers de progression ne sont pas modifiés.
+#
+# evaluer.question : la question directrice
+# evaluer.vecu / sait / esprit : son vécu, ce qu'il sait ou croit savoir, son état d'esprit (listes)
+# evaluer.comment : comment le savoir (situation d'observation)
+# evaluer.adapter : où commencer selon ce qu'on a observé (liste)
+# bilan.situation : la situation finale sur laquelle porte le bilan
+# bilan.criteres : critères de la situation finale (liste)
+# bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
+
+
+N2-equiper:
+  "Gréage et dégréage":
+    evaluer:
+      question: "Quelles habitudes l'élève a-t-il prises en gréant son scaphandre depuis son N1 ?"
+      vecu:
+        - "Combien de plongées a-t-il faites depuis son N1 ? Grée-t-il seul, ou un encadrant vérifie-t-il toujours derrière lui ?"
+        - "A-t-il déjà gréé sur un bateau qui bouge, avec peu de place, ou seulement au bord ?"
+        - "A-t-il déjà utilisé du matériel de location ou un matériel inconnu ?"
+      sait:
+        - "Sait-il choisir son bloc et sa protection thermique selon la plongée prévue, ou prend-il toujours la même chose ?"
+        - "A-t-il des idées fausses ? Par exemple : « si le moniteur a regardé, c'est bon », ou « le matériel des autres, ce n'est pas mon affaire »."
+        - "Sait-il qu'un matériel mal réglé ou mal adapté peut favoriser l'essoufflement ?"
+      esprit:
+        - "Est-il prêt à se passer du contrôle de l'encadrant, ou attend-il encore qu'on vérifie pour lui ?"
+        - "A-t-il pris de l'assurance au point d'aller trop vite et de sauter des vérifications ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : à la première sortie, il grée et dégrée seul, on observe sans rien dire. On lui demande ensuite : « Qu'est-ce que tu as vérifié, et pourquoi as-tu pris ce matériel ? » On note aussi s'il jette un œil au matériel de ses voisins."
+      adapter:
+        - "Il oublie une vérification ou fait une erreur : on reprend la progression N1 avant d'aller plus loin, comme le prévoit l'étape 1."
+        - "Il grée sans erreur mais prend toujours le même matériel : on passe à l'étape 2, « Choisir le matériel adapté à la plongée »."
+        - "Il cherche son inflateur ou son octopus des yeux : on insiste sur l'étape 3, « Réglages corrects en surface »."
+        - "Il est déjà sûr et bien réglé : on passe à l'étape 4, « Attention au matériel des équipiers », puis à l'étape 5."
+    bilan:
+      situation: "l'étape 6 : contrôle continu sur plusieurs sorties, sites et conditions différents"
+      criteres:
+        - "Il est autonome dans la gestion de son matériel, choisi et réglé pour la plongée prévue."
+        - "Il est attentif au matériel de ses équipiers et signale un oubli sans attendre."
+        - "Il est prêt dans le temps donné, sans gêner, et rince et range sans rappel."
+      securite:
+        - "La bouteille est toujours debout et calée, y compris dans le rack sur le bateau, même pressé."
+        - "Le robinet est ouvert lentement, manomètre détourné."
+      eca: "voit le direct system débranché d'un équipier sans le lui dire → reprendre l'étape 4"
+  "Capelage et décapelage":
+    evaluer:
+      question: "Comment l'élève capelle-t-il et choisit-il son lest depuis son N1 ?"
+      vecu:
+        - "Combien de plongées a-t-il faites depuis son N1, du bord et sur bateau ?"
+        - "A-t-il déjà décapelé et recapelé en surface avec du clapot, ou seulement en eau calme ?"
+        - "Garde-t-il le même lest d'une plongée à l'autre, ou l'a-t-il déjà ajusté ?"
+      sait:
+        - "Sait-il évaluer son lest au palier, bloc moins rempli, en fin de plongée ?"
+        - "A-t-il des idées fausses ? Par exemple : « un peu trop de plombs, ça aide à descendre », ou « je compense avec le gilet, peu importe le lest »."
+        - "Sait-il ce qu'il faut regarder sur un équipier avant la mise à l'eau ?"
+      esprit:
+        - "Est-il à l'aise avec son bloc dans l'eau, ou appréhende-t-il le décapelage avec du clapot ?"
+        - "Se sent-il pressé par le temps sur le bateau, au risque d'oublier quelque chose ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : en milieu naturel, conditions calmes, il capelle au sec, décapelle et recapelle en surface. On lui demande aussi : « Combien de lest as-tu pris, et comment le sais-tu ? » Au palier de la première plongée, on regarde s'il tient sa profondeur sans effort."
+      adapter:
+        - "Le capelage N1 n'est pas sûr, lest pas largable : on reste à l'étape 1 et on reprend la progression N1."
+        - "Il capelle bien mais son lest est approximatif : on passe à l'étape 2, « Lestage adapté à la profondeur »."
+        - "Il est lent ou change d'ordre à chaque fois : on travaille l'étape 3, « Capelage rapide et efficace »."
+        - "Il est à l'aise en eau calme mais redoute le clapot : on prend le temps à l'étape 4, « Dans l'eau, en conditions variées », moniteur à proximité."
+    bilan:
+      situation: "l'étape 6 : contrôle continu sur plusieurs sorties, bord et embarcations, conditions variées"
+      criteres:
+        - "Il est autonome et rapide, prêt dans le temps donné, sans rien oublier."
+        - "Son lest est adapté : pas de surlestage ni de sous-lestage."
+        - "Il est attentif à ses équipiers, aide à capeler et se laisse aider."
+      securite:
+        - "Le lest est toujours largable."
+        - "Sur bateau, on capelle assis et on ne se déplace pas bloc sur le dos sans y être invité."
+        - "Gilet gonflé avant de décapeler dans l'eau, moniteur à proximité."
+      eca: "a besoin de son gilet très gonflé au fond → reprendre l'étape 2"
+  "Saut droit et bascule arrière, remontée à l'échelle":
+    evaluer:
+      question: "De quels contextes de mise à l'eau et de sortie l'élève a-t-il l'expérience depuis son N1 ?"
+      vecu:
+        - "Depuis quelles embarcations a-t-il déjà plongé : pneumatique, bateau ponté, barge ? Et du bord ?"
+        - "A-t-il déjà remonté une échelle avec son bloc, ou a-t-il toujours été aidé ?"
+        - "A-t-il vécu une mise à l'eau difficile (clapot, courant, regroupement long) ?"
+      sait:
+        - "Sait-il dire quelle technique convient à quelle embarcation, et pourquoi ?"
+        - "A-t-il des idées fausses ? Par exemple : « je saute comme je préfère », ou « j'attends au pied de l'échelle que le précédent ait fini »."
+        - "Sait-il où se placer et que faire de ses palmes pour remonter à l'échelle ?"
+      esprit:
+        - "Est-il serein lors des mises à l'eau, ou stressé par le mouvement et le regard des autres ?"
+        - "Pense-t-il à ses équipiers, ou seulement à sa propre mise à l'eau ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : embarcation connue, mer calme, mise à l'eau selon la consigne du DP et sortie habituelle. Avant, on lui demande : « Comment vas-tu te mettre à l'eau, et comment comptes-tu remonter ? » On regarde où il se place à la sortie."
+      adapter:
+        - "Saut ou bascule pas encore sûrs : on reste à l'étape 1 et on reprend la progression N1."
+        - "Il maîtrise une seule technique ou ne sait pas choisir : on passe à l'étape 2, « Choisir la technique selon le lieu »."
+        - "Il n'a jamais remonté à l'échelle seul : on travaille l'étape 3, « Remontée à l'échelle »."
+        - "Il est à l'aise depuis le bateau : on passe à l'étape 4, « Contextes de milieux naturels variés », puis à l'étape 5."
+    bilan:
+      situation: "l'étape 6 : contrôle continu sur plusieurs sorties, du bord et d'embarcations, dans des milieux naturels variés"
+      criteres:
+        - "Les techniques usuelles sont maîtrisées avec rapidité et aisance."
+        - "Les consignes du DP sont respectées."
+        - "Il a le souci de la sécurité globale de la palanquée, du départ au retour à bord."
+      securite:
+        - "Zone d'eau libre vérifiée avant de sauter, puis dégagée aussitôt."
+        - "La consigne du DP prime toujours sur la préférence de l'élève."
+        - "Jamais sous l'échelle ni sous un plongeur qui monte ; détendeur en bouche ou masque en place près de l'arrière du bateau."
+      eca: "attend sous l'échelle pendant qu'un équipier monte → reprendre l'étape 3"
+
+N2-immerger:
+  "Canard et phoque":
+    evaluer:
+      question: "Comment l'élève s'immerge-t-il aujourd'hui, et à quel rythme ?"
+      vecu:
+        - "Utilise-t-il le canard, le phoque, ou toujours la descente le long du mouillage ?"
+        - "A-t-il déjà dû s'immerger vite, avec du clapot ou un léger courant ?"
+        - "S'est-il déjà retrouvé seul en surface, ou loin de la palanquée à la descente ?"
+      sait:
+        - "Sait-il équilibrer ses oreilles dès le départ et s'arrêter à la profondeur visée ?"
+        - "A-t-il des idées fausses ? Par exemple : « on a le temps de se préparer en surface », ou « chacun descend à son rythme, on se retrouve au fond »."
+        - "Sait-il pourquoi on s'immerge vite quand il y a du courant ?"
+      esprit:
+        - "Est-il à l'aise pour s'immerger sans repère, ou a-t-il besoin du mouillage ?"
+        - "Craint-il pour ses oreilles, au point de s'attarder en surface ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : en milieu naturel, eau calme, immersion en canard puis en phoque, en PMT et en scaphandre. On lui demande ensuite : « Laquelle préfères-tu, et quand utiliserais-tu l'autre ? » On regarde le délai avant l'immersion et l'équilibrage."
+      adapter:
+        - "Une des techniques n'est pas propre ou les oreilles posent problème : on reprend la progression N1."
+        - "Les deux techniques sont propres mais lentes : on passe à l'étape 2, « S'immerger rapidement »."
+        - "Il s'immerge vite mais seul : on travaille l'étape 3, « S'immerger en palanquée groupée »."
+        - "Il est déjà rapide et groupé : on passe à l'étape 4, « Avec du clapot ou un léger courant »."
+    bilan:
+      situation: "l'étape 5 : toutes conditions de pratique, en contrôle continu"
+      criteres:
+        - "L'immersion est rapide, oreilles équilibrées."
+        - "Il applique la technique demandée."
+        - "La cohésion de la palanquée est maintenue."
+      securite:
+        - "Avec du courant, le DP juge les conditions compatibles et le moniteur se place en aval."
+      eca: "file vers le fond sans attendre la palanquée → reprendre l'étape 3"
+  "Palmages":
+    evaluer:
+      question: "Comment l'élève gère-t-il son effort de palmage, en surface comme en immersion ?"
+      vecu:
+        - "A-t-il déjà nagé sur une longue distance en PMT ou capelé, en mer ?"
+        - "S'est-il déjà essoufflé en palmant, par exemple contre un courant ou en revenant au bateau ?"
+        - "Pratique-t-il une activité physique régulière ?"
+      sait:
+        - "Sait-il qu'en profondeur l'effort pèse davantage sur la ventilation ?"
+        - "A-t-il des idées fausses ? Par exemple : « contre le courant, il faut palmer plus fort », ou « je m'arrêterai quand je serai fatigué »."
+        - "Connaît-il les signes de l'essoufflement et ce qu'il faut faire ?"
+      esprit:
+        - "Veut-il suivre le rythme des autres, quitte à forcer ?"
+        - "Ose-t-il dire qu'il a besoin de s'arrêter ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : environ 100 m en PMT et 50 m capelé, puis déplacement en immersion. On regarde l'amplitude du geste, les bras et la ventilation. Au retour, on lui demande : « À quel moment as-tu senti que ça devenait dur ? »"
+      adapter:
+        - "Le geste se dégrade ou il s'essouffle : on reste à l'étape 1 et on reprend la qualité du palmage."
+        - "Le geste est bon en surface mais pas en immersion : on passe à l'étape 2, « Palmage économique en profondeur »."
+        - "Il force quand l'effort augmente : on insiste sur l'étape 3, « Gérer l'effort face à un léger courant »."
+        - "Il est économe et attentif à sa ventilation : on allonge les distances avec les étapes 4 et 5."
+    bilan:
+      situation: "l'étape 6 : nages de surface, environ 250 m en PMT et 100 m capelé, sans chronomètre"
+      criteres:
+        - "Le parcours est réalisé dans de bonnes conditions physiques."
+        - "Le geste reste de qualité jusqu'au bout."
+        - "Il termine sans essoufflement, avec sa palanquée."
+      securite:
+        - "Accoutumance progressive à la profondeur ; au-delà de 20 m, sous la responsabilité d'un E3."
+        - "Gilet gonflé en surface pendant toute la nage capelé."
+      eca: "accélère contre le courant et s'essouffle → reprendre l'étape 3"
+  "Remontée en expiration contrôlée REC":
+    evaluer:
+      question: "Quel souvenir et quelle compréhension l'élève garde-t-il de la REC travaillée au N1 ?"
+      vecu:
+        - "A-t-il fait des REC depuis son N1, ou seulement à l'examen ?"
+        - "Comment l'a-t-il vécue : sereinement, ou avec la peur de manquer d'air ?"
+        - "Pense-t-il à expirer lors de ses remontées habituelles ?"
+      sait:
+        - "Sait-il pourquoi on part sur une inspiration normale, jamais une grande inspiration ?"
+        - "A-t-il des idées fausses ? Par exemple : « il faut remonter vite pour ne pas manquer d'air », ou « il faut vider ses poumons avant de partir »."
+        - "Sait-il à quoi sert cet exercice en cas de panne d'air ?"
+      esprit:
+        - "Appréhende-t-il de partir de plus profond qu'au N1 ?"
+        - "Est-il confiant au point de vouloir remonter vite ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : depuis 6 m maximum, embout en bouche, moniteur au contact. Avant, on lui demande : « Explique-moi comment tu vas faire et pourquoi. » On regarde le départ, le rejet d'air et la vitesse, et on note son état à l'arrivée."
+      adapter:
+        - "Le rejet d'air n'est pas continu ou il se précipite : on reste à l'étape 1, depuis 6 m maximum."
+        - "La REC est correcte mais il prend appui au départ : on passe à l'étape 2, « Départ du fond stabilisé »."
+        - "Il part stabilisé et calmement : on passe à l'étape 3, « Augmenter la profondeur », jamais au-delà de 10 m."
+        - "Il est inquiet : on garde les profondeurs faibles plus longtemps et on relie l'exercice à l'expiration de toutes ses remontées (étape 5)."
+    bilan:
+      situation: "l'étape 6 : REC 10 m, trajet vertical n'excédant pas 10 m, départ du fond stabilisé, sur une inspiration normale"
+      criteres:
+        - "Il remonte sans stress, à vitesse correcte, sans critère de temps."
+        - "L'expiration est continue jusqu'à la surface."
+        - "L'expiration contrôlée est constatée sur ses autres remontées, sans rappel."
+      securite:
+        - "Inspiration normale, jamais une grande inspiration."
+        - "Jamais au-delà de 10 m."
+        - "Le moniteur reste au contact et peut freiner la remontée à tout moment."
+      eca: "part en appui sur le fond et accélère en fin de remontée → reprendre l'étape 2"
+  "Descente et remontée":
+    evaluer:
+      question: "Comment l'élève gère-t-il son gilet et sa flottabilité pendant la descente et la remontée ?"
+      vecu:
+        - "Lors de ses plongées N1, a-t-il déjà touché le fond en arrivant, ou dépassé le palier en remontant ?"
+        - "Le guide gérait-il sa flottabilité, ou la gérait-il lui-même ?"
+        - "A-t-il déjà fait un palier en pleine eau, sans repère ?"
+      sait:
+        - "Sait-il pourquoi on injecte un peu d'air en descendant et on purge en remontant ?"
+        - "A-t-il des idées fausses ? Par exemple : « on gonfle une fois au fond et c'est réglé », ou « on remonte en palmant, le gilet ne sert qu'en surface »."
+        - "Sait-il utiliser son poumon ballast pour affiner son niveau ?"
+      esprit:
+        - "Est-il inquiet à l'idée de descendre plus profond qu'au N1 ?"
+        - "Se repose-t-il sur le guide pour tenir sa profondeur ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : équilibre à la demande, en statique et en déplacement. Puis on observe sa première descente et sa première remontée : arrêt au-dessus du fond ou non, purges, vitesse, arrivée au palier. Au débriefing, on lui demande ce qu'il a fait avec son gilet."
+      adapter:
+        - "Il ne tient pas sa profondeur à plus ou moins 1 m : on reste à l'étape 1."
+        - "Il touche le fond ou palme pour se rattraper : on passe à l'étape 2, « Descente équilibrée »."
+        - "Il accélère ou dépasse le palier : on travaille l'étape 4, « Remontée équilibrée »."
+        - "Descente et remontée sont maîtrisées : on passe à l'étape 3 en profondeur, puis à l'étape 5, « Au palier, en pleine eau »."
+    bilan:
+      situation: "l'étape 6 : niveau tenu durablement, en contrôle continu"
+      criteres:
+        - "Le niveau d'immersion est maintenu durablement et sans difficulté."
+        - "La vitesse de remontée est régulière, il arrive au palier sans le dépasser."
+        - "Le palier en pleine eau est stable."
+      securite:
+        - "Accoutumance progressive à la profondeur ; au-delà de 20 m, sous la responsabilité d'un E3."
+        - "Purger dès que la remontée s'accélère."
+      eca: "dépasse le palier en fin de remontée → reprendre l'étape 4"
+
+N2-milieu:
+  "Aisance aquatique":
+    evaluer:
+      question: "Quel regard l'élève porte-t-il sur le milieu, et quel comportement a-t-il pris en plongée ?"
+      vecu:
+        - "Sur quels sites a-t-il plongé depuis son N1 ? Qu'y a-t-il vu ?"
+        - "A-t-il déjà touché le fond, la faune, ou soulevé du sédiment ?"
+        - "A-t-il assisté à du nourrissage ou à de la cueillette en plongée ?"
+      sait:
+        - "Connaît-il le nom des espèces courantes des sites qu'il fréquente ?"
+        - "A-t-il des idées fausses ? Par exemple : « donner à manger aux poissons, ça les attire, c'est sympa », ou « une lampe puissante, c'est mieux pour voir »."
+        - "Sait-il pourquoi l'éclairage, le bruit et la distance comptent ?"
+      esprit:
+        - "Est-il curieux du vivant, ou surtout occupé par ses sensations et son matériel ?"
+        - "Veut-il approcher les animaux au plus près ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : plongée en milieu naturel, près du fond. On regarde contacts, palmage et sédiments. Au débriefing, on lui demande : « Qu'as-tu vu, et peux-tu le nommer ? »"
+      adapter:
+        - "Il touche le fond ou le vivant : on reste à l'étape 1 et on reprend palmage et stabilisation."
+        - "Il est stable mais fait fuir la faune : on passe à l'étape 2, « Être discret »."
+        - "Il est discret mais n'ose pas s'approcher : on travaille l'étape 3, « Observer près du vivant »."
+        - "Il observe déjà bien : on passe à l'étape 4, « Nommer les espèces courantes »."
+    bilan:
+      situation: "l'étape 5 : comportement en plongée, en milieu naturel"
+      criteres:
+        - "Son comportement est respectueux et responsable."
+        - "Aucun contact avec le fond ou le vivant, aucun nuage de sédiment."
+        - "Il décrit et nomme les espèces fréquentes du site."
+      securite: []
+      eca: "soulève du sédiment en s'approchant d'une roche → reprendre l'étape 3"
+
+PA20-materiel:
+  "Mise en œuvre de son propre matériel":
+    evaluer:
+      question: "Que sait l'élève de son propre matériel, au-delà de savoir le monter ?"
+      vecu:
+        - "A-t-il son propre matériel, ou utilise-t-il celui du club ?"
+        - "A-t-il déjà changé de bloc ou de combinaison et ajusté son lest en conséquence ?"
+        - "A-t-il déjà vécu un incident de matériel, comme un débit continu ?"
+      sait:
+        - "Sait-il quel matériel est exigé pour plonger en autonomie ?"
+        - "A-t-il des idées fausses ? Par exemple : « le détendeur donne de l'air à la pression de la bouteille », ou « le deuxième étage sert de secours au premier »."
+        - "Sait-il présenter son matériel à un équipier ?"
+      esprit:
+        - "S'intéresse-t-il au fonctionnement, ou se contente-t-il que ça marche ?"
+        - "Est-il à l'aise pour expliquer à l'oral devant ses équipiers ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : sortie en milieu naturel, gréage et vérifications seul. Puis on lui demande : « Montre-moi ton matériel comme si j'étais ton équipier, et explique-moi à quoi sert ton premier étage. » On écoute les mots qu'il emploie."
+      adapter:
+        - "Il oublie une vérification : on reprend le gréage N1 avant d'aller plus loin."
+        - "Il ne sait pas adapter son lest à un changement d'équipement : on passe à l'étape 2, « Adapter son lestage à son équipement »."
+        - "Il ignore ce qui est exigé en autonomie : on travaille l'étape 3, « Le matériel obligatoire en autonomie »."
+        - "Il connaît son matériel mais pas le principe de détente : on passe à l'étape 4, « Comprendre son détendeur », puis à l'étape 5."
+    bilan:
+      situation: "l'étape 6 : présenter et expliquer, au fil des sorties et à l'oral sur le détendeur"
+      criteres:
+        - "Il présente spontanément son matériel à ses équipiers : gilet, détendeur de secours, contrôle de la pression, moyen de désaturation."
+        - "Il restitue avec ses mots les principes de détente et d'asservissement."
+        - "Il a tout le matériel exigé, sans rappel, avec un lest cohérent."
+      securite:
+        - "Bouteille debout et calée, robinet ouvert lentement en détournant le manomètre."
+      eca: "oublie de présenter son moyen de désaturation → reprendre l'étape 5"
+  "Connaissance du matériel des équipiers":
+    evaluer:
+      question: "L'élève saurait-il se servir du matériel d'un équipier s'il le fallait ?"
+      vecu:
+        - "A-t-il déjà plongé avec des équipiers équipés différemment de lui ?"
+        - "A-t-il déjà manipulé un autre gilet que le sien : lest intégré, purges placées ailleurs ?"
+        - "Lui a-t-on déjà présenté du matériel avant une plongée ?"
+      sait:
+        - "Sait-il repérer le détendeur de secours et la pression d'un équipier ?"
+        - "A-t-il des idées fausses ? Par exemple : « tous les gilets marchent pareil », ou « l'ordinateur de mon équipier, c'est son affaire »."
+        - "Sait-il lire un ordinateur qui n'est pas le sien ?"
+      esprit:
+        - "Ose-t-il poser des questions à un équipier sur son matériel ?"
+        - "Écoute-t-il vraiment la présentation, ou la considère-t-il comme une formalité ?"
+      comment: "Au sec, devant le matériel d'un autre élève, lui demander : « Montre-moi comment tu gonfles ce gilet, où est son détendeur de secours, combien il lui reste, et ce que dit son ordinateur. » On observe sans aider et on note les hésitations."
+      adapter:
+        - "Il n'écoute pas ou reformule mal une présentation : on commence à l'étape 1, « Écouter la présentation »."
+        - "Il est perdu sur un gilet qui n'est pas le sien : on passe à l'étape 2, « Gilets différents »."
+        - "Il cherche le détendeur de secours ou la pression : on travaille l'étape 3, « Détendeur de secours et contrôle de la pression »."
+        - "Il lit déjà gilets et manomètres : on passe à l'étape 4, « Moyens de désaturation des équipiers »."
+    bilan:
+      situation: "l'étape 5 : matériel inconnu, avec un nouvel équipier"
+      criteres:
+        - "Il pose les bonnes questions et vérifie qu'il a compris."
+        - "Il sait gonfler, purger et larguer le lest d'un gilet qui n'est pas le sien."
+        - "Il localise le détendeur de secours, lit la pression et les paramètres principaux de l'ordinateur de son équipier."
+      securite: []
+      eca: "ne trouve pas le largage du lest intégré d'un équipier → reprendre l'étape 2"
+
+PA20-autonomie:
+  "Sécurité de la palanquée":
+    evaluer:
+      question: "Quelle idée l'élève se fait-il de l'autonomie, et que sait-il déjà de son ordinateur ?"
+      vecu:
+        - "Au N1, qui gérait la vitesse, les paliers et la durée ? Regardait-il son ordinateur ?"
+        - "A-t-il déjà lancé un parachute, ou vu un guide le faire ?"
+        - "A-t-il déjà perdu de vue un équipier ?"
+      sait:
+        - "Sait-il lire durée sans palier, paliers et vitesse de remontée sur son ordinateur ?"
+        - "A-t-il des idées fausses ? Par exemple : « en autonomie, chacun suit son ordinateur », ou « on peut s'attacher au parachute pour ne pas le perdre »."
+        - "Sait-il ce qu'est une règle commune quand les ordinateurs sont différents ?"
+      esprit:
+        - "Est-il pressé de plonger sans moniteur, ou inquiet de devoir tout gérer ?"
+        - "Mesure-t-il la responsabilité qu'il prend envers ses équipiers ?"
+      comment: "Au sec, devant son ordinateur, lui demander : « Montre-moi tout ce qu'il t'indique. » Puis : « Vous êtes trois avec des ordinateurs différents : comment remontez-vous ? » On écoute ses réponses sans corriger."
+      adapter:
+        - "Il lit mal son ordinateur : on commence à l'étape 1, « Lire son ordinateur »."
+        - "Il le lit mais ne pense pas à la palanquée : on passe à l'étape 2, « Plusieurs moyens de désaturation, table fédérale »."
+        - "Il connaît la théorie : on passe à l'étape 3, « Communiquer et se surveiller », moniteur en retrait."
+        - "Il n'a jamais lancé de parachute : on prévoit l'étape 5 à faible profondeur, moniteur à côté."
+    bilan:
+      situation: "l'étape 6 : situations variées tout au long de la formation (milieux, visibilité, courant), théorie vérifiée à l'oral"
+      criteres:
+        - "Vitesse et paliers respectés, parachute mis en place."
+        - "Gestion active de la désaturation, matériels différents pris en compte."
+        - "Consignes du DP intégrées, au moins un problème de table résolu."
+      securite:
+        - "Enseignement dans l'espace 0-20 m par un E2 minimum ; le moniteur reste dans la palanquée et reprend la main au besoin."
+        - "Jamais attaché au parachute, ligne libre ; il lâche tout s'il se sent entraîné."
+      eca: "remonte selon son ordinateur sans tenir compte du plus contraignant → reprendre l'étape 4"
+
+PA20-planifier:
+  "Compréhension des directives du DP":
+    evaluer:
+      question: "Comment l'élève écoute-t-il aujourd'hui le briefing du DP, et qu'en retient-il ?"
+      vecu:
+        - "Au N1, écoutait-il le briefing, ou laissait-il le guide s'en charger ?"
+        - "A-t-il déjà vu un DP modifier les consignes au dernier moment ?"
+        - "Se souvient-il des consignes de sa dernière plongée ?"
+      sait:
+        - "Sait-il ce que fixe le DP : profondeur, durée, pression de fin, paliers, durée totale de remontée ?"
+        - "A-t-il des idées fausses ? Par exemple : « si le DP n'a rien dit, on fait comme on veut », ou « on peut dépasser un peu la durée si on a de l'air »."
+        - "Sait-il qui décide en cas de doute ?"
+      esprit:
+        - "Ose-t-il poser une question au DP quand une consigne manque ?"
+        - "Voit-il le briefing comme une formalité ou comme le cadre de sa plongée ?"
+      comment: "Après un briefing réel du DP, lui demander sans prévenir : « Qu'a dit le DP pour ta palanquée ? » Puis : « Et qu'est-ce qui te manque pour planifier ? » On compare avec ce qui a été réellement annoncé."
+      adapter:
+        - "Il ne restitue pas durée et profondeur : on commence à l'étape 1, « Restituer les consignes »."
+        - "Il restitue mais n'en tire pas de limites : on passe à l'étape 2, « Conditions de fin et règles de désaturation »."
+        - "Il ne repère pas ce qui manque : on travaille l'étape 3, « Consignes incomplètes »."
+        - "Il intègre déjà le cadre : on passe à l'étape 4, « Cadre modifié »."
+    bilan:
+      situation: "l'étape 5 : sur cas concret, plongées de formation avec des consignes variées"
+      criteres:
+        - "Les directives du DP sont comprises et intégrées."
+        - "Les limites de la palanquée restent dans le cadre du DP, et il sait d'où vient chaque chiffre."
+        - "Il demande l'information manquante et corrige sa planification si le cadre change."
+      securite: []
+      eca: "garde la profondeur initiale après une réduction du DP → reprendre l'étape 4"
+  "Compréhension de la topologie du site de plongée, orientation":
+    evaluer:
+      question: "Comment l'élève s'oriente-t-il aujourd'hui sous l'eau, et s'en est-il déjà soucié ?"
+      vecu:
+        - "Au N1, savait-il où il était pendant la plongée, ou suivait-il le guide ?"
+        - "A-t-il déjà utilisé un compas, sous l'eau ou en randonnée ?"
+        - "A-t-il déjà plongé deux fois sur le même site ?"
+      sait:
+        - "Sait-il lire un croquis de site : zones, profondeurs, repères ?"
+        - "A-t-il des idées fausses ? Par exemple : « pour revenir, il suffit de faire demi-tour », ou « le compas, on le regarde au départ et c'est tout »."
+        - "Sait-il calculer un cap retour ?"
+      esprit:
+        - "Est-il inquiet à l'idée de devoir retrouver le bateau sans guide ?"
+        - "Se croit-il bien orienté alors qu'il ne l'est pas ?"
+      comment: "Avant une plongée, lui montrer le croquis du DP et lui demander : « Trace un trajet simple et dis-moi comment tu reviens. » Puis, au sec, lui tendre un compas : « Montre-moi le cap du bateau et le cap retour. » On observe la tenue du compas."
+      adapter:
+        - "Il ne lit pas le croquis : on commence à l'étape 1, « Lire le site »."
+        - "Il lit le site mais ne sait pas se servir d'un compas : on passe à l'étape 2, « Le compas au sec »."
+        - "Il tient son compas correctement : on passe à l'étape 3, « Suivre un cap en surface », puis à l'étape 4."
+        - "Il est déjà à l'aise au compas : on passe à l'étape 5, « Court trajet prédéfini »."
+    bilan:
+      situation: "l'étape 6 : compas et trajet, plongées de formation sur des sites variés"
+      criteres:
+        - "Il réussit un aller-retour au compas sur 20 à 30 m."
+        - "Il suit un court trajet prédéfini et reconnaît les repères prévus."
+        - "Il vérifie régulièrement son compas, tenu dans l'axe du corps."
+      securite:
+        - "Faible profondeur et bonne visibilité pour les premiers essais, le moniteur reste avec la palanquée."
+      eca: "revient loin du point de départ faute de vérifier son cap → reprendre l'étape 3"
+  "Détermination du profil de la plongée et des différentes procédures en immersion":
+    evaluer:
+      question: "L'élève a-t-il déjà réfléchi à une plongée avant de la faire ?"
+      vecu:
+        - "Au N1, a-t-il participé à la préparation de la plongée, ou tout était-il décidé par le guide ?"
+        - "A-t-il déjà terminé une plongée avec peu d'air ?"
+        - "A-t-il déjà été séparé de sa palanquée ?"
+      sait:
+        - "Sait-il ce qu'est un profil de plongée et pourquoi on évite les paliers profonds à l'air ?"
+        - "A-t-il des idées fausses ? Par exemple : « on verra sous l'eau », ou « tant qu'il reste de l'air, on continue »."
+        - "Sait-il estimer sa consommation en profondeur ?"
+      esprit:
+        - "S'intéresse-t-il à la préparation, ou la trouve-t-il trop théorique ?"
+        - "Est-il à l'aise avec les calculs simples ?"
+      comment: "À terre, dans un cadre fixé par le moniteur jouant le DP, lui demander : « Propose le déroulé de la plongée de ta palanquée, et dis-moi ce que vous faites si vous vous perdez. » On écoute la cohérence du profil et des procédures, sans corriger."
+      adapter:
+        - "Il n'a pas d'idée du profil : on commence à l'étape 1, « Définir le profil »."
+        - "Il propose un profil sans tenir compte des ordinateurs de la palanquée : on passe à l'étape 2, « Moyens de désaturation différents »."
+        - "Il ne sait pas estimer son air : on travaille l'étape 3, « Calculs simples de consommation et d'autonomie », puis l'étape 4."
+        - "Il oublie certaines phases ou la séparation : on insiste sur l'étape 5, « Procédures à chaque étape »."
+    bilan:
+      situation: "l'étape 6 : proposition de planification, cas concrets variés avec mise en pratique"
+      criteres:
+        - "Il présente une planification cohérente avec le cadre du DP."
+        - "Il donne une procédure claire pour chaque phase, y compris en cas de séparation."
+        - "Ses calculs simples sont justes et il en tire une décision concrète."
+      securite: []
+      eca: "définit un protocole de contrôle des consommations sans seuil de retour → reprendre l'étape 4"
+
+PA20-assistance:
+  "Observation, compréhension et réaction face à un incident":
+    evaluer:
+      question: "Que ferait l'élève, aujourd'hui, face à un équipier en difficulté ?"
+      vecu:
+        - "Au N1, a-t-il travaillé l'intervention sur un équipier (passage d'octopus) ?"
+        - "A-t-il déjà été témoin d'un incident en plongée : essoufflement, panne d'air, débit continu ?"
+        - "A-t-il une formation au secourisme ?"
+      sait:
+        - "Sait-il reconnaître une ventilation anormale, de l'agitation, une inconscience ?"
+        - "A-t-il des idées fausses ? Par exemple : « en cas de problème, on remonte le plus vite possible », ou « c'est au moniteur de gérer »."
+        - "Sait-il pourquoi on marque un arrêt avant la surface lors d'une remontée assistée ?"
+      esprit:
+        - "Se sent-il capable d'intervenir, ou redoute-t-il de mal faire ?"
+        - "Risque-t-il d'agir avec brutalité sous l'effet du stress ?"
+      comment: "Au sec, le moniteur mime plusieurs situations (signes, ventilation anormale, agitation, débit continu) et lui demande : « Qu'est-ce qui se passe, et que fais-tu ? » On écoute l'analyse et l'ordre des actions, sans corriger."
+      adapter:
+        - "Il ne reconnaît pas les situations : on commence à l'étape 1, « Interpréter la situation »."
+        - "Il les reconnaît mais hésite à agir : on passe à l'étape 2, « Prendre en charge », à faible profondeur."
+        - "La prise en charge est sûre : on passe à l'étape 3, « Remontée assistée depuis faible profondeur », puis à l'étape 4."
+        - "Il est stressé : on reste plus longtemps aux étapes 1 et 2, situations annoncées."
+    bilan:
+      situation: "l'étape 6 : validation spécifique en fin de formation, au moins deux situations différentes réalisées chacune intégralement au moins deux fois"
+      criteres:
+        - "Interprétation juste, prise en charge rapide et efficace."
+        - "Remontée régulière à vitesse adaptée, gilets privilégiés, arrêt marqué entre 5 et 3 m."
+        - "Sortie d'eau sécurisée, voies aériennes hors de l'eau, relais au DP."
+      securite:
+        - "L'assisté est le moniteur, qui peut freiner ou interrompre la remontée à tout moment."
+        - "Faible profondeur pour les premières prises en charge, puis accoutumance progressive dans l'espace 0-20 m sous la responsabilité d'un E2 minimum."
+      eca: "ne marque pas l'arrêt entre 5 et 3 m → reprendre l'étape 3"
+
+PE40-ventiler:
+  "Ventilation en surface et en immersion":
+    evaluer:
+      question: "Comment l'élève gère-t-il sa ventilation depuis son N1, en surface comme à l'effort ?"
+      vecu:
+        - "A-t-il déjà attendu en surface longtemps, avec du clapot, en ventilant sur le détendeur ou le tuba ?"
+        - "S'est-il déjà essoufflé en plongée ? Dans quelles circonstances ?"
+        - "A-t-il refait des lâcher-reprise d'embout depuis son N1 ?"
+      sait:
+        - "Sait-il que l'effort en profondeur favorise l'essoufflement ?"
+        - "A-t-il des idées fausses ? Par exemple : « respirer peu, c'est économiser l'air », ou « l'essoufflement passe en accélérant la respiration »."
+        - "Sait-il pourquoi on expire à la remontée ?"
+      esprit:
+        - "Est-il serein en surface, ou pressé de s'immerger ?"
+        - "Appréhende-t-il de lâcher son embout plus profond ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : milieu naturel, zone 0-6 m. On regarde le rythme de sa ventilation en surface et sous l'eau. Au débriefing, on lui demande : « T'es-tu déjà senti essoufflé ? Qu'as-tu fait ? »"
+      adapter:
+        - "Les techniques N1 ne sont pas sereines : on reste à l'étape 1."
+        - "Il avale de l'eau ou s'agite en surface : on passe à l'étape 2, « Passage embout-tuba », gilet gonflé."
+        - "Il est à l'aise en petit fond : on passe à l'étape 3, « Lâcher-reprise en profondeur »."
+        - "Il s'essouffle facilement à l'effort : on insiste sur l'étape 4, « Ventilation et effort en profondeur »."
+    bilan:
+      situation: "l'étape 6 : effort normal à modéré, plongées de formation en conditions réelles"
+      criteres:
+        - "Sa ventilation est gérée et régulée dans un effort normal à modéré."
+        - "Aucun signe d'essoufflement."
+        - "L'expiration contrôlée est constatée à chaque remontée, sans rappel."
+      securite:
+        - "Gilet gonflé avant le passage embout-tuba."
+        - "Accoutumance progressive à la profondeur ; au-delà de 20 m, sous la responsabilité d'un E3."
+      eca: "s'essouffle après un déplacement en profondeur → reprendre l'étape 4"
+  "Vidage du masque":
+    evaluer:
+      question: "Quel rapport l'élève entretient-il avec le vidage de masque depuis son N1 ?"
+      vecu:
+        - "A-t-il dû vider son masque en plongée depuis son N1, sans que ce soit un exercice ?"
+        - "A-t-il déjà perdu ou pris un coup sur son masque ?"
+        - "A-t-il fait les vidages du N1 à genoux sur le fond, ou en pleine eau ?"
+      sait:
+        - "Sait-il qu'en pleine eau il doit garder son niveau pendant le vidage ?"
+        - "A-t-il des idées fausses ? Par exemple : « il faut se poser pour vider son masque », ou « plus profond, c'est plus difficile à vider »."
+        - "Sait-il retirer et remettre son masque sans perdre son embout ?"
+      esprit:
+        - "Est-il gêné par l'eau dans le nez ou les yeux ouverts sous l'eau ?"
+        - "Appréhende-t-il de refaire l'exercice plus profond ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : zone 0-6 m. On regarde la ventilation, le niveau et l'expression du visage. Après, on lui demande : « Comment tu le vis, sur une échelle de 1 à 10 ? »"
+      adapter:
+        - "Le vidage N1 est stressant : on reste à l'étape 1 sans augmenter la profondeur."
+        - "Le vidage est serein mais il perd son niveau : on passe à l'étape 2, « Vidage stabilisé en pleine eau »."
+        - "Il est stable en pleine eau : on passe à l'étape 3, « Vers 20 m », moniteur au contact."
+        - "Il est serein à 20 m : on passe à l'étape 4, « Situations variées à 20 m »."
+    bilan:
+      situation: "l'étape 5 : à 20 m, en situations variées"
+      criteres:
+        - "Le masque est vidé sans stress."
+        - "Ventilation et stabilité sont maintenues."
+        - "Il le fait en déplacement, après un effort, et après retrait et remise du masque."
+      securite:
+        - "Accoutumance progressive à la profondeur, moniteur au contact."
+        - "Jamais de situation brutale. Si l'élève stresse, on arrête et on rassure."
+      eca: "perd 2 m pendant le vidage en pleine eau → reprendre l'étape 2"
+  "Stabilisation":
+    evaluer:
+      question: "L'élève tient-il son niveau seul, ou compte-t-il sur le fond et sur ses palmes ?"
+      vecu:
+        - "Au N1, plongeait-il près du fond ou en pleine eau ?"
+        - "A-t-il déjà dû lire son ordinateur ou communiquer sans perdre son niveau ?"
+        - "Plonge-t-il souvent avec la même combinaison et le même lest ?"
+      sait:
+        - "Sait-il que son gilet demande des ajustements quand la profondeur change ?"
+        - "A-t-il des idées fausses ? Par exemple : « je palme un peu pour rester à niveau, c'est pareil », ou « une fois stable, on ne touche plus au gilet »."
+        - "Sait-il se servir de son poumon ballast ?"
+      esprit:
+        - "Est-il agacé par ses montées et descentes, ou ne les remarque-t-il pas ?"
+        - "Est-il crispé, ce qui le fait palmer en permanence ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : statique et dynamique, faible profondeur. On lui demande ensuite de lire son ordinateur sans bouger : on regarde s'il palme, s'il s'aide des mains, s'il perd son niveau."
+      adapter:
+        - "Il ne tient pas l'équilibre à plus ou moins 1 m : on reste à l'étape 1."
+        - "Il est stable en petit fond mais pas plus profond : on passe à l'étape 2, « Stabilisation à profondeur croissante »."
+        - "Il perd son niveau dès qu'il fait autre chose : on travaille l'étape 3, « Stable pendant une tâche »."
+        - "Il est stable mais lent à le devenir : on passe à l'étape 4, « Rapidement, à la demande »."
+    bilan:
+      situation: "l'étape 5 : toutes situations, au fil des plongées, en lien avec la ventilation et le vidage de masque à 20 m"
+      criteres:
+        - "La stabilisation est maîtrisée, rapide et efficace."
+        - "Le niveau est maintenu pendant une tâche, dont le vidage de masque à 20 m."
+        - "Il se stabilise sans palmer."
+      securite: []
+      eca: "remonte en lisant son ordinateur → reprendre l'étape 3"
+
+PE40-communiquer:
+  "Connaissance de tous les signes et codes":
+    evaluer:
+      question: "Quels signes l'élève utilise-t-il vraiment, et communique-t-il de lui-même avec son guide ?"
+      vecu:
+        - "Depuis son N1, a-t-il souvent communiqué sous l'eau, ou répondu seulement au signe OK ?"
+        - "A-t-il déjà ressenti une sensation inhabituelle en plongée sans en parler ?"
+        - "A-t-il plongé avec des guides qui utilisaient d'autres signes ?"
+      sait:
+        - "Connaît-il les signes de pression, de durée sans palier et de paliers ?"
+        - "A-t-il des idées fausses ? Par exemple : « je signale ma pression quand on me la demande », ou « la narcose, ça n'arrive qu'aux autres »."
+        - "Sait-il ce qu'est la narcose et comment la signaler ?"
+      esprit:
+        - "Ose-t-il signaler un malaise, ou craint-il de gâcher la plongée ?"
+        - "Communique-t-il volontiers, ou reste-t-il passif ?"
+      comment: "Au sec, enchaîner des signes et des questions : « Montre-moi ta pression, tes paliers, ta durée sans palier. » Puis dans l'eau, observer s'il donne des informations sans qu'on les lui demande."
+      adapter:
+        - "Il hésite sur les signes N1 : on commence à l'étape 1, « Réactiver les signes N1 »."
+        - "Il connaît les signes N1 mais pas les autres : on passe à l'étape 2, « Signes de la plongée profonde »."
+        - "Il répond bien mais n'informe jamais spontanément : on travaille l'étape 3, puis l'étape 4, « Informer sans attendre »."
+        - "Il communique déjà bien : on passe à l'étape 5, « Analyser son ressenti »."
+    bilan:
+      situation: "l'étape 6 : situations réelles, ensemble des situations de communication"
+      criteres:
+        - "Ses échanges sont clairs, ses réactions rapides et adaptées."
+        - "Il informe spontanément le GP de sa consommation et de sa désaturation."
+        - "Il prévient le GP dès la première sensation anormale et la décrit avec justesse."
+      securite:
+        - "Au moindre signe de narcose, le GP fait remonter de quelques mètres."
+        - "Accoutumance progressive, sous la responsabilité d'un E3 au-delà de 20 m."
+      eca: "attend qu'on lui demande sa pression → reprendre l'étape 4"
+
+PE40-surface:
+  "Gestion de la désaturation":
+    evaluer:
+      question: "Quel usage l'élève fait-il de son ordinateur depuis son N1 ?"
+      vecu:
+        - "A-t-il son propre ordinateur, ou en emprunte-t-il un ?"
+        - "Le consulte-t-il pendant la plongée, ou le guide s'en charge-t-il ?"
+        - "A-t-il déjà eu un palier obligatoire ou une alarme ?"
+      sait:
+        - "Sait-il lire profondeur, durée et vitesse de remontée ?"
+        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur, c'est pour le guide », ou « s'il ne sonne pas, tout va bien »."
+        - "Connaît-il la durée sans palier et la durée totale de remontée ?"
+      esprit:
+        - "S'intéresse-t-il à sa désaturation, ou la trouve-t-il abstraite ?"
+        - "Se sent-il dépassé par les fonctions de l'appareil ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : au sec, sur son ordinateur, on lui demande de montrer profondeur, durée et vitesse de remontée. Puis : « Et ça, qu'est-ce que c'est ? » sur les autres affichages. Au retour d'une plongée, on lui demande ses paramètres."
+      adapter:
+        - "Il ne lit pas les paramètres de base : on reste à l'étape 1."
+        - "Il lit la base mais pas le reste : on passe à l'étape 2, « Tous les paramètres et fonctionnalités »."
+        - "Il connaît son ordinateur mais le regarde peu : on travaille l'étape 3, « Contrôler à la bonne fréquence »."
+        - "Il le consulte bien : on passe aux étapes 4 et 5, communication au GP et restitution au DP."
+    bilan:
+      situation: "l'étape 6 : tout au long de la formation, principes de la table vérifiés à l'oral ou à l'écrit, sans calcul"
+      criteres:
+        - "Il identifie ses paramètres et les contrôle à une fréquence adaptée à la profondeur."
+        - "Il les communique au GP et applique ses consignes."
+        - "Il les restitue au DP au retour, et connaît les principes de la table."
+      securite: []
+      eca: "ne contrôle pas plus souvent son ordinateur en profondeur → reprendre l'étape 3"
+  "Gestion d'une remontée isolée":
+    evaluer:
+      question: "L'élève sait-il ce qu'il ferait s'il se retrouvait seul sous l'eau ?"
+      vecu:
+        - "A-t-il déjà perdu de vue sa palanquée, même brièvement ?"
+        - "A-t-il déjà remonté sans être tenu ou accompagné de près ?"
+        - "A-t-il déjà tenu un palier en pleine eau sans repère ?"
+      sait:
+        - "Connaît-il la règle de perte de palanquée ?"
+        - "A-t-il des idées fausses ? Par exemple : « je cherche ma palanquée jusqu'à la retrouver », ou « seul, je remonte vite pour qu'on me voie »."
+        - "Sait-il ce qu'il fait en arrivant en surface ?"
+      esprit:
+        - "Est-il inquiet à l'idée d'être seul sous l'eau ?"
+        - "Se croit-il capable de remonter seul sans l'avoir jamais fait ?"
+      comment: "Au sec, lui demander : « Tu ne vois plus personne : que fais-tu, du début jusqu'au bateau ? » On écoute l'ordre et les oublis : règle de perte, vitesse, paliers, tour d'horizon, signalement."
+      adapter:
+        - "Il ne connaît pas la procédure : on commence à l'étape 1, « La procédure au sec »."
+        - "Il la connaît : on passe à l'étape 2, « Remonter seul depuis faible profondeur », moniteur à portée de main."
+        - "Il remonte seul à bonne vitesse : on passe à l'étape 3, « Tenir seul un palier », puis à l'étape 4."
+        - "Il oublie la fin de procédure : on insiste sur l'étape 5, « Approche de la surface et sortie »."
+    bilan:
+      situation: "l'étape 6 : remonter seul en sécurité, remontées isolées simulées au fil de la formation"
+      criteres:
+        - "Vitesse et paliers respectés seul."
+        - "Approche de la surface et sortie de l'eau assurées seul."
+        - "Paramètres restitués au DP."
+      securite:
+        - "Le moniteur reste à portée de main pour les premières remontées, puis garde l'élève en vue."
+        - "Accoutumance progressive ; au-delà de 20 m, sous la responsabilité d'un E3."
+      eca: "remonte sans tour d'horizon ni signalement → reprendre l'étape 5"
+
+PE40-relai:
+  "Intervention en relai":
+    evaluer:
+      question: "Comment l'élève réagirait-il aujourd'hui si un équipier lui demandait de l'air ?"
+      vecu:
+        - "Depuis son N1, a-t-il refait l'exercice du passage d'octopus ?"
+        - "L'a-t-il fait à genoux sur le fond, ou en pleine eau ?"
+        - "A-t-il déjà vu un équipier essoufflé ou en difficulté ?"
+      sait:
+        - "Sait-il où est son octopus et comment le présenter ?"
+        - "A-t-il des idées fausses ? Par exemple : « je donne mon détendeur et je remonte aussitôt », ou « c'est le guide qui intervient »."
+        - "Sait-il qu'il doit garder sa profondeur et rejoindre le GP ?"
+      esprit:
+        - "Se sent-il responsable de ses équipiers, ou compte-t-il sur le guide ?"
+        - "Risque-t-il de perdre ses moyens si la demande arrive par surprise ?"
+      comment: "C'est le bilan des acquis de l'étape 1 : à genoux en petit fond, le moniteur fait le signe panne d'air. On regarde la rapidité, la façon de présenter l'octopus et le contact. Puis on lui demande : « Et ensuite, que fais-tu ? »"
+      adapter:
+        - "L'octopus n'est pas présenté immédiatement : on reste à l'étape 1."
+        - "Il présente bien mais à genoux seulement : on passe à l'étape 2, « Relai en maintenant sa profondeur »."
+        - "Il tient sa profondeur : on passe à l'étape 3, « Déplacement jusqu'au GP »."
+        - "Il ne connaît que la panne d'air : on travaille l'étape 4, « Autres difficultés »."
+    bilan:
+      situation: "l'étape 6 : validation spécifique en fin de formation, situations variées nécessitant son intervention avant celle du GP"
+      criteres:
+        - "Il prend en charge l'assisté, calmement et rapidement."
+        - "Il maintient la profondeur pendant le passage d'embout."
+        - "Il se déplace jusqu'au GP, contact maintenu."
+      securite:
+        - "L'assisté est le moniteur ; faible profondeur pour les premiers essais."
+        - "Accoutumance progressive ; au-delà de 20 m, sous la responsabilité d'un E3."
+      eca: "descend de quelques mètres pendant le passage d'embout → reprendre l'étape 2"

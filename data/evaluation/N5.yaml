@@ -1,0 +1,555 @@
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N5.
+# Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
+# (tel qu'il figure dans data/progressions/progressions_N5.json). Les fichiers de progression ne sont pas modifiés.
+#
+# evaluer.question : la question directrice
+# evaluer.vecu / sait / esprit : son vécu, ce qu'il sait ou croit savoir, son état d'esprit (listes)
+# evaluer.comment : comment le savoir (situation d'observation)
+# evaluer.adapter : où commencer selon ce qu'on a observé (liste)
+# bilan.situation : la situation finale sur laquelle porte le bilan
+# bilan.criteres : critères de la situation finale (liste)
+# bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
+
+
+N5-site:
+  "Prendre en compte les plongeurs, les guides de palanquée et le support surface":
+    evaluer:
+      question: "Sur quoi le candidat s'appuie-t-il aujourd'hui pour tenir compte des plongeurs, des guides et du support avant de choisir un site ?"
+      vecu:
+        - "A-t-il déjà vu un DP préparer une sortie ? A-t-il remarqué ce qu'il demandait aux plongeurs ?"
+        - "Comme guide, a-t-il déjà reçu une palanquée mal adaptée au site prévu ? Qu'en a-t-il retenu ?"
+        - "A-t-il déjà organisé une sortie, même informelle, pour un groupe qu'il ne connaissait pas ?"
+      sait:
+        - "Sait-il où trouver le niveau et l'expérience d'un plongeur : carte, passeport, carnet, dernières plongées ?"
+        - "A-t-il des idées fausses ? Par exemple : « le site se choisit d'abord, on adapte les palanquées ensuite », ou « le niveau sur la carte suffit »."
+        - "Pense-t-il au nombre de GP disponibles et au support surface comme à des contraintes du choix ?"
+      esprit:
+        - "Est-il à l'aise pour aller vers des plongeurs inconnus et leur poser des questions ?"
+        - "A-t-il tendance à choisir le site qu'il aime, plutôt que celui qui convient au groupe ?"
+      comment: "Au sec, à partir d'une liste de plongeurs d'une sortie réelle (niveaux, expérience, équipement) et des moyens disponibles, lui demander : « Qu'est-ce qui compte pour toi avant de choisir le site ? » On l'écoute sans corriger, et on note ce qu'il oublie : les guides, le support, les attentes des plongeurs."
+      adapter:
+        - "Il ne sait pas ce qu'un DP prend en compte : on commence à l'étape 1, « Observer un DP »."
+        - "Il connaît les éléments mais ne va pas chercher l'information : on passe à l'étape 2, « Faire connaissance »."
+        - "Il recueille bien l'information mais n'en tire pas de contraintes : on travaille l'étape 3, « Analyser le groupe »."
+        - "Il analyse déjà le groupe avec justesse : on passe à l'étape 4, « Prévoir un site approprié »."
+    bilan:
+      situation: "l'étape 5 : en situation réelle, groupes variés (évaluation)"
+      criteres:
+        - "Il connaît le niveau, l'expérience, l'équipement et le moyen de désaturation de chaque plongeur."
+        - "Il formule les contraintes liées aux plongeurs, aux GP disponibles et au support surface."
+        - "Il prévoit un site approprié et justifie son choix."
+      securite:
+        - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
+        - "Le stagiaire agit sous le contrôle du DP en titre."
+      eca: "ne tient pas compte du nombre de GP disponibles → reprendre l'étape 3"
+  "Recueillir les informations relatives au site":
+    evaluer:
+      question: "Quelles informations le candidat va-t-il déjà chercher avant une sortie, et où ?"
+      vecu:
+        - "Consulte-t-il déjà la météo et les marées avant de plonger, ou s'en remet-il au club ?"
+        - "A-t-il vécu une sortie annulée ou écourtée à cause de la météo, du courant ou d'un site interdit ?"
+        - "A-t-il déjà plongé sur un site inconnu ? Comment s'était-il renseigné ?"
+      sait:
+        - "Sait-il citer les informations utiles au DP : météo, marées, vents dominants, courants, état de la mer, mouillage, fréquentation ?"
+        - "Sait-il où vérifier qu'un site est accessible et autorisé ?"
+        - "A-t-il des idées fausses ? Par exemple : « si le pilote y va, c'est autorisé », ou « une appli météo suffit »."
+      esprit:
+        - "Est-il méthodique, ou se fie-t-il à l'habitude et aux sites qu'il connaît ?"
+        - "Ose-t-il interroger un pilote ou un club local qu'il ne connaît pas ?"
+      comment: "Au sec, avec le bulletin météo et l'annuaire des marées du jour, lui demander : « Où et à quelle heure peut-on plonger demain, et comment le sais-tu ? » On écoute les sources qu'il cite et la façon dont il raisonne, sans corriger."
+      adapter:
+        - "Il ne connaît pas les informations utiles : on commence à l'étape 1, « Les informations utiles au DP »."
+        - "Il les connaît mais ne sait pas où vérifier qu'un site est autorisé : on travaille l'étape 2, « Sites accessibles et autorisés »."
+        - "Il cite les informations mais n'en tire pas de conclusion : on passe à l'étape 3, « Exploiter les informations »."
+        - "Il exploite bien les informations sur des sites connus : on passe à l'étape 4, « Site méconnu »."
+    bilan:
+      situation: "l'étape 5 : en situation réelle, sites connus et méconnus (évaluation)"
+      criteres:
+        - "Il recueille les informations utiles auprès des sources et des personnes compétentes."
+        - "Il vérifie que le site est accessible et autorisé."
+        - "Il en tire une conclusion juste sur les sites et les horaires possibles."
+      securite: []
+      eca: "s'en tient aux sites qu'il connaît et ne se renseigne pas sur un site méconnu → reprendre l'étape 4"
+  "Analyser les conditions environnementales sur le site et s'y adapter":
+    evaluer:
+      question: "Comment le candidat lit-il aujourd'hui les conditions sur le site, et jusqu'où ose-t-il modifier ou annuler une plongée ?"
+      vecu:
+        - "A-t-il vu un DP changer de site, de zone ou annuler sur place ? A-t-il compris pourquoi ?"
+        - "Comme guide, a-t-il déjà vécu une plongée où les conditions se sont dégradées : courant, visibilité, houle ?"
+        - "A-t-il lui-même déjà renoncé à une plongée ?"
+      sait:
+        - "Sait-il relier vent, houle, visibilité, trafic, courant et température, et prévoir leur évolution ?"
+        - "Confronte-t-il les conditions au niveau des plongeurs, au nombre de guides et aux équipements disponibles ?"
+        - "A-t-il des idées fausses ? Par exemple : « on est venus, on plonge », ou « annuler, c'est un échec »."
+      esprit:
+        - "Supporte-t-il la pression du groupe qui veut plonger ?"
+        - "Est-il trop prudent, ou au contraire trop confiant dans sa propre expérience de guide ?"
+      comment: "Sur le site, avec le DP en titre, lui demander : « Que vois-tu, comment cela va-t-il évoluer, et la plongée prévue est-elle faisable pour ce groupe ? » On l'écoute sans corriger. On note s'il envisage de lui-même un changement ou un renoncement."
+      adapter:
+        - "Il décrit mal les conditions ou leur évolution : on commence à l'étape 1, « Mettre en relation les conditions »."
+        - "Il lit les conditions mais ne les relie pas au groupe ni aux moyens : on passe à l'étape 2, « Vérifier la faisabilité »."
+        - "Il juge bien la faisabilité mais hésite à changer le projet : on travaille l'étape 3, « S'adapter »."
+        - "Il redoute la pression du groupe : on argumente avec lui les décisions du DP en titre à l'étape 3 avant de le laisser décider."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, conditions variées (évaluation)"
+      criteres:
+        - "Il décrit les conditions et leur évolution prévisible."
+        - "Il vérifie la faisabilité au regard des plongeurs, des guides et des équipements."
+        - "Ses décisions sont sûres et argumentées, y compris le renoncement."
+      securite:
+        - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
+        - "Le stagiaire agit sous le contrôle du DP en titre."
+      eca: "maintient la plongée prévue alors que les conditions se dégradent → reprendre l'étape 3"
+
+N5-organiser:
+  "Composer les palanquées":
+    evaluer:
+      question: "Comment le candidat compose-t-il aujourd'hui des palanquées, et sur quelles règles s'appuie-t-il ?"
+      vecu:
+        - "A-t-il vu des DP composer des palanquées ? A-t-il déjà été consulté ou sollicité pour le faire ?"
+        - "Comme guide, a-t-il déjà reçu une palanquée qu'il jugeait mal composée ?"
+        - "A-t-il vécu une sortie où des affinités ou des attentes n'ont pas été prises en compte ?"
+      sait:
+        - "Connaît-il les normes d'encadrement du Code du sport et du MFT, et les prérogatives de chaque niveau ?"
+        - "A-t-il des idées fausses ? Par exemple : « le DP, c'est celui qui fait les palanquées », ou « on met les amis ensemble, on verra après pour les normes »."
+        - "Sait-il retrouver une norme dans le Code du sport quand il a un doute ?"
+      esprit:
+        - "Est-il sûr de lui, ou craint-il de se tromper sur les normes ?"
+        - "Ose-t-il refuser une demande de plongeurs qui veulent plonger ensemble ?"
+      comment: "Au sec, à partir d'une liste de plongeurs d'une sortie réelle, lui demander : « Compose les palanquées et dis-moi sur quelles règles tu t'appuies. » On l'observe sans corriger, et on note les erreurs de conformité et la place donnée aux attentes."
+      adapter:
+        - "Il ne maîtrise pas les normes : on commence à l'étape 1, « Les normes d'encadrement »."
+        - "Ses palanquées sont conformes sur cas écrits : on passe à l'étape 2, « Cas réel simple »."
+        - "Il compose déjà des palanquées conformes pour un groupe homogène : on passe à l'étape 3, « Groupe hétérogène et affinités »."
+        - "Il sacrifie la conformité aux affinités : on revient aux normes de l'étape 1 avant l'étape 3."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, sorties variées (évaluation)"
+      criteres:
+        - "Toutes les palanquées sont conformes aux normes."
+        - "Elles sont adaptées aux plongeurs."
+        - "Les attentes et les affinités sont prises en compte quand c'est possible."
+      securite:
+        - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
+        - "Le stagiaire agit sous le contrôle du DP en titre."
+      eca: "compose des palanquées conformes mais ignore les attentes des plongeurs → reprendre l'étape 3"
+  "Fixer les paramètres de plongée":
+    evaluer:
+      question: "Comment le candidat fixe-t-il aujourd'hui les paramètres d'une palanquée qu'il ne guide pas lui-même ?"
+      vecu:
+        - "Comme guide, quels paramètres a-t-il reçus des DP ? Les a-t-il trouvés clairs et applicables ?"
+        - "A-t-il déjà vécu une plongée où les ordinateurs de la palanquée ne donnaient pas la même décompression ?"
+        - "A-t-il déjà dépassé des paramètres fixés ? Pourquoi ?"
+      sait:
+        - "Distingue-t-il profondeur, durée et durée totale de remontée ?"
+        - "Sait-il définir une zone d'évolution et un profil adaptés à chaque palanquée ?"
+        - "A-t-il des idées fausses ? Par exemple : « chacun suit son ordinateur, le DP n'a rien à dire », ou « on donne les mêmes paramètres à tout le monde »."
+      esprit:
+        - "Fixe-t-il les paramètres qu'il prendrait pour lui-même, plutôt que ceux qui conviennent à la palanquée ?"
+        - "Est-il gêné de donner des consignes à des guides plus expérimentés que lui ?"
+      comment: "Au sec, sur un site qu'il connaît et des palanquées de niveaux différents, lui demander : « Donne les paramètres de chaque palanquée, et ta consigne de décompression. » On écoute sans corriger et on note ce qui manque : durée totale de remontée, zone, consigne commune pour des ordinateurs différents."
+      adapter:
+        - "Ses paramètres sont incomplets ou incohérents : on commence à l'étape 1, « Profondeur, durée, durée totale de remontée »."
+        - "Il fixe bien les paramètres mais pas la zone ni le profil : on passe à l'étape 2, « Zone et profil »."
+        - "Il ne sait pas donner une consigne de décompression commune : on travaille l'étape 3, « Décompression adaptée »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, sorties variées (évaluation)"
+      criteres:
+        - "Les paramètres sont cohérents avec le site, le niveau et les conditions."
+        - "La zone et le profil sont adaptés à chaque palanquée."
+        - "La consigne de décompression est claire et applicable par tous."
+      securite: []
+      eca: "laisse chaque palanquée gérer sa décompression sans consigne commune → reprendre l'étape 3"
+  "Rédiger la fiche de sécurité":
+    evaluer:
+      question: "Que sait déjà le candidat de la fiche de sécurité, et comment la voit-il ?"
+      vecu:
+        - "A-t-il vu des DP remplir la fiche ? Avant la plongée, ou après coup ?"
+        - "Comme guide, a-t-il déjà transmis au DP ses heures et ses paramètres réalisés ?"
+        - "A-t-il déjà rempli une fiche lui-même ?"
+      sait:
+        - "Sait-il ce que la réglementation exige dans la fiche ?"
+        - "A-t-il des idées fausses ? Par exemple : « c'est de la paperasse, on la remplit au retour », ou « les paramètres prévus suffisent »."
+        - "Sait-il à quoi sert la fiche en cas d'accident ?"
+      esprit:
+        - "La voit-il comme un outil de sécurité, ou comme une formalité ?"
+        - "Est-il rigoureux dans la durée, jusqu'au retour de la dernière palanquée ?"
+      comment: "Au sec, sur un modèle de fiche et un cas écrit, lui demander : « Remplis la fiche de cette sortie. » Puis lui demander ce qu'il y ajoutera pendant et après la plongée. On observe sans corriger."
+      adapter:
+        - "Il ne connaît pas le contenu réglementaire : on commence à l'étape 1, « La fiche et la réglementation »."
+        - "Il remplit une fiche conforme sur cas écrit : on passe à l'étape 2, « Avant la plongée »."
+        - "Il prépare bien la fiche mais ne la tient pas à jour : on travaille l'étape 3, « Pendant et après »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "La fiche est complète avant la mise à l'eau."
+        - "Elle est exacte jusqu'au retour de la dernière palanquée : heures d'immersion et de sortie, paramètres réalisés."
+        - "Elle respecte la réglementation en vigueur."
+      securite:
+        - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
+        - "Le stagiaire agit sous le contrôle du DP en titre."
+      eca: "oublie de noter les heures de sortie de certaines palanquées → reprendre l'étape 3"
+  "Présenter le site":
+    evaluer:
+      question: "Comment le candidat présente-t-il aujourd'hui un site à un groupe de guides et de plongeurs ?"
+      vecu:
+        - "Quels briefings de site a-t-il entendus ? Lesquels lui ont été utiles comme guide ?"
+        - "A-t-il déjà présenté un site, même à sa seule palanquée ?"
+        - "A-t-il déjà plongé un site mal présenté, et en a-t-il subi les conséquences ?"
+      sait:
+        - "Sait-il ce qu'une présentation doit contenir : zones, intérêts, conditions probables, dangers ?"
+        - "Pense-t-il à donner des consignes pour évoluer sans dégrader le milieu ?"
+        - "A-t-il des idées fausses ? Par exemple : « chaque guide connaît le site, inutile de le présenter »."
+      esprit:
+        - "Est-il à l'aise pour parler devant un groupe ?"
+        - "Ose-t-il dire qu'il ne connaît pas un site, et citer ses sources ?"
+      comment: "Au briefing d'une sortie sur un site qu'il connaît, lui demander : « Présente le site au groupe. » On écoute sans l'interrompre et on note ce qui manque : dangers, conditions probables, respect du milieu."
+      adapter:
+        - "Sa présentation est incomplète ou confuse : on commence à l'étape 1, « Décrire un site connu »."
+        - "Il présente bien le site mais oublie le respect du milieu : on passe à l'étape 2, « Évoluer sans perturber le milieu »."
+        - "Il présente déjà bien un site connu : on passe à l'étape 3, « Site méconnu »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, sites connus et méconnus (évaluation)"
+      criteres:
+        - "La présentation est claire et utile aux GP et aux plongeurs."
+        - "Les consignes de respect du milieu sont concrètes et adaptées au site."
+        - "Pour un site méconnu, la présentation est fiable et les sources sont citées."
+      securite: []
+      eca: "présente un site méconnu sans s'être renseigné auprès du pilote → reprendre l'étape 3"
+  "Désigner un suppléant en cas de plongée du DP":
+    evaluer:
+      question: "Que représente pour le candidat la suppléance du DP quand celui-ci plonge ?"
+      vecu:
+        - "A-t-il vu un DP plonger et laisser un suppléant en surface ? Comment cela s'était-il passé ?"
+        - "A-t-il déjà été lui-même désigné comme suppléant ?"
+        - "A-t-il vécu un incident en surface pendant que le DP était dans l'eau ?"
+      sait:
+        - "Sait-il que le DP en titre conserve sa responsabilité, même en immersion ?"
+        - "Sait-il quelles informations transmettre au suppléant ?"
+        - "A-t-il des idées fausses ? Par exemple : « le suppléant devient le DP », ou « n'importe qui à bord peut faire l'affaire »."
+      esprit:
+        - "Mesure-t-il le poids de la responsabilité qu'il garde en plongeant ?"
+        - "Est-il à l'aise pour vérifier l'aptitude d'un volontaire, ou pour refuser quelqu'un ?"
+      comment: "Au sec, sur un cas réel où le DP veut plonger, lui demander : « Qui désignes-tu, pourquoi, et que lui dis-tu avant de te mettre à l'eau ? » On l'écoute sans corriger et on note s'il évoque sa propre responsabilité."
+      adapter:
+        - "Il croit que la responsabilité passe au suppléant : on commence à l'étape 1, « Le rôle du suppléant »."
+        - "Il connaît le rôle mais choisit sans critère : on passe à l'étape 2, « Choisir le suppléant »."
+        - "Il choisit bien mais transmet peu : on travaille l'étape 3, « Transmettre les consignes »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, sortie où le DP plonge (évaluation)"
+      criteres:
+        - "Le suppléant est apte et son choix est justifié."
+        - "Il est informé de tout ce dont il a besoin."
+        - "La durée approximative de l'immersion du DP est annoncée."
+      securite: []
+      eca: "désigne un suppléant sans lui annoncer la durée de son immersion → reprendre l'étape 3"
+
+N5-securiser:
+  "S'assurer de la compréhension et de la prise en compte des consignes données par le DP":
+    evaluer:
+      question: "Quelles consignes le candidat donnerait-il aujourd'hui, et comment saurait-il qu'elles sont comprises ?"
+      vecu:
+        - "Comme guide, quels briefings de DP a-t-il reçus ? Lesquels étaient clairs, lesquels ne l'étaient pas ?"
+        - "A-t-il déjà vécu une plongée où une consigne avait été mal comprise : paramètres, rappel, perte de palanquée ?"
+        - "A-t-il déjà briefé d'autres guides ?"
+      sait:
+        - "Sait-il lister les consignes à donner : paramètres et zone, gestion commune de la décompression, moyen de rappel, perte de palanquée ?"
+        - "Pense-t-il aux risques à rappeler : givrage en eau froide, narcose, essoufflement, refroidissement ?"
+        - "A-t-il des idées fausses ? Par exemple : « je l'ai dit, donc c'est compris », ou « des GP expérimentés n'ont pas besoin de consignes »."
+      esprit:
+        - "Est-il gêné de vérifier la compréhension de guides plus anciens que lui ?"
+        - "Écoute-t-il les réponses, ou attend-il seulement un « oui » ?"
+      comment: "Au sec, lui demander de faire le briefing des GP pour la sortie du jour, puis : « Comment sais-tu qu'ils ont compris ? » On écoute sans l'interrompre et on note les consignes oubliées et la façon dont il vérifie."
+      adapter:
+        - "Ses consignes sont incomplètes : on commence à l'étape 1, « Le contenu des consignes »."
+        - "Il connaît les consignes mais les donne mal : on passe à l'étape 2, « Briefer les GP »."
+        - "Il briefe bien mais ne vérifie pas : on travaille l'étape 3, « Vérifier la compréhension »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Les consignes données sont claires et complètes."
+        - "Il repère un point mal compris et le reprend."
+        - "Les consignes sont comprises et prises en compte par toutes les palanquées."
+      securite:
+        - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
+        - "Le stagiaire agit sous le contrôle du DP en titre."
+      eca: "donne des consignes complètes mais ne vérifie pas qu'elles sont comprises → reprendre l'étape 3"
+  "Connaître les risques liés aux différentes pratiques et les mesures de prévention associées":
+    evaluer:
+      question: "Quelle expérience et quelles connaissances le candidat a-t-il des pratiques et des publics particuliers ?"
+      vecu:
+        - "A-t-il plongé ou guidé de nuit, sur épave, en dérivante, en grotte ou sous glace ?"
+        - "A-t-il déjà encadré des jeunes, des seniors ou des plongeurs avec une restriction d'ordre médical ?"
+        - "A-t-il vécu un incident lié à une de ces pratiques ?"
+      sait:
+        - "Sait-il citer, pour chaque pratique, les risques et la prévention : nuit, sous glace, dérivante, filets, grottes, épaves ?"
+        - "Sait-il quelles mesures prendre pour un public jeune, senior, ou avec une restriction médicale ?"
+        - "A-t-il des idées fausses ? Par exemple : « une plongée de nuit, c'est la même chose avec une lampe »."
+      esprit:
+        - "Généralise-t-il à partir de sa propre pratique, sans voir les risques pour les autres ?"
+        - "Reconnaît-il les pratiques qu'il ne connaît pas ?"
+      comment: "Au sec, présenter une sortie avec une particularité (nuit, public jeune, épave) et lui demander : « Quels risques vois-tu, et que prévois-tu ? » On écoute sans corriger et on note ce qui relève de son vécu et ce qui relève de connaissances."
+      adapter:
+        - "Il connaît mal les pratiques spécifiques : on commence à l'étape 1, « Pratiques et environnements spécifiques »."
+        - "Il connaît les pratiques mais pas les publics : on passe à l'étape 2, « Publics particuliers »."
+        - "Il cite risques et prévention sur cas écrits : on passe à l'étape 3, « Appliquer à une sortie réelle »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, sorties variées (évaluation)"
+      criteres:
+        - "Il identifie les risques liés à la pratique et au public."
+        - "Les mesures de prévention sont prévues et annoncées."
+      securite: []
+      eca: "cite les risques d'une plongée de nuit mais ne prévoit aucune mesure à la sortie → reprendre l'étape 3"
+  "Surveiller l'activité et réaliser des actions de prévention":
+    evaluer:
+      question: "Comment le candidat imagine-t-il la surveillance d'une activité qu'il ne voit plus une fois les palanquées à l'eau ?"
+      vecu:
+        - "A-t-il vu un DP installer pendeur, ligne de vie ou bloc de sécurité ? A-t-il aidé à le faire ?"
+        - "A-t-il vécu une palanquée en retard, une sortie loin du bateau, des paliers manqués ?"
+        - "Comme guide, savait-il ce que le DP faisait en surface pendant sa plongée ?"
+      sait:
+        - "Sait-il quels moyens de sécurité et de confort installer selon le site ?"
+        - "Sait-il prévoir une procédure de rattrapage et un plan de secours pour une palanquée qui a manqué ses paliers ?"
+        - "A-t-il des idées fausses ? Par exemple : « une fois les palanquées à l'eau, le DP attend », ou « le bloc de sécurité, c'est pour le confort »."
+      esprit:
+        - "Garde-t-il sa vigilance dans la durée, ou se laisse-t-il distraire par d'autres tâches ?"
+        - "Anticipe-t-il, ou réagit-il seulement quand un problème apparaît ?"
+      comment: "Au sec, sur le plan d'une sortie réelle, lui demander : « Qu'installes-tu, que dis-tu au briefing, et comment suis-tu les palanquées ? » Puis lui poser le cas d'une palanquée qui a manqué ses paliers. On écoute sans corriger."
+      adapter:
+        - "Il ne sait pas quels moyens installer : on commence à l'étape 1, « Moyens de sécurité et de confort »."
+        - "Il oublie l'information sur le site au briefing : on travaille l'étape 2, « Informer sur l'environnement »."
+        - "Il n'a ni procédure de rattrapage ni plan de secours : on passe à l'étape 3, « Désaturation de secours »."
+        - "Il prépare bien mais perd la vue d'ensemble pendant l'activité : on passe à l'étape 4, « Surveiller »."
+    bilan:
+      situation: "l'étape 5 : en situation réelle (évaluation)"
+      criteres:
+        - "Les moyens de sécurité sont installés et adaptés au site."
+        - "La procédure de rattrapage et le plan de secours sont prévus avant la plongée."
+        - "Il sait à tout moment où en est chaque palanquée."
+      securite:
+        - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
+        - "Le stagiaire agit sous le contrôle du DP en titre."
+      eca: "ne sait plus quelle palanquée est encore à l'eau → reprendre l'étape 4"
+  "Vérifier et utiliser le matériel de secours":
+    evaluer:
+      question: "Que reste-t-il au candidat de son RIFAP, et vérifie-t-il déjà le matériel de secours avant une sortie ?"
+      vecu:
+        - "Quand a-t-il obtenu son RIFAP ? A-t-il pratiqué depuis : recyclage, exercice, intervention réelle ?"
+        - "A-t-il déjà vu un DP vérifier l'oxygène et la trousse avant une sortie ?"
+        - "A-t-il déjà constaté un matériel de secours absent, vide ou hors d'usage ?"
+      sait:
+        - "Sait-il ce que contient la trousse de secours et ce qu'il faut vérifier ?"
+        - "Sait-il où se trouve le matériel de secours sur le bateau ou le site habituel ?"
+        - "A-t-il des idées fausses ? Par exemple : « le matériel est au club, il est forcément prêt »."
+      esprit:
+        - "Est-il sûr de lui sur le matériel, ou hésite-t-il ?"
+        - "Considère-t-il la vérification comme une routine à ne pas sauter ?"
+      comment: "Le bilan des acquis RIFAP de l'étape 1 sert d'observation : on le voit mettre en œuvre le matériel. Puis, avant une sortie, lui demander : « Montre-moi le matériel de secours et dis-moi s'il est prêt. »"
+      adapter:
+        - "Il hésite sur le matériel au bilan RIFAP : on reprend l'étape 1, « Bilan des acquis RIFAP », avant d'aller plus loin."
+        - "Il maîtrise le matériel mais ne connaît pas la trousse : on passe à l'étape 2, « Trousse de secours »."
+        - "Il connaît la trousse mais ne vérifie pas l'oxygène ni le matériel du bateau : on passe à l'étape 3, « Localiser et vérifier »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Il utilise le matériel de secours sans hésitation."
+        - "Le contenu de la trousse est vérifié et les manques sont signalés."
+        - "Le matériel est localisé, son état et son fonctionnement vérifiés à chaque sortie."
+      securite: []
+      eca: "vérifie la trousse mais ne contrôle pas l'oxygène du bateau → reprendre l'étape 3"
+  "S'informer des règlementations locales éventuelles, des règles de protection de l'environnement et les faire respecter":
+    evaluer:
+      question: "Comment le candidat s'informe-t-il des règles locales, et jusqu'où est-il prêt à les faire respecter ?"
+      vecu:
+        - "A-t-il plongé dans une zone protégée ou réglementée ? Comment en avait-il été informé ?"
+        - "A-t-il déjà vu un plongeur prélever, toucher ou sortir de la zone autorisée ? Qu'a-t-il fait ?"
+        - "A-t-il vu un DP intervenir dans ce cas ?"
+      sait:
+        - "Sait-il où se renseigner sur les espèces protégées et les zones interdites : pilote, personnes compétentes ?"
+        - "Connaît-il les règles générales de protection de l'environnement ?"
+        - "A-t-il des idées fausses ? Par exemple : « un petit prélèvement, ce n'est pas grave », ou « ce n'est pas au DP de faire la police »."
+      esprit:
+        - "Est-il à l'aise pour reprendre un plongeur, même expérimenté ?"
+        - "Risque-t-il d'être trop permissif, ou au contraire cassant ?"
+      comment: "Au sec, sur un site réel, lui demander : « Quelles sont les règles ici, et que dis-tu au briefing ? » Puis lui poser le cas d'un plongeur qui remonte avec un prélèvement. On écoute sans corriger."
+      adapter:
+        - "Il ne connaît pas les dispositions du site : on commence à l'étape 1, « S'informer »."
+        - "Il les connaît mais ne les rappelle pas : on passe à l'étape 2, « Informer les plongeurs »."
+        - "Il informe bien mais n'ose pas intervenir : on travaille l'étape 3, « Faire respecter »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Il présente les dispositions locales du site."
+        - "Il rappelle clairement les règles au briefing."
+        - "Il intervient de façon adaptée et ferme quand une règle n'est pas respectée."
+      securite: []
+      eca: "rappelle les règles mais laisse passer une palanquée hors zone → reprendre l'étape 3"
+
+N5-accident:
+  "Savoir réagir en cas d'accident":
+    evaluer:
+      question: "Avec quel vécu, quelles connaissances et quel état d'esprit le candidat aborde-t-il la gestion d'un accident en tant que DP ?"
+      vecu:
+        - "A-t-il déjà vécu un accident ou un incident de plongée ? Quel rôle y a-t-il tenu ?"
+        - "A-t-il vu un DP gérer un accident, ou participé à un exercice ?"
+        - "Que lui reste-t-il de son RIFAP, et depuis quand ne l'a-t-il pas pratiqué ?"
+      sait:
+        - "Connaît-il le plan d'évacuation et d'organisation des secours du site habituel : alerte, communication, débarquement, centre de soins ?"
+        - "Pense-t-il aux palanquées encore à l'eau ?"
+        - "A-t-il des idées fausses ? Par exemple : « le DP s'occupe de la victime », ou « la fiche, on la remplit après »."
+      esprit:
+        - "Comment imagine-t-il sa réaction sous pression ?"
+        - "Un accident vécu le marque-t-il encore ? En parle-t-il facilement ?"
+      comment: "Le bilan des acquis RIFAP de l'étape 1 sert d'observation pour la prise en charge. On complète par un entretien : « Un accident survient, des palanquées sont encore à l'eau. Que fais-tu, dans quel ordre ? » On écoute sans corriger et on note s'il pense aux autres palanquées et à la fiche."
+      adapter:
+        - "La prise en charge n'est pas maîtrisée au bilan RIFAP : on reprend l'étape 1, « Bilan des acquis RIFAP »."
+        - "Il ne connaît pas le plan du site : on passe à l'étape 2, « Plan d'évacuation et d'organisation des secours »."
+        - "Il ne pense qu'à la victime : on travaille l'étape 3, « Gérer les autres palanquées »."
+        - "Un accident vécu le marque : on en parle avant les exercices, et on annonce chaque simulation."
+    bilan:
+      situation: "l'étape 5 : en situation réelle, exercices réalistes en sortie (évaluation)"
+      criteres:
+        - "Il connaît le plan d'évacuation et d'organisation des secours du site."
+        - "Les palanquées sont rappelées ou suivies, personne n'est oublié."
+        - "La fiche d'évacuation et de prise en charge est complète et lisible."
+      securite: []
+      eca: "s'occupe de la victime et oublie les palanquées encore à l'eau → reprendre l'étape 3"
+
+N5-theorie:
+  "Règlementation relative à l'organisation et aux conditions de pratique de la plongée en exploration citées dans le Code du Sport et le MFT, règlementations locales spécifiques":
+    evaluer:
+      question: "Que sait le candidat de la réglementation que le DP doit appliquer, au-delà de ce qu'il pratique comme guide ?"
+      vecu:
+        - "Comme guide, quelles règles du Code du sport applique-t-il déjà sans y penser ?"
+        - "A-t-il vu un DP refuser une plongée ou modifier une palanquée pour une raison réglementaire ?"
+        - "A-t-il plongé aux mélanges, en recycleur, ou encadré des jeunes plongeurs ?"
+      sait:
+        - "Connaît-il les normes d'encadrement en exploration, les prérogatives des plongeurs et celles du DP ?"
+        - "Sait-il quels équipements et quel matériel sont obligatoires sur le lieu de plongée ?"
+        - "A-t-il des idées fausses ? Par exemple : « le DP peut diriger toutes les plongées »."
+      esprit:
+        - "Se fie-t-il à l'usage du club plutôt qu'aux textes ?"
+        - "Sait-il dire « je ne sais pas, je vérifie » ?"
+      comment: "Au sec, lui poser trois cas concrets : une palanquée à composer, un matériel manquant, une plongée aux mélanges. Lui demander : « Est-ce conforme, et où le lis-tu ? » On écoute sans corriger et on note s'il sait retrouver la règle."
+      adapter:
+        - "Il connaît mal les normes et les prérogatives : on commence à l'étape 1, « Normes et prérogatives »."
+        - "Il ignore une partie du matériel obligatoire : on passe à l'étape 2, « Équipements et matériel obligatoires »."
+        - "Il ne sait pas quand il peut diriger : on travaille l'étape 3, « Mélanges, recycleurs, jeunes plongeurs »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle, organisation de sorties (évaluation)"
+      criteres:
+        - "Il applique la réglementation sans erreur."
+        - "Il vérifie la conformité des équipements et du matériel obligatoire."
+        - "Il dit quand il peut ou ne peut pas diriger une plongée."
+      securite: []
+      eca: "ne vérifie pas le matériel obligatoire sur le lieu de plongée → reprendre l'étape 2"
+  "Responsabilité du DP":
+    evaluer:
+      question: "Comment le candidat se représente-t-il la responsabilité qu'il va porter comme DP ?"
+      vecu:
+        - "A-t-il entendu parler d'accidents qui ont mis en cause un DP ou un club ?"
+        - "Comme guide, s'est-il déjà senti responsable de sa palanquée au-delà de la plongée ?"
+        - "A-t-il vu un DP prendre une décision impopulaire pour se couvrir ou pour protéger le groupe ?"
+      sait:
+        - "Distingue-t-il responsabilité civile et responsabilité pénale ?"
+        - "Connaît-il la mise en danger d'autrui, l'obligation de moyens et l'obligation de résultats ?"
+        - "A-t-il des idées fausses ? Par exemple : « avec l'assurance, je suis couvert pour tout »."
+      esprit:
+        - "La responsabilité lui fait-elle peur au point de le bloquer ?"
+        - "La sous-estime-t-il, par assurance de guide expérimenté ?"
+      comment: "Au sec, lui proposer un cas d'incident réel ou réaliste et lui demander : « Le DP est-il responsable, et de quoi ? » On écoute sans corriger, et on note s'il emploie les notions justes."
+      adapter:
+        - "Il confond les notions : on commence à l'étape 1, « Les notions »."
+        - "Il connaît les notions mais ne les applique pas : on passe à l'étape 2, « Cas concrets »."
+        - "Il analyse bien les cas : on passe à l'étape 3, « Dans ses décisions »."
+        - "La responsabilité l'inquiète : on s'appuie sur les cas de l'étape 2 pour montrer ce que l'on attend d'un DP."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Il donne des définitions justes."
+        - "Il analyse avec justesse la responsabilité du DP sur un cas."
+        - "Il justifie ses décisions au regard de sa responsabilité."
+      securite: []
+      eca: "définit les notions mais ne relie pas ses décisions à sa responsabilité → reprendre l'étape 3"
+  "Assurances":
+    evaluer:
+      question: "Que sait le candidat des assurances qui couvrent les plongeurs, les encadrants et la structure ?"
+      vecu:
+        - "Sait-il ce que couvre sa propre licence ? A-t-il pris une assurance complémentaire ?"
+        - "Des plongeurs lui ont-ils déjà posé des questions d'assurance ?"
+        - "A-t-il connu un sinistre lié à la plongée ?"
+      sait:
+        - "Connaît-il la responsabilité civile au tiers et l'assurance liée à la licence ?"
+        - "Sait-il à quoi servent les assurances individuelles complémentaires ?"
+        - "A-t-il des idées fausses ? Par exemple : « la licence couvre tous les dommages du plongeur »."
+      esprit:
+        - "S'y intéresse-t-il, ou juge-t-il que ce n'est pas son rôle ?"
+        - "Ose-t-il dire qu'il ne sait pas, et orienter le plongeur ?"
+      comment: "Au sec, lui demander : « Un plongeur te demande s'il est couvert s'il se blesse, et s'il blesse quelqu'un. Que lui réponds-tu ? » On écoute sans corriger."
+      adapter:
+        - "Il confond responsabilité civile et assurance de la licence : on commence à l'étape 1, « Responsabilité civile et licence »."
+        - "Il connaît la licence mais pas les complémentaires : on passe à l'étape 2, « Assurances complémentaires »."
+        - "Il connaît les deux : on passe à l'étape 3, « Conseiller »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Il explique avec justesse la responsabilité civile et l'assurance de la licence."
+        - "Il explique l'intérêt des assurances complémentaires."
+        - "Il répond juste aux plongeurs, ou les oriente vers la bonne personne."
+      securite: []
+      eca: "répond de façon approximative à un plongeur au lieu de l'orienter → reprendre l'étape 3"
+  "Spécificité des différents publics":
+    evaluer:
+      question: "Quelle expérience le candidat a-t-il des différents publics, et comment en tient-il compte ?"
+      vecu:
+        - "A-t-il déjà guidé des jeunes, des seniors, ou des plongeurs avec une aptitude médicale spécifique ?"
+        - "A-t-il vu un DP adapter le site, les paramètres ou l'encadrement à un public particulier ?"
+        - "A-t-il vécu une difficulté liée au public : fatigue, froid, appréhension ?"
+      sait:
+        - "Connaît-il les caractéristiques physiologiques, morphologiques, psychomotrices et socio-affectives de chaque public ?"
+        - "Sait-il ce qu'il faut adapter : site, paramètres, encadrement ?"
+        - "A-t-il des idées fausses ? Par exemple : « un plongeur, c'est un plongeur, quel que soit son âge »."
+      esprit:
+        - "Est-il attentif aux personnes, ou centré sur la technique ?"
+        - "Projette-t-il sa propre condition physique sur les autres ?"
+      comment: "Au sec, lui présenter une sortie avec des jeunes et des seniors et lui demander : « Qu'adaptes-tu, et pourquoi ? » On écoute sans corriger et on note s'il part des caractéristiques du public ou de sa seule expérience."
+      adapter:
+        - "Il connaît mal les caractéristiques des publics : on commence à l'étape 1, « Caractéristiques des publics »."
+        - "Il les connaît mais n'en tire pas d'organisation : on passe à l'étape 2, « Adapter l'organisation »."
+        - "Il adapte bien sur cas : on passe à l'étape 3, « En sortie »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Il cite les points d'attention pour chaque public."
+        - "L'organisation est adaptée au public : site, paramètres, encadrement."
+        - "Les adaptations sont mises en œuvre en sortie."
+      securite: []
+      eca: "prévoit des adaptations pour les jeunes mais ne les applique pas en sortie → reprendre l'étape 3"
+  "Certificat médical d'absence de contre-indication à la pratique sportive (CACI)":
+    evaluer:
+      question: "Que sait le candidat du CACI, et le vérifie-t-il déjà ?"
+      vecu:
+        - "Comme guide, a-t-il déjà vérifié les documents de ses plongeurs, ou s'en remettait-il au DP ?"
+        - "A-t-il vu un DP refuser un plongeur pour une question de certificat ?"
+        - "A-t-il rencontré un cas douteux : certificat expiré, contre-indication évoquée par un plongeur ?"
+      sait:
+        - "Connaît-il le champ d'application du CACI selon les règles fédérales en vigueur ?"
+        - "Sait-il quoi faire quand le CACI pose question ?"
+        - "A-t-il des idées fausses ? Par exemple : « la licence suffit », ou « le contrôle du certificat, c'est l'affaire du club »."
+      esprit:
+        - "Est-il à l'aise pour refuser un plongeur dont la situation n'est pas conforme ?"
+        - "Considère-t-il la vérification comme une formalité ?"
+      comment: "Au sec, lui poser un cas écrit douteux et lui demander : « Ce plongeur peut-il plonger aujourd'hui ? Sur quelle règle t'appuies-tu ? » On écoute sans corriger."
+      adapter:
+        - "Il ne connaît pas le champ d'application : on commence à l'étape 1, « Champ d'application »."
+        - "Il le connaît mais hésite sur les cas douteux : on passe à l'étape 2, « Cas particuliers »."
+        - "Il décide juste sur cas écrits : on passe à l'étape 3, « Vérifier en sortie »."
+    bilan:
+      situation: "l'étape 4 : en situation réelle (évaluation)"
+      criteres:
+        - "Il explique avec justesse le champ d'application du CACI."
+        - "Sa décision est conforme aux règles dans les cas particuliers."
+        - "La vérification est faite avant la mise à l'eau."
+      securite: []
+      eca: "connaît les règles mais ne contrôle pas les documents avant la mise à l'eau → reprendre l'étape 3"

@@ -622,7 +622,20 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .fiche__liens { display: inline-flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .fiche__progression { color: var(--bleu); text-decoration: none; font-weight: 500; }
 .fiche__progression:hover { text-decoration: underline; }
-.volet-prog { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.volet-prog { display: block; }
+/* Point d'arrivée sous les prérogatives ; boutons et source sous les étapes. */
+.prog-arrivee { margin: 0; }
+.prog-arrivee[hidden] { display: none; }
+.prog-arrivee__comp { font-weight: 400; color: var(--texte-4); }
+.prog-pied { display: flex; flex-direction: column; gap: 14px; padding-top: 4px; }
+.prog-pied__boutons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+/* Sous-titres de la page Pistes : « Compétence » (sous le point d'arrivée) et « Techniques associées ». */
+.prog-sous-titre { margin: 0 0 -6px; font-size: 19px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--bleu); }
+.volet-prog__techniques .prog-sous-titre { margin: 18px 0 2px; }
+/* Respiration verticale : avant « Compétence », avant le titre de la compétence choisie. */
+.prog-niveau > .prog-sous-titre { margin-top: 18px; }
+.prog-niveau > .prog-detail { margin-top: 22px; }
+.prog-pied__boutons .cote-bloc__construire { flex: 1 1 280px; max-width: 420px; }
 .volet-prog__principal { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
 .prog-detail, .prog-niveau, .volet-prog__techniques, .volet-prog__cote { min-width: 0; }
 .volet-prog__avertissement { border-radius: 10px; }
@@ -665,6 +678,20 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .etape__securite .etiquette { color: var(--rouge-titre); }
 .etape__securite .texte-etape { color: var(--rouge-fonce); }
 .etape__alerte { flex: 0 0 auto; margin-top: 2px; }
+/* Cartes « Évaluer l'élève » (orange, avant l'étape 1) et « Bilan » (nuit, après la dernière étape) : data/evaluation/. */
+.etape--diagnostic .etape__numero { background: var(--orange-fond); border-color: var(--tranche-1); color: var(--orange-texte); }
+.etape--diagnostic.etape--ouverte .etape__numero { background: var(--tranche-1); border-color: var(--tranche-1); color: var(--blanc); }
+.etape--diagnostic.etape--ouverte .etape__carte { border-color: var(--tranche-1); box-shadow: 0 4px 14px rgba(217, 130, 43, 0.14); }
+.etape--bilan .etape__numero { background: var(--blanc); border-color: var(--nuit); color: var(--nuit); }
+.etape--bilan.etape--ouverte .etape__numero { background: var(--nuit); border-color: var(--nuit); color: var(--blanc); }
+.etape--bilan.etape--ouverte .etape__carte { border-color: var(--nuit); box-shadow: 0 4px 14px rgba(19, 33, 46, 0.12); }
+.badge-stagiaire { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 6px; background: var(--orange-fond); color: var(--orange-texte); border: 1px solid var(--orange-bordure); }
+.eval__colonnes { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.eval__liste { margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.55; color: var(--texte-2); display: flex; flex-direction: column; gap: 4px; }
+.etape__critere .eval__liste { color: var(--vert-fonce); }
+.etape__securite .eval__liste { color: var(--rouge-fonce); margin-top: 6px; }
+.eval__adapter { background: var(--orange-fond); border: 1px solid var(--orange-bordure); border-radius: 8px; padding: 12px 14px; }
+.eval__adapter .etiquette, .eval__adapter .eval__liste { color: var(--orange-texte); }
 
 .volet-prog__cote { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 16px; }
 .cote-bloc { padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
@@ -916,6 +943,11 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .prog-detail__titre { font-size: 20px; }
   .prog-detail__objectif { font-size: 15px; line-height: 1.55; }
   .volet-prog { display: flex; flex-direction: column; align-items: stretch; gap: 14px; }
+  .prog-pied__boutons .cote-bloc__construire { max-width: none; }
+  .prog-sous-titre { font-size: 17px; }
+  .volet-prog__techniques .prog-sous-titre { margin-top: 12px; }
+  .prog-niveau > .prog-sous-titre { margin-top: 10px; }
+  .prog-niveau > .prog-detail { margin-top: 14px; }
   .volet-prog__principal { gap: 14px; }
   .volet-prog__avertissement { padding: 12px 14px; }
   .volet-prog__avertissement p { font-size: 13px; line-height: 1.55; }
@@ -930,6 +962,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .etape__ligne { flex-direction: column; align-items: flex-start; gap: 3px; }
   .etape__titre { font-size: 16px; }
   .badge-evaluation { font-size: 11px; }
+  .badge-stagiaire { font-size: 11px; }
+  .eval__colonnes { grid-template-columns: 1fr; gap: 12px; }
+  .eval__liste { font-size: 14px; }
   .etape__objectif { font-size: 13px; }
   .volet-prog__cote { position: static; gap: 14px; }
   .cote-bloc { padding: 14px 16px; gap: 8px; }
@@ -1712,6 +1747,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .cv-seg { display: inline-flex; padding: 4px; border-radius: 12px; background: #E9EEF3; gap: 4px; }
 .cv-seg button { height: 34px; padding: 0 12px; border: 0; border-radius: 9px; background: transparent; color: var(--texte-4); font: inherit; font-size: 14px; font-weight: 500; white-space: nowrap; cursor: pointer; }
 .cv-seg button[aria-checked="true"], .cv-seg button[aria-selected="true"] { background: var(--blanc); color: var(--texte); font-weight: 600; box-shadow: 0 1px 2px rgba(19,33,46,.12); }
+.cv-seg--grille { display: grid; grid-template-columns: 1fr 1fr; }
 .cv-filet { height: 1px; background: var(--puce); }
 .cv-seance { display: flex; align-items: center; gap: 14px; }
 .cv-seance__suite { display: contents; }
@@ -1852,6 +1888,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 
 .cv-note { position: absolute; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; font-size: 14px; line-height: 1.4; box-shadow: 0 2px 6px rgba(19,33,46,.10); background: var(--blanc); border: 1.5px solid var(--bordure-aide); color: var(--texte); white-space: pre-wrap; overflow-wrap: anywhere; overflow: hidden; cursor: move; }
 .cv-note--rouge { background: var(--rouge-encart); border-color: var(--rouge); color: var(--rouge-fonce); }
+.cv-note--evaluer { background: var(--orange-fond); border: 2px solid var(--tranche-1); color: var(--orange-texte); }
+.cv-note--bilan { background: var(--puce); border: 2px solid var(--nuit); color: var(--nuit); }
 .cv-note:focus { outline: none; }
 .cv-note.est-choisi, .cv-note:focus-visible { outline: 2.5px solid var(--bleu); outline-offset: 3px; }
 .cv-note__vide { color: var(--fleche-douce); }
@@ -2058,10 +2096,12 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .cv-page__cote section { display: flex; flex-direction: column; gap: 10px; }
   .cv-page__cote h2 { margin: 0; font-size: 17px; font-weight: 600; }
   .cv-page__cote strong { font-weight: 600; }
-  .cv-page__point { padding: 10px 12px; border-radius: 8px; }
+  .cv-page__point { padding: 10px 12px; border-radius: 8px; white-space: pre-line; }
   .cv-page__point--rouge { background: var(--rouge-encart); border: 1.5px solid var(--rouge); color: var(--rouge-fonce); }
   .cv-page__point--orange { background: var(--orange-fond); border: 1px solid var(--orange-bordure); color: var(--orange-texte); }
   .cv-page__point--blanc { border: 1.5px solid var(--bordure-aide); }
+  .cv-page__point--evaluer { background: var(--orange-fond); border: 1.5px solid var(--tranche-1); color: var(--orange-texte); }
+  .cv-page__point--bilan { background: var(--puce); border: 1.5px solid var(--nuit); color: var(--nuit); }
   .cv-page__legende { margin-top: auto; }
   .cv-page__legende ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; }
   .cv-page__legende li { display: flex; align-items: center; gap: 10px; }
