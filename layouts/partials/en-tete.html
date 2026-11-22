@@ -8,11 +8,11 @@
 
     {{/* Navigation bureau */}}
     <nav class="nav" aria-label="Navigation principale">
-      {{- range site.Menus.main }}
+      {{- range site.Menus.main }}{{ if not (and .Params.localSeulement hugo.IsProduction) }}
       {{- $actif := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) (and $page.Params.menuParent (eq .PageRef $page.Params.menuParent)) }}
       {{- if .Params.separateurAvant }}<span class="nav__separateur" aria-hidden="true"></span>{{ end }}
       <a class="nav__lien{{ if $actif }} nav__lien--actif{{ end }}" href="{{ .URL }}"{{ if $actif }} aria-current="page"{{ end }}>{{ .Name }}</a>
-      {{- end }}
+      {{- end }}{{ end }}
       {{- $aPropos := eq $page.RelPermalink ("/a-propos/" | relURL) }}
       <span class="nav__separateur" aria-hidden="true"></span>
       {{- /* « À propos » : un simple « ? » rond, pour gagner de la place dans le menu. */}}
@@ -29,10 +29,10 @@
   {{/* Menu téléphone */}}
   <div class="menu-mobile" id="menu-mobile-voile" hidden data-menu-voile>
     <nav id="menu-mobile" class="menu-mobile__panneau" aria-label="Navigation principale">
-      {{- range site.Menus.main }}
+      {{- range site.Menus.main }}{{ if not (and .Params.localSeulement hugo.IsProduction) }}
       {{- $actif := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) (and $page.Params.menuParent (eq .PageRef $page.Params.menuParent)) }}
       <a class="menu-mobile__lien{{ if $actif }} menu-mobile__lien--actif{{ end }}" href="{{ .URL }}"{{ if $actif }} aria-current="page"{{ end }}>{{ .Name }}</a>
-      {{- end }}
+      {{- end }}{{ end }}
       <div class="menu-mobile__separateur"></div>
       <a class="menu-mobile__lien{{ if $aPropos }} menu-mobile__lien--actif{{ end }}" href="{{ "/a-propos/" | relURL }}"{{ if $aPropos }} aria-current="page"{{ end }}><span class="menu-mobile__pastille" aria-hidden="true">?</span>À propos</a>
     </nav>
