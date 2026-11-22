@@ -22,6 +22,10 @@ enableRobotsTXT = true
   # canvas : pastilles de niveau du Canvas (identifiants de data/canvas.json).
   masquesPistes = ["RANDO", "JP"]
   masquesCanvas = ["jp"]
+  # Mesure d'audience Umami (instance de Philippe, relayée par Caddy sur /stats/, voir serveur/mf1.caddy).
+  # La balise n'est posée qu'en production (hugo, pas hugo server) ; l'identifiant est public par nature.
+  # Vider umamiId pour couper la mesure.
+  umamiId = "3e95440e-695b-43fa-9281-06b503100ef2"
   # Description par défaut (balise meta et aperçus de partage) quand une page n’a pas la sienne.
   description = "Le pense-bête gratuit d’un stagiaire MF1 : thèmes d’entraînement, MFT sur la courbe de plongée, progressions types, Code du sport et révisions."
   # Image des aperçus de partage (1200 × 630), dans static/.

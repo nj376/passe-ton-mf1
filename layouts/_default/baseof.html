@@ -9,6 +9,9 @@
 <link rel="preload" href="{{ "fonts/ibm-plex-sans-latin-400.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- with site.Params.umamiId }}{{ if hugo.IsProduction }}
+<script defer src="/stats/script.js" data-website-id="{{ . }}" data-domains="passe-ton-mf1.com" data-do-not-track="true" data-exclude-search="true"></script>
+{{- end }}{{ end }}
 </head>
 <body>
 <a class="lien-evitement" href="#contenu">Aller au contenu</a>
