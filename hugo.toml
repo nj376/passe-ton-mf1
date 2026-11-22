@@ -93,3 +93,15 @@ enableRobotsTXT = true
     name = "Ressources"
     pageRef = "/ressources"
     weight = 8
+    # Page encore vide : visible en local (hugo server), masquée en production (voir [[cascade]] en fin de fichier).
+    [menus.main.params]
+      localSeulement = true
+
+# Page « Ressources » encore vide : ni construite ni listée en production (hugo, déploiement), gardée en local (hugo server).
+[[cascade]]
+  [cascade.build]
+    render = "never"
+    list = "never"
+  [cascade.target]
+    path = "/ressources"
+    environment = "production"
