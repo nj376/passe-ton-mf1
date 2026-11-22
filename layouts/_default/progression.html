@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- /* Page « Progression » : niveau, puis compétence, puis frise d’étapes par technique.
+{{- /* Page « Progression » : niveau, puis compétence, puis frise d’étapes par technique.
        Construite à partir de data/progressions/*.json : seules les progressions rédigées apparaissent. */ -}}
 {{- $D := site.Data.mft_data -}}
 
@@ -10,7 +10,7 @@
     {{- with index (where $D.competences "id" $p.id) 0 }}
       {{- $progs = $progs | append (dict "p" $p "c" . "f" $fichier "horsBase" false) }}
     {{- else }}
-      {{- /* Niveau sans compétence dans le MFT (PE12) : le fichier propose ses propres « compétences ». */ -}}
+      {{- /* Niveau sans compétence dans le MFT (PE12) : le fichier propose ses propres « compétences ». */ -}}
       {{- $c := dict "id" $p.id "competence" $p.competence "niveau" $fichier.niveau "phase" "" "objectif" "" }}
       {{- $progs = $progs | append (dict "p" $p "c" $c "f" $fichier "horsBase" true) }}
     {{- end }}
@@ -47,16 +47,15 @@
     <h1 class="titre-page">Imaginer le début d’une progression</h1>
   </div>
 
+  {{ partial "aide-page.html" "progression" }}
 
-  <div class="encart-orange volet-prog__avertissement" role="note">
-    <p><strong>Attention, ceci n’est pas une réponse d’examen. Et surtout, ne va pas l’apprendre par cœur !</strong> Il s’agit simplement d’une piste de réflexion, hors MFT, qui prend pour point de départ l’objectif final fixé par le MFT et propose un chemin possible pour y conduire l’élève. Bref, un petit pense-bête pour éviter le syndrome de la page blanche. Le jour de l’examen, le jury attend une véritable progression pédagogique, construite et argumentée, certainement pas un copier-coller de celle-ci. Alors, à toi de jouer : construis ta propre progression et fais-la valider par ton tuteur MF2. Après tout, c’est toi qui passes l’examen, pas le pense-bête !</p>
-  </div>
 
   {{- if not $onglets }}
   <p class="sous-titre-page">Aucune progression n’est encore rédigée.</p>
   {{- else }}
 
   {{/* ---------- Niveaux ---------- */}}
+  <h2 class="prog-sous-titre">Niveau</h2>
   <div class="onglets-niveau" role="tablist" aria-label="Niveau">
     {{- range $i, $n := $onglets }}
     <button type="button" role="tab" class="onglet-niveau" id="prog-onglet-{{ $n.o.id }}" aria-controls="prog-niveau-{{ $n.o.id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}" data-prog-niveau="{{ $n.o.id }}">{{ $n.o.libelle }}</button>
@@ -68,7 +67,7 @@
 
     {{- $premier := index $n.liste 0 }}
     {{- /* Prérogatives du niveau (RIFAP : conditions de candidature), mot pour mot du MFT : data/prerogatives.yaml.
-           Repliées sur deux lignes, avec « Lire la suite » / « Réduire ». */ -}}
+           Repliées sur deux lignes, avec « Lire la suite » / « Réduire ». */ -}}
     {{- with index site.Data.prerogatives $n.o.id }}
     {{- $idp := printf "prerog-%s" (lower $n.o.id) }}
     <section class="carte prerog" aria-labelledby="{{ $idp }}-titre">
@@ -131,7 +130,7 @@
       <p class="cote-bloc__texte">{{ partial "typo.html" .intro }}</p>
       <ul class="prog-or__limites">
         {{- range .limites }}
-        <li><p class="etiquette">{{ with .competence }}<a href="{{ "/progression/" | relURL }}#{{ lower . }}">{{ end }}{{ partial "typo.html" .titre }}{{ with .competence }}</a>{{ end }}</p><p class="cote-bloc__texte">« {{ partial "typo.html" .texte }} »</p></li>
+        <li><p class="etiquette">{{ with .competence }}<a href="{{ "/progression/" | relURL }}#{{ lower . }}">{{ end }}{{ partial "typo.html" .titre }}{{ with .competence }}</a>{{ end }}</p><p class="cote-bloc__texte">« {{ partial "typo.html" .texte }} »</p></li>
         {{- end }}
       </ul>
     </section>
@@ -145,7 +144,7 @@
     {{- $brevets := false }}{{ range $n.o.parcours }}{{ if and .brevets (hasPrefix $c.id .prefixe) }}{{ $brevets = true }}{{ end }}{{ end }}
     <article class="prog-detail" data-prog-detail="{{ $cle }}" aria-labelledby="titre-{{ $cle }}"{{ if ne $c.id $premier.c.id }} hidden{{ end }}>
       <div class="prog-detail__tete">
-        <h2 id="titre-{{ $cle }}" class="prog-detail__titre">{{ partial "typo.html" $c.competence }}</h2>
+        <h2 id="titre-{{ $cle }}" class="prog-detail__titre visuellement-cache">{{ partial "typo.html" $c.competence }}</h2>
         {{- $plus := index site.Data.complements_progression $c.id }}
         {{- if not $x.horsBase }}
         <p class="prog-detail__objectif">{{ $c.objectif }}</p>
@@ -171,7 +170,7 @@
 
           {{- range $k, $t := $p.techniques }}
           {{- $nb := len $t.etapes }}
-          {{- /* Cartes « Évaluer l'élève » et « Bilan » (data/evaluation/<niveau>.yaml), quand elles sont rédigées. */ -}}
+          {{- /* Cartes « Évaluer l'élève » et « Bilan » (data/evaluation/<niveau>.yaml), quand elles sont rédigées. */ -}}
           {{- $ev := index (index (index site.Data.evaluation $x.f.niveau | default dict) $p.id | default dict) $t.nom }}
           <ol class="etapes-frise" data-frise="{{ $k }}"{{ if ne $k 0 }} hidden{{ end }}>
             {{- with $ev }}{{ partial "carte-eval.html" (dict "type" "evaluer" "ev" . "t" $t "p" $p "uid" (printf "eval-%s-%d" $cle $k) "trait" true) }}{{ end }}
@@ -208,7 +207,7 @@
           {{- end }}
 
         <div class="prog-pied">
-          {{- /* Curseurs : repris dans la carte « Évaluer l'élève ». L'encart ne reste que si une technique n'a pas encore sa carte. */ -}}
+          {{- /* Curseurs : repris dans la carte « Évaluer l'élève ». L'encart ne reste que si une technique n'a pas encore sa carte. */ -}}
           {{- $sansEval := false }}
           {{- range $p.techniques }}{{ if not (index (index (index site.Data.evaluation $x.f.niveau | default dict) $p.id | default dict) .nom) }}{{ $sansEval = true }}{{ end }}{{ end }}
           {{- if $sansEval }}

@@ -248,7 +248,7 @@
       return;
     }
     var termes = q.split(" ").map(function (t) {
-      // Un nombre ne doit pas être trouvé à l’intérieur d’un autre (« 20 m » ≠ « 120 m »).
+      // Un nombre ne doit pas être trouvé à l’intérieur d’un autre (« 20 m » ≠ « 120 m »).
       return new RegExp((/^\d/.test(t) ? "(^|[^0-9,.])" : "") + echapper(t));
     });
     var trouves = index.filter(function (e) { return termes.every(function (r) { return r.test(e.texte); }); });
@@ -267,8 +267,8 @@
     });
     var brut = champ.value.trim();
     titreRes.textContent = trouves.length === 0
-      ? "Aucune fiche trouvée pour « " + brut + " »"
-      : trouves.length + (trouves.length > 1 ? " fiches trouvées" : " fiche trouvée") + " pour « " + brut + " »";
+      ? "Aucune fiche trouvée pour « " + brut + " »"
+      : trouves.length + (trouves.length > 1 ? " fiches trouvées" : " fiche trouvée") + " pour « " + brut + " »";
     zoneRes.hidden = false;
     racine.hidden = true;
   }

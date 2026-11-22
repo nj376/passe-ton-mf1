@@ -1,6 +1,6 @@
 # Prérogatives de chaque niveau, recopiées mot pour mot des MFT du dépôt (_MFT/04 et 05, RIFAP : _MFT/07).
 # Affichées en tête de chaque niveau de la page Pistes (encadré replié sur deux lignes).
-# Clé : identifiant de l'onglet (data/onglets.yaml). Blocs : « p » paragraphe, « liste » puces, « sous » intertitre.
+# Clé : identifiant de l'onglet (data/onglets.yaml). Blocs : « p » paragraphe, « liste » puces, « sous » intertitre.
 # Les apostrophes droites sont converties à l'affichage.
 PE12:
   titre: "Prérogatives"
@@ -66,25 +66,25 @@ N4:
   titre: "Prérogatives"
   source: "MFT Niveau 4 - Guide de palanquée, version mai 2026"
   blocs:
-    - p: "Le brevet de « Guide de Palanquée ― Niveau 4 » (GP-N4) de la FFESSM atteste de la maîtrise des compétences requises pour exercer la fonction de guide de palanquée en exploration définie par le Code du Sport (établissements organisant la pratique de la plongée subaquatique Art. A.322-71 à A.322-101 et ses annexes, notamment l’annexe III-15b de la sous-section 1)."
+    - p: "Le brevet de « Guide de Palanquée ― Niveau 4 » (GP-N4) de la FFESSM atteste de la maîtrise des compétences requises pour exercer la fonction de guide de palanquée en exploration définie par le Code du Sport (établissements organisant la pratique de la plongée subaquatique Art. A.322-71 à A.322-101 et ses annexes, notamment l’annexe III-15b de la sous-section 1)."
     - p: "Cet encadrant possède les compétences générales suivantes :"
     - liste:
-        - "« Accueillir les plongeurs »"
-        - "« Participer à l’organisation et à la sécurisation de l’activité »"
-        - "« Guider une palanquée en exploration »"
-        - "« Respecter l’environnement »"
-        - "« Connaissances théoriques »"
+        - "« Accueillir les plongeurs »"
+        - "« Participer à l’organisation et à la sécurisation de l’activité »"
+        - "« Guider une palanquée en exploration »"
+        - "« Respecter l’environnement »"
+        - "« Connaissances théoriques »"
     - p: "En plus des prérogatives règlementaires définies par le Code du Sport, le GP-N4 peut :"
     - liste:
         - "Après obtention du diplôme d’initiateur ou déclaration de stage pédagogique dans le cadre du cursus de formation MF1, exercer la fonction d’enseignant niveau 2 (E2) définie dans l’annexe III-15 b de la sous-section 1 du Code du Sport"
-        - "Après obtention de la qualification de « directeur de plongée en exploration » (DP-N5), exercer la fonction de directeur de plongée définie dans l’annexe III-15 a de la sous-section 1 du Code du Sport."
+        - "Après obtention de la qualification de « directeur de plongée en exploration » (DP-N5), exercer la fonction de directeur de plongée définie dans l’annexe III-15 a de la sous-section 1 du Code du Sport."
     - p: "Le guide de palanquée (GP-N4) de la FFESSM peut signer les plongées d’exploration qu’il a encadrées. En revanche ces plongées ne pourront pas être prises en compte comme prérequis pour l’entrée en formation des diplômes d’état (elles doivent être validées par un E3 minimum)."
     - p: "Les prérogatives d’encadrement attachées à ce brevet restent conditionnées à l’âge du plongeur qui doit avoir au moins 18 ans (dans l’attente de la décision de la Direction des Sports)."
 N5:
   titre: "Prérogatives"
   source: "MFT Niveau 5 - Directeur de plongée en exploration, version mai 2026"
   blocs:
-    - p: "Le brevet de « niveau 5 - directeur de plongée en exploration » de la FFESSM atteste de la maîtrise des compétences requises pour exercer la fonction de directeur de plongée en exploration définie dans le Code du Sport (Établissements organisant la pratique de la plongée subaquatique Art. A.322-71 à A. 322-101 et ses annexes notamment l’annexe III-15a de la sous-section 1)."
+    - p: "Le brevet de « niveau 5 - directeur de plongée en exploration » de la FFESSM atteste de la maîtrise des compétences requises pour exercer la fonction de directeur de plongée en exploration définie dans le Code du Sport (Établissements organisant la pratique de la plongée subaquatique Art. A.322-71 à A. 322-101 et ses annexes notamment l’annexe III-15a de la sous-section 1)."
     - p: "Ces prérogatives s’exercent sous la responsabilité du Président du club dans lequel se déroule l’activité."
     - p: "Le niveau 5 - directeur de plongée en exploration peut valider les plongées effectuées par les plongeurs présents sur le site."
     - p: "La validation de ces plongées n’est pas prise en compte dans le nombre de plongées minimum requis pour l’accès aux diplômes d’état (signature par un E3 au minimum)."
@@ -95,5 +95,5 @@ RIFAP:
     - liste:
         - "Etre âgé de 12 ans au moins à la date d'entrée en formation et de délivrance de la certification."
         - "Etre titulaire de la licence fédérale en cours de validité."
-        - "Présenter un certificat d’absence de contre-indication à la plongée conforme à la réglementation fédérale en vigueur, se référer au chapitre « généralités » du manuel de formation."
+        - "Présenter un certificat d’absence de contre-indication à la plongée conforme à la réglementation fédérale en vigueur, se référer au chapitre « généralités » du manuel de formation."
         - "Les candidats de moins de 18 ans doivent présenter une autorisation écrite du responsable légal."

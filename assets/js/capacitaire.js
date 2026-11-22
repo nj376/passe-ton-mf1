@@ -1,5 +1,5 @@
 /* Module capacitaire : onglets des quatre écrits et auto-évaluation par rubrique
-   (« Je maîtrise » = 1, « À revoir » = 0), enregistrée dans ce navigateur (clé ptmf1:capa).
+   (« Je maîtrise » = 1, « À revoir » = 0), enregistrée dans ce navigateur (clé ptmf1:capa).
    Sans JavaScript, les quatre écrits restent affichés l’un sous l’autre. */
 (function () {
   "use strict";

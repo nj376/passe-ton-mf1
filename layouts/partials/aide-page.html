@@ -1,0 +1,6 @@
+{{- /* Aide repliable en haut d’une page, fermée par défaut. Paramètre : la clé de la page (« capacitaire »…).
+       Texte : partials/aide/<clé>.html. */ -}}
+<details class="carte aide-page">
+  <summary class="aide-page__titre"><span class="aide-page__icone" aria-hidden="true">?</span>Comment utiliser cette page<span class="aide-page__chevron"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span></summary>
+  <div class="aide-page__contenu help-section__contenu">{{ partial (printf "aide/%s.html" .) . }}</div>
+</details>

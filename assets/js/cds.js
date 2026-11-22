@@ -1,4 +1,4 @@
-/* Explore le CdS : onglets exploration / enseignement, réponses masquées à afficher,
+/* Explore le Code du Sport (CdS) : onglets exploration / enseignement, réponses masquées à afficher,
    questions dépliables sur téléphone. */
 (function () {
   "use strict";
@@ -25,7 +25,7 @@
     });
   });
 
-  /* Réponse masquée : « Afficher la réponse » la montre, « Masquer la réponse » la cache de nouveau. */
+  /* Réponse masquée : « Afficher la réponse » la montre, « Masquer la réponse » la cache de nouveau. */
   racine.querySelectorAll("[data-afficher]").forEach(function (b) {
     var libelle = b.querySelector("[data-afficher-libelle]");
     var contenu = document.getElementById(b.getAttribute("aria-controls"));
@@ -38,7 +38,7 @@
     });
   });
 
-  /* Auto-évaluation, comme dans Réviser : « Je savais » ou « À revoir », enregistré dans ce navigateur. */
+  /* Auto-évaluation, comme dans Réviser : « Je savais » ou « À revoir », enregistré dans ce navigateur. */
   var ETATS = { 0: "À revoir", 1: "Je savais" };
   var suivi = window.Stockage ? window.Stockage.lire("cds", { reponses: {} }) : { reponses: {} };
   if (!suivi || typeof suivi !== "object" || typeof suivi.reponses !== "object") suivi = { reponses: {} };

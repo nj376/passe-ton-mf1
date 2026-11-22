@@ -1,5 +1,5 @@
 /* Comportements communs à toutes les pages : fenêtres,
-   petites aides « ? », menu téléphone. Aucune fenêtre ne s’ouvre toute seule. */
+   petites aides « ? », menu téléphone. Aucune fenêtre ne s’ouvre toute seule. */
 (function () {
   "use strict";
 
@@ -63,7 +63,7 @@
     }
   });
 
-  /* ---------- Petites aides « ? » à côté des titres ---------- */
+  /* ---------- Petites aides « ? » à côté des titres ---------- */
   document.addEventListener("click", function (e) {
     var b = e.target.closest("[data-bascule]");
     if (!b) return;
@@ -113,7 +113,7 @@
     });
   })();
 
-  /* Barre « Mon suivi » : une phrase d'humour au hasard, précédée de « J-45 » si la date d'examen est renseignée. */
+  /* Barre « Mon suivi » : une phrase d'humour au hasard, précédée de « J-45 » si la date d'examen est renseignée. */
   (function () {
     var zone = document.querySelector("[data-barre-suivi]");
     if (!zone) return;
@@ -132,7 +132,7 @@
     zone.textContent = texte;
   })();
 
-  /* Avis « version mobile » : sur téléphone (600 px au plus), une seule fois, à la première visite. */
+  /* Avis « version mobile » : sur téléphone (600 px au plus), une seule fois, à la première visite. */
   (function () {
     var avis = document.getElementById("fenetre-avis-mobile");
     if (!avis || !window.matchMedia || !window.matchMedia("(max-width: 600px)").matches) return;

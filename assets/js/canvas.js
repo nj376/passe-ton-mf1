@@ -1,6 +1,6 @@
-/* Page « Canvas » : tableau blanc pour construire une séance à partir des jeux de cartes du MFT.
+/* Page « Canvas » : tableau blanc pour construire une séance à partir des jeux de cartes du MFT.
    Données : #cv-niveaux (data/canvas.json) et static/canvas/<jeu>.json, produits par outils/canvas.py.
-   Stockage : clé « ptmf1:canvas » (window.Stockage), prise en compte par la sauvegarde de la page Suivi.
+   Stockage : clé « ptmf1:canvas » (window.Stockage), prise en compte par la sauvegarde de la page Suivi.
    Format : { version: 1, ouverte, astuce, seances: [{ id, nom, niveau, jeu, creee, modifiee, vue: {x, y, s},
      cartes: [{u, c, t, x, y, f}], liens: [{u, a, b}], notes: [{u, texte, rouge, type, x, y, l, h}] (type : absent, "evaluer" ou "bilan"), cadres: [{u, titre, x, y, l, h}] }] }
    Les cartes posées gardent l'identifiant de la carte (c) et son titre au moment de la pose (t), seulement pour
@@ -24,7 +24,7 @@
   // Niveaux masqués (hugo.toml, masquesCanvas) : pas de pastille, mais les séances déjà créées restent lisibles.
   var masques = [];
   try { masques = JSON.parse(racine.getAttribute("data-masques")) || []; } catch (e) { /* aucun */ }
-  // Fiche « Construire ma progression détaillée » de chaque compétence : première progression type qui pointe vers la carte.
+  // Fiche « Construire ma progression détaillée » de chaque compétence : première progression type qui pointe vers la carte.
   var fiches = {};
   try {
     var liens = JSON.parse(document.getElementById("cv-liens").textContent) || {};
@@ -67,14 +67,14 @@
   function estAujourdhui(ms) { return jour(ms) === jour(Date.now()); }
   var compteur = 0;
   function uid() { return "e" + Date.now().toString(36) + (compteur++).toString(36); }
-  function guillemets(t) { return "« " + t + " »"; }
+  function guillemets(t) { return "« " + t + " »"; }
   function listeEt(tab) { return tab.length < 2 ? tab.join("") : tab.slice(0, -1).join(", ") + " et " + tab[tab.length - 1]; }
   function pluriel(n, un, plusieurs) { return n + " " + (n > 1 ? plusieurs : un); }
 
   /* ---------- Vocabulaire des jeux ---------- */
   var FEMININ = { "compétence": 1, "technique": 1, "connaissance théorique": 1, "aptitude": 1, "épreuve": 1, "théorie": 1 };
   function noms(jeu) {
-    // « compétence, technique, connaissance théorique » → noms au singulier, pluriel, genre.
+    // « compétence, technique, connaissance théorique » → noms au singulier, pluriel, genre.
     return jeu.chaine.split(", ").map(function (n) {
       return { un: n, plusieurs: n.split(" ").map(function (m) { return m + "s"; }).join(" "), f: !!FEMININ[n] };
     });
@@ -168,7 +168,7 @@
     var n = store.seances.length;
     $("[data-nb-seances]").textContent = n;
     $("[data-action=\"seances\"]").disabled = n === 0;
-    // « Supprimer la séance » : seulement s'il y a quelque chose à effacer (séance enregistrée ou tableau non vide).
+    // « Supprimer la séance » : seulement s'il y a quelque chose à effacer (séance enregistrée ou tableau non vide).
     $("[data-action=\"supprimer-seance\"]").disabled = store.seances.indexOf(seance) < 0 && estVide(seance);
   }
 
@@ -253,7 +253,7 @@
   }
   function nomComp(id) { return jeu.parId[id] ? jeu.parId[id].titre : ""; }
   function surLigne(c) {
-    // Libellé du haut d'une carte compétence : « Compétence », « Épreuve », « Aptitude ».
+    // Libellé du haut d'une carte compétence : « Compétence », « Épreuve », « Aptitude ».
     var n = c.libre ? "compétence" : jeu.noms[0].un;
     return n.charAt(0).toUpperCase() + n.slice(1);
   }
@@ -311,7 +311,7 @@
     if (ca.comp && cb.cite && ca.type === "technique") return cb.cite.indexOf(ca.comp) < 0 ? 2 : 0;
     return 0;
   }
-  // Phrase d'un lien à vérifier. « vu » : la carte du point de vue de laquelle on parle (panneau), sinon titres entre guillemets.
+  // Phrase d'un lien à vérifier. « vu » : la carte du point de vue de laquelle on parle (panneau), sinon titres entre guillemets.
   function phrase(info, vu) {
     var ca = info.ca, cb = info.cb, n = jeu.noms;
     function sujet(c, nom) { return vu && vu === c ? cette(nom) : guillemets(c.titre); }
@@ -599,8 +599,8 @@
     bulleMinuterie = setTimeout(cacherBulle, 9000);
   }
   function cacherBulle() { $("[data-bulle]").hidden = true; }
-  // Types d'annotation : indication (blanche), précaution (rouge), « Évaluer l'élève » (orange, en début de séance)
-  // et « Bilan » (sombre, en fin de séance). Les deux derniers partent d'une trame à compléter.
+  // Types d'annotation : indication (blanche), précaution (rouge), « Évaluer l'élève » (orange, en début de séance)
+  // et « Bilan » (sombre, en fin de séance). Les deux derniers partent d'une trame à compléter.
   var TYPES_NOTE = [["Indication", false, ""], ["Précaution", true, ""], ["Évaluer l’élève", false, "evaluer"], ["Bilan", false, "bilan"]];
   var TRAMES = {
     evaluer: "Évaluer l’élève\nSon vécu : \nCe qu’il sait ou croit savoir : \nSon état d’esprit : \nAdapter la séance : ",
@@ -612,7 +612,7 @@
     var m = centreVue(), n = { u: uid(), texte: trame, rouge: false, x: Math.round(m.x - (grande ? 150 : 100)), y: Math.round(m.y - (grande ? 70 : 44)), l: grande ? 300 : 200, h: grande ? 140 : 88 };
     if (type) n.type = type;
     modifier(function () { seance.notes.push(n); sel = { k: "note", u: n.u }; edition = { u: n.u, nouveau: true, avant: trame }; });
-    annoncer((type === "evaluer" ? "Carte « Évaluer l’élève » ajoutée" : type === "bilan" ? "Carte « Bilan » ajoutée" : "Annotation ajoutée") + ". Tape ton texte, puis Échap.");
+    annoncer((type === "evaluer" ? "Carte « Évaluer l’élève » ajoutée" : type === "bilan" ? "Carte « Bilan » ajoutée" : "Annotation ajoutée") + ". Tape ton texte, puis Échap.");
   }
   function ajouterCadre() {
     var m = centreVue(), f = { u: uid(), titre: "Nouveau cadre", x: Math.round(m.x - 260), y: Math.round(m.y - 160), l: 520, h: 320 };
@@ -921,7 +921,7 @@
       case "ajuster": ajuster(); break;
       case "recentrer": recentrer(); break;
       case "plein": pleinEcran(); break;
-      case "vider": if (!estVide(seance)) ouvrirConfirmation($("[data-fenetre-vider]"), function () { modifier(function () { seance.cartes = []; seance.liens = []; seance.notes = []; seance.cadres = []; sel = null; relierDepuis = null; }); annoncer("Tableau vidé. « Annuler » le rétablit."); }); break;
+      case "vider": if (!estVide(seance)) ouvrirConfirmation($("[data-fenetre-vider]"), function () { modifier(function () { seance.cartes = []; seance.liens = []; seance.notes = []; seance.cadres = []; sel = null; relierDepuis = null; }); annoncer("Tableau vidé. « Annuler » le rétablit."); }); break;
       case "enregistrer":
         clearTimeout(minuterie); minuterie = null;
         if (!aGarder(seance) && store.seances.indexOf(seance) < 0) { annoncer("La séance est vide : rien à enregistrer pour l’instant."); break; }
@@ -1069,7 +1069,7 @@
     if (focusId) { var f = $("[data-carte=\"" + focusId + "\"] .cv-mini__ajout", liste); if (f) f.focus({ preventScroll: true }); }
   }
 
-  // Ajout par « + », ou glisser-déposer (souris, stylet ou doigt) vers le tableau.
+  // Ajout par « + », ou glisser-déposer (souris, stylet ou doigt) vers le tableau.
   var glisse = null;
   $("[data-liste]").addEventListener("click", function (ev) {
     var b = ev.target.closest(".cv-mini__ajout");
@@ -1778,9 +1778,9 @@
     return cote;
   }
 
-  /* ---------- Progression type transmise par « Continuer dans le Canvas » (page Pistes) ---------- */
+  /* ---------- Progression type transmise par « Continuer dans le Canvas » (page Pistes) ---------- */
   // La compétence à gauche, puis un cadre par technique, de gauche à droite : ses cartes en haut (reliées à la
-  // compétence si elles en relèvent), une carte « Évaluer l'élève », une annotation blanche par étape (titre et objectif), une annotation rouge
+  // compétence si elles en relèvent), une carte « Évaluer l'élève », une annotation blanche par étape (titre et objectif), une annotation rouge
   // qui regroupe les points de sécurité de la technique. Le tout s'annule en une fois.
   function construireProgression(prog, idComp) {
     var comp = idComp && jeu.parId[idComp];
@@ -1798,7 +1798,7 @@
         if (pcComp && (c.comp === comp.id || comp.libre)) liens.push({ u: uid(), a: pcComp.u, b: pc.u });
       });
       if (poses.length) y = HAUT + Math.ceil(poses.length / 2) * (CH + 16) + 8;
-      // Carte « Évaluer l'élève » en tête du cadre, « Bilan » à la fin (quand elles sont rédigées : data/evaluation/).
+      // Carte « Évaluer l'élève » en tête du cadre, « Bilan » à la fin (quand elles sont rédigées : data/evaluation/).
       function poserType(texte, type) {
         var h = hauteurNote(texte);
         notes.push({ u: uid(), texte: texte, rouge: false, type: type, x: x + MARGE, y: y, l: LN, h: h });
@@ -1847,7 +1847,7 @@
   taille = { l: fond.clientWidth || 800, h: fond.clientHeight || 700 };
 
   var depart = store.seances.filter(function (s) { return s.id === store.ouverte; })[0];
-  // Venue de « Progressions types » : ?jeu=n1&carte=C1 ouvre ce jeu (séance vide réutilisée, sinon nouvelle) et pose la carte.
+  // Venue de « Progressions types » : ?jeu=n1&carte=C1 ouvre ce jeu (séance vide réutilisée, sinon nouvelle) et pose la carte.
   var demande = new URLSearchParams(location.search), jeuDemande = demande.get("jeu"), carteDemandee = demande.get("carte");
   var nivDemande = jeuDemande ? niveaux.filter(function (n) { return masques.indexOf(n.id) < 0 && n.jeux.some(function (j) { return j.id === jeuDemande; }); })[0] : null;
   if (nivDemande) {

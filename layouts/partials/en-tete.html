@@ -1,10 +1,4 @@
 {{- $page := . -}}
-{{- /* Lien d’aide : page /aide/, à la section de la page en cours (ancre = adresse sans les « / »). */ -}}
-{{- $ancre := trim $page.RelPermalink "/" -}}
-{{- /* Seulement si l'aide a une section pour cette page ; sinon, le haut de l'aide. */ -}}
-{{- $sections := slice "capacitaire" "s-entrainer" "ipd-25-m" "progression" "construire" "explore-le-mft" "reviser" "mindmaps" "explore-le-cds" "canvas" "ressources" "suivi" -}}
-{{- $lienAide := printf "%s%s" ("/aide/" | relURL) (cond (in $sections $ancre) (printf "#%s" $ancre) "") -}}
-{{- $surAide := eq $ancre "aide" -}}
 <header class="en-tete">
   <div class="en-tete__interieur">
     <a class="marque" href="{{ "/" | relURL }}">
@@ -20,8 +14,9 @@
       <a class="nav__lien{{ if $actif }} nav__lien--actif{{ end }}" href="{{ .URL }}"{{ if $actif }} aria-current="page"{{ end }}>{{ .Name }}</a>
       {{- end }}
       {{- $aPropos := eq $page.RelPermalink ("/a-propos/" | relURL) }}
-      <a class="nav__lien{{ if $aPropos }} nav__lien--actif{{ end }}" href="{{ "/a-propos/" | relURL }}"{{ if $aPropos }} aria-current="page"{{ end }}>À propos</a>
-      <a class="nav__aide{{ if $surAide }} nav__aide--actif{{ end }}" href="{{ $lienAide }}" aria-label="Aide" title="Aide"{{ if $surAide }} aria-current="page"{{ end }}>?</a>
+      <span class="nav__separateur" aria-hidden="true"></span>
+      {{- /* « À propos » : un simple « ? » rond, pour gagner de la place dans le menu. */}}
+      <a class="nav__aide{{ if $aPropos }} nav__aide--actif{{ end }}" href="{{ "/a-propos/" | relURL }}" aria-label="À propos" title="À propos"{{ if $aPropos }} aria-current="page"{{ end }}>?</a>
     </nav>
 
     {{/* Bouton du menu téléphone */}}
@@ -36,12 +31,10 @@
     <nav id="menu-mobile" class="menu-mobile__panneau" aria-label="Navigation principale">
       {{- range site.Menus.main }}
       {{- $actif := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) (and $page.Params.menuParent (eq .PageRef $page.Params.menuParent)) }}
-      {{- if .Params.separateurAvant }}<div class="menu-mobile__separateur"></div>{{ end }}
       <a class="menu-mobile__lien{{ if $actif }} menu-mobile__lien--actif{{ end }}" href="{{ .URL }}"{{ if $actif }} aria-current="page"{{ end }}>{{ .Name }}</a>
       {{- end }}
       <div class="menu-mobile__separateur"></div>
-      <a class="menu-mobile__lien{{ if $aPropos }} menu-mobile__lien--actif{{ end }}" href="{{ "/a-propos/" | relURL }}"{{ if $aPropos }} aria-current="page"{{ end }}>À propos</a>
-      <a class="menu-mobile__lien{{ if $surAide }} menu-mobile__lien--actif{{ end }}" href="{{ $lienAide }}"{{ if $surAide }} aria-current="page"{{ end }}><span class="menu-mobile__pastille" aria-hidden="true">?</span>Aide</a>
+      <a class="menu-mobile__lien{{ if $aPropos }} menu-mobile__lien--actif{{ end }}" href="{{ "/a-propos/" | relURL }}"{{ if $aPropos }} aria-current="page"{{ end }}><span class="menu-mobile__pastille" aria-hidden="true">?</span>À propos</a>
     </nav>
   </div>
 </header>

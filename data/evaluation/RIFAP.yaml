@@ -1,4 +1,4 @@
-# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du RIFAP.
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du RIFAP.
 # Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
 # (tel qu'il figure dans data/progressions/progressions_RIFAP.json). Les fichiers de progression ne sont pas modifiés.
 #
@@ -9,7 +9,7 @@
 # bilan.situation : la situation finale sur laquelle porte le bilan
 # bilan.criteres : critères de la situation finale (liste)
 # bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
-# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
 # Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
 
 
@@ -24,15 +24,15 @@ RIFAP-C1:
       sait:
         - "Sait-il distinguer un signe de malaise d'un signe de détresse ?"
         - "Sait-il quels signes servent entre plongeurs, et lesquels servent entre la palanquée et la surface ?"
-        - "A-t-il des idées fausses ? Par exemple : « de nuit, on fait les mêmes signes qu'en plein jour », ou « en surface, on salue le bateau d'un grand geste du bras »."
+        - "A-t-il des idées fausses ? Par exemple : « de nuit, on fait les mêmes signes qu'en plein jour », ou « en surface, on salue le bateau d'un grand geste du bras »."
       esprit:
         - "Pense-t-il connaître les signes depuis longtemps, au risque de les faire de façon approximative ?"
         - "Hésite-t-il à faire un signe de détresse, de peur de déranger pour rien ?"
-      comment: "Au sec, lui demander : « Montre-moi ce que tu fais si tu as un problème, puis si tu vois un équipier en difficulté. » Puis lui faire reconnaître quelques signes faits par le formateur, de jour puis avec une lampe. On observe sans corriger."
+      comment: "Au sec, lui demander : « Montre-moi ce que tu fais si tu as un problème, puis si tu vois un équipier en difficulté. » Puis lui faire reconnaître quelques signes faits par le formateur, de jour puis avec une lampe. On observe sans corriger."
       adapter:
-        - "Il confond les signes ou en ignore une partie : on commence à l'étape 1, « Découvrir les signes »."
-        - "Il connaît les signes de jour mais pas de nuit : on passe à l'étape 2, « Jour et nuit »."
-        - "Il connaît tous les signes au sec : on vérifie l'étape 3, « Signal de détresse en surface », puis on passe à l'étape 4."
+        - "Il confond les signes ou en ignore une partie : on commence à l'étape 1, « Découvrir les signes »."
+        - "Il connaît les signes de jour mais pas de nuit : on passe à l'étape 2, « Jour et nuit »."
+        - "Il connaît tous les signes au sec : on vérifie l'étape 3, « Signal de détresse en surface », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), accident simulé en surface et en immersion"
       criteres:
@@ -52,15 +52,15 @@ RIFAP-C1:
       sait:
         - "Sait-il citer des signes observables, et sait-il que certains signes ne se voient pas ?"
         - "Sait-il pourquoi on discute entre plongeurs après la plongée ?"
-        - "A-t-il des idées fausses ? Par exemple : « un accident se voit tout de suite à la sortie de l'eau », ou « s'il ne dit rien, c'est qu'il va bien »."
+        - "A-t-il des idées fausses ? Par exemple : « un accident se voit tout de suite à la sortie de l'eau », ou « s'il ne dit rien, c'est qu'il va bien »."
       esprit:
         - "Est-il attentif aux autres, ou centré sur sa propre plongée ?"
         - "Craint-il de s'alarmer pour rien, ou de passer pour quelqu'un qui dramatise ?"
-      comment: "Au sec, lui décrire quelques fins de plongée et lui demander : « Qu'est-ce qui te paraîtrait anormal ? » On écoute les signes qu'il cite, et s'il pense à ce qui peut arriver une fois sortis de l'eau. On ne corrige pas."
+      comment: "Au sec, lui décrire quelques fins de plongée et lui demander : « Qu'est-ce qui te paraîtrait anormal ? » On écoute les signes qu'il cite, et s'il pense à ce qui peut arriver une fois sortis de l'eau. On ne corrige pas."
       adapter:
-        - "Il cite peu de signes : on commence à l'étape 1, « Comportements anormaux »."
-        - "Il cite des signes mais pense que le risque s'arrête à la sortie de l'eau : on passe à l'étape 2, « Le délai d'apparition »."
-        - "Il connaît les signes et le délai : on passe à l'étape 3, « Repérer en situation », puis à l'étape 4."
+        - "Il cite peu de signes : on commence à l'étape 1, « Comportements anormaux »."
+        - "Il cite des signes mais pense que le risque s'arrête à la sortie de l'eau : on passe à l'étape 2, « Le délai d'apparition »."
+        - "Il connaît les signes et le délai : on passe à l'étape 3, « Repérer en situation », puis à l'étape 4."
         - "Il est peu attentif aux autres : on multiplie les exercices de l'étape 3, sans annoncer qui sera la victime."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets variés"
@@ -81,15 +81,15 @@ RIFAP-C1:
       sait:
         - "Connaît-il les trois contacts : visuel, corporel, oral ?"
         - "Sait-il à quoi sert le signe OK une fois au contact de la victime ?"
-        - "A-t-il des idées fausses ? Par exemple : « il faut d'abord aller chercher du matériel », ou « parler à la victime fait perdre du temps »."
+        - "A-t-il des idées fausses ? Par exemple : « il faut d'abord aller chercher du matériel », ou « parler à la victime fait perdre du temps »."
       esprit:
         - "Appréhende-t-il le contact avec la victime ? La peur de mal faire le freine-t-elle ?"
         - "Se précipite-t-il au contraire, sans garder la victime à l'œil ?"
-      comment: "En surface, un formateur joue une victime à courte distance. On dit à l'élève : « Ton équipier a un problème, à toi. » On observe le délai de réaction, le contact visuel pendant l'approche et ce qu'il dit à la victime. On ne corrige pas pendant l'exercice."
+      comment: "En surface, un formateur joue une victime à courte distance. On dit à l'élève : « Ton équipier a un problème, à toi. » On observe le délai de réaction, le contact visuel pendant l'approche et ce qu'il dit à la victime. On ne corrige pas pendant l'exercice."
       adapter:
-        - "Il ne connaît pas la prise en charge par le contact : on commence à l'étape 1, « Les trois contacts »."
-        - "Il s'approche mais perd la victime de vue : on passe à l'étape 2, « En surface »."
-        - "Le contact est bon mais il tarde à agir : on travaille l'étape 3, « Rapidité », sur une distance courte puis plus longue."
+        - "Il ne connaît pas la prise en charge par le contact : on commence à l'étape 1, « Les trois contacts »."
+        - "Il s'approche mais perd la victime de vue : on passe à l'étape 2, « En surface »."
+        - "Le contact est bon mais il tarde à agir : on travaille l'étape 3, « Rapidité », sur une distance courte puis plus longue."
         - "Il réagit vite et juste : on vérifie l'étape 3, puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -110,15 +110,15 @@ RIFAP-C1:
       sait:
         - "Sait-il gonfler un gilet d'un autre modèle que le sien ?"
         - "Sait-il que les voies aériennes de la victime doivent rester hors de l'eau en permanence ?"
-        - "A-t-il des idées fausses ? Par exemple : « gonfler son gilet peut attendre le bateau », ou « une fois le gilet gonflé, la victime est en sécurité »."
+        - "A-t-il des idées fausses ? Par exemple : « gonfler son gilet peut attendre le bateau », ou « une fois le gilet gonflé, la victime est en sécurité »."
       esprit:
         - "Est-il à l'aise en surface en tenant un autre plongeur, ou craint-il de couler avec lui ?"
         - "Ose-t-il parler à la victime ?"
-      comment: "En surface, victime simulée, lui dire : « Ton équipier ne va pas bien, mets-le en sécurité. » On regarde ce qu'il fait en premier, le temps qu'il met à gonfler le gilet, et si les voies aériennes restent hors de l'eau."
+      comment: "En surface, victime simulée, lui dire : « Ton équipier ne va pas bien, mets-le en sécurité. » On regarde ce qu'il fait en premier, le temps qu'il met à gonfler le gilet, et si les voies aériennes restent hors de l'eau."
       adapter:
-        - "Il hésite ou tarde à gonfler le gilet : on commence à l'étape 1, « Gonfler le gilet de la victime »."
-        - "Le gilet est gonflé mais le visage touche l'eau : on passe à l'étape 2, « Protéger les voies aériennes », avec un peu de clapot si possible."
-        - "Il sécurise bien mais reste muet : on travaille l'étape 3, « Garder le contact verbal »."
+        - "Il hésite ou tarde à gonfler le gilet : on commence à l'étape 1, « Gonfler le gilet de la victime »."
+        - "Le gilet est gonflé mais le visage touche l'eau : on passe à l'étape 2, « Protéger les voies aériennes », avec un peu de clapot si possible."
+        - "Il sécurise bien mais reste muet : on travaille l'étape 3, « Garder le contact verbal »."
         - "Il enchaîne déjà les trois actions : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -140,15 +140,15 @@ RIFAP-C2:
       sait:
         - "Sait-il pourquoi on maintient le détendeur dans la bouche de la victime ?"
         - "Sait-il qu'on met la victime sur le dos, sangles légèrement desserrées, gilet gonflé ?"
-        - "A-t-il des idées fausses ? Par exemple : « en surface, on retire le détendeur pour qu'il respire l'air libre »."
+        - "A-t-il des idées fausses ? Par exemple : « en surface, on retire le détendeur pour qu'il respire l'air libre »."
       esprit:
         - "Est-il gêné de manipuler le visage d'un autre plongeur ?"
         - "Craint-il de faire mal ou d'aggraver la situation ?"
-      comment: "Au sec, lui demander : « Ton équipier est en difficulté en surface, détendeur en bouche. Qu'en fais-tu, et pourquoi ? » Puis, en surface, victime simulée, on observe s'il garde le détendeur en place pendant qu'il la place."
+      comment: "Au sec, lui demander : « Ton équipier est en difficulté en surface, détendeur en bouche. Qu'en fais-tu, et pourquoi ? » Puis, en surface, victime simulée, on observe s'il garde le détendeur en place pendant qu'il la place."
       adapter:
-        - "Il ne voit pas l'intérêt du détendeur : on commence à l'étape 1, « Le principe »."
-        - "Il connaît le principe : on passe à l'étape 2, « Détendeur en bouche »."
-        - "Il tient le détendeur mais le lâche en plaçant la victime : on travaille l'étape 3, « Position et flottabilité »."
+        - "Il ne voit pas l'intérêt du détendeur : on commence à l'étape 1, « Le principe »."
+        - "Il connaît le principe : on passe à l'étape 2, « Détendeur en bouche »."
+        - "Il tient le détendeur mais le lâche en plaçant la victime : on travaille l'étape 3, « Position et flottabilité »."
         - "Il garde le détendeur à toutes les étapes : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -169,15 +169,15 @@ RIFAP-C2:
       sait:
         - "Connaît-il la prise arrière et la prise avant, et l'intérêt de chacune ?"
         - "Sait-il que les voies aériennes doivent rester hors de l'eau sur toute la distance ?"
-        - "A-t-il des idées fausses ? Par exemple : « la prise la plus rapide est toujours la meilleure », ou « on tire la victime par le bloc, peu importe sa tête »."
+        - "A-t-il des idées fausses ? Par exemple : « la prise la plus rapide est toujours la meilleure », ou « on tire la victime par le bloc, peu importe sa tête »."
       esprit:
         - "Craint-il l'effort, ou de ne pas tenir la distance ?"
         - "Veut-il aller vite au détriment de la victime ?"
-      comment: "En surface, victime simulée en scaphandre, sur une distance courte, lui dire : « Ramène-le au point de sortie. » On observe sa position de départ, la prise choisie, la tenue des voies aériennes et son orientation."
+      comment: "En surface, victime simulée en scaphandre, sur une distance courte, lui dire : « Ramène-le au point de sortie. » On observe sa position de départ, la prise choisie, la tenue des voies aériennes et son orientation."
       adapter:
-        - "Il ne sait pas où se placer : on commence à l'étape 1, « Position de départ »."
-        - "Il se place bien mais les voies aériennes s'immergent : on passe à l'étape 2, « Prise arrière »."
-        - "Sa prise arrière est sûre mais lente, ou il perd son orientation : on travaille l'étape 3, « Prise avant »."
+        - "Il ne sait pas où se placer : on commence à l'étape 1, « Position de départ »."
+        - "Il se place bien mais les voies aériennes s'immergent : on passe à l'étape 2, « Prise arrière »."
+        - "Sa prise arrière est sûre mais lente, ou il perd son orientation : on travaille l'étape 3, « Prise avant »."
         - "Il maîtrise les deux prises : on passe à l'étape 4, sur une distance réaliste."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), distance réaliste"
@@ -197,15 +197,15 @@ RIFAP-C2:
       sait:
         - "Sait-il dans quel ordre libérer sangles, lest et harnais ?"
         - "Sait-il que son propre gilet peut servir de plan dur ?"
-        - "A-t-il des idées fausses ? Par exemple : « on retire d'abord le détendeur de la victime », ou « le sauveteur se déséquipe en premier pour être plus libre »."
+        - "A-t-il des idées fausses ? Par exemple : « on retire d'abord le détendeur de la victime », ou « le sauveteur se déséquipe en premier pour être plus libre »."
       esprit:
         - "Est-il perdu devant un matériel qu'il ne connaît pas ?"
         - "Craint-il de lâcher la victime en se déséquipant ?"
-      comment: "En surface, près du point de sortie, victime simulée équipée d'un gilet qu'il ne connaît pas forcément. Lui dire : « Déséquipe-le, puis déséquipe-toi. » On regarde l'ordre suivi, la tenue des voies aériennes, le moment où il retire le détendeur, et s'il garde la victime en main."
+      comment: "En surface, près du point de sortie, victime simulée équipée d'un gilet qu'il ne connaît pas forcément. Lui dire : « Déséquipe-le, puis déséquipe-toi. » On regarde l'ordre suivi, la tenue des voies aériennes, le moment où il retire le détendeur, et s'il garde la victime en main."
       adapter:
-        - "Il ne sait pas par où commencer : on commence à l'étape 1, « Gilet ajustable »."
-        - "Il déséquipe un gilet ajustable mais pas un gilet enveloppant : on passe à l'étape 2, « Gilet enveloppant »."
-        - "Il libère la victime mais la lâche pour se déséquiper : on travaille l'étape 3, « Se déséquiper »."
+        - "Il ne sait pas par où commencer : on commence à l'étape 1, « Gilet ajustable »."
+        - "Il déséquipe un gilet ajustable mais pas un gilet enveloppant : on passe à l'étape 2, « Gilet enveloppant »."
+        - "Il libère la victime mais la lâche pour se déséquiper : on travaille l'étape 3, « Se déséquiper »."
         - "Il enchaîne sans erreur : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), près du point de sortie"
@@ -225,15 +225,15 @@ RIFAP-C2:
       sait:
         - "Connaît-il une technique de sortie adaptée au support de son club ?"
         - "Sait-il qu'il existe d'autres moyens : harnais, sangle ou aussière, plan dur ou civière ?"
-        - "A-t-il des idées fausses ? Par exemple : « on hisse à la force des bras, d'un seul coup », ou « seul, on y arrive toujours »."
+        - "A-t-il des idées fausses ? Par exemple : « on hisse à la force des bras, d'un seul coup », ou « seul, on y arrive toujours »."
       esprit:
         - "Craint-il de ne pas avoir la force ?"
         - "Mesure-t-il le risque pour son dos et pour celui de la victime ?"
-      comment: "Au bord, sur le support habituel du club, lui demander d'abord : « Explique-moi comment tu la sortirais. » Puis, victime simulée, on le laisse commencer. On l'arrête à la moindre posture à risque pour son dos ou pour la courbure lombaire de la victime."
+      comment: "Au bord, sur le support habituel du club, lui demander d'abord : « Explique-moi comment tu la sortirais. » Puis, victime simulée, on le laisse commencer. On l'arrête à la moindre posture à risque pour son dos ou pour la courbure lombaire de la victime."
       adapter:
-        - "Il ne connaît pas de technique pour son support : on commence à l'étape 1, « Le support du club »."
-        - "Il sort la victime seul, mais au prix d'un gros effort : on passe à l'étape 2, « À deux sauveteurs »."
-        - "Il maîtrise la sortie à deux sur son support : on passe à l'étape 3, « Autres supports », puis à l'étape 4."
+        - "Il ne connaît pas de technique pour son support : on commence à l'étape 1, « Le support du club »."
+        - "Il sort la victime seul, mais au prix d'un gros effort : on passe à l'étape 2, « À deux sauveteurs »."
+        - "Il maîtrise la sortie à deux sur son support : on passe à l'étape 3, « Autres supports », puis à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), selon le milieu de pratique"
       criteres:
@@ -254,15 +254,15 @@ RIFAP-C2:
       sait:
         - "Sait-il repérer les risques de sur-accident : chute d'objet, froid, chaleur ?"
         - "Sait-il que la position dépend de l'état de la victime ?"
-        - "A-t-il des idées fausses ? Par exemple : « on l'allonge là où on l'a sortie », ou « la même position convient à toutes les victimes »."
+        - "A-t-il des idées fausses ? Par exemple : « on l'allonge là où on l'a sortie », ou « la même position convient à toutes les victimes »."
       esprit:
         - "Se sent-il dépassé une fois la victime à bord, sans savoir par quoi commencer ?"
         - "Craint-il de mal la positionner ?"
-      comment: "À bord ou au sol, après une sortie de l'eau simulée, lui demander : « Elle est sortie. Et maintenant ? » On observe l'endroit choisi, les risques qu'il écarte et le temps qu'il met à installer la victime."
+      comment: "À bord ou au sol, après une sortie de l'eau simulée, lui demander : « Elle est sortie. Et maintenant ? » On observe l'endroit choisi, les risques qu'il écarte et le temps qu'il met à installer la victime."
       adapter:
-        - "Il installe la victime n'importe où : on commence à l'étape 1, « Zone sécurisée »."
-        - "La zone est bonne mais la position ne tient pas compte de l'état de la victime : on passe à l'étape 2, « Position de confort »."
-        - "Il sait faire, mais perd du temps entre la sortie et l'installation : on travaille l'étape 3, « Enchaîner »."
+        - "Il installe la victime n'importe où : on commence à l'étape 1, « Zone sécurisée »."
+        - "La zone est bonne mais la position ne tient pas compte de l'état de la victime : on passe à l'étape 2, « Position de confort »."
+        - "Il sait faire, mais perd du temps entre la sortie et l'installation : on travaille l'étape 3, « Enchaîner »."
         - "Il enchaîne sans délai : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -284,15 +284,15 @@ RIFAP-C3:
       sait:
         - "Sait-il lire et noter les paramètres sur la fiche de sécurité ?"
         - "Sait-il pourquoi on vérifie la désaturation des autres membres ?"
-        - "A-t-il des idées fausses ? Par exemple : « seul l'accidenté compte », ou « les équipiers ont fait la même plongée sans problème, donc ils vont bien »."
+        - "A-t-il des idées fausses ? Par exemple : « seul l'accidenté compte », ou « les équipiers ont fait la même plongée sans problème, donc ils vont bien »."
       esprit:
         - "Est-il absorbé par la victime au point d'oublier le reste de la palanquée ?"
         - "Se sent-il légitime pour questionner des plongeurs plus expérimentés ?"
-      comment: "Au sec, lui présenter une fiche de sécurité remplie et un cas simple : « Un plongeur de cette palanquée est accidenté. Que fais-tu pour les autres ? » On écoute s'il pense à la composition, à l'état de chacun, aux paramètres et à la désaturation."
+      comment: "Au sec, lui présenter une fiche de sécurité remplie et un cas simple : « Un plongeur de cette palanquée est accidenté. Que fais-tu pour les autres ? » On écoute s'il pense à la composition, à l'état de chacun, aux paramètres et à la désaturation."
       adapter:
-        - "Il ne sait pas lire la fiche : on commence à l'étape 1, « La fiche de sécurité »."
-        - "Il lit la fiche mais oublie les équipiers : on passe à l'étape 2, « Vérifier la palanquée »."
-        - "Il vérifie la composition mais pas les paramètres : on travaille l'étape 3, « Paramètres et désaturation »."
+        - "Il ne sait pas lire la fiche : on commence à l'étape 1, « La fiche de sécurité »."
+        - "Il lit la fiche mais oublie les équipiers : on passe à l'étape 2, « Vérifier la palanquée »."
+        - "Il vérifie la composition mais pas les paramètres : on travaille l'étape 3, « Paramètres et désaturation »."
         - "Il pense à tout : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -312,15 +312,15 @@ RIFAP-C3:
       sait:
         - "Connaît-il les moyens de rappel de son club et de son site ?"
         - "Sait-il quelles informations recueillir : nombre, temps de plongée, paliers ?"
-        - "A-t-il des idées fausses ? Par exemple : « l'accident ne concerne pas les palanquées encore à l'eau »."
+        - "A-t-il des idées fausses ? Par exemple : « l'accident ne concerne pas les palanquées encore à l'eau »."
       esprit:
         - "Pense-t-il à ceux qu'il ne voit pas, ou seulement à la victime ?"
         - "Est-il à l'aise pour compter et pointer dans l'agitation ?"
-      comment: "Au sec, à partir d'une fiche de sécurité où des palanquées sont encore à l'eau, lui demander : « Un accident vient d'arriver à bord. Que fais-tu pour ceux qui plongent encore ? » On écoute s'il pense au rappel, aux informations à recueillir et au pointage."
+      comment: "Au sec, à partir d'une fiche de sécurité où des palanquées sont encore à l'eau, lui demander : « Un accident vient d'arriver à bord. Que fais-tu pour ceux qui plongent encore ? » On écoute s'il pense au rappel, aux informations à recueillir et au pointage."
       adapter:
-        - "Il ne connaît pas les moyens de rappel : on commence à l'étape 1, « Moyens de rappel »."
-        - "Il pense au rappel mais pas aux informations : on passe à l'étape 2, « Recueillir les informations »."
-        - "Il recueille les informations mais oublie le pointage : on travaille l'étape 3, « Vérifier le retour »."
+        - "Il ne connaît pas les moyens de rappel : on commence à l'étape 1, « Moyens de rappel »."
+        - "Il pense au rappel mais pas aux informations : on passe à l'étape 2, « Recueillir les informations »."
+        - "Il recueille les informations mais oublie le pointage : on travaille l'étape 3, « Vérifier le retour »."
         - "Il pense à tout : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -340,15 +340,15 @@ RIFAP-C3:
       sait:
         - "Sait-il expliquer les risques : sur-accident, gêne des secours, hélitreuillage ?"
         - "Sait-il comment on fixe le matériel sur son bateau ?"
-        - "A-t-il des idées fausses ? Par exemple : « le matériel, c'est secondaire, on verra après »."
+        - "A-t-il des idées fausses ? Par exemple : « le matériel, c'est secondaire, on verra après »."
       esprit:
         - "Juge-t-il cette tâche inutile, loin de l'action ?"
         - "Accepte-t-il ce rôle s'il lui est confié ?"
-      comment: "Sur le bateau ou au bord, matériel laissé en désordre, lui demander : « Les secours arrivent, peut-être par hélicoptère. Que fais-tu du matériel, et pourquoi ? » On écoute ses raisons, puis on regarde ce qu'il range et ce qu'il fixe."
+      comment: "Sur le bateau ou au bord, matériel laissé en désordre, lui demander : « Les secours arrivent, peut-être par hélicoptère. Que fais-tu du matériel, et pourquoi ? » On écoute ses raisons, puis on regarde ce qu'il range et ce qu'il fixe."
       adapter:
-        - "Il ne voit pas le risque : on commence à l'étape 1, « Pourquoi »."
-        - "Il explique les risques : on passe à l'étape 2, « Regrouper »."
-        - "Il regroupe sans fixer : on travaille l'étape 3, « Arrimer », avec un hélitreuillage possible."
+        - "Il ne voit pas le risque : on commence à l'étape 1, « Pourquoi »."
+        - "Il explique les risques : on passe à l'étape 2, « Regrouper »."
+        - "Il regroupe sans fixer : on travaille l'étape 3, « Arrimer », avec un hélitreuillage possible."
         - "Il regroupe et arrime déjà : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -368,15 +368,15 @@ RIFAP-C3:
       sait:
         - "Connaît-il les rubriques de la fiche d'évacuation, et sait-il qu'elle vient du Code du sport ?"
         - "Sait-il ce qu'on y note d'abord : heure, symptômes, actions menées ?"
-        - "A-t-il des idées fausses ? Par exemple : « on remplit la fiche quand tout est terminé », ou « les secours savent déjà tout »."
+        - "A-t-il des idées fausses ? Par exemple : « on remplit la fiche quand tout est terminé », ou « les secours savent déjà tout »."
       esprit:
         - "Voit-il la fiche comme de la paperasse ?"
         - "Reste-t-il méthodique sous pression, ou se disperse-t-il ?"
-      comment: "Au sec, lui donner une fiche d'évacuation vierge et le court récit d'un accident. Lui demander : « Remplis ce que tu peux. » On regarde ce qu'il renseigne en premier et ce qu'il oublie."
+      comment: "Au sec, lui donner une fiche d'évacuation vierge et le court récit d'un accident. Lui demander : « Remplis ce que tu peux. » On regarde ce qu'il renseigne en premier et ce qu'il oublie."
       adapter:
-        - "Il ne connaît pas la fiche : on commence à l'étape 1, « La fiche d'évacuation »."
-        - "Il connaît les rubriques mais attend la fin pour remplir : on passe à l'étape 2, « Renseigner tôt »."
-        - "Il remplit tôt et bien : on travaille l'étape 3, « Remettre aux secours », puis on passe à l'étape 4."
+        - "Il ne connaît pas la fiche : on commence à l'étape 1, « La fiche d'évacuation »."
+        - "Il connaît les rubriques mais attend la fin pour remplir : on passe à l'étape 2, « Renseigner tôt »."
+        - "Il remplit tôt et bien : on travaille l'étape 3, « Remettre aux secours », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
       criteres:
@@ -397,15 +397,15 @@ RIFAP-C4:
       sait:
         - "Sait-il ce que fait le coordinateur ?"
         - "Sait-il citer les rôles : évaluation de la victime, matériel d'urgence, gestes de secours, vérification des palanquées, matériel, fiche d'évacuation, alerte ?"
-        - "A-t-il des idées fausses ? Par exemple : « le plus gradé fait tout lui-même », ou « tout le monde s'occupe de la victime »."
+        - "A-t-il des idées fausses ? Par exemple : « le plus gradé fait tout lui-même », ou « tout le monde s'occupe de la victime »."
       esprit:
         - "Ose-t-il prendre la place du coordinateur et donner des consignes ?"
         - "Préfère-t-il agir lui-même plutôt que déléguer ?"
-      comment: "Au sec, avec quelques stagiaires, annoncer : « Un plongeur vient d'être sorti de l'eau, il ne va pas bien. Organise-nous. » On observe s'il prend la coordination, quels rôles il distribue et s'il tient compte de ce que chacun sait faire."
+      comment: "Au sec, avec quelques stagiaires, annoncer : « Un plongeur vient d'être sorti de l'eau, il ne va pas bien. Organise-nous. » On observe s'il prend la coordination, quels rôles il distribue et s'il tient compte de ce que chacun sait faire."
       adapter:
-        - "Il ne voit pas l'intérêt d'un coordinateur : on commence à l'étape 1, « Le coordinateur »."
-        - "Il connaît le rôle du coordinateur mais oublie des rôles : on passe à l'étape 2, « Les rôles »."
-        - "Il cite tous les rôles mais les distribue au hasard : on travaille l'étape 3, « Répartir »."
+        - "Il ne voit pas l'intérêt d'un coordinateur : on commence à l'étape 1, « Le coordinateur »."
+        - "Il connaît le rôle du coordinateur mais oublie des rôles : on passe à l'étape 2, « Les rôles »."
+        - "Il cite tous les rôles mais les distribue au hasard : on travaille l'étape 3, « Répartir »."
         - "Il répartit vite et à bon escient : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -425,15 +425,15 @@ RIFAP-C4:
       sait:
         - "Sait-il qu'on connaît les consignes de rappel avant toute plongée ?"
         - "Sait-il qu'on peut déplacer les plongeurs ou le bateau pour récupérer quelqu'un ?"
-        - "A-t-il des idées fausses ? Par exemple : « les palanquées rentrent d'elles-mêmes, inutile de les pointer »."
+        - "A-t-il des idées fausses ? Par exemple : « les palanquées rentrent d'elles-mêmes, inutile de les pointer »."
       esprit:
         - "Se sent-il concerné par l'organisation, ou la laisse-t-il au DP ?"
         - "Garde-t-il son calme quand plusieurs choses arrivent en même temps ?"
-      comment: "Avant une plongée, lui demander : « Quelles sont les consignes de rappel aujourd'hui ? » Puis, au sec, lui exposer un appel de détresse et lui demander comment on récupère les plongeurs."
+      comment: "Avant une plongée, lui demander : « Quelles sont les consignes de rappel aujourd'hui ? » Puis, au sec, lui exposer un appel de détresse et lui demander comment on récupère les plongeurs."
       adapter:
-        - "Il ne connaît pas les consignes de rappel : on commence à l'étape 1, « Consignes de rappel »."
-        - "Il connaît le rappel mais pas la récupération : on passe à l'étape 2, « Récupérer les plongeurs en difficulté »."
-        - "Il connaît les deux : on travaille l'étape 3, « Appliquer », puis on passe à l'étape 4."
+        - "Il ne connaît pas les consignes de rappel : on commence à l'étape 1, « Consignes de rappel »."
+        - "Il connaît le rappel mais pas la récupération : on passe à l'étape 2, « Récupérer les plongeurs en difficulté »."
+        - "Il connaît les deux : on travaille l'étape 3, « Appliquer », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
       criteres:
@@ -452,15 +452,15 @@ RIFAP-C4:
       sait:
         - "Sait-il qui doit savoir quoi : coordinateur, personne qui alerte, personnes qui font les gestes ?"
         - "Sait-il qu'il faut suivre les actions en cours, pas seulement les lancer ?"
-        - "A-t-il des idées fausses ? Par exemple : « une fois l'alerte donnée, tout est réglé »."
+        - "A-t-il des idées fausses ? Par exemple : « une fois l'alerte donnée, tout est réglé »."
       esprit:
         - "Est-il à l'aise dans tous les rôles, ou seulement dans un ?"
         - "Se laisse-t-il absorber par une tâche au point de ne plus transmettre ?"
-      comment: "En cas concret, lui confier un rôle et observer ce qu'il transmet, à qui et quand. Après le cas, lui demander : « Qui savait quoi, et à quel moment ? »"
+      comment: "En cas concret, lui confier un rôle et observer ce qu'il transmet, à qui et quand. Après le cas, lui demander : « Qui savait quoi, et à quel moment ? »"
       adapter:
-        - "Les informations se perdent : on commence à l'étape 1, « Circulation des informations »."
-        - "Il transmet mais ne vérifie pas que les actions sont faites : on passe à l'étape 2, « Suivre les actions »."
-        - "Il n'est à l'aise que dans un rôle : on travaille l'étape 3, « Tous les rôles », en faisant tourner les rôles."
+        - "Les informations se perdent : on commence à l'étape 1, « Circulation des informations »."
+        - "Il transmet mais ne vérifie pas que les actions sont faites : on passe à l'étape 2, « Suivre les actions »."
+        - "Il n'est à l'aise que dans un rôle : on travaille l'étape 3, « Tous les rôles », en faisant tourner les rôles."
         - "Il tient chaque rôle : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets sur l'ensemble des tâches"
@@ -483,15 +483,15 @@ RIFAP-C5:
       sait:
         - "Sait-il qu'un malaise après une plongée est traité en priorité comme un accident de plongée ?"
         - "Sait-il quelles questions poser : chronologie des troubles, localisation, déroulement de la plongée, qualité de la décompression ?"
-        - "A-t-il des idées fausses ? Par exemple : « il a fait ses paliers, ce ne peut pas être un accident de désaturation », ou « c'est sûrement la fatigue, on attend »."
+        - "A-t-il des idées fausses ? Par exemple : « il a fait ses paliers, ce ne peut pas être un accident de désaturation », ou « c'est sûrement la fatigue, on attend »."
       esprit:
-        - "Craint-il de dramatiser un « petit » malaise ?"
+        - "Craint-il de dramatiser un « petit » malaise ?"
         - "Se sent-il capable d'interroger une victime sans l'inquiéter ?"
-      comment: "Au sec, un formateur joue un plongeur qui dit, après la plongée : « Je ne me sens pas bien. » On demande à l'élève : « Que fais-tu ? » On écoute les questions qu'il pose et sa décision, sans corriger."
+      comment: "Au sec, un formateur joue un plongeur qui dit, après la plongée : « Je ne me sens pas bien. » On demande à l'élève : « Que fais-tu ? » On écoute les questions qu'il pose et sa décision, sans corriger."
       adapter:
-        - "Il ne reconnaît pas le malaise ou l'écarte : on commence à l'étape 1, « Reconnaître un malaise », à partir de la fiche Malaise du PSC1."
-        - "Il reconnaît le malaise mais n'interroge pas : on passe à l'étape 2, « Interroger »."
-        - "Il interroge bien mais tarde à agir : on travaille l'étape 3, « Mettre au repos et protéger »."
+        - "Il ne reconnaît pas le malaise ou l'écarte : on commence à l'étape 1, « Reconnaître un malaise », à partir de la fiche Malaise du PSC1."
+        - "Il reconnaît le malaise mais n'interroge pas : on passe à l'étape 2, « Interroger »."
+        - "Il interroge bien mais tarde à agir : on travaille l'étape 3, « Mettre au repos et protéger »."
         - "Il enchaîne sans hésiter : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -512,15 +512,15 @@ RIFAP-C5:
       sait:
         - "Connaît-il la conduite à tenir face à une hémorragie externe, telle que la décrit le PSC1 ?"
         - "Pense-t-il à utiliser ce qu'il a sous la main : serviette, tee-shirt, ceinture ?"
-        - "A-t-il des idées reçues, des gestes « vus à la télé » qui ne correspondent pas au référentiel ?"
+        - "A-t-il des idées reçues, des gestes « vus à la télé » qui ne correspondent pas au référentiel ?"
       esprit:
         - "Est-il impressionné par la vue du sang ?"
         - "Craint-il de mal faire et d'aggraver ?"
-      comment: "Au sec, lui décrire un plongeur qui s'est coupé sur une tôle d'épave et lui demander : « Que fais-tu, et avec quoi ? » On écoute s'il reconnaît la situation et ce qu'il choisit dans le matériel disponible. On compare sa réponse au référentiel PSC1, sans corriger tout de suite."
+      comment: "Au sec, lui décrire un plongeur qui s'est coupé sur une tôle d'épave et lui demander : « Que fais-tu, et avec quoi ? » On écoute s'il reconnaît la situation et ce qu'il choisit dans le matériel disponible. On compare sa réponse au référentiel PSC1, sans corriger tout de suite."
       adapter:
-        - "Il ne reconnaît pas la situation ou n'a pas de secourisme : on commence à l'étape 1, « Reconnaître », avec les fiches PSC1."
-        - "Il connaît le PSC1 mais ne pense qu'au matériel de secourisme : on passe à l'étape 2, « Le matériel de l'activité »."
-        - "Il connaît la conduite à tenir et le matériel : on travaille l'étape 3, « Agir », sur un partenaire ou un mannequin, puis on passe à l'étape 4."
+        - "Il ne reconnaît pas la situation ou n'a pas de secourisme : on commence à l'étape 1, « Reconnaître », avec les fiches PSC1."
+        - "Il connaît le PSC1 mais ne pense qu'au matériel de secourisme : on passe à l'étape 2, « Le matériel de l'activité »."
+        - "Il connaît la conduite à tenir et le matériel : on travaille l'étape 3, « Agir », sur un partenaire ou un mannequin, puis on passe à l'étape 4."
         - "Il est impressionné : on reste au calme à l'étape 1 avant tout cas simulé."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -540,15 +540,15 @@ RIFAP-C5:
       sait:
         - "Connaît-il les fiches PSC1 correspondantes et la trousse de secours de son lieu de pratique ?"
         - "Sait-il citer les risques de son lieu de pratique ?"
-        - "A-t-il des idées reçues, des « remèdes » entendus sur le bateau ou vus à la télé ?"
+        - "A-t-il des idées reçues, des « remèdes » entendus sur le bateau ou vus à la télé ?"
       esprit:
         - "Minimise-t-il ces accidents, jugés banals ?"
         - "Est-il à l'aise pour s'occuper d'une blessure ?"
-      comment: "Au sec, lui demander : « Quels sont les risques de blessure là où tu plonges, et que ferais-tu ? » Puis lui présenter un cas simple. On compare ce qu'il dit au référentiel PSC1, sans corriger tout de suite."
+      comment: "Au sec, lui demander : « Quels sont les risques de blessure là où tu plonges, et que ferais-tu ? » Puis lui présenter un cas simple. On compare ce qu'il dit au référentiel PSC1, sans corriger tout de suite."
       adapter:
-        - "Il ne connaît pas la conduite à tenir : on commence à l'étape 1, « Situations courantes »."
-        - "Il connaît le PSC1 mais pas les risques de l'activité : on passe à l'étape 2, « Situations de l'activité »."
-        - "Il connaît les deux : on travaille l'étape 3, « Agir », puis on passe à l'étape 4."
+        - "Il ne connaît pas la conduite à tenir : on commence à l'étape 1, « Situations courantes »."
+        - "Il connaît le PSC1 mais pas les risques de l'activité : on passe à l'étape 2, « Situations de l'activité »."
+        - "Il connaît les deux : on travaille l'étape 3, « Agir », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
       criteres:
@@ -567,15 +567,15 @@ RIFAP-C5:
       sait:
         - "Sait-il reconnaître une perte de connaissance, telle que la décrit le PSC1 ?"
         - "Fait-il le lien avec la plongée : syncope anoxique, début de noyade, évolution d'un accident de désaturation ?"
-        - "A-t-il des idées fausses sur l'oxygène ? Par exemple : « l'oxygène, c'est réservé aux médecins », ou « l'oxygène peut attendre qu'elle se réveille »."
+        - "A-t-il des idées fausses sur l'oxygène ? Par exemple : « l'oxygène, c'est réservé aux médecins », ou « l'oxygène peut attendre qu'elle se réveille »."
       esprit:
         - "La peur de mal faire le paralyse-t-elle face à une victime inconsciente ?"
         - "Manipule-t-il l'oxygène avec appréhension ?"
-      comment: "Au sec, lui décrire un plongeur sorti de l'eau qui ne répond plus et lui demander : « Que fais-tu ? » On écoute l'ordre de ses actions et s'il pense à l'oxygène. Les gestes sont vérifiés ensuite, sur un partenaire volontaire."
+      comment: "Au sec, lui décrire un plongeur sorti de l'eau qui ne répond plus et lui demander : « Que fais-tu ? » On écoute l'ordre de ses actions et s'il pense à l'oxygène. Les gestes sont vérifiés ensuite, sur un partenaire volontaire."
       adapter:
-        - "Il ne reconnaît pas la situation : on commence à l'étape 1, « Reconnaître », avec les fiches PSC1."
-        - "Il reconnaît la situation : on passe à l'étape 2, « Les gestes »."
-        - "Ses gestes sont justes mais il oublie l'oxygène : on travaille l'étape 3, « L'oxygène »."
+        - "Il ne reconnaît pas la situation : on commence à l'étape 1, « Reconnaître », avec les fiches PSC1."
+        - "Il reconnaît la situation : on passe à l'étape 2, « Les gestes »."
+        - "Ses gestes sont justes mais il oublie l'oxygène : on travaille l'étape 3, « L'oxygène »."
         - "Il enchaîne gestes et oxygène : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -596,15 +596,15 @@ RIFAP-C5:
       sait:
         - "Sait-il reconnaître un arrêt cardiaque, tel que le décrit le PSC1 ?"
         - "Sait-il que la noyade a sa propre séquence, décrite dans le PSE ?"
-        - "A-t-il des idées reçues, des gestes « vus à la télé », ou croit-il que le DEA fait partie du référentiel RIFAP ?"
+        - "A-t-il des idées reçues, des gestes « vus à la télé », ou croit-il que le DEA fait partie du référentiel RIFAP ?"
       esprit:
         - "Est-il impressionné par la gravité de la situation ?"
         - "Craint-il d'aggraver l'état de la victime en agissant ?"
-      comment: "Sur mannequin uniquement, lui dire : « Il ne respire pas. À toi. » On observe s'il reconnaît la situation et la régularité de ses gestes, puis on lui demande ce qui change pour un noyé. On compare au référentiel PSC1 et PSE, sans corriger pendant l'exercice."
+      comment: "Sur mannequin uniquement, lui dire : « Il ne respire pas. À toi. » On observe s'il reconnaît la situation et la régularité de ses gestes, puis on lui demande ce qui change pour un noyé. On compare au référentiel PSC1 et PSE, sans corriger pendant l'exercice."
       adapter:
-        - "Il ne reconnaît pas la situation : on commence à l'étape 1, « Reconnaître un arrêt cardiaque », avec les fiches PSC1."
-        - "Il reconnaît la situation : on passe à l'étape 2, « Les gestes sur mannequin »."
-        - "Ses gestes sont justes et réguliers : on travaille l'étape 3, « Noyade et syncope en apnée »."
+        - "Il ne reconnaît pas la situation : on commence à l'étape 1, « Reconnaître un arrêt cardiaque », avec les fiches PSC1."
+        - "Il reconnaît la situation : on passe à l'étape 2, « Les gestes sur mannequin »."
+        - "Ses gestes sont justes et réguliers : on travaille l'étape 3, « Noyade et syncope en apnée »."
         - "Il connaît déjà la séquence propre à la noyade : on vérifie l'étape 2 avec l'insufflateur manuel, puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets sur mannequin"
@@ -625,15 +625,15 @@ RIFAP-C5:
       sait:
         - "Sait-il qu'on enveloppe totalement la victime, tête comprise ?"
         - "Sait-il que le vent complique la mise en place ?"
-        - "A-t-il des idées fausses ? Par exemple : « on pose la couverture sur le corps, la tête n'a pas d'importance », ou « c'est seulement utile en hiver »."
+        - "A-t-il des idées fausses ? Par exemple : « on pose la couverture sur le corps, la tête n'a pas d'importance », ou « c'est seulement utile en hiver »."
       esprit:
         - "Considère-t-il ce geste comme secondaire ?"
         - "S'agace-t-il face à une couverture qui s'envole ?"
-      comment: "À l'abri, lui donner une couverture isothermique et un partenaire allongé : « Couvre-le. » On regarde si la tête est couverte et si la couverture tient. On lui demande ensuite pourquoi il fait ainsi."
+      comment: "À l'abri, lui donner une couverture isothermique et un partenaire allongé : « Couvre-le. » On regarde si la tête est couverte et si la couverture tient. On lui demande ensuite pourquoi il fait ainsi."
       adapter:
-        - "Il ne couvre pas la tête : on commence à l'étape 1, « Le principe »."
-        - "Il explique le principe : on passe à l'étape 2, « Mise en place »."
-        - "Il couvre bien à l'abri : on travaille l'étape 3, « Conditions réelles », avec du vent, sur un bateau."
+        - "Il ne couvre pas la tête : on commence à l'étape 1, « Le principe »."
+        - "Il explique le principe : on passe à l'étape 2, « Mise en place »."
+        - "Il couvre bien à l'abri : on travaille l'étape 3, « Conditions réelles », avec du vent, sur un bateau."
         - "La couverture tient déjà dehors : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -655,15 +655,15 @@ RIFAP-C6:
       sait:
         - "Connaît-il le débit recommandé par la CMPN ?"
         - "Sait-il qu'on n'emploie pas le même matériel pour une victime qui respire et pour une victime qui ne respire pas ?"
-        - "A-t-il des idées fausses ? Par exemple : « on réduit le débit pour économiser la bouteille », ou « on arrête l'oxygène dès que la victime va mieux »."
+        - "A-t-il des idées fausses ? Par exemple : « on réduit le débit pour économiser la bouteille », ou « on arrête l'oxygène dès que la victime va mieux »."
       esprit:
         - "L'oxygène lui fait-il peur ?"
         - "Craint-il de se tromper de débit ?"
-      comment: "Au sec, devant le kit du club, lui demander : « Ton équipier a un malaise après la plongée et respire. Que fais-tu avec ce matériel ? Et s'il ne respirait plus ? » On écoute le débit annoncé et le matériel choisi, sans corriger."
+      comment: "Au sec, devant le kit du club, lui demander : « Ton équipier a un malaise après la plongée et respire. Que fais-tu avec ce matériel ? Et s'il ne respirait plus ? » On écoute le débit annoncé et le matériel choisi, sans corriger."
       adapter:
-        - "Il ne connaît pas la recommandation : on commence à l'étape 1, « La recommandation »."
-        - "Il cite la recommandation : on passe à l'étape 2, « Par inhalation »."
-        - "Il maîtrise l'inhalation : on travaille l'étape 3, « Par insufflation », sur mannequin."
+        - "Il ne connaît pas la recommandation : on commence à l'étape 1, « La recommandation »."
+        - "Il cite la recommandation : on passe à l'étape 2, « Par inhalation »."
+        - "Il maîtrise l'inhalation : on travaille l'étape 3, « Par insufflation », sur mannequin."
         - "Il choisit déjà le bon matériel selon la situation : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -685,15 +685,15 @@ RIFAP-C6:
       sait:
         - "Sait-il quoi faire boire, et comment ?"
         - "Connaît-il les cas où il ne faut pas faire boire ?"
-        - "A-t-il des idées fausses ? Par exemple : « une boisson sucrée, c'est mieux », ou « on fait boire dans tous les cas »."
+        - "A-t-il des idées fausses ? Par exemple : « une boisson sucrée, c'est mieux », ou « on fait boire dans tous les cas »."
       esprit:
         - "Voit-il ce geste comme anodin, sans risque ?"
         - "Hésite-t-il à refuser à boire à une victime qui le demande ?"
-      comment: "Au sec, lui présenter deux ou trois courtes situations de victimes et lui demander : « Tu lui donnes à boire ? Quoi, et comment ? » On écoute sa décision et ses raisons."
+      comment: "Au sec, lui présenter deux ou trois courtes situations de victimes et lui demander : « Tu lui donnes à boire ? Quoi, et comment ? » On écoute sa décision et ses raisons."
       adapter:
-        - "Il ne connaît pas la recommandation : on commence à l'étape 1, « La recommandation »."
-        - "Il connaît la recommandation mais fait boire tout le monde : on passe à l'étape 2, « Les contre-indications »."
-        - "Il connaît les deux : on travaille l'étape 3, « Appliquer », puis on passe à l'étape 4."
+        - "Il ne connaît pas la recommandation : on commence à l'étape 1, « La recommandation »."
+        - "Il connaît la recommandation mais fait boire tout le monde : on passe à l'étape 2, « Les contre-indications »."
+        - "Il connaît les deux : on travaille l'étape 3, « Appliquer », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
       criteres:
@@ -712,15 +712,15 @@ RIFAP-C6:
       sait:
         - "Connaît-il le CROSS en mer et le SCMM à terre ?"
         - "Sait-il que toute mise sous oxygène implique l'alerte ?"
-        - "A-t-il des idées fausses ? Par exemple : « on attend de voir si l'oxygène suffit avant d'appeler », ou « on peut redescendre la victime pour la recomprimer »."
+        - "A-t-il des idées fausses ? Par exemple : « on attend de voir si l'oxygène suffit avant d'appeler », ou « on peut redescendre la victime pour la recomprimer »."
       esprit:
         - "Craint-il de déranger les secours pour rien ?"
         - "Pourrait-il se laisser convaincre par une victime qui refuse qu'on appelle ?"
-      comment: "Au sec, lui proposer un cas : « Ton équipier est sous oxygène et dit qu'il va mieux. Que fais-tu ? » On écoute s'il alerte, qui il appelle, et ce qu'il répond si quelqu'un propose de réimmerger la victime."
+      comment: "Au sec, lui proposer un cas : « Ton équipier est sous oxygène et dit qu'il va mieux. Que fais-tu ? » On écoute s'il alerte, qui il appelle, et ce qu'il répond si quelqu'un propose de réimmerger la victime."
       adapter:
-        - "Il ne connaît pas les services : on commence à l'étape 1, « Les services »."
-        - "Il connaît les services mais attend pour alerter : on passe à l'étape 2, « Toute mise sous oxygène implique l'alerte »."
-        - "Il envisage une réimmersion : on travaille l'étape 3, « Pas de réimmersion »."
+        - "Il ne connaît pas les services : on commence à l'étape 1, « Les services »."
+        - "Il connaît les services mais attend pour alerter : on passe à l'étape 2, « Toute mise sous oxygène implique l'alerte »."
+        - "Il envisage une réimmersion : on travaille l'étape 3, « Pas de réimmersion »."
         - "Il alerte sans délai et refuse la réimmersion : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets (voir C7)"
@@ -741,15 +741,15 @@ RIFAP-C6:
       sait:
         - "Sait-il nommer les éléments : bouteille, manodétendeur, débit-litre, masques, insufflateur ?"
         - "Sait-il estimer l'autonomie de la bouteille ?"
-        - "A-t-il des idées fausses ? Par exemple : « la bouteille d'oxygène se manipule comme une bouteille de plongée », ou « un peu de graisse aide à visser le manodétendeur »."
+        - "A-t-il des idées fausses ? Par exemple : « la bouteille d'oxygène se manipule comme une bouteille de plongée », ou « un peu de graisse aide à visser le manodétendeur »."
       esprit:
         - "L'oxygène l'intimide-t-il ?"
         - "Manipule-t-il trop vite, sans précaution ?"
-      comment: "Au sec, kit démonté, bouteille calée, lui demander : « Monte-le, puis dis-moi combien de temps il tiendra. » On observe sans corriger, sauf pour la sécurité : mains grasses, flamme à proximité, bouteille non calée."
+      comment: "Au sec, kit démonté, bouteille calée, lui demander : « Monte-le, puis dis-moi combien de temps il tiendra. » On observe sans corriger, sauf pour la sécurité : mains grasses, flamme à proximité, bouteille non calée."
       adapter:
-        - "Il ne connaît pas le matériel : on commence à l'étape 1, « Présentation »."
-        - "Il nomme les éléments mais hésite au montage : on passe à l'étape 2, « Montage »."
-        - "Il monte le kit vite et juste : on travaille l'étape 3, « Autonomie et entretien », puis on passe à l'étape 4."
+        - "Il ne connaît pas le matériel : on commence à l'étape 1, « Présentation »."
+        - "Il nomme les éléments mais hésite au montage : on passe à l'étape 2, « Montage »."
+        - "Il monte le kit vite et juste : on travaille l'étape 3, « Autonomie et entretien », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
       criteres:
@@ -769,15 +769,15 @@ RIFAP-C6:
       sait:
         - "Sait-il quoi surveiller : conscience, ventilation, circulation, pâleur, marbrures, couleur des lèvres ?"
         - "Sait-il où noter l'évolution de l'état de la victime ?"
-        - "A-t-il des idées fausses ? Par exemple : « une fois l'alerte donnée, il n'y a plus qu'à attendre », ou « si elle va mieux, inutile de noter »."
+        - "A-t-il des idées fausses ? Par exemple : « une fois l'alerte donnée, il n'y a plus qu'à attendre », ou « si elle va mieux, inutile de noter »."
       esprit:
         - "Est-il mal à l'aise pour parler longtemps à une victime ?"
         - "Risque-t-il de relâcher son attention avec le temps ?"
-      comment: "Au sec, victime simulée installée, lui dire : « Les secours arrivent dans un moment. Occupe-toi d'elle. » On regarde ce qu'il observe, s'il note sur la fiche d'évacuation et s'il garde le contact avec la victime."
+      comment: "Au sec, victime simulée installée, lui dire : « Les secours arrivent dans un moment. Occupe-toi d'elle. » On regarde ce qu'il observe, s'il note sur la fiche d'évacuation et s'il garde le contact avec la victime."
       adapter:
-        - "Il ne sait pas quoi surveiller : on commence à l'étape 1, « Les fonctions vitales »."
-        - "Il surveille sans rien noter : on passe à l'étape 2, « Noter l'évolution »."
-        - "Il note mais reste muet auprès de la victime : on travaille l'étape 3, « Parler et faire parler »."
+        - "Il ne sait pas quoi surveiller : on commence à l'étape 1, « Les fonctions vitales »."
+        - "Il surveille sans rien noter : on passe à l'étape 2, « Noter l'évolution »."
+        - "Il note mais reste muet auprès de la victime : on travaille l'étape 3, « Parler et faire parler »."
         - "Il surveille, note et garde le contact : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -799,15 +799,15 @@ RIFAP-C7:
       sait:
         - "Connaît-il le rôle du CROSS et celui du SCMM ?"
         - "Sait-il dans quels cas appeler les secours ?"
-        - "A-t-il des idées fausses ? Par exemple : « on appelle seulement quand c'est grave », ou « on rentre au port et on verra là-bas »."
+        - "A-t-il des idées fausses ? Par exemple : « on appelle seulement quand c'est grave », ou « on rentre au port et on verra là-bas »."
       esprit:
         - "Hésite-t-il à appeler en cas de doute ?"
         - "Les secours en mer lui paraissent-ils lointains ou abstraits ?"
-      comment: "Au sec, lui demander de dessiner ou de raconter : « Un accident arrive sur le bateau. Qui intervient, et qui prévient qui ? » On écoute les acteurs qu'il cite et les liens qu'il fait entre eux."
+      comment: "Au sec, lui demander de dessiner ou de raconter : « Un accident arrive sur le bateau. Qui intervient, et qui prévient qui ? » On écoute les acteurs qu'il cite et les liens qu'il fait entre eux."
       adapter:
-        - "Il ne connaît pas les acteurs : on commence à l'étape 1, « Les acteurs »."
-        - "Il cite les acteurs mais pas leurs liens : on passe à l'étape 2, « Les interactions »."
-        - "Il décrit la chaîne mais hésite à appeler : on travaille l'étape 3, « Quand appeler »."
+        - "Il ne connaît pas les acteurs : on commence à l'étape 1, « Les acteurs »."
+        - "Il cite les acteurs mais pas leurs liens : on passe à l'étape 2, « Les interactions »."
+        - "Il décrit la chaîne mais hésite à appeler : on travaille l'étape 3, « Quand appeler »."
         - "Il décrit la chaîne et appelle à bon escient : on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
@@ -826,16 +826,16 @@ RIFAP-C7:
         - "Le bateau de son club est-il équipé d'une VHF avec fonction ASN ?"
       sait:
         - "Connaît-il le canal 16, l'alternat et le message PAN-PAN ?"
-        - "Connaît-il la fonction ASN et le bouton « distress » ?"
-        - "A-t-il des idées fausses ? Par exemple : « on appelle d'abord avec son portable, c'est plus simple »."
+        - "Connaît-il la fonction ASN et le bouton « distress » ?"
+        - "A-t-il des idées fausses ? Par exemple : « on appelle d'abord avec son portable, c'est plus simple »."
       esprit:
         - "La radio l'intimide-t-elle ?"
         - "Craint-il de mal s'exprimer devant tout le monde ?"
-      comment: "Devant la VHF du bateau, en simulation, lui demander : « Montre-moi comment tu donnerais l'alerte. » On observe le canal choisi, l'alternat et le message, sans corriger."
+      comment: "Devant la VHF du bateau, en simulation, lui demander : « Montre-moi comment tu donnerais l'alerte. » On observe le canal choisi, l'alternat et le message, sans corriger."
       adapter:
-        - "Il ne sait pas utiliser la VHF : on commence à l'étape 1, « La VHF »."
-        - "Il passe un appel VHF correct : on passe à l'étape 2, « L'ASN »."
-        - "Il maîtrise la VHF et l'ASN : on travaille l'étape 3, « Le téléphone », puis on passe à l'étape 4."
+        - "Il ne sait pas utiliser la VHF : on commence à l'étape 1, « La VHF »."
+        - "Il passe un appel VHF correct : on passe à l'étape 2, « L'ASN »."
+        - "Il maîtrise la VHF et l'ASN : on travaille l'étape 3, « Le téléphone », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), simulation d'appel avec les deux moyens, fiche d'évacuation par victime"
       criteres:
@@ -855,15 +855,15 @@ RIFAP-C7:
       sait:
         - "Sait-il qu'on appelle le 196 depuis le littoral, le 15 ou le 112 dans les eaux intérieures ?"
         - "Sait-il qu'il faut annoncer un accident de plongée et demander le CROSS ou le SCMM ?"
-        - "A-t-il des idées fausses ? Par exemple : « les secours comprendront d'eux-mêmes qu'il s'agit d'un accident de plongée »."
+        - "A-t-il des idées fausses ? Par exemple : « les secours comprendront d'eux-mêmes qu'il s'agit d'un accident de plongée »."
       esprit:
         - "Craint-il de ne pas être pris au sérieux au téléphone ?"
         - "Est-il stressé à l'idée de parler aux secours ?"
-      comment: "Au sec, lui demander : « Tu plonges sur ce site, un accident arrive. Qui appelles-tu, et que dis-tu en premier ? » Puis lui demander de retrouver la procédure dans le plan de secours du club."
+      comment: "Au sec, lui demander : « Tu plonges sur ce site, un accident arrive. Qui appelles-tu, et que dis-tu en premier ? » Puis lui demander de retrouver la procédure dans le plan de secours du club."
       adapter:
-        - "Il ne sait pas quel numéro appeler : on commence à l'étape 1, « Les numéros »."
-        - "Il choisit le bon numéro mais n'annonce pas la plongée : on passe à l'étape 2, « Le contexte de plongée »."
-        - "Il annonce clairement l'accident de plongée : on travaille l'étape 3, « Le plan de secours », puis on passe à l'étape 4."
+        - "Il ne sait pas quel numéro appeler : on commence à l'étape 1, « Les numéros »."
+        - "Il choisit le bon numéro mais n'annonce pas la plongée : on passe à l'étape 2, « Le contexte de plongée »."
+        - "Il annonce clairement l'accident de plongée : on travaille l'étape 3, « Le plan de secours », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), simulations"
       criteres:
@@ -882,15 +882,15 @@ RIFAP-C7:
       sait:
         - "Connaît-il les éléments du message : identité et embarcation, localisation précise, nature, risques, gravité, nombre de personnes, premières mesures ?"
         - "Sait-il qu'il faut signaler toute évolution : état de la victime, nouvelle victime, autonomie en oxygène ?"
-        - "A-t-il des idées fausses ? Par exemple : « on donne l'essentiel et on raccroche vite pour agir »."
+        - "A-t-il des idées fausses ? Par exemple : « on donne l'essentiel et on raccroche vite pour agir »."
       esprit:
         - "Perd-il ses moyens au téléphone, sous pression ?"
         - "Veut-il raccrocher au plus vite pour retourner auprès de la victime ?"
-      comment: "En simulation, un formateur joue le CROSS. Lui dire : « Donne l'alerte pour cet accident. » On écoute l'ordre et la complétude du message, ses réponses aux questions, et s'il attend les instructions avant de raccrocher."
+      comment: "En simulation, un formateur joue le CROSS. Lui dire : « Donne l'alerte pour cet accident. » On écoute l'ordre et la complétude du message, ses réponses aux questions, et s'il attend les instructions avant de raccrocher."
       adapter:
-        - "Son message est incomplet ou désordonné : on commence à l'étape 1, « Le message »."
-        - "Le message est complet mais il raccroche trop vite : on passe à l'étape 2, « Le dialogue »."
-        - "Il dialogue bien : on travaille l'étape 3, « Le suivi », puis on passe à l'étape 4."
+        - "Son message est incomplet ou désordonné : on commence à l'étape 1, « Le message »."
+        - "Le message est complet mais il raccroche trop vite : on passe à l'étape 2, « Le dialogue »."
+        - "Il dialogue bien : on travaille l'étape 3, « Le suivi », puis on passe à l'étape 4."
     bilan:
       situation: "l'étape 4 : cas concret (évaluation), cas concrets"
       criteres:

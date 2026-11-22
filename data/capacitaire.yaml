@@ -1,9 +1,9 @@
 # Module capacitaire MF1 : référentiel des quatre écrits.
 # Source : MFT FFESSM, chapitre MF1, version juillet 2026, p. 18 (organisation) et p. 19 à 24 (connaissances).
 # Transcription fidèle ; seules les fautes de frappe évidentes sont corrigées.
-# Ordre des écrits : celui de la page « Règles d'organisation » (p. 18).
-# Chaque rubrique : id (stable, sert à l'enregistrement dans le navigateur), titre (« Connaissances »),
-# points (« Commentaires »), evaluation (mention « Évaluation », absente pour certaines rubriques).
+# Ordre des écrits : celui de la page « Règles d'organisation » (p. 18).
+# Chaque rubrique : id (stable, sert à l'enregistrement dans le navigateur), titre (« Connaissances »),
+# points (« Commentaires »), evaluation (mention « Évaluation », absente pour certaines rubriques).
 
 ecrits:
   - id: cadre

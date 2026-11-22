@@ -4,9 +4,9 @@
 <div class="cds" data-cds>
 
   <div class="entete-page">
-    <h1 class="titre-page">Explore le CdS</h1>
-    <p class="sous-titre-page"><span class="bureau">Les règles du Code du sport sur la plongée, telles que reprises dans le MFT (version juin 2026), classées par question. Chaque réponse indique l’article d’origine.</span><span class="mobile">Les règles du Code du sport sur la plongée, classées par question.</span></p>
+    <h1 class="titre-page">Explore le Code du Sport (CdS)</h1>
   </div>
+  {{ partial "aide-page.html" "explore-le-cds" }}
 
 
   {{/* Qui peut plonger où, et avec qui ? */}}
@@ -74,11 +74,11 @@
   </section>
 
   {{/* Questions : fiches sur bureau, liste dépliable sur téléphone */}}
+  <h2 class="prog-sous-titre">Réviser les articles</h2>
   <section class="questions" aria-labelledby="questions-titre">
-    <h2 id="questions-titre" class="questions__titre"><span class="mobile">Questions fréquentes</span><span class="visuellement-cache bureau">Questions</span></h2>
+    <h3 id="questions-titre" class="questions__titre"><span class="mobile">Questions fréquentes</span><span class="visuellement-cache bureau">Questions</span></h3>
     {{/* Suivi des réponses, comme dans Réviser : enregistré dans ce navigateur (clé ptmf1:cds). */}}
     <div class="cds-suivi" aria-label="Où tu en es sur ces questions">
-      <span class="cds-suivi__libelle">Où tu en es</span>
       <span class="boites">
         <span class="boite boite--revoir">À revoir <span data-cds-compte="0">0</span></span>
         <span class="boite boite--acquises">Je savais <span data-cds-compte="1">0</span></span>

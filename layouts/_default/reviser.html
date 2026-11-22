@@ -1,18 +1,18 @@
 {{ define "main" }}
-{{- /* Flashcard MFT (maquettes _passation/flashcard/*.dc.html). Styles propres à la page : classes « fc- ».
+{{- /* Flashcard MFT (maquettes _passation/flashcard/*.dc.html). Styles propres à la page : classes « fc- ».
        Le fonctionnement (tirage, répétition espacée, raccourcis, enregistrement) est dans assets/js/reviser.js. */ -}}
 <div class="reviser fc" data-reviser data-donnees="{{ partial "donnees-url.html" . }}" data-contact="{{ "/contact/" | relURL }}">
 
   <section class="fc-entete">
     <div class="fc-entete__textes">
-      <h1 class="fc-titre">Flashcard MFT</h1>
-      <p class="fc-sous-titre">Cartes mémoire et recherche chronométrée dans le MFT.</p>
+      <h1 class="fc-titre">Flashcard et recherche chrono</h1>
     </div>
     <div class="fc-onglets" role="tablist" aria-label="Mode de révision">
       <button type="button" role="tab" class="fc-onglet" id="onglet-cartes" aria-controls="panneau-cartes" aria-selected="true" tabindex="0" data-mode="cartes">Cartes mémoire</button>
       <button type="button" role="tab" class="fc-onglet" id="onglet-retrouver" aria-controls="panneau-retrouver" aria-selected="false" tabindex="-1" data-mode="retrouver">Retrouver dans le MFT</button>
     </div>
   </section>
+  {{ partial "aide-page.html" "reviser" }}
 
   {{/* ---------- Cartes mémoire ---------- */}}
   <section id="panneau-cartes" role="tabpanel" aria-labelledby="onglet-cartes" class="reviser__panneau fc-panneau" data-panneau-mode="cartes">
@@ -34,9 +34,6 @@
     </div>
 
     <div class="fc-colonne">
-      <div class="note-aide fc-aide-note" role="note">
-        <p><strong>Comment ça marche ?</strong> Lis la question, réponds dans ta tête, puis retourne la carte. Sois honnête : c’est toi qui dis si tu savais. Tu savais ? La carte revient plus tard, et de plus en plus tard à chaque fois (jusqu’à un mois). Tu la revois juste avant de l’oublier : c’est comme ça qu’on retient longtemps. Tu ne savais pas ? Elle revient à la fin de la séance, puis demain.<br>Les compteurs : <strong>À revoir</strong>, pas encore sue ; <strong>En cours</strong>, ratée puis retrouvée ; <strong>Acquises</strong>, sue.</p>
-      </div>
       <div class="fc-avancement">
         <div class="fc-avancement__ligne"><span data-carte-compte></span><span class="fc-avancement__jour" data-cartes-jour></span></div>
         <div class="fc-segments" aria-hidden="true" data-segments></div>
@@ -71,12 +68,12 @@
           <div class="fc-actions fc-actions--verso">
             <button type="button" class="fc-btn fc-btn--neutre" data-ajour-libre>Réviser quand même</button>
           </div>
-          <p class="fc-ajour__note">« Réviser quand même » ne change pas les dates de révision de tes cartes.</p>
+          <p class="fc-ajour__note">« Réviser quand même » ne change pas les dates de révision de tes cartes.</p>
         </article>
       </div>
 
       <div class="fc-pied">
-        <p class="fc-raccourcis"><span class="bureau">Raccourcis clavier : <kbd class="fc-kbd fc-kbd--touche">Espace</kbd> pour retourner la carte, <kbd class="fc-kbd fc-kbd--touche">1</kbd> pour « À revoir », <kbd class="fc-kbd fc-kbd--touche">2</kbd> pour « Je savais ».</span><a class="fc-signaler" href="#" data-carte-signaler><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"></path></svg>Signaler une erreur</a></p>
+        <p class="fc-raccourcis"><span class="bureau">Raccourcis clavier : <kbd class="fc-kbd fc-kbd--touche">Espace</kbd> pour retourner la carte, <kbd class="fc-kbd fc-kbd--touche">1</kbd> pour « À revoir », <kbd class="fc-kbd fc-kbd--touche">2</kbd> pour « Je savais ».</span><a class="fc-signaler" href="#" data-carte-signaler><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"></path></svg>Signaler une erreur</a></p>
         <p class="fc-note">L’avancement de tes cartes est enregistré dans ce navigateur uniquement. Il repart à zéro si tu changes de navigateur ou si tu effaces ses données. Tu peux le sauvegarder ou le remettre à zéro depuis la page <a href="{{ "/suivi/" | relURL }}">Suivi</a>.</p>
       </div>
     </div>

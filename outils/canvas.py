@@ -21,6 +21,11 @@ import sys
 import unicodedata
 from pathlib import Path
 
+def insecables(texte):
+    """Espace insécable à l'intérieur des guillemets « », pour qu'ils ne soient jamais séparés du texte."""
+    return texte.replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+
+
 ICI = Path(__file__).resolve().parent
 SITE = ICI.parent
 DEPOT = SITE.parent
@@ -288,7 +293,7 @@ def main():
         for id_jeu, nom_jeu, chemin in jeux:
             jeu, rapport = construire(id_jeu, lire_jeu(DEPOT / chemin))
             jeu["source"] = chemin
-            texte = json.dumps(jeu, ensure_ascii=False, separators=(",", ":"))
+            texte = insecables(json.dumps(jeu, ensure_ascii=False, separators=(",", ":")))
             (sortie / (id_jeu + ".json")).write_text(texte + "\n", encoding="utf-8")
             comptes = [sum(1 for c in jeu["cartes"] if c["g"] == g) for g in range(len(jeu["groupes"]))]
             entree["jeux"].append({"id": id_jeu, "nom": nom_jeu, "groupes": jeu["groupes"], "comptes": comptes})
@@ -298,7 +303,7 @@ def main():
                 for code, titre, l, cites in rapport:
                     print("    %s %-45s → %s   [%s]" % (code, titre[:45], ", ".join(titres[c] for c in cites) or "—", l[:70]))
         index.append(entree)
-    (SITE / "data" / "canvas.json").write_text(json.dumps({"niveaux": index}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    (SITE / "data" / "canvas.json").write_text(insecables(json.dumps({"niveaux": index}, ensure_ascii=False, indent=1)) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

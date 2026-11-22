@@ -1,6 +1,6 @@
-# Correspondance entre les techniques des progressions types (data/progressions/*.json, champ « nom »)
+# Correspondance entre les techniques des progressions types (data/progressions/*.json, champ « nom »)
 # et les cartes techniques du jeu du Canvas (identifiants de static/canvas/<jeu>.json, jeu donné par data/canvas_liens.yaml).
-# Utilisée par « Continuer dans le Canvas » : chaque technique devient un cadre, avec ces cartes et ses étapes en annotations.
+# Utilisée par « Continuer dans le Canvas » : chaque technique devient un cadre, avec ces cartes et ses étapes en annotations.
 # Liste vide : pas de carte équivalente fiable ; le cadre et les étapes sont quand même posés.
 # Écrit à la main ; à revoir si une planche de cartes ou une progression change.
 PE12-equiper:

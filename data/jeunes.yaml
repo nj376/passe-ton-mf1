@@ -1,8 +1,8 @@
-# Onglet « Jeunes » de la page Progression : le cursus jeunes n'a aucune fiche dans mft_data.json.
+# Onglet « Jeunes » de la page Progression : le cursus jeunes n'a aucune fiche dans mft_data.json.
 # Les fiches viennent uniquement de data/progressions/progressions_JP.json, regroupées par parcours
 # selon le préfixe de leur identifiant, dans l'ordre ci-dessous.
 onglet:
-  # Placé juste après l'onglet indiqué par « apres » (data/onglets.yaml).
+  # Placé juste après l'onglet indiqué par « apres » (data/onglets.yaml).
   apres: RANDO
   id: JP
   libelle: Jeunes
@@ -30,7 +30,7 @@ parcours:
 # Plongeur d'or : pas de progression propre, renvoi vers le N1 avec les limites du MFT (citées sans reformulation).
 or:
   titre: "Plongeur d'or"
-  intro: "Pas de progression propre : selon le MFT, ses compétences « sont celles énoncées dans les contenus de formation du plongeur niveau 1 ». Reprends les progressions du N1, avec ces limites du MFT :"
+  intro: "Pas de progression propre : selon le MFT, ses compétences « sont celles énoncées dans les contenus de formation du plongeur niveau 1 ». Reprends les progressions du N1, avec ces limites du MFT :"
   limites:
     - competence: N1-equiper
       titre: "S'équiper et se déséquiper"

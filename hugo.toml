@@ -66,13 +66,16 @@ enableRobotsTXT = true
   [[menus.main]]
     name = "Capacitaire"
     pageRef = "/capacitaire"
-    weight = 2
+    weight = 3
   [[menus.main]]
     name = "S’entraîner"
     pageRef = "/s-entrainer"
-    weight = 3
+    weight = 5
+    # Séparateur « | » avant cette entrée (menu ordinateur et tablette seulement).
+    [menus.main.params]
+      separateurAvant = true
   [[menus.main]]
-    name = "Construire"
+    name = "Progression"
     pageRef = "/progression"
     weight = 6
   [[menus.main]]
@@ -82,7 +85,10 @@ enableRobotsTXT = true
   [[menus.main]]
     name = "CdS"
     pageRef = "/explore-le-cds"
-    weight = 5
+    weight = 2
+    # Séparateur « | » avant cette entrée (menu ordinateur et tablette seulement).
+    [menus.main.params]
+      separateurAvant = true
   [[menus.main]]
     name = "Ressources"
     pageRef = "/ressources"

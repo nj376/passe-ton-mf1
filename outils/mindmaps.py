@@ -15,6 +15,11 @@ Parcourt mf1-docs/NN - Niveau/mindmaps/*.drawio (en lecture seule) et produit :
 import glob, hashlib, html, json, os, re, shutil, subprocess, sys, tempfile, unicodedata
 import xml.etree.ElementTree as ET
 
+def insecables(texte):
+    """Espace insécable à l'intérieur des guillemets « », pour qu'ils ne soient jamais séparés du texte."""
+    return texte.replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+
+
 ICI = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(ICI)                 # Passe-ton-mf1/
 DEPOT = os.path.dirname(SITE)               # mf1-docs/
@@ -100,7 +105,7 @@ def alleger_svg(chemin):
                   % (float(vb[0]) + float(vb[2]), float(vb[1]) + float(vb[3])))
     if 'width="100%" height="100%"' in t:
         print(f"  ⚠️  {os.path.relpath(chemin, SITE)} : foreignObject en pourcentage restants")
-    open(chemin, "w", encoding="utf-8").write(t)
+    open(chemin, "w", encoding="utf-8").write(insecables(t))
     return t, float(vb[2]), float(vb[3])
 
 
@@ -322,7 +327,7 @@ def main():
         if os.path.normpath(f) not in utiles and unicodedata.normalize("NFC", os.path.normpath(f)) not in utiles:
             os.remove(f)
             print(f"  retiré : {os.path.relpath(f, SITE)}")
-    json.dump({"niveaux": niveaux}, open(DONNEES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    open(DONNEES, "w", encoding="utf-8").write(insecables(json.dumps({"niveaux": niveaux}, ensure_ascii=False, indent=1)))
     print(f"→ {os.path.relpath(DONNEES, SITE)} : {len(niveaux)} niveaux, {sum(len(n['cartes']) for n in niveaux)} mindmaps")
 
 

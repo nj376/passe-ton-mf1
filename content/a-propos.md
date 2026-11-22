@@ -3,7 +3,7 @@ title: "Passe-ton-MF1 · À propos"
 description: "Qui est derrière passe-ton-mf1.com, ce que le site est et n’est pas : un outil né d’une formation MF1, indépendant de la FFESSM, ouvert aux corrections."
 layout: "a-propos"
 classePrincipal: "principal--interieur principal--about"
-# Blocs de la page (Markdown). Le corps de la page est le récit « Pourquoi ce site ».
+# Blocs de la page (Markdown). Le corps de la page est le récit « Pourquoi ce site ».
 nestPasIntro: "Avant toute chose, quelques précisions pour éviter les malentendus. Ce site a été conçu pour accompagner la préparation au MF1, pas pour réinventer la formation fédérale."
 nestPas:
   - "**Une référence officielle.** Ce site est une initiative personnelle, indépendante de la FFESSM. Seul le Manuel de formation technique (MFT) officiel fait foi. En cas de doute ou de divergence, c'est toujours lui qui prévaut."
@@ -15,7 +15,7 @@ est:
 merci: |
   Un grand merci à **Arnaud B.**, qui m’accompagne dans ce cheminement tortueux vers le MF1 et répond avec un calme olympien à mes innombrables questions à la noix (et Dieu sait qu’il y en a eu... et que ce n’est probablement pas terminé). Ses conseils, ses remarques et sa patience m’aident à prendre du recul, à garder le cap et, surtout, à remonter à la bonne vitesse.
 
-  Merci également à **Pierre F.**, mon compagnon de galère, qui s’est lancé en même temps que moi dans ce %=$€@ de MF1. Ensemble, nous partageons de grands moments de réflexion pédagogique, de doutes métaphysiques et, plus régulièrement qu’il ne serait raisonnable, cette interrogation fondamentale : **« Mais qu’est-ce qu’on est allés faire dans cette galère ? »** Au moins, à deux, on peut se rassurer mutuellement. Même si, jusqu’à présent, aucun de nous n’a trouvé de réponse vraiment convaincante.
+  Merci également à **Pierre F.**, mon compagnon de galère, qui s’est lancé en même temps que moi dans ce %=$€@ de MF1. Ensemble, nous partageons de grands moments de réflexion pédagogique, de doutes métaphysiques et, plus régulièrement qu’il ne serait raisonnable, cette interrogation fondamentale : **« Mais qu’est-ce qu’on est allés faire dans cette galère ? »** Au moins, à deux, on peut se rassurer mutuellement. Même si, jusqu’à présent, aucun de nous n’a trouvé de réponse vraiment convaincante.
 
   Merci enfin à **Max M.**, **Christophe Z.**, **Patricia G.** et **Cyrille C.**, qui subissent eux aussi mes questions avec une bienveillance remarquable, ainsi qu’à tous les autres MF2 qui partagent leur expérience au fil des séances, avec une patience qu’aucune équation, même quantique, ne saurait modéliser.
 ps: "**PS :** Si vous connaissez quelqu'un qui envisage de passer son MF1, surtout ne lui montrez pas ce site web. Il est encore temps pour lui de vivre heureux dans l'ignorance."
@@ -39,7 +39,7 @@ Quant à mes fiches pédagogiques, elles présentent parfois une propriété rem
 
 Et puis vient ce moment où, après trois heures de préparation, une simple question d'un MF2 suffit à révéler un aspect essentiel que je n'avais pas envisagé. Je contemple ma fiche, mes certitudes s'effondrent, et une question surgit :
 
-**« Mais qu'est-ce que je suis allé faire dans cette galère ? »**
+**« Mais qu'est-ce que je suis allé faire dans cette galère ? »**
 
 Le plus étonnant, c'est que je continue. Je recommence, je corrige, je réfléchis. Et, contre toute attente, j'y prends goût.
 

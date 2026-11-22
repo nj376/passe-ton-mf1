@@ -1,7 +1,7 @@
 {{ define "main" }}
-{{- /* Page « À propos » (maquette _passation/redesign/APropos.dc.html et MobileAPropos.dc.html).
+{{- /* Page « À propos » (maquette _passation/redesign/APropos.dc.html et MobileAPropos.dc.html).
        Textes : content/a-propos.md (blocs en paramètres, récit dans le corps), apostrophes typographiques.
-       Styles propres à la page : classes « about- » dans assets/css/main.css. */ -}}
+       Styles propres à la page : classes « about- » dans assets/css/main.css. */ -}}
 {{- $coche := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="about-liste__icone"><path d="M5 12l5 5L20 7"></path></svg>` | safeHTML -}}
 {{- $croix := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" class="about-liste__icone"><path d="M6 6l12 12M18 6L6 18"></path></svg>` | safeHTML -}}
 
@@ -73,6 +73,22 @@
       {{- range site.Params.ctr }}
       <a class="about-ctr" href="{{ .url }}"><span class="about-ctr__region">{{ .region }}</span><span class="about-ctr__domaine bureau">{{ .domaine }} ↗</span><span class="about-ctr__fleche mobile" aria-hidden="true">↗</span></a>
       {{- end }}
+    </div>
+  </section>
+
+  {{/* Données et mentions légales sur toute la largeur. */}}
+  <section id="mes-donnees" class="carte help-donnees-bloc" aria-labelledby="t-mes-donnees">
+    <div class="help-donnees-bloc__textes">
+      <h2 id="t-mes-donnees" class="help-donnees-bloc__titre">Données et mentions légales</h2>
+      <div class="help-section__contenu">
+        <ul>
+          <li><strong>Données personnelles.</strong> Ton suivi, tes réponses et tes préparations restent dans ton navigateur, sans compte ni stockage sur un serveur du site. Pour les sauvegarder ou changer d’appareil, utilise <strong>Sauvegarder mes données</strong> dans <strong>Mon suivi</strong>, puis <strong>Restaurer une sauvegarde</strong> sur l’autre appareil.</li>
+          <li><strong>Attention aux suppressions.</strong> Les boutons <strong>rouges</strong> effacent ou remplacent des données. Les opérations les plus sensibles demandent une confirmation, mais prends toujours le temps de lire avant de cliquer.</li>
+          <li><strong>Référence officielle.</strong> Le Manuel de formation technique (MFT) est une publication de la <strong>FFESSM</strong>, qui conserve ses droits sur ses contenus. Ce site est une initiative indépendante, sans affiliation officielle. Seul le MFT officiel fait foi.</li>
+          <li><strong>Droits d’utilisation.</strong> © Philippe Buschini. Ce site est librement accessible et ses contenus originaux peuvent être utilisés à des fins personnelles, pédagogiques et non commerciales, avec mention de leur source. Toute utilisation commerciale nécessite mon autorisation préalable : <strong><a href="{{ "/contact/" | relURL }}">formulaire de contact</a></strong>.</li>
+          <li><strong>Pour en savoir plus.</strong> Les informations relatives à l’éditeur du site, à la propriété intellectuelle et aux conditions d’utilisation sont détaillées dans les <strong><a href="{{ "/mentions-legales/" | relURL }}">Mentions légales</a></strong>.</li>
+        </ul>
+      </div>
     </div>
   </section>
 </div>

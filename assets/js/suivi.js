@@ -1,6 +1,6 @@
-/* Page « Suivi » : date d'examen, avancement de chaque module, contenu stocké, tout effacer.
+/* Page « Suivi » : date d'examen, avancement de chaque module, contenu stocké, tout effacer.
    Tout est lu dans ce navigateur (localStorage) ; rien n'est envoyé ailleurs.
-   Sauvegarde et restauration : assets/js/donnees.js (événement « ptmf1:donnees-importees » après un import). */
+   Sauvegarde et restauration : assets/js/donnees.js (événement « ptmf1:donnees-importees » après un import). */
 (function () {
   "use strict";
   var racine = document.querySelector("[data-suivi]");
@@ -71,7 +71,7 @@
   /* ---------- Mes modules ---------- */
   function barres(zone, lignes) {
     zone.textContent = "";
-    // Ligne : [libellé, valeur] (part du total) ou [libellé, valeur, maximum] (affiché « valeur/maximum »).
+    // Ligne : [libellé, valeur] (part du total) ou [libellé, valeur, maximum] (affiché « valeur/maximum »).
     var total = lignes.reduce(function (s, l) { return s + l[1]; }, 0);
     zone.hidden = !total;
     lignes.forEach(function (l) {
@@ -117,7 +117,7 @@
       $("[data-entr-texte]").textContent = "Dernier thème : " + (dernier.titre || "") + ", le " + dateCourte(dernier.date) + ".";
     } else {
       $("[data-entr-chiffre]").textContent = "Aucun thème préparé pour l’instant";
-      $("[data-entr-texte]").textContent = "Tire un thème, puis clique sur « Enregistrer ce thème » : il apparaîtra ici.";
+      $("[data-entr-texte]").textContent = "Tire un thème, puis clique sur « Enregistrer ce thème » : il apparaîtra ici.";
     }
     var compte = function (ep) { return themes.filter(function (t) { return t.epreuve === ep; }).length; };
     barres($("[data-entr-barres]"), [["Pratique", compte("prat")], ["Organisationnelle", compte("orga")], ["Théorique", compte("theo")]]);
@@ -215,7 +215,7 @@
       var cles = [];
       for (var i = 0; i < localStorage.length; i++) {
         var c = localStorage.key(i);
-        // Données du site (mêmes clés que la sauvegarde) ; l'avis « version mobile » déjà vu est conservé.
+        // Données du site (mêmes clés que la sauvegarde) ; l'avis « version mobile » déjà vu est conservé.
         if (c && (c.indexOf("ptmf1:") === 0 || c === "ptmf1-construire")) cles.push(c);
       }
       cles.forEach(function (c) { localStorage.removeItem(c); });

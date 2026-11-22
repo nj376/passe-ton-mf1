@@ -9,7 +9,7 @@
 {{- $niveauAffiche := replace $c.niveau "+" " + " -}}
 {{- $famille := index (split $c.id "-") 1 -}}
 
-{{- /* « Ce qui change » : « Par rapport au N1 : … » devient « Ce qui change depuis le N1 ». */ -}}
+{{- /* « Ce qui change » : « Par rapport au N1 : … » devient « Ce qui change depuis le N1 ». */ -}}
 {{- $changeTitre := "Ce qui change" -}}
 {{- $changeTexte := $c.nouveau -}}
 {{- $m := findRESubmatch `^Par rapport (au |à la |à l['’]|aux )([^:(]+?)\s*:\s*(.+)$` $c.nouveau 1 -}}
@@ -54,7 +54,6 @@
     </dl>
 
     <div class="fiche__actions">
-      <a class="bouton-petit bouton-petit--principal" href="{{ "/s-entrainer/" | relURL }}?competence={{ $c.id }}">Préparer une séance sur ce thème</a>
       {{- if $onglet.comparer }}
       <button type="button" class="bouton-petit bouton-petit--secondaire" aria-haspopup="dialog" data-comparer="{{ $c.id }}" hidden>Comparer N1 · N2 · N3</button>
       {{- end }}
@@ -63,8 +62,7 @@
     <div class="fiche__pied">
       <span><span class="bureau">{{ with $onglet.sourceBureau }}{{ . }}{{ else }}D’après le MFT {{ $onglet.chapitre }}, version consultée en{{ end }} {{ site.Params.mftConsulte }}</span><span class="mobile">{{ with $onglet.sourceMobile }}{{ . }}{{ else }}MFT {{ $onglet.chapitre }}, consulté en{{ end }} {{ site.Params.mftConsulte }}</span></span>
       <span class="fiche__liens">
-      {{- if $aProgression }}<a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower $c.id }}">Voir la progression proposée →</a>
-      {{- else }}{{ with index site.Data.complements_progression $c.id }}{{ if .renvoi }}<a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower .renvoi }}">{{ .renvoiTexte }}</a>{{ end }}{{ end }}{{ end }}
+      {{- if not $aProgression }}{{ with index site.Data.complements_progression $c.id }}{{ if .renvoi }}<a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower .renvoi }}">{{ .renvoiTexte }}</a>{{ end }}{{ end }}{{ end }}
       <a class="fiche__signaler" href="{{ "/contact/" | relURL }}?sujet={{ $sujet }}"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-1.5 4L16 12H5"></path></svg>Signaler une erreur</a>
       </span>
     </div>

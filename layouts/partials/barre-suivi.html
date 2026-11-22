@@ -1,8 +1,12 @@
-{{- /* Barre « Mon suivi » sous l'en-tête (remplace l'entrée « Suivi » du menu). À gauche, une phrase d'humour tirée au hasard dans data/humour.yaml
-       par assets/js/interface.js, précédée du compte à rebours de l'examen si la date est renseignée. Pas de texte sur téléphone. */ -}}
-<div class="barre-suivi">
+{{- /* Barre « Mon suivi » sous l'en-tête (remplace l'entrée « Suivi » du menu). À gauche, une phrase d'humour tirée au hasard dans data/humour.yaml
+       par assets/js/interface.js, précédée du compte à rebours de l'examen si la date est renseignée. Pas de texte sur téléphone.
+       Sur la page Suivi elle-même : la phrase seule, sans le bouton (et donc pas de barre sur téléphone). */ -}}
+{{- $surSuivi := eq .RelPermalink ("/suivi/" | relURL) }}
+<div class="barre-suivi{{ if $surSuivi }} barre-suivi--sans-bouton{{ end }}">
   <div class="barre-suivi__interieur">
     <span class="barre-suivi__info" data-barre-suivi data-phrases="{{ site.Data.humour | jsonify }}">{{ index site.Data.humour 0 }}</span>
+    {{- if not $surSuivi }}
     <a class="barre-suivi__bouton" href="{{ "/suivi/" | relURL }}"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"></path></svg>Mon suivi</a>
+    {{- end }}
   </div>
 </div>

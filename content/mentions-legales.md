@@ -39,7 +39,7 @@ Ce site collecte le moins de données possible : aucune donnée permettant de vo
 
 ### Mesure d'audience
 
-La fréquentation du site est mesurée avec [Umami](https://umami.is/), un outil libre installé sur un serveur que j'administre moi-même. Il ne dépose aucun cookie, n'enregistre pas votre adresse IP et ne vous suit pas d'un site à l'autre. Il ne retient que des informations anonymes : la page consultée, le site d'où vous venez, le type d'appareil et de navigateur, et le pays déduit de l'adresse IP au moment de la visite. Si votre navigateur demande à ne pas être suivi (« Do Not Track »), aucune mesure n'est faite. Ces statistiques sont conservées dix-huit mois, puis effacées.
+La fréquentation du site est mesurée avec [Umami](https://umami.is/), un outil libre installé sur un serveur que j'administre moi-même. Il ne dépose aucun cookie, n'enregistre pas votre adresse IP et ne vous suit pas d'un site à l'autre. Il ne retient que des informations anonymes : la page consultée, le site d'où vous venez, le type d'appareil et de navigateur, et le pays déduit de l'adresse IP au moment de la visite. Si votre navigateur demande à ne pas être suivi (« Do Not Track »), aucune mesure n'est faite. Ces statistiques sont conservées dix-huit mois, puis effacées.
 
 ### Journaux du serveur
 

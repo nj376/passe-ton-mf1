@@ -17,8 +17,8 @@
 <a class="lien-evitement" href="#contenu">Aller au contenu</a>
 <div class="page">
   {{ partial "en-tete.html" . }}
-  {{- /* Barre « Mon suivi » : partout, sauf l'Aide, « À propos » et Suivi. */}}
-  {{- if not (in (slice ("/aide/" | relURL) ("/a-propos/" | relURL) ("/suivi/" | relURL)) .RelPermalink) }}{{ partial "barre-suivi.html" . }}{{ end }}
+  {{- /* Barre « Mon suivi » : partout, sauf « À propos » (sur la page Suivi, sans son bouton). */}}
+  {{- if not (in (slice ("/a-propos/" | relURL)) .RelPermalink) }}{{ partial "barre-suivi.html" . }}{{ end }}
   <main id="contenu" tabindex="-1" class="principal{{ with .Params.classePrincipal }} {{ . }}{{ end }}">
     {{ block "main" . }}{{ end }}
   </main>

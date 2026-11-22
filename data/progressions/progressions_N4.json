@@ -6,7 +6,7 @@
     {
       "id": "N4-accueil",
       "competence": "Accueillir les plongeurs",
-      "evaluation_mft": "Évaluation : épreuve N°4 « Conduite de palanquée ». L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "evaluation_mft": "Évaluation : épreuve N°4 « Conduite de palanquée ». L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
       "techniques": [
         {
           "nom": "Adopter en toutes circonstances un comportement respectueux des valeurs du sport et de la Fédération",
@@ -920,7 +920,7 @@
     {
       "id": "N4-environnement",
       "competence": "Respecter l'environnement",
-      "evaluation_mft": "Évaluation : épreuve N°4 « conduite de palanquée ». L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
+      "evaluation_mft": "Évaluation : épreuve N°4 « conduite de palanquée ». L'évaluation porte principalement sur les capacités d'adaptation du Guide de Palanquée au niveau réel des plongeurs et aux situations rencontrées. Toute mise en danger est éliminatoire.",
       "techniques": [
         {
           "nom": "Évoluer en limitant son impact sur le milieu",
@@ -1255,7 +1255,7 @@
               "n": 3,
               "titre": "Depuis 25 m",
               "objectif": "Tenir la vitesse de référence sur toute la remontée.",
-              "situation": "Départ stabilisé à 25 m en pleine eau, remontée sur le signe « remonte ».",
+              "situation": "Départ stabilisé à 25 m en pleine eau, remontée sur le signe « remonte ».",
               "critere": "Départ sans délai, vitesse de 10 à 12 m/min, jamais de redescente de plus de 2 m.",
               "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
             },

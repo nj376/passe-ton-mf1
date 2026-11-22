@@ -1,8 +1,8 @@
 {{ define "main" }}
-{{- /* Page « Suivi » (maquettes _passation/suivi/Suivi.dc.html et MobileSuivi.dc.html).
+{{- /* Page « Suivi » (maquettes _passation/suivi/Suivi.dc.html et MobileSuivi.dc.html).
        Tout est calculé dans le navigateur par assets/js/suivi.js à partir des données enregistrées ;
-       sauvegarde et restauration : assets/js/donnees.js. Styles propres à la page : classes « suivi- ». */ -}}
-{{- /* Nom lisible des compétences (« N1 · S’équiper… »), pour la carte « Ma progression détaillée ». */ -}}
+       sauvegarde et restauration : assets/js/donnees.js. Styles propres à la page : classes « suivi- ». */ -}}
+{{- /* Nom lisible des compétences (« N1 · S’équiper… »), pour la carte « Ma progression détaillée ». */ -}}
 {{- $D := site.Data.mft_data -}}
 {{- $noms := dict -}}
 {{- range $o := site.Data.onglets }}
@@ -14,7 +14,7 @@
 <div class="suivi" data-suivi>
   <section class="suivi-entete">
     <h1 class="suivi-titre">Où j’en suis dans ma préparation</h1>
-    <p class="suivi-intro">L’avancement de chaque module et tes données, au même endroit.</p>
+    {{ partial "aide-page.html" "suivi" }}
     <div class="suivi-date">
       <form class="carte suivi-date__form" data-date-form hidden>
         <label class="suivi-date__label">Date de mon examen final<input type="date" class="suivi-date__champ" data-date-champ required></label>
@@ -30,7 +30,7 @@
   </section>
 
   <section class="suivi-section" aria-labelledby="suivi-modules">
-    <div class="suivi-section__tete"><p class="suivi-surtitre">Avancement</p><h2 id="suivi-modules" class="suivi-h2">Mes modules</h2></div>
+    <div class="suivi-section__tete"><h2 id="suivi-modules" class="suivi-h2">Mes modules</h2></div>
     <div class="suivi-modules">
       <div class="carte suivi-module">
         <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span class="suivi-module__nom">Capacitaire</span><span class="suivi-badge suivi-badge--on">Actif</span></div>

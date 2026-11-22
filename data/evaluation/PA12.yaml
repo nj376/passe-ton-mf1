@@ -1,4 +1,4 @@
-# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du PA12.
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du PA12.
 # Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
 # (tel qu'il figure dans data/progressions/progressions_PA12.json). Les fichiers de progression ne sont pas modifiés.
 #
@@ -9,7 +9,7 @@
 # bilan.situation : la situation finale sur laquelle porte le bilan
 # bilan.criteres : critères de la situation finale (liste)
 # bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
-# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
 # Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
 
 
@@ -23,17 +23,17 @@ PA12-organiser:
         - "A-t-il son propre ordinateur ? S'en sert-il, ou le porte-t-il sans le regarder ?"
       sait:
         - "Sait-il quelles consignes retenir : durée, profondeur, conditions de fin de plongée ?"
-        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur décide de la durée de la plongée », ou « la pression, c'est le GP qui la surveille »."
+        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur décide de la durée de la plongée », ou « la pression, c'est le GP qui la surveille »."
         - "Sait-il ce qu'il fait en cas d'alarme de vitesse de remontée ?"
       esprit:
         - "Est-il pressé de plonger sans moniteur, ou inquiet de devoir tout gérer ?"
         - "Compte-t-il sur un équipier plus expérimenté pour décider à sa place ?"
-      comment: "Juste après un briefing réel du DP, sans prévenir, lui demander : « Redis-moi les consignes, puis dis-moi comment ta palanquée va s'organiser. » On écoute si la restitution est complète et si le plan reste dans le cadre du DP. On lui demande aussi de montrer sur son ordinateur où il lit la durée et la profondeur."
+      comment: "Juste après un briefing réel du DP, sans prévenir, lui demander : « Redis-moi les consignes, puis dis-moi comment ta palanquée va s'organiser. » On écoute si la restitution est complète et si le plan reste dans le cadre du DP. On lui demande aussi de montrer sur son ordinateur où il lit la durée et la profondeur."
       adapter:
-        - "Sa restitution est incomplète : on commence à l'étape 1, « Restituer les consignes du DP »."
-        - "Il restitue bien les consignes mais n'en fait pas un plan : on passe à l'étape 2, « Construire le plan de la palanquée »."
-        - "Il construit un plan correct : on passe à l'étape 3, « Protocole de contrôle des consommations »."
-        - "Il ne sait pas lire son ordinateur ou ne sait pas réagir à une alarme : on travaille l'étape 4, « Gérer ses paramètres avec son ordinateur »."
+        - "Sa restitution est incomplète : on commence à l'étape 1, « Restituer les consignes du DP »."
+        - "Il restitue bien les consignes mais n'en fait pas un plan : on passe à l'étape 2, « Construire le plan de la palanquée »."
+        - "Il construit un plan correct : on passe à l'étape 3, « Protocole de contrôle des consommations »."
+        - "Il ne sait pas lire son ordinateur ou ne sait pas réagir à une alarme : on travaille l'étape 4, « Gérer ses paramètres avec son ordinateur »."
     bilan:
       situation: "l'étape 5 : gérer la plongée en autonomie, entre 10 et 12 m, consignes du DP différentes à chaque fois (évaluation)"
       criteres:
@@ -54,17 +54,17 @@ PA12-organiser:
         - "S'oriente-t-il facilement à terre (randonnée, carte, course d'orientation) ?"
       sait:
         - "Sait-il citer des repères naturels : mouillage, roches, limite sable et roche, relief, profondeur ?"
-        - "A-t-il des idées fausses ? Par exemple : « il suffit de suivre la pente pour revenir », ou « on retrouve toujours le bateau en remontant »."
+        - "A-t-il des idées fausses ? Par exemple : « il suffit de suivre la pente pour revenir », ou « on retrouve toujours le bateau en remontant »."
         - "Sait-il lire la description ou le croquis du site donné par le DP ?"
       esprit:
         - "A-t-il peur de se perdre, ou au contraire se croit-il capable de retrouver son chemin sans repère ?"
         - "Accepte-t-il de mener la palanquée, ou préfère-t-il suivre ?"
-      comment: "Après une plongée guidée sur un site qu'il connaît, lui demander : « Dessine-moi le parcours qu'on vient de faire, avec les repères que tu as vus. » On regarde combien de repères il nomme et s'il les place dans l'ordre. On lui demande où se trouvait le point de sortie."
+      comment: "Après une plongée guidée sur un site qu'il connaît, lui demander : « Dessine-moi le parcours qu'on vient de faire, avec les repères que tu as vus. » On regarde combien de repères il nomme et s'il les place dans l'ordre. On lui demande où se trouvait le point de sortie."
       adapter:
-        - "Il ne nomme aucun repère : on commence à l'étape 1, « Découvrir un site avec le moniteur »."
-        - "Il redessine le parcours avec ses repères : on passe à l'étape 2, « Lire les informations du site »."
-        - "Il propose un trajet à partir du briefing : on passe à l'étape 3, « Mener un trajet court », sur un site connu."
-        - "Il mène déjà sans difficulté sur un site connu : on passe à l'étape 4, « Site nouveau »."
+        - "Il ne nomme aucun repère : on commence à l'étape 1, « Découvrir un site avec le moniteur »."
+        - "Il redessine le parcours avec ses repères : on passe à l'étape 2, « Lire les informations du site »."
+        - "Il propose un trajet à partir du briefing : on passe à l'étape 3, « Mener un trajet court », sur un site connu."
+        - "Il mène déjà sans difficulté sur un site connu : on passe à l'étape 4, « Site nouveau »."
     bilan:
       situation: "l'étape 5 : orientation en autonomie, plusieurs plongées entre 10 et 12 m, sites ou trajets différents (évaluation)"
       criteres:
@@ -84,15 +84,15 @@ PA12-organiser:
       sait:
         - "Sait-il où se trouvent l'inflateur, les purges, le largage du lest et le détendeur de secours d'un autre gilet que le sien ?"
         - "Sait-il à quoi sert un parachute ?"
-        - "A-t-il des idées fausses ? Par exemple : « on accroche le parachute à son gilet pour ne pas le perdre », ou « chacun s'occupe de son matériel »."
+        - "A-t-il des idées fausses ? Par exemple : « on accroche le parachute à son gilet pour ne pas le perdre », ou « chacun s'occupe de son matériel »."
       esprit:
         - "Est-il à l'aise pour s'équiper sans contrôle, ou cherche-t-il encore l'approbation du moniteur ?"
         - "Ose-t-il demander à un équipier de lui présenter son matériel ?"
-      comment: "En sortie en milieu naturel, le laisser gréer, régler, vérifier et capeler seul. On observe sans intervenir, sauf pour la sécurité. Puis, à côté d'un équipier équipé, lui demander : « Montre-moi comment on gonfle et on purge son gilet, et où est son détendeur de secours. »"
+      comment: "En sortie en milieu naturel, le laisser gréer, régler, vérifier et capeler seul. On observe sans intervenir, sauf pour la sécurité. Puis, à côté d'un équipier équipé, lui demander : « Montre-moi comment on gonfle et on purge son gilet, et où est son détendeur de secours. »"
       adapter:
-        - "Il ne s'équipe pas seul ou oublie des vérifications : on reste à l'étape 1, « Bilan des acquis N1 », et on reprend la progression N1-equiper."
-        - "Il s'équipe seul mais ne connaît pas le matériel des autres : on passe à l'étape 2, « S'informer du matériel des équipiers »."
-        - "Il connaît le matériel de ses équipiers mais n'a jamais utilisé de parachute : on passe à l'étape 3, « Le parachute en surface »."
+        - "Il ne s'équipe pas seul ou oublie des vérifications : on reste à l'étape 1, « Bilan des acquis N1 », et on reprend la progression N1-equiper."
+        - "Il s'équipe seul mais ne connaît pas le matériel des autres : on passe à l'étape 2, « S'informer du matériel des équipiers »."
+        - "Il connaît le matériel de ses équipiers mais n'a jamais utilisé de parachute : on passe à l'étape 3, « Le parachute en surface »."
         - "Il déploie déjà un parachute en surface sans aide : on passe à l'étape 4, à confirmer avec le MF2."
     bilan:
       situation: "l'étape 5 : matériel géré en autonomie, sur plusieurs sorties de formation (évaluation)"
@@ -116,17 +116,17 @@ PA12-milieu:
         - "S'intéresse-t-il au vivant (snorkeling, aquariophilie, sorties nature) ?"
       sait:
         - "Sait-il nommer quelques animaux et végétaux fréquents de son site ?"
-        - "A-t-il des idées fausses ? Par exemple : « une roche, ça ne craint rien », ou « donner à manger aux poissons, ça les attire, c'est bien »."
+        - "A-t-il des idées fausses ? Par exemple : « une roche, ça ne craint rien », ou « donner à manger aux poissons, ça les attire, c'est bien »."
         - "Sait-il pourquoi on limite l'éclairage et le bruit ?"
       esprit:
         - "Est-il plus intéressé par la profondeur et les sensations que par l'observation ?"
         - "Est-il tenté de toucher pour mieux voir ?"
-      comment: "En plongée en milieu naturel, près du fond, on l'observe sans intervenir : palmage, stabilisation, distance avec le fond et le vivant, nuages de sédiment. Au débriefing, lui demander : « Qu'as-tu vu ? Peux-tu me le nommer ? »"
+      comment: "En plongée en milieu naturel, près du fond, on l'observe sans intervenir : palmage, stabilisation, distance avec le fond et le vivant, nuages de sédiment. Au débriefing, lui demander : « Qu'as-tu vu ? Peux-tu me le nommer ? »"
       adapter:
-        - "Il touche le fond ou soulève du sable : on reste à l'étape 1, « Bilan des acquis N1 », et on retravaille ses déplacements équilibrés."
-        - "Il évolue sans contact mais fait fuir la faune : on passe à l'étape 2, « Être discret »."
-        - "Il est discret mais ne sait pas s'approcher : on passe à l'étape 3, « Observer près du vivant »."
-        - "Il observe sans contact mais ne nomme rien : on travaille l'étape 4, « Nommer les animaux et les végétaux courants »."
+        - "Il touche le fond ou soulève du sable : on reste à l'étape 1, « Bilan des acquis N1 », et on retravaille ses déplacements équilibrés."
+        - "Il évolue sans contact mais fait fuir la faune : on passe à l'étape 2, « Être discret »."
+        - "Il est discret mais ne sait pas s'approcher : on passe à l'étape 3, « Observer près du vivant »."
+        - "Il observe sans contact mais ne nomme rien : on travaille l'étape 4, « Nommer les animaux et les végétaux courants »."
     bilan:
       situation: "l'étape 5 : comportement en plongée, en autonomie, entre 10 et 12 m (évaluation)"
       criteres:
@@ -145,17 +145,17 @@ PA12-assistance:
         - "A-t-il déjà donné son octopus ou été assisté, en exercice ou pour de vrai ?"
         - "A-t-il une formation au secourisme (PSC1, RIFAP) ?"
       sait:
-        - "Connaît-il les signes conventionnels « je suis sur la réserve », « je n'ai plus d'air », « essoufflement » ?"
+        - "Connaît-il les signes conventionnels « je suis sur la réserve », « je n'ai plus d'air », « essoufflement » ?"
         - "Sait-il qu'un plongeur en difficulté ne fait pas toujours de signe (ventilation anormale, agitation) ?"
-        - "A-t-il des idées fausses ? Par exemple : « on remonte le plus vite possible », ou « on attend que le GP intervienne »."
+        - "A-t-il des idées fausses ? Par exemple : « on remonte le plus vite possible », ou « on attend que le GP intervienne »."
       esprit:
         - "Se sent-il capable d'aider, ou redoute-t-il d'être responsable d'un équipier ?"
         - "A-t-il tendance à se précipiter, au risque d'être brutal ?"
-      comment: "Au sec, lui décrire quelques situations : un équipier qui fait le signe « je n'ai plus d'air », un autre qui respire très vite sans faire de signe, un autre agité. Lui demander à chaque fois : « Que vois-tu, et que fais-tu ? » Puis, à faible profondeur, le moniteur simule une situation simple et on observe sa réaction."
+      comment: "Au sec, lui décrire quelques situations : un équipier qui fait le signe « je n'ai plus d'air », un autre qui respire très vite sans faire de signe, un autre agité. Lui demander à chaque fois : « Que vois-tu, et que fais-tu ? » Puis, à faible profondeur, le moniteur simule une situation simple et on observe sa réaction."
       adapter:
-        - "Il ne reconnaît pas les situations sans signe : on commence à l'étape 1, « Interpréter la situation »."
-        - "Il identifie les situations mais n'a jamais pris en charge un équipier : on passe à l'étape 2, « Prendre en charge »."
-        - "Il prend en charge calmement : on passe à l'étape 3, « Remontée assistée », puis à l'étape 4, « Sortie de l'eau sécurisée »."
+        - "Il ne reconnaît pas les situations sans signe : on commence à l'étape 1, « Interpréter la situation »."
+        - "Il identifie les situations mais n'a jamais pris en charge un équipier : on passe à l'étape 2, « Prendre en charge »."
+        - "Il prend en charge calmement : on passe à l'étape 3, « Remontée assistée », puis à l'étape 4, « Sortie de l'eau sécurisée »."
         - "Il maîtrise l'assistance à faible profondeur : on passe à l'étape 5, profondeur augmentée progressivement jusqu'à 10-12 m."
     bilan:
       situation: "l'étape 6 : deux situations, deux fois, entre 10 et 12 m (évaluation)"

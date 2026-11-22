@@ -1,14 +1,14 @@
 {{ define "main" }}
-{{- /* Page « Module capacitaire ». Référentiel des quatre écrits : data/capacitaire.yaml (MFT MF1, juillet 2026, p. 18 à 24).
-       Auto-évaluation par rubrique (« Je maîtrise » / « À revoir ») : assets/js/capacitaire.js, clé ptmf1:capa.
-       Styles propres à la page : classes « capa- » (et « home- » pour les badges des écrits). */ -}}
+{{- /* Page « Module capacitaire ». Référentiel des quatre écrits : data/capacitaire.yaml (MFT MF1, juillet 2026, p. 18 à 24).
+       Auto-évaluation par rubrique (« Je maîtrise » / « À revoir ») : assets/js/capacitaire.js, clé ptmf1:capa.
+       Styles propres à la page : classes « capa- » (et « home- » pour les badges des écrits). */ -}}
 {{- $C := site.Data.capacitaire -}}
 <div class="capa">
   <section class="capa-entete">
     <div class="capa-entete__ligne"><span class="home-wip">En construction</span></div>
     <h1 class="capa-titre">Module capacitaire</h1>
-    <p class="capa-accroche">Le passage obligé avant l’examen MF1 : on ne peut pas se présenter aux quatre épreuves sans l’avoir réussi.</p>
   </section>
+  {{ partial "aide-page.html" "capacitaire" }}
 
   <section class="capa-conditions" aria-label="Accès et validation">
     <div class="carte capa-condition"><h2 class="capa-condition__titre">Pour y accéder</h2><ul><li>Licence FFESSM en cours de validité</li><li>17 ans révolus à l’entrée en formation</li><li>GP-N4 FFESSM, GP associé, N4 ANMP ou BPJEPS</li></ul></div>

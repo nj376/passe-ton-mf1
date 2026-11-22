@@ -25,6 +25,11 @@ import re
 import sys
 from pathlib import Path
 
+def insecables(texte):
+    """Espace insécable à l'intérieur des guillemets « », pour qu'ils ne soient jamais séparés du texte."""
+    return texte.replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+
+
 RACINE = Path(__file__).resolve().parent.parent
 CHAMPS = {
     "objectif": "objectif",
@@ -159,7 +164,7 @@ def main():
             print(" -", p)
         sys.exit(1)
     cible = RACINE / "data" / "progressions" / f"progressions_{resultat['niveau']}.json"
-    cible.write_text(json.dumps(resultat, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    cible.write_text(insecables(json.dumps(resultat, ensure_ascii=False, indent=2)) + "\n", encoding="utf-8")
     nb_t = sum(len(c["techniques"]) for c in resultat["competences"])
     nb_e = sum(len(t["etapes"]) for c in resultat["competences"] for t in c["techniques"])
     print(f"{cible.relative_to(RACINE)} : {len(resultat['competences'])} compétences, {nb_t} techniques, {nb_e} étapes")

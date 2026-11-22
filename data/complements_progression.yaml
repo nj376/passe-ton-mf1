@@ -1,6 +1,6 @@
 # Compléments affichés sur la page Progression et dans Explore le MFT, par identifiant de compétence.
 # Ils ne viennent pas des fichiers de progression (dont aucun texte n'est modifié) mais des consignes d'intégration.
-#   encadrement : ligne « Enseigné et validé par »
+#   encadrement : ligne « Enseigné et validé par »
 #   rappel      : encart en tête de la progression
 #   renvoi      : fiche sans progression propre qui renvoie vers une autre (lien dans Explore le MFT)
 RIFAP-C1: { encadrement: "E1 minimum" }

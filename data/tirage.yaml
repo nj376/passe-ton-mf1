@@ -1,8 +1,8 @@
-# Listes utilisées par le tirage des thèmes d’entraînement (page « S’entraîner »).
-# Reprises du prototype « Mémo MFT » (_passation/donnees/memo_mft.html).
+# Listes utilisées par le tirage des thèmes d’entraînement (page « S’entraîner »).
+# Reprises du prototype « Mémo MFT » (_passation/donnees/memo_mft.html).
 
 # ---------- Pédagogie pratique ----------
-# « milieuNaturel: true » : lieu exclu pour les compétences qui ne se travaillent pas en bassin.
+# « milieuNaturel: true » : lieu exclu pour les compétences qui ne se travaillent pas en bassin.
 lieux:
   - { libelle: "Fosse de 6 m", milieuNaturel: false }
   - { libelle: "Piscine de 4 m", milieuNaturel: false }
@@ -20,7 +20,7 @@ publics:
 # Compétences qui ne se prêtent pas à une séance dans l’eau : jamais tirées en pédagogie pratique.
 pasEnPratique: [N3-rifa, N4-theorie, N5-theorie, N4-physique, RS-securite]
 
-# Niveau d’entrée de chaque niveau (champ « Positionner le thème dans le cursus »).
+# Niveau d’entrée de chaque niveau (champ « Positionner le thème dans le cursus »).
 prerequis:
   N1: "Baptême"
   PA12: "N1 et 4 plongées en milieu naturel"
@@ -84,7 +84,7 @@ themesTheo:
       - { libelle: "l’impact du plongeur sur le milieu", motsCles: [impact], min: 0 }
 
 # ---------- Pédagogie organisationnelle ----------
-# coeur : champs de la grille marqués « Cœur du sujet » pour ce thème.
+# coeur : champs de la grille marqués « Cœur du sujet » pour ce thème.
 themesOrga:
   - { id: bateau, nom: "Gestion d’un bateau de plongée", coeur: [sec, par] }
   - { id: accueil, nom: "Accueil des plongeurs", coeur: [acc, pre] }

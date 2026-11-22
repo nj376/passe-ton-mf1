@@ -1,4 +1,4 @@
-{{- /* Carte « Évaluer l'élève » (type "evaluer", avant l'étape 1) ou « Bilan » (type "bilan", après la dernière étape)
+{{- /* Carte « Évaluer l'élève » (type "evaluer", avant l'étape 1) ou « Bilan » (type "bilan", après la dernière étape)
        d'une technique, dans la frise de la page Pistes. Données : data/evaluation/<niveau>.yaml.
        Paramètres : type, ev (entrée de la technique), t (technique), p (compétence de la progression), uid, trait. */ -}}
 {{- $ev := .ev }}{{ $t := .t }}{{ $p := .p }}
@@ -39,9 +39,9 @@
       <div class="etape__securite">{{ $alerte }}<div><p class="etiquette">Sécurité : aucun compromis possible</p><p class="texte-etape">Un seul de ces points manqué suffit pour que la technique reste ECA, même si tout le reste est réussi.</p><ul class="eval__liste texte-etape">{{ range . }}<li>{{ partial "typo.html" . }}</li>{{ end }}</ul></div></div>
       {{- end }}
       <p class="texte-etape">La technique est <strong>Acquise</strong> quand tous les critères{{ if .securite }} et tous les points de sécurité{{ end }} le sont. Elle est <strong>NT</strong> si la situation finale n’a pas encore pu être proposée.</p>
-      {{- with .eca }}<div><p class="etiquette">Si c’est ECA</p><p class="texte-etape">Noter ce qu’il reste à travailler et l’étape à reprendre. Par exemple : « {{ partial "typo.html" . }} ».</p></div>{{ end }}
+      {{- with .eca }}<div><p class="etiquette">Si c’est ECA</p><p class="texte-etape">Noter ce qu’il reste à travailler et l’étape à reprendre. Par exemple : « {{ partial "typo.html" . }} ».</p></div>{{ end }}
       {{- $noms := slice }}{{ range $p.techniques }}{{ $noms = $noms | append (partial "typo.html" .nom) }}{{ end }}
-      <div><p class="etiquette">Vers la compétence</p><p class="texte-etape">« {{ partial "typo.html" $p.competence }} » est acquise quand {{ if gt (len $noms) 1 }}ses {{ len $noms }} techniques le sont ({{ delimit $noms ", " " et " }}){{ else }}cette technique l’est{{ end }}, et que l’élève répond à l’évaluation du MFT (encadré « Point d’arrivée »).</p></div>
+      <div><p class="etiquette">Vers la compétence</p><p class="texte-etape">« {{ partial "typo.html" $p.competence }} » est acquise quand {{ if gt (len $noms) 1 }}ses {{ len $noms }} techniques le sont ({{ delimit $noms ", " " et " }}){{ else }}cette technique l’est{{ end }}, et que l’élève répond à l’évaluation du MFT (encadré « Point d’arrivée »).</p></div>
       {{- end }}{{ end }}
     </div>
   </div>

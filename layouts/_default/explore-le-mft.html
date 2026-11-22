@@ -6,12 +6,12 @@
 <div class="mft-entete">
   <div class="mft-entete__textes">
     <h1 class="titre-page">Explore le MFT</h1>
-    <p class="sous-titre-page">Choisis un niveau, puis un moment de la plongée.</p>
   </div>
   <label class="recherche">
     <input type="search" class="recherche__champ" placeholder="Rechercher une compétence, un chiffre…" aria-label="Rechercher dans le MFT" data-recherche-mft>
   </label>
 </div>
+{{ partial "aide-page.html" "explore-le-mft" }}
 
 
 {{/* Résultats de recherche (remplis par le script) */}}
@@ -21,6 +21,7 @@
 </section>
 
 <div class="mft" data-mft>
+  <h2 class="prog-sous-titre">Niveau</h2>
   {{/* Ligne des niveaux, avec à droite (sous la recherche) l’accès à Flashcard MFT (page /reviser/) et à Mindmaps (page /mindmaps/), hors du menu. */}}
   <div class="mft-niveaux">
     <div class="onglets-niveau" role="tablist" aria-label="Niveau">
@@ -46,7 +47,7 @@
         <span class="courbe__compte"><span class="bureau">{{ len $comps }} compétence{{ if gt (len $comps) 1 }}s{{ end }}</span><span class="mobile">{{ len $comps }} compétence{{ if gt (len $comps) 1 }}s{{ end }}, dans l’ordre de la plongée</span></span>
       </div>
       <div id="aide-courbe-{{ $o.id }}" class="note-aide bureau" role="note" hidden>
-        <p>La courbe représente une plongée, de la mise à l’eau au retour. Chaque moment regroupe les compétences du niveau qui s’y jouent ; « Tout au long » réunit celles qui servent pendant toute la plongée.</p>
+        <p>La courbe représente une plongée, de la mise à l’eau au retour. Chaque moment regroupe les compétences du niveau qui s’y jouent ; « Tout au long » réunit celles qui servent pendant toute la plongée.</p>
       </div>
 
       <svg class="courbe__dessin bureau" viewBox="0 0 1100 200" width="100%" role="img" aria-label="Profil de plongée : surface, descente, fond, remontée avec palier, retour en surface">
@@ -75,6 +76,11 @@
       {{- end }}
     </div>
 
+      {{- /* Sous-titre sur ordinateur seulement : sur téléphone, les compétences sont dans la carte de la courbe. */}}
+      {{- if $comps }}
+      <h2 class="prog-sous-titre bureau">Compétences</h2>
+      {{- end }}
+
       {{/* Sur téléphone, les moments deviennent une liste dépliable à l’intérieur de la carte */}}
       {{- if $comps }}
       <div class="phases">
@@ -99,10 +105,6 @@
         <p><strong>{{ .nom }}</strong> · {{ .profondeur }} · dès {{ .age }}</p>
         <p>{{ .cadre }}</p>
         <p>{{ .limites }}</p>
-        {{- $nid := .id }}
-        {{- range site.Data.progressions }}{{ if and (eq .niveau $nid) (not (in (site.Params.masquesPistes | default slice) .niveau)) }}{{ with index .competences 0 }}
-        <p><a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower .id }}">Voir la progression proposée →</a></p>
-        {{- end }}{{ end }}{{ end }}
       </div>
       {{- end }}
       {{- end }}

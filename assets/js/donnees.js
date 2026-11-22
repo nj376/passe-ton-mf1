@@ -1,7 +1,7 @@
 /* Exporter / importer mes données : sauvegarde dans un fichier et continuité entre appareils,
-   sans compte ni serveur. Utilisé sur la page Suivi (« Mes données »).
+   sans compte ni serveur. Utilisé sur la page Suivi (« Mes données »).
    Attend un bloc [data-donnees] (boutons [data-exporter], [data-importer], message [data-donnees-message])
-   et la fenêtre de confirmation « fenetre-import » (partials/fenetres/import.html). */
+   et la fenêtre de confirmation « fenetre-import » (partials/fenetres/import.html). */
 (function () {
   "use strict";
   var zone = document.querySelector("[data-donnees]");
@@ -50,7 +50,7 @@
     var nCanvas = canvas && Array.isArray(canvas.seances) ? canvas.seances.length : 0;
     if (nCanvas) p.push(nCanvas + " séance" + (nCanvas > 1 ? "s" : "") + " du Canvas");
     var cours = lireJson(donnees["ptmf1-construire"], null);
-    if (cours && typeof cours === "object") p.push("une préparation de cours" + (cours.titre ? " (« " + cours.titre + " »)" : ""));
+    if (cours && typeof cours === "object") p.push("une préparation de cours" + (cours.titre ? " (« " + cours.titre + " »)" : ""));
     var examen = donnees["ptmf1:examen"];
     if (examen && /^\d{4}-\d{2}-\d{2}$/.test(examen)) p.push("ta date d’examen (" + examen.split("-").reverse().join("/") + ")");
     return p;
@@ -69,7 +69,7 @@
     document.body.appendChild(lien);
     lien.click();
     setTimeout(function () { URL.revokeObjectURL(lien.href); lien.remove(); }, 1000);
-    dire("Fichier « " + lien.download + " » téléchargé. Garde-le, ou importe-le sur ton autre appareil.");
+    dire("Fichier « " + lien.download + " » téléchargé. Garde-le, ou importe-le sur ton autre appareil.");
   });
 
   var aImporter = null;

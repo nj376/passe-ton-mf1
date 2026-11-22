@@ -1,4 +1,4 @@
-# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N3.
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N3.
 # Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
 # (tel qu'il figure dans data/progressions/progressions_N3.json). Les fichiers de progression ne sont pas modifiés.
 #
@@ -9,7 +9,7 @@
 # bilan.situation : la situation finale sur laquelle porte le bilan
 # bilan.criteres : critères de la situation finale (liste)
 # bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
-# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
 # Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
 
 
@@ -23,22 +23,22 @@ PA40-planifier:
         - "Lui est-il arrivé de sortir du cadre fixé (profondeur, durée, paliers) ? Qu'en a-t-il retenu ?"
       sait:
         - "Sait-il restituer les consignes d'un briefing : durée, profondeur maximale, pression de fin de plongée, paliers, durée totale de remontée ?"
-        - "A-t-il des idées fausses ? Par exemple : « en autonomie, c'est la palanquée qui décide », ou « si l'ordinateur ne demande pas de palier, on peut prolonger »."
+        - "A-t-il des idées fausses ? Par exemple : « en autonomie, c'est la palanquée qui décide », ou « si l'ordinateur ne demande pas de palier, on peut prolonger »."
         - "Sait-il que le DP peut resserrer le cadre, et pourquoi ?"
       esprit:
         - "Écoute-t-il le briefing, ou compte-t-il sur ses équipiers pour retenir les consignes ?"
         - "Voit-il les consignes comme une contrainte à contourner, ou comme le cadre de son autonomie ?"
-      comment: "Après un briefing réel du DP, lui demander : « Quelles sont les limites de ta palanquée, et d'où viennent-elles ? » On écoute sans corriger. On note ce qui manque et ce qu'il ajoute de lui-même. C'est aussi l'étape 1, « Bilan des acquis PA20 »."
+      comment: "Après un briefing réel du DP, lui demander : « Quelles sont les limites de ta palanquée, et d'où viennent-elles ? » On écoute sans corriger. On note ce qui manque et ce qu'il ajoute de lui-même. C'est aussi l'étape 1, « Bilan des acquis PA20 »."
       adapter:
         - "Sa restitution est incomplète : on reprend la planification PA20 avant l'étape 2."
-        - "Il restitue tout mais ne traduit pas les consignes en limites (pression de demi-tour, de remontée) : on travaille l'étape 2, « Consignes de la zone 20-40 m »."
-        - "Il traduit bien les consignes mais ne remarque pas ce qui manque : on passe à l'étape 3, « Consignes incomplètes »."
-        - "Il est déjà à l'aise : on passe à l'étape 4, « Contrainte forte », puis à l'étape 5."
+        - "Il restitue tout mais ne traduit pas les consignes en limites (pression de demi-tour, de remontée) : on travaille l'étape 2, « Consignes de la zone 20-40 m »."
+        - "Il traduit bien les consignes mais ne remarque pas ce qui manque : on passe à l'étape 3, « Consignes incomplètes »."
+        - "Il est déjà à l'aise : on passe à l'étape 4, « Contrainte forte », puis à l'étape 5."
     bilan:
       situation: "l'étape 5 : présenter et argumenter sa planification, sur plusieurs plongées aux consignes différentes (évaluation)"
       criteres:
         - "Il respecte strictement les consignes du DP."
-        - "Il présente sa planification et répond aux « pourquoi » du moniteur."
+        - "Il présente sa planification et répond aux « pourquoi » du moniteur."
         - "Chaque choix de la planification découle d'une consigne du DP, et il sait le dire."
       securite: []
       eca: "ne remarque pas qu'il manque les consignes de retour en surface → reprendre l'étape 3"
@@ -51,17 +51,17 @@ PA40-planifier:
         - "A-t-il plongé des sites variés (tombants, plateaux, épaves) ou toujours les mêmes ?"
       sait:
         - "Sait-il lire un croquis de site et y repérer le relief, les zones de profondeur et le courant habituel ?"
-        - "A-t-il des idées fausses ? Par exemple : « le compas suffit partout », ou « le parcours, on le décide au fond »."
+        - "A-t-il des idées fausses ? Par exemple : « le compas suffit partout », ou « le parcours, on le décide au fond »."
         - "Sait-il dire quand s'orienter avec le milieu et quand avec un instrument ?"
       esprit:
         - "Prépare-t-il son parcours avant la plongée, ou improvise-t-il au fond ?"
         - "Est-il trop sûr de son sens de l'orientation, ou au contraire dépendant de ses équipiers ?"
-      comment: "À terre, devant le croquis d'un site et les informations du DP, lui demander : « Montre-moi par où tu passerais et comment tu retrouverais le bateau. » On écoute ses raisons sans corriger. L'étape 1, « Bilan des acquis PA20 », complète l'observation dans l'eau."
+      comment: "À terre, devant le croquis d'un site et les informations du DP, lui demander : « Montre-moi par où tu passerais et comment tu retrouverais le bateau. » On écoute ses raisons sans corriger. L'étape 1, « Bilan des acquis PA20 », complète l'observation dans l'eau."
       adapter:
         - "Le bilan PA20 montre des lacunes au compas : on les reprend avant l'étape 2."
-        - "Il ne tire rien du croquis : on commence à l'étape 2, « Lire le site »."
-        - "Il lit le site mais choisit ses moyens d'orientation au hasard : on passe à l'étape 3, « Choisir ses moyens d'orientation »."
-        - "Il planifie déjà bien sur un site connu : on passe à l'étape 4, « Du plan au terrain », puis à l'étape 5, « Site inconnu »."
+        - "Il ne tire rien du croquis : on commence à l'étape 2, « Lire le site »."
+        - "Il lit le site mais choisit ses moyens d'orientation au hasard : on passe à l'étape 3, « Choisir ses moyens d'orientation »."
+        - "Il planifie déjà bien sur un site connu : on passe à l'étape 4, « Du plan au terrain », puis à l'étape 5, « Site inconnu »."
     bilan:
       situation: "l'étape 6 : présenter et argumenter, sur plusieurs plongées dans la zone 20-40 m et des sites variés (évaluation)"
       criteres:
@@ -82,17 +82,17 @@ PA40-planifier:
         - "A-t-il déjà terminé une plongée avec moins d'air que prévu ? Comment s'en est-il rendu compte ?"
       sait:
         - "Sait-il calculer une consommation et une autonomie, en l/min et en bar/min ?"
-        - "A-t-il des idées fausses ? Par exemple : « on descend au plus profond à la fin, pour voir », ou « l'ordinateur s'occupe des paliers, inutile de les prévoir »."
+        - "A-t-il des idées fausses ? Par exemple : « on descend au plus profond à la fin, pour voir », ou « l'ordinateur s'occupe des paliers, inutile de les prévoir »."
         - "Sait-il que des ordinateurs différents peuvent donner des paliers différents ?"
       esprit:
         - "La planification lui semble-t-elle utile, ou une formalité scolaire ?"
         - "Est-il à l'aise avec les calculs, ou les redoute-t-il ?"
-      comment: "À terre, sur un cas concret de plongée à 20 m, lui demander : « Propose-moi un profil, et dis-moi combien d'air il te faut. » Puis : « Et si ton équipier consomme plus que prévu ? » On écoute sans corriger. C'est l'étape 1, « Bilan des acquis PA20 », prolongée par une question sur l'imprévu."
+      comment: "À terre, sur un cas concret de plongée à 20 m, lui demander : « Propose-moi un profil, et dis-moi combien d'air il te faut. » Puis : « Et si ton équipier consomme plus que prévu ? » On écoute sans corriger. C'est l'étape 1, « Bilan des acquis PA20 », prolongée par une question sur l'imprévu."
       adapter:
         - "Son calcul de base est faux : on le reprend avec lui avant l'étape 2."
-        - "Il calcule juste mais son profil n'est pas adapté à la zone : on travaille l'étape 2, « Profil dans la zone 20-40 m », puis l'étape 3."
-        - "Profil et calculs sont justes : on passe à l'étape 4, « Plusieurs moyens de désaturation »."
-        - "Il n'a rien prévu pour l'imprévu : on insiste sur l'étape 5, « Retour en surface ordinaire et avec incident »."
+        - "Il calcule juste mais son profil n'est pas adapté à la zone : on travaille l'étape 2, « Profil dans la zone 20-40 m », puis l'étape 3."
+        - "Profil et calculs sont justes : on passe à l'étape 4, « Plusieurs moyens de désaturation »."
+        - "Il n'a rien prévu pour l'imprévu : on insiste sur l'étape 5, « Retour en surface ordinaire et avec incident »."
     bilan:
       situation: "l'étape 6 : présenter et argumenter la planification complète d'une plongée entre 20 et 40 m (évaluation)"
       criteres:
@@ -112,16 +112,16 @@ PA40-autonomie:
         - "A-t-il déjà plongé avec une visibilité réduite ou du courant ?"
       sait:
         - "Sait-il s'orienter avec le relief, la lumière, le courant et les points remarquables ?"
-        - "A-t-il des idées fausses ? Par exemple : « la narcose, ça ne me fait rien », ou « avec un compas, on ne peut pas se perdre »."
+        - "A-t-il des idées fausses ? Par exemple : « la narcose, ça ne me fait rien », ou « avec un compas, on ne peut pas se perdre »."
         - "Sait-il que la narcose peut altérer son jugement ?"
       esprit:
         - "Est-il confiant, voire trop confiant, dans son sens de l'orientation ?"
         - "Accepte-t-il de dire qu'il ne sait plus où il est ?"
-      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : aller-retour au compas et court trajet en zone peu profonde. Au retour, lui demander : « Comment savais-tu où était le bateau ? » On écoute ce qu'il a utilisé : le compas seul, ou aussi le milieu."
+      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : aller-retour au compas et court trajet en zone peu profonde. Au retour, lui demander : « Comment savais-tu où était le bateau ? » On écoute ce qu'il a utilisé : le compas seul, ou aussi le milieu."
       adapter:
         - "Le bilan échoue : on reprend la progression PA20."
-        - "Il ne s'appuie que sur le compas : on travaille l'étape 2, « S'orienter avec le milieu »."
-        - "Il combine déjà milieu et instrument en zone peu profonde : on passe à l'étape 3, puis à l'étape 4, « Vers 40 m »."
+        - "Il ne s'appuie que sur le compas : on travaille l'étape 2, « S'orienter avec le milieu »."
+        - "Il combine déjà milieu et instrument en zone peu profonde : on passe à l'étape 3, puis à l'étape 4, « Vers 40 m »."
         - "Il s'est déjà senti perdu en profondeur : à l'étape 4, on garde un plan d'orientation simple et on augmente la profondeur très progressivement."
     bilan:
       situation: "l'étape 6 : proche de 40 m, au moins deux situations différentes (évaluation)"
@@ -143,16 +143,16 @@ PA40-autonomie:
         - "A-t-il déjà vécu un imprévu en autonomie : froid, essoufflement, courant, panne ?"
       sait:
         - "Connaît-il la narcose, le froid, l'essoufflement et l'accident de désaturation, et leur lien avec la profondeur ?"
-        - "A-t-il des idées fausses ? Par exemple : « chacun gère son air », ou « le parachute, c'est seulement quand on dérive »."
+        - "A-t-il des idées fausses ? Par exemple : « chacun gère son air », ou « le parachute, c'est seulement quand on dérive »."
         - "Sait-il ce qu'est un profil inversé ou un yoyo, et pourquoi on les évite ?"
       esprit:
         - "Surveille-t-il ses équipiers, ou plonge-t-il pour lui-même ?"
         - "Ose-t-il proposer d'écourter une plongée, ou suit-il le groupe ?"
-      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : plongée en autonomie à 20 m, encadrant dans la palanquée. On regarde sans intervenir la fréquence des échanges, la surveillance et le groupement. Au débriefing, lui demander : « Qu'aurais-tu fait si ton équipier avait eu froid ? »"
+      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : plongée en autonomie à 20 m, encadrant dans la palanquée. On regarde sans intervenir la fréquence des échanges, la surveillance et le groupement. Au débriefing, lui demander : « Qu'aurais-tu fait si ton équipier avait eu froid ? »"
       adapter:
         - "Palanquée dispersée, peu d'échanges : on reste en zone peu profonde et on consolide avant l'étape 2."
-        - "La cohésion est bonne à 20 m : on passe à l'étape 2, « Communication et surveillance vers 40 m »."
-        - "Il hésite à décider face à un imprévu : on insiste sur l'étape 3, « Imprévu humain », et sur l'étape 4."
+        - "La cohésion est bonne à 20 m : on passe à l'étape 2, « Communication et surveillance vers 40 m »."
+        - "Il hésite à décider face à un imprévu : on insiste sur l'étape 3, « Imprévu humain », et sur l'étape 4."
         - "Il fait des yoyos ou oublie l'arrêt à 3 m : on travaille l'étape 5 dès les premières plongées."
     bilan:
       situation: "l'étape 6 : proche de 40 m, au moins deux situations différentes (évaluation)"
@@ -173,17 +173,17 @@ PA40-autonomie:
         - "A-t-il plongé avec des équipiers dont l'ordinateur donnait d'autres paliers ? Qu'a fait la palanquée ?"
       sait:
         - "Sait-il lire durée, profondeur, durée sans palier, paliers, durée de remontée et alarmes ?"
-        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur me protège à coup sûr », ou « chacun suit son ordinateur, même si on se sépare »."
+        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur me protège à coup sûr », ou « chacun suit son ordinateur, même si on se sépare »."
         - "Connaît-il, même sommairement, le principe d'un modèle de désaturation ?"
       esprit:
         - "Fait-il aveuglément confiance à son ordinateur, ou s'en méfie-t-il ?"
         - "Les paliers l'inquiètent-ils, ou les prend-il à la légère ?"
-      comment: "Au sec, sur son ordinateur, lui demander : « Explique-moi ce que tu lis, et ce que tu ferais si cet écran s'affichait. » C'est l'étape 1, « Bilan des acquis PA20 ». On ajoute une ou deux captures d'écran d'alarmes pour voir comment il réagit."
+      comment: "Au sec, sur son ordinateur, lui demander : « Explique-moi ce que tu lis, et ce que tu ferais si cet écran s'affichait. » C'est l'étape 1, « Bilan des acquis PA20 ». On ajoute une ou deux captures d'écran d'alarmes pour voir comment il réagit."
       adapter:
-        - "Il ne lit pas tous les paramètres : on les reprend, puis on travaille l'étape 2, « Maîtriser son ordinateur »."
-        - "Il lit et explique son ordinateur : on passe à l'étape 3, « Paliers obligatoires dans la zone 20-40 m »."
-        - "Il ne sait pas quoi faire avec des ordinateurs différents : on travaille l'étape 4, « Plusieurs moyens de désaturation »."
-        - "Il hésite devant les alarmes : on revient régulièrement sur l'étape 5, « Cas concrets et captures d'écran »."
+        - "Il ne lit pas tous les paramètres : on les reprend, puis on travaille l'étape 2, « Maîtriser son ordinateur »."
+        - "Il lit et explique son ordinateur : on passe à l'étape 3, « Paliers obligatoires dans la zone 20-40 m »."
+        - "Il ne sait pas quoi faire avec des ordinateurs différents : on travaille l'étape 4, « Plusieurs moyens de désaturation »."
+        - "Il hésite devant les alarmes : on revient régulièrement sur l'étape 5, « Cas concrets et captures d'écran »."
     bilan:
       situation: "l'étape 6 : proche de 40 m, au moins deux situations différentes, avec cas concrets et captures d'écran (évaluation)"
       criteres:
@@ -205,17 +205,17 @@ PA40-assistance:
         - "A-t-il une activité physique régulière ? A-t-il déjà nagé longtemps capelé en surface ?"
       sait:
         - "Connaît-il les manifestations d'une difficulté sans signe : perte de vigilance, ventilation anormale, agitation ?"
-        - "A-t-il des idées fausses ? Par exemple : « on remonte toujours le plus vite possible, jusqu'en surface », ou « à la palme, c'est plus sûr qu'avec les gilets »."
+        - "A-t-il des idées fausses ? Par exemple : « on remonte toujours le plus vite possible, jusqu'en surface », ou « à la palme, c'est plus sûr qu'avec les gilets »."
         - "Sait-il pourquoi on marque un arrêt entre 5 et 3 m ?"
       esprit:
         - "Se sent-il capable de prendre en charge un équipier en profondeur ?"
         - "Agit-il avec précipitation, ou tarde-t-il à intervenir ?"
-      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : assistance intégrale depuis 20 m, le moniteur dans le rôle de l'assisté. On regarde sans corriger l'interprétation, la prise en charge, la vitesse et l'arrêt. Au débriefing, lui demander : « Qu'est-ce qui changerait à 40 m ? »"
+      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : assistance intégrale depuis 20 m, le moniteur dans le rôle de l'assisté. On regarde sans corriger l'interprétation, la prise en charge, la vitesse et l'arrêt. Au débriefing, lui demander : « Qu'est-ce qui changerait à 40 m ? »"
       adapter:
         - "L'assistance depuis 20 m n'est pas sûre : on reprend la progression PA20."
-        - "Il assiste bien mais réagit tard aux signes discrets : on travaille l'étape 2, « Manifestations sans signe en profondeur »."
-        - "Il est à l'aise depuis 20 m : on passe à l'étape 3, « Assistance depuis 30 m », puis à l'étape 4."
-        - "Sa condition physique est juste : on commence tôt l'étape 5, « Vers 300 m de nage capelée », en parallèle."
+        - "Il assiste bien mais réagit tard aux signes discrets : on travaille l'étape 2, « Manifestations sans signe en profondeur »."
+        - "Il est à l'aise depuis 20 m : on passe à l'étape 3, « Assistance depuis 30 m », puis à l'étape 4."
+        - "Sa condition physique est juste : on commence tôt l'étape 5, « Vers 300 m de nage capelée », en parallèle."
     bilan:
       situation: "l'étape 6 : à 40 m et 300 m capelé (évaluation)"
       criteres:
@@ -239,16 +239,16 @@ PE60-profondeur:
         - "A-t-il déjà ressenti la narcose, le froid ou une consommation plus forte en profondeur ?"
       sait:
         - "Sait-il pourquoi il faut injecter plus souvent en descendant, et anticiper ses purges en remontant ?"
-        - "A-t-il des idées fausses ? Par exemple : « en profondeur, on palme pour garder son niveau », ou « plus de lest, c'est plus facile pour descendre »."
+        - "A-t-il des idées fausses ? Par exemple : « en profondeur, on palme pour garder son niveau », ou « plus de lest, c'est plus facile pour descendre »."
         - "Connaît-il les risques qui augmentent avec la profondeur : consommation, essoufflement, narcose, froid, désaturation ?"
       esprit:
         - "Est-il impatient d'aller plus profond, ou appréhende-t-il les 40 m ?"
         - "Reconnaît-il ses difficultés de stabilisation, ou les attribue-t-il au matériel ?"
-      comment: "L'étape 1, « Bilan des acquis PE40 », sert d'observation : stabilisation à la descente, au fond et au palier, jusqu'à 20 m puis 30 m. On regarde sans corriger s'il anticipe ses injections et ses purges, et s'il palme pour se rattraper. Au retour, lui demander : « À quel moment as-tu senti que tu n'étais plus équilibré ? »"
+      comment: "L'étape 1, « Bilan des acquis PE40 », sert d'observation : stabilisation à la descente, au fond et au palier, jusqu'à 20 m puis 30 m. On regarde sans corriger s'il anticipe ses injections et ses purges, et s'il palme pour se rattraper. Au retour, lui demander : « À quel moment as-tu senti que tu n'étais plus équilibré ? »"
       adapter:
         - "Sa stabilisation n'est pas encore efficace à 20 ou 30 m : on la consolide avant d'augmenter la profondeur."
-        - "Il est stable à 30 m : on passe à l'étape 2, « Descente équilibrée vers 40 m »."
-        - "Il descend bien mais s'emballe à la remontée : on insiste sur l'étape 4, « Remontée et palier depuis la profondeur »."
+        - "Il est stable à 30 m : on passe à l'étape 2, « Descente équilibrée vers 40 m »."
+        - "Il descend bien mais s'emballe à la remontée : on insiste sur l'étape 4, « Remontée et palier depuis la profondeur »."
         - "Il appréhende la profondeur : à l'étape 2, on augmente la profondeur encore plus progressivement."
     bilan:
       situation: "l'étape 5 : jusqu'à 40 m, puis vers 60 m (évaluation)"
@@ -269,17 +269,17 @@ PE60-profondeur:
         - "A-t-il déjà dû aider un équipier, ou être aidé, lors d'une plongée réelle ?"
       sait:
         - "Connaît-il les signes à utiliser pour la narcose, la consommation et la désaturation ?"
-        - "A-t-il des idées fausses ? Par exemple : « les paliers, c'est le GP qui s'en occupe », ou « signaler la narcose, c'est avouer une faiblesse »."
+        - "A-t-il des idées fausses ? Par exemple : « les paliers, c'est le GP qui s'en occupe », ou « signaler la narcose, c'est avouer une faiblesse »."
         - "Sait-il quels paramètres communiquer au GP et restituer au DP après la plongée ?"
       esprit:
         - "Signale-t-il spontanément son ressenti, ou attend-il qu'on le lui demande ?"
         - "Minimise-t-il ses sensations (narcose, froid) pour ne pas écourter la plongée ?"
-      comment: "L'étape 1, « Bilan des acquis PE40 », sert d'observation : plongée jusqu'à 30 m, techniques enchaînées. On regarde sa ventilation, la fréquence de ses échanges et sa réaction au relai, sans intervenir. Au débriefing, lui demander de restituer ses paramètres et son ressenti."
+      comment: "L'étape 1, « Bilan des acquis PE40 », sert d'observation : plongée jusqu'à 30 m, techniques enchaînées. On regarde sa ventilation, la fréquence de ses échanges et sa réaction au relai, sans intervenir. Au débriefing, lui demander de restituer ses paramètres et son ressenti."
       adapter:
         - "Une technique du PE40 n'est pas maîtrisée : on la reprend avant d'aller plus profond."
-        - "Sa ventilation s'accélère dès qu'il fait un effort : on travaille l'étape 2, « Ventilation et déplacement en profondeur »."
-        - "Il ne communique que si on l'interroge : on insiste sur l'étape 3, « Communication spécifique »."
-        - "Tout est maîtrisé à 30 m : on passe à l'étape 4, « Relai en profondeur », puis à l'étape 5."
+        - "Sa ventilation s'accélère dès qu'il fait un effort : on travaille l'étape 2, « Ventilation et déplacement en profondeur »."
+        - "Il ne communique que si on l'interroge : on insiste sur l'étape 3, « Communication spécifique »."
+        - "Tout est maîtrisé à 30 m : on passe à l'étape 4, « Relai en profondeur », puis à l'étape 5."
     bilan:
       situation: "l'étape 6 : jusqu'à 40 m, puis vers 60 m (évaluation)"
       criteres:
@@ -302,17 +302,17 @@ PA60-organiser:
         - "Pratique-t-il une activité nautique (voile, navigation) qui l'a habitué à lire la météo ?"
       sait:
         - "Sait-il lire un bulletin météo marine : vent, houle, courant, évolution dans la journée ?"
-        - "A-t-il des idées fausses ? Par exemple : « s'il fait beau, on peut plonger partout », ou « on peut mouiller où on veut »."
+        - "A-t-il des idées fausses ? Par exemple : « s'il fait beau, on peut plonger partout », ou « on peut mouiller où on veut »."
         - "Sait-il où trouver les zones protégées ou interdites et les restrictions de mouillage ?"
       esprit:
         - "Voit-il cette compétence comme utile, ou comme l'affaire du DP ?"
         - "Ose-t-il renoncer à un site, ou cherche-t-il à plonger coûte que coûte ?"
-      comment: "À terre, avec le bulletin météo du jour et deux ou trois sites qu'il connaît, lui demander : « Où plongerais-tu aujourd'hui, et pourquoi ? » On écoute ses raisons sans corriger : météo, site, réglementation, palanquée."
+      comment: "À terre, avec le bulletin météo du jour et deux ou trois sites qu'il connaît, lui demander : « Où plongerais-tu aujourd'hui, et pourquoi ? » On écoute ses raisons sans corriger : météo, site, réglementation, palanquée."
       adapter:
-        - "Il ne sait pas lire un bulletin : on commence à l'étape 1, « Lire la météo »."
-        - "Il lit la météo mais ne la relie pas au site : on passe à l'étape 2, « Analyser un site connu »."
-        - "Il oublie la réglementation : on travaille l'étape 3, « Conditions réglementaires du site »."
-        - "Il choisit et justifie déjà bien : on passe à l'étape 4, puis à l'étape 5, « Site inconnu »."
+        - "Il ne sait pas lire un bulletin : on commence à l'étape 1, « Lire la météo »."
+        - "Il lit la météo mais ne la relie pas au site : on passe à l'étape 2, « Analyser un site connu »."
+        - "Il oublie la réglementation : on travaille l'étape 3, « Conditions réglementaires du site »."
+        - "Il choisit et justifie déjà bien : on passe à l'étape 4, puis à l'étape 5, « Site inconnu »."
     bilan:
       situation: "l'étape 6 : dans 2 ou 3 situations, au sein d'une organisation complète de plongée (évaluation)"
       criteres:
@@ -330,17 +330,17 @@ PA60-organiser:
         - "A-t-il déjà vu une organisation défaillante : bateau sans surveillance, palanquées qui attendent ?"
       sait:
         - "Sait-il pourquoi quelqu'un reste en surface pendant la plongée ?"
-        - "A-t-il des idées fausses ? Par exemple : « si la météo était bonne hier, inutile de revérifier », ou « l'organisation, c'est l'affaire du DP »."
+        - "A-t-il des idées fausses ? Par exemple : « si la météo était bonne hier, inutile de revérifier », ou « l'organisation, c'est l'affaire du DP »."
         - "Sait-il qu'une embarcation doit être conforme à la réglementation ?"
       esprit:
         - "Regarde-t-il comment la sortie est organisée, ou se contente-t-il de plonger ?"
         - "Se sent-il légitime pour proposer une organisation à d'autres plongeurs ?"
-      comment: "Au retour d'une sortie, lui demander : « Raconte-moi comment la sortie était organisée, et pourquoi. » On écoute ce qu'il a remarqué : surveillance en surface, ordre des palanquées, horaires, météo. C'est le point de départ de l'étape 1, « Observer une organisation »."
+      comment: "Au retour d'une sortie, lui demander : « Raconte-moi comment la sortie était organisée, et pourquoi. » On écoute ce qu'il a remarqué : surveillance en surface, ordre des palanquées, horaires, météo. C'est le point de départ de l'étape 1, « Observer une organisation »."
       adapter:
-        - "Il n'a rien remarqué : on commence à l'étape 1, « Observer une organisation »."
-        - "Il décrit bien l'organisation mais ne revérifie pas la météo : on passe à l'étape 2, « Météo le jour même »."
-        - "Il ne sait pas ce qui rend une embarcation conforme : on travaille l'étape 3, « Vérifier l'embarcation »."
-        - "Il a déjà aidé un DP : on passe à l'étape 4, « Choisir les modalités de plongée »."
+        - "Il n'a rien remarqué : on commence à l'étape 1, « Observer une organisation »."
+        - "Il décrit bien l'organisation mais ne revérifie pas la météo : on passe à l'étape 2, « Météo le jour même »."
+        - "Il ne sait pas ce qui rend une embarcation conforme : on travaille l'étape 3, « Vérifier l'embarcation »."
+        - "Il a déjà aidé un DP : on passe à l'étape 4, « Choisir les modalités de plongée »."
     bilan:
       situation: "l'étape 5 : dans 2 ou 3 situations, organisation complète de plongée (évaluation)"
       criteres:
@@ -359,16 +359,16 @@ PA60-organiser:
         - "A-t-il déjà vu une plongée arrêtée parce que le vent se levait ?"
       sait:
         - "Sait-il ce que doit contenir le matériel de secours, et comment donner l'alerte ?"
-        - "A-t-il des idées fausses ? Par exemple : « la fiche de sécurité se remplit à la fin, de mémoire », ou « une fois sur le site, on plonge quoi qu'il arrive »."
+        - "A-t-il des idées fausses ? Par exemple : « la fiche de sécurité se remplit à la fin, de mémoire », ou « une fois sur le site, on plonge quoi qu'il arrive »."
         - "Sait-il ce que signifie le pavillon alpha ?"
       esprit:
         - "Voit-il la sécurité comme une routine administrative, ou comme une responsabilité ?"
         - "Est-il prêt à arrêter une plongée qui ne lui semble plus sûre ?"
-      comment: "Avant une sortie, sur le bateau ou au local, lui demander : « Montre-moi ce qui permet de faire face à un accident ici. » On l'observe chercher le matériel de secours et les moyens d'alerte, et on écoute ce qu'il dit de la fiche de sécurité et du pavillon."
+      comment: "Avant une sortie, sur le bateau ou au local, lui demander : « Montre-moi ce qui permet de faire face à un accident ici. » On l'observe chercher le matériel de secours et les moyens d'alerte, et on écoute ce qu'il dit de la fiche de sécurité et du pavillon."
       adapter:
-        - "Il ne trouve pas le matériel ou ne sait pas alerter : on commence à l'étape 1, « Matériel de secours et communication »."
-        - "Il connaît le matériel mais n'a jamais tenu de fiche : on passe à l'étape 2, « Rédiger la fiche de sécurité », puis à l'étape 3."
-        - "Il maîtrise ces outils mais hésite à renoncer : on insiste sur l'étape 4, « Adapter aux conditions »."
+        - "Il ne trouve pas le matériel ou ne sait pas alerter : on commence à l'étape 1, « Matériel de secours et communication »."
+        - "Il connaît le matériel mais n'a jamais tenu de fiche : on passe à l'étape 2, « Rédiger la fiche de sécurité », puis à l'étape 3."
+        - "Il maîtrise ces outils mais hésite à renoncer : on insiste sur l'étape 4, « Adapter aux conditions »."
     bilan:
       situation: "l'étape 5 : dans 2 ou 3 situations, organisation complète de plongée (évaluation)"
       criteres:
@@ -389,17 +389,17 @@ PA60-autonomie:
         - "A-t-il plongé des sites où l'on part profond pour revenir en remontant le long du relief ?"
       sait:
         - "Sait-il pourquoi le plan d'orientation doit rester simple en zone profonde ?"
-        - "A-t-il des idées fausses ? Par exemple : « je connais le site, je ne peux pas me perdre », ou « la narcose, je la gère »."
+        - "A-t-il des idées fausses ? Par exemple : « je connais le site, je ne peux pas me perdre », ou « la narcose, je la gère »."
         - "Sait-il ce que fait la palanquée au moindre signe de narcose ?"
       esprit:
         - "Est-il prudent, ou attiré par la profondeur au point d'en oublier son parcours ?"
         - "Accepte-t-il de simplifier son parcours, ou veut-il tout voir ?"
-      comment: "L'étape 1, « Bilan des acquis PA40 », sert d'observation : parcours varié vers 40 m, milieu et instrument. Avant la plongée, lui demander son plan d'orientation ; au retour, lui faire comparer le prévu et le réalisé. On écoute s'il a tenu compte de la narcose."
+      comment: "L'étape 1, « Bilan des acquis PA40 », sert d'observation : parcours varié vers 40 m, milieu et instrument. Avant la plongée, lui demander son plan d'orientation ; au retour, lui faire comparer le prévu et le réalisé. On écoute s'il a tenu compte de la narcose."
       adapter:
         - "Le bilan échoue : on reprend la progression PA40."
-        - "Son plan est trop complexe pour la profondeur : on travaille l'étape 2, « S'orienter en zone profonde »."
-        - "Il gère mal son retour en remontant : on passe à l'étape 3, « Profil avec grande variation de profondeur »."
-        - "Il est à l'aise vers 40 m : on passe à l'étape 4, « Entre 40 et 60 m, encadré »."
+        - "Son plan est trop complexe pour la profondeur : on travaille l'étape 2, « S'orienter en zone profonde »."
+        - "Il gère mal son retour en remontant : on passe à l'étape 3, « Profil avec grande variation de profondeur »."
+        - "Il est à l'aise vers 40 m : on passe à l'étape 4, « Entre 40 et 60 m, encadré »."
     bilan:
       situation: "l'étape 5 : au moins deux situations différentes (évaluation)"
       criteres:
@@ -419,17 +419,17 @@ PA60-autonomie:
         - "A-t-il déjà dû écourter une plongée profonde ? Qui a pris la décision ?"
       sait:
         - "Sait-il calculer sa consommation en profondeur et au palier, en l/min et en bar/min ?"
-        - "A-t-il des idées fausses ? Par exemple : « la réserve habituelle suffit, même avec des paliers longs », ou « je suis moins sensible que les autres à la narcose »."
+        - "A-t-il des idées fausses ? Par exemple : « la réserve habituelle suffit, même avec des paliers longs », ou « je suis moins sensible que les autres à la narcose »."
         - "Connaît-il les premiers signes de narcose, de froid et d'essoufflement ?"
       esprit:
         - "Est-il prêt à décider avec ses équipiers, ou attend-il qu'un autre décide ?"
         - "Sa confiance en lui l'empêche-t-elle de signaler ses propres signes ?"
-      comment: "L'étape 1, « Bilan des acquis PA40 », sert d'observation : plongée en autonomie vers 40 m. On regarde sans intervenir la fréquence des contrôles d'air et la surveillance mutuelle. Au débriefing, lui demander : « À quelle pression aviez-vous prévu de remonter, compte tenu des paliers ? »"
+      comment: "L'étape 1, « Bilan des acquis PA40 », sert d'observation : plongée en autonomie vers 40 m. On regarde sans intervenir la fréquence des contrôles d'air et la surveillance mutuelle. Au débriefing, lui demander : « À quelle pression aviez-vous prévu de remonter, compte tenu des paliers ? »"
       adapter:
         - "Cohésion ou gestion des imprévus fragile vers 40 m : on reprend la progression PA40."
-        - "Ses seuils d'air ne tiennent pas compte des paliers : on travaille l'étape 2, « Consommation en zone profonde »."
-        - "Il ne repère pas les signes chez ses équipiers : on insiste sur l'étape 3, « Risques accrus », puis sur l'étape 4."
-        - "Il est à l'aise vers 40 m : on passe à l'étape 5, « Entre 40 et 60 m, encadré »."
+        - "Ses seuils d'air ne tiennent pas compte des paliers : on travaille l'étape 2, « Consommation en zone profonde »."
+        - "Il ne repère pas les signes chez ses équipiers : on insiste sur l'étape 3, « Risques accrus », puis sur l'étape 4."
+        - "Il est à l'aise vers 40 m : on passe à l'étape 5, « Entre 40 et 60 m, encadré »."
     bilan:
       situation: "l'étape 6 : au moins deux situations différentes (évaluation)"
       criteres:
@@ -448,17 +448,17 @@ PA60-autonomie:
         - "A-t-il plongé profond avec des équipiers aux ordinateurs différents ?"
       sait:
         - "Sait-il utiliser le mode planification de son ordinateur pour une plongée profonde ?"
-        - "A-t-il des idées fausses ? Par exemple : « moins de conservatisme, c'est plus de plongée sans plus de risque », ou « l'air des paliers se gère au fur et à mesure »."
+        - "A-t-il des idées fausses ? Par exemple : « moins de conservatisme, c'est plus de plongée sans plus de risque », ou « l'air des paliers se gère au fur et à mesure »."
         - "Connaît-il les valeurs de GF conseillées pour la plongée à l'air ?"
       esprit:
         - "Fait-il confiance à son ordinateur sans rien planifier, ou anticipe-t-il ?"
         - "Les paliers longs l'inquiètent-ils, ou les banalise-t-il ?"
-      comment: "Au sec, lui demander de planifier sur son ordinateur une plongée profonde, puis d'expliquer les paliers obtenus et l'air nécessaire jusqu'à la surface. On lui montre ensuite une ou deux captures d'écran. C'est l'étape 1, « Bilan des acquis PA40 », avant la plongée avec paliers."
+      comment: "Au sec, lui demander de planifier sur son ordinateur une plongée profonde, puis d'expliquer les paliers obtenus et l'air nécessaire jusqu'à la surface. On lui montre ensuite une ou deux captures d'écran. C'est l'étape 1, « Bilan des acquis PA40 », avant la plongée avec paliers."
       adapter:
         - "Ses analyses ou ses paliers jusqu'à 40 m ne sont pas maîtrisés : on reprend la progression PA40."
-        - "Il ne connaît pas le mode planification : on travaille l'étape 2, « Ordinateur et mode planification »."
-        - "Il planifie les paliers mais pas l'air nécessaire : on passe à l'étape 3, « Planifier la désaturation d'une plongée profonde »."
-        - "Il planifie déjà bien : on passe à l'étape 4, « Paliers importants en palanquée », puis à l'étape 5."
+        - "Il ne connaît pas le mode planification : on travaille l'étape 2, « Ordinateur et mode planification »."
+        - "Il planifie les paliers mais pas l'air nécessaire : on passe à l'étape 3, « Planifier la désaturation d'une plongée profonde »."
+        - "Il planifie déjà bien : on passe à l'étape 4, « Paliers importants en palanquée », puis à l'étape 5."
     bilan:
       situation: "l'étape 6 : au moins deux situations différentes (évaluation)"
       criteres:
@@ -479,16 +479,16 @@ N3-milieu:
         - "A-t-il déjà vu nourrir des poissons ou toucher le vivant en plongée ? Qu'en pense-t-il ?"
       sait:
         - "Sait-il nommer les espèces courantes de ses sites habituels ?"
-        - "A-t-il des idées fausses ? Par exemple : « toucher une gorgone, ce n'est pas grave », ou « éclairer un animal de près ne le dérange pas »."
+        - "A-t-il des idées fausses ? Par exemple : « toucher une gorgone, ce n'est pas grave », ou « éclairer un animal de près ne le dérange pas »."
         - "Connaît-il la charte internationale du plongeur responsable ?"
       esprit:
         - "Est-il curieux du vivant, ou indifférent ?"
         - "Prend-il le temps d'observer, ou cherche-t-il surtout à aller plus profond ?"
-      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : plongée en milieu naturel. On regarde sans intervenir ses contacts avec le fond, son palmage et sa distance au vivant. Au retour, lui demander : « Qu'as-tu vu ? Peux-tu me le nommer ? »"
+      comment: "L'étape 1, « Bilan des acquis PA20 », sert d'observation : plongée en milieu naturel. On regarde sans intervenir ses contacts avec le fond, son palmage et sa distance au vivant. Au retour, lui demander : « Qu'as-tu vu ? Peux-tu me le nommer ? »"
       adapter:
-        - "Il touche le fond ou soulève du sédiment : on consolide sa stabilisation, puis on travaille l'étape 3, « Stable sur un tombant ou dans le courant »."
-        - "Il est discret mais éblouit la faune avec sa lampe : on passe à l'étape 2, « Discrétion en zone profonde »."
-        - "Il nomme peu d'espèces : on développe l'étape 4, « Développer son observation », au fil des plongées."
+        - "Il touche le fond ou soulève du sédiment : on consolide sa stabilisation, puis on travaille l'étape 3, « Stable sur un tombant ou dans le courant »."
+        - "Il est discret mais éblouit la faune avec sa lampe : on passe à l'étape 2, « Discrétion en zone profonde »."
+        - "Il nomme peu d'espèces : on développe l'étape 4, « Développer son observation », au fil des plongées."
     bilan:
       situation: "l'étape 5 : comportement en plongée, en milieu naturel (évaluation)"
       criteres:

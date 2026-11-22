@@ -1,4 +1,4 @@
-/* Page « Progression » : niveau, compétence, technique, étapes (une seule ouverte à la fois).
+/* Page « Progression » : niveau, compétence, technique, étapes (une seule ouverte à la fois).
    Adresse #<compétence> (ex. #n1-equiper) : arrivée directe sur une compétence. */
 (function () {
   "use strict";

@@ -6,11 +6,12 @@
       <h1 class="titre-page">S’entraîner à construire une séance</h1>
       <button type="button" class="bouton-contour bureau" aria-haspopup="dialog" data-ouvrir="fenetre-vrais-sujets">Vrais sujets d’examen</button>
     </div>
-    <p class="sous-titre-page">Choisis l’épreuve et le niveau, tire un thème, puis construis ta séance avec le MFT sous la main.</p>
   </div>
+  {{ partial "aide-page.html" "s-entrainer" }}
 
 
   {{/* Réglages du tirage */}}
+  <h2 class="prog-sous-titre">Ton choix</h2>
   <section class="carte reglages" aria-label="Réglages du tirage">
     <div class="reglages__epreuve">
       <span id="lbl-ep" class="reglages__libelle">Épreuve</span>
@@ -40,12 +41,13 @@
   </section>
 
   {{/* Thème tiré et chrono */}}
+  <h2 class="prog-sous-titre">Thème à travailler</h2>
   <section class="theme-zone" aria-labelledby="sujet">
     <div class="carte theme" data-theme aria-live="polite">
       <span class="theme__format" data-theme-format>Thème d’entraînement</span>
       <h2 id="sujet" class="theme__titre" data-theme-titre tabindex="-1">…</h2>
       <div class="theme__puces" data-theme-puces></div>
-      <p class="theme__avertissement">Ce n’est pas un sujet d’examen : les vrais sujets se travaillent avec tes tuteurs MF2. <button type="button" class="lien-bouton lien-bouton--brun" aria-haspopup="dialog" data-ouvrir="fenetre-vrais-sujets">Où trouver de vrais sujets</button></p>
+      <p class="theme__avertissement"><strong>Ce n’est pas un sujet d’examen : les vrais sujets se travaillent avec tes tuteurs MF2.</strong> <button type="button" class="lien-bouton lien-bouton--brun" aria-haspopup="dialog" data-ouvrir="fenetre-vrais-sujets">Où trouver de vrais sujets</button></p>
     </div>
     <div class="chrono" data-chrono>
       <div class="chrono__entete">
@@ -62,6 +64,7 @@
   </section>
 
   {{/* Grille de préparation */}}
+  <h2 class="prog-sous-titre">À toi de jouer</h2>
   <section class="carte grille" aria-label="Grille de préparation" data-grille>
     <div class="grille__entete">
       <div class="grille__titres">

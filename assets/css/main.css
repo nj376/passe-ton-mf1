@@ -122,12 +122,13 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .nav__lien { padding: 10px 14px; border-radius: 8px; text-decoration: none; color: var(--texte-3); }
 .nav__lien:hover { color: var(--bleu); }
 /* Entre le menu téléphone (900 px) et 1120 px : liens resserrés pour que le menu tienne sur la ligne du logo. */
-@media (max-width: 1120px) { .nav__lien { padding-left: 10px; padding-right: 10px; } .nav__aide { margin-left: 4px; } }
+@media (max-width: 1120px) { .nav__lien { padding-left: 10px; padding-right: 10px; } .nav__aide { margin-left: 2px; } }
 .nav__lien--actif { color: var(--bleu); background: var(--bleu-clair); font-weight: 500; }
-/* Séparateur « | » entre deux groupes du menu (avant « Pistes ») */
+/* Séparateur « | » entre deux groupes du menu (ordinateur et tablette ; hugo.toml, separateurAvant, et avant « À propos ») */
 .nav__separateur { width: 1px; height: 22px; margin: 0 6px; background: var(--bordure-aide); flex: 0 0 auto; }
+/* « À propos » : « ? » rond en fin de menu (ordinateur et tablette). */
 .nav__aide { text-decoration: none;
-  height: 42px; width: 42px; margin-left: 8px; padding: 0; border-radius: 50%;
+  height: 42px; width: 42px; margin-left: 4px; padding: 0; border-radius: 50%;
   border: 1px solid var(--bordure-aide); background: var(--blanc); color: var(--bleu);
   font-size: 17px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center;
 }
@@ -243,8 +244,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .note-aide svg { flex: 0 0 auto; }
 .note-aide p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--texte-3); }
 .bouton-petit { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: 8px; text-decoration: none; font-size: 15px; }
-.bouton-petit--principal { background: var(--bleu); color: var(--blanc); font-weight: 500; }
-.bouton-petit--principal:hover { background: var(--bleu-survol); color: var(--blanc); }
 .bouton-petit--secondaire { border: 1px solid var(--bordure-bouton); background: var(--blanc); color: var(--texte-3); }
 .bouton-petit--secondaire:hover { border-color: var(--bleu); color: var(--bleu); }
 
@@ -351,6 +350,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .fiche--details .fiche__details { display: grid; }
 .fiche__actions { display: none; gap: 12px; flex-wrap: wrap; }
 .fiche--details .fiche__actions { display: flex; }
+/* Plus de bouton visible (Comparer seulement sur N1-N3, affiché par le script) : pas de ligne vide. */
+.fiche--details .fiche__actions:not(:has(> :not([hidden]))) { display: none; }
 .fiche__actions .bouton-petit { cursor: pointer; }
 .fiche__pied {
   display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
@@ -415,7 +416,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .theme__puces { display: flex; flex-wrap: wrap; gap: 8px; }
 .puce--theme { font-size: 14px; padding: 4px 10px; }
 .puce--coeur { background: var(--orange-fond); color: var(--orange-texte); font-size: 12px; padding: 2px 8px; }
-.theme__avertissement { margin: 0; font-size: 13px; line-height: 1.55; color: #6A4A10; }
+/* Petit encart orange, bien visible sous le thème tiré. */
+.theme__avertissement { margin: 4px 0 0; padding: 8px 12px; border-radius: 8px; background: var(--orange-fond); border: 1px solid var(--orange-bordure); font-size: 13px; line-height: 1.55; color: #6A4A10; }
 .lien-bouton--brun { color: #6A4A10; }
 
 .chrono { background: var(--nuit); color: var(--blanc); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px; justify-content: space-between; }
@@ -504,6 +506,11 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .questions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
 .questions__titre { grid-column: 1 / -1; margin: 0; font-size: 16px; font-weight: 600; }
 .questions__titre:has(.mobile) { display: none; }
+.cds > .prog-sous-titre, .mft > .prog-sous-titre, .tirage > .prog-sous-titre { margin-top: 18px; }
+.panneau-niveau > .prog-sous-titre { margin: 26px 0 2px; }
+.cds-suivi { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.cds-suivi .boites { flex-wrap: wrap; }
+.cds-suivi .boite { font-family: var(--police); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .question { background: var(--blanc); border: 1px solid var(--bordure); border-radius: 12px; padding: 20px 24px; display: flex; flex-direction: column; gap: 10px; }
 .question__titre { margin: 0; font-size: 17px; font-weight: 600; }
 .question__reponse ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.6; color: var(--texte-2); }
@@ -512,10 +519,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .question__titre-mobile { margin: 0; }
 .cds__officiel { margin-top: -8px; }
 .question__reponse { display: flex; flex-direction: column; gap: 10px; }
-.cds-suivi { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.cds-suivi__libelle { font-size: 15px; font-weight: 600; color: var(--texte-3); }
-.cds-suivi .boites { flex-wrap: wrap; }
-.cds-suivi .boite { font-family: var(--police); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .question__etat { font-size: 12px; font-weight: 500; border-radius: 6px; padding: 2px 8px; white-space: nowrap; vertical-align: middle; }
 .question__etat--sue { background: #E3F1E8; color: #1D5A35; }
 .question__etat--revoir { background: #FDECE3; color: #8A3A12; }
@@ -613,6 +616,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .prog-detail { display: flex; flex-direction: column; gap: 20px; scroll-margin-top: 24px; }
 .prog-detail[hidden] { display: none; }
 .prog-detail__tete { display: flex; flex-direction: column; gap: 8px; }
+/* Titre de la compétence masqué (déjà sélectionnée au-dessus) : en-tête sans autre contenu (PE12…) = pas d’espace vide. */
+.prog-detail__tete:not(:has(> :not(.visuellement-cache))) { display: contents; }
 .prog-detail__encadrement { margin: 0; font-size: 14px; color: var(--texte-3); }
 .prog-detail__encadrement span { font-weight: 600; color: var(--texte); }
 .prog-detail__rappel { margin-top: 4px; }
@@ -634,10 +639,11 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .volet-prog__techniques .prog-sous-titre { margin: 18px 0 2px; }
 /* Respiration verticale : avant « Compétence », avant le titre de la compétence choisie. */
 .prog-niveau > .prog-sous-titre { margin-top: 18px; }
+.progression-page > .prog-sous-titre { margin-top: 30px; }
 .prog-niveau > .prog-detail { margin-top: 22px; }
 .prog-pied__boutons .cote-bloc__construire { flex: 1 1 280px; max-width: 420px; }
 .volet-prog__principal { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
-.prog-detail, .prog-niveau, .volet-prog__techniques, .volet-prog__cote { min-width: 0; }
+.prog-detail, .prog-niveau, .volet-prog__techniques { min-width: 0; }
 .volet-prog__avertissement { border-radius: 10px; }
 .volet-prog__avertissement p { font-size: 14px; }
 .volet-prog__techniques { display: flex; flex-direction: column; gap: 8px; }
@@ -693,7 +699,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .eval__adapter { background: var(--orange-fond); border: 1px solid var(--orange-bordure); border-radius: 8px; padding: 12px 14px; }
 .eval__adapter .etiquette, .eval__adapter .eval__liste { color: var(--orange-texte); }
 
-.volet-prog__cote { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 16px; }
 .cote-bloc { padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
 .cote-bloc__titre { margin: 0; font-size: 15px; font-weight: 600; }
 .cote-bloc__texte { margin: 0; font-size: 14px; line-height: 1.6; color: var(--texte-2); }
@@ -883,6 +888,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .cds-tableau__note { font-size: 13px; }
   .questions { display: flex; flex-direction: column; align-items: stretch; gap: 0; background: var(--blanc); border: 1px solid var(--bordure); border-radius: 12px; padding: 16px 16px 4px; }
   .questions__titre, .questions__titre:has(.mobile) { display: block; margin-bottom: 6px; }
+  .cds > .prog-sous-titre, .mft > .prog-sous-titre, .tirage > .prog-sous-titre { margin-top: 10px; }
+  .cds-suivi { gap: 8px; margin-bottom: 8px; }
   .question { border: 0; border-radius: 0; padding: 0; gap: 0; border-top: 1px solid var(--bordure); }
   .question__bouton {
     width: 100%; min-height: 56px; padding: 8px 0; border: 0; background: transparent; display: flex; align-items: center;
@@ -896,8 +903,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .question__reponse { display: none; padding: 0 0 14px; }
   .question--ouverte .question__reponse { display: flex; }
   .question__reponse ul { font-size: 14px; line-height: 1.55; }
-  .cds-suivi { gap: 8px; margin-bottom: 8px; }
-  .cds-suivi__libelle { font-size: 14px; }
   .question__auto-libelle { width: 100%; margin-right: 0; }
   .question__auto button { flex: 1 1 0; }
 
@@ -947,6 +952,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .prog-sous-titre { font-size: 17px; }
   .volet-prog__techniques .prog-sous-titre { margin-top: 12px; }
   .prog-niveau > .prog-sous-titre { margin-top: 10px; }
+  .progression-page > .prog-sous-titre { margin-top: 18px; }
   .prog-niveau > .prog-detail { margin-top: 14px; }
   .volet-prog__principal { gap: 14px; }
   .volet-prog__avertissement { padding: 12px 14px; }
@@ -966,7 +972,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .eval__colonnes { grid-template-columns: 1fr; gap: 12px; }
   .eval__liste { font-size: 14px; }
   .etape__objectif { font-size: 13px; }
-  .volet-prog__cote { position: static; gap: 14px; }
   .cote-bloc { padding: 14px 16px; gap: 8px; }
   .cote-bloc__texte { line-height: 1.55; }
   .cote-bloc__pied { font-size: 12px; }
@@ -1124,44 +1129,16 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .about-ctr__region { font-size: 16px; font-weight: 600; }
 .about-ctr__domaine { font-size: 14px; color: var(--bleu); }
 
-/* =================================================================
-   Page « Aide » (maquette redesign/Aide) : classes help-
-   ================================================================= */
-.principal--help { padding-top: 32px; padding-bottom: 80px; gap: 32px; }
-.help { display: flex; flex-direction: column; gap: 32px; }
-.help-entete { display: flex; flex-direction: column; gap: 12px; max-width: 70ch; }
-.help-titre { margin: 0; font-size: 40px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em; }
-.help-intro { margin: 0; font-size: 18px; line-height: 1.6; color: var(--texte-4); }
-.help-corps { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 40px; align-items: start; }
-.help-sommaire { position: sticky; top: 24px; padding: 12px; display: flex; flex-direction: column; gap: 2px; }
-.help-sommaire__titre { margin: 4px 12px 8px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--texte-4); }
-.help-sommaire ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px; }
-.help-sommaire a { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px; text-decoration: none; color: var(--texte-3); font-size: 15px; }
-.help-sommaire a:hover { background: var(--puce); color: var(--texte); }
-.help-sommaire a.help-sommaire--actif { background: var(--bleu-clair); color: var(--bleu); font-weight: 500; }
-.help-sommaire__icone { color: var(--bleu); display: inline-flex; }
-.help-sections { display: flex; flex-direction: column; gap: 16px; }
-.help-section { padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 24px; }
-.help-section__tete { display: flex; gap: 16px; align-items: flex-start; }
-#pour-commencer .help-section__tete { align-items: center; }
-.help-icone { flex: 0 0 auto; width: 44px; height: 44px; border-radius: 12px; background: var(--bleu-clair); color: var(--bleu); display: inline-flex; align-items: center; justify-content: center; }
-.help-section__textes { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
-.help-section__titre { margin: 0; font-size: 21px; font-weight: 600; }
+/* Contenu des aides de page (partials/aide/, dans l’encart « Comment utiliser cette page ») et encart
+   « Données et mentions légales » de la page À propos : classes héritées de l’ancienne page d’aide. */
 .help-section__contenu { display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.65; color: var(--texte-3); }
 .help-section__contenu ol, .help-section__contenu ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
 .help-section__contenu p { margin: 0; }
 .help-section__contenu strong { font-weight: 600; color: var(--texte); }
 .help-section__contenu .aide__note { font-size: 14px; color: var(--orange-texte); }
-.help-tuiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.help-tuile { display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 12px; background: var(--bleu-pale); }
-.help-tuile__num { width: 30px; height: 30px; border-radius: 50%; background: var(--bleu); color: var(--blanc); display: inline-flex; align-items: center; justify-content: center; font-family: var(--police-mono); font-size: 14px; font-weight: 500; }
-.help-tuile__titre { font-size: 16px; font-weight: 600; }
-.help-tuile__texte { font-size: 14px; line-height: 1.55; color: var(--texte-4); }
 .help-donnees-bloc { padding: 32px; scroll-margin-top: 24px; }
 .help-donnees-bloc__textes { display: flex; flex-direction: column; gap: 10px; }
 .help-donnees-bloc__titre { margin: 0; font-size: 22px; font-weight: 600; }
-.help-pastilles { display: flex; gap: 8px; overflow-x: auto; margin: 0 -16px; padding: 2px 16px 4px; }
-.help-pastille { flex: 0 0 auto; min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid var(--bordure-bouton); background: var(--blanc); color: var(--texte-3); text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; }
 
 /* Téléphone (maquettes MobileAPropos et MobileAide) */
 @media (max-width: 900px) {
@@ -1198,18 +1175,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .about-ctr__fleche { color: var(--texte-4); }
   .about-sujets__note { display: none; }
 
-  .principal--help { padding-top: 24px; padding-bottom: 36px; gap: 18px; }
-  .help { gap: 18px; }
-  .help-entete { gap: 10px; }
-  .help-titre { font-size: 28px; line-height: 1.2; letter-spacing: 0; }
-  .help-intro { font-size: 15px; line-height: 1.55; }
-  .help-corps { grid-template-columns: minmax(0, 1fr); gap: 18px; }
-  .help-sections { gap: 18px; }
-  .help-section { padding: 16px; gap: 12px; }
-  .help-section__tete { gap: 12px; }
-  .help-icone { width: 38px; height: 38px; border-radius: 10px; }
-  .help-section__textes { gap: 4px; }
-  .help-section__titre { font-size: 17px; }
   .help-section__contenu { font-size: 14px; line-height: 1.55; }
   .help-donnees-bloc { padding: 18px; }
   .help-donnees-bloc__titre { font-size: 18px; }
@@ -1379,9 +1344,10 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .principal--suivi { padding-top: 48px; padding-bottom: 80px; gap: 48px; }
 .suivi { display: flex; flex-direction: column; gap: 48px; }
 .suivi-entete { display: flex; flex-direction: column; gap: 14px; }
+/* Encart d’aide : même espace autour que sur les autres pages (24 px, 16 px sur téléphone). */
+.suivi-entete > .aide-page { margin: 10px 0; }
 .suivi-titre { margin: 0; font-size: 44px; line-height: 1.12; font-weight: 600; letter-spacing: -0.02em; }
 .suivi-titre:focus { outline: none; }
-.suivi-intro { margin: 0; font-size: 18px; line-height: 1.6; color: var(--texte-4); max-width: 56ch; }
 .suivi-date { display: flex; justify-content: space-between; gap: 24px; align-items: stretch; margin-top: 14px; }
 .suivi-date__form { width: 360px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; border-style: dashed; border-radius: 14px; }
 .suivi-date__form[hidden], .suivi-examen[hidden] { display: none; }
@@ -1402,7 +1368,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .suivi-examen__lien:focus-visible { outline-color: var(--blanc); }
 .suivi-section { display: flex; flex-direction: column; gap: 18px; }
 .suivi-section__tete { display: flex; flex-direction: column; gap: 6px; }
-.suivi-surtitre { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--bleu); }
 .suivi-h2 { margin: 0; font-size: 28px; font-weight: 600; }
 .suivi-modules { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .suivi-module { padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; border-radius: 14px; }
@@ -1451,8 +1416,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .principal--suivi { padding-top: 28px; padding-bottom: 36px; gap: 28px; }
   .suivi { gap: 28px; }
   .suivi-entete { gap: 12px; }
+  .suivi-entete > .aide-page { margin: 4px 0; }
   .suivi-titre { font-size: 28px; line-height: 1.2; letter-spacing: 0; }
-  .suivi-intro { font-size: 15px; line-height: 1.55; }
   .suivi-date { margin-top: 16px; }
   .suivi-date__form, .suivi-examen { width: 100%; }
   .suivi-examen { padding: 20px; }
@@ -1479,7 +1444,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .fc-entete { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
 .fc-entete__textes { display: flex; flex-direction: column; gap: 8px; }
 .fc-titre { margin: 0; font-size: 40px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em; }
-.fc-sous-titre { margin: 0; font-size: 17px; color: var(--texte-4); }
 .fc-onglets { display: inline-flex; padding: 4px; border-radius: 12px; background: #E9EEF3; gap: 4px; }
 .fc-onglet { height: 40px; padding: 0 16px; border: 0; border-radius: 9px; background: transparent; color: var(--texte-4); font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; }
 .fc-onglet[aria-selected="true"] { background: var(--blanc); color: var(--texte); font-weight: 600; box-shadow: 0 1px 2px rgba(19,33,46,.12); }
@@ -1497,7 +1461,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .fc-dot--revoir { background: #C2410C; }
 .fc-dot--cours { background: #6B8AA8; }
 .fc-dot--acquises { background: #2F7D4A; }
-.fc-aide-note { box-sizing: border-box; }
 
 .fc-colonne { max-width: 820px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
 .fc-avancement { display: flex; flex-direction: column; gap: 8px; }
@@ -1559,6 +1522,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .fc-carte--recherche { min-height: 420px; }
 .fc-carte__haut { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .fc-chrono { font-family: var(--police-mono); font-size: 15px; font-weight: 500; padding: 4px 10px; border-radius: 6px; background: var(--bleu-clair); color: var(--bleu); }
+.fc-chrono--depasse { background: var(--rouge-encart); color: var(--rouge); }
 .fc-citation { margin: 0; font-size: 24px; line-height: 1.45; font-weight: 500; color: var(--texte); }
 .fc-carte--recherche .fc-actions { margin-top: auto; }
 .fc-carte--recherche .fc-reponse { flex: 0 0 auto; }
@@ -1570,7 +1534,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .fc-entete { flex-direction: column; align-items: stretch; gap: 20px; }
   .fc-entete__textes { gap: 6px; }
   .fc-titre { font-size: 28px; line-height: 1.2; letter-spacing: 0; }
-  .fc-sous-titre { font-size: 15px; line-height: 1.5; }
   .fc-onglets { display: flex; width: 100%; box-sizing: border-box; }
   .fc-onglet { flex: 1; padding: 0 6px; font-size: 14px; }
   .fc-reglages { flex-direction: column; align-items: stretch; gap: 12px; padding: 0; border: 0; background: transparent; border-radius: 0; }
@@ -1892,7 +1855,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .cv-note--bilan { background: var(--puce); border: 2px solid var(--nuit); color: var(--nuit); }
 .cv-note:focus { outline: none; }
 .cv-note.est-choisi, .cv-note:focus-visible { outline: 2.5px solid var(--bleu); outline-offset: 3px; }
-.cv-note__vide { color: var(--fleche-douce); }
 .cv-note__saisie { position: absolute; inset: 0; width: 100%; height: 100%; box-sizing: border-box; padding: 10px 12px; border: 0; border-radius: 8px; background: transparent; font: inherit; line-height: 1.4; color: inherit; resize: none; }
 .cv-note__saisie:focus { outline: none; }
 .cv-note__taille { position: absolute; right: 0; bottom: 0; width: 18px; height: 18px; cursor: nwse-resize; background: linear-gradient(135deg, transparent 50%, rgba(19,33,46,.25) 50%, rgba(19,33,46,.25) 58%, transparent 58%, transparent 70%, rgba(19,33,46,.25) 70%, rgba(19,33,46,.25) 78%, transparent 78%); }
@@ -2118,7 +2080,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .barre-suivi__bouton:hover { border-color: var(--bleu); color: var(--bleu-survol); }
 @media (max-width: 900px) { .barre-suivi__interieur { padding: 6px 16px; } }
 /* Téléphone : pas de texte, seulement le bouton, à droite */
-@media (max-width: 767px) { .barre-suivi__info { display: none; } .barre-suivi__interieur { justify-content: flex-end; } }
+@media (max-width: 767px) { .barre-suivi__info { display: none; } .barre-suivi__interieur { justify-content: flex-end; } .barre-suivi--sans-bouton { display: none; } }
+/* Sans le bouton (page Suivi) : même hauteur que les autres pages. */
+.barre-suivi--sans-bouton .barre-suivi__interieur { min-height: 50px; }
 
 /* ---------- Retour en haut de la page ---------- */
 .haut-page { position: fixed; right: 20px; bottom: 20px; z-index: 30; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--bordure-bleu-pale); background: var(--blanc); color: var(--bleu); display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--ombre-menu); text-decoration: none; }
@@ -2126,3 +2090,21 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .haut-page[hidden] { display: none; }
 @media (max-width: 767px) { .haut-page { right: 16px; bottom: 16px; } }
 @media print { .haut-page { display: none !important; } }
+
+/* Aide repliable en haut de chaque page (partials/aide-page.html, textes dans partials/aide/). */
+.aide-page { padding: 0; overflow: hidden; }
+.aide-page__titre { display: flex; align-items: center; gap: 10px; padding: 12px 18px; cursor: pointer; list-style: none; font-size: 16px; font-weight: 600; color: var(--bleu); }
+.aide-page__titre::-webkit-details-marker { display: none; }
+.aide-page__titre:hover { background: var(--bleu-clair); }
+.aide-page__titre:focus-visible { outline: 2px solid var(--bleu); outline-offset: -2px; }
+.aide-page__icone { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid currentColor; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; }
+.aide-page__chevron { margin-left: auto; display: inline-flex; transition: transform .2s; }
+.aide-page[open] .aide-page__chevron { transform: rotate(180deg); }
+.aide-page__contenu { padding: 4px 18px 18px 54px; }
+@media (max-width: 900px) {
+  .aide-page__titre { padding: 10px 14px; font-size: 15px; }
+  .aide-page__contenu { padding: 2px 14px 14px 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .aide-page__chevron { transition: none; } }
+.aide-avertissement { margin-top: 12px; }
+.aide-avertissement strong { color: inherit; }

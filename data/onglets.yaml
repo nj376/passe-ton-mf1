@@ -1,9 +1,9 @@
 # Onglets de niveau (Explore le MFT, Progression, Réviser), dans l’ordre du cursus : Randosub, puis
 # Jeunes (onglet de la page Progression seulement, voir data/jeunes.yaml), PE12 … DP-N5, et le RIFAP en dernier.
-# niveaux : valeurs du champ « niveau » de mft_data.json rangées sous l’onglet.
+# niveaux : valeurs du champ « niveau » de mft_data.json rangées sous l’onglet.
 # titre / titreMobile : en-tête de la courbe (bureau / téléphone).
-# chapitre : utilisé dans « D’après le MFT … » en bas de chaque fiche.
-# comparer : groupe utilisé par le bouton « Comparer N1 · N2 · N3 ».
+# chapitre : utilisé dans « D’après le MFT … » en bas de chaque fiche.
+# comparer : groupe utilisé par le bouton « Comparer N1 · N2 · N3 ».
 - id: RANDO
   libelle: Randosub
   niveaux: [RANDO]

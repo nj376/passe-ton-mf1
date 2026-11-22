@@ -1,4 +1,4 @@
-# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N4.
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du N4.
 # Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
 # (tel qu'il figure dans data/progressions/progressions_N4.json). Les fichiers de progression ne sont pas modifiés.
 #
@@ -9,7 +9,7 @@
 # bilan.situation : la situation finale sur laquelle porte le bilan
 # bilan.criteres : critères de la situation finale (liste)
 # bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
-# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
 # Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
 
 
@@ -23,16 +23,16 @@ N4-accueil:
         - "A-t-il déjà accompagné des plongeurs de façon informelle, au club ou en voyage ?"
       sait:
         - "Sait-il dire ce qu'on attend d'un guide au-delà de la technique : écoute, disponibilité, respect ?"
-        - "A-t-il des idées fausses ? Par exemple : « un client mécontent, on lui donne ce qu'il veut », ou « un guide n'a pas à se justifier »."
+        - "A-t-il des idées fausses ? Par exemple : « un client mécontent, on lui donne ce qu'il veut », ou « un guide n'a pas à se justifier »."
         - "Sait-il que préserver l'intégrité physique du plongeur peut obliger à refuser ?"
       esprit:
         - "Est-il naturellement avenant, ou plutôt réservé avec des inconnus ?"
         - "Redoute-t-il le conflit, au point de céder pour l'éviter ?"
-      comment: "Au sec, lui faire raconter un accueil qu'il a vécu, puis lui poser un cas court : « Un plongeur arrive en retard et veut plonger plus profond que prévu. Que lui dis-tu ? » On écoute le ton qu'il prend autant que sa réponse, sans corriger."
+      comment: "Au sec, lui faire raconter un accueil qu'il a vécu, puis lui poser un cas court : « Un plongeur arrive en retard et veut plonger plus profond que prévu. Que lui dis-tu ? » On écoute le ton qu'il prend autant que sa réponse, sans corriger."
       adapter:
-        - "Il n'a pas d'image claire d'un bon accueil : on commence à l'étape 1, « Observer un accueil »."
-        - "Il décrit bien les attitudes attendues : on passe à l'étape 2, « Accueillir des plongeurs connus »."
-        - "Il est à l'aise avec les plongeurs du club mais cède face à la pression : on travaille l'étape 3, « Situation plus délicate »."
+        - "Il n'a pas d'image claire d'un bon accueil : on commence à l'étape 1, « Observer un accueil »."
+        - "Il décrit bien les attitudes attendues : on passe à l'étape 2, « Accueillir des plongeurs connus »."
+        - "Il est à l'aise avec les plongeurs du club mais cède face à la pression : on travaille l'étape 3, « Situation plus délicate »."
         - "Il se montre trop directif ou cassant : on reprend l'étape 2 en insistant sur l'écoute, avant l'étape 3."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), conduite de palanquée sur sujet tiré"
@@ -51,17 +51,17 @@ N4-accueil:
         - "A-t-il déjà plongé dans une palanquée de niveaux très différents ?"
       sait:
         - "Sait-il quelles informations demander : niveau, nombre de plongées, date de la dernière, moyen de désaturation, état du jour ?"
-        - "A-t-il des idées fausses ? Par exemple : « la carte de niveau suffit », ou « le matériel, c'est l'affaire de chacun »."
+        - "A-t-il des idées fausses ? Par exemple : « la carte de niveau suffit », ou « le matériel, c'est l'affaire de chacun »."
         - "Connaît-il assez le cursus et les qualifications pour orienter un plongeur ?"
       esprit:
         - "Ose-t-il poser des questions à un plongeur plus âgé ou plus expérimenté que lui ?"
         - "Craint-il de ne pas savoir répondre aux questions qu'on lui posera ?"
-      comment: "Au sec, face à un plongeur du club qu'il connaît peu, lui demander : « Tu vas l'encadrer tout à l'heure. Prends-le en charge. » On note les questions posées, s'il regarde le matériel, et ce qu'il fait des réponses."
+      comment: "Au sec, face à un plongeur du club qu'il connaît peu, lui demander : « Tu vas l'encadrer tout à l'heure. Prends-le en charge. » On note les questions posées, s'il regarde le matériel, et ce qu'il fait des réponses."
       adapter:
-        - "Il pose peu de questions ou des questions inutiles : on commence à l'étape 1, « Évaluer l'expérience »."
-        - "Il recueille bien l'expérience mais ignore le matériel : on passe à l'étape 2, « Vérifier le matériel »."
-        - "Il est démuni face aux questions sur le cursus : on travaille l'étape 3, « Informer et orienter »."
-        - "Il prend déjà bien en charge un plongeur seul : on passe à l'étape 4, « Palanquée hétérogène »."
+        - "Il pose peu de questions ou des questions inutiles : on commence à l'étape 1, « Évaluer l'expérience »."
+        - "Il recueille bien l'expérience mais ignore le matériel : on passe à l'étape 2, « Vérifier le matériel »."
+        - "Il est démuni face aux questions sur le cursus : on travaille l'étape 3, « Informer et orienter »."
+        - "Il prend déjà bien en charge un plongeur seul : on passe à l'étape 4, « Palanquée hétérogène »."
     bilan:
       situation: "l'étape 5 : épreuve 4 (évaluation), conduite de palanquée sur sujet tiré"
       criteres:
@@ -79,15 +79,15 @@ N4-accueil:
         - "A-t-il déjà parlé du club à quelqu'un qui a fini par s'inscrire ?"
       sait:
         - "Sait-il présenter en quelques phrases les activités de son club et les commissions fédérales ?"
-        - "A-t-il des idées fausses ? Par exemple : « promouvoir, c'est vendre », ou « ce n'est pas le rôle du guide »."
+        - "A-t-il des idées fausses ? Par exemple : « promouvoir, c'est vendre », ou « ce n'est pas le rôle du guide »."
       esprit:
         - "Est-il attaché à son club, ou le vit-il comme un simple prestataire ?"
         - "Est-il à l'aise pour engager la conversation en fin de sortie ?"
-      comment: "Au sec, lui demander : « Un plongeur de passage te demande ce qu'on fait ici à part plonger. Que lui réponds-tu ? » On écoute ce qu'il cite, et s'il relie sa réponse aux envies du plongeur."
+      comment: "Au sec, lui demander : « Un plongeur de passage te demande ce qu'on fait ici à part plonger. Que lui réponds-tu ? » On écoute ce qu'il cite, et s'il relie sa réponse aux envies du plongeur."
       adapter:
-        - "Il connaît mal l'offre du club et de la Fédération : on commence à l'étape 1, « Connaître l'offre »."
-        - "Il connaît l'offre mais la récite sans écouter : on passe à l'étape 2, « Inciter à la pratique »."
-        - "Il propose déjà des activités pertinentes : on travaille l'étape 3, « Fidéliser », puis l'étape 4 au fil des sorties."
+        - "Il connaît mal l'offre du club et de la Fédération : on commence à l'étape 1, « Connaître l'offre »."
+        - "Il connaît l'offre mais la récite sans écouter : on passe à l'étape 2, « Inciter à la pratique »."
+        - "Il propose déjà des activités pertinentes : on travaille l'étape 3, « Fidéliser », puis l'étape 4 au fil des sorties."
     bilan:
       situation: "l'étape 4 : en situation (aptitude visée), sorties club au fil de la formation"
       criteres:
@@ -107,17 +107,17 @@ N4-organiser:
         - "A-t-il déjà mis en place un pendeur ou un bloc de secours, ou les a-t-il toujours trouvés installés ?"
       sait:
         - "Sait-il faire les nœuds de chaise, de cabestan, d'arrêt et de taquet ?"
-        - "A-t-il des idées fausses ? Par exemple : « le bateau, c'est l'affaire du pilote », ou « on retient le bateau avec le pied contre le quai »."
+        - "A-t-il des idées fausses ? Par exemple : « le bateau, c'est l'affaire du pilote », ou « on retient le bateau avec le pied contre le quai »."
         - "Sait-il nommer le matériel de sécurité présent à bord et à quoi il sert ?"
       esprit:
         - "Est-il spontanément serviable sur le bateau, ou attend-il qu'on lui demande ?"
         - "Craint-il de mal faire devant le pilote, au point de rester à l'écart ?"
-      comment: "Au sec, avec un bout et un taquet ou un anneau, lui demander : « Fais-moi les nœuds que tu connais, et dis-moi où tu t'en sers. » Puis, sur le bateau, lui demander de montrer le matériel de sécurité et d'expliquer son rôle."
+      comment: "Au sec, avec un bout et un taquet ou un anneau, lui demander : « Fais-moi les nœuds que tu connais, et dis-moi où tu t'en sers. » Puis, sur le bateau, lui demander de montrer le matériel de sécurité et d'expliquer son rôle."
       adapter:
-        - "Il ne connaît pas les nœuds usuels : on commence à l'étape 1, « Les nœuds au sec »."
-        - "Il fait les nœuds au sec mais hésite sur le bateau : on passe à l'étape 2, « Les nœuds en situation »."
-        - "Il est à l'aise avec les nœuds et les manœuvres : on travaille l'étape 4, « Installer les supports de sécurité »."
-        - "Il est trop entreprenant sur le bateau : on insiste dès l'étape 3, « Aider le pilote », sur la priorité des consignes du pilote."
+        - "Il ne connaît pas les nœuds usuels : on commence à l'étape 1, « Les nœuds au sec »."
+        - "Il fait les nœuds au sec mais hésite sur le bateau : on passe à l'étape 2, « Les nœuds en situation »."
+        - "Il est à l'aise avec les nœuds et les manœuvres : on travaille l'étape 4, « Installer les supports de sécurité »."
+        - "Il est trop entreprenant sur le bateau : on insiste dès l'étape 3, « Aider le pilote », sur la priorité des consignes du pilote."
     bilan:
       situation: "l'étape 5 : cas simples (évaluation), épreuve 6"
       criteres:
@@ -138,15 +138,15 @@ N4-organiser:
         - "A-t-il déjà plongé un site trop difficile pour un plongeur de sa palanquée ?"
       sait:
         - "Sait-il décrire un site : profondeurs, relief, abri, exposition au courant et au vent ?"
-        - "A-t-il des idées fausses ? Par exemple : « un beau site convient à tout le monde », ou « le choix du site ne regarde que le DP »."
+        - "A-t-il des idées fausses ? Par exemple : « un beau site convient à tout le monde », ou « le choix du site ne regarde que le DP »."
       esprit:
         - "Se fie-t-il surtout à l'intérêt du site, ou pense-t-il d'abord aux plongeurs ?"
         - "Ose-t-il donner son avis au DP ?"
-      comment: "Au sec, lui demander de décrire un site qu'il connaît bien, puis : « Demain, tu y emmènes des PE12. Quelle zone et quel parcours ? » On regarde si sa description est complète et si son choix est justifié."
+      comment: "Au sec, lui demander de décrire un site qu'il connaît bien, puis : « Demain, tu y emmènes des PE12. Quelle zone et quel parcours ? » On regarde si sa description est complète et si son choix est justifié."
       adapter:
-        - "Sa description est incomplète : on commence à l'étape 1, « Caractéristiques d'un site »."
-        - "Il décrit bien le site mais propose le même parcours à tous : on passe à l'étape 2, « Site et parcours selon les plongeurs »."
-        - "Il adapte déjà le parcours au niveau : on travaille l'étape 3, « Site et conditions du jour »."
+        - "Sa description est incomplète : on commence à l'étape 1, « Caractéristiques d'un site »."
+        - "Il décrit bien le site mais propose le même parcours à tous : on passe à l'étape 2, « Site et parcours selon les plongeurs »."
+        - "Il adapte déjà le parcours au niveau : on travaille l'étape 3, « Site et conditions du jour »."
     bilan:
       situation: "l'étape 4 : cas simples (évaluation), épreuve 6"
       criteres:
@@ -164,16 +164,16 @@ N4-organiser:
         - "A-t-il un permis bateau ou une pratique de la navigation ?"
       sait:
         - "Sait-il où trouver les zones interdites et les réserves de sa région ?"
-        - "A-t-il des idées fausses ? Par exemple : « avec le GPS, plus besoin d'amers », ou « la carte marine, c'est pour les marins »."
+        - "A-t-il des idées fausses ? Par exemple : « avec le GPS, plus besoin d'amers », ou « la carte marine, c'est pour les marins »."
         - "Sait-il ce que sont des amers et des enseignures ?"
       esprit:
         - "S'intéresse-t-il à la navigation, ou la juge-t-il hors sujet pour un guide ?"
         - "Est-il intimidé par la carte marine et les instruments ?"
-      comment: "Au sec, lui demander : « Prépare-moi les informations utiles pour la sortie de demain. » Puis lui montrer une carte marine du secteur : « Que lis-tu ici ? » On note ses sources et les symboles qu'il reconnaît."
+      comment: "Au sec, lui demander : « Prépare-moi les informations utiles pour la sortie de demain. » Puis lui montrer une carte marine du secteur : « Que lis-tu ici ? » On note ses sources et les symboles qu'il reconnaît."
       adapter:
-        - "Il ne sait pas où s'informer : on commence à l'étape 1, « Où s'informer »."
-        - "Il s'informe bien mais ne se repère pas à vue : on passe à l'étape 2, « Amers et enseignures »."
-        - "Il se repère à vue : on travaille l'étape 3, « Cartes marines », puis l'étape 4, « GPS et sonar »."
+        - "Il ne sait pas où s'informer : on commence à l'étape 1, « Où s'informer »."
+        - "Il s'informe bien mais ne se repère pas à vue : on passe à l'étape 2, « Amers et enseignures »."
+        - "Il se repère à vue : on travaille l'étape 3, « Cartes marines », puis l'étape 4, « GPS et sonar »."
     bilan:
       situation: "l'étape 5 : cas simples (évaluation), épreuve 6"
       criteres:
@@ -193,15 +193,15 @@ N4-briefing:
         - "A-t-il déjà préparé une plongée à partir d'un sujet écrit ?"
       sait:
         - "Sait-il quels éléments du briefing du DP conditionnent la plongée du guide ?"
-        - "A-t-il des idées fausses ? Par exemple : « une fois sous l'eau, c'est le guide qui décide », ou « les consignes du DP, ce sont surtout les horaires »."
+        - "A-t-il des idées fausses ? Par exemple : « une fois sous l'eau, c'est le guide qui décide », ou « les consignes du DP, ce sont surtout les horaires »."
       esprit:
         - "Écoute-t-il le briefing du DP avec attention, ou le vit-il comme une formalité ?"
         - "Se sent-il contraint par les consignes, ou rassuré par elles ?"
-      comment: "En sortie, juste après le briefing du DP, lui demander : « Redis-moi tout ce qu'il a dit. » Puis : « Qu'est-ce qui, là-dedans, change quelque chose pour ta palanquée ? » On note les oublis et les priorités qu'il donne."
+      comment: "En sortie, juste après le briefing du DP, lui demander : « Redis-moi tout ce qu'il a dit. » Puis : « Qu'est-ce qui, là-dedans, change quelque chose pour ta palanquée ? » On note les oublis et les priorités qu'il donne."
       adapter:
-        - "Sa restitution est incomplète : on commence à l'étape 1, « Restituer le briefing du DP »."
-        - "Il restitue tout mais ne hiérarchise pas : on passe à l'étape 2, « Trier ce qui sert au GP »."
-        - "Il trie bien les consignes : on passe à l'étape 3, « Intégrer dans son plan », sur sujet tiré."
+        - "Sa restitution est incomplète : on commence à l'étape 1, « Restituer le briefing du DP »."
+        - "Il restitue tout mais ne hiérarchise pas : on passe à l'étape 2, « Trier ce qui sert au GP »."
+        - "Il trie bien les consignes : on passe à l'étape 3, « Intégrer dans son plan », sur sujet tiré."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré, 10 minutes de préparation"
       criteres:
@@ -218,16 +218,16 @@ N4-briefing:
         - "A-t-il déjà plongé avec des consignes floues ? Qu'a-t-il fait ?"
       sait:
         - "Sait-il distinguer ce qu'il demande au DP de ce qu'il décide lui-même ?"
-        - "A-t-il des idées fausses ? Par exemple : « poser des questions, c'est montrer qu'on n'est pas prêt », ou « plus on pose de questions, mieux c'est »."
+        - "A-t-il des idées fausses ? Par exemple : « poser des questions, c'est montrer qu'on n'est pas prêt », ou « plus on pose de questions, mieux c'est »."
         - "Sait-il de quoi il a besoin : paramètres, site, conditions, niveau et matériel des plongeurs ?"
       esprit:
         - "Est-il intimidé par le DP, au point de ne rien demander ?"
         - "Préfère-t-il improviser plutôt que de s'informer ?"
-      comment: "Au sec, lui remettre un sujet volontairement incomplet, sans le prévenir, et lui dire : « Prépare ta plongée. Je suis ton DP. » On note s'il repère les manques, quelles questions il pose, et dans quel ordre."
+      comment: "Au sec, lui remettre un sujet volontairement incomplet, sans le prévenir, et lui dire : « Prépare ta plongée. Je suis ton DP. » On note s'il repère les manques, quelles questions il pose, et dans quel ordre."
       adapter:
-        - "Il ne sait pas ce qui relève du DP : on commence à l'étape 1, « Ce dont le GP a besoin »."
-        - "Il connaît la liste mais ne repère pas les manques : on passe à l'étape 2, « Sujet incomplet »."
-        - "Il pose les bonnes questions sans limite de temps : on passe à l'étape 3, « Pendant les 10 minutes de préparation »."
+        - "Il ne sait pas ce qui relève du DP : on commence à l'étape 1, « Ce dont le GP a besoin »."
+        - "Il connaît la liste mais ne repère pas les manques : on passe à l'étape 2, « Sujet incomplet »."
+        - "Il pose les bonnes questions sans limite de temps : on passe à l'étape 3, « Pendant les 10 minutes de préparation »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré, demandes d'informations possibles pendant la préparation"
       criteres:
@@ -245,17 +245,17 @@ N4-briefing:
         - "A-t-il déjà plongé avec un guide qui ne tenait pas compte de son niveau réel ?"
       sait:
         - "Connaît-il les éléments d'un briefing : présentation, déroulement, paramètres, mise à l'eau, signes, procédures, retour ?"
-        - "A-t-il des idées fausses ? Par exemple : « un briefing complet, c'est un briefing long », ou « le niveau sur la carte dit tout du plongeur »."
+        - "A-t-il des idées fausses ? Par exemple : « un briefing complet, c'est un briefing long », ou « le niveau sur la carte dit tout du plongeur »."
         - "Connaît-il les prérogatives des plongeurs PE12, PE20 et PE40 encadrés ?"
       esprit:
         - "Est-il à l'aise pour parler devant un groupe ?"
         - "Craint-il d'oublier quelque chose, au point de réciter ?"
-      comment: "Au sec, face à deux ou trois stagiaires dans le rôle de plongeurs, lui demander : « Briefe ta palanquée pour la plongée de tout à l'heure. » On note l'ordre, les oublis, le ton, et s'il pose des questions aux plongeurs."
+      comment: "Au sec, face à deux ou trois stagiaires dans le rôle de plongeurs, lui demander : « Briefe ta palanquée pour la plongée de tout à l'heure. » On note l'ordre, les oublis, le ton, et s'il pose des questions aux plongeurs."
       adapter:
-        - "Son briefing est incomplet ou désordonné : on commence à l'étape 1, « La trame d'un briefing »."
-        - "La trame est là mais le contenu n'est pas adapté au niveau : on passe à l'étape 2, « Briefer un niveau donné »."
-        - "Il briefe bien un niveau donné sans interroger les plongeurs : on travaille l'étape 3, « Niveau réel et état de chacun »."
-        - "Il est déjà à l'aise en briefing joué : on passe à l'étape 4, « En sortie réelle »."
+        - "Son briefing est incomplet ou désordonné : on commence à l'étape 1, « La trame d'un briefing »."
+        - "La trame est là mais le contenu n'est pas adapté au niveau : on passe à l'étape 2, « Briefer un niveau donné »."
+        - "Il briefe bien un niveau donné sans interroger les plongeurs : on travaille l'étape 3, « Niveau réel et état de chacun »."
+        - "Il est déjà à l'aise en briefing joué : on passe à l'étape 4, « En sortie réelle »."
     bilan:
       situation: "l'étape 5 : briefing de l'épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -273,15 +273,15 @@ N4-briefing:
         - "A-t-il déjà aidé un débutant à se mettre à l'eau ?"
       sait:
         - "Sait-il ce qu'on vérifie : robinets ouverts, inflateurs branchés, lest, détendeurs, instruments ?"
-        - "A-t-il des idées fausses ? Par exemple : « des PE40 n'ont pas besoin d'être vérifiés », ou « le guide se met à l'eau en premier, les autres suivent »."
+        - "A-t-il des idées fausses ? Par exemple : « des PE40 n'ont pas besoin d'être vérifiés », ou « le guide se met à l'eau en premier, les autres suivent »."
       esprit:
         - "Est-il gêné de vérifier le matériel d'un plongeur plus expérimenté que lui ?"
         - "Se laisse-t-il presser par l'agitation du bateau ?"
-      comment: "Sur le bateau ou au bord du bassin, palanquée jouée équipée, une anomalie glissée par le moniteur (robinet fermé, inflateur débranché), lui dire : « Organise la mise à l'eau de ta palanquée. » On regarde s'il vérifie, ce qu'il repère, et l'ordre qu'il donne."
+      comment: "Sur le bateau ou au bord du bassin, palanquée jouée équipée, une anomalie glissée par le moniteur (robinet fermé, inflateur débranché), lui dire : « Organise la mise à l'eau de ta palanquée. » On regarde s'il vérifie, ce qu'il repère, et l'ordre qu'il donne."
       adapter:
-        - "Il ne vérifie pas le matériel ou laisse passer l'anomalie : on commence à l'étape 1, « Vérifier le matériel des plongeurs »."
-        - "Il vérifie bien mais l'ordre de mise à l'eau est flou : on passe à l'étape 2, « Mise à l'eau de plongeurs confirmés »."
-        - "Il organise bien des plongeurs confirmés : on travaille l'étape 3, « Mise à l'eau de débutants »."
+        - "Il ne vérifie pas le matériel ou laisse passer l'anomalie : on commence à l'étape 1, « Vérifier le matériel des plongeurs »."
+        - "Il vérifie bien mais l'ordre de mise à l'eau est flou : on passe à l'étape 2, « Mise à l'eau de plongeurs confirmés »."
+        - "Il organise bien des plongeurs confirmés : on travaille l'étape 3, « Mise à l'eau de débutants »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -299,15 +299,15 @@ N4-briefing:
         - "A-t-il déjà attendu en surface dans le clapot ou le courant ?"
       sait:
         - "Sait-il choisir entre une immersion le long du pendeur et en pleine eau selon le niveau ?"
-        - "A-t-il des idées fausses ? Par exemple : « chacun descend dès qu'il est prêt », ou « s'il y a du courant, on descend vite et on se retrouve au fond »."
+        - "A-t-il des idées fausses ? Par exemple : « chacun descend dès qu'il est prêt », ou « s'il y a du courant, on descend vite et on se retrouve au fond »."
       esprit:
         - "Est-il pressé de descendre, ou prend-il le temps du regroupement ?"
         - "Le clapot ou le courant l'inquiètent-ils pour lui-même ?"
-      comment: "En milieu naturel, par conditions calmes, palanquée jouée, lui dire : « À toi de gérer l'immersion. » On regarde s'il regroupe, s'il obtient l'OK de chacun, et comment il fait descendre la palanquée ensemble."
+      comment: "En milieu naturel, par conditions calmes, palanquée jouée, lui dire : « À toi de gérer l'immersion. » On regarde s'il regroupe, s'il obtient l'OK de chacun, et comment il fait descendre la palanquée ensemble."
       adapter:
-        - "Il ne regroupe pas avant de descendre : on commence à l'étape 1, « Regrouper en surface »."
-        - "Il regroupe bien mais immerge toujours de la même façon : on passe à l'étape 2, « Choisir la technique d'immersion »."
-        - "Il gère bien par conditions calmes : on travaille l'étape 3, « Conditions moins favorables »."
+        - "Il ne regroupe pas avant de descendre : on commence à l'étape 1, « Regrouper en surface »."
+        - "Il regroupe bien mais immerge toujours de la même façon : on passe à l'étape 2, « Choisir la technique d'immersion »."
+        - "Il gère bien par conditions calmes : on travaille l'étape 3, « Conditions moins favorables »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -328,15 +328,15 @@ N4-descente:
         - "A-t-il déjà fait une descente en pleine eau, en eau turbide ou avec du courant ?"
       sait:
         - "Sait-il ce que le guide fait pour prévenir les barotraumatismes de l'oreille de ses plongeurs ?"
-        - "A-t-il des idées fausses ? Par exemple : « guider, c'est passer devant », ou « on descend à sa vitesse, les autres suivent »."
+        - "A-t-il des idées fausses ? Par exemple : « guider, c'est passer devant », ou « on descend à sa vitesse, les autres suivent »."
       esprit:
         - "Est-il centré sur sa propre descente, ou déjà tourné vers les autres ?"
         - "Est-il serein en pleine eau, sans repère ?"
-      comment: "En milieu naturel, descente au pendeur avec une palanquée jouée, lui dire : « Fais descendre ta palanquée. » On regarde sa place, s'il voit chacun, et s'il règle sa vitesse sur le plus lent."
+      comment: "En milieu naturel, descente au pendeur avec une palanquée jouée, lui dire : « Fais descendre ta palanquée. » On regarde sa place, s'il voit chacun, et s'il règle sa vitesse sur le plus lent."
       adapter:
-        - "Il descend devant sans voir la palanquée : on commence à l'étape 1, « Descente le long du pendeur »."
-        - "Il garde la palanquée au pendeur : on passe à l'étape 2, « Descente en pleine eau »."
-        - "Il maintient la cohésion en pleine eau : on travaille l'étape 3, « Contexte plus difficile »."
+        - "Il descend devant sans voir la palanquée : on commence à l'étape 1, « Descente le long du pendeur »."
+        - "Il garde la palanquée au pendeur : on passe à l'étape 2, « Descente en pleine eau »."
+        - "Il maintient la cohésion en pleine eau : on travaille l'étape 3, « Contexte plus difficile »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -356,15 +356,15 @@ N4-descente:
         - "A-t-il déjà plongé en courant ou en visibilité réduite ?"
       sait:
         - "Sait-il ce qu'on vérifie au fond : pression, état, flottabilité de chaque plongeur ?"
-        - "A-t-il des idées fausses ? Par exemple : « un OK suffit », ou « on se regroupe en route, pendant l'exploration »."
+        - "A-t-il des idées fausses ? Par exemple : « un OK suffit », ou « on se regroupe en route, pendant l'exploration »."
       esprit:
         - "Est-il pressé de commencer l'exploration ?"
         - "Se sent-il à l'aise pour communiquer par signes avec plusieurs plongeurs ?"
-      comment: "En milieu naturel, par conditions faciles, palanquée jouée, lui dire : « Tu arrives au fond. Fais ce qu'il faut avant de partir. » On regarde s'il attend chacun, ce qu'il demande, et en combien de temps."
+      comment: "En milieu naturel, par conditions faciles, palanquée jouée, lui dire : « Tu arrives au fond. Fais ce qu'il faut avant de partir. » On regarde s'il attend chacun, ce qu'il demande, et en combien de temps."
       adapter:
-        - "Il part avant le regroupement complet : on commence à l'étape 1, « Regrouper et communiquer »."
-        - "Il regroupe mais se contente d'un OK : on passe à l'étape 2, « Vérifier que tout va bien »."
-        - "Il regroupe et vérifie bien en conditions faciles : on travaille l'étape 3, « Courant ou visibilité réduite »."
+        - "Il part avant le regroupement complet : on commence à l'étape 1, « Regrouper et communiquer »."
+        - "Il regroupe mais se contente d'un OK : on passe à l'étape 2, « Vérifier que tout va bien »."
+        - "Il regroupe et vérifie bien en conditions faciles : on travaille l'étape 3, « Courant ou visibilité réduite »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -386,15 +386,15 @@ N4-guider:
         - "A-t-il déjà mené un parcours en autonomie au N3 ?"
       sait:
         - "Sait-il ce qu'il doit surveiller chez chaque plongeur : consommation et désaturation ?"
-        - "A-t-il des idées fausses ? Par exemple : « si le site est beau, on peut aller un peu plus loin », ou « chacun surveille son ordinateur »."
+        - "A-t-il des idées fausses ? Par exemple : « si le site est beau, on peut aller un peu plus loin », ou « chacun surveille son ordinateur »."
       esprit:
         - "Se laisse-t-il absorber par l'exploration ?"
         - "La responsabilité de plusieurs plongeurs le stresse-t-elle ?"
-      comment: "En milieu naturel, palanquée jouée, après un court briefing, lui dire : « Conduis la plongée que tu as annoncée. » On compte ses contrôles de pression, et on regarde s'il tient le parcours et les paramètres du DP."
+      comment: "En milieu naturel, palanquée jouée, après un court briefing, lui dire : « Conduis la plongée que tu as annoncée. » On compte ses contrôles de pression, et on regarde s'il tient le parcours et les paramètres du DP."
       adapter:
-        - "Il s'écarte du parcours annoncé : on commence à l'étape 1, « Suivre le parcours annoncé »."
-        - "Il tient le parcours mais ne l'ajuste pas aux plongeurs : on passe à l'étape 2, « Adapter le parcours »."
-        - "Il conduit bien mais contrôle peu ses plongeurs : on travaille l'étape 3, « Surveiller les paramètres de chacun »."
+        - "Il s'écarte du parcours annoncé : on commence à l'étape 1, « Suivre le parcours annoncé »."
+        - "Il tient le parcours mais ne l'ajuste pas aux plongeurs : on passe à l'étape 2, « Adapter le parcours »."
+        - "Il conduit bien mais contrôle peu ses plongeurs : on travaille l'étape 3, « Surveiller les paramètres de chacun »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -414,16 +414,16 @@ N4-guider:
         - "A-t-il déjà ressenti un essoufflement, une narcose ou un coup de froid ?"
       sait:
         - "Sait-il quelles décisions vont dans le sens de la sécurité : temps réduit, parcours modifié, profondeur réduite ?"
-        - "A-t-il des idées fausses ? Par exemple : « on a payé la sortie, on fait la plongée prévue », ou « renoncer, c'est échouer »."
+        - "A-t-il des idées fausses ? Par exemple : « on a payé la sortie, on fait la plongée prévue », ou « renoncer, c'est échouer »."
         - "Connaît-il le rôle du guide face à l'essoufflement, la narcose, le froid et la déshydratation ?"
       esprit:
         - "Ose-t-il renoncer, ou craint-il de décevoir la palanquée ?"
         - "Garde-t-il son calme quand les choses ne se passent pas comme prévu ?"
-      comment: "Au sec, lui poser un cas : « Tu arrives au fond, il y a du courant et l'eau est plus froide que prévu. Que fais-tu ? » On écoute sa décision, et surtout ce qui la guide."
+      comment: "Au sec, lui poser un cas : « Tu arrives au fond, il y a du courant et l'eau est plus froide que prévu. Que fais-tu ? » On écoute sa décision, et surtout ce qui la guide."
       adapter:
-        - "Ses décisions ne vont pas dans le sens de la sécurité : on commence à l'étape 1, « Cas au sec »."
-        - "Il décide bien au sec : on passe à l'étape 2, « Scénario annoncé »."
-        - "Il réagit bien aux scénarios annoncés : on travaille l'étape 3, « Imprévu réel »."
+        - "Ses décisions ne vont pas dans le sens de la sécurité : on commence à l'étape 1, « Cas au sec »."
+        - "Il décide bien au sec : on passe à l'étape 2, « Scénario annoncé »."
+        - "Il réagit bien aux scénarios annoncés : on travaille l'étape 3, « Imprévu réel »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -443,15 +443,15 @@ N4-guider:
         - "S'est-il déjà perdu, ou a-t-il vu un guide perdu ?"
       sait:
         - "Sait-il utiliser les informations du DP pour préparer un retour sur un site nouveau ?"
-        - "A-t-il des idées fausses ? Par exemple : « avec un compas, on ne se perd pas », ou « s'orienter, c'est le travail de celui qui est devant »."
+        - "A-t-il des idées fausses ? Par exemple : « avec un compas, on ne se perd pas », ou « s'orienter, c'est le travail de celui qui est devant »."
       esprit:
         - "Est-il confiant dans son orientation, peut-être trop ?"
         - "Craint-il de perdre la palanquée s'il regarde son compas, ou l'inverse ?"
-      comment: "On part du bilan de l'étape 1, « Bilan des acquis N3 », parcours varié en autonomie. On lui demande ensuite comment il fait pour s'orienter et regarder ses plongeurs en même temps, et on écoute sa réponse."
+      comment: "On part du bilan de l'étape 1, « Bilan des acquis N3 », parcours varié en autonomie. On lui demande ensuite comment il fait pour s'orienter et regarder ses plongeurs en même temps, et on écoute sa réponse."
       adapter:
         - "Le retour près du bateau n'est pas réussi au bilan de l'étape 1 : on reprend la progression N3."
-        - "Il s'oriente bien seul : on passe à l'étape 2, « S'orienter en guidant »."
-        - "Il tient son itinéraire en surveillant la palanquée : on travaille l'étape 3, « Site inconnu »."
+        - "Il s'oriente bien seul : on passe à l'étape 2, « S'orienter en guidant »."
+        - "Il tient son itinéraire en surveillant la palanquée : on travaille l'étape 3, « Site inconnu »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -469,15 +469,15 @@ N4-guider:
         - "A-t-il déjà montré quelque chose à un équipier sous l'eau ? L'a-t-il vu ?"
       sait:
         - "Sait-il citer les intérêts d'un site qu'il connaît : faune, flore, relief ?"
-        - "A-t-il des idées fausses ? Par exemple : « on montre en approchant la main ou en touchant », ou « agrémenter, c'est montrer un maximum d'espèces »."
+        - "A-t-il des idées fausses ? Par exemple : « on montre en approchant la main ou en touchant », ou « agrémenter, c'est montrer un maximum d'espèces »."
       esprit:
         - "Aime-t-il partager ce qu'il voit, ou plonge-t-il surtout pour lui ?"
         - "Craint-il de dire une erreur en expliquant une espèce ?"
-      comment: "Au sec, lui demander : « Qu'y a-t-il à voir sur ce site, et que montrerais-tu à un PE20 ? » Puis, en plongée, observer s'il montre, comment il se place et s'il vérifie que chacun a vu."
+      comment: "Au sec, lui demander : « Qu'y a-t-il à voir sur ce site, et que montrerais-tu à un PE20 ? » Puis, en plongée, observer s'il montre, comment il se place et s'il vérifie que chacun a vu."
       adapter:
-        - "Il ne connaît pas les intérêts du site : on commence à l'étape 1, « Repérer les intérêts du site »."
-        - "Il les connaît mais montre mal : on passe à l'étape 2, « Montrer »."
-        - "Il montre bien : on travaille l'étape 3, « Action éducative », au débriefing."
+        - "Il ne connaît pas les intérêts du site : on commence à l'étape 1, « Repérer les intérêts du site »."
+        - "Il les connaît mais montre mal : on passe à l'étape 2, « Montrer »."
+        - "Il montre bien : on travaille l'étape 3, « Action éducative », au débriefing."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -494,16 +494,16 @@ N4-guider:
         - "Un guide est-il déjà intervenu pour lui sous l'eau ? Comment l'a-t-il vécu ?"
       sait:
         - "Sait-il reconnaître une ventilation rapide, une flottabilité mal gérée, du stress, du froid ?"
-        - "A-t-il des idées fausses ? Par exemple : « tant qu'il fait OK, tout va bien », ou « on intervient seulement quand c'est grave »."
+        - "A-t-il des idées fausses ? Par exemple : « tant qu'il fait OK, tout va bien », ou « on intervient seulement quand c'est grave »."
         - "Connaît-il les interventions simples : ralentir, stabiliser, aider à équilibrer, communiquer ?"
       esprit:
         - "Regarde-t-il souvent ses plongeurs, ou surtout le parcours ?"
         - "Craint-il de mal réagir, au point d'attendre ?"
       comment: "En milieu naturel, palanquée jouée, sans prévenir, le moniteur joue une ventilation rapide ou une flottabilité mal gérée. On note le temps qu'il met à repérer, et ce qu'il fait."
       adapter:
-        - "Il ne repère pas le comportement : on commence à l'étape 1, « Repérer un comportement »."
-        - "Il repère mais ne sait pas quoi faire : on passe à l'étape 2, « Intervenir simplement »."
-        - "Il repère et intervient bien sur une situation : on travaille l'étape 3, « Situations jouées en plongée »."
+        - "Il ne repère pas le comportement : on commence à l'étape 1, « Repérer un comportement »."
+        - "Il repère mais ne sait pas quoi faire : on passe à l'étape 2, « Intervenir simplement »."
+        - "Il repère et intervient bien sur une situation : on travaille l'étape 3, « Situations jouées en plongée »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -523,17 +523,17 @@ N4-findeplongee:
         - "A-t-il déjà lancé un parachute au palier ?"
       sait:
         - "Sait-il sur quels éléments décider la fin de plongée : air, désaturation, consignes du DP ?"
-        - "A-t-il des idées fausses ? Par exemple : « chacun suit son ordinateur », ou « on remonte quand le premier atteint sa réserve »."
+        - "A-t-il des idées fausses ? Par exemple : « chacun suit son ordinateur », ou « on remonte quand le premier atteint sa réserve »."
         - "Connaît-il les préconisations fédérales en cas d'ordinateurs différents et les procédures de rattrapage ?"
       esprit:
         - "Est-il serein pour imposer une remontée à toute la palanquée ?"
         - "Est-il à l'aise au palier, ou absorbé par sa propre stabilisation ?"
-      comment: "Au sec, lui poser un cas : « Trois plongeurs, trois ordinateurs, l'un affiche un palier et pas les autres. Que fais-tu ? » Puis, en plongée, observer quand et comment il engage la remontée."
+      comment: "Au sec, lui poser un cas : « Trois plongeurs, trois ordinateurs, l'un affiche un palier et pas les autres. Que fais-tu ? » Puis, en plongée, observer quand et comment il engage la remontée."
       adapter:
-        - "Il engage la remontée trop tard ou sans vérifier chacun : on commence à l'étape 1, « Décider de la fin de plongée »."
-        - "Il ne sait pas gérer des ordinateurs différents : on passe à l'étape 2, « Organiser la désaturation »."
-        - "Il gère bien la désaturation : on travaille l'étape 3, « Les paliers »."
-        - "Il tient déjà les paliers en palanquée : on passe à l'étape 4, « Palanquée hétérogène, courant »."
+        - "Il engage la remontée trop tard ou sans vérifier chacun : on commence à l'étape 1, « Décider de la fin de plongée »."
+        - "Il ne sait pas gérer des ordinateurs différents : on passe à l'étape 2, « Organiser la désaturation »."
+        - "Il gère bien la désaturation : on travaille l'étape 3, « Les paliers »."
+        - "Il tient déjà les paliers en palanquée : on passe à l'étape 4, « Palanquée hétérogène, courant »."
     bilan:
       situation: "l'étape 5 : épreuve 4 (évaluation), sujet tiré"
       criteres:
@@ -556,16 +556,16 @@ N4-retour:
         - "A-t-il l'habitude de différentes embarcations (semi-rigide, bateau à échelle, plage) ?"
       sait:
         - "Sait-il pourquoi on regroupe la palanquée gilets gonflés avant de nager vers le bateau ?"
-        - "A-t-il des idées fausses ? Par exemple : « en surface, chacun se débrouille », ou « le plus rapide sort en premier »."
+        - "A-t-il des idées fausses ? Par exemple : « en surface, chacun se débrouille », ou « le plus rapide sort en premier »."
         - "Sait-il dire qui sort en premier et comment on aide au matériel selon l'embarcation ?"
       esprit:
         - "Considère-t-il que la plongée est finie une fois en surface ?"
         - "Est-il à l'aise pour donner des consignes à des plongeurs plus âgés ou plus expérimentés ?"
-      comment: "Après une plongée, en surface, lui confier le retour de la palanquée au bateau et lui demander d'abord : « Comment comptes-tu organiser le retour ? » On l'observe sans intervenir, sauf pour la sécurité. On regarde s'il regroupe, s'il donne des consignes et s'il surveille ceux qui attendent."
+      comment: "Après une plongée, en surface, lui confier le retour de la palanquée au bateau et lui demander d'abord : « Comment comptes-tu organiser le retour ? » On l'observe sans intervenir, sauf pour la sécurité. On regarde s'il regroupe, s'il donne des consignes et s'il surveille ceux qui attendent."
       adapter:
-        - "Il laisse chacun rentrer seul : on commence à l'étape 1, « Retour groupé »."
-        - "Il regroupe bien mais ne gère pas l'ordre de sortie : on passe à l'étape 2, « Sortie de l'eau »."
-        - "Il gère déjà le retour par mer calme : on passe à l'étape 3, « Clapot ou courant »."
+        - "Il laisse chacun rentrer seul : on commence à l'étape 1, « Retour groupé »."
+        - "Il regroupe bien mais ne gère pas l'ordre de sortie : on passe à l'étape 2, « Sortie de l'eau »."
+        - "Il gère déjà le retour par mer calme : on passe à l'étape 3, « Clapot ou courant »."
         - "Il n'ose pas donner de consignes : on le fait d'abord encadrer des stagiaires connus, à l'étape 1."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation)"
@@ -579,21 +579,21 @@ N4-retour:
     evaluer:
       question: "Quelle idée le candidat se fait-il d'un débriefing de guide de palanquée ?"
       vecu:
-        - "Quels débriefings a-t-il reçus ? Étaient-ils construits, ou réduits à « c'était bien » ?"
+        - "Quels débriefings a-t-il reçus ? Étaient-ils construits, ou réduits à « c'était bien » ?"
         - "A-t-il déjà débriefé une plongée, même entre copains ou en autonomie ?"
         - "A-t-il vécu un débriefing vexant ou culpabilisant ?"
       sait:
         - "Sait-il distinguer les faits, les explications et les conseils ?"
-        - "A-t-il des idées fausses ? Par exemple : « débriefer, c'est raconter ce qu'on a vu », ou « on ne dit rien pour ne fâcher personne »."
+        - "A-t-il des idées fausses ? Par exemple : « débriefer, c'est raconter ce qu'on a vu », ou « on ne dit rien pour ne fâcher personne »."
         - "Connaît-il les limites de ses prérogatives pour conseiller un plongeur ?"
       esprit:
         - "Est-il à l'aise pour parler devant un groupe ?"
         - "Redoute-t-il de recadrer quelqu'un, ou au contraire le fait-il de façon brusque ?"
-      comment: "Après une plongée qu'il a guidée, lui demander : « Fais le débriefing de ta palanquée. » On écoute sans l'interrompre. On note la longueur, l'ordre des idées et le ton employé."
+      comment: "Après une plongée qu'il a guidée, lui demander : « Fais le débriefing de ta palanquée. » On écoute sans l'interrompre. On note la longueur, l'ordre des idées et le ton employé."
       adapter:
-        - "Il raconte la plongée sans fil conducteur : on commence à l'étape 1, « Les faits marquants »."
-        - "Il résume bien mais n'explique pas ses interventions : on passe à l'étape 2, « Expliquer ses interventions »."
-        - "Il évite tout recadrage, ou il recadre avec reproche : on travaille l'étape 3, « Recadrer si nécessaire »."
+        - "Il raconte la plongée sans fil conducteur : on commence à l'étape 1, « Les faits marquants »."
+        - "Il résume bien mais n'explique pas ses interventions : on passe à l'étape 2, « Expliquer ses interventions »."
+        - "Il évite tout recadrage, ou il recadre avec reproche : on travaille l'étape 3, « Recadrer si nécessaire »."
     bilan:
       situation: "l'étape 4 : débriefing de l'épreuve 4 (évaluation)"
       criteres:
@@ -611,16 +611,16 @@ N4-retour:
         - "A-t-il suivi le RIFAP ? Depuis combien de temps ?"
       sait:
         - "Sait-il citer des signes d'accident qui peuvent apparaître après la plongée ?"
-        - "A-t-il des idées fausses ? Par exemple : « une fois sur le bateau, il n'y a plus de risque », ou « un peu de fatigue, c'est normal, inutile d'en parler »."
+        - "A-t-il des idées fausses ? Par exemple : « une fois sur le bateau, il n'y a plus de risque », ou « un peu de fatigue, c'est normal, inutile d'en parler »."
         - "Sait-il à qui il doit transmettre l'alerte ?"
       esprit:
         - "Pense-t-il d'abord à se déséquiper, ou d'abord à ses plongeurs ?"
         - "Craint-il de déranger le DP pour un simple doute ?"
       comment: "Après la sortie de l'eau, sans prévenir, faire jouer à un stagiaire un plongeur qui se dit fatigué. On observe si le candidat le remarque, ce qu'il dit et à qui il s'adresse. On lui demande ensuite quelles consignes il aurait données."
       adapter:
-        - "Il quitte la palanquée dès la sortie : on commence à l'étape 1, « Rester en contact »."
-        - "Il reste présent mais ne donne aucune consigne : on passe à l'étape 2, « Rappeler les consignes »."
-        - "Il repère le plongeur mais n'alerte pas : on travaille l'étape 3, « Repérer et alerter »."
+        - "Il quitte la palanquée dès la sortie : on commence à l'étape 1, « Rester en contact »."
+        - "Il reste présent mais ne donne aucune consigne : on passe à l'étape 2, « Rappeler les consignes »."
+        - "Il repère le plongeur mais n'alerte pas : on travaille l'étape 3, « Repérer et alerter »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation)"
       criteres:
@@ -640,15 +640,15 @@ N4-environnement:
         - "A-t-il déjà guidé, et a-t-il remarqué ce qu'il fait près du fond pendant ce temps ?"
       sait:
         - "Sait-il ce qu'un coup de palme ou un détendeur qui traîne peut abîmer ?"
-        - "A-t-il des idées fausses ? Par exemple : « un léger contact avec le fond ne fait rien », ou « le guide peut se poser pour montrer quelque chose »."
+        - "A-t-il des idées fausses ? Par exemple : « un léger contact avec le fond ne fait rien », ou « le guide peut se poser pour montrer quelque chose »."
       esprit:
         - "Est-il sensible à la protection du milieu, ou la voit-il comme une contrainte ?"
         - "Pense-t-il que la charge du guidage excuse un peu de négligence ?"
-      comment: "L'étape 1, « Bilan des acquis N3 », sert d'observation : plongée en autonomie près du fond. On regarde sa stabilisation, son palmage, la position de son matériel et les nuages de sédiment qu'il laisse. Au retour, on lui demande ce qu'il a remarqué de lui-même."
+      comment: "L'étape 1, « Bilan des acquis N3 », sert d'observation : plongée en autonomie près du fond. On regarde sa stabilisation, son palmage, la position de son matériel et les nuages de sédiment qu'il laisse. Au retour, on lui demande ce qu'il a remarqué de lui-même."
       adapter:
         - "Il touche le fond ou soulève du sédiment : on reprend la stabilisation et le palmage, à l'étape 1."
-        - "Il évolue proprement mais du matériel pend : on passe à l'étape 2, « Fixer ses accessoires »."
-        - "Il est exemplaire en autonomie : on passe à l'étape 3, « Exemplaire en guidant »."
+        - "Il évolue proprement mais du matériel pend : on passe à l'étape 2, « Fixer ses accessoires »."
+        - "Il est exemplaire en autonomie : on passe à l'étape 3, « Exemplaire en guidant »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation)"
       criteres:
@@ -666,15 +666,15 @@ N4-environnement:
         - "A-t-il déjà montré un animal à une palanquée ? Tout le monde l'a-t-il vu ?"
       sait:
         - "Sait-il ce qui fait fuir un animal : lumière, bruit, bulles, approche trop rapide ?"
-        - "A-t-il des idées fausses ? Par exemple : « on montre et on passe, chacun se place comme il peut », ou « la lampe directement sur l'animal, c'est mieux pour voir »."
+        - "A-t-il des idées fausses ? Par exemple : « on montre et on passe, chacun se place comme il peut », ou « la lampe directement sur l'animal, c'est mieux pour voir »."
       esprit:
         - "Prend-il du plaisir à faire découvrir, ou pense-t-il surtout à avancer ?"
         - "Est-il patient avec un plongeur qui met du temps à voir ?"
       comment: "En plongée guidée, palanquée jouée par des stagiaires, lui demander de faire observer un animal repéré à l'avance. On regarde où il place chacun, sa vitesse et son usage de la lampe. Au retour, on demande aux plongeurs joués s'ils ont bien vu."
       adapter:
-        - "Les plongeurs se gênent ou ne voient pas : on commence à l'étape 1, « Position et vitesse »."
-        - "Il place bien la palanquée mais n'utilise aucun support : on passe à l'étape 2, « Matériel d'observation »."
-        - "Les animaux fuient à son approche : on travaille l'étape 3, « Maîtriser les perturbations »."
+        - "Les plongeurs se gênent ou ne voient pas : on commence à l'étape 1, « Position et vitesse »."
+        - "Il place bien la palanquée mais n'utilise aucun support : on passe à l'étape 2, « Matériel d'observation »."
+        - "Les animaux fuient à son approche : on travaille l'étape 3, « Maîtriser les perturbations »."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation)"
       criteres:
@@ -692,15 +692,15 @@ N4-environnement:
         - "Plonge-t-il dans des zones protégées ?"
       sait:
         - "Sait-il citer quelques engagements de la charte ?"
-        - "A-t-il des idées fausses ? Par exemple : « ramasser un coquillage vide, ce n'est pas grave », ou « nourrir les poissons, c'est leur rendre service »."
+        - "A-t-il des idées fausses ? Par exemple : « ramasser un coquillage vide, ce n'est pas grave », ou « nourrir les poissons, c'est leur rendre service »."
       esprit:
         - "Applique-t-il la charte par conviction, ou seulement quand on le regarde ?"
         - "Est-il gêné à l'idée de corriger un plongeur, surtout plus expérimenté que lui ?"
-      comment: "Au sec, lui demander : « Qu'est-ce que la charte du plongeur responsable te demande de faire ou de ne pas faire ? » On note ce qu'il cite sans compléter. Puis, en plongée, on observe ses propres gestes."
+      comment: "Au sec, lui demander : « Qu'est-ce que la charte du plongeur responsable te demande de faire ou de ne pas faire ? » On note ce qu'il cite sans compléter. Puis, en plongée, on observe ses propres gestes."
       adapter:
-        - "Il ne connaît pas la charte : on commence à l'étape 1, « Les chartes mer et eau douce »."
-        - "Il la connaît mais ne l'applique pas toujours : on passe à l'étape 2, « Appliquer »."
-        - "Il l'applique pour lui : on passe à l'étape 3, « Identifier et corriger »."
+        - "Il ne connaît pas la charte : on commence à l'étape 1, « Les chartes mer et eau douce »."
+        - "Il la connaît mais ne l'applique pas toujours : on passe à l'étape 2, « Appliquer »."
+        - "Il l'applique pour lui : on passe à l'étape 3, « Identifier et corriger »."
         - "Il n'ose pas corriger : à l'étape 3, on commence par des cas joués simples, puis on discute des mots à employer au débriefing."
     bilan:
       situation: "l'étape 4 : épreuve 4 (évaluation)"
@@ -719,15 +719,15 @@ N4-environnement:
         - "Utilise-t-il déjà des ressources comme DORIS ?"
       sait:
         - "Sait-il nommer les espèces fréquentes de ses sites habituels ?"
-        - "A-t-il des idées fausses ? Par exemple : « l'anémone est une plante », ou « une éponge, c'est un végétal »."
+        - "A-t-il des idées fausses ? Par exemple : « l'anémone est une plante », ou « une éponge, c'est un végétal »."
       esprit:
         - "Est-il curieux du milieu, ou plonge-t-il surtout pour la technique ?"
         - "Craint-il de se tromper devant ses plongeurs, ou au contraire invente-t-il une réponse plutôt que de dire qu'il ne sait pas ?"
-      comment: "Après une plongée, lui demander : « Décris-nous le site et ce qu'on y a vu. » On écoute la justesse, les noms employés et la façon dont il rend le récit vivant. Puis un stagiaire lui pose une question simple sur une espèce."
+      comment: "Après une plongée, lui demander : « Décris-nous le site et ce qu'on y a vu. » On écoute la justesse, les noms employés et la façon dont il rend le récit vivant. Puis un stagiaire lui pose une question simple sur une espèce."
       adapter:
-        - "Sa description est pauvre ou confuse : on commence à l'étape 1, « Décrire le site »."
-        - "Il décrit bien mais nomme peu : on passe à l'étape 2, « Nommer »."
-        - "Il nomme juste mais n'explique rien : on travaille l'étape 3, « Expliquer », puis l'étape 4, « Répondre aux questions »."
+        - "Sa description est pauvre ou confuse : on commence à l'étape 1, « Décrire le site »."
+        - "Il décrit bien mais nomme peu : on passe à l'étape 2, « Nommer »."
+        - "Il nomme juste mais n'explique rien : on travaille l'étape 3, « Expliquer », puis l'étape 4, « Répondre aux questions »."
     bilan:
       situation: "l'étape 5 : épreuve 4 (évaluation)"
       criteres:
@@ -745,15 +745,15 @@ N4-environnement:
         - "A-t-il entendu un briefing qui présentait les espèces du site et leur protection ?"
       sait:
         - "Sait-il où s'informer sur la région, ses espèces et leur statut de protection ?"
-        - "A-t-il des idées fausses ? Par exemple : « l'ancre, ce n'est pas l'affaire des plongeurs », ou « le briefing, c'est seulement la profondeur et la durée »."
+        - "A-t-il des idées fausses ? Par exemple : « l'ancre, ce n'est pas l'affaire des plongeurs », ou « le briefing, c'est seulement la profondeur et la durée »."
       esprit:
         - "Voit-il la préparation comme utile, ou comme une perte de temps ?"
         - "Se sent-il légitime pour proposer quelque chose au DP ?"
-      comment: "Avant une sortie, lui demander : « Qu'est-ce que tu sais du site de demain, côté environnement ? Qu'en dirais-tu à ta palanquée ? » On note ce qu'il a cherché de lui-même et ce qu'il retient pour le briefing."
+      comment: "Avant une sortie, lui demander : « Qu'est-ce que tu sais du site de demain, côté environnement ? Qu'en dirais-tu à ta palanquée ? » On note ce qu'il a cherché de lui-même et ce qu'il retient pour le briefing."
       adapter:
-        - "Il ne s'est pas informé : on commence à l'étape 1, « Contexte environnemental »."
-        - "Il connaît le site mais n'a jamais pensé au mouillage : on passe à l'étape 2, « Limiter l'impact du mouillage »."
-        - "Il est bien informé mais n'en dit rien aux plongeurs : on travaille l'étape 3, « Transmettre au briefing »."
+        - "Il ne s'est pas informé : on commence à l'étape 1, « Contexte environnemental »."
+        - "Il connaît le site mais n'a jamais pensé au mouillage : on passe à l'étape 2, « Limiter l'impact du mouillage »."
+        - "Il est bien informé mais n'en dit rien aux plongeurs : on travaille l'étape 3, « Transmettre au briefing »."
     bilan:
       situation: "l'étape 4 : en situation (aptitude visée)"
       criteres:
@@ -773,16 +773,16 @@ N4-ipd:
         - "A-t-il déjà assisté réellement un plongeur, ou été assisté ?"
       sait:
         - "Sait-il pourquoi on remonte au gilet, sans palmer ni regonfler ?"
-        - "A-t-il des idées fausses ? Par exemple : « on attend 35 m pour prendre en charge », ou « le parachute, on l'accroche à soi pour ne pas le perdre »."
+        - "A-t-il des idées fausses ? Par exemple : « on attend 35 m pour prendre en charge », ou « le parachute, on l'accroche à soi pour ne pas le perdre »."
         - "Connaît-il les critères de l'épreuve 5 : prise en charge, vitesse, profil, profondeur plafond, tour d'horizon ?"
       esprit:
         - "Est-il confiant, ou l'épreuve l'inquiète-t-elle ?"
         - "Comment vit-il la narcose ? En parle-t-il ouvertement ?"
-      comment: "L'étape 1, « Bilan des acquis PA40 », sert d'observation : assistance intégrale depuis 40 m, le moniteur dans le rôle de l'assisté. On regarde la prise en charge, la vitesse, le profil et la fin de remontée. Avant la plongée, on lui demande comment il va s'y prendre ; après, ce qu'il a ressenti."
+      comment: "L'étape 1, « Bilan des acquis PA40 », sert d'observation : assistance intégrale depuis 40 m, le moniteur dans le rôle de l'assisté. On regarde la prise en charge, la vitesse, le profil et la fin de remontée. Avant la plongée, on lui demande comment il va s'y prendre ; après, ce qu'il a ressenti."
       adapter:
         - "L'assistance n'est pas sûre : on reprend la progression PA40."
-        - "Il remonte en palmant ou en regonflant : on passe à l'étape 2, « Remontée au gilet depuis 25 m »."
-        - "La remontée est maîtrisée depuis 25 m : on passe à l'étape 3, puis à l'étape 4, « Situation évolutive »."
+        - "Il remonte en palmant ou en regonflant : on passe à l'étape 2, « Remontée au gilet depuis 25 m »."
+        - "La remontée est maîtrisée depuis 25 m : on passe à l'étape 3, puis à l'étape 4, « Situation évolutive »."
         - "Il est inquiet ou sensible à la narcose : on allonge l'accoutumance progressive à la profondeur avant l'étape 3."
     bilan:
       situation: "l'étape 6 : épreuve 5 (évaluation)"
@@ -807,16 +807,16 @@ N4-techniques:
         - "Retire-t-il facilement son masque en plongée ? L'a-t-il déjà fait en profondeur ?"
       sait:
         - "Sait-il pourquoi sa flottabilité varie pendant la descente, et comment il utilise son gilet ?"
-        - "A-t-il des idées fausses ? Par exemple : « plus on descend vite, mieux c'est », ou « on se stabilise en palmant »."
+        - "A-t-il des idées fausses ? Par exemple : « plus on descend vite, mieux c'est », ou « on se stabilise en palmant »."
         - "Connaît-il les critères de l'épreuve 7 : verticalité, absence de vrille, vitesse, stabilisation ?"
       esprit:
         - "Le retrait du masque à 40 m l'inquiète-t-il ?"
         - "Est-il gêné par la narcose, ou la minimise-t-il ?"
-      comment: "L'étape 1, « Bilan des acquis », sert d'observation : à 20 m, stabilisation, retrait, remise et vidage du masque. On regarde la tenue de la profondeur et les signes de stress. On lui demande ensuite comment il descend d'habitude et ce qu'il redoute dans l'épreuve."
+      comment: "L'étape 1, « Bilan des acquis », sert d'observation : à 20 m, stabilisation, retrait, remise et vidage du masque. On regarde la tenue de la profondeur et les signes de stress. On lui demande ensuite comment il descend d'habitude et ce qu'il redoute dans l'épreuve."
       adapter:
         - "Il ne tient pas sa stabilisation ou stresse masque retiré : on reste à l'étape 1 avant d'aller plus loin."
-        - "Il est stable mais n'a jamais descendu tête en bas : on passe à l'étape 2, « Descente tête en bas, à faible profondeur »."
-        - "Il descend vertical sans vrille : on passe à l'étape 3, « Descente jusqu'à 40 m »."
+        - "Il est stable mais n'a jamais descendu tête en bas : on passe à l'étape 2, « Descente tête en bas, à faible profondeur »."
+        - "Il descend vertical sans vrille : on passe à l'étape 3, « Descente jusqu'à 40 m »."
         - "Il a du mal à équilibrer tête en bas : on reste plus longtemps à l'étape 2, en équilibrant tôt."
     bilan:
       situation: "l'étape 5 : épreuve 7 (évaluation)"
@@ -838,17 +838,17 @@ N4-techniques:
         - "Sait-il déjà gonfler un parachute en zone de palier ?"
       sait:
         - "Sait-il pourquoi le gilet se gonfle tout seul pendant la remontée, et ce qu'il doit purger ?"
-        - "A-t-il des idées fausses ? Par exemple : « on corrige la vitesse en palmant », ou « on gonfle le parachute avant d'arriver au palier »."
+        - "A-t-il des idées fausses ? Par exemple : « on corrige la vitesse en palmant », ou « on gonfle le parachute avant d'arriver au palier »."
         - "Connaît-il la vitesse de référence de l'épreuve, 10 à 12 m/min ?"
       esprit:
         - "Est-il à l'aise pour gérer deux gilets et sa ventilation en même temps ?"
         - "Craint-il la redescente éliminatoire ?"
-      comment: "L'étape 1, « Bilan : remontée au gilet seul », sert d'observation : remontée seul depuis 15 m. On regarde la régularité de la vitesse, les purges et l'absence de palmage. On lui demande ensuite comment il s'y prendrait avec un binôme."
+      comment: "L'étape 1, « Bilan : remontée au gilet seul », sert d'observation : remontée seul depuis 15 m. On regarde la régularité de la vitesse, les purges et l'absence de palmage. On lui demande ensuite comment il s'y prendrait avec un binôme."
       adapter:
         - "Il ne tient pas sa vitesse seul : on reste à l'étape 1."
-        - "Il remonte bien seul : on passe à l'étape 2, « Binôme solidaire depuis 15 m »."
-        - "Il gère déjà les deux gilets depuis 15 m : on passe à l'étape 3, « Depuis 25 m »."
-        - "La remontée est sûre mais la fin est confuse : on travaille l'étape 4, « Arrêt, parachute et désaturation »."
+        - "Il remonte bien seul : on passe à l'étape 2, « Binôme solidaire depuis 15 m »."
+        - "Il gère déjà les deux gilets depuis 15 m : on passe à l'étape 3, « Depuis 25 m »."
+        - "La remontée est sûre mais la fin est confuse : on travaille l'étape 4, « Arrêt, parachute et désaturation »."
     bilan:
       situation: "l'étape 5 : épreuve 8 (évaluation)"
       criteres:
@@ -872,15 +872,15 @@ N4-physique:
       sait:
         - "Connaît-il le déroulement de l'épreuve et ses critères éliminatoires ?"
         - "Sait-il pourquoi l'apnée se fait toujours en binôme, sans hyperventilation ?"
-        - "A-t-il des idées fausses ? Par exemple : « on remorque plus vite en tenant le mannequin par le cou », ou « quelques grandes inspirations avant l'apnée, ça aide »."
+        - "A-t-il des idées fausses ? Par exemple : « on remorque plus vite en tenant le mannequin par le cou », ou « quelques grandes inspirations avant l'apnée, ça aide »."
       esprit:
         - "Est-il confiant, ou l'épreuve physique l'inquiète-t-elle ?"
         - "A-t-il tendance à partir trop vite et à s'épuiser ?"
       comment: "En piscine ou en milieu protégé, lui faire remorquer le mannequin sur une courte distance, puis faire une apnée en déplacement vers 4-6 m, sans chrono et sous surveillance. On regarde la prise, la position du visage du mannequin, l'aisance en apnée et la récupération. On lui demande ensuite ce qu'il redoute le plus."
       adapter:
-        - "La prise ou le remorquage ne sont pas maîtrisés : on commence à l'étape 1, « Remorquer le mannequin »."
-        - "Il remorque bien mais l'apnée est courte : on passe à l'étape 2, « Apnée en déplacement à 4-6 m »."
-        - "Les deux parties sont acquises séparément : on passe à l'étape 3, « Enchaînement partiel »."
+        - "La prise ou le remorquage ne sont pas maîtrisés : on commence à l'étape 1, « Remorquer le mannequin »."
+        - "Il remorque bien mais l'apnée est courte : on passe à l'étape 2, « Apnée en déplacement à 4-6 m »."
+        - "Les deux parties sont acquises séparément : on passe à l'étape 3, « Enchaînement partiel »."
         - "Il manque d'endurance : on associe un entraînement régulier en nage PMT avant l'étape 4."
     bilan:
       situation: "l'étape 5 : épreuve 1 (évaluation)"
@@ -901,14 +901,14 @@ N4-physique:
         - "A-t-il déjà nagé 800 m d'une traite ? En combien de temps ?"
       sait:
         - "Connaît-il le barème du MFT et le temps qui lui donne la moyenne ?"
-        - "A-t-il des idées fausses ? Par exemple : « avec de grandes palmes, on va forcément plus vite », ou « il suffit de forcer le jour de l'épreuve »."
+        - "A-t-il des idées fausses ? Par exemple : « avec de grandes palmes, on va forcément plus vite », ou « il suffit de forcer le jour de l'épreuve »."
       esprit:
         - "Est-il motivé pour s'entraîner sur la durée ?"
         - "L'épreuve l'inquiète-t-elle, ou la sous-estime-t-il ?"
-      comment: "L'étape 1, « Bilan », sert d'observation : nage PMT chronométrée sur une distance connue. On note le temps, la régularité de l'allure et l'aisance sur le tuba. On lui demande ensuite combien de fois par semaine il peut s'entraîner."
+      comment: "L'étape 1, « Bilan », sert d'observation : nage PMT chronométrée sur une distance connue. On note le temps, la régularité de l'allure et l'aisance sur le tuba. On lui demande ensuite combien de fois par semaine il peut s'entraîner."
       adapter:
-        - "Son temps est loin du barème : on construit à l'étape 2, « Entraînement aérobie », avec des distances croissantes."
-        - "Il progresse d'une séance à l'autre : on passe à l'étape 3, « 800 m chronométré »."
+        - "Son temps est loin du barème : on construit à l'étape 2, « Entraînement aérobie », avec des distances croissantes."
+        - "Il progresse d'une séance à l'autre : on passe à l'étape 3, « 800 m chronométré »."
         - "Il est déjà dans le barème : on vérifie en milieu naturel à l'étape 3, puis on entretient."
     bilan:
       situation: "l'étape 4 : épreuve 2 (évaluation)"
@@ -927,15 +927,15 @@ N4-physique:
       sait:
         - "Connaît-il le protocole complet de l'épreuve, de la descente aux 30 s sous contrôle en surface ?"
         - "Sait-il pourquoi on ne pratique jamais l'hyperventilation ?"
-        - "A-t-il des idées fausses ? Par exemple : « on remonte le plus vite possible », ou « le signe OK en surface, c'est une formalité »."
+        - "A-t-il des idées fausses ? Par exemple : « on remonte le plus vite possible », ou « le signe OK en surface, c'est une formalité »."
       esprit:
         - "L'apnée l'inquiète-t-elle, ou au contraire est-il tenté d'aller trop loin ?"
         - "Accepte-t-il de progresser par paliers de profondeur ?"
       comment: "En milieu naturel, sous surveillance d'un binôme en surface, lui demander une apnée stabilisée à 5 m face au moniteur, puis la remontée. On regarde le canard, le calme au fond, le tour d'horizon et la récupération. On lui demande ensuite ce qu'il ressent à l'idée de 10 m."
       adapter:
-        - "Le canard ou la stabilisation à 5 m ne sont pas acquis : on commence à l'étape 1, « Apnée stabilisée à 5 m »."
-        - "Il est à l'aise à 5 m : on passe à l'étape 2, « Vers 8 m »."
-        - "Il est déjà à l'aise vers 8 m : on passe à l'étape 3, « À 10 m, protocole complet »."
+        - "Le canard ou la stabilisation à 5 m ne sont pas acquis : on commence à l'étape 1, « Apnée stabilisée à 5 m »."
+        - "Il est à l'aise à 5 m : on passe à l'étape 2, « Vers 8 m »."
+        - "Il est déjà à l'aise vers 8 m : on passe à l'étape 3, « À 10 m, protocole complet »."
         - "Il est tenté d'en faire trop : on insiste sur le binôme et l'absence d'hyperventilation avant toute progression."
     bilan:
       situation: "l'étape 4 : épreuve 3 (évaluation)"
@@ -957,15 +957,15 @@ N4-physique:
         - "S'entraîne-t-il en nage PMT en parallèle ?"
       sait:
         - "Connaît-il les règles de l'épreuve : sur le tuba, sans les bras, bouteille ouverte, détendeur en main ?"
-        - "A-t-il des idées fausses ? Par exemple : « on peut se reposer en respirant sur le détendeur », ou « on nage plus vite sur le dos »."
+        - "A-t-il des idées fausses ? Par exemple : « on peut se reposer en respirant sur le détendeur », ou « on nage plus vite sur le dos »."
       esprit:
         - "L'épreuve lui paraît-elle facile, ou redoute-t-il l'essoufflement ?"
         - "Sait-il gérer son allure sur la durée ?"
-      comment: "L'étape 1, « Bilan des acquis N3 », sert d'observation : 300 m capelé. On regarde l'essoufflement, la position, l'usage des bras et du scaphandre. On lui demande ensuite comment il compte passer de 300 à 500 m."
+      comment: "L'étape 1, « Bilan des acquis N3 », sert d'observation : 300 m capelé. On regarde l'essoufflement, la position, l'usage des bras et du scaphandre. On lui demande ensuite comment il compte passer de 300 à 500 m."
       adapter:
         - "Il s'essouffle sur 300 m : on reste à l'étape 1 et on associe un entraînement en nage PMT."
-        - "Il nage 300 m à l'aise mais s'aide des bras ou du détendeur : on passe à l'étape 2, « Technique de l'épreuve »."
-        - "La technique est conforme : on passe à l'étape 3, « 500 m chronométré »."
+        - "Il nage 300 m à l'aise mais s'aide des bras ou du détendeur : on passe à l'étape 2, « Technique de l'épreuve »."
+        - "La technique est conforme : on passe à l'étape 3, « 500 m chronométré »."
     bilan:
       situation: "l'étape 4 : épreuve 9 (évaluation)"
       criteres:
@@ -986,15 +986,15 @@ N4-theorie:
         - "A-t-il suivi le RIFAP ? Depuis combien de temps ?"
       sait:
         - "Ses connaissances sont-elles comprises ou seulement apprises par cœur ?"
-        - "A-t-il des idées fausses ? Par exemple : « en respectant son ordinateur, on ne risque pas d'accident de désaturation », ou « la narcose, ça n'arrive qu'aux débutants »."
+        - "A-t-il des idées fausses ? Par exemple : « en respectant son ordinateur, on ne risque pas d'accident de désaturation », ou « la narcose, ça n'arrive qu'aux débutants »."
         - "Sait-il dire ce que fait le GP, et pas seulement ce qu'est l'accident ?"
       esprit:
         - "Est-il à l'aise à l'écrit, ou l'épreuve théorique l'inquiète-t-elle ?"
         - "Pense-t-il en savoir assez, ou au contraire se sent-il perdu ?"
-      comment: "L'étape 1, « Bilan des acquis N3 », sert d'observation : quelques questions sur les accidents vus au N3, puis un cas court : « Un plongeur de ta palanquée s'essouffle à 30 m. Que fais-tu ? » On écoute la justesse des mécanismes et la place donnée au rôle du GP."
+      comment: "L'étape 1, « Bilan des acquis N3 », sert d'observation : quelques questions sur les accidents vus au N3, puis un cas court : « Un plongeur de ta palanquée s'essouffle à 30 m. Que fais-tu ? » On écoute la justesse des mécanismes et la place donnée au rôle du GP."
       adapter:
         - "Ses bases N3 sont fragiles : on fait une révision ciblée à l'étape 1."
-        - "Il connaît les accidents mais n'explique pas l'essoufflement : on passe à l'étape 2, « Oreille et ventilation »."
+        - "Il connaît les accidents mais n'explique pas l'essoufflement : on passe à l'étape 2, « Oreille et ventilation »."
         - "Il explique les mécanismes sans parler du rôle du GP : on travaille les cas pratiques des étapes 3 et 4."
         - "L'écrit l'inquiète : on lui fait faire des études de cas courtes et chronométrées avant l'étape 5."
     bilan:
@@ -1014,17 +1014,17 @@ N4-theorie:
         - "A-t-il plongé avec des plongeurs dont l'ordinateur indiquait autre chose que le sien ?"
       sait:
         - "Sait-il expliquer la saturation et la sursaturation avec ses mots ?"
-        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur sait ce qui se passe dans mon corps », ou « plus on fait de paliers profonds, plus on est en sécurité »."
+        - "A-t-il des idées fausses ? Par exemple : « l'ordinateur sait ce qui se passe dans mon corps », ou « plus on fait de paliers profonds, plus on est en sécurité »."
         - "Sait-il lire les écrans de son ordinateur et utiliser le mode planification ?"
       esprit:
         - "Fait-il une confiance totale à son ordinateur, ou s'en méfie-t-il ?"
         - "La partie théorique sur les modèles l'inquiète-t-elle ?"
-      comment: "Au sec, lui montrer une courbe de plongée et une capture d'écran d'ordinateur, puis lui demander : « Explique-moi ce que tu vois, et ce que tu ferais en tant que GP. » On écoute ce qu'il comprend des états de saturation et de ce qu'affiche l'ordinateur."
+      comment: "Au sec, lui montrer une courbe de plongée et une capture d'écran d'ordinateur, puis lui demander : « Explique-moi ce que tu vois, et ce que tu ferais en tant que GP. » On écoute ce qu'il comprend des états de saturation et de ce qu'affiche l'ordinateur."
       adapter:
-        - "Il ne sait pas expliquer la saturation : on commence à l'étape 1, « Dissolution de l'azote »."
-        - "Il comprend la saturation mais pas le principe des ordinateurs : on passe à l'étape 2, « Modèles »."
-        - "Il connaît le principe mais lit mal les écrans : on travaille l'étape 3, « Ordinateurs »."
-        - "Il maîtrise son propre ordinateur : on passe à l'étape 4, « Procédures différentes dans une palanquée »."
+        - "Il ne sait pas expliquer la saturation : on commence à l'étape 1, « Dissolution de l'azote »."
+        - "Il comprend la saturation mais pas le principe des ordinateurs : on passe à l'étape 2, « Modèles »."
+        - "Il connaît le principe mais lit mal les écrans : on travaille l'étape 3, « Ordinateurs »."
+        - "Il maîtrise son propre ordinateur : on passe à l'étape 4, « Procédures différentes dans une palanquée »."
     bilan:
       situation: "l'étape 5 : épreuve 10 (évaluation)"
       criteres:
@@ -1042,17 +1042,17 @@ N4-theorie:
         - "A-t-il entendu parler d'un accident qui a eu des suites judiciaires ?"
       sait:
         - "Sait-il dire ce qu'il pourra faire en autonomie et en encadrement une fois N4 ?"
-        - "A-t-il des idées fausses ? Par exemple : « avec l'assurance du club, je ne risque rien », ou « le GP décide seul du site et de la profondeur »."
+        - "A-t-il des idées fausses ? Par exemple : « avec l'assurance du club, je ne risque rien », ou « le GP décide seul du site et de la profondeur »."
         - "Distingue-t-il responsabilité civile et responsabilité pénale ?"
       esprit:
         - "La réglementation lui paraît-elle utile, ou rébarbative ?"
         - "Le poids de la responsabilité l'inquiète-t-il ?"
-      comment: "Au sec, lui proposer un cas court : « Tu guides trois N1 et l'un remonte seul. Quelles sont tes responsabilités ? Qu'aurait dû faire le DP ? » On écoute s'il mobilise les notions de responsabilité, de prérogatives et de rôle du DP."
+      comment: "Au sec, lui proposer un cas court : « Tu guides trois N1 et l'un remonte seul. Quelles sont tes responsabilités ? Qu'aurait dû faire le DP ? » On écoute s'il mobilise les notions de responsabilité, de prérogatives et de rôle du DP."
       adapter:
-        - "Il ignore les notions de responsabilité : on commence à l'étape 1, « Responsabilité du GP »."
-        - "Il connaît les responsabilités mais pas la structure fédérale : on passe à l'étape 2, « La FFESSM »."
-        - "Il confond ses prérogatives et celles du DP : on travaille l'étape 3, « Code du sport »."
-        - "Il maîtrise le reste : on termine par l'étape 4, « Les normes »."
+        - "Il ignore les notions de responsabilité : on commence à l'étape 1, « Responsabilité du GP »."
+        - "Il connaît les responsabilités mais pas la structure fédérale : on passe à l'étape 2, « La FFESSM »."
+        - "Il confond ses prérogatives et celles du DP : on travaille l'étape 3, « Code du sport »."
+        - "Il maîtrise le reste : on termine par l'étape 4, « Les normes »."
     bilan:
       situation: "l'étape 5 : épreuve 12 (évaluation)"
       criteres:
@@ -1070,16 +1070,16 @@ N4-theorie:
         - "A-t-il vécu une panne : détendeur en débit continu, givrage, fuite ?"
       sait:
         - "Sait-il expliquer simplement ce qui ouvre et ferme le clapet d'un détendeur ?"
-        - "A-t-il des idées fausses ? Par exemple : « un détendeur surcompensé donne plus d'air », ou « la requalification, c'est seulement pour l'administration »."
+        - "A-t-il des idées fausses ? Par exemple : « un détendeur surcompensé donne plus d'air », ou « la requalification, c'est seulement pour l'administration »."
         - "Connaît-il les fonctions et les réglages de son ordinateur ?"
       esprit:
         - "La mécanique l'intéresse-t-elle, ou la redoute-t-il ?"
         - "L'oral l'inquiète-t-il ?"
-      comment: "Au sec, lui donner un schéma d'éclaté de premier étage et lui demander : « Explique-moi comment ça marche. » On écoute la justesse et la simplicité de l'explication. Puis on lui demande de présenter son ordinateur et ses réglages."
+      comment: "Au sec, lui donner un schéma d'éclaté de premier étage et lui demander : « Explique-moi comment ça marche. » On écoute la justesse et la simplicité de l'explication. Puis on lui demande de présenter son ordinateur et ses réglages."
       adapter:
-        - "Il ne connaît ni le gonflage ni les blocs : on commence à l'étape 1, « Compresseur et blocs »."
-        - "Il ne sait pas expliquer le détendeur : on passe à l'étape 2, « Détendeurs »."
-        - "Il explique bien le détendeur mais connaît mal son ordinateur : on travaille l'étape 3, « Manomètre, gilet, ordinateur »."
+        - "Il ne connaît ni le gonflage ni les blocs : on commence à l'étape 1, « Compresseur et blocs »."
+        - "Il ne sait pas expliquer le détendeur : on passe à l'étape 2, « Détendeurs »."
+        - "Il explique bien le détendeur mais connaît mal son ordinateur : on travaille l'étape 3, « Manomètre, gilet, ordinateur »."
         - "L'oral l'inquiète : on multiplie les explications courtes à partir de planches avant l'étape 4."
     bilan:
       situation: "l'étape 4 : épreuve 13 (évaluation)"

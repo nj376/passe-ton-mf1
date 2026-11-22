@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- /* Mindmaps (maquettes _passation/mindmaps/*.dc.html). Styles propres à la page : classes « mm- ».
+{{- /* Mindmaps (maquettes _passation/mindmaps/*.dc.html). Styles propres à la page : classes « mm- ».
        Données : data/mindmaps.json et static/mindmaps/, produits par outils/mindmaps.py à partir des fichiers draw.io.
        La visionneuse (zoom, déplacement, sommaire, mini-carte) est dans assets/js/mindmaps.js. */ -}}
 {{- $niveaux := site.Data.mindmaps.niveaux }}
@@ -9,6 +9,7 @@
     <h1 class="mm-titre">Mindmaps</h1>
     <p class="mm-intro">Les cartes mentales de chaque niveau : le cadre réglementaire, les compétences, les connaissances théoriques et, selon le niveau, d’autres thèmes.</p>
   </section>
+  {{ partial "aide-page.html" "mindmaps" }}
 
   {{/* Téléphone : pas de visionneuse. */}}
   <section class="mm-telephone">

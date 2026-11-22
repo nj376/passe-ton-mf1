@@ -31,7 +31,7 @@
   function niveau(id) { return D.niveaux.filter(function (n) { return n.id === id; })[0]; }
   function competence(id) { return D.competences.filter(function (c) { return c.id === id; })[0]; }
   function moment(id) { var m = D.moments.filter(function (x) { return x.id === id; })[0]; return m ? m.libelle : ""; }
-  // « PA20+PE40 » regroupe deux niveaux de la base.
+  // « PA20+PE40 » regroupe deux niveaux de la base.
   function niveauxSimples(niv) { return niv.split("+"); }
   function majuscule(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
 
@@ -81,11 +81,10 @@
     return { epreuve: "orga", orga: t, titre: t.nom, puces: [hasard(D.tirage.sites), hasard(D.tirage.meteo), hasard(D.tirage.groupes)] };
   }
 
-  function tirer(competenceImposee) {
+  function tirer() {
     var ep = etat.epreuve === "any" ? hasard(["prat", "theo", "orga"]) : etat.epreuve;
     var theme = null;
-    if (competenceImposee) theme = themePratique(competenceImposee);
-    else if (ep === "prat") {
+    if (ep === "prat") {
       var liste = competencesPratique();
       theme = liste.length ? themePratique(hasard(liste)) : { epreuve: "prat", vide: true };
     } else if (ep === "theo") theme = themeTheorique();
@@ -99,11 +98,7 @@
   }
 
   /* ---------- Affichage du thème ---------- */
-  var FORMATS = {
-    prat: "Thème d’entraînement · format de la pédagogie pratique",
-    theo: "Thème d’entraînement · format de la pédagogie théorique",
-    orga: "Thème d’entraînement · format organisationnel"
-  };
+  var FORMAT = "Thème d’entraînement";
   var SUITES = {
     prat: "puis 30 min devant le jury",
     theo: "puis 30 min devant le jury",
@@ -111,7 +106,7 @@
   };
   function afficherTheme() {
     var t = etat.theme;
-    $("[data-theme-format]").textContent = FORMATS[t.epreuve];
+    $("[data-theme-format]").textContent = FORMAT;
     $("[data-chrono-suite]").textContent = SUITES[t.epreuve];
     var titre = $("[data-theme-titre]");
     var puces = $("[data-theme-puces]");
@@ -251,7 +246,7 @@
         var droite = el("div", "champ__mft");
         droite.classList.toggle("champ__mft--verrouille", !etat.comparer);
         if (r) {
-          var attente = el("p", "champ__mft-attente", "Le résumé du MFT s’affichera ici quand tu cliqueras sur « Comparer avec le MFT ».");
+          var attente = el("p", "champ__mft-attente", "Le résumé du MFT s’affichera ici quand tu cliqueras sur « Comparer avec le MFT ».");
           attente.hidden = etat.comparer;
           droite.appendChild(attente);
           var corps = el("div", "champ__mft-corps");
@@ -427,7 +422,7 @@
     var t = etat.theme;
     if (!t || t.vide) return;
     var tete = el("div", "impression__tete");
-    tete.appendChild(el("p", "impression__sur", FORMATS[t.epreuve] + " · " + dateDuJour()));
+    tete.appendChild(el("p", "impression__sur", FORMAT + " · " + dateDuJour()));
     tete.appendChild(el("h1", "impression__titre", t.titre));
     if (t.puces && t.puces.length) tete.appendChild(el("p", "impression__contexte", t.puces.join(" · ")));
     zone.appendChild(tete);
@@ -479,14 +474,7 @@
     .then(function (r) { return r.json(); })
     .then(function (donnees) {
       D = donnees;
-      var imposee = params.get("competence") ? competence(params.get("competence")) : null;
-      if (imposee) {
-        var o = ongletDeNiveau(imposee.niveau);
-        if (o) { etat.niveau = o.id; $("[data-niveau]").value = o.id; }
-        etat.epreuve = "prat";
-        racine.querySelectorAll("[data-epreuve]").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-epreuve") === "prat" ? "true" : "false"); });
-      }
-      tirer(imposee);
+      tirer();
     })
     .catch(function () {
       $("[data-theme-titre]").textContent = "Le contenu n’a pas pu être chargé. Vérifie ta connexion, puis recharge la page.";

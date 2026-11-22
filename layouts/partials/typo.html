@@ -1,2 +1,4 @@
-{{/* Apostrophe droite entre deux lettres -> apostrophe typographique. */}}
-{{- return (replaceRE `(\pL)'(\pL)` "$1’$2" .) -}}
+{{/* Apostrophe droite entre deux lettres -> apostrophe typographique ; espace insécable à l’intérieur des guillemets « ». */}}
+{{- $t := replaceRE `(\pL)'(\pL)` "$1’$2" . -}}
+{{- $t = replace (replace $t "« " "« ") " »" " »" -}}
+{{- return $t -}}

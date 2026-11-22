@@ -8,7 +8,7 @@
   var contact = racine.getAttribute("data-contact");
   var D = null;
 
-  /* ---------- Onglets « Cartes mémoire » / « Retrouver dans le MFT » ---------- */
+  /* ---------- Onglets « Cartes mémoire » / « Retrouver dans le MFT » ---------- */
   var modes = Array.prototype.slice.call(racine.querySelectorAll("[data-mode]"));
   function choisirMode(b) {
     var m = b.getAttribute("data-mode");
@@ -18,7 +18,7 @@
       x.tabIndex = actif ? 0 : -1;
     });
     racine.querySelectorAll("[data-panneau-mode]").forEach(function (p) { p.hidden = p.getAttribute("data-panneau-mode") !== m; });
-    // En quittant « Retrouver dans le MFT », le chrono s'arrête : un temps mesuré pendant les cartes fausserait la moyenne.
+    // En quittant « Retrouver dans le MFT », le chrono s'arrête : un temps mesuré pendant les cartes fausserait la moyenne.
     if (m !== "retrouver" && recherche.minuterie) { clearInterval(recherche.minuterie); recherche.minuterie = null; recherche.texte = ""; }
     if (m === "retrouver" && D && !recherche.texte) nouvelleRecherche();
   }
@@ -52,7 +52,7 @@
     });
   }
   function ongletDe(niv) { return D.onglets.filter(function (o) { return o.niveaux.indexOf(niv) >= 0; })[0]; }
-  // « RANDO » s’affiche « Randosub », « N4 » « GP-N4 » ; « PA20+PE40 » « PA20 · PE40 ».
+  // « RANDO » s’affiche « Randosub », « N4 » « GP-N4 » ; « PA20+PE40 » « PA20 · PE40 ».
   function nomNiveau(niv) {
     var o = ongletDe(niv);
     return o && o.niveaux.length === 1 ? o.libelle : niv.replace("+", " · ");
@@ -60,7 +60,7 @@
 
   /* ---------- Répétition espacée datée : 5 boîtes de Leitner ---------- */
   // Boîte → prochaine révision : 1 demain, 2 dans 3 jours, 3 dans 7, 4 dans 14, 5 dans 30.
-  // Affichage : boîte 1 « À revoir », 2 « En cours », 3 à 5 « Acquises » (une carte sue du premier coup est acquise).
+  // Affichage : boîte 1 « À revoir », 2 « En cours », 3 à 5 « Acquises » (une carte sue du premier coup est acquise).
   // Une carte ratée puis retrouvée en fin de séance passe en boîte 2 et garde sa révision au lendemain.
   // Une séance, sans limite : les cartes dues (les plus en retard d’abord), puis toutes les cartes jamais vues.
   var INTERVALLES = [0, 1, 3, 7, 14, 30];
@@ -92,7 +92,7 @@
   var position = 0;
   var courante = null;
   var retournee = false;
-  var libre = false;      // « Réviser quand même » : ne change aucune date
+  var libre = false;      // « Réviser quand même » : ne change aucune date
   var rappelees = {};     // cartes ratées déjà remises en fin de séance
 
   function enregistrer() { window.Stockage.ecrire("cartes", etat); }
@@ -139,7 +139,7 @@
     var o = D.onglets.filter(function (x) { return x.id === etat.niveau; })[0];
     return o ? o.libelle : etat.niveau;
   }
-  // « Carte 1 sur 10 · GP-N4 » : la première partie en gras.
+  // « Carte 1 sur 10 · GP-N4 » : la première partie en gras.
   function ligneCompte(gras, suite) {
     var z = $("[data-carte-compte]"); z.textContent = "";
     var b = document.createElement("b"); b.textContent = gras; z.appendChild(b);
@@ -211,7 +211,7 @@
     $("[data-carte-attente]").hidden = true;
     $("[data-carte-recto]").hidden = true;
     $("[data-carte-verso]").hidden = false;
-    // Lecteurs d'écran : la réponse est annoncée, le focus va sur « Je savais ».
+    // Lecteurs d'écran : la réponse est annoncée, le focus va sur « Je savais ».
     $("[data-carte-annonce]").textContent = "Réponse : " + courante.reponse;
     racine.querySelector('[data-repondre="1"]').focus();
   }
@@ -229,7 +229,7 @@
       // Ratée : elle revient une fois en fin de séance (sans changer sa date), puis demain.
       if (!savais) { rappelees[id] = true; file.push(courante); }
     } else if (!libre && rappelees[id] && savais && f && f.b === 1) {
-      // Ratée puis retrouvée en fin de séance : « En cours » (boîte 2), toujours à revoir demain.
+      // Ratée puis retrouvée en fin de séance : « En cours » (boîte 2), toujours à revoir demain.
       f.b = 2;
     }
     etat.total = toutes.length;
@@ -260,7 +260,7 @@
     afficherCarte();
   });
 
-  /* Raccourcis clavier : Espace retourne, 1 « À revoir », 2 « Je savais ». */
+  /* Raccourcis clavier : Espace retourne, 1 « À revoir », 2 « Je savais ». */
   document.addEventListener("keydown", function (e) {
     if ($("[data-panneau-mode=cartes]").hidden) return;
     if (document.querySelector("dialog[open]")) return;
@@ -291,7 +291,12 @@
     var s = Math.floor(ms / 1000), m = Math.floor(s / 60);
     return (m < 10 ? "0" : "") + m + ":" + (s % 60 < 10 ? "0" : "") + (s % 60);
   }
-  function tic() { $("[data-recherche-temps]").textContent = format(Date.now() - recherche.debut); }
+  function tic() {
+    var ms = Date.now() - recherche.debut, t = $("[data-recherche-temps]");
+    t.textContent = format(ms);
+    // Au-delà d'une minute (l'objectif), le chrono passe au rouge.
+    t.classList.toggle("fc-chrono--depasse", ms > 60000);
+  }
   function nouvelleRecherche() {
     // Une fois sur deux, une information chiffrée (distance, profondeur…).
     var pool = Math.random() < 0.5 ? phrases.filter(function (p) { return p.chiffre; }) : phrases;
@@ -302,7 +307,7 @@
     clearInterval(recherche.minuterie);
     recherche.minuterie = setInterval(tic, 250);
     tic();
-    $("[data-recherche-texte]").textContent = "« " + p.texte + " »";
+    $("[data-recherche-texte]").textContent = "« " + p.texte + " »";
     $("[data-recherche-reponse]").hidden = true;
     $("[data-trouvee]").hidden = false;
     $("[data-montrer]").hidden = false;
@@ -319,7 +324,7 @@
       : "Voici où elle se trouve.";
     var chap = o ? o.chapitre : p.c.niveau;
     var niv = nomNiveau(p.c.niveau);
-    $("[data-recherche-source]").textContent = "MFT " + chap + (niv !== chap ? " · " + niv : "") + " · " + p.c.competence + ", rubrique « " + p.rubrique + " ».";
+    $("[data-recherche-source]").textContent = "MFT " + chap + (niv !== chap ? " · " + niv : "") + " · " + p.c.competence + ", rubrique « " + p.rubrique + " ».";
     $("[data-recherche-reponse]").hidden = false;
     $("[data-trouvee]").hidden = true;
     $("[data-montrer]").hidden = true;

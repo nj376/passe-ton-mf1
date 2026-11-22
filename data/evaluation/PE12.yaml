@@ -1,4 +1,4 @@
-# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du PE12.
+# Cartes « Évaluer l'élève » (début) et « Bilan » (fin) des techniques du PE12.
 # Proposition de stagiaire (hors MFT). Rangées par identifiant de compétence, puis nom exact de la technique
 # (tel qu'il figure dans data/progressions/progressions_PE12.json). Les fichiers de progression ne sont pas modifiés.
 #
@@ -9,7 +9,7 @@
 # bilan.situation : la situation finale sur laquelle porte le bilan
 # bilan.criteres : critères de la situation finale (liste)
 # bilan.securite : points de sécurité sans compromis (liste, éventuellement vide)
-# bilan.eca : exemple de note « à retravailler → étape à reprendre »
+# bilan.eca : exemple de note « à retravailler → étape à reprendre »
 # Les curseurs, le rappel A / ECA / NT et le lien vers la compétence sont ajoutés par les gabarits.
 
 
@@ -23,16 +23,16 @@ PE12-equiper:
         - "A-t-il déjà porté une combinaison (surf, natation en eau froide) ?"
       sait:
         - "Sait-il nommer les pièces principales : masque, gilet, détendeur, manomètre ?"
-        - "A-t-il des idées fausses ? Par exemple : « la bouteille contient de l'oxygène », ou « un masque serré fuit moins »."
+        - "A-t-il des idées fausses ? Par exemple : « la bouteille contient de l'oxygène », ou « un masque serré fuit moins »."
         - "Sait-il à quoi sert le gilet et le manomètre ?"
       esprit:
         - "Est-il curieux, ou impressionné par le poids et la quantité de matériel ?"
         - "Attend-il qu'on fasse tout pour lui, ou veut-il au contraire tout faire seul ?"
-      comment: "Au sec, devant son équipement posé à côté d'un bloc couché, lui demander : « Montre-moi ce que tu connais, et équipe-toi comme tu le sens. » On l'observe sans corriger, sauf pour la sécurité : on l'arrête s'il veut soulever ou redresser le bloc seul. On écoute comment il nomme les pièces et s'il essaie le masque par aspiration."
+      comment: "Au sec, devant son équipement posé à côté d'un bloc couché, lui demander : « Montre-moi ce que tu connais, et équipe-toi comme tu le sens. » On l'observe sans corriger, sauf pour la sécurité : on l'arrête s'il veut soulever ou redresser le bloc seul. On écoute comment il nomme les pièces et s'il essaie le masque par aspiration."
       adapter:
-        - "Il ne connaît pas le matériel : on commence à l'étape 1, « Découverte au sec »."
-        - "Il nomme les pièces et choisit un masque qui tient : on passe à l'étape 2, « S'équiper avec aide »."
-        - "Il s'équipe déjà avec peu d'aide, par exemple après plusieurs baptêmes : on vérifie l'étape 3 dans l'eau, puis on passe à l'étape 4, « S'équiper avec moins d'aide »."
+        - "Il ne connaît pas le matériel : on commence à l'étape 1, « Découverte au sec »."
+        - "Il nomme les pièces et choisit un masque qui tient : on passe à l'étape 2, « S'équiper avec aide »."
+        - "Il s'équipe déjà avec peu d'aide, par exemple après plusieurs baptêmes : on vérifie l'étape 3 dans l'eau, puis on passe à l'étape 4, « S'équiper avec moins d'aide »."
         - "Il est impressionné : on prend plus de temps à l'étape 1, on lui fait manipuler chaque élément avant de l'enfiler."
     bilan:
       situation: "l'étape 5 : équipement maîtrisé, en fin de formation, en palanquée guidée (aptitude visée)"
@@ -56,15 +56,15 @@ PE12-eau:
       sait:
         - "Sait-il qu'on attend le feu vert avant d'entrer dans l'eau ?"
         - "Sait-il pourquoi on garde une main sur le masque et le détendeur ?"
-        - "A-t-il des idées fausses ? Par exemple : « on saute dès qu'on est prêt », ou « on reste sous le bateau pour attendre les autres »."
+        - "A-t-il des idées fausses ? Par exemple : « on saute dès qu'on est prêt », ou « on reste sous le bateau pour attendre les autres »."
       esprit:
         - "Appréhende-t-il la hauteur, l'eau profonde ou le poids du bloc ?"
         - "Est-il au contraire pressé, prêt à entrer dans l'eau sans regarder ?"
-      comment: "Au sec, sur le lieu de la mise à l'eau, lui demander : « Explique-moi comment tu vas entrer dans l'eau, et montre-moi le geste. » On écoute s'il parle du feu vert et de la zone libre, et on regarde où il met la main. On lui demande aussi comment il se sent."
+      comment: "Au sec, sur le lieu de la mise à l'eau, lui demander : « Explique-moi comment tu vas entrer dans l'eau, et montre-moi le geste. » On écoute s'il parle du feu vert et de la zone libre, et on regarde où il met la main. On lui demande aussi comment il se sent."
       adapter:
-        - "Il ne connaît ni les règles ni le geste : on commence à l'étape 1, « Découverte au sec »."
-        - "Il redit les règles mais appréhende : on passe à l'étape 2, « La mise à l'eau la plus simple », gilet gonflé, moniteur dans l'eau."
-        - "Il est déjà entré dans l'eau sans difficulté au baptême : on passe à l'étape 3, « La technique usuelle du site »."
+        - "Il ne connaît ni les règles ni le geste : on commence à l'étape 1, « Découverte au sec »."
+        - "Il redit les règles mais appréhende : on passe à l'étape 2, « La mise à l'eau la plus simple », gilet gonflé, moniteur dans l'eau."
+        - "Il est déjà entré dans l'eau sans difficulté au baptême : on passe à l'étape 3, « La technique usuelle du site »."
         - "Il est pressé et n'attend pas : on insiste sur les règles de l'étape 1, puis sur la consigne de l'étape 4."
     bilan:
       situation: "l'étape 5 : mise à l'eau maîtrisée, en fin de formation (aptitude visée)"
@@ -86,17 +86,17 @@ PE12-immerger:
         - "A-t-il déjà eu mal aux oreilles en piscine, en apnée ou en avion ?"
         - "A-t-il des problèmes d'oreilles connus, ou un rhume en ce moment ?"
       sait:
-        - "Sait-il pourquoi les oreilles « poussent » en descendant ?"
+        - "Sait-il pourquoi les oreilles « poussent » en descendant ?"
         - "Sait-il comment équilibrer, et qu'il faut le faire tôt et souvent ?"
-        - "A-t-il des idées fausses ? Par exemple : « il faut souffler fort dans le nez », ou « la douleur passe si on continue à descendre »."
+        - "A-t-il des idées fausses ? Par exemple : « il faut souffler fort dans le nez », ou « la douleur passe si on continue à descendre »."
       esprit:
         - "Craint-il la descente, la profondeur ou la douleur aux oreilles ?"
         - "A-t-il tendance à forcer pour faire comme les autres ?"
-      comment: "Au sec, lui demander : « Raconte-moi ta descente au baptême, et montre-moi comment tu équilibres tes oreilles. » On regarde s'il équilibre en douceur ou en forçant. On écoute ce qu'il ferait en cas de douleur."
+      comment: "Au sec, lui demander : « Raconte-moi ta descente au baptême, et montre-moi comment tu équilibres tes oreilles. » On regarde s'il équilibre en douceur ou en forçant. On écoute ce qu'il ferait en cas de douleur."
       adapter:
-        - "Il ne sait pas équilibrer : on commence à l'étape 1, « Équilibrer ses oreilles au sec »."
-        - "Il équilibre au sec mais n'a jamais plongé : on passe à l'étape 2, « Première descente le long d'un repère »."
-        - "Il a fait un baptême sans difficulté : on vérifie l'étape 2, puis on passe à l'étape 3, « Descendre en vidant son gilet »."
+        - "Il ne sait pas équilibrer : on commence à l'étape 1, « Équilibrer ses oreilles au sec »."
+        - "Il équilibre au sec mais n'a jamais plongé : on passe à l'étape 2, « Première descente le long d'un repère »."
+        - "Il a fait un baptême sans difficulté : on vérifie l'étape 2, puis on passe à l'étape 3, « Descendre en vidant son gilet »."
         - "Il a déjà eu mal aux oreilles ou il force : on reste plus longtemps aux étapes 1 et 2, descente très lente."
     bilan:
       situation: "l'étape 5 : immersion maîtrisée, en fin de formation, avec une incursion possible dans la zone 6-12 m (aptitude visée)"
@@ -119,16 +119,16 @@ PE12-surface:
         - "A-t-il déjà fait de l'apnée ou de la plongée libre ?"
       sait:
         - "Sait-il qu'on remonte lentement, en respirant normalement ?"
-        - "A-t-il des idées fausses ? Par exemple : « on retient sa respiration pour remonter », ou « on remonte vite si on a un problème »."
+        - "A-t-il des idées fausses ? Par exemple : « on retient sa respiration pour remonter », ou « on remonte vite si on a un problème »."
         - "Sait-il que le gilet se purge pendant la remontée ?"
       esprit:
         - "Est-il pressé de retrouver la surface, ou inquiet à l'idée de remonter ?"
         - "Est-il prêt à laisser le moniteur régler sa vitesse ?"
-      comment: "Au sec, lui demander : « Explique-moi avec tes mots comment on remonte, et pourquoi. » On écoute s'il parle de la vitesse lente, de la respiration et du gilet. On ne corrige pas tout de suite."
+      comment: "Au sec, lui demander : « Explique-moi avec tes mots comment on remonte, et pourquoi. » On écoute s'il parle de la vitesse lente, de la respiration et du gilet. On ne corrige pas tout de suite."
       adapter:
-        - "Il ne sait pas comment on remonte : on commence à l'étape 1, « Comprendre au sec »."
-        - "Il l'explique avec ses mots mais n'a jamais plongé : on passe à l'étape 2, « Remontée tenue par le moniteur »."
-        - "Il a fait un baptême et respire normalement en remontant : on passe à l'étape 3, « Remontée à côté du moniteur »."
+        - "Il ne sait pas comment on remonte : on commence à l'étape 1, « Comprendre au sec »."
+        - "Il l'explique avec ses mots mais n'a jamais plongé : on passe à l'étape 2, « Remontée tenue par le moniteur »."
+        - "Il a fait un baptême et respire normalement en remontant : on passe à l'étape 3, « Remontée à côté du moniteur »."
         - "Il dit qu'on retient sa respiration : on reprend l'étape 1 et on le vérifie avant toute remontée."
     bilan:
       situation: "l'étape 5 : remontée maîtrisée, en fin de formation (aptitude visée)"
@@ -151,16 +151,16 @@ PE12-ventiler:
         - "Fait-il un sport où l'on travaille la respiration (natation, course, yoga) ?"
       sait:
         - "Sait-il qu'on respire lentement, avec une expiration longue par la bouche ?"
-        - "A-t-il des idées fausses ? Par exemple : « il faut économiser l'air en respirant le moins possible »."
+        - "A-t-il des idées fausses ? Par exemple : « il faut économiser l'air en respirant le moins possible »."
         - "Sait-il ce qu'est l'essoufflement et qu'on doit le signaler ?"
       esprit:
         - "Est-il angoissé à l'idée de respirer avec le visage dans l'eau ?"
         - "Sa respiration s'accélère-t-elle quand il est stressé ou quand il fait un effort ?"
-      comment: "En surface ou en eau peu profonde, détendeur en bouche, lui demander : « Mets la tête dans l'eau et respire tranquillement. » On regarde le rythme des bulles et la durée de l'expiration. On observe s'il relève la tête, s'il se crispe, ou s'il retient sa respiration."
+      comment: "En surface ou en eau peu profonde, détendeur en bouche, lui demander : « Mets la tête dans l'eau et respire tranquillement. » On regarde le rythme des bulles et la durée de l'expiration. On observe s'il relève la tête, s'il se crispe, ou s'il retient sa respiration."
       adapter:
-        - "Il n'a jamais respiré sur détendeur ou il se crispe : on commence à l'étape 1, « Respirer sur détendeur en surface »."
-        - "Il respire calmement en surface : on passe à l'étape 2, « Respirer sous l'eau, immobile »."
-        - "Il a fait un baptême et respire calmement immobile : on passe à l'étape 3, « Respirer en se déplaçant »."
+        - "Il n'a jamais respiré sur détendeur ou il se crispe : on commence à l'étape 1, « Respirer sur détendeur en surface »."
+        - "Il respire calmement en surface : on passe à l'étape 2, « Respirer sous l'eau, immobile »."
+        - "Il a fait un baptême et respire calmement immobile : on passe à l'étape 3, « Respirer en se déplaçant »."
         - "Il s'essouffle vite à l'effort : on insiste sur l'étape 3, déplacement très lent, avant l'étape 4."
     bilan:
       situation: "l'étape 5 : ventilation maîtrisée, en fin de formation, en palanquée guidée (aptitude visée)"
@@ -182,15 +182,15 @@ PE12-equilibrer:
       sait:
         - "Sait-il comment gonfler et vider son gilet ?"
         - "Sait-il que la respiration fait monter et descendre ?"
-        - "A-t-il des idées fausses ? Par exemple : « plus on a de plombs, plus on est en sécurité », ou « on palme vers le haut pour ne pas toucher le fond »."
+        - "A-t-il des idées fausses ? Par exemple : « plus on a de plombs, plus on est en sécurité », ou « on palme vers le haut pour ne pas toucher le fond »."
       esprit:
         - "Craint-il de remonter sans le vouloir, ou de couler ?"
         - "Est-il gêné par le fait de ne pas sentir le fond sous lui ?"
-      comment: "Au sec, devant un gilet monté, lui demander : « Montre-moi comment tu le gonfles et comment tu le vides. » Puis lui demander : « Sous l'eau, que se passe-t-il quand tu inspires profondément ? » On regarde ses gestes et on écoute sa réponse sans corriger."
+      comment: "Au sec, devant un gilet monté, lui demander : « Montre-moi comment tu le gonfles et comment tu le vides. » Puis lui demander : « Sous l'eau, que se passe-t-il quand tu inspires profondément ? » On regarde ses gestes et on écoute sa réponse sans corriger."
       adapter:
-        - "Il ne connaît pas le gilet : on commence à l'étape 1, « Découvrir le gilet au sec »."
-        - "Il sait gonfler et vider son gilet mais ignore l'effet de la respiration : on passe à l'étape 2, « Sentir l'effet de la respiration »."
-        - "Il a déjà senti l'effet de sa respiration au baptême : on passe à l'étape 3, « Décoller du fond »."
+        - "Il ne connaît pas le gilet : on commence à l'étape 1, « Découvrir le gilet au sec »."
+        - "Il sait gonfler et vider son gilet mais ignore l'effet de la respiration : on passe à l'étape 2, « Sentir l'effet de la respiration »."
+        - "Il a déjà senti l'effet de sa respiration au baptême : on passe à l'étape 3, « Décoller du fond »."
         - "Il craint de remonter : on reste à l'étape 3, injections très courtes, moniteur à portée de main."
     bilan:
       situation: "l'étape 5 : équilibre maîtrisé, en fin de formation, en palanquée guidée (aptitude visée)"
@@ -213,16 +213,16 @@ PE12-signes:
       sait:
         - "Connaît-il les signes OK, ça ne va pas, monter, descendre ?"
         - "Sait-il qu'on répond à chaque signe du moniteur ?"
-        - "A-t-il des idées fausses ? Par exemple : « le pouce levé veut dire que tout va bien »."
+        - "A-t-il des idées fausses ? Par exemple : « le pouce levé veut dire que tout va bien »."
       esprit:
         - "Ose-t-il dire que ça ne va pas, ou craint-il de gâcher la plongée ?"
         - "Attend-il qu'on lui pose la question avant de communiquer ?"
-      comment: "Au sec, en jeu de questions et réponses, lui demander : « Montre-moi les signes que tu connais. » Puis on lui fait quelques signes et on regarde s'il répond tout de suite et correctement. On lui demande aussi comment il dirait qu'il a mal aux oreilles."
+      comment: "Au sec, en jeu de questions et réponses, lui demander : « Montre-moi les signes que tu connais. » Puis on lui fait quelques signes et on regarde s'il répond tout de suite et correctement. On lui demande aussi comment il dirait qu'il a mal aux oreilles."
       adapter:
-        - "Il ne connaît pas les signes : on commence à l'étape 1, « Découverte au sec »."
-        - "Il connaît les signes au sec : on passe à l'étape 2, « Répondre dans l'eau »."
-        - "Il répond déjà sans hésiter, par exemple après un baptême : on passe à l'étape 3, « Répondre en se déplaçant »."
-        - "Il n'ose pas dire que ça ne va pas : on insiste dès l'étape 1, puis on travaille l'étape 4, « Signaler de lui-même »."
+        - "Il ne connaît pas les signes : on commence à l'étape 1, « Découverte au sec »."
+        - "Il connaît les signes au sec : on passe à l'étape 2, « Répondre dans l'eau »."
+        - "Il répond déjà sans hésiter, par exemple après un baptême : on passe à l'étape 3, « Répondre en se déplaçant »."
+        - "Il n'ose pas dire que ça ne va pas : on insiste dès l'étape 1, puis on travaille l'étape 4, « Signaler de lui-même »."
     bilan:
       situation: "l'étape 5 : signes connus, en fin de formation, en palanquée guidée (aptitude visée)"
       criteres:
@@ -243,15 +243,15 @@ PE12-palanquee:
       sait:
         - "Sait-il ce que font le DP et le GP ?"
         - "Sait-il qu'on ne touche rien, qu'on ne prélève rien et qu'on ne nourrit pas les animaux ?"
-        - "A-t-il des idées fausses ? Par exemple : « on peut s'écarter un peu pour regarder », ou « toucher le fond n'abîme rien »."
+        - "A-t-il des idées fausses ? Par exemple : « on peut s'écarter un peu pour regarder », ou « toucher le fond n'abîme rien »."
       esprit:
         - "Est-il rassuré par le groupe, ou au contraire impressionné ?"
         - "Est-il tenté d'aller voir de près, au risque de s'éloigner ?"
-      comment: "Au sec, lui demander : « Explique-moi qui fait quoi dans la palanquée, et ce qu'on a le droit de faire sous l'eau. » On écoute s'il parle du GP, du fait de rester près de lui et du respect du milieu. On ne corrige pas tout de suite."
+      comment: "Au sec, lui demander : « Explique-moi qui fait quoi dans la palanquée, et ce qu'on a le droit de faire sous l'eau. » On écoute s'il parle du GP, du fait de rester près de lui et du respect du milieu. On ne corrige pas tout de suite."
       adapter:
-        - "Il ne connaît pas les règles : on commence à l'étape 1, « Les règles au sec »."
-        - "Il redit les règles mais n'a jamais plongé : on passe à l'étape 2, « Au contact du moniteur »."
-        - "Il a fait un baptême et reste près du moniteur : on passe à l'étape 3, « Suivre sans contact »."
+        - "Il ne connaît pas les règles : on commence à l'étape 1, « Les règles au sec »."
+        - "Il redit les règles mais n'a jamais plongé : on passe à l'étape 2, « Au contact du moniteur »."
+        - "Il a fait un baptême et reste près du moniteur : on passe à l'étape 3, « Suivre sans contact »."
         - "Il est tenté de s'éloigner ou de toucher : on reprend les règles de l'étape 1 et on reste à l'étape 3 jusqu'à ce qu'il suive sans contact."
     bilan:
       situation: "l'étape 5 : palanquée guidée 0-12 m, en fin de formation, avec une incursion possible dans la zone 6-12 m (aptitude visée)"

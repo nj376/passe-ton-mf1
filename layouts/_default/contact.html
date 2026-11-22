@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- /* Formulaire de contact : envoyé en POST à /formulaires/contact (même origine), que le serveur (Caddy)
-       relaie vers le webhook n8n « contact-mf1 » (serveur/n8n-contact-passe-ton-mf1.json).
+       relaie vers le webhook n8n « contact-mf1 » (serveur/n8n-contact-passe-ton-mf1.json).
        Champs attendus par le workflow : prenom, nom, email, message, langue ; site_web est un piège à robots. */ -}}
 <div class="capa">
   <section class="capa-entete contact-entete">
@@ -36,7 +36,7 @@
     <p class="contact__note">Ton adresse sert uniquement à te répondre. Voir les <a href="{{ "/mentions-legales/" | relURL }}">mentions légales</a>.</p>
     <button type="submit" class="bouton bouton--principal contact__envoyer">Envoyer le message</button>
   </form>
-  {{/* « Signaler une erreur » et « proposer un lien » arrivent avec ?sujet=… : le message commence par ce sujet. */}}
+  {{/* « Signaler une erreur » et « proposer un lien » arrivent avec ?sujet=… : le message commence par ce sujet. */}}
   <script>(function(){try{var s=new URLSearchParams(location.search).get("sujet");var m=document.getElementById("c-message");if(s&&m&&!m.value){m.value=s.slice(0,200)+"\n\n";}}catch(e){}})();</script>
 </div>
 {{ end }}

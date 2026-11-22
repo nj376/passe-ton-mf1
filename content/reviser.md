@@ -1,5 +1,5 @@
 ---
-title: "Passe-ton-MF1 · Flashcard MFT"
+title: "Passe-ton-MF1 · Flashcard et recherche chrono"
 description: "Cartes mémoire tirées du MFT et recherche chronométrée dans le MFT : révise les connaissances du MF1 à ton rythme, par niveau."
 layout: "reviser"
 classePrincipal: "principal--interieur principal--fc"

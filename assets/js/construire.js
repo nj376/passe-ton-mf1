@@ -1,6 +1,6 @@
-/* Page « Construire ma progression détaillée » : formulaire enregistré dans ce navigateur,
+/* Page « Construire ma progression détaillée » : formulaire enregistré dans ce navigateur,
    rappel du dernier enregistrement, impression et copie de tous les textes.
-   Clé « ptmf1-construire » : incluse dans la sauvegarde et effacée par « Tout effacer » (page Suivi). */
+   Clé « ptmf1-construire » : incluse dans la sauvegarde et effacée par « Tout effacer » (page Suivi). */
 (function () {
   "use strict";
   var racine = document.querySelector("[data-construire]");
@@ -176,11 +176,11 @@
   var sauvegarde = lireSauvegarde();
   if (sauvegarde) {
     var c = competence(sauvegarde.competence);
-    etat.textContent = "Dernier enregistrement : « " + (sauvegarde.titre || (c && c.competence) || "sans titre") + " », le " + dateLisible(sauvegarde.date) + ".";
+    etat.textContent = "Dernier enregistrement : « " + (sauvegarde.titre || (c && c.competence) || "sans titre") + " », le " + dateLisible(sauvegarde.date) + ".";
     boutonRappel.hidden = false;
     protegee = true;
     var nomAncien = document.querySelector("[data-ecraser-nom]");
-    if (nomAncien) nomAncien.textContent = "« " + (sauvegarde.titre || (c && c.competence) || "sans titre") + " », enregistrée le " + dateLisible(sauvegarde.date);
+    if (nomAncien) nomAncien.textContent = "« " + (sauvegarde.titre || (c && c.competence) || "sans titre") + " », enregistrée le " + dateLisible(sauvegarde.date);
   }
   var ecraser = document.querySelector("[data-ecraser-confirmer]");
   if (ecraser) ecraser.addEventListener("click", function () {
