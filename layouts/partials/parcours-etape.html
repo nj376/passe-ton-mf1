@@ -1,0 +1,49 @@
+{{- /* Une étape de la frise « Le parcours jusqu’au MF1 » (accueil), repliée par défaut (<details> natif : clavier, sans JavaScript).
+       Paramètres : e (entrée de data/parcours.yaml), surtitre (facultatif, ex. la filière), classe (variante), epreuves (étape Examen). */ -}}
+{{- $e := .e }}
+<details class="frise-etape{{ with .classe }} frise-etape--{{ . }}{{ end }}">
+  <summary class="frise-etape__resume">
+    <span class="frise-etape__num" aria-hidden="true">{{ $e.n }}</span>
+    <span class="frise-etape__textes">
+      {{- with .surtitre }}<span class="frise-etape__filiere">{{ . }}</span>{{ end }}
+      <span class="frise-etape__titre"><span class="visuellement-cache">Étape {{ $e.n }} : </span>{{ $e.titre }}{{ with $e.duree }} · {{ . }}{{ end }}</span>
+      <span class="frise-etape__phrase">{{ $e.resume }}</span>
+    </span>
+    <span class="frise-etape__ouvrir"><span class="frise-etape__detail">Détail</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+  </summary>
+  <div class="frise-etape__contenu">
+    {{- with .pour }}<p class="frise-etape__pour">{{ . }}</p>{{ end }}
+    {{- if .epreuves }}
+    <ul class="frise-liste">
+      {{- range .epreuves }}
+      <li><strong>{{ .titre }}</strong> (coef. {{ .coef }}){{ with .court }} : {{ . }}{{ end }}</li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    <ul class="frise-liste">
+      {{- range $e.points }}<li>{{ . | markdownify }}</li>{{ end }}
+    </ul>
+    {{- with $e.anticiper }}
+    <div class="encart-orange frise-anticiper" role="note"><p><strong>À anticiper :</strong> {{ . | markdownify }}</p></div>
+    {{- end }}
+    {{- with $e.allegements }}
+    <details class="frise-allegements">
+      <summary>{{ .titre }}</summary>
+      <div class="frise-allegements__tableau">
+        <table>
+          <thead><tr>{{ range .colonnes }}<th scope="col">{{ . }}</th>{{ end }}</tr></thead>
+          <tbody>
+            {{- range .lignes }}
+            <tr>{{ range $i, $c := . }}{{ if eq $i 0 }}<th scope="row">{{ $c }}</th>{{ else }}<td>{{ $c }}</td>{{ end }}{{ end }}</tr>
+            {{- end }}
+          </tbody>
+        </table>
+      </div>
+      <p class="frise-allegements__mention">{{ .mention }}</p>
+    </details>
+    {{- end }}
+    {{- with $e.liens }}
+    <p class="frise-liens">{{ range . }}<a class="lien-texte" href="{{ .url | relURL }}">{{ .texte }} →</a>{{ end }}</p>
+    {{- end }}
+  </div>
+</details>

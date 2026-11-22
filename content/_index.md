@@ -3,5 +3,5 @@ title: "Passe-ton-MF1 · Accueil"
 classePrincipal: "principal--accueil"
 # Ancienne page d’entrée (supprimée) : son adresse mène à l’accueil.
 aliases: ["/bienvenue/"]
-description: "Prépare ton MF1 FFESSM avec un pense-bête gratuit : tire un thème d’entraînement, explore le MFT sur la courbe de plongée, révise le Code du sport et le MFT."
+description: "Préparer le MF1, c’est apprendre à transmettre. Le parcours jusqu’au MF1 étape par étape, d’après le MFT de la FFESSM, et des outils gratuits pour t’entraîner et réviser."
 ---

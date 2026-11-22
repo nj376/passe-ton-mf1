@@ -44,7 +44,7 @@
         <li>{{ $croix }}<span>{{ . | markdownify | partial "typo.html" | safeHTML }}</span></li>
         {{- end }}
       </ul>
-      <a class="about-carte__lien" href="#vrais-sujets">Où trouver de vrais sujets d’examen →</a>
+      <a class="about-carte__lien" href="{{ "/ressources/#vrais-sujets" | relURL }}">Où trouver de vrais sujets d’examen →</a>
     </div>
   </section>
 
@@ -64,19 +64,6 @@
     <p class="about-ps">{{ .Params.ps | markdownify | partial "typo.html" | safeHTML }}</p>
   </section>
 
-  <section id="vrais-sujets" class="carte about-sujets" aria-labelledby="about-sujets-titre">
-    <div class="about-sujets__textes">
-      <h2 id="about-sujets-titre" class="about-sujets__titre"><span class="bureau">S’entraîner sur de vrais sujets d’examen</span><span class="mobile">Vrais sujets d’examen</span></h2>
-      <p class="about-sujets__texte">Plusieurs commissions techniques régionales publient leurs sujets de pédagogie MF1. Les liens ci-dessous mènent directement à leurs sites officiels.</p>
-      <p class="about-sujets__texte"><strong class="about-sujets__alerte">Ces sujets ne sont ni expliqués ni corrigés sur ce site.</strong> Travaille-les avec ton ou tes tuteurs MF2.</p>
-      <p class="about-sujets__note">Ta région publie aussi ses sujets ? Envoie-moi le lien par le <a href="{{ "/contact/" | relURL }}?sujet=Sujets%20d%E2%80%99examen%20de%20ma%20r%C3%A9gion">formulaire de contact</a> pour qu’il soit ajouté.</p>
-    </div>
-    <div class="about-sujets__liste">
-      {{- range site.Params.ctr }}
-      <a class="about-ctr" href="{{ .url }}"><span class="about-ctr__region">{{ .region }}</span><span class="about-ctr__domaine bureau">{{ .domaine }} ↗</span><span class="about-ctr__fleche mobile" aria-hidden="true">↗</span></a>
-      {{- end }}
-    </div>
-  </section>
 
   {{/* Données et mentions légales sur toute la largeur. */}}
   <section id="mes-donnees" class="carte help-donnees-bloc" aria-labelledby="t-mes-donnees">

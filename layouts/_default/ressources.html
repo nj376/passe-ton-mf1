@@ -1,11 +1,24 @@
 {{ define "main" }}
-{{- /* Page « Ressources » (ressources à télécharger), en construction : même en-tête que Capacitaire et Canvas. */ -}}
+{{- /* Page « Ressources » : sujets d’examen publiés par les régions (anciennement sur À propos) ; d’autres ressources viendront. */ -}}
 <div class="capa">
   <section class="capa-entete">
     <div class="capa-entete__ligne"><span class="home-wip">En construction</span></div>
     <h1 class="capa-titre">Ressources</h1>
-    <p class="capa-accroche">Page en construction.</p>
   </section>
   {{ partial "aide-page.html" "ressources" }}
+
+  <section id="vrais-sujets" class="carte sujets" aria-labelledby="sujets-titre">
+    <div class="sujets__textes">
+      <h2 id="sujets-titre" class="sujets__titre"><span class="bureau">S’entraîner sur de vrais sujets d’examen</span><span class="mobile">Vrais sujets d’examen</span></h2>
+      <p class="sujets__texte">Plusieurs commissions techniques régionales publient leurs sujets de pédagogie MF1. Les liens ci-dessous mènent directement à leurs sites officiels.</p>
+      <p class="sujets__texte"><strong class="sujets__alerte">Ces sujets ne sont ni expliqués ni corrigés sur ce site.</strong> Travaille-les avec ton ou tes tuteurs MF2.</p>
+      <p class="sujets__note">Ta région publie aussi ses sujets ? Envoie-moi le lien par le <a href="{{ "/contact/" | relURL }}?sujet=Sujets%20d%E2%80%99examen%20de%20ma%20r%C3%A9gion">formulaire de contact</a> pour qu’il soit ajouté.</p>
+    </div>
+    <div class="sujets__liste">
+      {{- range site.Params.ctr }}
+      <a class="sujets-ctr" href="{{ .url }}"><span class="sujets-ctr__region">{{ .region }}</span><span class="sujets-ctr__domaine bureau">{{ .domaine }} ↗</span><span class="sujets-ctr__fleche mobile" aria-hidden="true">↗</span></a>
+      {{- end }}
+    </div>
+  </section>
 </div>
 {{ end }}

@@ -135,6 +135,8 @@
   /* Avis « version mobile » : sur téléphone (600 px au plus), une seule fois, à la première visite. */
   (function () {
     var avis = document.getElementById("fenetre-avis-mobile");
+    // L’accueil est pensé pour le téléphone : pas d’avertissement.
+    if (document.querySelector(".accueil-hero")) return;
     if (!avis || !window.matchMedia || !window.matchMedia("(max-width: 600px)").matches) return;
     try {
       if (localStorage.getItem("ptmf1-avis-mobile")) return;

@@ -1,61 +1,139 @@
 {{ define "main" }}
-{{- /* Accueil (maquettes _passation/accueil/Accueil2.dc.html et MobileAccueil2.dc.html).
-       Styles propres à la page : classes « home- ». Le suivi est sur la page /suivi/. */ -}}
-<section class="home-hero">
-  <div class="home-hero__interieur">
-    <div class="home-hero__textes">
-      <h1 class="home-titre">Comprends le MFT, une séance après l’autre.</h1>
-      <p class="home-intro">Je pensais donc être préparé à affronter la complexité du monde. C’était avant de m’inscrire au MF1. Entre les subtilités du MFT, les fiches pédagogiques et les précieux conseils de nos MF2, j’ai découvert qu’apprendre à enseigner la plongée était une aventure à part entière. Alors, pour mettre un peu d’ordre dans mes connaissances (et tenter de réduire mon incertitude pédagogique), j’ai créé ce site. D’abord pour moi, puis pour tous ceux qui partagent cette belle galère. Ce n’est ni un outil officiel ni un substitut à nos formateurs, simplement un compagnon de route, perfectible et ouvert aux contributions. Pour découvrir l’histoire de ce projet, ses limites et les quelques paradoxes quantiques qui l’accompagnent, rendez-vous sur la page <a href="{{ "/a-propos/" | relURL }}">À propos</a>.</p>
+{{- /* Accueil (maquette maquette-accueil.html, textes : brief-page-accueil.md). Cinq zones, fonds alternés, conteneur de 1080 px :
+       accroche, pourquoi, par où commencer, confiance, parcours (frise : data/parcours.yaml). Styles : classes « accueil- » et « frise- ». */ -}}
+{{- $P := site.Data.parcours -}}
+{{- $fleche := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>` | safeHTML -}}
+
+{{/* Zone 1 : accroche */}}
+<section id="accroche" class="accueil-zone accueil-zone--pale accueil-hero" aria-labelledby="accueil-titre">
+  <div class="accueil-conteneur accueil-hero__interieur">
+    <h1 id="accueil-titre" class="accueil-titre">Préparer le MF1, c’est apprendre à transmettre.</h1>
+    <p class="accueil-chapeau">Tu sais plonger. Le MF1 te demande d’apprendre à faire progresser les autres, en suivant les exigences du MFT (Manuel de Formation Technique), le référentiel officiel de la FFESSM. Ce site t’aide à t’y retrouver.</p>
+    <div class="accueil-boutons">
+      <a class="bouton bouton--principal accueil-bouton" href="#parcours">Voir le parcours jusqu’au MF1</a>
+      <a class="bouton-contour accueil-bouton" href="#commencer">Je suis déjà en formation</a>
     </div>
-    <aside class="carte home-commencer bureau" aria-labelledby="home-commencer-titre">
-      <p id="home-commencer-titre" class="home-commencer__titre">Par où commencer</p>
-      <a class="home-rapide" href="{{ "/explore-le-cds/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0z"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">CdS</span><span class="home-rapide__texte">Les règles du Code du sport</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
-      <a class="home-rapide" href="{{ "/capacitaire/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">Capacitaire</span><span class="home-rapide__texte">Le module à réussir avant l’examen</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
-      <a class="home-rapide" href="{{ "/explore-le-mft/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h4l4 10h6l2-4h2"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">MFT</span><span class="home-rapide__texte">Chaque compétence sur la courbe de plongée</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
-      <a class="home-rapide" href="{{ "/s-entrainer/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2 2M9 2h6"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">S’entraîner</span><span class="home-rapide__texte">Tirer un thème, 30 min de préparation</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
-      <a class="home-rapide" href="{{ "/progression/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h4v-4h4v-4h4V6h4"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">Progression</span><span class="home-rapide__texte">Des pistes d’étapes, technique par technique</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
-      <a class="home-rapide" href="{{ "/reviser/" | relURL }}"><span class="home-rapide__icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="12" rx="2"></rect><path d="M7 3h12a2 2 0 0 1 2 2v10"></path></svg></span><span class="home-rapide__textes"><span class="home-rapide__titre">Flashcard et recherche chrono</span><span class="home-rapide__texte">Cartes mémoire et recherche chronométrée</span></span><span class="home-rapide__fleche"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
-    </aside>
   </div>
 </section>
 
-<div class="home-contenu">
-  <section class="home-parcours" aria-labelledby="parcours">
-    <div class="home-parcours__tete">
-      <p class="home-surtitre">L’examen</p>
-      <div class="home-parcours__ligne">
-        <h2 id="parcours" class="home-h2">Le parcours jusqu’au MF1</h2>
-        <button type="button" class="aide-bouton bureau" aria-label="Aide sur l’examen" aria-expanded="false" aria-controls="aide-epreuves" data-bascule>?</button>
+{{/* Zone 2 : pourquoi ce site */}}
+<section id="pourquoi" class="accueil-zone" aria-labelledby="pourquoi-titre">
+  <div class="accueil-conteneur accueil-pourquoi">
+    <h2 id="pourquoi-titre" class="accueil-h2">Pourquoi ce site ?</h2>
+    <div class="accueil-pourquoi__texte">
+      <p>Connaître la plongée ne suffit pas pour devenir moniteur. Le MF1 évalue ta capacité à concevoir une séance, à la mener, à évaluer tes élèves et à organiser l’activité en sécurité. Tout ça est décrit dans le MFT, mais ce document est dense et pas toujours facile à exploiter quand on débute.</p>
+      <p>J’ai créé ce site pendant ma propre préparation au MF1, pour mettre de l’ordre dans tout ça. Je le partage en me disant qu’il peut servir à d’autres.</p>
+    </div>
+  </div>
+</section>
+
+{{/* Zone 3 : par où commencer, deux profils */}}
+<section id="commencer" class="accueil-zone accueil-zone--pale" aria-labelledby="commencer-titre">
+  <div class="accueil-conteneur accueil-pile">
+    <h2 id="commencer-titre" class="accueil-h2">Par où commencer ?</h2>
+    <div class="accueil-profils">
+      <div class="carte accueil-profil">
+        <h3 class="accueil-profil__titre">Tu envisages de te lancer</h3>
+        <p class="accueil-profil__texte">Avant de t’inscrire, mieux vaut savoir ce qui t’attend : les conditions d’accès, les étapes, les délais et ce sur quoi tu seras évalué.</p>
+        <ul class="accueil-liens">
+          <li><a href="#parcours"><span>Le parcours étape par étape</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/explore-le-cds/" | relURL }}"><span>Ce que dit le Code du sport</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/capacitaire/" | relURL }}"><span>Le module capacitaire</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/explore-le-mft/" | relURL }}"><span>Découvrir le MFT compétence par compétence</span>{{ $fleche }}</a></li>
+        </ul>
       </div>
-      <div id="aide-epreuves" class="note-aide bureau" role="note" hidden>
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B5AA6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg>
-        <p>Pour réussir, il faut au moins 150 points sur 300, aucune note sous 5, et la moyenne à l’ensemble des trois pédagogies comme à l’IPD. Le MFT non annoté est autorisé pendant la préparation des trois pédagogies.</p>
+      <div class="carte accueil-profil">
+        <h3 class="accueil-profil__titre">Tu es en formation</h3>
+        <p class="accueil-profil__texte">Tu as ton livret pédagogique et tu enchaînes les séances. Voici de quoi t’entraîner et réviser.</p>
+        <ul class="accueil-liens">
+          <li><a href="{{ "/s-entrainer/" | relURL }}"><span>Tirer un thème et préparer une séance en 30 min</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/progression/" | relURL }}"><span>Construire une progression, technique par technique</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/reviser/" | relURL }}"><span>Réviser avec les flashcards et la recherche chronométrée</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/ressources/#vrais-sujets" | relURL }}"><span>Sujets d’examen publiés par les régions</span>{{ $fleche }}</a></li>
+          <li><a href="{{ "/suivi/" | relURL }}"><span>Suivre mon avancement</span>{{ $fleche }}</a></li>
+        </ul>
       </div>
     </div>
-    <div class="home-etapes">
-      <div class="home-etape home-etape--1">
-        <span class="home-etape__libelle">Étape 1 · d’abord</span>
-        <a class="carte home-capa" href="{{ "/capacitaire/" | relURL }}">
-          <span class="home-capa__haut"><span class="home-capa__prerequis"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Prérequis</span><span class="home-wip">En construction</span></span>
-          <span class="home-capa__titre">Module capacitaire</span>
-          <span class="home-capa__texte">Quatre écrits de 45 min au plus : cadre réglementaire, aspects théoriques, anatomie et physiologie, désaturation.</span>
-          <span class="home-capa__texte"><strong>À réussir avant de se présenter aux épreuves de l’examen.</strong> Valable 4 ans.</span>
-          <span class="home-capa__lien">Voir le module <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
-        </a>
+  </div>
+</section>
+
+{{/* Zone 4 : confiance, grille 2 × 2 */}}
+<section id="confiance" class="accueil-zone" aria-labelledby="confiance-titre">
+  <div class="accueil-conteneur accueil-pile">
+    <h2 id="confiance-titre" class="accueil-h2">Puis-je faire confiance à ce site ?</h2>
+    <div class="accueil-confiance">
+      <div class="accueil-gage">
+        <svg class="accueil-gage__icone" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"></path><path d="M15 4v5h5"></path><path d="M8 13h8M8 17h5"></path></svg>
+        <div><h3 class="accueil-gage__titre">Fondé sur les textes officiels</h3><p class="accueil-gage__texte">Le contenu s’appuie sur le MFT (version de {{ $P.version_mft }}) et le Code du sport. Les sources et leur date de consultation sont indiquées sur chaque page.</p></div>
       </div>
-      <div class="home-etapes__fleche" aria-hidden="true"><span class="bureau"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><span class="mobile"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></span></div>
-      <div class="home-etape home-etape--2">
-        <span class="home-etape__libelle">Étape 2 · les 4 épreuves de l’examen</span>
-        <div class="home-epreuves">
-          <a class="carte home-epreuve" href="{{ "/s-entrainer/?epreuve=prat" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 1</span><span class="home-coef">Coefficient 4</span></span><span class="home-epreuve__titre">Pédagogie pratique</span><span class="home-epreuve__texte">Une séance dans l’eau, du débutant au DP-N5 et en Randosub.</span><span class="home-duree">30 min + 30 min</span></a>
-          <a class="carte home-epreuve" href="{{ "/s-entrainer/?epreuve=orga" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 2</span><span class="home-coef">Coefficient 3</span></span><span class="home-epreuve__titre">Pédagogie organisationnelle</span><span class="home-epreuve__texte">Bateau, palanquées, sécurité, secours ou cursus de formation.</span><span class="home-duree">30 min + 10 min + 20 min</span></a>
-          <a class="carte home-epreuve" href="{{ "/s-entrainer/?epreuve=theo" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 3</span><span class="home-coef">Coefficient 4</span></span><span class="home-epreuve__titre">Pédagogie théorique</span><span class="home-epreuve__texte">Un cours en salle, du débutant au candidat GP-N4.</span><span class="home-duree">30 min + 30 min</span></a>
-          <a class="carte home-epreuve" href="{{ "/ipd-25-m/" | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve 4</span><span class="home-coef">Coefficient 4</span></span><span class="home-epreuve__titre">Intervention à 25 m</span><span class="home-epreuve__texte">Vitesse maîtrisée au plus tard à 20 m, arrêt franc entre 8 et 6 m, parachute.</span><span class="home-duree">Déroulement et grille de notation</span></a>
+      <div class="accueil-gage">
+        <svg class="accueil-gage__icone" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M8 12h8"></path></svg>
+        <div><h3 class="accueil-gage__titre">Indépendant et gratuit</h3><p class="accueil-gage__texte">Pas de publicité, pas d’inscription obligatoire. Le site n’est pas affilié à la FFESSM.</p></div>
+      </div>
+      <div class="accueil-gage">
+        <svg class="accueil-gage__icone" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"></path></svg>
+        <div><h3 class="accueil-gage__titre">Ouvert et corrigeable</h3><p class="accueil-gage__texte">Le code est public sur <a href="https://github.com/nj376/passe-ton-mf1">GitHub</a>. Si tu repères une erreur, tu peux <a href="{{ "/contact/" | relURL }}">la signaler en un clic</a>.</p></div>
+      </div>
+      <div class="accueil-gage">
+        <svg class="accueil-gage__icone" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2 1-3.5 3-4"></path></svg>
+        <div><h3 class="accueil-gage__titre">Un complément, pas un remplaçant</h3><p class="accueil-gage__texte">Rien ici ne remplace ton tuteur de stage, tes formateurs ni les stages officiels. Le site t’aide à préparer, c’est eux qui t’évaluent.</p></div>
+      </div>
+    </div>
+    <a class="lien-texte accueil-apropos" href="{{ "/a-propos/" | relURL }}">En savoir plus sur le projet</a>
+  </div>
+</section>
+
+{{/* Zone 5 : le parcours jusqu’au MF1 (frise verticale) */}}
+<section id="parcours" class="accueil-zone accueil-zone--pale" aria-labelledby="parcours-titre">
+  <div class="accueil-conteneur accueil-pile">
+    <div class="accueil-entete">
+      <h2 id="parcours-titre" class="accueil-h2">Le parcours jusqu’au MF1</h2>
+      <p class="accueil-intro">{{ $P.intro }}</p>
+    </div>
+
+    <div class="frise">
+      {{ partial "parcours-etape.html" (dict "e" $P.conditions "classe" "depart") }}
+
+      {{- /* Bifurcation : deux filières côte à côte, qui se rejoignent */}}
+      <div class="frise-bifurcation" role="group" aria-labelledby="frise-chemins">
+        <p id="frise-chemins" class="frise-jalon"><span aria-hidden="true">Deux chemins possibles</span><span class="visuellement-cache">Deux chemins possibles : filière classique ou filière par capitalisation. Ils se rejoignent ensuite au stage pédagogique en situation.</span></p>
+        <div class="frise-filieres">
+          {{- range $P.filieres }}
+          {{ partial "parcours-etape.html" (dict "e" . "surtitre" .filiere "pour" .pour "classe" .id) }}
+          {{- end }}
+        </div>
+        <p class="frise-jalon frise-jalon--jonction" aria-hidden="true">Les deux chemins se rejoignent</p>
+      </div>
+
+      {{- /* Tronc commun, avec le module capacitaire en parallèle (à droite sur ordinateur, juste après l’étape 1 sur téléphone) */}}
+      <div class="frise-tronc">
+        {{- with $P.capacitaire }}
+        <aside class="frise-capa" aria-labelledby="frise-capa-titre">
+          <span class="frise-capa__badge">En parallèle</span>
+          <h3 id="frise-capa-titre" class="frise-capa__titre">{{ .titre }}</h3>
+          <p class="frise-capa__essentiel">{{ .essentiel | markdownify }}</p>
+          <details class="frise-capa__detail">
+            <summary>Détail du module</summary>
+            <ul class="frise-liste">{{ range .points }}<li>{{ . | markdownify }}</li>{{ end }}</ul>
+          </details>
+          <a class="lien-texte frise-capa__lien" href="{{ .lien.url | relURL }}">{{ .lien.texte }} →</a>
+        </aside>
+        {{- end }}
+        <div class="frise-etapes">
+          {{- range $P.etapes }}
+          {{ partial "parcours-etape.html" (dict "e" . "epreuves" (cond (isset . "examen") $P.epreuves false) "classe" (cond (isset . "examen") "examen" "")) }}
+          {{- end }}
         </div>
       </div>
+
+      {{- /* Délais à retenir */}}
+      <div class="frise-delais">
+        {{- range $P.delais }}
+        <div class="frise-delai"><span class="frise-delai__chiffre">{{ .chiffre }}</span><span class="frise-delai__legende">{{ .legende }}</span></div>
+        {{- end }}
+      </div>
+      <p class="frise-source">{{ $P.mention_source }}</p>
     </div>
-    <p class="home-recu"><span class="home-recu__icone bureau"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg></span><span><strong>Pour être reçu :</strong> <span class="bureau">au moins 150 points au total, aucune note sous 5/20, toutes les épreuves réalisées, et 10/20 de moyenne à la fois sur les trois pédagogies et à l’intervention à 25 m. Le MFT non annoté est autorisé pour préparer les trois pédagogies.</span><span class="mobile">au moins 150 points, aucune note sous 5/20, toutes les épreuves réalisées, et 10/20 de moyenne sur les trois pédagogies comme à l’intervention à 25 m.</span></span></p>
-    <p class="home-recu home-recu--github"><span class="home-recu__icone"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg></span><span>Le code et les contenus du site sont aussi publics sur GitHub, pour qui veut contribuer : <a href="https://github.com/nj376/passe-ton-mf1">github.com/nj376/passe-ton-mf1</a>. Corrections, idées et propositions y sont les bienvenues.</span></p>
-  </section>
-</div>
+  </div>
+</section>
 {{ end }}

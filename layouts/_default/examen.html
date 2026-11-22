@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{- /* Page « Examen » : les quatre épreuves et les critères de réussite (anciennement sur l’accueil). Données : data/parcours.yaml.
+       Hors menu : liens depuis la frise de l’accueil et depuis la page IPD. */ -}}
+{{- $P := site.Data.parcours -}}
+<div class="examen">
+  <div class="entete-page">
+    <h1 class="titre-page">L’examen du MF1</h1>
+  </div>
+  {{ partial "aide-page.html" "examen" }}
+
+  <h2 class="prog-sous-titre">Les quatre épreuves</h2>
+  <div class="home-epreuves">
+    {{- range $P.epreuves }}
+    <a class="carte home-epreuve" href="{{ .url | relURL }}"><span class="home-epreuve__haut"><span class="home-num">Épreuve {{ .n }}</span><span class="home-coef">Coefficient {{ .coef }}</span></span><span class="home-epreuve__titre">{{ .titre }}</span><span class="home-epreuve__texte">{{ .texte }}</span><span class="home-duree">{{ .duree }}</span></a>
+    {{- end }}
+  </div>
+
+  <h2 class="prog-sous-titre">Pour être reçu</h2>
+  <div class="carte examen-reussite">
+    <ul>{{ range $P.reussite }}<li>{{ . }}</li>{{ end }}</ul>
+    <p class="examen-reussite__note">{{ $P.reussite_note }}</p>
+  </div>
+  <p class="examen-source">{{ $P.mention_source }}</p>
+</div>
+{{ end }}
