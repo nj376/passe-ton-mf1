@@ -30,8 +30,7 @@ Le MF1 reste une aventure individuelle, mais rien n'oblige à galérer chacun da
 | **S'entraîner** | Tirage d'un thème, chrono de 30 minutes, grilles du livret pédagogique, comparaison avec le MFT ; page **IPD à 25 m**. |
 | **MFT** | Chaque compétence placée sur la courbe de plongée ; **Flashcard MFT** et **Mindmaps**. |
 | **CdS** | Les règles du Code du sport utiles à l'organisation d'une plongée. |
-| **Pistes** | Prérogatives et progressions types, prolongées par **Construire ma progression détaillée** ou dans le Canvas. |
-| **Canvas** | Un tableau blanc pour imaginer un projet de cours comme un storyboard, avec les cartes du MFT ; export PNG et PDF. |
+| **Construire** | Prérogatives et progressions types, prolongées par **Construire ma progression détaillée** ou dans le **Canvas**, un tableau blanc pour imaginer un projet de cours comme un storyboard, avec les cartes du MFT (export PNG et PDF). |
 | **Mon suivi** | Avancement, date d'examen, sauvegarde et restauration des données. |
 
 Aucun compte, aucune base de données : les données de chaque visiteur restent dans son navigateur.

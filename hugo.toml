@@ -72,12 +72,9 @@ enableRobotsTXT = true
     pageRef = "/s-entrainer"
     weight = 3
   [[menus.main]]
-    name = "Pistes"
+    name = "Construire"
     pageRef = "/progression"
     weight = 6
-    # Séparateur avant « Pistes » : sépare les deux groupes de modalités de travail (Pistes, Canvas).
-    [menus.main.params]
-      separateurAvant = true
   [[menus.main]]
     name = "MFT"
     pageRef = "/explore-le-mft"
@@ -86,10 +83,6 @@ enableRobotsTXT = true
     name = "CdS"
     pageRef = "/explore-le-cds"
     weight = 5
-  [[menus.main]]
-    name = "Canvas"
-    pageRef = "/canvas"
-    weight = 7
   [[menus.main]]
     name = "Ressources"
     pageRef = "/ressources"
