@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{- /* Ressources : sommaire des fiches méthode (content/ressources/*.md), regroupées selon leur paramètre « groupe »,
+       dans l’ordre de « groupes » (content/ressources/_index.md). Visible en local seulement (hugo.toml, [[cascade]]). */ -}}
+<div class="capa">
+  <section class="capa-entete">
+    <h1 class="capa-titre">Ressources</h1>
+    <p class="capa-accroche">{{ partial "typo.html" .Params.accroche }}</p>
+  </section>
+  {{ partial "aide-page.html" "ressources" }}
+  {{- range $i, $g := .Params.groupes }}
+  {{- with where $.Pages "Params.groupe" $g }}
+  <section class="ress-groupe" aria-labelledby="ress-groupe-{{ $i }}">
+    <h2 id="ress-groupe-{{ $i }}" class="prog-sous-titre">{{ $g }}</h2>
+    <ul class="ress-fiches">
+      {{- range .ByWeight }}
+      <li><a class="carte ress-carte" href="{{ .RelPermalink }}">
+        <span class="ress-carte__titre">{{ partial "typo.html" .Params.titre }}</span>
+        <span class="ress-carte__resume">{{ partial "typo.html" .Params.resume }}</span>
+        <span class="ress-carte__lire">Lire la fiche →</span>
+      </a></li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+</div>
+{{ end }}

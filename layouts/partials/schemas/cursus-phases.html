@@ -1,0 +1,22 @@
+{{- /* Schéma « cursus en trois phases » : début, milieu, fin de formation, puis validation ; les exigences montent d’une phase à l’autre. */ -}}
+{{- $phases := slice
+  (dict "t" "Début" "s" "Initiation" "d" "Objectifs intermédiaires : premières capacités, conditions faciles, critères accessibles.")
+  (dict "t" "Milieu" "s" "Perfectionnement" "d" "Objectifs intermédiaires plus exigeants, remédiation pour ceux qui en ont besoin.")
+  (dict "t" "Fin" "s" "Maîtrise et autonomie" "d" "Objectif final : la compétence, avec les critères d’évaluation du MFT.")
+-}}
+<figure class="ress-schema">
+  <ol class="schema-phases">
+    {{- range $i, $p := $phases }}
+    <li class="schema-phases__phase schema-phases__phase--{{ add $i 1 }}">
+      <span class="schema-phases__titre">{{ .t }}</span>
+      <span class="schema-phases__sous-titre">{{ .s }}</span>
+      <span class="schema-phases__texte">{{ .d }}</span>
+    </li>
+    {{- end }}
+    <li class="schema-phases__phase schema-phases__phase--validation">
+      <span class="schema-phases__titre">Validation</span>
+      <span class="schema-phases__texte">Le niveau est validé, selon les modalités que le MFT prévoit pour lui.</span>
+    </li>
+  </ol>
+  <figcaption>À chaque phase, les critères de réalisation deviennent plus exigeants, jusqu’aux critères d’évaluation du MFT.</figcaption>
+</figure>

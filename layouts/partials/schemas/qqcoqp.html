@@ -1,0 +1,22 @@
+{{- /* Schéma « QQCOQP » : les six questions autour de la séance, dans l’ordre conseillé pour y répondre. */ -}}
+{{- $q := slice
+  (dict "n" "1" "q" "Qui ?" "s" "Ton public" "t" "Niveau, place dans le cursus, expérience, nombre, particularités (jeunes, seniors, appréhension).")
+  (dict "n" "2" "q" "Pourquoi ?" "s" "La justification" "t" "Ses prérogatives et les risques qu’il rencontrera : à quoi ça va lui servir dans l’eau.")
+  (dict "n" "3" "q" "Quoi ?" "s" "Ce que tu enseignes" "t" "La compétence du MFT, la capacité visée, l’objectif de séance, les prérequis et les limites du sujet.")
+  (dict "n" "4" "q" "Où ?" "s" "Le lieu" "t" "Piscine, fosse, milieu naturel, profondeur, conditions. En théorie : la salle et ses outils.")
+  (dict "n" "5" "q" "Quand ?" "s" "Le moment" "t" "Début, milieu ou fin de formation, numéro de séance, durée, moment de la journée.")
+  (dict "n" "6" "q" "Comment ?" "s" "Ta stratégie" "t" "Les exercices dans une progression, les critères de réalisation, la sécurité, l’évaluation.")
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $q }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="schema-qq__sujet">{{ .s }}</span>
+      <span class="schema-qq__texte">{{ .t }}</span>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Les six questions, dans l’ordre où il vaut mieux y répondre : on ne choisit pas les exercices (Comment ?) avant de savoir à qui on parle et pourquoi.</figcaption>
+</figure>

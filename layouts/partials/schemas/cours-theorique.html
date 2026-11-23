@@ -1,0 +1,19 @@
+{{- /* Schéma « cours théorique » : les cinq temps d’un cours en salle, de l’ouverture à l’annonce de la suite. */ -}}
+{{- $temps := slice
+  (dict "n" "1" "t" "Ouvrir" "d" (slice "Accroche tirée de la plongée" "Objectif et justification" "Rappel et vérification des prérequis" "Annonce du plan"))
+  (dict "n" "2" "t" "Développer" "d" (slice "Deux à quatre parties" "Du concret vers l’explication" "Un schéma par idée clé" "Le lien avec la plongée, partout"))
+  (dict "n" "3" "t" "Synthétiser" "d" (slice "Les trois ou quatre idées à retenir" "Ce que ça change dans l’eau"))
+  (dict "n" "4" "t" "Évaluer" "d" (slice "Questions ouvertes" "Exercice d’application" "Les élèves reformulent"))
+  (dict "n" "5" "t" "Conclure" "d" (slice "Réponses aux questions" "Annonce du cours suivant"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-etapes">
+    {{- range $temps }}
+    <li class="schema-etapes__etape">
+      <span class="schema-etapes__tete"><span class="schema-etapes__num" aria-hidden="true">{{ .n }}</span>{{ .t }}</span>
+      <ul class="schema-etapes__points">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Le plan du cours reste visible au tableau du début à la fin : les élèves savent toujours où ils en sont.</figcaption>
+</figure>

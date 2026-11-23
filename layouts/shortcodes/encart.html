@@ -1,0 +1,4 @@
+{{- /* Encart d’une fiche Ressources : {{< encart "orange" >}}texte en Markdown{{< /encart >}}.
+       Variantes : « orange » (mise en garde) ou « bleu » (à retenir, par défaut). */ -}}
+{{- $type := .Get 0 | default "bleu" -}}
+<div class="ress-encart ress-encart--{{ $type }}"{{ if eq $type "orange" }} role="note"{{ end }}>{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>

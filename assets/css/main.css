@@ -2196,3 +2196,121 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 @media (prefers-reduced-motion: reduce) { .aide-page__chevron { transition: none; } }
 .aide-avertissement { margin-top: 12px; }
 .aide-avertissement strong { color: inherit; }
+
+/* =================================================================
+   Ressources : sommaire (layouts/ressources/list.html) et fiches méthode (single.html, schémas dans partials/schemas/)
+   ================================================================= */
+.ress-groupe { display: flex; flex-direction: column; gap: 14px; }
+.ress-groupe > .prog-sous-titre { margin: 8px 0 0; }
+.ress-fiches { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.ress-carte { height: 100%; padding: 20px 22px; border-radius: 14px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; }
+.ress-carte:hover { border-color: var(--bleu); color: inherit; }
+.ress-carte__titre { font-size: 18px; font-weight: 600; line-height: 1.3; color: var(--texte); }
+.ress-carte__resume { font-size: 14.5px; line-height: 1.55; color: var(--texte-4); }
+.ress-carte__lire { margin-top: auto; padding-top: 6px; font-size: 14px; font-weight: 500; color: var(--bleu); }
+.ress-carte:hover .ress-carte__lire { text-decoration: underline; }
+
+.ress-surtitre { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--bleu); }
+.ress-fiche { border-radius: 14px; padding: 32px 36px; font-size: 16px; line-height: 1.7; color: var(--texte-2); }
+.ress-fiche > :first-child { margin-top: 0; }
+.ress-fiche h2 { margin: 36px 0 12px; font-size: 22px; line-height: 1.3; font-weight: 600; color: var(--texte); }
+.ress-fiche h3 { margin: 24px 0 8px; font-size: 17px; font-weight: 600; color: var(--texte); }
+.ress-fiche p { margin: 0 0 12px; max-width: 80ch; }
+.ress-fiche ul, .ress-fiche ol { margin: 0 0 14px; padding-left: 22px; max-width: 80ch; }
+.ress-fiche li { margin-bottom: 4px; }
+.ress-fiche strong { font-weight: 600; color: var(--texte); }
+.ress-fiche table { width: 100%; margin: 4px 0 18px; border-collapse: collapse; font-size: 15px; line-height: 1.55; }
+.ress-fiche th, .ress-fiche td { padding: 10px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--bordure); }
+.ress-fiche thead th { background: var(--bleu-pale); color: var(--texte); font-weight: 600; border-bottom: 2px solid var(--bordure-bleu-pale); }
+.ress-fiche td:first-child { width: 26%; }
+.ress-encart { margin: 8px 0 18px; padding: 14px 18px; border-radius: 10px; font-size: 15px; line-height: 1.6; }
+.ress-encart p { margin: 0; }
+.ress-encart p + p { margin-top: 8px; }
+.ress-encart--bleu { background: var(--bleu-clair); border: 1px solid var(--bordure-bleu-pale); color: var(--texte-2); }
+.ress-encart--orange { background: var(--orange-fond); border: 1px solid var(--orange-bordure); color: var(--orange-texte); }
+.ress-encart--orange strong { color: inherit; }
+.ress-source { margin: 0; font-size: 13.5px; line-height: 1.6; color: var(--texte-4); max-width: 90ch; }
+.ress-retour-bas { margin-bottom: 0; margin-top: -12px; }
+
+/* Schémas des fiches */
+.ress-schema { margin: 10px 0 22px; padding: 20px; border-radius: 12px; background: var(--bleu-tres-clair); border: 1px solid var(--bordure-bleu-pale); }
+.ress-schema figcaption { margin-top: 14px; font-size: 14px; line-height: 1.55; color: var(--texte-4); }
+.ress-fiche .ress-schema ol, .ress-fiche .ress-schema ul { max-width: none; }
+
+/* QQCOQP : six cases numérotées */
+.ress-fiche .schema-qq { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.ress-fiche .schema-qq__case { margin: 0; position: relative; padding: 14px 16px 14px 52px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); display: flex; flex-direction: column; gap: 2px; }
+.schema-qq__num { position: absolute; left: 14px; top: 14px; width: 26px; height: 26px; border-radius: 50%; background: var(--bleu); color: var(--blanc); font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+.schema-qq__question { font-size: 18px; font-weight: 600; color: var(--bleu-fonce); line-height: 1.3; }
+.schema-qq__sujet { font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--texte-4); }
+.schema-qq__texte { margin-top: 4px; font-size: 14px; line-height: 1.5; color: var(--texte-2); }
+
+/* Séance pratique : courbe de plongée et légende numérotée */
+.schema-courbe { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto 16px; }
+.schema-courbe__eau { fill: var(--bleu-clair); }
+.schema-courbe__surface { stroke: var(--bleu-courbe); stroke-width: 2; }
+.schema-courbe__trace { fill: none; stroke: var(--bleu); stroke-width: 3; stroke-linejoin: round; stroke-dasharray: 7 5; }
+.schema-courbe__zone { font-family: var(--police); font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; fill: var(--texte-4); }
+.schema-courbe__zone--eau { fill: var(--bleu-fonce); }
+.schema-courbe__point circle { fill: var(--bleu); stroke: var(--blanc); stroke-width: 3; }
+.schema-courbe__point text { font-family: var(--police); font-size: 15px; font-weight: 700; fill: var(--blanc); }
+.ress-fiche .schema-legende { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 20px; }
+.ress-fiche .schema-legende li { margin: 0; display: flex; gap: 10px; align-items: flex-start; font-size: 14.5px; line-height: 1.5; }
+.schema-legende__num, .schema-etapes__num { flex: 0 0 auto; width: 24px; height: 24px; margin-top: 1px; border-radius: 50%; background: var(--bleu); color: var(--blanc); font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+
+/* Cours théorique : cinq temps en ligne */
+.ress-fiche .schema-etapes { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.ress-fiche .schema-etapes__etape { margin: 0; padding: 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); border-top: 4px solid var(--bleu); }
+.schema-etapes__tete { display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 600; color: var(--texte); }
+.ress-fiche .schema-etapes__points { margin: 10px 0 0; padding-left: 18px; font-size: 13.5px; line-height: 1.5; color: var(--texte-2); }
+.ress-fiche .schema-etapes__points li { margin-bottom: 3px; }
+
+/* Organisationnelle : zones du tableau */
+.schema-tableau { display: grid; grid-template-columns: 1fr 1.4fr 1fr; grid-template-areas: "titre titre titre" "humains site planning" "palanquees site planning" "securite securite securite"; gap: 10px; padding: 14px; border-radius: 8px; background: var(--blanc); border: 3px solid var(--texte-4); }
+.schema-tableau__zone { padding: 12px 14px; border-radius: 6px; border: 1.5px dashed var(--bordure-champ); display: flex; flex-direction: column; gap: 3px; font-size: 13.5px; line-height: 1.45; color: var(--texte-2); }
+.schema-tableau__zone strong { font-size: 15px; color: var(--bleu-fonce); }
+.schema-tableau__zone--titre { grid-area: titre; text-align: center; align-items: center; }
+.schema-tableau__zone--humains { grid-area: humains; }
+.schema-tableau__zone--site { grid-area: site; min-height: 150px; }
+.schema-tableau__zone--planning { grid-area: planning; }
+.schema-tableau__zone--palanquees { grid-area: palanquees; }
+.schema-tableau__zone--securite { grid-area: securite; border-color: var(--rouge); }
+.schema-tableau__zone--securite strong { color: var(--rouge-titre); }
+
+/* Cursus : trois phases, puis la validation */
+.ress-fiche .schema-phases { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, .8fr); gap: 8px; align-items: end; }
+.ress-fiche .schema-phases__phase { margin: 0; padding: 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); display: flex; flex-direction: column; gap: 3px; }
+.schema-phases__phase--1 { border-top: 4px solid var(--bleu-courbe); }
+.schema-phases__phase--2 { border-top: 4px solid var(--bleu); min-height: 150px; }
+.schema-phases__phase--3 { border-top: 4px solid var(--bleu-fonce); min-height: 180px; }
+.schema-phases__phase--validation { border-top: 4px solid var(--vert); background: var(--vert-encart); min-height: 200px; }
+.schema-phases__titre { font-size: 16px; font-weight: 600; color: var(--texte); }
+.schema-phases__sous-titre { font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--bleu); }
+.schema-phases__texte { margin-top: 4px; font-size: 13.5px; line-height: 1.5; color: var(--texte-2); }
+
+@media (max-width: 1000px) {
+  .ress-fiches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ress-fiche .schema-qq { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ress-fiche .schema-etapes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ress-fiche .schema-phases { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .schema-phases__phase--2, .schema-phases__phase--3, .schema-phases__phase--validation { min-height: 0; }
+}
+@media (max-width: 900px) {
+  .ress-fiches { grid-template-columns: 1fr; }
+  .ress-fiche { padding: 18px; font-size: 15px; line-height: 1.65; }
+  .ress-fiche h2 { margin-top: 28px; font-size: 19px; }
+  .ress-schema { padding: 14px; }
+  .ress-fiche .schema-qq, .ress-fiche .schema-etapes, .ress-fiche .schema-legende, .ress-fiche .schema-phases { grid-template-columns: 1fr; }
+  .schema-tableau { grid-template-columns: 1fr; grid-template-areas: "titre" "humains" "site" "planning" "palanquees" "securite"; }
+  .schema-tableau__zone--site { min-height: 0; }
+  /* Tableaux de texte : chaque ligne devient un bloc, la première colonne sert de titre. */
+  .ress-fiche table, .ress-fiche tbody, .ress-fiche tr, .ress-fiche td { display: block; width: auto; }
+  .ress-fiche thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .ress-fiche tr { padding: 10px 0; border-bottom: 1px solid var(--bordure); }
+  .ress-fiche td { padding: 2px 0; border: 0; }
+  .ress-fiche td:first-child { width: auto; }
+}
+@media (max-width: 900px) {
+  /* Tableaux de trois colonnes ou plus : l’en-tête de colonne précède chaque cellule, sauf la première. */
+  .ress-fiche .tableau-texte:not(.tableau-texte--2-colonnes) td:not(:first-child)::before { content: attr(data-label) "\00A0: "; font-weight: 600; color: var(--texte); }
+}

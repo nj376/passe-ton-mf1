@@ -1,0 +1,2 @@
+{{- /* Schéma d’une fiche Ressources : {{< schema "nom" >}} insère layouts/partials/schemas/nom.html. */ -}}
+{{- partial (printf "schemas/%s.html" (.Get 0)) . -}}
