@@ -1,4 +1,4 @@
-/* Données de la mindmap « anatomie-physiologie » (page /capacitaire/anatomie-physiologie/), reprises de mindmaps-mf1/anatomie-physiologie.html.
+/* Données de la mindmap « anatomie-physiologie » (page /capacitaire/anatomie-physiologie/), reprises du fichier d’origine mindmaps-mf1/anatomie-physiologie.html (dossier supprimé depuis).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). */
 const PAGE={
 title:"Anatomie, physiologie, physiopathologie",

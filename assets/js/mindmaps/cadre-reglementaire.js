@@ -1,4 +1,4 @@
-/* Données de la mindmap « cadre-reglementaire » (page /capacitaire/cadre-reglementaire/), reprises de mindmaps-mf1/cadre-reglementaire.html.
+/* Données de la mindmap « cadre-reglementaire » (page /capacitaire/cadre-reglementaire/), reprises du fichier d’origine mindmaps-mf1/cadre-reglementaire.html (dossier supprimé depuis).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). */
 const PAGE={
 title:"Cadre réglementaire",

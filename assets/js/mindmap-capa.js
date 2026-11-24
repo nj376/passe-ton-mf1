@@ -1,5 +1,5 @@
 /* Moteur commun des mindmaps du module capacitaire (pages /capacitaire/<écrit>/, gabarit layouts/_default/mindmap-capa.html).
-   Script d’origine conservé (mindmaps-mf1/*.html), les données (objet PAGE) sont dans assets/js/mindmaps/<écrit>.js.
+   Script d’origine conservé (dossier mindmaps-mf1/, supprimé depuis), les données (objet PAGE) sont dans assets/js/mindmaps/<écrit>.js.
    Seule adaptation : CSP du site (style-src 'self'), les styles calculés sont posés par le CSSOM (data-s → style.cssText),
    et non par des attributs style dans le HTML généré. */
 {

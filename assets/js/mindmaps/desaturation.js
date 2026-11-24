@@ -1,4 +1,4 @@
-/* Données de la mindmap « desaturation » (page /capacitaire/desaturation/), reprises de mindmaps-mf1/desaturation.html.
+/* Données de la mindmap « desaturation » (page /capacitaire/desaturation/), reprises du fichier d’origine mindmaps-mf1/desaturation.html (dossier supprimé depuis).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). */
 const PAGE={
 title:"Désaturation",

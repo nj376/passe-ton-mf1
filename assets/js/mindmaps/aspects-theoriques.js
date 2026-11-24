@@ -1,4 +1,4 @@
-/* Données de la mindmap « aspects-theoriques » (page /capacitaire/aspects-theoriques/), reprises de mindmaps-mf1/aspects-theoriques.html.
+/* Données de la mindmap « aspects-theoriques » (page /capacitaire/aspects-theoriques/), reprises du fichier d’origine mindmaps-mf1/aspects-theoriques.html (dossier supprimé depuis).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). */
 const PAGE={
 title:"Aspects théoriques de l’activité",
