@@ -36,7 +36,7 @@ Sujet : *une séance de vidage de masque pour deux élèves en début de format
 | **Quand ?** | Première séance sur ce thème. Une séance de perfectionnement suivra. |
 | **Comment ?** | À genoux au fond : masque entrouvert, puis à moitié plein, puis plein. Critère : masque vidé en deux expirations au plus, sans remonter ni lâcher l’embout. |
 
-Les étapes de la colonne « Comment ? » suivent les curseurs de difficulté du MFT pour cette compétence : masque entrouvert, puis plein, puis retiré ; à genoux, puis en déplacement.
+Les étapes de la colonne « Comment ? » font monter la difficulté un paramètre à la fois : masque entrouvert, puis plein, puis retiré ; à genoux, puis en déplacement. Voir la fiche [Concevoir une progression](/ressources/concevoir-une-progression/).
 
 ## Les pièges classiques
 

@@ -1,0 +1,22 @@
+{{- /* Schéma « échelle de difficulté » : un escalier où l’on tourne un seul curseur à chaque marche
+       (exemple : vidage de masque, compétence N1 « Se ventiler » ; curseurs repris de data/mft_data.json, rédigés pour le site). */ -}}
+{{- $marches := slice
+  (dict "n" "1" "t" "Masque entrouvert" "d" "à genoux au fond, à 3 m" "c" "Point de départ")
+  (dict "n" "2" "t" "Masque à moitié plein" "d" "à genoux au fond" "c" "Curseur tourné : la quantité d’eau")
+  (dict "n" "3" "t" "Masque plein" "d" "à genoux au fond" "c" "Curseur tourné : la quantité d’eau")
+  (dict "n" "4" "t" "Masque plein" "d" "en déplacement" "c" "Curseur tourné : la position")
+  (dict "n" "5" "t" "Masque retiré puis remis" "d" "en déplacement" "c" "Curseur tourné : la quantité d’eau")
+-}}
+<figure class="ress-schema">
+  <ol class="schema-escalier">
+    {{- range $marches }}
+    <li class="schema-escalier__marche schema-escalier__marche--{{ .n }}">
+      <span class="schema-escalier__num" aria-hidden="true">{{ .n }}</span>
+      <strong class="schema-escalier__titre">{{ .t }}</strong>
+      <span class="schema-escalier__texte">{{ .d }}</span>
+      <span class="schema-escalier__curseur">{{ .c }}</span>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Un seul curseur change d’une marche à l’autre : si l’élève bloque, tu sais exactement ce qui a rendu l’exercice plus difficile.</figcaption>
+</figure>

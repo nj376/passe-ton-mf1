@@ -1,0 +1,19 @@
+{{- /* Schéma « des prérogatives à l’objectif de séance » : qui fixe quoi, avec l’exemple du vidage de masque au N1. */ -}}
+{{- $niveaux := slice
+  (dict "qui" "Code du sport" "t" "Les prérogatives" "d" "Ce que le plongeur aura le droit de faire." "ex" "N1 : plongeur encadré jusqu’à 20 m.")
+  (dict "qui" "MFT" "t" "La compétence = objectif final" "d" "Ce qu’il doit savoir faire pour exercer ses prérogatives." "ex" "« Se ventiler » : réagir sereinement à une entrée d’eau dans le masque.")
+  (dict "qui" "MFT" "t" "Les capacités = objectifs intermédiaires" "d" "Les savoir-faire qui, ensemble, font la compétence." "ex" "Vider son masque, lâcher et reprendre l’embout, ventiler sur tuba.")
+  (dict "qui" "Toi" "t" "Les objectifs de séance" "d" "Les étapes que tu choisis : c’est ta liberté pédagogique." "ex" "Séance 1 : vider un masque entrouvert, à genoux, à 3 m.")
+-}}
+<figure class="ress-schema">
+  <ol class="schema-chaine">
+    {{- range $niveaux }}
+    <li class="schema-chaine__niveau">
+      <span class="schema-chaine__qui{{ if eq .qui "Toi" }} schema-chaine__qui--toi{{ end }}">{{ .qui }}</span>
+      <span class="schema-chaine__corps"><strong class="schema-chaine__titre">{{ .t }}</strong><span class="schema-chaine__texte">{{ .d }}</span></span>
+      <span class="schema-chaine__exemple"><span class="visuellement-cache">Exemple : </span>{{ .ex }}</span>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>De haut en bas, on passe de ce que le plongeur aura le droit de faire à ce que tu lui fais faire aujourd’hui. Colonne de droite : l’exemple du vidage de masque au N1.</figcaption>
+</figure>

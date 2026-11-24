@@ -1,0 +1,18 @@
+{{- /* Schéma « trois échelles de progression » : le cursus, puis une compétence, puis une séance, comme un zoom. */ -}}
+<figure class="ress-schema">
+  <ol class="schema-zoom">
+    <li class="schema-zoom__ligne">
+      <span class="schema-zoom__echelle"><strong>Le cursus</strong>l’ordre des compétences</span>
+      <span class="schema-zoom__barre" aria-hidden="true"><span>C1</span><span>C2</span><span class="schema-zoom__choisi">C3</span><span>C4</span><span>C5</span></span>
+    </li>
+    <li class="schema-zoom__ligne">
+      <span class="schema-zoom__echelle"><strong>Une compétence</strong>plusieurs séances : apprendre, perfectionner, maîtriser</span>
+      <span class="schema-zoom__barre" aria-hidden="true"><span>Séance 1</span><span class="schema-zoom__choisi">Séance 2</span><span>Séance 3</span><span>Séance 4</span></span>
+    </li>
+    <li class="schema-zoom__ligne">
+      <span class="schema-zoom__echelle"><strong>Une séance</strong>des exercices du plus simple au plus difficile</span>
+      <span class="schema-zoom__barre schema-zoom__barre--marches" aria-hidden="true"><span>Ex. 1</span><span>Ex. 2</span><span>Ex. 3</span></span>
+    </li>
+  </ol>
+  <figcaption>Chaque ligne zoome sur un élément de la ligne du dessus : une compétence du cursus, puis une séance de cette compétence.</figcaption>
+</figure>
