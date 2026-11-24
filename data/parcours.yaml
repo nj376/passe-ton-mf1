@@ -84,7 +84,7 @@ etapes:
     resume: "Le cœur de la formation : enseigner pour de vrai, avec ton tuteur."
     points:
       - "Dans un club ou une structure habilitée, avec un **tuteur de stage** (moniteur de niveau E4) qui valide tes séances et tes modules sur le livret pédagogique"
-      - "7 modules à valider. Enseignement pratique : 0-6 m, 6-20 m, 20-40 m. Enseignement théorique : niveaux 1 et 2 ; niveaux 3, GP-N4 et DP-N5. Organisation : organiser et sécuriser l’activité ; organiser un cursus de formation."
+      - "7 modules à valider. Enseignement pratique : 0-6 m, 6-20 m, 20-40 m. Enseignement théorique : PE12, N1, PA20, PE40 et N2 ; PA40, PE60, N3, GP-N4 et DP-N5. Organisation : organiser et sécuriser l’activité ; organiser un cursus de formation."
       - "Pour chaque module : au moins **5 séances complètes, dont 2 validées**, sur des thèmes et des niveaux différents. Une séance est complète quand les trois phases (concevoir, réaliser, évaluer) sont faites, validée quand les trois sont acquises."
       - "Les séances 6-20 m et 20-40 m se font en milieu naturel (pas en fosse). Au-delà de 20 m, le tuteur est obligatoirement dans ta palanquée."
       - "Pendant ce stage, tu as le statut d’**enseignant E2** : tu peux enseigner entre 0 et 20 m sous la responsabilité d’un DP E3, mais tu ne peux pas délivrer de compétences N1/N2, signer de carnets ni être Directeur de Plongée."
@@ -98,6 +98,7 @@ etapes:
         - ["Initiateur + DP-N5", "Dispensé", "Dispensé"]
       mention: "Les titulaires du BPJEPS et certains stagiaires DEJEPS bénéficient d’autres allègements (voir le MFT). Les demandes se font auprès du Président de la CTR avec justificatifs."
     liens:
+      - { texte: "Remplir le livret pas à pas", url: "/ressources/remplir-le-livret-pedagogique/" }
       - { texte: "Préparer une séance", url: "/s-entrainer/" }
       - { texte: "Construire une progression", url: "/progression/" }
   - n: "3"
