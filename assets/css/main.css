@@ -2377,3 +2377,25 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ress-pistes__contenu { padding: 0 16px 12px; font-size: 15px; color: var(--texte-2); }
 .ress-pistes__contenu ul { margin: 0; }
 .ress-fiche h3 + p > em:only-child { color: var(--texte); }
+
+/* S’entraîner : pense-bête « La trame du stage initial » (partials/trame-stage.html), replié au-dessus de la grille */
+.trame { padding: 0; overflow: hidden; }
+.trame__titre { display: flex; align-items: center; gap: 6px; padding: 12px 18px; cursor: pointer; list-style: none; font-size: 16px; font-weight: 600; color: var(--bleu); }
+.trame__titre::-webkit-details-marker { display: none; }
+.trame__titre:hover { background: var(--bleu-clair); }
+.trame__titre:focus-visible { outline: 2px solid var(--bleu); outline-offset: -2px; }
+.trame__epreuve { font-weight: 500; color: var(--texte-4); }
+.trame__chevron { margin-left: auto; display: inline-flex; transition: transform .2s; }
+.trame[open] .trame__chevron { transform: rotate(180deg); }
+.trame__contenu { padding: 4px 18px 18px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 32px; }
+.trame__sous-titre { margin: 0 0 8px; font-size: 12.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--texte-4); }
+.trame__temps { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.trame__temps li { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--texte-2); }
+.trame__num { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: var(--bleu); color: var(--blanc); font-size: 12px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+.trame__rappels { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5; color: var(--texte-2); }
+.trame__liens { grid-column: 1 / -1; margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 900px) {
+  .trame__titre { padding: 10px 14px; font-size: 15px; flex-wrap: wrap; }
+  .trame__contenu { padding: 2px 14px 14px; grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .trame__chevron { transition: none; } }

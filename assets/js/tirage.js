@@ -78,6 +78,10 @@
       var o = onglet(visables.indexOf(etat.niveau) >= 0 ? etat.niveau : hasard(visables));
       return { epreuve: "orga", orga: t, cursus: o, titre: t.nom + " " + o.libelle, puces: [hasard(D.tirage.contextesFormation)] };
     }
+    if (t.id === "dp") {
+      var c = hasard(D.tirage.casDP);
+      return { epreuve: "orga", orga: { id: t.id, nom: t.nom, coeur: c.coeur }, titre: c.titre, puces: [t.nom + "\u00a0: " + c.type.toLowerCase()].concat(c.contexte) };
+    }
     return { epreuve: "orga", orga: t, titre: t.nom, puces: [hasard(D.tirage.sites), hasard(D.tirage.meteo), hasard(D.tirage.groupes)] };
   }
 
@@ -104,8 +108,20 @@
     theo: "puis 30 min devant le jury",
     orga: "puis 10 min d’exposé et 20 min de questions"
   };
+  /* Pense-bête « La trame du stage initial » : seul le bloc de l’épreuve sélectionnée est visible
+     (« Au hasard » : celui de l’épreuve tirée). */
+  function afficherTrame() {
+    var ep = etat.epreuve !== "any" ? etat.epreuve : (etat.theme ? etat.theme.epreuve : "prat");
+    racine.querySelectorAll("[data-trame]").forEach(function (b) {
+      var garder = b.getAttribute("data-trame") === ep;
+      if (!garder) b.open = false;
+      b.hidden = !garder;
+    });
+  }
+
   function afficherTheme() {
     var t = etat.theme;
+    afficherTrame();
     $("[data-theme-format]").textContent = FORMAT;
     $("[data-chrono-suite]").textContent = SUITES[t.epreuve];
     var titre = $("[data-theme-titre]");
@@ -385,6 +401,7 @@
     b.addEventListener("click", function () {
       etat.epreuve = b.getAttribute("data-epreuve");
       racine.querySelectorAll("[data-epreuve]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      afficherTrame();
     });
   });
   $("[data-niveau]").addEventListener("change", function (e) { etat.niveau = e.target.value; });

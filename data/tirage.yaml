@@ -92,6 +92,8 @@ themesOrga:
   - { id: securite, nom: "Organisation de la sécurité sur site", coeur: [sec, pre] }
   - { id: secours, nom: "Organisation des secours", coeur: [rea, sec] }
   - { id: formation, nom: "Organisation d’une formation", coeur: [] }
+  # Cas de DP : le cas tiré (casDP) fixe le titre, le contexte et le cœur du sujet.
+  - { id: dp, nom: "Cas de Directeur de Plongée", coeur: [] }
 
 sites:
   - "Semi-rigide de 12 places, site à 15 min du port"
@@ -119,3 +121,27 @@ contextesFormation:
   - "Stage intensif d’une semaine en mer"
   - "5 élèves adultes, un seul E3 disponible"
   - "Groupe d’adolescents de 14 et 15 ans"
+
+# Cas de Directeur de Plongée (thème « dp ») : repris de la fiche Ressources « Le rôle du Directeur de Plongée »,
+# où se trouvent les pistes de réflexion. contexte : une ou deux puces sous le titre.
+casDP:
+  - type: "Composer les palanquées"
+    titre: "Composer les palanquées et remplir la fiche de sécurité"
+    contexte: ["3 N1, 3 N2, un E3 (toi) et deux E2", "Site de ton choix"]
+    coeur: [pal, par]
+  - type: "Cas de conscience"
+    titre: "Un site exposé au courant"
+    contexte: ["Épave à 50 m, paliers en pleine eau en dérivante", "Des N3 en autonomie à 60 m, des N2 encadrés à 40 m par un E3, un élève N2 en fin de formation"]
+    coeur: [site, pal, sec]
+  - type: "Cas de conscience"
+    titre: "Un encadrant fragilisé"
+    contexte: ["Un MF1 revient après un AVC, avec un certificat médical", "Hésitant et lent à se préparer, il doit encadrer un élève N2"]
+    coeur: [acc, pal]
+  - type: "Déclencher les secours"
+    titre: "Un plongeur malade après une plongée à 45 m"
+    contexte: ["Mer formée en hiver", "Il s’isole et vomit, puis se plaint de fourmillements dans les jambes"]
+    coeur: [rea, sec]
+  - type: "Déclencher les secours"
+    titre: "Des vertiges sur le quai"
+    contexte: ["Après une remontée assistée puis une plongée entre 20 et 10 m au profil correct"]
+    coeur: [rea, sec]

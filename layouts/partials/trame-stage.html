@@ -1,0 +1,33 @@
+{{- /* Pense-bête « La trame du stage initial », replié au-dessus de la grille de « S’entraîner ».
+       Un bloc par épreuve (data-trame) : tirage.js n’affiche que celui de l’épreuve tirée (ou choisie avant le tirage).
+       Version complète : fiches de Ressources (content/ressources/). */ -}}
+{{- $trames := slice
+  (dict "id" "prat" "nom" "pratique" "fiche" "/ressources/trame-pedagogie-pratique/"
+    "temps" (slice "Préparer" "Briefing (5 à 10 min)" "Mise à l’eau et descente" "Vérifier le prérequis" "Exercices" "Remontée et fin" "Débriefing (5 à 10 min)")
+    "rappels" (slice "Prérequis technique et prérequis de sécurité" "Sécurité : les risques de la séance et leur prévention" "Difficultés prévisibles et remédiation" "Déroulé minuté" "Séance suivante"))
+  (dict "id" "theo" "nom" "théorique" "fiche" "/ressources/trame-pedagogie-theorique/"
+    "temps" (slice "Ouvrir" "Développer" "Synthétiser" "Évaluer" "Conclure")
+    "rappels" (slice "Rappels : les prérequis à vérifier" "Contenu et limites du cours" "Une idée clé par partie, un schéma par idée" "Outils et supports" "Cours suivant"))
+  (dict "id" "orga" "nom" "organisationnelle" "fiche" "/ressources/trame-pedagogie-organisationnelle/"
+    "temps" (slice "Qui ?" "Quoi ?" "Où ?" "Quand ?" "Comment ?" "Pourquoi ?" "Avec quoi ?")
+    "rappels" (slice "Le type de sujet : une plongée, une partie de cursus ou un cursus complet" "Les zones du tableau, décidées avant d’écrire" "La sécurité et les secours, même pour une formation" "Chaque choix justifié" "Dix minutes d’exposé au plus"))
+-}}
+{{- range $trames }}
+<details class="carte trame" data-trame="{{ .id }}"{{ if ne .id "prat" }} hidden{{ end }}>
+  <summary class="trame__titre">La trame du stage initial <span class="trame__epreuve">· pédagogie {{ .nom }}</span><span class="trame__chevron" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span></summary>
+  <div class="trame__contenu">
+    <div class="trame__bloc">
+      <h3 class="trame__sous-titre">{{ if eq .id "orga" }}Les sept questions{{ else }}Les temps de la séance{{ end }}</h3>
+      <ol class="trame__temps">{{ range $i, $t := .temps }}<li><span class="trame__num" aria-hidden="true">{{ add $i 1 }}</span>{{ $t }}</li>{{ end }}</ol>
+    </div>
+    <div class="trame__bloc">
+      <h3 class="trame__sous-titre">N’oublie pas</h3>
+      <ul class="trame__rappels">{{ range .rappels }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+    <p class="trame__liens">
+      <a class="lien-texte" href="{{ .fiche | relURL }}">Voir la fiche complète →</a>
+      {{- if eq .id "orga" }}<a class="lien-texte" href="{{ "/ressources/role-du-directeur-de-plongee/" | relURL }}">Le rôle du Directeur de Plongée →</a>{{ end }}
+    </p>
+  </div>
+</details>
+{{- end }}
