@@ -132,15 +132,22 @@
     zone.textContent = texte;
   })();
 
-  /* Avis « version mobile » : sur téléphone (600 px au plus), une seule fois, à la première visite. */
+  /* Avis « version mobile » : sur téléphone (600 px au plus), une fois par rubrique du menu et par session
+     (clé de session ptmf1-avis-mobile : liste des rubriques déjà vues). Une rubrique = l’entrée active du menu
+     principal (MFT pour Flashcard, Mindmaps et Accidents, qui y sont rattachées), sinon le premier segment de l’adresse. */
   (function () {
     var avis = document.getElementById("fenetre-avis-mobile");
     // L’accueil est pensé pour le téléphone : pas d’avertissement.
     if (document.querySelector(".accueil-hero")) return;
     if (!avis || !window.matchMedia || !window.matchMedia("(max-width: 600px)").matches) return;
+    var actif = document.querySelector(".nav__lien--actif");
+    var rubrique = actif ? actif.getAttribute("href") : "/" + (location.pathname.split("/")[1] || "");
     try {
-      if (localStorage.getItem("ptmf1-avis-mobile")) return;
-      localStorage.setItem("ptmf1-avis-mobile", "1");
+      var vues = JSON.parse(sessionStorage.getItem("ptmf1-avis-mobile") || "[]");
+      if (!Array.isArray(vues)) vues = [];
+      if (vues.indexOf(rubrique) >= 0) return;
+      vues.push(rubrique);
+      sessionStorage.setItem("ptmf1-avis-mobile", JSON.stringify(vues));
     } catch (e) { return; } // stockage indisponible : on n'insiste pas
     ouvrirFenetre("fenetre-avis-mobile");
   })();

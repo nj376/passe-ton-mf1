@@ -49,6 +49,8 @@ Reprends la [méthode QQCOQP](/ressources/qqcoqp/) et ajoute une septième quest
 | **Pourquoi ?** | La justification de chaque choix : sécurité, objectifs de formation, plaisir des plongeurs. |
 | **Avec quoi ?** | Le matériel de secours et d’assistance, la sécurité surface, le plan de secours, l’administratif (licences, certificats médicaux, brevets), la logistique (bateau, blocs, lestage). |
 
+Ici, « Pourquoi ? » vient après « Comment ? » : il sert à justifier chacun des choix faits au-dessus. Pour une séance, la méthode QQCOQP pose au contraire le « Pourquoi ? » au début, pour fixer le but avant de choisir les exercices.
+
 Pour la réglementation (normes d’encadrement, matériel obligatoire, rôle du Directeur de Plongée), appuie-toi sur le [Code du sport](/explore-le-cds/).
 
 Pour le « Avec quoi ? », passe en revue les trois appuis de la sécurité :
