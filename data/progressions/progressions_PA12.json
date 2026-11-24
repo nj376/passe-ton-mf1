@@ -20,6 +20,7 @@
             {
               "n": 1,
               "titre": "Restituer les consignes du DP",
+              "curseur": "Point de départ.",
               "objectif": "Identifier sans difficulté les consignes du briefing.",
               "situation": "Après un briefing réel du DP, l'élève restitue les consignes de durée, de profondeur et les conditions de fin de plongée (pression du bloc, lieu et modalités de sortie de l'eau).",
               "critere": "Restitution complète et exacte, sans aide.",
@@ -28,6 +29,7 @@
             {
               "n": 2,
               "titre": "Construire le plan de la palanquée",
+              "curseur": "Écouter le briefing → traduire les consignes en plan de palanquée.",
               "objectif": "Traduire les consignes en un plan partagé avec ses équipiers.",
               "situation": "À terre, avec ses équipiers : profondeur maximale, durée, pression de retour et de remontée, point de sortie. Chacun peut redire le plan.",
               "critere": "Le plan reste dans le cadre du DP. Les équipiers le connaissent tous.",
@@ -36,6 +38,7 @@
             {
               "n": 3,
               "titre": "Protocole de contrôle des consommations",
+              "curseur": "Contrôle par le moniteur → protocole décidé et appliqué par la palanquée.",
               "objectif": "Décider ensemble comment on surveille l'air de chacun, puis l'appliquer.",
               "situation": "En concertation : fréquence des contrôles, signes utilisés, conduite à la mi-pression et à la pression de remontée. Application en plongée de formation peu profonde, le moniteur dans la palanquée.",
               "critere": "Le protocole est respecté pendant toute la plongée, sans rappel du moniteur.",
@@ -44,6 +47,7 @@
             {
               "n": 4,
               "titre": "Gérer ses paramètres avec son ordinateur",
+              "curseur": "Nouveau geste, gérer ses paramètres avec son ordinateur.",
               "objectif": "Lire son ordinateur et réagir à ce qu'il affiche.",
               "situation": "Au sec puis en plongée : lecture de la durée, de la profondeur, de la vitesse de remontée. Le moniteur propose des situations concrètes (alarme de vitesse, durée fixée par le DP presque atteinte, profondeur maximale dépassée) et l'élève dit ou fait ce qu'il faut.",
               "critere": "Réaction juste et immédiate à chaque situation.",
@@ -52,6 +56,7 @@
             {
               "n": 5,
               "titre": "Gérer la plongée en autonomie (évaluation)",
+              "curseur": "Évaluation, la palanquée gère seule la plongée, entre 10 et 12 m.",
               "objectif": "Organiser et conduire la plongée avec ses équipiers dans le cadre du DP.",
               "situation": "Plusieurs plongées en milieu naturel, évaluation entre 10 et 12 m, consignes du DP différentes à chaque fois. La palanquée d'élèves gère seule la plongée, l'encadrant observe. Des situations concrètes à analyser à partir de l'ordinateur sont proposées en cours de formation.",
               "critere": "Paramètres du DP respectés, protocole de consommation appliqué, fin de plongée conforme, réaction adaptée aux situations lues sur l'ordinateur. Correspond aux modalités d'évaluation du MFT."
@@ -70,6 +75,7 @@
             {
               "n": 1,
               "titre": "Découvrir un site avec le moniteur",
+              "curseur": "Point de départ.",
               "objectif": "Prendre conscience des repères qu'on utilise pour s'orienter.",
               "situation": "Plongée guidée par le moniteur, qui montre les repères en route (mouillage, roches, limite sable et roche, relief, profondeur). Au débriefing, l'élève redessine le parcours.",
               "critere": "Il nomme au moins trois repères et les place dans l'ordre."
@@ -77,6 +83,7 @@
             {
               "n": 2,
               "titre": "Lire les informations du site",
+              "curseur": "Repères montrés en plongée → repères lus dans les informations du DP.",
               "objectif": "Tirer du briefing du DP la topographie et les repères utiles.",
               "situation": "À terre, à partir de la description ou du croquis du site donné par le DP, l'élève repère la zone de plongée, les repères et le point de retour.",
               "critere": "Il propose un trajet simple et dit sur quels repères il va s'appuyer."
@@ -84,6 +91,7 @@
             {
               "n": 3,
               "titre": "Mener un trajet court",
+              "curseur": "Guidé par le moniteur → mène la palanquée.",
               "objectif": "Conduire la palanquée sur un aller-retour simple.",
               "situation": "Site connu, faible profondeur. L'élève mène ses équipiers sur le trajet prévu en s'appuyant sur les repères naturels. Le moniteur suit sans intervenir.",
               "critere": "Retour au point de départ prévu (mouillage, pied de l'échelle, point de sortie).",
@@ -92,6 +100,7 @@
             {
               "n": 4,
               "titre": "Site nouveau",
+              "curseur": "Site connu → site nouveau.",
               "objectif": "S'orienter sur un site qu'il ne connaît pas.",
               "situation": "Même exercice sur un site nouveau, à partir des seules informations du DP.",
               "critere": "Il suit le trajet prévu et revient près du point de sortie. Il explique ses éventuels écarts au débriefing."
@@ -99,6 +108,7 @@
             {
               "n": 5,
               "titre": "Orientation en autonomie (évaluation)",
+              "curseur": "Évaluation, entre 10 et 12 m, sites ou trajets différents.",
               "objectif": "Gérer le parcours de la palanquée dans la zone 10-12 m.",
               "situation": "Plusieurs plongées d'évaluation entre 10 et 12 m, sites ou trajets différents.",
               "critere": "Parcours suivi, retour à proximité du point de sortie, attention constante au bon déroulement de la plongée. Correspond aux modalités d'évaluation du MFT."
@@ -116,6 +126,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis N1",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier qu'il s'équipe, règle et vérifie son matériel seul.",
               "situation": "Sortie en milieu naturel. Gréage, réglages, vérifications, capelage. Le moniteur observe.",
               "critere": "Équipement complet, réglé et vérifié sans aide. Sinon, on reprend la progression N1-equiper.",
@@ -124,6 +135,7 @@
             {
               "n": 2,
               "titre": "S'informer du matériel des équipiers",
+              "curseur": "Son matériel → celui des équipiers.",
               "objectif": "Connaître le fonctionnement du matériel de ses équipiers.",
               "situation": "Avant la plongée, chaque équipier présente son gilet (inflateur, purges, largage du lest), son outil de gestion des paramètres et l'emplacement de son détendeur de secours.",
               "critere": "Il sait gonfler et purger le gilet de son équipier et lire son outil de gestion des paramètres.",
@@ -132,6 +144,7 @@
             {
               "n": 3,
               "titre": "Le parachute en surface",
+              "curseur": "Nouveau geste, le parachute, au sec puis en surface.",
               "objectif": "Découvrir le parachute et le déployer en surface.",
               "situation": "Au sec : présentation du parachute et de son rangement. Puis en surface : gonflage et maintien pour se signaler.",
               "critere": "Déploiement en surface sans aide, parachute bien visible.",
@@ -140,6 +153,7 @@
             {
               "n": 4,
               "titre": "Le parachute en immersion, à faible profondeur",
+              "curseur": "Surface → immersion, à faible profondeur.",
               "objectif": "Utiliser le parachute en situation de plongée.",
               "situation": "À faible profondeur, plongeur stabilisé, moniteur à côté. Gonflage du parachute et envoi vers la surface. Cette étape est à confirmer avec ton MF2 (voir points douteux).",
               "critere": "Il reste stable pendant et après l'envoi, sans être entraîné vers le haut.",
@@ -148,6 +162,7 @@
             {
               "n": 5,
               "titre": "Matériel géré en autonomie (évaluation)",
+              "curseur": "Évaluation, plusieurs sorties de formation.",
               "objectif": "Arriver à la plongée prêt et informé.",
               "situation": "Plusieurs sorties de formation. L'élève s'équipe, échange avec ses équipiers sur leur matériel et utilise le parachute quand la situation le demande.",
               "critere": "Équipement autonome, connaissance du matériel des équipiers, parachute utilisé correctement. Correspond aux modalités d'évaluation du MFT."
@@ -172,6 +187,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis N1",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier les déplacements équilibrés sans appui.",
               "situation": "Plongée en milieu naturel, près du fond.",
               "critere": "Aucun contact avec le fond ou le vivant, palmage et stabilisation maîtrisés."
@@ -179,6 +195,7 @@
             {
               "n": 2,
               "titre": "Être discret",
+              "curseur": "Déplacement sans contact → discrétion.",
               "objectif": "Limiter son impact sur la faune.",
               "situation": "En plongée : il limite l'éclairage et le bruit, garde ses distances, ne nourrit pas les animaux.",
               "critere": "Il observe sans faire fuir la faune. Il refuse le nourrissage.",
@@ -187,6 +204,7 @@
             {
               "n": 3,
               "titre": "Observer près du vivant",
+              "curseur": "Se déplacer → se stabiliser près du vivant pour observer.",
               "objectif": "S'approcher pour observer sans rien toucher.",
               "situation": "Stabilisé près d'une roche ou d'un herbier, il observe en adaptant son palmage.",
               "critere": "Observation stable et prolongée, aucun contact, aucun nuage de sédiment."
@@ -194,6 +212,7 @@
             {
               "n": 4,
               "titre": "Nommer les animaux et les végétaux courants",
+              "curseur": "Observer → nommer et décrire.",
               "objectif": "Reconnaître et nommer la faune et la flore fréquentes de la zone 0-12 m.",
               "situation": "Le moniteur montre et nomme les espèces courantes. Aux plongées suivantes, l'élève les retrouve et les nomme au débriefing.",
               "critere": "Il décrit et nomme les animaux et les végétaux les plus fréquents du site.",
@@ -202,6 +221,7 @@
             {
               "n": 5,
               "titre": "Comportement en plongée (évaluation)",
+              "curseur": "Évaluation, en autonomie entre 10 et 12 m.",
               "objectif": "Montrer un comportement respectueux et une connaissance du milieu.",
               "situation": "Plongées en milieu naturel, en autonomie, évaluation entre 10 et 12 m.",
               "critere": "Comportement respectueux et responsable, animaux et végétaux fréquents décrits et nommés. Correspond aux modalités d'évaluation du MFT."
@@ -227,6 +247,7 @@
             {
               "n": 1,
               "titre": "Interpréter la situation",
+              "curseur": "Point de départ.",
               "objectif": "Reconnaître une difficulté, avec ou sans signe.",
               "situation": "Au sec, puis en immersion où le moniteur simule : signes conventionnels d'un équipier, ventilation anormale, agitation.",
               "critere": "Il identifie chaque situation et dit quoi faire.",
@@ -235,6 +256,7 @@
             {
               "n": 2,
               "titre": "Prendre en charge",
+              "curseur": "Reconnaître la difficulté → prendre en charge l'équipier.",
               "objectif": "Saisir l'équipier et lui apporter ce qu'il lui faut.",
               "situation": "Faible profondeur. Contact, saisie, passage de l'octopus en cas de panne d'air, attitude rassurante.",
               "critere": "Prise en charge rapide, sans brutalité, calme et rassurante.",
@@ -243,6 +265,7 @@
             {
               "n": 3,
               "titre": "Remontée assistée",
+              "curseur": "Prise en charge → remontée assistée.",
               "objectif": "Remonter l'équipier avec le gilet et les palmes.",
               "situation": "Depuis une faible profondeur : remontée à l'aide du gilet et des palmes, arrêt entre 5 et 3 m.",
               "critere": "Remontée contrôlée, arrêt marqué entre 5 et 3 m.",
@@ -251,21 +274,33 @@
             {
               "n": 4,
               "titre": "Sortie de l'eau sécurisée",
+              "curseur": "Remontée assistée → sortie de l'eau.",
               "objectif": "Finir l'assistance en surface et jusqu'à la prise en charge par le DP.",
               "situation": "En surface : gilet de l'assisté gonflé, signalement, remorquage jusqu'au bateau ou au bord, aide à la sortie de l'eau.",
               "critere": "Assisté maintenu en sécurité, voies aériennes hors de l'eau, sortie sans risque, relais au DP."
             },
             {
               "n": 5,
-              "titre": "Depuis 10 à 12 m, situations variées",
-              "objectif": "Assister dans toutes les situations de la zone 0-12 m.",
-              "situation": "Profondeur augmentée progressivement jusqu'à 10-12 m. Situations différentes, annoncées puis inopinées.",
-              "critere": "Bonne interprétation, prise en charge et remontée maîtrisées dans chaque situation.",
+              "titre": "Depuis 10 à 12 m",
+              "curseur": "Faible profondeur → 10 à 12 m.",
+              "objectif": "Assister à la profondeur de l'évaluation.",
+              "situation": "Profondeur augmentée progressivement jusqu'à 10-12 m. Situations différentes, annoncées par le moniteur.",
+              "critere": "Prise en charge et remontée maîtrisées à 10-12 m, arrêt entre 5 et 3 m.",
               "securite": "Accoutumance progressive, enseignement dans l'espace 0-12 m par un E2 minimum."
             },
             {
               "n": 6,
+              "titre": "Situations inopinées",
+              "curseur": "Annoncé → inopiné.",
+              "objectif": "Assister dans toutes les situations de la zone 0-12 m.",
+              "situation": "Entre 10 et 12 m, le moniteur simule une difficulté sans prévenir, avec ou sans signe.",
+              "critere": "Bonne interprétation, prise en charge et remontée maîtrisées dans chaque situation.",
+              "securite": "Accoutumance progressive, enseignement dans l'espace 0-12 m par un E2 minimum."
+            },
+            {
+              "n": 7,
               "titre": "Deux situations, deux fois (évaluation)",
+              "curseur": "Évaluation, deux situations, deux fois, entre 10 et 12 m.",
               "objectif": "Montrer une assistance complète et sûre.",
               "situation": "Évaluation entre 10 et 12 m : au moins deux situations différentes, assistance réalisée intégralement au moins deux fois.",
               "critere": "Interprétation juste, prise en charge rapide et efficace, arrêt entre 5 et 3 m, sortie de l'eau sécurisée. Correspond aux modalités d'évaluation du MFT."
