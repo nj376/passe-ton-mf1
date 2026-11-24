@@ -1,6 +1,6 @@
 # Correspondance entre les compétences des progressions types (data/progressions/*.json, champ « id »)
 # et les jeux de cartes du Canvas (static/canvas/<jeu>.json) : « jeu/carte ».
-# - Progressions types : le bouton « Continuer dans le Canvas » ouvre une séance de ce jeu avec cette carte posée.
+# - Progressions types : le bouton « Continuer dans le Storyboard » ouvre une séance de ce jeu avec cette carte posée.
 #   « jeu/ » sans carte : le Canvas s'ouvre sur le niveau, sans carte posée (pas d'équivalent dans le jeu).
 # - Canvas : « Rédiger la fiche » (panneau d'une compétence) ouvre la fiche de la première progression qui pointe vers la carte.
 # Absents (Randosub, RIFAP) : pas de jeu de cartes, donc pas de bouton.

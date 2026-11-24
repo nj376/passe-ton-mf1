@@ -1,0 +1,23 @@
+{{- /* Schéma « lire une compétence du MFT » : chaque bloc d’une page de compétence et ce qu’il donne pour enseigner.
+       Exemple : N2, « S’équiper et se déséquiper, se mettre à l’eau et en sortir » (MFT N2, version mai 2026). */ -}}
+{{- $blocs := slice
+  (dict "bloc" "Le titre" "donne" "La compétence" "ex" "S’équiper et se déséquiper, se mettre à l’eau et en sortir.")
+  (dict "bloc" "« Compétence attendue »" "donne" "L’objectif final" "ex" "Mettre en œuvre son équipement de manière autonome et en vérifier le bon fonctionnement, se mettre à l’eau et sortir de l’eau efficacement et en autonomie.")
+  (dict "bloc" "1. Technique" "donne" "Les capacités (savoir-faire)" "ex" "Gréage et dégréage, capelage et décapelage, saut droit et bascule arrière, remontée à l’échelle.")
+  (dict "bloc" "2. Comportement" "donne" "Le comportement attendu (savoir-être)" "ex" "Attention au matériel des équipiers, respect des consignes du DP, rapidité et aisance.")
+  (dict "bloc" "3. Théorie" "donne" "Le lien avec la théorie (savoir)" "ex" "Entretien du matériel, hygiène, prévention de l’essoufflement, flottabilité et lestage.")
+  (dict "bloc" "Modalités d’évaluation" "donne" "Les critères d’évaluation" "ex" "Contrôle continu ; autonome dans la gestion de son matériel, mises à l’eau du bord ou d’une embarcation dans des milieux variés.")
+-}}
+<figure class="ress-schema">
+  <ol class="schema-lecture">
+    {{- range $blocs }}
+    <li class="schema-lecture__ligne">
+      <span class="schema-lecture__bloc">{{ .bloc }}</span>
+      <span class="schema-lecture__fleche" aria-hidden="true">→</span>
+      <strong class="schema-lecture__donne">{{ .donne }}</strong>
+      <span class="schema-lecture__exemple"><span class="visuellement-cache">Exemple : </span>{{ .ex }}</span>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>À gauche, le bloc de la page du MFT ; au centre, ce qu’il te donne pour enseigner ; à droite, l’exemple du N2 (MFT, version mai 2026), résumé.</figcaption>
+</figure>

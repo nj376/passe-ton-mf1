@@ -14,6 +14,7 @@ Format attendu du Markdown :
     ## Nom de la technique
     *Curseurs : a → b ; c → d*
     ### 1. Titre de l'étape          (suffixe « (évaluation) » pour l'étape finale)
+    **Curseur.** texte               (facultatif : le curseur que l'étape fait tourner, ex. « PMT → scaphandre »)
     **Objectif.** texte
     **Situation.** texte
     **Critère pour passer à la suite.** texte
@@ -32,6 +33,7 @@ def insecables(texte):
 
 RACINE = Path(__file__).resolve().parent.parent
 CHAMPS = {
+    "curseur": "curseur",
     "objectif": "objectif",
     "situation": "situation",
     "critère pour passer à la suite": "critere",
@@ -137,8 +139,8 @@ def controler(resultat):
         for t in c["techniques"]:
             if not t["curseurs"]:
                 problemes.append(f"{c['id']} / {t['nom']} : curseurs manquants")
-            if not 4 <= len(t["etapes"]) <= 6:
-                problemes.append(f"{c['id']} / {t['nom']} : {len(t['etapes'])} étapes (4 à 6 attendues, voir progressions.schema.json)")
+            if not 4 <= len(t["etapes"]) <= 7:
+                problemes.append(f"{c['id']} / {t['nom']} : {len(t['etapes'])} étapes (4 à 7 attendues, voir progressions.schema.json)")
             for i, e in enumerate(t["etapes"], 1):
                 if e["n"] != i:
                     problemes.append(f"{c['id']} / {t['nom']} : étape {e['n']} à la place {i}")

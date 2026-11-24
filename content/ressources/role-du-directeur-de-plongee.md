@@ -52,6 +52,10 @@ Le MFT décrit sept objectifs pour « Organiser et sécuriser l’activité » 
 | **Sécuriser et surveiller** | Connaître les risques de chaque pratique et de chaque public, prévenir les situations à risque, organiser la surveillance et la sécurité surface. |
 | **Réagir en cas d’accident** | Connaître le plan d’évacuation et d’organisation des secours, s’occuper de la victime (compétence du RIFAP), rédiger une fiche d’évacuation. |
 
+Pour ne rien oublier, garde en tête le triangle de la sécurité : l’humain, le matériel et le milieu.
+
+{{< schema "triangle-securite" >}}
+
 ## 3. Le matériel de secours
 
 Le Code du sport fixe le matériel présent sur le site (articles A322-78-1 et A322-78-2) :

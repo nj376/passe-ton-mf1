@@ -5,3 +5,6 @@
 
 # --- Python ---
 __pycache__/
+
+# --- Documents de travail (supports de stage, jamais commités) ---
+/_STAGE/

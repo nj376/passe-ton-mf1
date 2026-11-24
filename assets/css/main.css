@@ -2411,3 +2411,53 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 /* Encart « La méthode » sous « Techniques associées » : de l’air avant et après. */
 .trame--methode { margin: 14px 0 18px; }
 @media (max-width: 900px) { .trame--methode { margin: 10px 0 14px; } }
+/* Progression : curseur tourné à chaque étape (champ « Curseur » des progressions, N1 d’abord). */
+.etape__curseur { font-size: 13px; line-height: 1.45; color: var(--bleu); }
+.etape__curseur-libelle { font-weight: 600; }
+
+/* Ressources : lire une compétence du MFT (correspondance des blocs) */
+.ress-fiche .schema-lecture { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.ress-fiche .schema-lecture__ligne { margin: 0; display: grid; grid-template-columns: 190px 20px 220px minmax(0, 1fr); gap: 12px; align-items: center; padding: 10px 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); }
+.schema-lecture__bloc { font-size: 13.5px; font-weight: 600; color: var(--texte-4); }
+.schema-lecture__fleche { color: var(--bleu-courbe); font-weight: 700; }
+.schema-lecture__donne { font-size: 15px; color: var(--bleu-fonce); }
+.schema-lecture__exemple { padding-left: 12px; border-left: 3px solid var(--postit-fond); font-size: 13.5px; line-height: 1.45; font-style: italic; color: var(--texte-2); }
+
+/* Ressources : compétences communes et spécifiques (trois colonnes) */
+.schema-colonnes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.schema-colonnes__col { padding: 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); border-top: 4px solid var(--bleu); }
+.schema-colonnes__col--commun { border-top-color: var(--vert); background: var(--vert-encart); }
+.schema-colonnes__col--pe { border-top-color: var(--bleu-fonce); }
+.schema-colonnes__titre { margin: 0 0 8px; display: flex; flex-direction: column; font-size: 15.5px; font-weight: 600; color: var(--texte); }
+.schema-colonnes__titre span { font-size: 12.5px; font-weight: 500; color: var(--texte-4); }
+.ress-fiche .schema-colonnes ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.5; }
+
+/* Ressources : triangle de la sécurité */
+.schema-triangle { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 24px; align-items: center; }
+.schema-triangle__svg { width: 100%; max-width: 260px; height: auto; }
+.schema-triangle__forme { fill: var(--vert-encart); stroke: var(--vert); stroke-width: 3; stroke-linejoin: round; }
+.schema-triangle__centre { font-family: var(--police); font-size: 20px; font-weight: 700; fill: var(--rouge-titre); }
+.schema-triangle__sommet { font-family: var(--police); font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; fill: var(--bleu-fonce); }
+.schema-triangle__liste { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.schema-triangle__liste dt { font-weight: 600; color: var(--bleu-fonce); }
+.schema-triangle__liste dd { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--texte-2); }
+
+/* Ressources : causes d’échec et réponses */
+.ress-fiche .schema-causes { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; max-width: none; }
+.ress-fiche .schema-causes__carte { margin: 0; padding: 14px 16px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); border-left: 4px solid var(--bleu); display: flex; flex-direction: column; gap: 4px; }
+.schema-causes__titre { font-size: 16px; color: var(--texte); }
+.schema-causes__sous { font-size: 12.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--texte-4); }
+.schema-causes__ex, .schema-causes__rep { font-size: 14px; line-height: 1.5; color: var(--texte-2); }
+.schema-causes__rep { color: var(--vert-texte); }
+.schema-causes__lib { font-weight: 600; }
+
+@media (max-width: 1000px) {
+  .ress-fiche .schema-lecture__ligne { grid-template-columns: 170px 20px minmax(0, 1fr); }
+  .schema-lecture__exemple { grid-column: 1 / -1; }
+}
+@media (max-width: 900px) {
+  .ress-fiche .schema-lecture__ligne { grid-template-columns: 1fr; gap: 4px; }
+  .schema-lecture__fleche { display: none; }
+  .schema-colonnes, .ress-fiche .schema-causes { grid-template-columns: 1fr; }
+  .schema-triangle { grid-template-columns: 1fr; justify-items: center; }
+}

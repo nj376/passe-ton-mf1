@@ -3,7 +3,7 @@
        Données : data/canvas.json (niveaux et jeux) et static/canvas/<jeu>.json (cartes), produits par outils/canvas.py
        à partir des planches imprimables NN/cartes/cartes_*.html. Le tableau est dans assets/js/canvas.js. */ -}}
 {{- $niveaux := site.Data.canvas.niveaux }}
-{{- /* Progressions types transmises par « Continuer dans le Canvas » (page Pistes) : techniques, cartes associées
+{{- /* Progressions types transmises par « Continuer dans le Storyboard » (page Pistes) : techniques, cartes associées
        (data/canvas_techniques.yaml) et étapes. Fichier généré, chargé seulement à la demande (?progression=…). */ -}}
 {{- $progs := dict }}
 {{- range $fichier := site.Data.progressions }}
@@ -34,7 +34,7 @@
 
   <section class="cv-entete">
     <div class="cv-entete__ligne"><span class="home-wip">ESSAI EXPÉRIMENTAL</span></div>
-    <h1 class="cv-titre">Canvas</h1>
+    <h1 class="cv-titre">Storyboard</h1>
     <p class="cv-intro">Imagine ton projet de cours comme un storyboard : choisis tes cartes dans le MFT, relie-les, range-les par ateliers et note tes questions. Imprimé, c’est un bon point de départ pour en discuter avec ton MF2.</p>
   </section>
   {{ partial "aide-page.html" "canvas" }}

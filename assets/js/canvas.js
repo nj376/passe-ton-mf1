@@ -1328,7 +1328,7 @@
 
   /* ---------- Signaler une erreur ---------- */
   function majSignaler() {
-    var lien = $("[data-signaler]"), sujet = "Erreur dans le Canvas " + libelleNiveau(seance);
+    var lien = $("[data-signaler]"), sujet = "Erreur dans le Storyboard " + libelleNiveau(seance);
     var t = sel && sel.k === "carte" ? trouver(sel.u) : null;
     if (t) sujet += " - " + codeCarte(t.o) + " " + nomCarte(t.o);
     lien.href = contact + "?sujet=" + encodeURIComponent(sujet);
@@ -1700,7 +1700,7 @@
   function page(p, titre, infos, num, total) {
     var pg = el("div", "cv-page");
     var tete = el("header", "cv-page__tete"), gauche = el("div");
-    gauche.innerHTML = "<span class=\"cv-page__marque\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 28 28\" aria-hidden=\"true\"><rect width=\"28\" height=\"28\" rx=\"7\" fill=\"#0B5AA6\"></rect><path d=\"M5 10 H10 L14 19 H19 L21 15 H23\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>passe-ton-mf1.com · Canvas</span>";
+    gauche.innerHTML = "<span class=\"cv-page__marque\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 28 28\" aria-hidden=\"true\"><rect width=\"28\" height=\"28\" rx=\"7\" fill=\"#0B5AA6\"></rect><path d=\"M5 10 H10 L14 19 H19 L21 15 H23\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>passe-ton-mf1.com · Storyboard</span>";
     gauche.appendChild(el("h1", "cv-page__titre", titre));
     tete.appendChild(gauche);
     var droite = el("div", "cv-page__infos");
@@ -1778,7 +1778,7 @@
     return cote;
   }
 
-  /* ---------- Progression type transmise par « Continuer dans le Canvas » (page Pistes) ---------- */
+  /* ---------- Progression type transmise par « Continuer dans le Storyboard » (page Pistes) ---------- */
   // La compétence à gauche, puis un cadre par technique, de gauche à droite : ses cartes en haut (reliées à la
   // compétence si elles en relèvent), une carte « Évaluer l'élève », une annotation blanche par étape (titre et objectif), une annotation rouge
   // qui regroupe les points de sécurité de la technique. Le tout s'annule en une fois.

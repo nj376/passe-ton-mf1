@@ -435,16 +435,16 @@ N1-propulser:
       adapter:
         - "Il est vertical, touche le fond ou palme genoux pliés : on commence à l'étape 1, « Découverte à faible profondeur »."
         - "Il avance à l'horizontale mais s'aide des bras ou s'essouffle : on passe à l'étape 2, « Économiser son effort »."
-        - "Il se déplace calmement, bras immobiles : on passe à l'étape 3, « Trajets près du fond »."
+        - "Il se déplace calmement, bras immobiles : on passe à l'étape 3, « Changer de direction »."
         - "Il est crispé sous l'eau : on reste à l'étape 1, en trajets courts, et on travaille la ventilation en même temps."
     bilan:
-      situation: "l'étape 5 : déplacements autonomes, plongées en milieu naturel, en palanquée"
+      situation: "l'étape 6 : déplacements autonomes, plongées en milieu naturel, en palanquée"
       criteres:
         - "Le palmage est efficace et l'effort est géré."
         - "Il reste près du GP et respecte sa profondeur."
         - "Il ne touche pas le fond et ne soulève pas de sédiment."
       securite: []
-      eca: "s'éloigne du GP et change de profondeur sans s'en rendre compte → reprendre l'étape 4"
+      eca: "s'éloigne du GP et change de profondeur sans s'en rendre compte → reprendre l'étape 5"
 
   "Nage en capelé":
     evaluer:
@@ -556,7 +556,7 @@ N1-ventiler:
         - "Il vide un peu d'eau sans difficulté : on passe à l'étape 3, « Masque à moitié puis plein »."
         - "Il est très appréhensif : on reste à l'étape 1, à faible profondeur, et on avance par petits pas sans jamais le surprendre."
     bilan:
-      situation: "l'étape 6 : situations variées dans la zone 0-6 m, dont le retrait et la remise du masque, sans situation brutale"
+      situation: "l'étape 7 : situations variées dans la zone 0-6 m, dont le retrait et la remise du masque, sans situation brutale"
       criteres:
         - "Il vide son masque sans stress."
         - "Il le fait y compris après retrait et remise."
@@ -588,7 +588,7 @@ N1-ventiler:
         - "Il maîtrise les deux vidages à genoux : on passe à l'étape 3, « En déplacement »."
         - "Il est inquiet : on fait des lâchers très brefs, à genoux, avant d'allonger."
     bilan:
-      situation: "l'étape 5 : plongées dans la zone 0-6 m"
+      situation: "l'étape 6 : plongées dans la zone 0-6 m"
       criteres:
         - "Il maîtrise le lâcher-reprise avec les deux techniques de vidage."
         - "Il se déplace quelques mètres en apnée inspiratoire et expiratoire sans difficulté."
@@ -861,8 +861,8 @@ N1-securite:
       comment: "Au sec, lui demander pour chaque situation (réserve, froid, panne d'air, essoufflement, crampe, malaise) : « Que fais-tu, et que va faire le GP ? » On écoute ses réponses, et on repère les situations qui l'inquiètent."
       adapter:
         - "Il ne connaît pas les signes ou les procédures : on commence à l'étape 1, « Découverte au sec »."
-        - "Il connaît les procédures au sec : on passe à l'étape 2, « Panne d'air : apnée expiratoire jusqu'au GP », sur une courte distance."
-        - "Il rejoint le GP mais se crispe ensuite : on travaille l'étape 3, « Se laisser prendre en charge »."
+        - "Il connaît les procédures au sec : on passe à l'étape 2, « Panne d'air en statique », puis à l'étape 3 sur une courte distance."
+        - "Il rejoint le GP mais se crispe ensuite : on insiste à l'étape 3 sur la prise en charge, « Apnée expiratoire jusqu'au GP, puis prise en charge »."
         - "La panne d'air l'inquiète : on augmente la distance très progressivement, et on commence par les situations annoncées les moins stressantes."
     bilan:
       situation: "l'étape 6 : toutes les situations nécessitant une intervention du GP, répétées et variées"
@@ -896,7 +896,7 @@ N1-securite:
         - "Il donne son octopus sans hésiter en statique : on passe à l'étape 3, « Simulation d'échange d'embout », puis à l'étape 4."
         - "Il craint de manquer d'air : on insiste à l'étape 2 sur sa propre ventilation calme pendant le partage."
     bilan:
-      situation: "l'étape 5 : situations répétées et variées au fil des plongées"
+      situation: "l'étape 6 : situations répétées et variées au fil des plongées"
       criteres:
         - "Il interprète correctement le signe panne d'air."
         - "Il agit immédiatement : source d'air, aide, appel au GP."
@@ -904,4 +904,4 @@ N1-securite:
       securite:
         - "Pendant la simulation d'échange d'embout, chacun garde son propre détendeur en bouche."
         - "Le moniteur est au contact pendant la simulation."
-      eca: "donne l'octopus mais oublie de solliciter le GP → reprendre l'étape 4"
+      eca: "donne l'octopus mais oublie de solliciter le GP → reprendre l'étape 5"

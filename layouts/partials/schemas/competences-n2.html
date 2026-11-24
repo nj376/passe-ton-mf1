@@ -1,0 +1,17 @@
+{{- /* Schéma « compétences du N2 » : spécifiques PA20, communes, spécifiques PE40 (MFT N2, version mai 2026, p. 5). */ -}}
+{{- $colonnes := slice
+  (dict "t" "Spécifiques PA20" "s" "plongeur autonome à 20 m" "c" "pa" "l" (slice "Être attentif au matériel de ses équipiers" "Évoluer en autonomie" "Planifier la plongée en fonction des consignes du DP" "Intervenir et porter assistance à un plongeur en difficulté"))
+  (dict "t" "Communes" "s" "PA20 et PE40" "c" "commun" "l" (slice "S’équiper et se mettre à l’eau" "S’immerger, se propulser, se ventiler" "Respecter le milieu et l’environnement"))
+  (dict "t" "Spécifiques PE40" "s" "plongeur encadré à 40 m" "c" "pe" "l" (slice "Se ventiler et s’équilibrer" "Communiquer avec le guide de palanquée" "Retourner en surface" "Intervenir en relai sur un équipier en difficulté"))
+-}}
+<figure class="ress-schema">
+  <div class="schema-colonnes">
+    {{- range $colonnes }}
+    <section class="schema-colonnes__col schema-colonnes__col--{{ .c }}">
+      <h4 class="schema-colonnes__titre">{{ .t }}<span>{{ .s }}</span></h4>
+      <ul>{{ range .l }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+    {{- end }}
+  </div>
+  <figcaption>Les compétences du N2 dans le MFT (version mai 2026). Un cursus N2 complet traite les trois colonnes ; un cursus PA20 seul, les deux premières.</figcaption>
+</figure>

@@ -194,6 +194,7 @@
                   <span class="etape__entete">
                     <span class="etape__ligne"><span class="etape__titre">{{ partial "typo.html" $titre }}</span>{{ if $eval }}<span class="badge-evaluation">{{ $badge }}</span>{{ end }}</span>
                     <span class="etape__objectif"><span class="etape__objectif-libelle">Objectif de séance :</span> {{ partial "typo.html" $e.objectif }}</span>
+                    {{- with $e.curseur }}<span class="etape__curseur"><span class="etape__curseur-libelle">Curseur :</span> {{ partial "typo.html" . }}</span>{{ end }}
                   </span>
                   <span class="etape__chevron">{{ $chevron }}</span>
                 </button>
@@ -230,7 +231,7 @@
           {{- /* Canvas : ouvre une séance du bon jeu, avec la compétence posée (data/canvas_liens.yaml). Pas sur téléphone. */}}
           {{- with index site.Data.canvas_liens $c.id }}
           {{- $morceaux := split . "/" }}
-          <a class="bouton bouton--principal cote-bloc__construire bureau" href="{{ "/canvas/" | relURL }}?jeu={{ index $morceaux 0 }}{{ with index $morceaux 1 }}&amp;carte={{ . }}{{ end }}&amp;progression={{ $c.id }}">Continuer dans le Canvas</a>
+          <a class="bouton bouton--principal cote-bloc__construire bureau" href="{{ "/canvas/" | relURL }}?jeu={{ index $morceaux 0 }}{{ with index $morceaux 1 }}&amp;carte={{ . }}{{ end }}&amp;progression={{ $c.id }}">Continuer dans le Storyboard</a>
           {{- end }}
           </div>
           <div class="cote-bloc__pied">

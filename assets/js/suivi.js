@@ -181,7 +181,7 @@
     var cds = lireJson("ptmf1:cds", null);
     if (cds && cds.reponses) lignes.push(["Questions du Code du sport", pluriel(Object.keys(cds.reponses).length, "réponse", "réponses"), "ptmf1:cds"]);
     var canvas = lireJson("ptmf1:canvas", null);
-    if (canvas && Array.isArray(canvas.seances)) lignes.push(["Séances Canvas", pluriel(canvas.seances.length, "séance", "séances"), "ptmf1:canvas"]);
+    if (canvas && Array.isArray(canvas.seances)) lignes.push(["Séances Storyboard", pluriel(canvas.seances.length, "séance", "séances"), "ptmf1:canvas"]);
     var d = dateLocale(lire(CLE_EXAMEN));
     if (d) lignes.push(["Date d’examen", z(d.getDate()) + "/" + z(d.getMonth() + 1) + "/" + d.getFullYear(), CLE_EXAMEN]);
     var corps = $("[data-stockage-lignes]"); corps.textContent = "";

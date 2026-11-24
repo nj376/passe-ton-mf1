@@ -48,7 +48,7 @@
     if (nRech) p.push(nRech + " recherche" + (nRech > 1 ? "s" : "") + " chronométrée" + (nRech > 1 ? "s" : ""));
     var canvas = lireJson(donnees["ptmf1:canvas"], {});
     var nCanvas = canvas && Array.isArray(canvas.seances) ? canvas.seances.length : 0;
-    if (nCanvas) p.push(nCanvas + " séance" + (nCanvas > 1 ? "s" : "") + " du Canvas");
+    if (nCanvas) p.push(nCanvas + " séance" + (nCanvas > 1 ? "s" : "") + " du Storyboard");
     var cours = lireJson(donnees["ptmf1-construire"], null);
     if (cours && typeof cours === "object") p.push("une préparation de cours" + (cours.titre ? " (« " + cours.titre + " »)" : ""));
     var examen = donnees["ptmf1:examen"];

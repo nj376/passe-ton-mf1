@@ -51,6 +51,10 @@ Reprends la [méthode QQCOQP](/ressources/qqcoqp/) et ajoute une septième quest
 
 Pour la réglementation (normes d’encadrement, matériel obligatoire, rôle du Directeur de Plongée), appuie-toi sur le [Code du sport](/explore-le-cds/).
 
+Pour le « Avec quoi ? », passe en revue les trois appuis de la sécurité :
+
+{{< schema "triangle-securite" >}}
+
 ## 3. Présenter : organise ton tableau
 
 En dix minutes, ton tableau parle autant que toi. Prépare-le comme si tu t’adressais à ton équipe d’encadrants.
@@ -65,8 +69,11 @@ En dix minutes, ton tableau parle autant que toi. Prépare-le comme si tu t’ad
 
 1. **Lis le sujet** : quel cursus, pour qui, avec quelles contraintes (durée, lieu, nombre d’élèves).
 2. **Ouvre le MFT et le Code du sport** : les compétences du niveau, les prérogatives visées, les contraintes réglementaires. Par exemple, le MFT cite les 15 mois dont disposent les élèves pour acquérir l’ensemble des compétences du N3.
-3. **Liste les compétences et capacités**, avec pour chacune les objectifs, les acquis et prérequis, les liens avec la théorie et les modalités d’évaluation.
-4. **Place-les dans le temps** : ce sont les prérequis qui fixent l’ordre.
+3. **Liste les compétences et capacités** du niveau, en lisant chaque page du MFT bloc par bloc (voir [Lire une compétence du MFT](/ressources/lire-une-competence-du-mft/)) : objectifs, acquis et prérequis, liens avec la théorie, modalités d’évaluation. Quand le niveau délivre plusieurs aptitudes, sépare les compétences communes et spécifiques, et ajoute les connaissances théoriques du niveau.
+
+   {{< schema "competences-n2" >}}
+
+4. **Place-les dans le temps** : ce sont les prérequis qui fixent l’ordre (voir [Situer un enseignement dans un cursus](/ressources/situer-un-enseignement-dans-un-cursus/)).
 5. **Détaille la progression d’une ou deux compétences** : objectifs intermédiaires, exercices, critères. Ne cherche pas à tout détailler en dix minutes.
 6. **Définis les moyens** : matériel (bateau, ateliers, matériel de secours, salle) et encadrement, en nombre suffisant.
 7. **Prévois le suivi des élèves** : fiche ou livret de suivi, réunions de l’équipe pédagogique.
