@@ -94,9 +94,9 @@ N2-equiper:
         - "Saut ou bascule pas encore sûrs : on reste à l'étape 1 et on reprend la progression N1."
         - "Il maîtrise une seule technique ou ne sait pas choisir : on passe à l'étape 2, « Choisir la technique selon le lieu »."
         - "Il n'a jamais remonté à l'échelle seul : on travaille l'étape 3, « Remontée à l'échelle »."
-        - "Il est à l'aise depuis le bateau : on passe à l'étape 4, « Contextes de milieux naturels variés », puis à l'étape 5."
+        - "Il est à l'aise depuis le bateau : on passe à l'étape 4, « Lieux variés », puis aux étapes 5 et 6."
     bilan:
-      situation: "l'étape 6 : contrôle continu sur plusieurs sorties, du bord et d'embarcations, dans des milieux naturels variés"
+      situation: "l'étape 7 : contrôle continu sur plusieurs sorties, du bord et d'embarcations, dans des milieux naturels variés"
       criteres:
         - "Les techniques usuelles sont maîtrisées avec rapidité et aisance."
         - "Les consignes du DP sont respectées."
@@ -398,9 +398,9 @@ PA20-planifier:
         - "Il ne lit pas le croquis : on commence à l'étape 1, « Lire le site »."
         - "Il lit le site mais ne sait pas se servir d'un compas : on passe à l'étape 2, « Le compas au sec »."
         - "Il tient son compas correctement : on passe à l'étape 3, « Suivre un cap en surface », puis à l'étape 4."
-        - "Il est déjà à l'aise au compas : on passe à l'étape 5, « Court trajet prédéfini »."
+        - "Il est déjà à l'aise au compas : on passe à l'étape 6, « Court trajet prédéfini »."
     bilan:
-      situation: "l'étape 6 : compas et trajet, plongées de formation sur des sites variés"
+      situation: "l'étape 7 : compas et trajet, plongées de formation sur des sites variés"
       criteres:
         - "Il réussit un aller-retour au compas sur 20 à 30 m."
         - "Il suit un court trajet prédéfini et reconnaît les repères prévus."
@@ -459,7 +459,7 @@ PA20-assistance:
         - "La prise en charge est sûre : on passe à l'étape 3, « Remontée assistée depuis faible profondeur », puis à l'étape 4."
         - "Il est stressé : on reste plus longtemps aux étapes 1 et 2, situations annoncées."
     bilan:
-      situation: "l'étape 6 : validation spécifique en fin de formation, au moins deux situations différentes réalisées chacune intégralement au moins deux fois"
+      situation: "l'étape 7 : validation spécifique en fin de formation, au moins deux situations différentes réalisées chacune intégralement au moins deux fois"
       criteres:
         - "Interprétation juste, prise en charge rapide et efficace."
         - "Remontée régulière à vitesse adaptée, gilets privilégiés, arrêt marqué entre 5 et 3 m."
@@ -639,9 +639,9 @@ PE40-surface:
         - "Il ne connaît pas la procédure : on commence à l'étape 1, « La procédure au sec »."
         - "Il la connaît : on passe à l'étape 2, « Remonter seul depuis faible profondeur », moniteur à portée de main."
         - "Il remonte seul à bonne vitesse : on passe à l'étape 3, « Tenir seul un palier », puis à l'étape 4."
-        - "Il oublie la fin de procédure : on insiste sur l'étape 5, « Approche de la surface et sortie »."
+        - "Il oublie la fin de procédure : on insiste sur l'étape 6, « Approche de la surface et sortie »."
     bilan:
-      situation: "l'étape 6 : remonter seul en sécurité, remontées isolées simulées au fil de la formation"
+      situation: "l'étape 7 : remonter seul en sécurité, remontées isolées simulées au fil de la formation"
       criteres:
         - "Vitesse et paliers respectés seul."
         - "Approche de la surface et sortie de l'eau assurées seul."
@@ -649,7 +649,7 @@ PE40-surface:
       securite:
         - "Le moniteur reste à portée de main pour les premières remontées, puis garde l'élève en vue."
         - "Accoutumance progressive ; au-delà de 20 m, sous la responsabilité d'un E3."
-      eca: "remonte sans tour d'horizon ni signalement → reprendre l'étape 5"
+      eca: "remonte sans tour d'horizon ni signalement → reprendre l'étape 6"
 
 PE40-relai:
   "Intervention en relai":
@@ -673,7 +673,7 @@ PE40-relai:
         - "Il tient sa profondeur : on passe à l'étape 3, « Déplacement jusqu'au GP »."
         - "Il ne connaît que la panne d'air : on travaille l'étape 4, « Autres difficultés »."
     bilan:
-      situation: "l'étape 6 : validation spécifique en fin de formation, situations variées nécessitant son intervention avant celle du GP"
+      situation: "l'étape 7 : validation spécifique en fin de formation, situations variées nécessitant son intervention avant celle du GP"
       criteres:
         - "Il prend en charge l'assisté, calmement et rapidement."
         - "Il maintient la profondeur pendant le passage d'embout."
