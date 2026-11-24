@@ -1211,7 +1211,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 /* =================================================================
    Accueil (maquette-accueil.html) : zones à fonds alternés, conteneur de 1080 px. Classes accueil- et frise-
    ================================================================= */
-.accueil-zone { padding: 88px 0; background: var(--blanc); }
+.accueil-zone { padding: 48px 0; background: var(--blanc); }
 .accueil-zone--pale { background: var(--bleu-pale); }
 .accueil-zone[id] { scroll-margin-top: 8px; }
 .accueil-conteneur { max-width: 1080px; margin: 0 auto; padding: 0 var(--gouttiere); box-sizing: border-box; }
@@ -1220,7 +1220,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .accueil-entete { display: flex; flex-direction: column; gap: 16px; }
 .accueil-intro { margin: 0; max-width: 68ch; font-size: 18px; line-height: 1.6; color: var(--texte-3); }
 /* Zone 1 */
-.accueil-hero { padding: 96px 0 88px; border-bottom: 1px solid var(--bordure); }
+.accueil-hero { padding: 60px 0 48px; border-bottom: 1px solid var(--bordure); }
 .accueil-hero__interieur { display: flex; flex-direction: column; gap: 24px; }
 .accueil-titre { margin: 0; max-width: 780px; font-size: 54px; line-height: 1.06; font-weight: 600; letter-spacing: -0.025em; }
 .accueil-chapeau { margin: 0; max-width: 680px; font-size: 20px; line-height: 1.55; color: var(--texte-3); }
@@ -1312,8 +1312,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .frise-source { margin: 0; font-size: 14px; color: var(--texte-4); }
 @media (prefers-reduced-motion: reduce) { .frise-etape__ouvrir svg { transition: none; } }
 @media (max-width: 900px) {
-  .accueil-zone { padding: 48px 0; }
-  .accueil-hero { padding: 48px 0 44px; }
+  .accueil-zone { padding: 30px 0; }
+  .accueil-hero { padding: 32px 0 28px; }
   .accueil-titre { font-size: 34px; line-height: 1.12; letter-spacing: -0.02em; }
   .accueil-chapeau { font-size: 17px; }
   .accueil-h2 { font-size: 25px; }
