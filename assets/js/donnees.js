@@ -49,6 +49,10 @@
     var canvas = lireJson(donnees["ptmf1:canvas"], {});
     var nCanvas = canvas && Array.isArray(canvas.seances) ? canvas.seances.length : 0;
     if (nCanvas) p.push(nCanvas + " séance" + (nCanvas > 1 ? "s" : "") + " du Storyboard");
+    var livret = lireJson(donnees["ptmf1:livret"], {});
+    var nLivret = 0;
+    if (livret && livret.modules) Object.keys(livret.modules).forEach(function (k) { if (Array.isArray(livret.modules[k])) nLivret += livret.modules[k].length; });
+    if (nLivret) p.push(nLivret + " séance" + (nLivret > 1 ? "s" : "") + " recopiée" + (nLivret > 1 ? "s" : "") + " de ton livret pédagogique");
     var cours = lireJson(donnees["ptmf1-construire"], null);
     if (cours && typeof cours === "object") p.push("une préparation de cours" + (cours.titre ? " (« " + cours.titre + " »)" : ""));
     var examen = donnees["ptmf1:examen"];

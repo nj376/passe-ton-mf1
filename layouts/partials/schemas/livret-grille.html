@@ -26,7 +26,7 @@
       <tr class="livret-grille__info"><th scope="row">Thème travaillé</th>{{ range $seances }}<td>{{ .theme }}</td>{{ end }}</tr>
       {{- $i := 0 }}
       {{- range $phases }}
-      <tr class="livret-grille__phase"><th scope="rowgroup" colspan="{{ add (len $seances) 1 }}">{{ .p }}</th></tr>
+      <tr class="livret-grille__phase"><th scope="rowgroup" colspan="{{ add (len $seances) 1 }}"><span class="livret-grille__phase-nom">{{ .p }}</span></th></tr>
       {{- range .items }}
       <tr><th scope="row">{{ . }}</th>
         {{- range $seances }}{{ $code := index .c $i }}<td><span class="livret-code livret-code--{{ lower $code }}">{{ $code }}</span></td>{{ end }}

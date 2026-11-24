@@ -58,9 +58,7 @@ filieres:
 # En parallèle du cursus
 # Encart du livret pédagogique, sous le module capacitaire (accueil) : lien vers la fiche Ressources.
 livret:
-  badge: "Pendant le stage en situation"
   titre: "Le livret pédagogique"
-  essentiel: "Remis à la fin du stage initial, il suit chacune de tes séances avec un tuteur. Par module : **5 séances complètes, dont 2 validées**."
   lien:
     texte: "Remplir le livret pas à pas"
     url: "/ressources/remplir-le-livret-pedagogique/"
@@ -68,7 +66,7 @@ livret:
 capacitaire:
   titre: "Module capacitaire"
   resume: "Les connaissances théoriques, à valider avant le stage final."
-  essentiel: "Accessible dès le GP-N4. À valider **avant le stage final**."
+  essentiel: "À valider **avant le stage final**."
   points:
     - "Accessible dès l’obtention du GP-N4 (17 ans révolus, licence FFESSM)"
     - "Quatre écrits de 45 minutes maximum chacun : cadre réglementaire (coef. 2), aspects théoriques de l’activité (coef. 2), anatomie, physiologie, physiopathologie (coef. 4), désaturation (coef. 3)"

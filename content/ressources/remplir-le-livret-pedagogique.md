@@ -70,7 +70,13 @@ Lis-la colonne par colonne :
 
 Si une seule case NT était restée le 17/05, il n’y aurait plus que 4 séances complètes : **module non validable**, même avec deux séances validées. Il faudrait une séance de plus.
 
-## 5. Le rôle du tuteur E4
+## 5. Vérifie ton propre livret
+
+Recopie tes colonnes ci-dessous : l’outil te dit, séance par séance, si elle est complète ou validée, et si le module est validable. Il signale aussi les cases vides, les thèmes répétés et le tuteur qui peut valider le module. Le module « Organiser un cursus de formation » n’y figure pas : il se valide cursus par cursus.
+
+{{< verif-livret >}}
+
+## 6. Le rôle du tuteur E4
 
 Le tuteur est un E4 (MF2, BEES2, DEJEPS, DESJEPS…) licencié à la FFESSM.
 
@@ -81,13 +87,13 @@ Le tuteur est un E4 (MF2, BEES2, DEJEPS, DESJEPS…) licencié à la FFESSM.
 
 Dans l’exemple, le tuteur n° 1 a suivi cinq séances du module : il peut le valider.
 
-## 6. Les deux modules d’organisation
+## 7. Les deux modules d’organisation
 
 **Organiser et sécuriser l’activité** suit la même règle que les modules d’enseignement : 5 séances complètes dont 2 validées. Les lignes sont les sept objectifs du DP : accueillir les plongeurs, choisir un site, composer les palanquées en exploration et en enseignement, fixer les paramètres, présenter le site, sécuriser et surveiller, réagir en cas d’accident. Une séance est complète quand tous les items sont travaillés, validée quand ils sont tous A. Voir la fiche [Le rôle du Directeur de Plongée](/ressources/role-du-directeur-de-plongee/).
 
 **Organiser un cursus de formation** fonctionne autrement : une colonne par **niveau travaillé**, avec quatre items (identifier la nature du cursus, planifier, définir la logistique matérielle, définir les moyens humains). Le module est validé quand **tous les items sont acquis pour l’ensemble des cursus couverts par les prérogatives du MF1**. Ici, pas de règle des cinq séances : c’est chaque cursus qui doit être vu. Voir la fiche [Situer un enseignement dans un cursus](/ressources/situer-un-enseignement-dans-un-cursus/).
 
-## 7. Les autres pages à ne pas oublier
+## 8. Les autres pages à ne pas oublier
 
 | Page | Ce qu’il faut savoir |
 |---|---|

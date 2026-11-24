@@ -1,0 +1,22 @@
+{{- /* Outil « Vérifier mon livret » (fiche Remplir le livret pédagogique) : {{< verif-livret >}}.
+       Le stagiaire recopie ses colonnes (date, E4, niveau, thème, codes A / ECA / NT) et l’outil dit si chaque séance est complète
+       ou validée, et si le module est validable. Script : assets/js/livret.js. Données : Stockage « livret » (ptmf1:livret),
+       incluses dans la sauvegarde de Mon suivi. Styles : classes « verif- » et « livret- » dans assets/css/main.css. */ -}}
+<section class="verif" data-verif-livret aria-labelledby="verif-titre">
+  <h3 id="verif-titre" class="verif__titre">Vérifier mon livret</h3>
+  <p class="verif__intro">Recopie les colonnes de ton livret, module par module. Clique sur une case pour la faire passer de vide à A, puis ECA, puis NT. L’outil compte pour toi. Ta saisie reste dans ce navigateur et part avec la sauvegarde de <a class="lien-texte" href="{{ "/suivi/" | relURL }}">Mon suivi</a>.</p>
+  <div class="verif__barre">
+    <label class="verif__module"><span>Module</span>
+      <select data-verif-module class="verif__select"></select>
+    </label>
+    <button type="button" class="bouton-contour verif__ajouter" data-verif-ajouter>+ Ajouter une séance</button>
+  </div>
+  <div class="livret-grille__cadre" tabindex="0" role="region" aria-label="Grille de ton livret, défilable sur petit écran" data-verif-grille></div>
+  <div class="verif__bilan" data-verif-bilan aria-live="polite"></div>
+  <div class="verif__pied">
+    <button type="button" class="bouton bouton-rouge verif__effacer" data-verif-effacer>Effacer ce module</button>
+  </div>
+  <noscript><p class="verif__intro">L’outil a besoin de JavaScript pour fonctionner.</p></noscript>
+</section>
+{{- $js := resources.Get "js/livret.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

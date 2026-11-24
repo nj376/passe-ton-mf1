@@ -110,7 +110,6 @@
         <div class="frise-cote">
         {{- with $P.capacitaire }}
         <aside class="frise-capa" aria-labelledby="frise-capa-titre">
-          <span class="frise-capa__badge">En parallèle</span>
           <h3 id="frise-capa-titre" class="frise-capa__titre">{{ .titre }}</h3>
           <p class="frise-capa__essentiel">{{ .essentiel | markdownify }}</p>
           <details class="frise-capa__detail">
@@ -122,9 +121,13 @@
         {{- end }}
         {{- with $P.livret }}
         <aside class="frise-capa frise-capa--livret" aria-labelledby="frise-livret-titre">
-          <span class="frise-capa__badge">{{ .badge }}</span>
+          {{- with .badge }}
+          <span class="frise-capa__badge">{{ . }}</span>
+          {{- end }}
           <h3 id="frise-livret-titre" class="frise-capa__titre">{{ .titre }}</h3>
-          <p class="frise-capa__essentiel">{{ .essentiel | markdownify }}</p>
+          {{- with .essentiel }}
+          <p class="frise-capa__essentiel">{{ . | markdownify }}</p>
+          {{- end }}
           <a class="lien-texte frise-capa__lien" href="{{ .lien.url | relURL }}">{{ .lien.texte }} →</a>
         </aside>
         {{- end }}

@@ -2593,3 +2593,37 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .ress-fiche .livret-grille th[scope="row"] { width: 150px; position: sticky; left: 0; z-index: 1; background: var(--blanc); }
   .ress-fiche .livret-grille__bilan th[scope="row"], .ress-fiche .livret-grille thead th[scope="row"] { background: var(--bleu-clair); }
 }
+
+/* Outil « Vérifier mon livret » (shortcode verif-livret, assets/js/livret.js) */
+.verif { margin: 10px 0 22px; padding: 20px; border-radius: 12px; background: var(--bleu-tres-clair); border: 1px solid var(--bordure-bleu-pale); display: flex; flex-direction: column; gap: 14px; }
+.ress-fiche .verif__titre { margin: 0; font-size: 18px; }
+.ress-fiche .verif__intro { margin: 0; max-width: none; font-size: 15px; }
+.verif__barre { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.verif__module { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 600; color: var(--texte-2); }
+.verif__select { height: 40px; min-width: 300px; max-width: 100%; padding: 0 10px; border-radius: 8px; border: 1px solid var(--bordure-champ); background: var(--blanc); font: inherit; font-size: 15px; font-weight: 400; color: var(--texte); }
+.verif .livret-grille__cadre { margin-bottom: 0; }
+.verif__grille--vide { padding: 18px; }
+.ress-fiche .verif__vide { margin: 0; color: var(--texte-4); }
+.ress-fiche table.verif-grille { min-width: 0; width: auto; }
+.ress-fiche .verif-grille td { min-width: 96px; }
+.verif__champ { width: 100%; min-width: 84px; height: 30px; box-sizing: border-box; padding: 0 6px; border-radius: 6px; border: 1px solid var(--bordure-champ); background: var(--blanc); font: inherit; font-size: 13px; color: var(--texte); }
+.verif__case { cursor: pointer; border: 1px solid transparent; font: inherit; font-size: 12px; font-weight: 600; min-height: 24px; }
+.verif__case:focus-visible, .verif__suppr:focus-visible, .verif__champ:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.livret-code--vide { background: var(--blanc); color: var(--texte-4); border: 1px solid var(--bordure); }
+.verif__suppr { margin-left: 8px; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--rouge); background: var(--blanc); color: var(--rouge); font-size: 14px; line-height: 1; cursor: pointer; }
+.verif__suppr:hover { background: var(--rouge); color: var(--blanc); }
+.verif__a-remplir { font-size: 12px; color: var(--texte-4); font-style: italic; }
+.verif__bilan:empty { display: none; }
+.verif__bilan { padding: 14px 16px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); }
+.ress-fiche .verif__verdict { margin: 0 0 8px; font-weight: 600; }
+.verif__verdict--ok { color: var(--vert-texte); }
+.verif__verdict--non { color: var(--orange-texte); }
+.ress-fiche .verif__points { margin: 0; max-width: none; font-size: 14.5px; }
+.verif__pied { display: flex; justify-content: flex-end; }
+@media (max-width: 900px) {
+  .verif { padding: 14px; }
+  .verif__select { min-width: 0; width: 100%; }
+  .verif__module, .verif__ajouter { width: 100%; }
+}
+/* Le nom de la phase reste visible quand la grille défile à l'horizontale. */
+.livret-grille__phase-nom { position: sticky; left: 8px; }
