@@ -85,30 +85,7 @@
       zone.appendChild(ligne);
     });
   }
-  var capaEcrits = [];
-  try { capaEcrits = JSON.parse(document.getElementById("suivi-capa").textContent) || []; } catch (e) { capaEcrits = []; }
   function rendreModules() {
-    // Capacitaire : rubriques maîtrisées (1) ou à revoir (0), par écrit.
-    var capa = (lireJson("ptmf1:capa", {}) || {}).reponses || {};
-    var nTotal = 0, nOk = 0, nRevoir = 0;
-    var lignesCapa = capaEcrits.map(function (e) {
-      var ok = e.ids.filter(function (id) { return capa[id] === 1; }).length;
-      nTotal += e.ids.length; nOk += ok;
-      nRevoir += e.ids.filter(function (id) { return capa[id] === 0; }).length;
-      return [e.titre, ok, e.ids.length];
-    });
-    if (nOk || nRevoir) {
-      $("[data-capa-chiffre]").textContent = nOk + " rubrique" + (nOk > 1 ? "s" : "") + " maîtrisée" + (nOk > 1 ? "s" : "") + " sur " + nTotal;
-      $("[data-capa-texte]").textContent = nRevoir ? nRevoir + " rubrique" + (nRevoir > 1 ? "s" : "") + " à revoir." : "Aucune rubrique à revoir.";
-      barres($("[data-capa-barres]"), lignesCapa);
-      $("[data-capa-barres]").hidden = false;
-    } else {
-      $("[data-capa-chiffre]").textContent = "Aucune rubrique évaluée pour l’instant";
-      $("[data-capa-texte]").textContent = "Ouvre le module et indique, pour chaque rubrique des quatre écrits, si tu la maîtrises.";
-      $("[data-capa-barres]").textContent = "";
-      $("[data-capa-barres]").hidden = true;
-    }
-
     // S'entraîner
     var themes = lireJson("ptmf1:themes", []); if (!Array.isArray(themes)) themes = [];
     if (themes.length) {

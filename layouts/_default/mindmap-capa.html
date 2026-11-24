@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{- /* Mindmap d’un écrit du module capacitaire (pages /capacitaire/<écrit>/, content/capacitaire/*.md, paramètre « mindmap »).
+       Reprise de mindmaps-mf1/<écrit>.html : données dans assets/js/mindmaps/<écrit>.js (objet PAGE), moteur commun dans
+       assets/js/mindmap-capa.js. Styles : classes « acc » (communes avec la page Accidents de plongée) et « mmc ».
+       Chaque notion a son ancre : /capacitaire/cadre-reglementaire/#tiv. */ -}}
+<div class="acc mmc">
+
+  <section class="acc-entete">
+    <a class="lien-texte mmc-retour" href="{{ "/capacitaire/" | relURL }}">← Toutes les mindmaps MF1</a>
+    <h1 class="acc-titre" id="h1"></h1>
+    <p class="acc-intro" id="sub"></p>
+    <div class="mmc-meta" id="meta"></div>
+  </section>
+
+  <section class="acc-ctrl" aria-label="Recherche et affichage">
+    <input type="search" id="q" class="acc-ctrl__champ" placeholder="Rechercher une notion…" aria-label="Rechercher">
+    <button type="button" class="bouton-contour" id="openAll">Tout déplier</button>
+    <button type="button" class="bouton-contour" id="closeAll">Tout replier</button>
+    <label class="acc-tog"><input type="checkbox" id="quiz"> Mode révision (fiches masquées)</label>
+  </section>
+
+  <section class="acc-main">
+    <div class="map" id="map"><svg id="links" aria-hidden="true"></svg><div id="nodes"></div></div>
+    <aside class="side" id="panel" aria-live="polite"></aside>
+  </section>
+
+  <section class="laws" id="foot">
+    <h2 id="footTitle"></h2>
+    <div class="lg" id="footCards"></div>
+    <p class="note" id="note"></p>
+  </section>
+
+</div>
+{{- $donnees := resources.Get (printf "js/mindmaps/%s.js" .Params.mindmap) | minify | fingerprint }}
+{{- $moteur := resources.Get "js/mindmap-capa.js" | minify | fingerprint }}
+<script src="{{ $donnees.RelPermalink }}" integrity="{{ $donnees.Data.Integrity }}" defer></script>
+<script src="{{ $moteur.RelPermalink }}" integrity="{{ $moteur.Data.Integrity }}" defer></script>
+{{ end }}

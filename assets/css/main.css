@@ -1343,33 +1343,23 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .principal--capa { padding-top: 48px; padding-bottom: 80px; gap: 32px; }
 .capa { display: flex; flex-direction: column; gap: 32px; }
 .capa-entete { display: flex; flex-direction: column; gap: 14px; max-width: 72ch; }
-.capa-entete__ligne { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .capa-titre { margin: 0; font-size: 40px; line-height: 1.15; font-weight: 600; letter-spacing: -0.02em; }
 .capa-accroche { margin: 0; font-size: 18px; line-height: 1.6; color: var(--texte-4); }
 .capa-ecrits { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .capa-ecrit { border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 8px; font: inherit; color: inherit; text-align: left; cursor: pointer; background: var(--blanc); border: 1px solid var(--bordure); }
 .capa-ecrit:hover { border-color: var(--bleu); }
-.capa-ecrit[aria-selected="true"] { border-color: var(--bleu); box-shadow: 0 0 0 1px var(--bleu), 0 6px 18px rgba(19,33,46,.08); }
-.capa-ecrit__bas { margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-.capa-ecrit__bas .home-duree { margin-top: 0; }
-.capa-ecrit__avancement { font-size: 13px; color: var(--texte-4); }
-.capa-ecrit__barre { height: 6px; border-radius: 3px; background: #DCE4EC; overflow: hidden; }
-.capa-ecrit__barre > span { display: block; height: 6px; width: 0; border-radius: 3px; background: #2F7D4A; }
+.capa-ecrit { text-decoration: none; }
+.capa-miniature { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; border: 1px solid var(--bordure); background: var(--bleu-pale); }
+.capa-ecrit .capa-miniature { margin-bottom: 24px; }
+.capa-bonus { border-radius: 14px; padding: 18px 20px; display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: center; gap: 16px 22px; text-decoration: none; color: inherit; border-left: 4px solid var(--tranche-0); }
+.capa-bonus:hover { border-color: var(--bleu); border-left-color: var(--tranche-0); }
+.capa-bonus__corps { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.capa-bonus__etiquette { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 6px; background: var(--orange-fond); color: var(--orange-texte); }
+.capa-bonus__titre { font-size: 17px; font-weight: 600; }
+.capa-bonus__texte { font-size: 14px; line-height: 1.55; color: var(--texte-4); }
 .capa-programme { display: flex; flex-direction: column; gap: 18px; }
 .capa-programme__tete { display: flex; flex-direction: column; gap: 8px; }
 .capa-programme__titre { margin: 0; font-size: 26px; line-height: 1.25; font-weight: 600; }
-.capa-programme__texte { margin: 0; font-size: 15px; line-height: 1.6; color: var(--texte-4); max-width: 80ch; }
-.capa-panneau { display: flex; flex-direction: column; gap: 14px; }
-.capa-panneau[hidden] { display: none; }
-.capa-panneau__titre { margin: 8px 0 0; font-size: 20px; font-weight: 600; }
-.capa-fiche { border-radius: 14px; }
-.capa-fiche__titre { font-size: 19px; line-height: 1.35; }
-.capa-fiche__savoir { display: flex; flex-direction: column; gap: 6px; }
-.capa-fiche__libelle { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texte-4); }
-.capa-fiche__intro { margin: 0; font-size: 15px; line-height: 1.6; color: var(--texte-2); }
-.capa-fiche__points { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.6; color: var(--texte-2); }
-.capa-fiche__auto button[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--blanc), 0 0 0 4px currentColor; }
-.capa-fiche__auto .question__savais[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--blanc), 0 0 0 4px #1D6B3E; }
 .capa-ecrit__titre { font-size: 17px; font-weight: 600; line-height: 1.3; }
 .capa-ecrit__texte { font-size: 14px; line-height: 1.55; color: var(--texte-4); }
 .capa-conditions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
@@ -1415,12 +1405,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .capa-ecrit { padding: 14px; gap: 6px; }
   .capa-ecrit .home-num { white-space: nowrap; }
   .capa-ecrit__titre { font-size: 15px; }
-  .capa-ecrit__texte, .capa-ecrit__bas .home-duree { display: none; }
+  .capa-ecrit__texte { display: none; }
   .capa-programme__titre { font-size: 22px; }
-  .capa-fiche { padding: 18px; }
-  .capa-fiche__titre { font-size: 17px; }
-  .capa-fiche__points, .capa-fiche__intro { font-size: 14px; }
-  .capa-fiche__auto button { flex: 1 1 auto; height: 44px; }
+  .capa-bonus { grid-template-columns: minmax(0, 1fr); padding: 14px; gap: 10px; }
   .mentions { padding: 18px; font-size: 15px; line-height: 1.65; }
   .contact { padding: 18px; }
   .contact__deux { grid-template-columns: minmax(0, 1fr); }
@@ -2549,3 +2536,13 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .acc-titre { font-size: 32px; }
   .acc .laws { padding: 18px 16px; }
 }
+
+/* Mindmaps du module capacitaire (layouts/_default/mindmap-capa.html) : styles « acc » ci-dessus, et ces compléments. */
+.mmc-retour { align-self: flex-start; font-size: 15px; font-weight: 500; }
+.mmc-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.mmc-meta span { font-size: 13px; font-weight: 600; color: var(--bleu-fonce); background: var(--bleu-clair); border-radius: 4px; padding: 3px 10px; }
+.mmc .cat { overflow: hidden; }
+.mmc .cat b { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.15; }
+.mmc .cat small { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mmc .grp > button { gap: 10px; }
+.mmc .root { font-size: 14px; padding: 8px 10px; letter-spacing: -0.01em; hyphens: auto; }

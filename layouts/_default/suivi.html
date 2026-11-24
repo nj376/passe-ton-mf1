@@ -33,13 +33,6 @@
     <div class="suivi-section__tete"><h2 id="suivi-modules" class="suivi-h2">Mes modules</h2></div>
     <div class="suivi-modules">
       <div class="carte suivi-module">
-        <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span class="suivi-module__nom">Capacitaire</span><span class="suivi-badge suivi-badge--on">Actif</span></div>
-        <span class="suivi-module__chiffre" data-capa-chiffre></span>
-        <span class="suivi-module__texte" data-capa-texte></span>
-        <div class="suivi-barres" data-capa-barres></div>
-        <a class="suivi-lien" href="{{ "/capacitaire/" | relURL }}">Voir le module <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-      </div>
-      <div class="carte suivi-module">
         <div class="suivi-module__tete"><span class="suivi-icone"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2 2M9 2h6"></path></svg></span><span class="suivi-module__nom">S’entraîner</span><span class="suivi-badge suivi-badge--on">Actif</span></div>
         <span class="suivi-module__chiffre" data-entr-chiffre></span>
         <span class="suivi-module__texte" data-entr-texte></span>
@@ -78,8 +71,6 @@
     </div>
   </section>
 </div>
-{{- $capa := slice }}{{ range site.Data.capacitaire.ecrits }}{{ $ids := slice }}{{ range .rubriques }}{{ $ids = $ids | append .id }}{{ end }}{{ $capa = $capa | append (dict "titre" .court "ids" $ids) }}{{ end }}
-<script type="application/json" id="suivi-capa">{{ $capa | jsonify | safeJS }}</script>
 <script type="application/json" id="suivi-noms">{{ $noms | jsonify | safeJS }}</script>
 {{ end }}
 
