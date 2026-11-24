@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- /* Mindmap des accidents de plongée, reprise de mindmap-accidents.html. Styles propres à la page : classes « acc » (main.css).
+       Le script (données et logique) est dans assets/js/accidents.js ; il s’appuie sur les identifiants q, openAll, closeAll, quiz,
+       map, nodes, links et panel. Chaque accident a son ancre : /accidents-de-plongee/#narcose. */ -}}
+<div class="acc">
+
+  <section class="acc-entete">
+    <h1 class="acc-titre">Accidents de plongée</h1>
+  </section>
+  {{ partial "aide-page.html" "accidents" }}
+
+  <section class="acc-ctrl" aria-label="Recherche et affichage">
+    <input type="search" id="q" class="acc-ctrl__champ" placeholder="Chercher : vertige, PpO2, Valsalva…" aria-label="Rechercher">
+    <button type="button" class="bouton-contour" id="openAll">Tout déplier</button>
+    <button type="button" class="bouton-contour" id="closeAll">Tout replier</button>
+    <label class="acc-tog"><input type="checkbox" id="quiz"> Mode révision (fiches masquées)</label>
+  </section>
+
+  <section class="acc-main">
+    <div class="map" id="map"><svg id="links" aria-hidden="true"></svg><div id="nodes"></div></div>
+    <aside class="side" id="panel" aria-live="polite"></aside>
+  </section>
+
+  <section class="laws">
+    <h2>Une loi physique derrière chaque famille</h2>
+    <div class="lg">
+      <div class="law law--baro"><h3>Mariotte, les barotraumatismes</h3><p><code>P × V = constante</code>. À température constante, le volume d’un gaz varie à l’inverse de la pression. Toute cavité aérique non équilibrée souffre : oreilles, sinus, poumons, masque.</p></div>
+      <div class="law law--tox"><h3>Dalton, les accidents toxiques</h3><p><code>Pp = Pabs × % du gaz</code>. Chaque gaz agit selon sa pression partielle : narcose (N2), hyperoxie (O2), essoufflement (CO2), intoxication (CO).</p></div>
+      <div class="law law--add"><h3>Henry, la désaturation</h3><p>La quantité de gaz dissous dans un liquide est proportionnelle à sa pression partielle. L’azote dissous en profondeur doit ressortir lentement, sinon il forme des bulles : c’est l’ADD.</p></div>
+    </div>
+    <p class="note">Support de révision : vérifie toujours les seuils, protocoles et textes en vigueur (Code du sport, MFT FFESSM, recommandations médicales fédérales) avec ton formateur.</p>
+  </section>
+
+</div>
+{{- $js := resources.Get "js/accidents.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}
