@@ -122,10 +122,10 @@ N5-organiser:
       adapter:
         - "Il ne maîtrise pas les normes : on commence à l'étape 1, « Les normes d'encadrement »."
         - "Ses palanquées sont conformes sur cas écrits : on passe à l'étape 2, « Cas réel simple »."
-        - "Il compose déjà des palanquées conformes pour un groupe homogène : on passe à l'étape 3, « Groupe hétérogène et affinités »."
-        - "Il sacrifie la conformité aux affinités : on revient aux normes de l'étape 1 avant l'étape 3."
+        - "Il compose déjà des palanquées conformes pour un groupe homogène : on passe à l'étape 3, « Groupe hétérogène », puis à l'étape 4, « Attentes et affinités »."
+        - "Il sacrifie la conformité aux affinités : on revient aux normes de l'étape 1 avant l'étape 4."
     bilan:
-      situation: "l'étape 4 : en situation réelle, sorties variées (évaluation)"
+      situation: "l'étape 5 : en situation réelle, sorties variées (évaluation)"
       criteres:
         - "Toutes les palanquées sont conformes aux normes."
         - "Elles sont adaptées aux plongeurs."
@@ -133,7 +133,7 @@ N5-organiser:
       securite:
         - "Pendant la formation, un DP qualifié reste en titre et responsable de l'activité."
         - "Le stagiaire agit sous le contrôle du DP en titre."
-      eca: "compose des palanquées conformes mais ignore les attentes des plongeurs → reprendre l'étape 3"
+      eca: "compose des palanquées conformes mais ignore les attentes des plongeurs → reprendre l'étape 4"
   "Fixer les paramètres de plongée":
     evaluer:
       question: "Comment le candidat fixe-t-il aujourd'hui les paramètres d'une palanquée qu'il ne guide pas lui-même ?"

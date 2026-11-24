@@ -19,6 +19,7 @@
             {
               "n": 1,
               "titre": "Observer un DP",
+              "curseur": "Point de départ.",
               "objectif": "Repérer ce qu'un DP prend en compte avant de choisir un site.",
               "situation": "Sortie club : l'élève accompagne le DP dans sa préparation et note ses questions.",
               "critere": "Il liste au débriefing les éléments pris en compte par le DP."
@@ -26,6 +27,7 @@
             {
               "n": 2,
               "titre": "Faire connaissance",
+              "curseur": "Observer → s'informer soi-même auprès de plongeurs inconnus.",
               "objectif": "S'intéresser aux attentes et aux motivations des plongeurs.",
               "situation": "Avant une sortie : échanges avec les plongeurs qu'il ne connaît pas, consultation des carnets, cartes, passeports, dernières plongées.",
               "critere": "Il connaît le niveau, l'expérience, l'équipement et le moyen de désaturation de chacun.",
@@ -34,6 +36,7 @@
             {
               "n": 3,
               "titre": "Analyser le groupe",
+              "curseur": "Groupe homogène → groupe hétérogène.",
               "objectif": "Tirer de ces informations les besoins du groupe et des guides.",
               "situation": "Groupe hétérogène : niveaux, nombre de GP disponibles, support surface (bateau ou autre).",
               "critere": "Il formule les contraintes que le site devra respecter."
@@ -41,6 +44,7 @@
             {
               "n": 4,
               "titre": "Prévoir un site approprié",
+              "curseur": "Analyser → décider du site.",
               "objectif": "Proposer un site adapté au contexte.",
               "situation": "Il propose un site au DP en titre et justifie son choix.",
               "critere": "Choix approprié aux plongeurs, aux GP et au support."
@@ -48,6 +52,7 @@
             {
               "n": 5,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles, groupes variés.",
               "objectif": "Prendre en compte plongeurs, guides et support pour choisir le site.",
               "situation": "Sorties réelles, groupes variés.",
               "critere": "Contexte analysé et site approprié prévu. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -64,6 +69,7 @@
             {
               "n": 1,
               "titre": "Les informations utiles au DP",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la nature des informations dont le DP a besoin.",
               "situation": "Au sec : bulletins météo, annuaire des marées, vents dominants, courants, état de la mer, trajet, mouillage, fréquentation, profondeurs, points d'intérêt.",
               "critere": "Il cite chaque information et dit à quoi elle sert."
@@ -71,6 +77,7 @@
             {
               "n": 2,
               "titre": "Sites accessibles et autorisés",
+              "curseur": "Une source → plusieurs sources, pour les sites autorisés.",
               "objectif": "S'informer sur les sites autorisés.",
               "situation": "Cartes marines, affaires maritimes, pilote du bateau, mairies.",
               "critere": "Il sait où trouver l'information et vérifie qu'un site est autorisé."
@@ -78,6 +85,7 @@
             {
               "n": 3,
               "titre": "Exploiter les informations",
+              "curseur": "Recueillir → exploiter les informations.",
               "objectif": "Utiliser ces informations de façon judicieuse.",
               "situation": "Cas réel : bulletin du jour et marées. Il en déduit les sites et les horaires possibles.",
               "critere": "Conclusion juste et utile pour la sortie."
@@ -85,6 +93,7 @@
             {
               "n": 4,
               "titre": "Site méconnu",
+              "curseur": "Site connu → site méconnu.",
               "objectif": "Recueillir les informations auprès des personnes compétentes.",
               "situation": "Sortie sur un site qu'il ne connaît pas : pilote, clubs locaux, documents.",
               "critere": "Informations suffisantes pour décider en sécurité."
@@ -92,6 +101,7 @@
             {
               "n": 5,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles, sites connus et méconnus.",
               "objectif": "Recueillir les informations relatives au site.",
               "situation": "Sorties réelles, sites connus et méconnus.",
               "critere": "Informations recueillies et exploitées avec justesse. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -108,6 +118,7 @@
             {
               "n": 1,
               "titre": "Mettre en relation les conditions",
+              "curseur": "Point de départ.",
               "objectif": "Relier vent, houle, visibilité, trafic, courant, température.",
               "situation": "Sur le site, avec le DP en titre : observation et lecture des conditions.",
               "critere": "Il décrit les conditions et leur évolution prévisible."
@@ -115,6 +126,7 @@
             {
               "n": 2,
               "titre": "Vérifier la faisabilité",
+              "curseur": "Nouvel élément, les plongeurs et le matériel.",
               "objectif": "Confronter les conditions au niveau des plongeurs et aux moyens disponibles.",
               "situation": "Niveau de chaque plongeur, nombre de plongeurs et de guides, équipements individuels, collectifs et de sécurité.",
               "critere": "Il dit si les plongées prévues sont faisables, et pourquoi.",
@@ -123,6 +135,7 @@
             {
               "n": 3,
               "titre": "S'adapter",
+              "curseur": "Conditions stables → conditions qui évoluent.",
               "objectif": "Modifier le projet quand les conditions changent.",
               "situation": "Conditions qui évoluent : changement de site, de zone, de paramètres, ou annulation.",
               "critere": "Décision sûre et argumentée, y compris le renoncement."
@@ -130,6 +143,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles, conditions variées.",
               "objectif": "Analyser les conditions et s'y adapter.",
               "situation": "Sorties réelles, conditions variées.",
               "critere": "Faisabilité vérifiée et décisions adaptées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -153,6 +167,7 @@
             {
               "n": 1,
               "titre": "Les normes d'encadrement",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les règles de composition des palanquées.",
               "situation": "Au sec, à partir du Code du sport et du MFT.",
               "critere": "Il compose des palanquées conformes sur des cas écrits."
@@ -160,6 +175,7 @@
             {
               "n": 2,
               "titre": "Cas réel simple",
+              "curseur": "Au sec → cas réel simple.",
               "objectif": "Composer les palanquées d'une sortie.",
               "situation": "Sortie club, groupe homogène, sous le contrôle du DP en titre.",
               "critere": "Palanquées conformes aux normes.",
@@ -167,14 +183,24 @@
             },
             {
               "n": 3,
-              "titre": "Groupe hétérogène et affinités",
-              "objectif": "Tenir compte des attentes et des affinités.",
-              "situation": "Groupe de niveaux variés, plongeurs qui souhaitent plonger ensemble.",
-              "critere": "Palanquées conformes, attentes et affinités prises en compte quand c'est possible."
+              "titre": "Groupe hétérogène",
+              "curseur": "Groupe homogène → hétérogène.",
+              "objectif": "Composer des palanquées conformes pour des niveaux différents.",
+              "situation": "Groupe de niveaux variés.",
+              "critere": "Palanquées conformes aux normes pour chaque niveau."
             },
             {
               "n": 4,
+              "titre": "Attentes et affinités",
+              "curseur": "Normes → affinités.",
+              "objectif": "Tenir compte des attentes et des affinités.",
+              "situation": "Même type de groupe, des plongeurs souhaitent plonger ensemble.",
+              "critere": "Palanquées conformes, attentes et affinités prises en compte quand c'est possible."
+            },
+            {
+              "n": 5,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Composer les palanquées.",
               "situation": "Sorties réelles variées.",
               "critere": "Palanquées conformes et adaptées aux plongeurs. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -191,6 +217,7 @@
             {
               "n": 1,
               "titre": "Profondeur, durée, durée totale de remontée",
+              "curseur": "Point de départ.",
               "objectif": "Fixer les paramètres de chaque palanquée.",
               "situation": "Cas écrits puis sortie réelle.",
               "critere": "Paramètres cohérents avec le site, le niveau et les conditions."
@@ -198,6 +225,7 @@
             {
               "n": 2,
               "titre": "Zone et profil",
+              "curseur": "Paramètres de base → zone et profil, pour des niveaux différents.",
               "objectif": "Définir la zone d'évolution et le profil.",
               "situation": "Site connu, palanquées de niveaux différents.",
               "critere": "Zone et profil adaptés à chaque palanquée."
@@ -205,6 +233,7 @@
             {
               "n": 3,
               "titre": "Décompression adaptée",
+              "curseur": "Paramètres simples → décompression adaptée, avec des instruments variés.",
               "objectif": "Définir la décompression selon le contexte et les instruments.",
               "situation": "Plongée sans palier, durée de palier limitée, diversité des ordinateurs des plongeurs.",
               "critere": "Consigne de décompression claire et applicable par tous."
@@ -212,6 +241,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Fixer les paramètres de plongée.",
               "situation": "Sorties réelles variées.",
               "critere": "Paramètres, zone, profil et décompression adaptés. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -227,6 +257,7 @@
             {
               "n": 1,
               "titre": "La fiche et la réglementation",
+              "curseur": "Point de départ.",
               "objectif": "Connaître ce que doit contenir la fiche de sécurité.",
               "situation": "Au sec, sur un modèle de fiche.",
               "critere": "Il remplit une fiche conforme sur un cas écrit."
@@ -234,6 +265,7 @@
             {
               "n": 2,
               "titre": "Avant la plongée",
+              "curseur": "Connaître → remplir avant la plongée.",
               "objectif": "Préparer la fiche d'une sortie réelle.",
               "situation": "Palanquées, paramètres prévus, heures.",
               "critere": "Fiche complète avant la mise à l'eau.",
@@ -242,6 +274,7 @@
             {
               "n": 3,
               "titre": "Pendant et après",
+              "curseur": "Remplir → tenir à jour pendant et après.",
               "objectif": "Tenir la fiche à jour.",
               "situation": "Heures d'immersion et de sortie, paramètres réalisés.",
               "critere": "Fiche exacte jusqu'au retour de la dernière palanquée."
@@ -249,6 +282,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Rédiger la fiche de sécurité.",
               "situation": "Sorties réelles.",
               "critere": "Fiche remplie en respectant la réglementation en vigueur. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -264,6 +298,7 @@
             {
               "n": 1,
               "titre": "Décrire un site connu",
+              "curseur": "Point de départ.",
               "objectif": "Présenter les zones, les intérêts, les conditions probables et les dangers.",
               "situation": "Briefing de sortie sur un site connu.",
               "critere": "Présentation claire, utile aux GP et aux plongeurs."
@@ -271,6 +306,7 @@
             {
               "n": 2,
               "titre": "Évoluer sans perturber le milieu",
+              "curseur": "Décrire → expliquer comment évoluer sans perturber le milieu.",
               "objectif": "Intégrer le respect du milieu dans la présentation.",
               "situation": "Il explique comment évoluer sur ce site sans le dégrader.",
               "critere": "Consignes de respect du milieu concrètes et adaptées au site."
@@ -278,6 +314,7 @@
             {
               "n": 3,
               "titre": "Site méconnu",
+              "curseur": "Site connu → site méconnu.",
               "objectif": "Recueillir puis présenter les informations d'un site qu'il ne connaît pas.",
               "situation": "Il s'appuie sur le pilote ou une personne qui connaît le site.",
               "critere": "Présentation fiable, sources citées."
@@ -285,6 +322,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles, sites connus et méconnus.",
               "objectif": "Présenter le site.",
               "situation": "Sorties réelles, sites connus et méconnus.",
               "critere": "Site présenté avec justesse. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -300,6 +338,7 @@
             {
               "n": 1,
               "titre": "Le rôle du suppléant",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre ce que la suppléance implique.",
               "situation": "Au sec : aptitude du suppléant, informations à lui transmettre, responsabilité du DP en titre.",
               "critere": "Il explique que le DP en titre conserve sa responsabilité, même en immersion."
@@ -307,6 +346,7 @@
             {
               "n": 2,
               "titre": "Choisir le suppléant",
+              "curseur": "Comprendre → choisir.",
               "objectif": "S'assurer de l'aptitude de la personne volontaire.",
               "situation": "Cas réel : plusieurs volontaires possibles.",
               "critere": "Choix justifié."
@@ -314,6 +354,7 @@
             {
               "n": 3,
               "titre": "Transmettre les consignes",
+              "curseur": "Choisir → transmettre les consignes.",
               "objectif": "Donner au suppléant ce dont il a besoin.",
               "situation": "Informations nécessaires et durée approximative de l'immersion.",
               "critere": "Transmission complète et vérifiée."
@@ -321,6 +362,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sortie où le DP plonge.",
               "objectif": "Désigner un suppléant.",
               "situation": "Sortie où le DP plonge.",
               "critere": "Suppléant apte, informé, durée annoncée. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -344,6 +386,7 @@
             {
               "n": 1,
               "titre": "Le contenu des consignes",
+              "curseur": "Point de départ.",
               "objectif": "Savoir quelles consignes donner.",
               "situation": "Au sec : paramètres et zone, gestion commune de la décompression (ordinateurs, majoration, paliers profonds, palier de principe à 3 m, vitesses), moyen de rappel, perte de palanquée, givrage en eau froide, narcose, essoufflement, refroidissement.",
               "critere": "Liste complète et justifiée."
@@ -351,6 +394,7 @@
             {
               "n": 2,
               "titre": "Briefer les GP",
+              "curseur": "Au sec → briefing réel des GP.",
               "objectif": "Donner les consignes aux guides de palanquée.",
               "situation": "Briefing réel des GP, sous le contrôle du DP en titre.",
               "critere": "Consignes claires et complètes.",
@@ -359,6 +403,7 @@
             {
               "n": 3,
               "titre": "Vérifier la compréhension",
+              "curseur": "Donner → vérifier la compréhension.",
               "objectif": "S'assurer que les consignes sont comprises et prises en compte.",
               "situation": "Questions aux GP et aux plongeurs autonomes après le briefing.",
               "critere": "Il repère un point mal compris et le reprend."
@@ -366,6 +411,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "S'assurer de la compréhension des consignes.",
               "situation": "Sorties réelles.",
               "critere": "Consignes comprises et prises en compte par toutes les palanquées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -382,6 +428,7 @@
             {
               "n": 1,
               "titre": "Pratiques et environnements spécifiques",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les risques et la prévention.",
               "situation": "Au sec : plongée de nuit, sous glace, dérivante, filets, grottes, épaves.",
               "critere": "Pour chaque pratique, il cite les risques et la prévention."
@@ -389,6 +436,7 @@
             {
               "n": 2,
               "titre": "Publics particuliers",
+              "curseur": "Pratiques spécifiques → publics particuliers.",
               "objectif": "Tenir compte des particularités des publics.",
               "situation": "Jeunes, seniors, restrictions d'ordre médical.",
               "critere": "Mesures adaptées à chaque public."
@@ -396,6 +444,7 @@
             {
               "n": 3,
               "titre": "Appliquer à une sortie réelle",
+              "curseur": "Au sec → sortie réelle avec une particularité.",
               "objectif": "Intégrer ces risques dans l'organisation.",
               "situation": "Sortie présentant une particularité (nuit, public jeune, épave).",
               "critere": "Mesures de prévention prévues et annoncées."
@@ -403,6 +452,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Prendre en compte les risques et la prévention.",
               "situation": "Sorties réelles variées.",
               "critere": "Risques identifiés et prévenus. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -418,6 +468,7 @@
             {
               "n": 1,
               "titre": "Moyens de sécurité et de confort",
+              "curseur": "Point de départ.",
               "objectif": "Installer ce qui sécurise la plongée.",
               "situation": "Pendeur, ligne de vie, bloc de sécurité.",
               "critere": "Moyens installés et adaptés au site.",
@@ -426,6 +477,7 @@
             {
               "n": 2,
               "titre": "Informer sur l'environnement",
+              "curseur": "Installer → informer sur l'environnement.",
               "objectif": "Prévenir des risques liés au site.",
               "situation": "Au briefing : courant, trafic, faune dangereuse.",
               "critere": "Information juste et utile."
@@ -433,6 +485,7 @@
             {
               "n": 3,
               "titre": "Désaturation de secours",
+              "curseur": "Nouveau contenu, la désaturation de secours.",
               "objectif": "Prévoir les procédures de rattrapage et le plan de secours.",
               "situation": "Cas : palanquée qui a manqué ses paliers.",
               "critere": "Procédure de rattrapage et plan prévus avant la plongée."
@@ -440,6 +493,7 @@
             {
               "n": 4,
               "titre": "Surveiller",
+              "curseur": "Préparer → surveiller en sortie réelle.",
               "objectif": "Garder la vue d'ensemble pendant l'activité.",
               "situation": "Sortie réelle : suivi des palanquées, heures, surface.",
               "critere": "Il sait à tout moment où en est chaque palanquée."
@@ -447,6 +501,7 @@
             {
               "n": 5,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Surveiller et prévenir.",
               "situation": "Sorties réelles.",
               "critere": "Activité surveillée, prévention en place. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -462,6 +517,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis RIFAP",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la maîtrise du matériel de secours.",
               "situation": "Rappel des compétences du RIFA Plongée.",
               "critere": "Il utilise le matériel sans hésitation.",
@@ -470,6 +526,7 @@
             {
               "n": 2,
               "titre": "Trousse de secours",
+              "curseur": "Connaître → vérifier la trousse.",
               "objectif": "Connaître et vérifier le contenu de la trousse.",
               "situation": "Avant chaque sortie, vérification de la trousse.",
               "critere": "Contenu vérifié, manques signalés."
@@ -477,6 +534,7 @@
             {
               "n": 3,
               "titre": "Localiser et vérifier",
+              "curseur": "Trousse → oxygène et matériel de secours du site.",
               "objectif": "Vérifier l'état et le fonctionnement du matériel de secours.",
               "situation": "Oxygène, matériel de secours du bateau ou du site.",
               "critere": "Matériel localisé, état et fonctionnement vérifiés."
@@ -484,6 +542,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Vérifier et utiliser le matériel de secours.",
               "situation": "Sorties réelles.",
               "critere": "Matériel prêt à chaque sortie. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -499,6 +558,7 @@
             {
               "n": 1,
               "titre": "S'informer",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les dispositions locales.",
               "situation": "Espèces protégées, zones interdites, auprès du pilote ou de personnes compétentes.",
               "critere": "Il présente les dispositions du site."
@@ -506,6 +566,7 @@
             {
               "n": 2,
               "titre": "Informer les plongeurs",
+              "curseur": "S'informer → informer.",
               "objectif": "Rappeler les règles et donner des conseils.",
               "situation": "Au briefing : règles générales de protection et dispositions locales.",
               "critere": "Rappel clair et concret."
@@ -513,6 +574,7 @@
             {
               "n": 3,
               "titre": "Faire respecter",
+              "curseur": "Informer → faire respecter.",
               "objectif": "Agir quand une règle n'est pas respectée.",
               "situation": "Cas : plongeur qui prélève, palanquée hors zone.",
               "critere": "Intervention adaptée et ferme."
@@ -520,6 +582,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Faire respecter les règles locales et de protection.",
               "situation": "Sorties réelles.",
               "critere": "Règles connues, rappelées et respectées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -542,6 +605,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis RIFAP",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la prise en charge de la victime.",
               "situation": "Rappel des compétences du RIFA Plongée.",
               "critere": "Prise en charge maîtrisée.",
@@ -550,6 +614,7 @@
             {
               "n": 2,
               "titre": "Plan d'évacuation et d'organisation des secours",
+              "curseur": "Acquis RIFAP → plan de secours.",
               "objectif": "Connaître le plan du site et de la structure.",
               "situation": "Au sec : alerte, moyens de communication, point de débarquement, centre de soins.",
               "critere": "Il décrit le plan pour le site du jour."
@@ -557,6 +622,7 @@
             {
               "n": 3,
               "titre": "Gérer les autres palanquées",
+              "curseur": "Connaître → simuler, avec d'autres palanquées à gérer.",
               "objectif": "Garder la sécurité de ceux qui sont encore à l'eau.",
               "situation": "Exercice annoncé : accident simulé pendant que des palanquées plongent.",
               "critere": "Palanquées rappelées ou suivies, personne n'est oublié."
@@ -564,6 +630,7 @@
             {
               "n": 4,
               "titre": "Fiche d'évacuation et de prise en charge",
+              "curseur": "Nouvel élément, la fiche d'évacuation, pendant la simulation.",
               "objectif": "Rédiger la fiche qui accompagne la victime.",
               "situation": "Exercice : fiche remplie pendant la simulation.",
               "critere": "Fiche complète et lisible."
@@ -571,6 +638,7 @@
             {
               "n": 5,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, exercices réalistes en sortie.",
               "objectif": "Savoir réagir en cas d'accident.",
               "situation": "Évaluation continue, exercices réalistes en sortie.",
               "critere": "Plan connu, palanquées gérées, fiche rédigée. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -593,6 +661,7 @@
             {
               "n": 1,
               "titre": "Normes et prérogatives",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les normes d'encadrement et les prérogatives.",
               "situation": "Normes en exploration, prérogatives des plongeurs et du DP.",
               "critere": "Réponses justes sur des cas concrets."
@@ -600,6 +669,7 @@
             {
               "n": 2,
               "titre": "Équipements et matériel obligatoires",
+              "curseur": "Nouveau thème, les équipements et le matériel obligatoires.",
               "objectif": "Connaître ce qui est exigé.",
               "situation": "Équipements des plongeurs et des encadrants, matériel obligatoire sur le lieu de plongée.",
               "critere": "Il vérifie la conformité d'une sortie réelle."
@@ -607,6 +677,7 @@
             {
               "n": 3,
               "titre": "Mélanges, recycleurs, jeunes plongeurs",
+              "curseur": "Nouveau thème, mélanges, recycleurs et jeunes plongeurs.",
               "objectif": "Connaître les conditions particulières.",
               "situation": "Plongée aux mélanges et en recycleur, qualifications supplémentaires du DP, jeunes plongeurs à la FFESSM.",
               "critere": "Il dit quand il peut ou ne peut pas diriger une plongée."
@@ -614,6 +685,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, organisation de sorties réelles.",
               "objectif": "Appliquer la réglementation.",
               "situation": "Organisation de sorties réelles.",
               "critere": "Réglementation appliquée sans erreur. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -629,6 +701,7 @@
             {
               "n": 1,
               "titre": "Les notions",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la responsabilité civile et pénale.",
               "situation": "Mise en danger d'autrui, obligation de moyens et de résultats.",
               "critere": "Définitions justes."
@@ -636,6 +709,7 @@
             {
               "n": 2,
               "titre": "Cas concrets",
+              "curseur": "Notions → cas concrets.",
               "objectif": "Appliquer ces notions à la direction de plongée.",
               "situation": "Cas d'accidents et d'incidents.",
               "critere": "Analyse juste de la responsabilité du DP."
@@ -643,6 +717,7 @@
             {
               "n": 3,
               "titre": "Dans ses décisions",
+              "curseur": "Cas des autres → ses propres décisions.",
               "objectif": "Intégrer sa responsabilité dans ses choix.",
               "situation": "Au débriefing d'une sortie, il explique comment ses décisions l'engagent.",
               "critere": "Décisions justifiées au regard de sa responsabilité."
@@ -650,6 +725,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Connaître le cadre de sa responsabilité.",
               "situation": "Sorties réelles.",
               "critere": "Responsabilité comprise et prise en compte. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -665,6 +741,7 @@
             {
               "n": 1,
               "titre": "Responsabilité civile et licence",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la responsabilité civile au tiers et l'assurance de la licence.",
               "situation": "Au sec.",
               "critere": "Explications justes."
@@ -672,6 +749,7 @@
             {
               "n": 2,
               "titre": "Assurances complémentaires",
+              "curseur": "Assurance de base → assurances complémentaires.",
               "objectif": "Connaître les assurances individuelles complémentaires.",
               "situation": "Au sec, cas de plongeurs.",
               "critere": "Il explique leur intérêt."
@@ -679,6 +757,7 @@
             {
               "n": 3,
               "titre": "Conseiller",
+              "curseur": "Connaître → conseiller.",
               "objectif": "Répondre aux questions des plongeurs.",
               "situation": "Questions posées en sortie.",
               "critere": "Réponses justes ou plongeur bien orienté."
@@ -686,6 +765,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Maîtriser les questions d'assurance.",
               "situation": "Sorties réelles.",
               "critere": "Connaissances justes et utiles. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -701,6 +781,7 @@
             {
               "n": 1,
               "titre": "Caractéristiques des publics",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les caractéristiques des différents publics.",
               "situation": "Physiologiques, morphologiques, psychomotrices, socio-affectives : jeunes, adultes, seniors, aptitudes médicales spécifiques.",
               "critere": "Il cite les points d'attention pour chaque public."
@@ -708,6 +789,7 @@
             {
               "n": 2,
               "titre": "Adapter l'organisation",
+              "curseur": "Connaître → adapter l'organisation, sur un cas.",
               "objectif": "Tenir compte du public dans l'organisation.",
               "situation": "Cas : sortie avec des jeunes ou des seniors.",
               "critere": "Organisation adaptée (site, paramètres, encadrement)."
@@ -715,6 +797,7 @@
             {
               "n": 3,
               "titre": "En sortie",
+              "curseur": "Cas écrit → sortie réelle.",
               "objectif": "Appliquer ces adaptations.",
               "situation": "Sortie réelle avec un public particulier.",
               "critere": "Adaptations mises en œuvre."
@@ -722,6 +805,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Tenir compte des publics.",
               "situation": "Sorties réelles.",
               "critere": "Spécificités des publics prises en compte. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
@@ -737,6 +821,7 @@
             {
               "n": 1,
               "titre": "Champ d'application",
+              "curseur": "Point de départ.",
               "objectif": "Connaître le champ d'application du CACI en plongée.",
               "situation": "Au sec, règles fédérales en vigueur.",
               "critere": "Explications justes."
@@ -744,6 +829,7 @@
             {
               "n": 2,
               "titre": "Cas particuliers",
+              "curseur": "Règle générale → cas particuliers.",
               "objectif": "Savoir quoi faire quand le CACI pose question.",
               "situation": "Cas écrits.",
               "critere": "Décision conforme aux règles."
@@ -751,6 +837,7 @@
             {
               "n": 3,
               "titre": "Vérifier en sortie",
+              "curseur": "Cas écrits → vérifier en sortie.",
               "objectif": "Contrôler les documents des plongeurs.",
               "situation": "Sortie réelle.",
               "critere": "Vérification faite avant la mise à l'eau."
@@ -758,6 +845,7 @@
             {
               "n": 4,
               "titre": "En situation réelle (évaluation)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Connaître le champ d'application du CACI.",
               "situation": "Sorties réelles.",
               "critere": "Règles appliquées. Correspond aux modalités d'évaluation du MFT (situation réelle, évaluation continue)."
