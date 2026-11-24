@@ -1,4 +1,4 @@
-/* Données de la mindmap « aspects-theoriques » (page /capacitaire/aspects-theoriques/), reprises du fichier d’origine mindmaps-mf1/aspects-theoriques.html (dossier supprimé depuis).
+/* Données de la mindmap « aspects-theoriques » (page /capacitaire/aspects-theoriques/), reprises du fichier d’origine mindmaps-mf1/aspects-theoriques.html (version du 24/11/2026).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). */
 const PAGE={
 title:"Aspects théoriques de l’activité",
@@ -11,7 +11,7 @@ cats:[
 {id:"flottabilite",name:"Flottabilité",law:"Principe d’Archimède",items:[
 {id:"archimede",name:"Poussée d’Archimède",alt:"Tout corps plongé dans un liquide…",tags:["Volume × masse volumique"],s:{
 "Énoncé":["Tout corps plongé dans un liquide reçoit une poussée verticale, dirigée vers le haut, égale au poids du volume de liquide déplacé."],
-"En pratique":["Poussée (kg) ≈ volume immergé (L) × masse volumique du liquide (kg/L).","Eau douce : 1 kg/L. Eau de mer : environ 1,025 à 1,03 kg/L.","Un même objet est donc mieux porté en mer qu’en lac."]}},
+"En pratique":["Poussée (kg) ≈ volume immergé (L) × masse volumique du liquide (kg/L).","Eau douce : 1 kg/L. Eau de mer : environ 1,025 à 1,03 kg/L.","Un même objet est donc mieux porté en mer qu’en lac."]}},
 {id:"poids-apparent",name:"Poids réel et apparent",alt:"Ce qu’on « sent » sous l’eau",tags:["Papp = Préel − PA"],s:{
 "Formule":["Poids apparent = poids réel − poussée d’Archimède."],
 "Trois cas":["Papp > 0 : flottabilité négative, l’objet coule.","Papp < 0 : flottabilité positive, il remonte.","Papp = 0 : flottabilité neutre, c’est l’équilibre recherché."],
@@ -65,8 +65,8 @@ tip:"Le programme écarte les mélanges autres que l’air : les calculs porten
 "Conséquences":["Le masque et la réfraction réduisent le champ de vision, surtout latéral et vers le bas.","Le guide doit tourner la tête pour surveiller sa palanquée ; positionner les élèves dans son champ."]},
 tip:"Pas de calcul ni de trigonométrie en optique : on attend des explications et leurs conséquences pratiques."}]},
 {id:"acoustique",name:"Acoustique",law:"Son dans l’eau",items:[
-{id:"vitesse-son",name:"Vitesse du son",alt:"Environ 4,5 fois plus rapide",tags:["340 m/s","1 500 m/s"],s:{
-"Chiffres":["Dans l’air : environ 340 m/s. Dans l’eau : environ 1 500 m/s."],
+{id:"vitesse-son",name:"Vitesse du son",alt:"Environ 4,5 fois plus rapide",tags:["340 m/s","1 500 m/s"],s:{
+"Chiffres":["Dans l’air : environ 340 m/s. Dans l’eau : environ 1 500 m/s."],
 "Exemple de calcul":["Un bateau à 300 m : le son arrive en 0,2 s sous l’eau, contre près de 0,9 s dans l’air."]}},
 {id:"localisation",name:"Conséquences en plongée",alt:"On entend sans localiser",tags:["Danger bateau"],s:{
 "Pourquoi":["L’oreille localise grâce au décalage d’arrivée entre les deux oreilles ; sous l’eau ce décalage devient trop faible.","Sous l’eau, le son passe surtout par conduction osseuse."],
@@ -76,8 +76,8 @@ tip:"Pas de calcul ni de trigonométrie en optique : on attend des explications
 "Avant":["Site, météo, marée, courant, visibilité ; règles locales.","Vérifier aptitudes, CACI, matériel ; constituer les palanquées ; fixer profondeur et durée.","Fiche de sécurité, plan de secours, matériel de secours, briefing."],
 "Pendant":["Surveillance de surface, heures de mise à l’eau et de sortie, sécurité surface.","Gestion des imprévus et décision d’alerte."],
 "Après":["Contrôle des sorties et des paramètres, observation des plongeurs.","Débriefing, archivage de la fiche de sécurité."]}},
-{id:"plongee-jeunes",name:"Plongée avec des jeunes",alt:"Plongée particulière",tags:["Mineurs encadrés"],s:{
-"Points clés":["Jamais d’autonomie, profondeurs et durées adaptées à l’âge et au brevet.","Matériel à leur taille, protection thermique renforcée, plongées courtes.","Encadrant habitué aux enfants, consignes simples, attention à la fatigue."]}},
+{id:"plongee-jeunes",name:"Plongée avec des jeunes",alt:"Plongée particulière",tags:["Mineurs"],s:{
+"Points clés":["Autonomie seulement dès 16 ans (PA-12, PA-20) ou 17 ans (PA-40), sur décision du DP ; profondeurs et durées adaptées à l’âge et au brevet.","Matériel à leur taille, protection thermique renforcée, plongées courtes.","Encadrant habitué aux enfants, consignes simples, attention à la fatigue."]}},
 {id:"plongee-nuit",name:"Plongée de nuit",alt:"Plongée particulière",tags:["Phare + secours"],s:{
 "Points clés":["Site connu, idéalement reconnu de jour ; conditions calmes.","Chaque plongeur a un phare principal et une lampe de secours ; repère lumineux sur le bateau ou la sortie.","Briefing des signes lumineux, palanquées réduites, durée et profondeur prudentes."]}},
 {id:"plongee-derivante",name:"Plongée dérivante",alt:"Plongée particulière",tags:["Bateau suiveur"],s:{
@@ -87,8 +87,8 @@ tip:"Pas de calcul ni de trigonométrie en optique : on attend des explications
 tip:"Une réponse juste mais non justifiée rapporte peu : cite la règle qui fonde chaque décision."}]}
 ],
 foot:{title:"Les lois à savoir écrire",cards:[
-{t:"Archimède",p:"Poids apparent = poids réel − volume × masse volumique du liquide. Eau de mer ≈ 1,03 kg/L."},
+{t:"Archimède",p:"Poids apparent = poids réel − volume × masse volumique du liquide. Eau de mer ≈ 1,03 kg/L."},
 {t:"Mariotte et Charles",p:"P1V1 = P2V2 à température constante ; P1/T1 = P2/T2 à volume constant, T en kelvins."},
 {t:"Dalton",p:"Pp = Pabs × fraction du gaz. À l’air : 21 % d’O2, 79 % de N2."}]},
-note:"Support de révision construit à partir du programme publié sur passe-ton-mf1.com. Les valeurs arrondies (1,03 kg/L, 1 500 m/s…) peuvent varier selon les supports : utilise celles de ton centre de formation."
+note:"Support de révision construit à partir du programme publié sur passe-ton-mf1.com. Les valeurs arrondies (1,03 kg/L, 1 500 m/s…) peuvent varier selon les supports : utilise celles de ton centre de formation."
 };

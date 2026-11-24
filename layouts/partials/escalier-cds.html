@@ -1,0 +1,47 @@
+{{- /* Escalier de profondeur « Qui peut plonger où, et avec qui ? » (page Explore le Code du Sport).
+       Paramètres : type (« explo » ou « ens »), lignes (data/cds.yaml, exploration.lignes ou enseignement.lignes).
+       Les lignes d’un même espace (ex. baptême et débutants en 0-6 m) sont regroupées sur une seule marche.
+       Le tracé est un SVG par marche (preserveAspectRatio none) : il suit la hauteur de la marche, quelle qu’elle soit.
+       Les abscisses des paliers (8, 26, 44, 62, 80) correspondent aux classes escalier__marche--0 à --4 de main.css. */ -}}
+{{- $groupes := slice }}{{ $courant := dict }}
+{{- range .lignes }}
+  {{- if and $courant (eq (index $courant "espace") .espace) }}
+    {{- $courant = merge $courant (dict "items" ((index $courant "items") | append .)) }}
+    {{- $groupes = first (sub (len $groupes) 1) $groupes | append $courant }}
+  {{- else }}
+    {{- $courant = dict "espace" .espace "items" (slice .) }}
+    {{- $groupes = $groupes | append $courant }}
+  {{- end }}
+{{- end }}
+{{- $xs := slice 8 26 44 62 80 }}
+{{- $n := len $groupes }}
+<ol class="escalier">
+  <li class="escalier__surface" aria-hidden="true">
+    <span class="escalier__prof">0 m</span>
+    <span class="escalier__trace"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 50 H8 V100" vector-effect="non-scaling-stroke"></path></svg></span>
+    <span class="escalier__surface-texte">Surface</span>
+  </li>
+  {{- range $i, $g := $groupes }}
+  {{- $x := index $xs $i }}{{ $suivant := cond (lt (add $i 1) $n) (index $xs (add $i 1)) 100 }}
+  {{- $fond := replaceRE `^0 à ` "" $g.espace }}
+  <li class="escalier__marche escalier__marche--{{ $i }}">
+    <span class="escalier__prof">{{ $fond }}</span>
+    <span class="escalier__trace" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M{{ $x }} 0 V50 H{{ $suivant }}{{ if lt (add $i 1) $n }} V100{{ end }}" vector-effect="non-scaling-stroke"></path></svg><span class="escalier__point"></span></span>
+    <div class="escalier__infos">
+      <span class="escalier__espace">Espace {{ $g.espace }}</span>
+      {{- if eq $.type "explo" }}{{ with index $g.items 0 }}
+      <span class="escalier__bloc"><span class="escalier__libelle">Encadrés</span><span><strong>{{ .encadres }}</strong> · encadrant {{ .encadrant }} · {{ .effectif }} max</span></span>
+      {{- if .autonomes }}
+      <span class="escalier__bloc"><span class="escalier__libelle">Autonomes</span><span><strong>{{ .autonomes }}</strong> · {{ .effectifAutonomes }} max</span></span>
+      {{- else }}
+      <span class="escalier__bloc escalier__bloc--vide"><span class="escalier__libelle">Autonomes</span><span>Pas d’autonomie dans cet espace</span></span>
+      {{- end }}
+      {{- end }}{{ else }}
+      {{- range $g.items }}
+      <span class="escalier__bloc"><span class="escalier__libelle">Élèves</span><span><strong>{{ .eleves }}</strong> · enseignant {{ .enseignant }} · {{ .effectif }} max</span></span>
+      {{- end }}
+      {{- end }}
+    </div>
+  </li>
+  {{- end }}
+</ol>

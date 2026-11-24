@@ -491,11 +491,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .cds { display: flex; flex-direction: column; gap: 24px; }
 .cds__officiel { margin: 0; font-size: 15px; color: var(--texte-3); }
 .ref { font-family: var(--police-mono); font-size: 12px; font-weight: 400; color: var(--texte-4); background: var(--puce); border-radius: 4px; padding: 2px 6px; white-space: nowrap; }
-.cds-tableau { padding: 24px; display: flex; flex-direction: column; gap: 16px; }
-.cds-tableau__entete { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-.cds-tableau__titre { margin: 0; font-size: 18px; font-weight: 600; }
-.cds-tableau [role="tabpanel"] { display: flex; flex-direction: column; gap: 16px; }
-.cds-tableau [role="tabpanel"][hidden] { display: none; }
 .cds-tableau__intro { margin: 0; font-size: 14px; color: var(--texte-4); }
 .cds-tableau__defilement { overflow-x: auto; }
 .cds-tableau__note { margin: 0; font-size: 14px; line-height: 1.6; color: var(--texte-4); }
@@ -874,18 +869,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   /* Explore le CdS */
   .cds { gap: 16px; }
   .cds__officiel { font-size: 14px; }
-  .cds-tableau { padding: 16px; gap: 12px; }
-  .cds-tableau__titre { font-size: 16px; }
-  .cds-tableau .segments { width: 100%; }
-  .cds-tableau [role="tabpanel"] { gap: 10px; }
-  .espaces { display: flex; flex-direction: column; gap: 10px; }
-  .espace { border: 1px solid var(--bordure); border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; }
-  .espace__nom { font-family: var(--police-mono); font-size: 15px; font-weight: 500; color: var(--bleu); }
-  .espace__ligne { display: flex; justify-content: space-between; gap: 8px; }
-  .espace__libelle { color: var(--texte-4); flex: 0 0 auto; }
-  .espace__valeur { text-align: right; }
-  .espace__valeur strong { font-weight: 600; }
-  .espace__vide { padding-top: 8px; border-top: 1px dashed var(--bordure); color: #5F6E7C; }
   .cds-tableau__note { font-size: 13px; }
   .questions { display: flex; flex-direction: column; align-items: stretch; gap: 0; background: var(--blanc); border: 1px solid var(--bordure); border-radius: 12px; padding: 16px 16px 4px; }
   .questions__titre, .questions__titre:has(.mobile) { display: block; margin-bottom: 6px; }
@@ -2546,3 +2529,39 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .mmc .cat small { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .mmc .grp > button { gap: 10px; }
 .mmc .root { font-size: 14px; padding: 8px 10px; letter-spacing: -0.01em; hyphens: auto; }
+
+/* Explore le Code du Sport : escaliers de profondeur « Qui peut plonger où » (partials/escalier-cds.html). */
+.cds-escaliers { display: flex; flex-direction: column; gap: 16px; }
+.cds-escalier { padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.cds-escalier__tete { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.cds-escalier__titre { margin: 0; font-size: 18px; font-weight: 600; }
+.escalier { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; }
+.escalier__surface, .escalier__marche { display: grid; grid-template-columns: 56px 180px minmax(0, 1fr); column-gap: 16px; align-items: stretch; }
+.escalier__surface { min-height: 30px; }
+.escalier__marche { min-height: 64px; }
+.escalier__prof { align-self: center; justify-self: end; font-family: var(--police-mono); font-size: 13px; font-weight: 500; color: var(--bleu); white-space: nowrap; }
+.escalier__surface .escalier__prof, .escalier__surface-texte { color: var(--texte-4); font-weight: 400; }
+.escalier__surface-texte { align-self: center; font-size: 13px; }
+.escalier__trace { position: relative; display: block; }
+.escalier__trace svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.escalier__trace path { fill: none; stroke: var(--bleu); stroke-width: 2.5; stroke-linejoin: round; }
+.escalier__surface .escalier__trace::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px dashed var(--bleu-courbe); }
+.escalier__point { position: absolute; top: 50%; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; background: var(--blanc); border: 2.5px solid var(--bleu); }
+.escalier__marche--0 .escalier__point { left: 17%; }
+.escalier__marche--1 .escalier__point { left: 35%; }
+.escalier__marche--2 .escalier__point { left: 53%; }
+.escalier__marche--3 .escalier__point { left: 71%; }
+.escalier__marche--4 .escalier__point { left: 90%; }
+.escalier__infos { align-self: center; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; padding: 10px 0; border-bottom: 1px solid var(--bordure); }
+.escalier__marche:last-child .escalier__infos { border-bottom: 0; }
+.escalier__espace { flex: 0 0 100%; font-family: var(--police-mono); font-size: 12px; color: var(--texte-4); }
+.escalier__bloc { display: inline-flex; gap: 8px; align-items: baseline; font-size: 14px; line-height: 1.5; color: var(--texte-2); }
+.escalier__bloc strong { font-weight: 600; color: var(--texte); }
+.escalier__libelle { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--texte-4); }
+.escalier__bloc--vide span:last-child { color: var(--texte-4); }
+@media (max-width: 900px) {
+  .cds-escalier { padding: 16px; }
+  .escalier__surface, .escalier__marche { grid-template-columns: 34px 80px minmax(0, 1fr); column-gap: 10px; }
+  .escalier__infos { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .escalier__bloc { display: flex; flex-direction: column; gap: 0; font-size: 13.5px; }
+}

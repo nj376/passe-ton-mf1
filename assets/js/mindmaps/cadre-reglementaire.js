@@ -1,4 +1,4 @@
-/* Données de la mindmap « cadre-reglementaire » (page /capacitaire/cadre-reglementaire/), reprises du fichier d’origine mindmaps-mf1/cadre-reglementaire.html (dossier supprimé depuis).
+/* Données de la mindmap « cadre-reglementaire » (page /capacitaire/cadre-reglementaire/), reprises du fichier d’origine mindmaps-mf1/cadre-reglementaire.html (version du 24/11/2026).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). */
 const PAGE={
 title:"Cadre réglementaire",
@@ -15,8 +15,8 @@ cats:[
 tip:"Question classique : « Quel encadrant et combien d’élèves pour une formation PA40 à 35 m ? » Réponse : un E3 au minimum (MF1), 4 élèves maximum."},
 {id:"espaces-exploration",name:"Exploration à l’air",alt:"Annexe III-16 b (art. A322-82)",tags:["Encadrée ou autonome"],s:{
 "Plongée encadrée":["0-6 m : débutants, 4 plongeurs, E1, GP ou P4.","0-12 m : PE12, 4 plongeurs, E2, GP ou P4.","0-20 m : PE20, 4 plongeurs, E2, GP ou P4.","0-40 m : PE40, 4 plongeurs, E3, GP ou P4.","0-60 m : PE60, 4 plongeurs, E4."],
-"Plongée autonome":["PA12, PA20, PA40, PA60 dans l’espace correspondant.","3 plongeurs maximum par palanquée autonome.","Les mineurs ne plongent pas en autonomie."]},
-tip:"Distingue bien « encadré » (PE) et « autonome » (PA) : c’est le piège le plus fréquent des QCM."},
+"Plongée autonome":["PA12, PA20, PA40, PA60 dans l’espace correspondant.","3 plongeurs maximum par palanquée autonome.","Mineurs (A322-73, depuis le 31/10/2025) : autonomie possible sur décision du DP dès 16 ans en PA-12 et PA-20, dès 17 ans en PA-40, à l’air ou au nitrox seulement."]},
+tip:"Distingue bien « encadré » (PE) et « autonome » (PA). Attention aussi aux vieux supports : la phrase « les mineurs ne sont pas autorisés à évoluer en autonomie » n’existe plus, et l’article A322-88 est abrogé."},
 {id:"aptitudes",name:"Aptitudes PE et PA",alt:"Prérogatives des plongeurs",tags:["Niveaux FFESSM"],s:{
 "Correspondances":["N1 : PE20.","N2 : PE40 et PA20.","N3 : PA60 (et PE60).","GP-N4 : guide de palanquée, encadre en exploration.","PA12, PA20, PE12, PE40… existent aussi comme qualifications seules."],
 "Justification":["Le plongeur justifie de ses aptitudes auprès du DP (carte, carnet, attestation).","Les brevets d’autres organismes donnent des aptitudes par équivalence (annexes III-14).","La palanquée évolue dans l’espace du plongeur le plus restrictif."]}},
@@ -25,7 +25,7 @@ tip:"Distingue bien « encadré » (PE) et « autonome » (PA) : c’est le
 "Ses missions":["Fixer les caractéristiques de la plongée et établir la fiche de sécurité.","Vérifier aptitudes, matériel et conditions, constituer les palanquées.","Disposer du plan de secours et déclencher les secours si besoin."]},
 tip:"Le MF1 devient DP de plein droit : attends-toi à une étude de cas d’organisation."},
 {id:"prerogatives-mf1",name:"Prérogatives du MF1",alt:"E3 au sens du Code du sport",tags:["0-40 m","Signe les carnets"],s:{
-"Ce que permet le MF1":["Enseigner jusqu’à 40 m et encadrer en exploration dans la même zone (E3).","Être directeur de plongée.","Signer les carnets, délivrer les brevets prévus par le MFT, être tuteur de stagiaires initiateurs.","Le BEPPA permet ensuite à un E3 d’exercer des prérogatives E4."],
+"Ce que permet le MF1":["Enseigner jusqu’à 40 m et encadrer en exploration dans la même zone (E3).","Être directeur de plongée.","Signer les carnets, délivrer les brevets prévus par le MFT, être tuteur de stagiaires initiateurs.","Le BEPPA permet ensuite à un E3 d’exercer des prérogatives E4 (annexe III-15b modifiée par l’arrêté du 24 novembre 2025)."],
 "Ses obligations":["Être licencié, avec un CACI à jour.","Rester dans ses prérogatives : au-delà, il engage sa responsabilité et perd la couverture du cadre réglementaire.","Obligation de moyens envers ses élèves."]},
 tip:"Les prérogatives fédérales s’ajoutent à celles du Code du sport (« en plus des prérogatives définies par le Code du sport… »). Vérifie la liste exacte dans le MFT à jour."},
 {id:"equipements",name:"Équipements des plongeurs",alt:"Obligatoires et facultatifs",tags:["Parachute par palanquée"],s:{
@@ -38,11 +38,11 @@ tip:"Pour la liste exacte article par article, ouvre la section A322-80 et suiva
 "Entretien":["Le matériel de secours est vérifié régulièrement et entretenu."]},
 tip:"L’aspirine ne figure pas dans le Code du sport et la fédération l’a retirée de ses référentiels de secourisme (décision CDN-20-035)."},
 {id:"melanges-recycleurs",name:"Mélanges et recycleurs",alt:"Nitrox, trimix, CCR",tags:["Qualification de l’encadrant"],s:{
-"Principes":["La teneur en O2 du nitrox détermine l’espace d’évolution (A322-74).","Le plongeur et l’encadrant doivent détenir la qualification correspondant au mélange.","Analyse du mélange, étiquetage du bloc, fiche de gonflage.","L’encadrement au trimix ou à l’héliox est limité à 80 m."],
+"Principes":["La teneur en O2 du nitrox détermine l’espace d’évolution (A322-76).","Le plongeur et l’encadrant doivent détenir la qualification correspondant au mélange.","Analyse du mélange, étiquetage du bloc, fiche de gonflage.","L’encadrement au trimix ou à l’héliox est limité à 80 m."],
 "Pour le MF1":["Enseigner le nitrox suppose la qualification de moniteur nitrox.","Les recycleurs demandent des qualifications spécifiques (plongeur et moniteur) par type de machine."]},
 tip:"Le programme te demande les conditions de pratique et les qualifications, pas les calculs sur les mélanges."},
-{id:"jeunes",name:"Jeunes plongeurs",alt:"Conditions d’évolution",tags:["Pas d’autonomie","MFT"],s:{
-"Règles générales":["Un mineur n’évolue jamais en autonomie.","Autorisation du représentant légal.","Profondeurs et durées limitées selon l’âge et le brevet jeune (plongeur de bronze, d’argent, d’or…)."],
+{id:"jeunes",name:"Jeunes plongeurs",alt:"Conditions d’évolution",tags:["Autonomie dès 16 ans","MFT"],s:{
+"Règles générales":["Autonomie possible sur décision du DP dès 16 ans (PA-12, PA-20) et dès 17 ans (PA-40), à l’air ou au nitrox seulement (A322-73).","Autorisation du représentant légal.","Profondeurs et durées limitées selon l’âge et le brevet jeune (plongeur de bronze, d’argent, d’or…)."],
 "Bonnes pratiques":["Plongées courtes, eau pas trop froide, matériel adapté à la taille.","Encadrant formé à l’accueil des enfants, palanquées réduites."]},
 tip:"Les limites par tranche d’âge sont dans le MFT (cursus jeunes) : revois le tableau, c’est souvent demandé."},
 {id:"local-rex",name:"Règles locales et REX",alt:"Arrêtés préfectoraux, retour d’expérience",tags:["rex.ffessm.fr"],s:{
@@ -124,7 +124,7 @@ tip:"Le chiffre de 5 ans figure dans d’anciens supports : depuis l’arrêt�
 ],
 foot:{title:"Trois repères pour l’écrit 1",cards:[
 {t:"Code du sport d’abord",p:"Articles A322-71 à A322-101 et leurs annexes : espaces, encadrement, DP, matériel. Le MFT complète, il ne contredit pas."},
-{t:"PE ou PA ?",p:"Encadré : 4 plongeurs maximum. Autonome : 3 plongeurs, jamais de mineur. La palanquée suit l’aptitude la plus restrictive."},
+{t:"PE ou PA ?",p:"Encadré : 4 plongeurs maximum. Autonome : 3 plongeurs, mineurs dès 16 ans (PA-12, PA-20) ou 17 ans (PA-40). La palanquée suit l’aptitude la plus restrictive."},
 {t:"10/20 obligatoire",p:"Le cadre réglementaire est la seule matière notée à part : une note sous 10 ne se rattrape pas avec les autres écrits."}]},
 note:"Support de révision construit à partir du programme publié sur passe-ton-mf1.com, du Code du sport et des textes fédéraux. Vérifie toujours la version en vigueur (Légifrance, MFT, site médical FFESSM)."
 };

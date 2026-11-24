@@ -22,7 +22,7 @@ const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 const hit=it=>!q||norm(it.name+' '+(it.alt||'')+' '+(it.tags||[]).join(' ')+' '+JSON.stringify(it.s)+' '+(it.tip||'')).includes(q);
 function tree(W){
   map.classList.remove('isList');
-  const pad=4,rootW=Math.min(150,W*.19),catW=Math.min(210,W*.29),leafW=Math.min(250,W-rootW-catW-2*pad-60),gap=(W-2*pad-rootW-catW-leafW)/2;
+  const pad=4,rootW=Math.min(150,W*.19),catW=Math.min(210,W*.29),leafW=Math.min(290,W-rootW-catW-2*pad-60),gap=(W-2*pad-rootW-catW-leafW)/2;
   const rh=36,lh=30,ch=70,gb=18,xc=pad+rootW+gap,xl=xc+catW+gap;
   let y=0,h='',p='';const cats=[];
   C.forEach(c=>{const vis=open.has(c.id)?c.items:[];const bh=Math.max(vis.length*rh,ch);const cy=y+bh/2;cats.push(cy);
