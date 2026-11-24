@@ -18,6 +18,7 @@
             {
               "n": 1,
               "titre": "Découvrir les signes",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les signes de malaise et de détresse.",
               "situation": "Au sec : signes entre plongeurs d'une palanquée, et entre la palanquée et la surface.",
               "critere": "Il réalise et reconnaît chaque signe."
@@ -25,6 +26,7 @@
             {
               "n": 2,
               "titre": "Jour et nuit",
+              "curseur": "Jour → nuit, avec une lampe.",
               "objectif": "Connaître les différences de jour et de nuit.",
               "situation": "Au sec, avec une lampe.",
               "critere": "Signes de jour et de nuit justes."
@@ -32,6 +34,7 @@
             {
               "n": 3,
               "titre": "Signal de détresse en surface",
+              "curseur": "Au sec → dans l'eau, en surface.",
               "objectif": "Faire et reconnaître le signal de détresse.",
               "situation": "En surface, vu depuis le bateau ou le bord du bassin.",
               "critere": "Signal vu et compris immédiatement."
@@ -39,6 +42,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, accident simulé, en surface et en immersion.",
               "objectif": "Communiquer un accident.",
               "situation": "Accident simulé, en surface et en immersion.",
               "critere": "Signes justes et immédiats. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -55,6 +59,7 @@
             {
               "n": 1,
               "titre": "Comportements anormaux",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les signes observables et non observables.",
               "situation": "Au sec : exemples de comportements anormaux en surface et après la plongée.",
               "critere": "Il cite des signes observables et explique pourquoi il faut discuter entre plongeurs."
@@ -62,6 +67,7 @@
             {
               "n": 2,
               "titre": "Le délai d'apparition",
+              "curseur": "Pendant la plongée → après la plongée, le délai d'apparition.",
               "objectif": "Savoir que des signes peuvent apparaître plusieurs heures après la sortie de l'eau.",
               "situation": "Échange à partir de cas vécus.",
               "critere": "Il explique pourquoi la vigilance continue après la plongée."
@@ -69,6 +75,7 @@
             {
               "n": 3,
               "titre": "Repérer en situation",
+              "curseur": "Au sec → en situation, victime non annoncée.",
               "objectif": "Identifier vite un comportement anormal.",
               "situation": "Exercice annoncé : accident simulé en surface, sans dire à l'avance qui sera la victime.",
               "critere": "Repérage immédiat.",
@@ -77,6 +84,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets variés.",
               "objectif": "Identifier sans délai une situation anormale.",
               "situation": "Cas concrets variés.",
               "critere": "Situation identifiée sans délai. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -92,6 +100,7 @@
             {
               "n": 1,
               "titre": "Les trois contacts",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la prise en charge par le contact.",
               "situation": "Au sec : contact visuel permanent, contact corporel, contact oral. Signe OK pour rassurer.",
               "critere": "Il décrit les trois contacts."
@@ -99,6 +108,7 @@
             {
               "n": 2,
               "titre": "En surface",
+              "curseur": "Au sec → en surface.",
               "objectif": "Prendre contact avec la victime.",
               "situation": "Victime simulée en surface.",
               "critere": "Contact visuel gardé en permanence, victime rassurée.",
@@ -107,6 +117,7 @@
             {
               "n": 3,
               "titre": "Rapidité",
+              "curseur": "Distance courte → plus longue.",
               "objectif": "Intervenir sans perdre de temps.",
               "situation": "Accident simulé, distance courte puis plus longue.",
               "critere": "Intervention rapide et appropriée."
@@ -114,6 +125,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Apporter une première réponse.",
               "situation": "Cas concrets.",
               "critere": "Rapidité d'intervention, réponse adaptée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -129,6 +141,7 @@
             {
               "n": 1,
               "titre": "Gonfler le gilet de la victime",
+              "curseur": "Point de départ.",
               "objectif": "Mettre la victime en flottabilité positive.",
               "situation": "Victime simulée en surface.",
               "critere": "Gilet gonflé sans délai."
@@ -136,6 +149,7 @@
             {
               "n": 2,
               "titre": "Protéger les voies aériennes",
+              "curseur": "Gilet → voies aériennes, avec un peu de clapot.",
               "objectif": "Garder les voies aériennes hors de l'eau.",
               "situation": "Même situation, avec un peu de clapot si possible.",
               "critere": "Voies aériennes protégées en permanence."
@@ -143,6 +157,7 @@
             {
               "n": 3,
               "titre": "Garder le contact verbal",
+              "curseur": "Voies aériennes → contact verbal.",
               "objectif": "Parler à la victime si possible.",
               "situation": "Pendant la sécurisation.",
               "critere": "Contact verbal conservé."
@@ -150,6 +165,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Sécuriser le plongeur en surface.",
               "situation": "Cas concrets.",
               "critere": "Plongeur sécurisé, prise en charge adaptée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -172,6 +188,7 @@
             {
               "n": 1,
               "titre": "Le principe",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre que la ventilation de la victime doit être garantie en permanence.",
               "situation": "Au sec.",
               "critere": "Il explique pourquoi on maintient le détendeur en bouche."
@@ -179,6 +196,7 @@
             {
               "n": 2,
               "titre": "Détendeur en bouche",
+              "curseur": "Au sec → dans l'eau, détendeur en bouche.",
               "objectif": "Maintenir le détendeur de la victime.",
               "situation": "En surface, victime simulée.",
               "critere": "Détendeur maintenu sans interruption.",
@@ -187,6 +205,7 @@
             {
               "n": 3,
               "titre": "Position et flottabilité",
+              "curseur": "Détendeur → position et flottabilité.",
               "objectif": "Mettre la victime sur le dos, desserrer légèrement les sangles, gonfler son gilet.",
               "situation": "Même situation.",
               "critere": "Victime sur le dos, en flottabilité positive, détendeur maintenu."
@@ -194,6 +213,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Garantir la ventilation.",
               "situation": "Cas concrets.",
               "critere": "Ventilation garantie à toutes les étapes. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -210,6 +230,7 @@
             {
               "n": 1,
               "titre": "Position de départ",
+              "curseur": "Point de départ.",
               "objectif": "Se placer à côté de la victime, une main sous le bloc ou entre les omoplates.",
               "situation": "En surface.",
               "critere": "Position correcte, voies aériennes hors de l'eau."
@@ -217,6 +238,7 @@
             {
               "n": 2,
               "titre": "Prise arrière",
+              "curseur": "Position de départ → prise arrière.",
               "objectif": "Tracter avec une prise arrière.",
               "situation": "Avec et sans scaphandre : saisie sous le bras, tête de la victime sur l'épaule, propulsion dorsale.",
               "critere": "Voies aériennes bien tenues sur toute la distance.",
@@ -225,6 +247,7 @@
             {
               "n": 3,
               "titre": "Prise avant",
+              "curseur": "Prise arrière → prise avant.",
               "objectif": "Tracter avec une prise avant.",
               "situation": "Avec et sans scaphandre : propulsion ventrale en poussant la victime devant.",
               "critere": "Propulsion efficace, surveillance de la victime, arrivée prête pour la sortie."
@@ -232,6 +255,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets, distance réaliste.",
               "objectif": "Remorquer vers le point de sortie.",
               "situation": "Cas concrets, distance réaliste.",
               "critere": "Tractage sécurisant, technique adaptée au contexte. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -248,6 +272,7 @@
             {
               "n": 1,
               "titre": "Gilet ajustable",
+              "curseur": "Point de départ.",
               "objectif": "Déséquiper une victime équipée d'un gilet ajustable.",
               "situation": "Sangles, lest, harnais, léger dégonflage, dégagement.",
               "critere": "Victime libérée, voies aériennes hors de l'eau."
@@ -255,6 +280,7 @@
             {
               "n": 2,
               "titre": "Gilet enveloppant",
+              "curseur": "Gilet ajustable → gilet enveloppant.",
               "objectif": "Déséquiper une victime équipée d'un gilet enveloppant.",
               "situation": "Une des techniques présentées par le formateur, adaptée au matériel et à la morphologie.",
               "critere": "Victime libérée sans trop lâcher son détendeur, retiré le plus tard possible."
@@ -262,6 +288,7 @@
             {
               "n": 3,
               "titre": "Se déséquiper",
+              "curseur": "Victime → sauveteur.",
               "objectif": "Se déséquiper sans lâcher la victime.",
               "situation": "Le sauveteur se déséquipe après la victime et garde son gilet comme plan dur.",
               "critere": "Aucune sangle oubliée, victime tenue en permanence."
@@ -269,6 +296,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets, près du point de sortie.",
               "objectif": "Déséquiper en sécurité.",
               "situation": "Cas concrets, près du point de sortie.",
               "critere": "Techniques sûres et adaptées au contexte. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -285,6 +313,7 @@
             {
               "n": 1,
               "titre": "Le support du club",
+              "curseur": "Point de départ.",
               "objectif": "Sortir la victime sur le support habituel.",
               "situation": "Selon le club : échelle, bateau ponté, pneumatique, plage ou berge, bord de piscine.",
               "critere": "Sortie réalisée sans mettre la victime en danger.",
@@ -293,6 +322,7 @@
             {
               "n": 2,
               "titre": "À deux sauveteurs",
+              "curseur": "Un sauveteur → deux sauveteurs.",
               "objectif": "Partager l'effort.",
               "situation": "Un sauveteur dans l'eau, un à bord.",
               "critere": "Sortie coordonnée, efforts limités."
@@ -300,6 +330,7 @@
             {
               "n": 3,
               "titre": "Autres supports",
+              "curseur": "Support du club → autres supports.",
               "objectif": "Connaître les techniques des autres supports.",
               "situation": "Harnais, sangle ou aussière, plan dur ou civière, selon le matériel disponible.",
               "critere": "Il choisit la technique adaptée au support."
@@ -307,6 +338,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets, selon le milieu de pratique.",
               "objectif": "Sortir la victime de l'eau.",
               "situation": "Cas concrets, selon le milieu de pratique.",
               "critere": "Hissage réalisé de façon sécurisante. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -322,6 +354,7 @@
             {
               "n": 1,
               "titre": "Zone sécurisée",
+              "curseur": "Point de départ.",
               "objectif": "Installer la victime à l'abri du sur-accident.",
               "situation": "À bord ou au sol : chute d'objet, froid, chaleur.",
               "critere": "Zone choisie et sécurisée."
@@ -329,6 +362,7 @@
             {
               "n": 2,
               "titre": "Position de confort",
+              "curseur": "Zone sécurisée → position de confort.",
               "objectif": "Adapter la position à l'état de la victime.",
               "situation": "Différents états simulés.",
               "critere": "Position adaptée."
@@ -336,6 +370,7 @@
             {
               "n": 3,
               "titre": "Enchaîner",
+              "curseur": "Gestes séparés → accident simulé complet.",
               "objectif": "Relier la sortie de l'eau et la prise en charge.",
               "situation": "Accident simulé complet.",
               "critere": "Victime installée sans délai."
@@ -343,6 +378,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Mettre la victime en sécurité.",
               "situation": "Cas concrets.",
               "critere": "Accidenté mis en sécurité. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -365,6 +401,7 @@
             {
               "n": 1,
               "titre": "La fiche de sécurité",
+              "curseur": "Point de départ.",
               "objectif": "Connaître et utiliser la fiche de sécurité.",
               "situation": "Au sec : présentation de la fiche.",
               "critere": "Il sait y lire et y noter les paramètres."
@@ -372,6 +409,7 @@
             {
               "n": 2,
               "titre": "Vérifier la palanquée",
+              "curseur": "Au sec → cas simulé, composition de la palanquée.",
               "objectif": "Vérifier la composition et l'état des autres membres.",
               "situation": "Cas simulé.",
               "critere": "Composition vérifiée, intégrité de chacun contrôlée."
@@ -379,6 +417,7 @@
             {
               "n": 3,
               "titre": "Paramètres et désaturation",
+              "curseur": "Composition → paramètres et désaturation.",
               "objectif": "Relever les paramètres et vérifier la désaturation.",
               "situation": "Cas simulé.",
               "critere": "Paramètres relevés, désaturation vérifiée, palanquée surveillée."
@@ -386,6 +425,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Prendre en charge la palanquée.",
               "situation": "Cas concrets.",
               "critere": "Recueil exhaustif, palanquée surveillée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -401,6 +441,7 @@
             {
               "n": 1,
               "titre": "Moyens de rappel",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les moyens de rappel disponibles.",
               "situation": "Au sec, selon le club et le site.",
               "critere": "Il cite les moyens de rappel."
@@ -408,6 +449,7 @@
             {
               "n": 2,
               "titre": "Recueillir les informations",
+              "curseur": "Rappeler → recueillir les informations.",
               "objectif": "Connaître les équipes encore à l'eau.",
               "situation": "Nombre, temps de plongée, paliers selon les consignes du DP.",
               "critere": "Informations complètes."
@@ -415,6 +457,7 @@
             {
               "n": 3,
               "titre": "Vérifier le retour",
+              "curseur": "Recueillir → vérifier le retour.",
               "objectif": "Pointer le retour des palanquées sur la fiche de sécurité.",
               "situation": "Cas simulé.",
               "critere": "Toutes les palanquées pointées."
@@ -422,6 +465,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Gérer les palanquées encore à l'eau.",
               "situation": "Cas concrets.",
               "critere": "Fiche de sécurité renseignée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -437,6 +481,7 @@
             {
               "n": 1,
               "titre": "Pourquoi",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre les risques du matériel épars.",
               "situation": "Sur-accident, gêne des secours, hélitreuillage.",
               "critere": "Il explique les risques."
@@ -444,6 +489,7 @@
             {
               "n": 2,
               "titre": "Regrouper",
+              "curseur": "Comprendre → regrouper.",
               "objectif": "Mettre le matériel en sécurité.",
               "situation": "Sur le bateau ou au bord.",
               "critere": "Matériel regroupé."
@@ -451,6 +497,7 @@
             {
               "n": 3,
               "titre": "Arrimer",
+              "curseur": "Regrouper → arrimer, hélitreuillage possible.",
               "objectif": "Fixer le matériel.",
               "situation": "Cas simulé avec hélitreuillage possible.",
               "critere": "Matériel arrimé."
@@ -458,6 +505,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Regrouper le matériel.",
               "situation": "Cas concrets.",
               "critere": "Matériel regroupé et arrimé. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -473,6 +521,7 @@
             {
               "n": 1,
               "titre": "La fiche d'évacuation",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la fiche d'évacuation du Code du sport.",
               "situation": "Présentation de la fiche, et de la fiche de prise d'alerte du CROSS.",
               "critere": "Il connaît chaque rubrique."
@@ -480,6 +529,7 @@
             {
               "n": 2,
               "titre": "Renseigner tôt",
+              "curseur": "Présenter → renseigner tôt.",
               "objectif": "Remplir la fiche le plus tôt possible.",
               "situation": "Cas simulé : heure, symptômes, actions menées.",
               "critere": "Fiche commencée sans délai."
@@ -487,6 +537,7 @@
             {
               "n": 3,
               "titre": "Remettre aux secours",
+              "curseur": "Renseigner → remettre aux secours.",
               "objectif": "Préparer la transmission.",
               "situation": "Arrivée simulée des secours.",
               "critere": "Fiche complète remise."
@@ -494,6 +545,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Recueillir les informations.",
               "situation": "Cas concrets.",
               "critere": "Fiche d'évacuation mise en œuvre. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -516,6 +568,7 @@
             {
               "n": 1,
               "titre": "Le coordinateur",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre le rôle du coordinateur.",
               "situation": "Échange à partir du vécu des stagiaires : centraliser les informations dès l'appel de détresse.",
               "critere": "Il explique le rôle du coordinateur.",
@@ -524,6 +577,7 @@
             {
               "n": 2,
               "titre": "Les rôles",
+              "curseur": "Désigner le coordinateur → connaître les rôles.",
               "objectif": "Connaître les rôles à répartir.",
               "situation": "Évaluation de la victime, matériel d'urgence, gestes de secours, vérification des palanquées, matériel, fiche d'évacuation, alerte.",
               "critere": "Il cite tous les rôles."
@@ -531,6 +585,7 @@
             {
               "n": 3,
               "titre": "Répartir",
+              "curseur": "Connaître → répartir les rôles.",
               "objectif": "Répartir les rôles selon les compétences présentes.",
               "situation": "Cas concret, chaque stagiaire joue au moins une fois le coordinateur.",
               "critere": "Rôles répartis vite et à bon escient."
@@ -538,6 +593,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Répartir les rôles.",
               "situation": "Cas concrets.",
               "critere": "Gestion de crise maîtrisée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -553,6 +609,7 @@
             {
               "n": 1,
               "titre": "Consignes de rappel",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les consignes de rappel avant toute plongée.",
               "situation": "Selon l'organisation du club.",
               "critere": "Il les connaît avant la plongée."
@@ -560,6 +617,7 @@
             {
               "n": 2,
               "titre": "Récupérer les plongeurs en difficulté",
+              "curseur": "Nouvel élément, récupérer les plongeurs en difficulté.",
               "objectif": "Connaître les modalités de récupération.",
               "situation": "Déplacement des plongeurs ou du bateau.",
               "critere": "Modalités connues."
@@ -567,6 +625,7 @@
             {
               "n": 3,
               "titre": "Appliquer",
+              "curseur": "Connaître → appliquer, après un appel de détresse.",
               "objectif": "Appliquer la consigne de récupération.",
               "situation": "Cas concret après un appel de détresse.",
               "critere": "Plongeurs récupérés et pointés."
@@ -574,6 +633,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Gérer le retour à bord.",
               "situation": "Cas concrets.",
               "critere": "Palanquées contrôlées. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -590,6 +650,7 @@
             {
               "n": 1,
               "titre": "Circulation des informations",
+              "curseur": "Point de départ.",
               "objectif": "Faire circuler l'information entre les acteurs.",
               "situation": "Cas concret : coordinateur, alerte, gestes sur la victime.",
               "critere": "Informations transmises sans perte."
@@ -597,6 +658,7 @@
             {
               "n": 2,
               "titre": "Suivre les actions",
+              "curseur": "Faire circuler → suivre les actions.",
               "objectif": "Veiller au suivi des actions en cours.",
               "situation": "Cas concret.",
               "critere": "Rien n'est oublié."
@@ -604,6 +666,7 @@
             {
               "n": 3,
               "titre": "Tous les rôles",
+              "curseur": "Un rôle → tous les rôles.",
               "objectif": "Être mis en situation sur chacun des rôles.",
               "situation": "Rotation des rôles au fil des cas concrets.",
               "critere": "Il tient chaque rôle."
@@ -611,6 +674,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets sur l'ensemble des tâches.",
               "objectif": "Coordonner l'ensemble.",
               "situation": "Cas concrets sur l'ensemble des tâches.",
               "critere": "Actions contrôlées, documents complétés. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -634,6 +698,7 @@
             {
               "n": 1,
               "titre": "Reconnaître un malaise",
+              "curseur": "Point de départ.",
               "objectif": "Partir du malaise en général vers l'activité subaquatique.",
               "situation": "Fiche Malaise du PSC1, exemples : effort, accident de désaturation, surpression pulmonaire, hypothermie, hypoglycémie.",
               "critere": "Il reconnaît un malaise et ses signes de gravité.",
@@ -642,6 +707,7 @@
             {
               "n": 2,
               "titre": "Interroger",
+              "curseur": "Reconnaître → interroger, après une plongée.",
               "objectif": "Recueillir les informations utiles.",
               "situation": "Chronologie des troubles, localisation, déroulement de la plongée, qualité de la décompression.",
               "critere": "Questions pertinentes, réponses notées."
@@ -649,6 +715,7 @@
             {
               "n": 3,
               "titre": "Mettre au repos et protéger",
+              "curseur": "Interroger → agir.",
               "objectif": "Adopter la conduite à tenir.",
               "situation": "Cas simulé.",
               "critere": "Victime au repos, protégée, oxygène et alerte déclenchés.",
@@ -657,6 +724,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Réagir à un malaise.",
               "situation": "Cas concrets.",
               "critere": "Gestes adaptés, surveillance organisée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -672,6 +740,7 @@
             {
               "n": 1,
               "titre": "Reconnaître",
+              "curseur": "Point de départ.",
               "objectif": "Reconnaître une hémorragie.",
               "situation": "Fiches PSC1 : hémorragies externes, compression locale, pansement compressif, garrot.",
               "critere": "Il reconnaît la situation.",
@@ -680,6 +749,7 @@
             {
               "n": 2,
               "titre": "Le matériel de l'activité",
+              "curseur": "Matériel de secours → matériel de l'activité.",
               "objectif": "Utiliser ce qu'on a sous la main.",
               "situation": "Serviette, tee-shirt, ceinture, trousse de secours du bateau.",
               "critere": "Choix adapté."
@@ -687,6 +757,7 @@
             {
               "n": 3,
               "titre": "Agir",
+              "curseur": "Reconnaître → agir.",
               "objectif": "Faire le geste adapté.",
               "situation": "Cas simulé : tôle d'épave, rocher coupant.",
               "critere": "Geste juste, sur un partenaire ou un mannequin."
@@ -694,6 +765,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Réagir face à une hémorragie.",
               "situation": "Cas concrets.",
               "critere": "Gestes adaptés à la situation. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -709,6 +781,7 @@
             {
               "n": 1,
               "titre": "Situations courantes",
+              "curseur": "Point de départ.",
               "objectif": "Reconnaître et agir face aux plaies, brûlures, traumatismes.",
               "situation": "Fiches PSC1, trousse de secours du lieu de pratique.",
               "critere": "Conduite à tenir connue.",
@@ -717,6 +790,7 @@
             {
               "n": 2,
               "titre": "Situations de l'activité",
+              "curseur": "Situation courante → situation propre à l'activité.",
               "objectif": "Adapter au milieu.",
               "situation": "Piqûres et brûlures de la faune et de la flore (méduse, corail de feu), chutes sur pont glissant, coups de soleil, chocs avec le matériel.",
               "critere": "Il cite les risques de son lieu de pratique."
@@ -724,6 +798,7 @@
             {
               "n": 3,
               "titre": "Agir",
+              "curseur": "Reconnaître → agir.",
               "objectif": "Faire les gestes adaptés.",
               "situation": "Cas simulés.",
               "critere": "Gestes justes."
@@ -731,6 +806,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Réagir face à ces situations.",
               "situation": "Cas concrets.",
               "critere": "Gestes adaptés à la situation. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -746,6 +822,7 @@
             {
               "n": 1,
               "titre": "Reconnaître",
+              "curseur": "Point de départ.",
               "objectif": "Reconnaître une perte de connaissance.",
               "situation": "Fiches PSC1 : perte de connaissance, libération des voies aériennes, position latérale de sécurité.",
               "critere": "Il reconnaît la situation.",
@@ -754,6 +831,7 @@
             {
               "n": 2,
               "titre": "Les gestes",
+              "curseur": "Reconnaître → faire les gestes, sur un partenaire.",
               "objectif": "Libérer les voies aériennes et mettre en PLS.",
               "situation": "Sur un partenaire volontaire.",
               "critere": "Gestes justes."
@@ -761,6 +839,7 @@
             {
               "n": 3,
               "titre": "L'oxygène",
+              "curseur": "Gestes → oxygène.",
               "objectif": "Mettre en œuvre rapidement l'oxygène au masque à haute concentration.",
               "situation": "Cas simulé : syncope anoxique, début de noyade, évolution d'un accident de désaturation.",
               "critere": "Oxygène mis en place sans délai (lien C6).",
@@ -769,6 +848,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Réagir à une perte de connaissance.",
               "situation": "Cas concrets.",
               "critere": "Gestes adaptés, surveillance organisée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -784,6 +864,7 @@
             {
               "n": 1,
               "titre": "Reconnaître un arrêt cardiaque",
+              "curseur": "Point de départ.",
               "objectif": "Reconnaître la situation et la conduite à tenir.",
               "situation": "Fiches PSC1 : arrêt cardiaque, insufflations, compressions thoraciques.",
               "critere": "Il reconnaît la situation.",
@@ -792,6 +873,7 @@
             {
               "n": 2,
               "titre": "Les gestes sur mannequin",
+              "curseur": "Reconnaître → faire les gestes, sur mannequin puis au BAVU.",
               "objectif": "Réaliser insufflations et compressions.",
               "situation": "Sur mannequin, puis avec l'insufflateur manuel (BAVU) et le ballon réservoir.",
               "critere": "Gestes justes et réguliers.",
@@ -800,6 +882,7 @@
             {
               "n": 3,
               "titre": "Noyade et syncope en apnée",
+              "curseur": "Arrêt cardiaque → noyade et syncope en apnée.",
               "objectif": "Connaître les spécificités.",
               "situation": "Fiche noyade du PSE : oxygène, insufflations initiales avant de débuter les compressions.",
               "critere": "Il applique la séquence propre à la noyade.",
@@ -808,6 +891,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets sur mannequin.",
               "objectif": "Réagir face à une victime qui ne respire pas.",
               "situation": "Cas concrets sur mannequin.",
               "critere": "Gestes adaptés à la situation. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -823,6 +907,7 @@
             {
               "n": 1,
               "titre": "Le principe",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre pourquoi envelopper totalement la victime, tête comprise.",
               "situation": "Au sec.",
               "critere": "Il explique la déperdition par la tête."
@@ -830,6 +915,7 @@
             {
               "n": 2,
               "titre": "Mise en place",
+              "curseur": "Au sec → mise en place à l'abri.",
               "objectif": "Envelopper la victime avec la capuche.",
               "situation": "Sur un partenaire, à l'abri.",
               "critere": "Victime entièrement couverte."
@@ -837,6 +923,7 @@
             {
               "n": 3,
               "titre": "Conditions réelles",
+              "curseur": "À l'abri → en extérieur, avec du vent, en mer.",
               "objectif": "Mettre la couverture dehors.",
               "situation": "Avec du vent, sur un bateau.",
               "critere": "Couverture tenue en place."
@@ -844,6 +931,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Éviter le refroidissement de l'accidenté.",
               "situation": "Cas concrets.",
               "critere": "Couverture mise en place correctement. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -866,6 +954,7 @@
             {
               "n": 1,
               "titre": "La recommandation",
+              "curseur": "Point de départ.",
               "objectif": "Connaître le débit recommandé.",
               "situation": "Au sec : 15 litres par minute dans toutes les situations, jusqu'à la prise en charge par les services spécialisés.",
               "critere": "Il cite la recommandation sans erreur."
@@ -873,6 +962,7 @@
             {
               "n": 2,
               "titre": "Par inhalation",
+              "curseur": "Au sec → par inhalation, respiration spontanée.",
               "objectif": "Administrer l'oxygène au masque à haute concentration.",
               "situation": "Victime simulée en respiration spontanée.",
               "critere": "Masque bien placé, débit de 15 L/min.",
@@ -881,6 +971,7 @@
             {
               "n": 3,
               "titre": "Par insufflation",
+              "curseur": "Respiration spontanée → victime qui ne respire pas, par insufflation.",
               "objectif": "Administrer l'oxygène avec l'insufflateur manuel.",
               "situation": "Sur mannequin, masque de taille adaptée.",
               "critere": "Insufflations régulières sous oxygène.",
@@ -889,6 +980,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Administrer l'oxygène de façon adaptée.",
               "situation": "Cas concrets.",
               "critere": "Inhalation et insufflation utilisées à bon escient. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -904,6 +996,7 @@
             {
               "n": 1,
               "titre": "La recommandation",
+              "curseur": "Point de départ.",
               "objectif": "Savoir quoi faire boire.",
               "situation": "Eau plate, sans sucre, environ 1 litre la première heure en fractionnant.",
               "critere": "Il cite la recommandation."
@@ -911,6 +1004,7 @@
             {
               "n": 2,
               "titre": "Les contre-indications",
+              "curseur": "Recommandation → contre-indications.",
               "objectif": "Savoir quand ne pas faire boire.",
               "situation": "Victime peu coopérative ou inconsciente, nausées ou vomissements, suspicion de lésion du tube digestif.",
               "critere": "Il cite les trois cas."
@@ -918,6 +1012,7 @@
             {
               "n": 3,
               "titre": "Appliquer",
+              "curseur": "Connaître → appliquer.",
               "objectif": "Décider en situation.",
               "situation": "Cas simulés variés.",
               "critere": "Décision juste."
@@ -925,6 +1020,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Réhydrater selon la CMPN.",
               "situation": "Cas concrets.",
               "critere": "Recommandation appliquée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -940,6 +1036,7 @@
             {
               "n": 1,
               "titre": "Les services",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les services à alerter.",
               "situation": "CROSS en mer, SCMM à terre, vers un centre hyperbare.",
               "critere": "Il cite les services."
@@ -947,6 +1044,7 @@
             {
               "n": 2,
               "titre": "Toute mise sous oxygène implique l'alerte",
+              "curseur": "Savoir qui → savoir quand.",
               "objectif": "Faire le lien entre oxygène et alerte.",
               "situation": "Cas simulé.",
               "critere": "Alerte déclenchée dès la mise sous oxygène."
@@ -954,6 +1052,7 @@
             {
               "n": 3,
               "titre": "Pas de réimmersion",
+              "curseur": "Nouvel élément, pas de réimmersion.",
               "objectif": "Connaître l'interdit.",
               "situation": "Au sec.",
               "critere": "Il sait qu'on ne pratique jamais de recompression par réimmersion."
@@ -961,6 +1060,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Alerter pour l'évacuation.",
               "situation": "Cas concrets (voir C7).",
               "critere": "Alerte déclenchée sans délai. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -976,6 +1076,7 @@
             {
               "n": 1,
               "titre": "Présentation",
+              "curseur": "Point de départ.",
               "objectif": "Connaître le matériel du lieu de pratique.",
               "situation": "Bouteille, manodétendeur, débit-litre, masques, insufflateur.",
               "critere": "Il nomme chaque élément.",
@@ -984,6 +1085,7 @@
             {
               "n": 2,
               "titre": "Montage",
+              "curseur": "Présentation → montage.",
               "objectif": "Monter le kit.",
               "situation": "Au sec, plusieurs fois.",
               "critere": "Montage juste et rapide."
@@ -991,6 +1093,7 @@
             {
               "n": 3,
               "titre": "Autonomie et entretien",
+              "curseur": "Montage → autonomie et entretien.",
               "objectif": "Évaluer l'autonomie, nettoyer et désinfecter.",
               "situation": "Environ une heure à 15 L/min pour une bouteille de 5 litres à 200 bars. Nettoyage et désinfection après usage.",
               "critere": "Autonomie estimée, matériel remis en état."
@@ -998,6 +1101,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Utiliser le kit d'oxygénothérapie.",
               "situation": "Cas concrets.",
               "critere": "Kit mis en œuvre conformément aux recommandations. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -1013,6 +1117,7 @@
             {
               "n": 1,
               "titre": "Les fonctions vitales",
+              "curseur": "Point de départ.",
               "objectif": "Savoir quoi surveiller.",
               "situation": "Conscience, ventilation, circulation, pâleur, marbrures, couleur des lèvres.",
               "critere": "Il cite les éléments."
@@ -1020,6 +1125,7 @@
             {
               "n": 2,
               "titre": "Noter l'évolution",
+              "curseur": "Observer → noter.",
               "objectif": "Noter périodiquement l'état.",
               "situation": "Cas simulé, sur la fiche d'évacuation.",
               "critere": "Évolution notée régulièrement."
@@ -1027,6 +1133,7 @@
             {
               "n": 3,
               "titre": "Parler et faire parler",
+              "curseur": "Noter → parler et faire parler.",
               "objectif": "Garder le contact avec la victime.",
               "situation": "Cas simulé, attente des secours.",
               "critere": "Surveillance continue.",
@@ -1035,6 +1142,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Surveiller jusqu'aux secours.",
               "situation": "Cas concrets.",
               "critere": "Surveillance continue et notée. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -1057,6 +1165,7 @@
             {
               "n": 1,
               "titre": "Les acteurs",
+              "curseur": "Point de départ.",
               "objectif": "Connaître le bateau de plongée, le CROSS et le SCMM.",
               "situation": "Au sec : rôles et missions.",
               "critere": "Il décrit chaque acteur."
@@ -1064,6 +1173,7 @@
             {
               "n": 2,
               "titre": "Les interactions",
+              "curseur": "Acteurs → interactions.",
               "objectif": "Comprendre comment ils travaillent ensemble.",
               "situation": "Exemples tirés du vécu des stagiaires.",
               "critere": "Il décrit la chaîne."
@@ -1071,6 +1181,7 @@
             {
               "n": 3,
               "titre": "Quand appeler",
+              "curseur": "Interactions → quand appeler.",
               "objectif": "Décider d'appeler les secours.",
               "situation": "Cas : risque, vie en danger, suspicion d'accident de plongée, mise sous oxygène.",
               "critere": "Il appelle dans chaque cas, même en cas de doute."
@@ -1078,6 +1189,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Connaître la chaîne des secours.",
               "situation": "Cas concrets.",
               "critere": "Chaîne des secours connue. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -1093,6 +1205,7 @@
             {
               "n": 1,
               "titre": "La VHF",
+              "curseur": "Point de départ.",
               "objectif": "Utiliser la VHF sur le canal 16.",
               "situation": "Manœuvre de la VHF, alternat, message PAN-PAN trois fois.",
               "critere": "Appel correct en simulation."
@@ -1100,6 +1213,7 @@
             {
               "n": 2,
               "titre": "L'ASN",
+              "curseur": "VHF → ASN.",
               "objectif": "Utiliser la fonction ASN.",
               "situation": "Sélection du message et bouton « distress ».",
               "critere": "Manœuvre connue."
@@ -1107,6 +1221,7 @@
             {
               "n": 3,
               "titre": "Le téléphone",
+              "curseur": "ASN → téléphone.",
               "objectif": "Appeler le 196 à défaut de VHF.",
               "situation": "Simulation d'appel.",
               "critere": "Appel correct, accident de plongée annoncé."
@@ -1114,6 +1229,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, appel simulé avec les deux moyens.",
               "objectif": "Alerter en mer.",
               "situation": "Simulation d'appel avec les deux moyens, fiche d'évacuation par victime.",
               "critere": "Procédure conforme au plan de secours. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -1129,6 +1245,7 @@
             {
               "n": 1,
               "titre": "Les numéros",
+              "curseur": "Point de départ.",
               "objectif": "Choisir le bon numéro.",
               "situation": "196 depuis le littoral, 15 ou 112 dans les eaux intérieures.",
               "critere": "Il choisit le numéro selon le lieu."
@@ -1136,6 +1253,7 @@
             {
               "n": 2,
               "titre": "Le contexte de plongée",
+              "curseur": "Numéros → contexte de plongée.",
               "objectif": "Faire prendre en compte l'accident de plongée.",
               "situation": "Simulation : demander le CROSS ou le SCMM.",
               "critere": "Contexte de plongée annoncé clairement."
@@ -1143,6 +1261,7 @@
             {
               "n": 3,
               "titre": "Le plan de secours",
+              "curseur": "Appel → plan de secours du club.",
               "objectif": "Retrouver les procédures dans le plan de secours.",
               "situation": "Plan de secours du club.",
               "critere": "Il trouve la procédure du site."
@@ -1150,6 +1269,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, simulations.",
               "objectif": "Alerter à terre.",
               "situation": "Simulations.",
               "critere": "Procédure conforme au plan de secours. Correspond aux critères de réalisation ou d'évaluation du référentiel."
@@ -1165,6 +1285,7 @@
             {
               "n": 1,
               "titre": "Le message",
+              "curseur": "Point de départ.",
               "objectif": "Construire le message d'alerte.",
               "situation": "Identité et embarcation, localisation précise, nature (accident de plongée), risques, gravité, nombre de personnes, premières mesures.",
               "critere": "Message complet, dans l'ordre."
@@ -1172,6 +1293,7 @@
             {
               "n": 2,
               "titre": "Le dialogue",
+              "curseur": "Message → dialogue.",
               "objectif": "Répondre aux questions des secours.",
               "situation": "Simulation avec un formateur dans le rôle du CROSS.",
               "critere": "Réponses claires, instructions attendues avant de raccrocher."
@@ -1179,6 +1301,7 @@
             {
               "n": 3,
               "titre": "Le suivi",
+              "curseur": "Dialogue → suivi.",
               "objectif": "Signaler toute évolution.",
               "situation": "État de la victime, nouvelle victime, autonomie en oxygène.",
               "critere": "Évolutions transmises."
@@ -1186,6 +1309,7 @@
             {
               "n": 4,
               "titre": "Cas concret (évaluation)",
+              "curseur": "Évaluation, cas concrets.",
               "objectif": "Transmettre les informations et assurer le suivi.",
               "situation": "Cas concrets.",
               "critere": "Éléments transmis aux secours, fiche d'évacuation fiable et exhaustive. Correspond aux critères de réalisation ou d'évaluation du référentiel."
