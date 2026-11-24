@@ -1,0 +1,19 @@
+{{- /* Schéma « les sept modules du livret » : trois familles de modules du stage en situation (MFT MF1, juillet 2026). */ -}}
+{{- $familles := slice
+  (dict "n" "3" "q" "Enseigner la pratique" "s" "3 modules" "t" (slice "Entre 0 et 6 m (dispense si tu es initiateur)" "Entre 6 et 20 m, en milieu naturel, E4 sur le site" "Entre 20 et 40 m, en milieu naturel, E4 dans ta palanquée"))
+  (dict "n" "2" "q" "Enseigner la théorie" "s" "2 modules" "t" (slice "PE12, N1, PA20, PE40 et N2" "PA40, PE60, N3, GP-N4 et DP-N5"))
+  (dict "n" "2" "q" "Organiser" "s" "2 modules" "t" (slice "Organiser et sécuriser l’activité (dispense si tu es DP-N5)" "Organiser un cursus de formation"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $familles }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="schema-qq__sujet">{{ .s }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Sept modules en tout. Ils doivent tous être validés, avec le module capacitaire, avant d’entrer en stage final.</figcaption>
+</figure>

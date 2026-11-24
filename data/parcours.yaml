@@ -56,6 +56,15 @@ filieres:
       - "Objectif : compléments méthodologiques pour enseigner à tous niveaux et organiser la plongée entre 20 et 40 m"
 
 # En parallèle du cursus
+# Encart du livret pédagogique, sous le module capacitaire (accueil) : lien vers la fiche Ressources.
+livret:
+  badge: "Pendant le stage en situation"
+  titre: "Le livret pédagogique"
+  essentiel: "Remis à la fin du stage initial, il suit chacune de tes séances avec un tuteur. Par module : **5 séances complètes, dont 2 validées**."
+  lien:
+    texte: "Remplir le livret pas à pas"
+    url: "/ressources/remplir-le-livret-pedagogique/"
+
 capacitaire:
   titre: "Module capacitaire"
   resume: "Les connaissances théoriques, à valider avant le stage final."

@@ -1278,7 +1278,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 /* Tronc commun + module capacitaire en parallèle (à droite sur ordinateur) */
 .frise-tronc { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); grid-template-areas: "etapes capa"; gap: 24px; align-items: start; }
 .frise-etapes { grid-area: etapes; display: flex; flex-direction: column; gap: 16px; }
-.frise-capa { grid-area: capa; background: var(--blanc); border: 1.5px dashed var(--bordure-aide); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.frise-cote { grid-area: capa; display: flex; flex-direction: column; gap: 16px; }
+.frise-capa { background: var(--blanc); border: 1.5px dashed var(--bordure-aide); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
 .frise-capa__badge { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--bleu); background: var(--bleu-clair); padding: 4px 10px; border-radius: 4px; }
 .frise-capa__titre { margin: 0; font-size: 20px; font-weight: 600; }
 .frise-capa__essentiel { margin: 0; line-height: 1.6; color: var(--texte-3); }
@@ -2252,7 +2253,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .schema-tableau__zone--securite strong { color: var(--rouge-titre); }
 
 /* Cursus : trois phases, puis la validation */
-.ress-fiche .schema-phases { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, .8fr); gap: 8px; align-items: end; }
+.ress-fiche .schema-phases { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, .8fr); gap: 8px; align-items: start; }
 .ress-fiche .schema-phases__phase { margin: 0; padding: 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); display: flex; flex-direction: column; gap: 3px; }
 .schema-phases__phase--1 { border-top: 4px solid var(--bleu-courbe); }
 .schema-phases__phase--2 { border-top: 4px solid var(--bleu); min-height: 150px; }
@@ -2566,4 +2567,29 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .escalier__surface, .escalier__marche { grid-template-columns: 34px 80px minmax(0, 1fr); column-gap: 10px; }
   .escalier__infos { flex-direction: column; align-items: flex-start; gap: 4px; }
   .escalier__bloc { display: flex; flex-direction: column; gap: 0; font-size: 13.5px; }
+}
+
+/* Livret pédagogique : familles de modules et page de livret remplie (fiche « Remplir le livret pédagogique ») */
+.ress-fiche .schema-qq__liste { margin: 6px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.5; color: var(--texte-2); }
+.ress-fiche .schema-qq__liste li { margin-bottom: 3px; }
+.livret-grille__cadre { overflow-x: auto; margin-bottom: 14px; border-radius: 8px; border: 1px solid var(--bordure); background: var(--blanc); }
+.livret-grille__cadre:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.ress-fiche table.livret-grille { display: table; width: 100%; min-width: 760px; margin: 0; border-collapse: collapse; font-size: 13px; line-height: 1.4; }
+.ress-fiche .livret-grille thead { display: table-header-group; position: static; width: auto; height: auto; overflow: visible; clip: auto; }
+.ress-fiche .livret-grille tbody { display: table-row-group; }
+.ress-fiche .livret-grille tr { display: table-row; padding: 0; border: 0; }
+.ress-fiche .livret-grille th, .ress-fiche .livret-grille td { display: table-cell; width: auto; padding: 6px 8px; border: 0; border-bottom: 1px solid var(--bordure); text-align: center; vertical-align: middle; }
+.ress-fiche .livret-grille th[scope="row"] { width: 230px; text-align: left; font-weight: 500; color: var(--texte-2); }
+.ress-fiche .livret-grille thead th { background: var(--bleu-clair); font-weight: 600; color: var(--texte); }
+.ress-fiche .livret-grille__info td { color: var(--texte-2); }
+.ress-fiche .livret-grille__phase th { padding-top: 10px; text-align: left; font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--bleu); background: var(--bleu-tres-clair); }
+.ress-fiche .livret-grille__bilan th, .ress-fiche .livret-grille__bilan td { background: var(--bleu-clair); color: var(--texte); }
+.livret-code { display: inline-block; min-width: 34px; padding: 1px 6px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.livret-code--a { background: var(--vert-fond); color: var(--vert-texte); }
+.livret-code--eca { background: var(--orange-fond); color: var(--orange-texte); border: 1px solid var(--orange-bordure); }
+.livret-code--nt { background: var(--blanc); color: var(--texte-4); border: 1px dashed var(--bordure-champ); }
+@media (max-width: 900px) {
+  .ress-fiche table.livret-grille { min-width: 640px; }
+  .ress-fiche .livret-grille th[scope="row"] { width: 150px; position: sticky; left: 0; z-index: 1; background: var(--blanc); }
+  .ress-fiche .livret-grille__bilan th[scope="row"], .ress-fiche .livret-grille thead th[scope="row"] { background: var(--bleu-clair); }
 }

@@ -25,6 +25,8 @@ Le positionnement est lié à l’**évaluation initiale** : ce que l’élève
 3. **Lesquels sont acquis au niveau précédent ?** Ceux-là, tu ne les enseignes pas : tu les vérifies (évaluation initiale).
 4. **Range-les dans l’ordre chronologique** : tu obtiens la place de ta séance et ce qui doit la précéder.
 
+Attention : cet ordre est celui des **apprentissages**, pas celui **d’une plongée**. On n’enseigne pas la mise à l’eau en premier parce qu’elle arrive en premier dans la plongée : on enseigne d’abord ce dont l’élève a besoin pour la suite, en sécurité.
+
 Pour les notions de base (acquis, prérequis techniques et de sécurité), voir aussi [Concevoir une progression](/ressources/concevoir-une-progression/).
 
 ## Exemple pratique : l’assistance au PA20

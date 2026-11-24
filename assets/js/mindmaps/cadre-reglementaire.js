@@ -108,7 +108,7 @@ tip:"La traçabilité de l’entretien est la meilleure preuve de bonne foi en c
 {id:"blocs",name:"Blocs de plongée",law:"Arrêté du 20/11/2017",items:[
 {id:"tiv",name:"Régime TIV",alt:"Inspection et requalification",tags:["IV annuelle","Requalif 6 ans"],s:{
 "Inspection périodique":["Inspection visuelle au moins tous les 12 mois par un TIV (technicien en inspection visuelle) selon le cahier des charges fédéral.","Chaque inspection donne lieu à un compte rendu établi par le TIV et remis à la structure, qui tient à jour le registre des bouteilles."],
-"Requalification":["Sans inspection annuelle : requalification tous les 2 ans.","Avec inspection annuelle par TIV (ou avant utilisation si la dernière date de plus d’un an) : tous les 6 ans.","Réalisée par un organisme habilité : épreuve hydraulique et attestation."]},
+"Requalification":["Sans inspection annuelle : requalification tous les 2 ans.","Avec inspection annuelle par TIV (ou avant utilisation si la dernière date de plus d’un an) : tous les 6 ans.","Sous la responsabilité d’un organisme habilité : vérification du dossier, inspection visuelle, épreuve hydraulique à la pression d’épreuve gravée et vérification des accessoires ; attestation de requalification et poinçon gravé avec la date."]},
 tip:"Le chiffre de 5 ans figure dans d’anciens supports : depuis l’arrêté de 2017, c’est 6 ans."},
 {id:"precautions-blocs",name:"Précautions d’emploi",alt:"Utilisation et entretien",tags:["Charles : P/T"],s:{
 "Utilisation":["Ouvrir le robinet doucement, ne pas laisser le bloc au soleil ni le faire chuter.","Transporter et stocker attaché, couché ou calé.","Ne pas vider complètement : garder une pression résiduelle pour éviter l’entrée d’humidité."],

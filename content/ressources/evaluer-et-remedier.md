@@ -45,6 +45,17 @@ Le MFT emploie souvent des adjectifs : « rapide », « efficace », « r�
 - **Réaliste** : ton élève en a-t-il les capacités ?
 - **Temporel** : une notion de temps.
 
+Pour trouver ton indicateur, pioche dans six familles de critères :
+
+| Famille | Ce que tu mesures | Exemples |
+|---|---|---|
+| **Temps** | Un délai (immédiat, en moins de x secondes) ou une durée | Prise en charge d’un équipier, vidage de masque, apnée |
+| **Distance** | Horizontale (en surface, en pleine eau) ou verticale (profondeur) | Déplacement en PMT, orientation, stabilisation à plus ou moins 1 m, arrêt entre 5 et 3 m |
+| **Vitesse** | Entre un minimum et un maximum | Descente, remontée, assistance |
+| **Quantité** | Un nombre de fois, un niveau d’eau | Vidage de masque en deux expirations, exercice réussi deux fois |
+| **Comportement** | Précipitation, essoufflement, stress, appréhension, ventilation continue | Tous les gestes techniques, la communication |
+| **Qualité du geste** | Correct et efficace, signe juste | Toute technique dont la gestuelle s’observe |
+
 ### Exemple : l’intervention sur un plongeur en difficulté au N2
 
 Le MFT N2 demande, dans au moins deux situations différentes réalisées chacune intégralement au moins deux fois, « une bonne interprétation de la situation, une prise en charge rapide et efficace, une remontée régulière à une vitesse adaptée aux moyens de désaturation utilisés, un arrêt marqué dans la zone 5 à 3 m et une sortie d’eau sécurisée ».

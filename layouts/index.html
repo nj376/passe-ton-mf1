@@ -107,6 +107,7 @@
 
       {{- /* Tronc commun, avec le module capacitaire en parallèle (à droite sur ordinateur, juste après l’étape 1 sur téléphone) */}}
       <div class="frise-tronc">
+        <div class="frise-cote">
         {{- with $P.capacitaire }}
         <aside class="frise-capa" aria-labelledby="frise-capa-titre">
           <span class="frise-capa__badge">En parallèle</span>
@@ -119,6 +120,15 @@
           <a class="lien-texte frise-capa__lien" href="{{ .lien.url | relURL }}">{{ .lien.texte }} →</a>
         </aside>
         {{- end }}
+        {{- with $P.livret }}
+        <aside class="frise-capa frise-capa--livret" aria-labelledby="frise-livret-titre">
+          <span class="frise-capa__badge">{{ .badge }}</span>
+          <h3 id="frise-livret-titre" class="frise-capa__titre">{{ .titre }}</h3>
+          <p class="frise-capa__essentiel">{{ .essentiel | markdownify }}</p>
+          <a class="lien-texte frise-capa__lien" href="{{ .lien.url | relURL }}">{{ .lien.texte }} →</a>
+        </aside>
+        {{- end }}
+        </div>
         <div class="frise-etapes">
           {{- range $P.etapes }}
           {{ partial "parcours-etape.html" (dict "e" . "epreuves" (cond (isset . "examen") $P.epreuves false) "classe" (cond (isset . "examen") "examen" "")) }}

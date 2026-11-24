@@ -47,6 +47,21 @@ Trois conséquences :
 2. **Vérifie toujours le prérequis** avant d’enseigner : c’est l’évaluation initiale. Pas besoin de remonter plus loin : on ne vérifie pas les prérequis des prérequis.
 3. **Tiens compte des acquis au-dessus du niveau** : un ancien nageur, un apnéiste ou un plongeur venu d’une autre fédération n’a pas besoin de tout reprendre au début.
 
+Un prérequis dépend aussi du **contexte** : la même technique n’en demande pas autant en piscine qu’en mer. Quelques exemples :
+
+| Pour enseigner… | Dans ce contexte | Il faut d’abord… |
+|---|---|---|
+| Le palmage en PMT, en perfectionnement | En surface, sans appui | Être initié au palmage, ventiler sur le tuba et le vider |
+| L’apnée expiratoire | En surface, avec appui | L’apnée inspiratoire, plus facile |
+| Le gilet | En surface, en piscine, sur un fond de 2 m | Se maintenir en surface en scaphandre, palmer en sustentation |
+| Gréer et dégréer son matériel | Hors de l’eau | Rien |
+| La remontée sur expiration contrôlée (PE20) | En milieu naturel | L’avoir faite en piscine, le lestage, le palmage en scaphandre, la ventilation en immersion |
+| Le lâcher et la reprise d’embout | En piscine, petit fond | Un minimum d’équilibre en scaphandre, l’apnée inspiratoire et expiratoire |
+| La réaction à une panne d’air | En piscine, receveur en appui sur un fond de 2 m | Le lâcher et la reprise d’embout, la remontée sur expiration contrôlée |
+| L’assistance au gilet (PA20) | Sur un fond de 20 m | La stabilisation à 20 m, la remontée individuelle à vitesse maîtrisée |
+
+Le prérequis de sécurité est souvent celui qu’on oublie : par exemple, la remontée sur expiration contrôlée avant tout exercice vertical, au cas où l’élève lâche son embout.
+
 ## 4. La difficulté : l’échelle et les curseurs
 
 Pour faire monter la difficulté, repère d’abord tous les paramètres sur lesquels tu peux jouer. Ce sont les **curseurs**. Tu en retrouves pour chaque technique sur la page [Progression](/progression/).
@@ -59,6 +74,8 @@ Pour faire monter la difficulté, repère d’abord tous les paramètres sur les
 | **Annonce** | Exercice annoncé, sur signe | Situation inopinée, au cours de la plongée |
 | **Effort** | Au repos | Avec un léger effort |
 | **Enchaînement** | Une technique isolée | Plusieurs techniques enchaînées |
+| **Matériel** | En maillot, en PMT | En combinaison, en scaphandre |
+| **Milieu** | Piscine, eau claire et chaude | Milieu naturel, visibilité réduite, froid, faune |
 
 **La règle d’or : un seul curseur à la fois.** Voici une échelle possible pour le vidage de masque, compétence N1 « Se ventiler ».
 

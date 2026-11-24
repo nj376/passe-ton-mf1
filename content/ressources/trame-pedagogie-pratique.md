@@ -16,6 +16,8 @@ Tu as **30 minutes pour préparer**, puis **30 minutes pour exposer, réaliser l
 
 Comme toute séance, elle passe par trois phases : **concevoir, réaliser, évaluer**.
 
+La démarche de conception, avec un exemple complet, les objectifs opérationnels et les méthodes pédagogiques, est détaillée dans la fiche [Concevoir une séance pratique](/ressources/concevoir-une-seance-pratique/).
+
 ## 1. Concevoir : la fiche de préparation
 
 Remplis-la au brouillon pendant la préparation, en t’aidant de la [méthode QQCOQP](/ressources/qqcoqp/). Elle sert à ne rien oublier, pas à être lue au jury.

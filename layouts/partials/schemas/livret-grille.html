@@ -1,0 +1,43 @@
+{{- /* Schéma « une page de livret remplie » : exemple fictif d’un module d’enseignement pratique entre 6 et 20 m.
+       Grille reprise du livret (items du MFT MF1, juillet 2026). Six séances : une incomplète, cinq complètes dont deux validées.
+       Codes : A (acquis), ECA (en cours d’acquisition), NT (non travaillé). */ -}}
+{{- $seances := slice
+  (dict "date" "12/04" "e4" "E4 n° 1" "niveau" "N1" "theme" "Stabilisation" "c" (slice "A" "A" "ECA" "ECA" "A" "ECA" "ECA" "NT"))
+  (dict "date" "19/04" "e4" "E4 n° 1" "niveau" "N2" "theme" "Remontée contrôlée" "c" (slice "A" "A" "A" "ECA" "A" "A" "ECA" "ECA"))
+  (dict "date" "26/04" "e4" "E4 n° 2" "niveau" "N3" "theme" "Orientation" "c" (slice "A" "A" "A" "A" "A" "A" "A" "A"))
+  (dict "date" "03/05" "e4" "E4 n° 1" "niveau" "N1" "theme" "Palmage" "c" (slice "A" "ECA" "A" "A" "A" "A" "A" "ECA"))
+  (dict "date" "10/05" "e4" "E4 n° 1" "niveau" "N2" "theme" "Assistance au gilet" "c" (slice "A" "A" "A" "A" "A" "A" "A" "A"))
+  (dict "date" "17/05" "e4" "E4 n° 1" "niveau" "N1" "theme" "Vidage de masque" "c" (slice "A" "A" "A" "A" "A" "ECA" "A" "A"))
+-}}
+{{- $phases := slice
+  (dict "p" "Concevoir" "items" (slice "Définir les objectifs de formation" "Positionner le thème dans le cursus" "Justifier la séance" "Définir une stratégie d’enseignement"))
+  (dict "p" "Réaliser" "items" (slice "Accueillir les plongeurs" "Animer une séance et communiquer" "Mettre en œuvre une stratégie de formation"))
+  (dict "p" "Évaluer" "items" (slice "Réaliser une évaluation adaptée (initiale, finale, formative…)"))
+-}}
+<figure class="ress-schema">
+  <div class="livret-grille__cadre" tabindex="0" role="region" aria-label="Exemple de page de livret remplie, défilable sur petit écran">
+  <table class="livret-grille">
+    <thead>
+      <tr><th scope="row">Date</th>{{ range $seances }}<th scope="col">{{ .date }}</th>{{ end }}</tr>
+    </thead>
+    <tbody>
+      <tr class="livret-grille__info"><th scope="row">Formateur E4</th>{{ range $seances }}<td>{{ .e4 }}</td>{{ end }}</tr>
+      <tr class="livret-grille__info"><th scope="row">Niveau travaillé</th>{{ range $seances }}<td>{{ .niveau }}</td>{{ end }}</tr>
+      <tr class="livret-grille__info"><th scope="row">Thème travaillé</th>{{ range $seances }}<td>{{ .theme }}</td>{{ end }}</tr>
+      {{- $i := 0 }}
+      {{- range $phases }}
+      <tr class="livret-grille__phase"><th scope="rowgroup" colspan="{{ add (len $seances) 1 }}">{{ .p }}</th></tr>
+      {{- range .items }}
+      <tr><th scope="row">{{ . }}</th>
+        {{- range $seances }}{{ $code := index .c $i }}<td><span class="livret-code livret-code--{{ lower $code }}">{{ $code }}</span></td>{{ end }}
+      </tr>
+      {{- $i = add $i 1 }}
+      {{- end }}
+      {{- end }}
+      <tr class="livret-grille__bilan"><th scope="row">Séance complète ?</th>{{ range $seances }}<td>{{ if in .c "NT" }}Non{{ else }}<strong>Oui</strong>{{ end }}</td>{{ end }}</tr>
+      <tr class="livret-grille__bilan"><th scope="row">Séance validée ?</th>{{ range $seances }}<td>{{ if or (in .c "NT") (in .c "ECA") }}Non{{ else }}<strong>Oui</strong>{{ end }}</td>{{ end }}</tr>
+    </tbody>
+  </table>
+  </div>
+  <figcaption>Exemple fictif. Le 12/04, une case est restée NT : la séance n’est pas complète et ne compte pas. Les cinq autres sont complètes, et deux sont validées (26/04 et 10/05) : le compte est bon pour ce module.</figcaption>
+</figure>
