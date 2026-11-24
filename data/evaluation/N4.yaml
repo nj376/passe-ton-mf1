@@ -336,9 +336,9 @@ N4-descente:
       adapter:
         - "Il descend devant sans voir la palanquée : on commence à l'étape 1, « Descente le long du pendeur »."
         - "Il garde la palanquée au pendeur : on passe à l'étape 2, « Descente en pleine eau »."
-        - "Il maintient la cohésion en pleine eau : on travaille l'étape 3, « Contexte plus difficile »."
+        - "Il maintient la cohésion en pleine eau : on passe à l'étape 3, « Avec des débutants », puis à l'étape 4, « Eau turbide ou courant »."
     bilan:
-      situation: "l'étape 4 : épreuve 4 (évaluation), sujet tiré"
+      situation: "l'étape 5 : épreuve 4 (évaluation), sujet tiré"
       criteres:
         - "La palanquée descend groupée, chacun sous son regard."
         - "La vitesse est adaptée au plus lent, la cohésion maintenue jusqu'au fond."
@@ -533,9 +533,9 @@ N4-findeplongee:
         - "Il engage la remontée trop tard ou sans vérifier chacun : on commence à l'étape 1, « Décider de la fin de plongée »."
         - "Il ne sait pas gérer des ordinateurs différents : on passe à l'étape 2, « Organiser la désaturation »."
         - "Il gère bien la désaturation : on travaille l'étape 3, « Les paliers »."
-        - "Il tient déjà les paliers en palanquée : on passe à l'étape 4, « Palanquée hétérogène, courant »."
+        - "Il tient déjà les paliers en palanquée : on passe à l'étape 4, « Palanquée hétérogène », puis à l'étape 5, « Léger courant au palier »."
     bilan:
-      situation: "l'étape 5 : épreuve 4 (évaluation), sujet tiré"
+      situation: "l'étape 6 : épreuve 4 (évaluation), sujet tiré"
       criteres:
         - "La remontée est engagée à temps pour tous."
         - "La désaturation est gérée de façon pertinente, selon le plongeur le plus contraint."
@@ -816,10 +816,10 @@ N4-techniques:
       adapter:
         - "Il ne tient pas sa stabilisation ou stresse masque retiré : on reste à l'étape 1 avant d'aller plus loin."
         - "Il est stable mais n'a jamais descendu tête en bas : on passe à l'étape 2, « Descente tête en bas, à faible profondeur »."
-        - "Il descend vertical sans vrille : on passe à l'étape 3, « Descente jusqu'à 40 m »."
+        - "Il descend vertical sans vrille : on passe à l'étape 3, « Descente en pleine eau », puis à l'étape 4, « Descente jusqu'à 40 m »."
         - "Il a du mal à équilibrer tête en bas : on reste plus longtemps à l'étape 2, en équilibrant tôt."
     bilan:
-      situation: "l'étape 5 : épreuve 7 (évaluation)"
+      situation: "l'étape 6 : épreuve 7 (évaluation)"
       criteres:
         - "Descente verticale, sans vrille, à vitesse constante entre 20 et 30 m/min, retournement pas avant 35 m."
         - "Stabilisation immédiate à 40 m, sans utiliser l'évaluateur comme repère."
@@ -828,7 +828,7 @@ N4-techniques:
         - "Tête en bas, on équilibre tôt et on interrompt en cas de douleur."
         - "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum, avec accoutumance progressive à la profondeur."
         - "Narcose possible : le moniteur reste au contact, jamais de situation brutale."
-      eca: "se retourne vers 30 m et perd 3 m à la stabilisation → reprendre l'étape 3"
+      eca: "se retourne vers 30 m et perd 3 m à la stabilisation → reprendre l'étape 4"
   "DTMR de 25 m":
     evaluer:
       question: "Avec quel vécu le candidat aborde-t-il la remontée en binôme solidaire au gilet ?"
@@ -935,10 +935,10 @@ N4-physique:
       adapter:
         - "Le canard ou la stabilisation à 5 m ne sont pas acquis : on commence à l'étape 1, « Apnée stabilisée à 5 m »."
         - "Il est à l'aise à 5 m : on passe à l'étape 2, « Vers 8 m »."
-        - "Il est déjà à l'aise vers 8 m : on passe à l'étape 3, « À 10 m, protocole complet »."
+        - "Il est déjà à l'aise vers 8 m : on passe à l'étape 3, « Protocole complet à 8 m », puis à l'étape 4, « À 10 m »."
         - "Il est tenté d'en faire trop : on insiste sur le binôme et l'absence d'hyperventilation avant toute progression."
     bilan:
-      situation: "l'étape 4 : épreuve 3 (évaluation)"
+      situation: "l'étape 5 : épreuve 3 (évaluation)"
       criteres:
         - "10 m atteints en un seul essai, stabilisation et retour en surface en sécurité."
         - "Protocole complet : signe OK, identification, tour d'horizon, tuba hors de la bouche, signe OK en surface."

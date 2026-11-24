@@ -19,6 +19,7 @@
             {
               "n": 1,
               "titre": "Observer un accueil",
+              "curseur": "Point de départ.",
               "objectif": "Repérer ce qui rend un accueil réussi.",
               "situation": "Sortie club : l'élève observe un GP ou un DP accueillir les plongeurs.",
               "critere": "Au débriefing, il décrit les attitudes qui mettent les plongeurs en confiance."
@@ -26,6 +27,7 @@
             {
               "n": 2,
               "titre": "Accueillir des plongeurs connus",
+              "curseur": "Observer → pratiquer, avec des plongeurs connus.",
               "objectif": "Se présenter de façon avenante, être à l'écoute et disponible.",
               "situation": "Sortie club, plongeurs du club. Il se présente et prend le temps d'écouter chacun.",
               "critere": "Accueil avenant, disponible, sans précipitation."
@@ -33,6 +35,7 @@
             {
               "n": 3,
               "titre": "Situation plus délicate",
+              "curseur": "Situation simple → situation tendue.",
               "objectif": "Garder une attitude respectueuse quand la situation se tend.",
               "situation": "Situation jouée par le moniteur : plongeur en retard, inquiet, ou qui veut plonger hors de ses prérogatives.",
               "critere": "Il reste avenant, respecte la déontologie et préserve l'intégrité physique du plongeur, quitte à refuser.",
@@ -41,6 +44,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Adopter ce comportement dans une conduite de palanquée.",
               "situation": "Conduite de palanquée sur sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Comportement respectueux des valeurs du sport et de la Fédération du début à la fin. Correspond aux modalités d'évaluation du MFT."
@@ -58,6 +62,7 @@
             {
               "n": 1,
               "titre": "Évaluer l'expérience",
+              "curseur": "Point de départ.",
               "objectif": "Obtenir vite les informations utiles sur chaque plongeur.",
               "situation": "Au sec, avec des plongeurs du club : niveau, nombre de plongées, date de la dernière, moyen de désaturation, état du jour.",
               "critere": "Il obtient l'essentiel en peu de questions."
@@ -65,6 +70,7 @@
             {
               "n": 2,
               "titre": "Vérifier le matériel",
+              "curseur": "Nouvel élément, le matériel du plongeur.",
               "objectif": "S'assurer que chaque plongeur utilise un matériel adapté.",
               "situation": "Avant la plongée : matériel adapté au plongeur et à la plongée prévue.",
               "critere": "Il repère un matériel inadapté et propose une solution."
@@ -72,6 +78,7 @@
             {
               "n": 3,
               "titre": "Informer et orienter",
+              "curseur": "Questions → informer et orienter.",
               "objectif": "Orienter les plongeurs selon leurs attentes et leurs besoins.",
               "situation": "Questions de plongeurs sur la suite de leur parcours, les qualifications ou leur assurance.",
               "critere": "Réponses justes, plongeur orienté vers la bonne formation ou la bonne personne.",
@@ -80,6 +87,7 @@
             {
               "n": 4,
               "titre": "Palanquée hétérogène",
+              "curseur": "Plongeur seul → palanquée hétérogène.",
               "objectif": "Prendre en charge des plongeurs de niveaux différents.",
               "situation": "Palanquée jouée allant du PE12 débutant au PE40 confirmé.",
               "critere": "Prise en charge adaptée à chacun, personne n'est oublié."
@@ -87,6 +95,7 @@
             {
               "n": 5,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Accueillir, informer et prendre en charge une palanquée.",
               "situation": "Conduite de palanquée sur sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Expérience évaluée, matériel vérifié, plongeurs informés et pris en charge. Correspond aux modalités d'évaluation du MFT."
@@ -102,6 +111,7 @@
             {
               "n": 1,
               "titre": "Connaître l'offre",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les activités du club et de la Fédération.",
               "situation": "Au sec : activités du club, commissions fédérales, formations proposées.",
               "critere": "Il présente en quelques phrases l'offre du club et les activités fédérales.",
@@ -110,6 +120,7 @@
             {
               "n": 2,
               "titre": "Inciter à la pratique",
+              "curseur": "Connaître → informer et inciter.",
               "objectif": "Proposer une activité adaptée à un plongeur.",
               "situation": "Échange avec un plongeur sur ses envies.",
               "critere": "Proposition pertinente d'une activité ou d'une formation."
@@ -117,6 +128,7 @@
             {
               "n": 3,
               "titre": "Fidéliser",
+              "curseur": "Informer → fidéliser.",
               "objectif": "Donner envie de revenir.",
               "situation": "Fin de sortie : il propose une suite (sortie, formation, autre activité).",
               "critere": "Proposition concrète, faite au bon moment."
@@ -124,6 +136,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties club au fil de la formation.",
               "objectif": "Promouvoir la structure et la FFESSM.",
               "situation": "Sorties club au fil de la formation.",
               "critere": "Il incite à la pratique et fidélise. Le MFT ne prévoit pas d'évaluation spécifique pour cet objectif."
@@ -147,6 +160,7 @@
             {
               "n": 1,
               "titre": "Les nœuds au sec",
+              "curseur": "Point de départ.",
               "objectif": "Faire les nœuds usuels.",
               "situation": "Au sec : nœuds de chaise, de cabestan, d'arrêt et de taquet.",
               "critere": "Chaque nœud fait sans hésiter et défait facilement."
@@ -154,6 +168,7 @@
             {
               "n": 2,
               "titre": "Les nœuds en situation",
+              "curseur": "Au sec → en situation.",
               "objectif": "Faire ces nœuds là où on en a besoin.",
               "situation": "Sur le bateau ou au port : autour d'une bitte d'amarrage, d'un taquet, d'un anneau.",
               "critere": "Nœud juste et rapide dans chaque situation."
@@ -161,6 +176,7 @@
             {
               "n": 3,
               "titre": "Aider le pilote",
+              "curseur": "Nœuds → manœuvres du bateau.",
               "objectif": "Participer aux manœuvres.",
               "situation": "Sorties réelles : appareillage, amarrage, mouillage, accostage. Procédures de mise à l'eau et de récupération des plongeurs.",
               "critere": "Il anticipe les demandes du pilote et exécute sans erreur.",
@@ -169,6 +185,7 @@
             {
               "n": 4,
               "titre": "Installer les supports de sécurité",
+              "curseur": "Manœuvres → supports de sécurité.",
               "objectif": "Mettre en place le matériel de sécurité du site.",
               "situation": "Pendeur, bloc de secours, ligne de vie, parachute d'ancre. Moyens de rappel des plongeurs et matériel d'assistance et de secours imposé par le Code du sport.",
               "critere": "Installation correcte, il explique le rôle de chaque élément."
@@ -176,6 +193,7 @@
             {
               "n": 5,
               "titre": "Cas simples (évaluation)",
+              "curseur": "Évaluation, épreuve 6, cas simples.",
               "objectif": "Montrer sa capacité d'équipier du DP.",
               "situation": "Épreuve 6 : cas simples décrits par le jury.",
               "critere": "Réponses et gestes justes. Correspond aux modalités d'évaluation du MFT."
@@ -192,6 +210,7 @@
             {
               "n": 1,
               "titre": "Caractéristiques d'un site",
+              "curseur": "Point de départ.",
               "objectif": "Décrire un site connu.",
               "situation": "Au sec : profondeurs, relief, abri, exposition au courant et au vent.",
               "critere": "Description complète et juste."
@@ -199,6 +218,7 @@
             {
               "n": 2,
               "titre": "Site et parcours selon les plongeurs",
+              "curseur": "Un niveau → niveaux différents.",
               "objectif": "Adapter le site et le parcours au niveau et aux capacités des plongeurs.",
               "situation": "Cas : même site pour des PE12 et pour des PE40.",
               "critere": "Choix de zone et de parcours adaptés et justifiés."
@@ -206,6 +226,7 @@
             {
               "n": 3,
               "titre": "Site et conditions du jour",
+              "curseur": "Conditions habituelles → conditions du jour différentes.",
               "objectif": "Choisir la zone selon la météo et le courant du jour.",
               "situation": "Cas : même site, vent ou courant différents. Il propose la zone et le parcours les plus sûrs.",
               "critere": "Choix cohérent avec les conditions et le niveau des plongeurs."
@@ -213,6 +234,7 @@
             {
               "n": 4,
               "titre": "Cas simples (évaluation)",
+              "curseur": "Évaluation, épreuve 6, cas simples.",
               "objectif": "Participer au choix du site.",
               "situation": "Épreuve 6 : cas simples décrits par le jury.",
               "critere": "Caractéristiques du site et parcours définis selon le niveau des plongeurs. Correspond aux modalités d'évaluation du MFT."
@@ -229,6 +251,7 @@
             {
               "n": 1,
               "titre": "Où s'informer",
+              "curseur": "Point de départ.",
               "objectif": "Savoir où prendre les informations indispensables.",
               "situation": "Météo, zones interdites, réserves : sources officielles.",
               "critere": "Il trouve et résume les informations utiles pour une sortie."
@@ -236,6 +259,7 @@
             {
               "n": 2,
               "titre": "Amers et enseignures",
+              "curseur": "S'informer → se repérer par amers et enseignures.",
               "objectif": "Se repérer à vue sur un site.",
               "situation": "Sur le bateau : repérage d'un site par amers et enseignures.",
               "critere": "Il retrouve un site connu par alignements."
@@ -243,6 +267,7 @@
             {
               "n": 3,
               "titre": "Cartes marines",
+              "curseur": "Amers → cartes marines.",
               "objectif": "Lire les symboles courants.",
               "situation": "Au sec, sur une carte marine.",
               "critere": "Lecture juste des symboles courants."
@@ -250,6 +275,7 @@
             {
               "n": 4,
               "titre": "GPS et sonar",
+              "curseur": "Cartes → instruments (GPS, sonar).",
               "objectif": "Connaître le principe du repérage par instruments.",
               "situation": "Sur le bateau, avec le pilote.",
               "critere": "Il explique le principe et retrouve un point enregistré avec le pilote."
@@ -257,6 +283,7 @@
             {
               "n": 5,
               "titre": "Cas simples (évaluation)",
+              "curseur": "Évaluation, épreuve 6, cas simples.",
               "objectif": "Montrer ses connaissances de sécurité et de navigation.",
               "situation": "Épreuve 6 : cas simples décrits par le jury.",
               "critere": "Réponses justes et pratiques. Correspond aux modalités d'évaluation du MFT."
@@ -279,6 +306,7 @@
             {
               "n": 1,
               "titre": "Restituer le briefing du DP",
+              "curseur": "Point de départ.",
               "objectif": "Retenir toutes les consignes.",
               "situation": "Après un briefing réel du DP, il restitue les consignes.",
               "critere": "Restitution complète et exacte."
@@ -286,6 +314,7 @@
             {
               "n": 2,
               "titre": "Trier ce qui sert au GP",
+              "curseur": "Restituer → trier.",
               "objectif": "Repérer les éléments qui organisent son action.",
               "situation": "À partir d'un sujet écrit : paramètres, site, niveau des plongeurs, consignes particulières.",
               "critere": "Il souligne ce qui conditionne sa plongée et dit pourquoi."
@@ -293,6 +322,7 @@
             {
               "n": 3,
               "titre": "Intégrer dans son plan",
+              "curseur": "Trier → intégrer dans son plan, en 10 minutes.",
               "objectif": "Construire sa plongée à partir des consignes.",
               "situation": "Sujet tiré, 10 minutes de préparation comme à l'examen.",
               "critere": "Plan de plongée entièrement compatible avec les consignes du DP."
@@ -300,6 +330,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Intégrer les consignes du DP dans sa conduite de palanquée.",
               "situation": "Sujet tiré, 10 minutes de préparation. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Consignes du DP prises en compte. Correspond aux modalités d'évaluation du MFT."
@@ -316,6 +347,7 @@
             {
               "n": 1,
               "titre": "Ce dont le GP a besoin",
+              "curseur": "Point de départ.",
               "objectif": "Savoir quelles informations relèvent du DP.",
               "situation": "Au sec : liste des informations utiles (paramètres, site, conditions, niveau et matériel des plongeurs).",
               "critere": "Il distingue ce qu'il demande au DP de ce qu'il décide lui-même."
@@ -323,6 +355,7 @@
             {
               "n": 2,
               "titre": "Sujet incomplet",
+              "curseur": "Liste connue → sujet incomplet.",
               "objectif": "Identifier les éléments manquants et utiles.",
               "situation": "Exercice annoncé : sujet volontairement incomplet.",
               "critere": "Il pose les questions utiles, et seulement celles-là."
@@ -330,6 +363,7 @@
             {
               "n": 3,
               "titre": "Pendant les 10 minutes de préparation",
+              "curseur": "Sujet annoncé → sujet tiré, préparation chronométrée.",
               "objectif": "S'informer dans le temps imparti de l'examen.",
               "situation": "Sujet tiré, préparation chronométrée de 10 minutes, questions au moniteur dans le rôle du DP.",
               "critere": "Questions utiles posées à temps, préparation terminée dans les 10 minutes."
@@ -337,6 +371,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4, demandes d'informations pendant la préparation.",
               "objectif": "S'informer auprès du DP.",
               "situation": "Sujet tiré, demandes d'informations possibles pendant la préparation.",
               "critere": "Éléments manquants et utiles identifiés et demandés. Correspond aux modalités d'évaluation du MFT."
@@ -354,6 +389,7 @@
             {
               "n": 1,
               "titre": "La trame d'un briefing",
+              "curseur": "Point de départ.",
               "objectif": "Construire un briefing complet.",
               "situation": "Au sec : présentation, déroulement, paramètres, mise à l'eau, signes, procédures, retour.",
               "critere": "Briefing complet, ordonné, compréhensible.",
@@ -362,6 +398,7 @@
             {
               "n": 2,
               "titre": "Briefer un niveau donné",
+              "curseur": "Trame → briefing complet à un niveau donné.",
               "objectif": "Adapter son briefing à des plongeurs d'un même niveau.",
               "situation": "Briefing à des plongeurs PE20 joués.",
               "critere": "Contenu adapté, sans excès ni oubli."
@@ -369,6 +406,7 @@
             {
               "n": 3,
               "titre": "Niveau réel et état de chacun",
+              "curseur": "Un niveau → niveau réel et état de chacun.",
               "objectif": "Tenir compte du niveau réel, de l'état global, de l'expérience et des moyens de désaturation.",
               "situation": "Palanquée jouée hétérogène, avec des informations à découvrir par ses questions.",
               "critere": "Briefing adapté à chaque plongeur, consignes du DP intégrées."
@@ -376,6 +414,7 @@
             {
               "n": 4,
               "titre": "En sortie réelle",
+              "curseur": "Au sec → en sortie réelle.",
               "objectif": "Prendre en charge une palanquée jusqu'à l'immersion.",
               "situation": "Sortie club. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen. Ou bien en binôme avec un encadrant qualifié qui reste responsable de la palanquée.",
               "critere": "Prise en charge rassurante et claire jusqu'à l'immersion."
@@ -383,6 +422,7 @@
             {
               "n": 5,
               "titre": "Briefing de l'épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Réussir le briefing noté sur 15.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Qualité de la prise en charge, intégration des consignes du DP. Correspond aux modalités d'évaluation du MFT."
@@ -399,6 +439,7 @@
             {
               "n": 1,
               "titre": "Vérifier le matériel des plongeurs",
+              "curseur": "Point de départ.",
               "objectif": "Contrôler l'équipement de chacun avant la mise à l'eau.",
               "situation": "Robinets ouverts, inflateurs branchés, lest, détendeurs, instruments.",
               "critere": "Vérification systématique et rapide."
@@ -406,6 +447,7 @@
             {
               "n": 2,
               "titre": "Mise à l'eau de plongeurs confirmés",
+              "curseur": "Vérifier → organiser, avec des plongeurs confirmés.",
               "objectif": "Organiser une mise à l'eau efficace.",
               "situation": "Palanquée jouée de PE40.",
               "critere": "Ordre et consignes clairs, mise à l'eau sûre."
@@ -413,6 +455,7 @@
             {
               "n": 3,
               "titre": "Mise à l'eau de débutants",
+              "curseur": "Plongeurs confirmés → débutants.",
               "objectif": "Adapter l'organisation à des plongeurs débutants.",
               "situation": "Palanquée jouée de PE12, aide à la mise à l'eau.",
               "critere": "Aide adaptée, aucune mise en danger."
@@ -420,6 +463,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Gérer la mise à l'eau en sécurité.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Comportement sûr, organisation efficace. Correspond aux modalités d'évaluation du MFT."
@@ -436,6 +480,7 @@
             {
               "n": 1,
               "titre": "Regrouper en surface",
+              "curseur": "Point de départ.",
               "objectif": "Rassembler sa palanquée avant l'immersion.",
               "situation": "Après la mise à l'eau : regroupement, OK de chacun.",
               "critere": "Palanquée groupée, chacun prêt."
@@ -443,6 +488,7 @@
             {
               "n": 2,
               "titre": "Choisir la technique d'immersion",
+              "curseur": "Regrouper → immerger, technique choisie selon le niveau.",
               "objectif": "Adapter l'immersion au niveau des plongeurs.",
               "situation": "Immersion le long du pendeur ou en pleine eau selon le niveau.",
               "critere": "Choix adapté, palanquée qui s'immerge ensemble."
@@ -450,6 +496,7 @@
             {
               "n": 3,
               "titre": "Conditions moins favorables",
+              "curseur": "Eau calme → clapot, courant.",
               "objectif": "Gérer l'immersion avec du clapot ou du courant.",
               "situation": "Regroupement rapide près du pendeur ou de la ligne de mouillage.",
               "critere": "Immersion groupée sans dérive.",
@@ -458,6 +505,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Gérer l'immersion en sécurité.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Regroupement et attitude sûrs. Correspond aux modalités d'évaluation du MFT."
@@ -482,6 +530,7 @@
             {
               "n": 1,
               "titre": "Descente le long du pendeur",
+              "curseur": "Point de départ.",
               "objectif": "Faire descendre une palanquée groupée.",
               "situation": "Descente au pendeur, GP placé pour voir chacun.",
               "critere": "Palanquée groupée, chacun sous son regard.",
@@ -491,20 +540,31 @@
             {
               "n": 2,
               "titre": "Descente en pleine eau",
+              "curseur": "Pendeur → pleine eau.",
               "objectif": "Garder la palanquée groupée sans repère.",
               "situation": "Descente en pleine eau, vitesse adaptée au plus lent.",
               "critere": "Cohésion maintenue jusqu'au fond."
             },
             {
               "n": 3,
-              "titre": "Contexte plus difficile",
-              "objectif": "Adapter la descente au niveau, au site, à la clarté et au courant.",
-              "situation": "Descente avec des débutants, en eau turbide ou avec du courant.",
-              "critere": "Choix techniques pertinents, sécurité de chacun assurée."
+              "titre": "Avec des débutants",
+              "curseur": "Plongeurs confirmés → débutants.",
+              "objectif": "Adapter la descente au niveau des plongeurs.",
+              "situation": "Descente avec des débutants, en eau claire et sans courant.",
+              "critere": "Vitesse et technique adaptées au plus lent, sécurité de chacun assurée."
             },
             {
               "n": 4,
+              "titre": "Eau turbide ou courant",
+              "curseur": "Eau claire → eau turbide ou courant.",
+              "objectif": "Adapter la descente au site, à la clarté et au courant.",
+              "situation": "Descente en eau turbide ou avec du courant.",
+              "critere": "Choix techniques pertinents, sécurité de chacun assurée."
+            },
+            {
+              "n": 5,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Gérer la descente en conduite de palanquée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Comportement, efficacité et pertinence des actions. Correspond aux modalités d'évaluation du MFT."
@@ -521,6 +581,7 @@
             {
               "n": 1,
               "titre": "Regrouper et communiquer",
+              "curseur": "Point de départ.",
               "objectif": "Assurer la cohésion avant l'exploration.",
               "situation": "Arrivée au fond : regroupement, OK de chacun.",
               "critere": "Personne ne part avant le regroupement complet."
@@ -528,6 +589,7 @@
             {
               "n": 2,
               "titre": "Vérifier que tout va bien",
+              "curseur": "Regrouper → vérifier.",
               "objectif": "Contrôler l'état et les paramètres avant de démarrer.",
               "situation": "Pression, état, flottabilité de chaque plongeur.",
               "critere": "Vérification rapide et complète."
@@ -535,6 +597,7 @@
             {
               "n": 3,
               "titre": "Courant ou visibilité réduite",
+              "curseur": "Conditions faciles → courant ou visibilité réduite.",
               "objectif": "Regrouper quand les conditions compliquent la cohésion.",
               "situation": "Regroupement en courant ou en visibilité réduite.",
               "critere": "Palanquée regroupée sans dérive.",
@@ -543,6 +606,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Gérer le regroupement au fond.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Comportement et attention portée aux plongeurs. Correspond aux modalités d'évaluation du MFT."
@@ -566,6 +630,7 @@
             {
               "n": 1,
               "titre": "Suivre le parcours annoncé",
+              "curseur": "Point de départ.",
               "objectif": "Conduire la plongée prévue au briefing.",
               "situation": "Plongée guidée, palanquée jouée.",
               "critere": "Paramètres du DP et indications du briefing respectés.",
@@ -574,6 +639,7 @@
             {
               "n": 2,
               "titre": "Adapter le parcours",
+              "curseur": "Parcours annoncé → parcours adapté aux niveaux.",
               "objectif": "Ajuster le parcours selon l'intérêt et les capacités des plongeurs.",
               "situation": "Palanquée jouée de niveaux différents.",
               "critere": "Parcours adapté sans sortir des consignes du DP."
@@ -581,6 +647,7 @@
             {
               "n": 3,
               "titre": "Surveiller les paramètres de chacun",
+              "curseur": "Suivre → surveiller les paramètres de chacun.",
               "objectif": "Suivre consommation et désaturation de la palanquée.",
               "situation": "Contrôles réguliers de chaque plongeur pendant la plongée.",
               "critere": "Aucun plongeur ne sort de ses paramètres."
@@ -588,6 +655,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Assurer le déroulement de la plongée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Respect des consignes du DP et des indications du briefing. Correspond aux modalités d'évaluation du MFT."
@@ -604,6 +672,7 @@
             {
               "n": 1,
               "titre": "Cas au sec",
+              "curseur": "Point de départ.",
               "objectif": "Choisir la réponse sûre à un imprévu.",
               "situation": "Cas : courant au fond, eau turbide, eau froide.",
               "critere": "Décision dans le sens de la sécurité (temps réduit, parcours modifié, profondeur réduite).",
@@ -612,6 +681,7 @@
             {
               "n": 2,
               "titre": "Scénario annoncé",
+              "curseur": "Au sec → scénario annoncé en plongée.",
               "objectif": "Appliquer sa décision sous l'eau.",
               "situation": "Imprévu annoncé avant la plongée, déclenché par le moniteur.",
               "critere": "Réaction rapide et pertinente."
@@ -619,6 +689,7 @@
             {
               "n": 3,
               "titre": "Imprévu réel",
+              "curseur": "Scénario annoncé → situation réelle.",
               "objectif": "S'adapter à ce que le milieu impose.",
               "situation": "Plongées où les conditions changent réellement.",
               "critere": "Adaptation sûre, palanquée protégée.",
@@ -627,6 +698,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "S'adapter aux situations imprévues.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Réaction pertinente, sécurité de la palanquée assurée. Correspond aux modalités d'évaluation du MFT."
@@ -643,6 +715,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis N3",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier l'orientation avec et sans instrument.",
               "situation": "Parcours varié en autonomie.",
               "critere": "Retour près du bateau. Sinon, on reprend la progression N3."
@@ -650,6 +723,7 @@
             {
               "n": 2,
               "titre": "S'orienter en guidant",
+              "curseur": "S'orienter seul → guider une palanquée.",
               "objectif": "Garder son orientation en surveillant une palanquée.",
               "situation": "Palanquée jouée à surveiller pendant le parcours.",
               "critere": "Itinéraire tenu malgré la surveillance des plongeurs."
@@ -657,6 +731,7 @@
             {
               "n": 3,
               "titre": "Site inconnu",
+              "curseur": "Site connu → site inconnu.",
               "objectif": "Respecter le retour annoncé sur un site nouveau.",
               "situation": "Site jamais plongé, à partir des informations du DP.",
               "critere": "Retour conforme au briefing."
@@ -664,6 +739,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "S'orienter en conduite de palanquée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Orientation maîtrisée avec ou sans instrument, retour conforme au briefing. Correspond aux modalités d'évaluation du MFT."
@@ -679,6 +755,7 @@
             {
               "n": 1,
               "titre": "Repérer les intérêts du site",
+              "curseur": "Point de départ.",
               "objectif": "Connaître ce qu'il y a à voir.",
               "situation": "Plongée de repérage sur le site.",
               "critere": "Il cite les intérêts du site (faune, flore, relief)."
@@ -686,6 +763,7 @@
             {
               "n": 2,
               "titre": "Montrer",
+              "curseur": "Repérer → montrer.",
               "objectif": "Mettre en valeur les ressources du site.",
               "situation": "Il montre à la palanquée ce qu'il a repéré, avec la bonne position et la lampe.",
               "critere": "Chaque plongeur voit ce qui est montré."
@@ -693,6 +771,7 @@
             {
               "n": 3,
               "titre": "Action éducative",
+              "curseur": "Montrer → expliquer.",
               "objectif": "Expliquer simplement ce qu'on voit.",
               "situation": "Au débriefing, il explique une espèce ou un élément du site.",
               "critere": "Explication simple et juste (lien avec Respecter l'environnement)."
@@ -700,6 +779,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Agrémenter la plongée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Ressources du site exploitées, comportement exemplaire. Correspond aux modalités d'évaluation du MFT."
@@ -716,6 +796,7 @@
             {
               "n": 1,
               "titre": "Repérer un comportement",
+              "curseur": "Point de départ.",
               "objectif": "Voir ce qui ne va pas chez un plongeur.",
               "situation": "Le moniteur joue : ventilation rapide, flottabilité mal gérée, stress, froid.",
               "critere": "Il repère vite chaque comportement."
@@ -723,6 +804,7 @@
             {
               "n": 2,
               "titre": "Intervenir simplement",
+              "curseur": "Repérer → intervenir simplement.",
               "objectif": "Réagir de façon adaptée sans assistance.",
               "situation": "Ralentir, stabiliser un plongeur, l'aider à équilibrer, communiquer.",
               "critere": "Intervention efficace et calme."
@@ -730,6 +812,7 @@
             {
               "n": 3,
               "titre": "Situations jouées en plongée",
+              "curseur": "Situation annoncée → situation jouée en plongée.",
               "objectif": "Rester attentif pendant toute la plongée.",
               "situation": "Situations jouées par le moniteur au cours de la plongée, sans assistance à réaliser.",
               "critere": "Réaction rapide et adaptée à chaque fois."
@@ -737,6 +820,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Intervenir en fonction du comportement des plongeurs.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen. L'assistance proprement dite est évaluée à l'épreuve 5.",
               "critere": "Attention, pertinence, réactivité et efficacité. Correspond aux modalités d'évaluation du MFT."
@@ -761,6 +845,7 @@
             {
               "n": 1,
               "titre": "Décider de la fin de plongée",
+              "curseur": "Point de départ.",
               "objectif": "Engager la remontée au bon moment.",
               "situation": "À partir des paramètres de chaque plongeur (air, désaturation, consignes du DP).",
               "critere": "Remontée engagée à temps pour tous."
@@ -768,6 +853,7 @@
             {
               "n": 2,
               "titre": "Organiser la désaturation",
+              "curseur": "Décider → organiser la désaturation, avec des moyens différents.",
               "objectif": "Choisir une gestion pertinente pour toute la palanquée.",
               "situation": "Ordinateurs différents dans la palanquée, cas au sec puis en plongée.",
               "critere": "Procédure adaptée au plongeur le plus contraint.",
@@ -776,6 +862,7 @@
             {
               "n": 3,
               "titre": "Les paliers",
+              "curseur": "Organiser → tenir les paliers.",
               "objectif": "Tenir des paliers en palanquée.",
               "situation": "Regroupement, communication, maintien des profondeurs, surveillance des instruments, parachute si nécessaire.",
               "critere": "Palanquée groupée et stable, paliers complets.",
@@ -783,15 +870,26 @@
             },
             {
               "n": 4,
-              "titre": "Palanquée hétérogène, courant",
-              "objectif": "Gérer la fin de plongée dans des conditions moins favorables.",
-              "situation": "Plongeurs de niveaux différents, léger courant au palier.",
-              "critere": "Cohésion et paliers maintenus.",
+              "titre": "Palanquée hétérogène",
+              "curseur": "Palanquée homogène → hétérogène.",
+              "objectif": "Gérer la fin de plongée avec des plongeurs de niveaux différents.",
+              "situation": "Plongeurs de niveaux différents, conditions calmes.",
+              "critere": "Cohésion et paliers maintenus pour chacun.",
               "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
             },
             {
               "n": 5,
+              "titre": "Léger courant au palier",
+              "curseur": "Conditions calmes → léger courant.",
+              "objectif": "Gérer la fin de plongée dans des conditions moins favorables.",
+              "situation": "Palanquée hétérogène, léger courant au palier.",
+              "critere": "Cohésion et paliers maintenus malgré le courant.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur."
+            },
+            {
+              "n": 6,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Gérer la fin de la plongée et le retour en surface.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Gestion pertinente de la désaturation, comportement aux paliers. Correspond aux modalités d'évaluation du MFT."
@@ -815,6 +913,7 @@
             {
               "n": 1,
               "titre": "Retour groupé",
+              "curseur": "Point de départ.",
               "objectif": "Ramener la palanquée au bateau sans effort inutile.",
               "situation": "Surface : gilets gonflés, palanquée groupée, consignes de nage.",
               "critere": "Personne ne s'épuise ni ne s'éloigne."
@@ -822,6 +921,7 @@
             {
               "n": 2,
               "titre": "Sortie de l'eau",
+              "curseur": "Retour → sortie de l'eau.",
               "objectif": "Gérer la sortie selon l'embarcation.",
               "situation": "Ordre de sortie, aide au matériel, surveillance de ceux qui attendent.",
               "critere": "Sortie sûre pour chacun."
@@ -829,6 +929,7 @@
             {
               "n": 3,
               "titre": "Clapot ou courant",
+              "curseur": "Eau calme → clapot ou courant.",
               "objectif": "Adapter le retour aux conditions.",
               "situation": "Retour avec clapot ou courant.",
               "critere": "Consignes pertinentes, efforts gérés."
@@ -836,6 +937,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Gérer le retour au bateau.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Comportement, attention aux plongeurs, pertinence des consignes. Correspond aux modalités d'évaluation du MFT."
@@ -851,6 +953,7 @@
             {
               "n": 1,
               "titre": "Les faits marquants",
+              "curseur": "Point de départ.",
               "objectif": "Résumer la plongée.",
               "situation": "Après une plongée : faits marquants et éléments observés.",
               "critere": "Résumé court et juste."
@@ -858,6 +961,7 @@
             {
               "n": 2,
               "titre": "Expliquer ses interventions",
+              "curseur": "Faits → explications.",
               "objectif": "Donner du sens à ce qu'on a fait sous l'eau.",
               "situation": "Explication des interventions faites pendant la plongée.",
               "critere": "Explications claires et sans reproche."
@@ -865,6 +969,7 @@
             {
               "n": 3,
               "titre": "Recadrer si nécessaire",
+              "curseur": "Expliquer → recadrer si nécessaire.",
               "objectif": "Conseiller dans le respect des prérogatives.",
               "situation": "Cas joué : plongeur qui a dépassé ses limites.",
               "critere": "Recadrage bienveillant, conseil pertinent."
@@ -872,6 +977,7 @@
             {
               "n": 4,
               "titre": "Débriefing de l'épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Réussir le débriefing noté sur 5.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Pertinence des commentaires et bien-fondé des remarques. Correspond aux modalités d'évaluation du MFT."
@@ -887,6 +993,7 @@
             {
               "n": 1,
               "titre": "Rester en contact",
+              "curseur": "Point de départ.",
               "objectif": "Accompagner la palanquée après la plongée.",
               "situation": "Après la sortie de l'eau : aide au déséquipement, présence auprès des plongeurs.",
               "critere": "Il reste disponible jusqu'à la fin."
@@ -894,6 +1001,7 @@
             {
               "n": 2,
               "titre": "Rappeler les consignes",
+              "curseur": "Présence → consignes.",
               "objectif": "Inciter les plongeurs à signaler tout signe inhabituel.",
               "situation": "Rappel : s'informer, communiquer, prévenir.",
               "critere": "Consignes données à chacun.",
@@ -902,6 +1010,7 @@
             {
               "n": 3,
               "titre": "Repérer et alerter",
+              "curseur": "Consignes → repérer et alerter.",
               "objectif": "Réagir à un signe inhabituel.",
               "situation": "Cas joué : plongeur fatigué ou qui se plaint après la plongée.",
               "critere": "Il alerte le DP sans délai."
@@ -909,6 +1018,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Observer et surveiller après la plongée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Action et comportement adaptés, conseils pertinents. Correspond aux modalités d'évaluation du MFT."
@@ -932,6 +1042,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis N3",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier stabilisation, palmage et ventilation.",
               "situation": "Plongée en autonomie près du fond.",
               "critere": "Aucun contact, aucun nuage de sédiment."
@@ -939,6 +1050,7 @@
             {
               "n": 2,
               "titre": "Fixer ses accessoires",
+              "curseur": "Matériel libre → matériel fixé.",
               "objectif": "Éviter que son matériel abîme le milieu.",
               "situation": "Détendeur de secours, lampe, phare, parachute, appareil photo ou vidéo fixés.",
               "critere": "Rien ne pend ni ne traîne sur le fond."
@@ -946,6 +1058,7 @@
             {
               "n": 3,
               "titre": "Exemplaire en guidant",
+              "curseur": "Pour soi → en guidant.",
               "objectif": "Rester un exemple tout en conduisant une palanquée.",
               "situation": "Plongée guidée, palanquée jouée.",
               "critere": "Aucun impact sur le milieu malgré la charge de guidage."
@@ -953,6 +1066,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Évoluer en limitant son impact sur le milieu.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Comportement exemplaire. Correspond aux modalités d'évaluation du MFT."
@@ -968,6 +1082,7 @@
             {
               "n": 1,
               "titre": "Position et vitesse",
+              "curseur": "Point de départ.",
               "objectif": "Placer la palanquée pour que chacun observe.",
               "situation": "Il adapte sa vitesse et sa position par rapport aux plongeurs guidés.",
               "critere": "Chaque plongeur voit sans gêner les autres."
@@ -975,6 +1090,7 @@
             {
               "n": 2,
               "titre": "Matériel d'observation",
+              "curseur": "Position → matériel d'observation.",
               "objectif": "S'équiper pour favoriser l'observation.",
               "situation": "Lampe, planchettes ou autre support.",
               "critere": "Matériel utilisé à bon escient."
@@ -982,6 +1098,7 @@
             {
               "n": 3,
               "titre": "Maîtriser les perturbations",
+              "curseur": "Matériel → maîtrise des perturbations.",
               "objectif": "Limiter lumière, bruit et bulles.",
               "situation": "Approche d'animaux sensibles.",
               "critere": "Animaux observés sans fuite."
@@ -989,6 +1106,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Favoriser l'observation de la palanquée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Techniques d'approche adaptées. Correspond aux modalités d'évaluation du MFT."
@@ -1004,6 +1122,7 @@
             {
               "n": 1,
               "titre": "Les chartes mer et eau douce",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les gestes et attitudes attendus.",
               "situation": "Au sec, présentation des chartes.",
               "critere": "Il cite les principaux engagements."
@@ -1011,6 +1130,7 @@
             {
               "n": 2,
               "titre": "Appliquer",
+              "curseur": "Connaître → appliquer.",
               "objectif": "Mettre les gestes de la charte en pratique.",
               "situation": "En plongée, guidée ou en autonomie.",
               "critere": "Gestes et attitudes conformes à la charte."
@@ -1018,6 +1138,7 @@
             {
               "n": 3,
               "titre": "Identifier et corriger",
+              "curseur": "Appliquer → identifier et corriger.",
               "objectif": "Repérer un comportement inadéquat et le corriger.",
               "situation": "Le moniteur joue un plongeur qui touche, nourrit ou prélève.",
               "critere": "Correction immédiate, sans brusquer, expliquée au débriefing."
@@ -1025,6 +1146,7 @@
             {
               "n": 4,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Appliquer la charte en conduite de palanquée.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Charte appliquée, comportements inadéquats corrigés. Correspond aux modalités d'évaluation du MFT."
@@ -1040,6 +1162,7 @@
             {
               "n": 1,
               "titre": "Décrire le site",
+              "curseur": "Point de départ.",
               "objectif": "Décrire l'environnement du site, en mer ou en eau douce.",
               "situation": "Après une plongée, description du milieu, de la faune et de la flore.",
               "critere": "Description juste et vivante."
@@ -1047,6 +1170,7 @@
             {
               "n": 2,
               "titre": "Nommer",
+              "curseur": "Décrire → nommer.",
               "objectif": "Connaître les noms communs des espèces rencontrées.",
               "situation": "Au fil des plongées, il nomme les espèces animales et végétales.",
               "critere": "Noms communs justes pour les espèces fréquentes.",
@@ -1055,6 +1179,7 @@
             {
               "n": 3,
               "titre": "Expliquer",
+              "curseur": "Nommer → expliquer.",
               "objectif": "Donner de brèves explications sur le comportement, le mode de vie et l'habitat.",
               "situation": "Au débriefing, une ou deux espèces commentées.",
               "critere": "Explications simples et exactes."
@@ -1062,6 +1187,7 @@
             {
               "n": 4,
               "titre": "Répondre aux questions",
+              "curseur": "Expliquer → répondre aux questions.",
               "objectif": "Répondre simplement aux questions courantes des plongeurs.",
               "situation": "Questions posées par les plongeurs joués.",
               "critere": "Réponses justes ou recherche proposée."
@@ -1069,6 +1195,7 @@
             {
               "n": 5,
               "titre": "Épreuve 4 (évaluation)",
+              "curseur": "Évaluation, épreuve 4.",
               "objectif": "Commenter l'environnement.",
               "situation": "Sujet tiré. Le moniteur, ou des stagiaires, jouent le rôle des plongeurs encadrés, comme le jury à l'examen.",
               "critere": "Environnement commenté avec justesse. Correspond aux modalités d'évaluation du MFT."
@@ -1084,6 +1211,7 @@
             {
               "n": 1,
               "titre": "Contexte environnemental",
+              "curseur": "Point de départ.",
               "objectif": "S'informer sur la région et ses espèces.",
               "situation": "Avant une sortie : milieux, espèces, fragilité, dangerosité, comportement, statut de protection.",
               "critere": "Il présente le contexte en quelques points."
@@ -1091,6 +1219,7 @@
             {
               "n": 2,
               "titre": "Limiter l'impact du mouillage",
+              "curseur": "S'informer → agir sur le mouillage.",
               "objectif": "Protéger les fonds au mouillage.",
               "situation": "Avec le DP ou en sortie autonome : parachute d'ancre ou autre moyen (lien matelotage).",
               "critere": "Mouillage installé sans abîmer les fonds."
@@ -1098,6 +1227,7 @@
             {
               "n": 3,
               "titre": "Transmettre au briefing",
+              "curseur": "Agir → transmettre au briefing.",
               "objectif": "Faire profiter la palanquée de sa préparation.",
               "situation": "Au briefing : espèces à observer, espèces fragiles ou dangereuses, règles de protection du site.",
               "critere": "Informations courtes, justes et utiles aux plongeurs."
@@ -1105,6 +1235,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties au fil de la formation.",
               "objectif": "Savoir préparer une sortie.",
               "situation": "Sorties au fil de la formation.",
               "critere": "Sortie préparée en tenant compte de l'environnement. Le MFT ne prévoit pas d'évaluation spécifique pour cet objectif."
@@ -1129,6 +1260,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA40",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier l'assistance complète depuis 40 m.",
               "situation": "Assistance intégrale depuis 40 m, comme au PA40.",
               "critere": "Assistance sûre. Sinon, on reprend la progression PA40.",
@@ -1137,6 +1269,7 @@
             {
               "n": 2,
               "titre": "Remontée au gilet depuis 25 m",
+              "curseur": "Acquis PA40 → exigences de l'épreuve 5, depuis 25 m.",
               "objectif": "Remonter l'assisté au gilet, sans palmes ni regonflage.",
               "situation": "Depuis 25 m, en lien avec la DTMR : gestion des gilets et de la ventilation.",
               "critere": "Vitesse régulière, pas de palmage propulsif, pas de regonflage."
@@ -1144,6 +1277,7 @@
             {
               "n": 3,
               "titre": "Depuis 40 m, au-dessus d'un fond plus important",
+              "curseur": "25 m → 40 m, au-dessus d'un fond plus important.",
               "objectif": "Prendre en charge et maîtriser la vitesse au plus tard à 35 m.",
               "situation": "Examinateur conscient, stabilisé à 40 m sur un fond plus important. Remontée sur son signe.",
               "critere": "Prise en charge immédiate, vitesse maîtrisée au plus tard à 35 m, jamais de redescente de plus de 2 m.",
@@ -1152,6 +1286,7 @@
             {
               "n": 4,
               "titre": "Situation évolutive",
+              "curseur": "Situation fixe → situation évolutive.",
               "objectif": "S'adapter quand la situation change pendant la remontée.",
               "situation": "Perte de conscience, lâcher du détendeur ou panne d'air, simulés par l'examinateur.",
               "critere": "Adaptation immédiate, surveillance continue, attitude sécurisante."
@@ -1159,6 +1294,7 @@
             {
               "n": 5,
               "titre": "Arrêt, tour d'horizon et parachute",
+              "curseur": "Nouvelle phase, l'arrêt, le tour d'horizon et le parachute.",
               "objectif": "Terminer l'intervention en zone de palier.",
               "situation": "Arrêt franc entre 8 et 6 m, tour d'horizon en gardant son niveau, puis désolidarisation et parachute sur le signe fin d'exercice.",
               "critere": "Arrêt marqué, niveau conservé, parachute déployé sans perte de profondeur.",
@@ -1167,6 +1303,7 @@
             {
               "n": 6,
               "titre": "Épreuve 5 (évaluation)",
+              "curseur": "Évaluation, épreuve 5.",
               "objectif": "Réussir l'intervention à 40 m.",
               "situation": "Après l'épreuve 7, dans les mêmes conditions de profondeur et de stabilisation.",
               "critere": "Prise en charge, vitesse, profil, profondeur plafond et tour d'horizon conformes, aucun critère éliminatoire. Correspond aux modalités d'évaluation du MFT (aptitude A2)."
@@ -1191,6 +1328,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier stabilisation et vidage de masque avec retrait.",
               "situation": "À 20 m : stabilisation, retrait, remise et vidage du masque.",
               "critere": "Stabilisation tenue, masque vidé sans stress."
@@ -1198,6 +1336,7 @@
             {
               "n": 2,
               "titre": "Descente tête en bas, à faible profondeur",
+              "curseur": "Nouveau geste, la descente tête en bas, le long d'un pendeur jusqu'à 15 m.",
               "objectif": "Construire la position verticale sans vrille.",
               "situation": "De 3 m à 15 m le long d'un pendeur, vitesse contrôlée sur l'ordinateur.",
               "critere": "Verticalité, pas de vrille, vitesse constante.",
@@ -1205,24 +1344,36 @@
             },
             {
               "n": 3,
+              "titre": "Descente en pleine eau",
+              "curseur": "Pendeur → pleine eau.",
+              "objectif": "Tenir sa vitesse sans repère.",
+              "situation": "De 3 m à 25 m en pleine eau, sans utiliser l'évaluateur comme repère, vitesse entre 20 et 30 m/min.",
+              "critere": "Vitesse constante, trajectoire verticale, stabilisation immédiate.",
+              "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur. Narcose possible : le moniteur reste au contact."
+            },
+            {
+              "n": 4,
               "titre": "Descente jusqu'à 40 m",
+              "curseur": "25 m → 40 m.",
               "objectif": "Tenir la vitesse et se stabiliser sans délai.",
-              "situation": "De 3 m à 30 m puis 40 m, en pleine eau, sans utiliser l'évaluateur comme repère. Vitesse entre 20 et 30 m/min, retournement pas avant 35 m.",
+              "situation": "De 3 m à 40 m, en pleine eau, sans utiliser l'évaluateur comme repère. Vitesse entre 20 et 30 m/min, retournement pas avant 35 m.",
               "critere": "Vitesse constante, retournement après 35 m, stabilisation immédiate.",
               "theorie": "Loi de Mariotte, flottabilité et usage du gilet en profondeur.",
               "securite": "Formation dans l'espace 0-40 m sous la responsabilité d'un encadrant E3 minimum. Accoutumance progressive à la profondeur. Narcose possible : le moniteur reste au contact."
             },
             {
-              "n": 4,
+              "n": 5,
               "titre": "Stabilisation et vidage de masque à 40 m",
+              "curseur": "Descente → stabilisation et vidage de masque à 40 m.",
               "objectif": "Rester stable pendant tout le vidage de masque.",
               "situation": "À 40 m : retrait du masque au signal, 3 cycles ventilatoires, remise et vidage en une seule fois, puis signe OK.",
               "critere": "Profondeur tenue à moins de 2 m près, ventilation régulière, vidage en une fois.",
               "securite": "Jamais de situation brutale. Le moniteur reste au contact."
             },
             {
-              "n": 5,
+              "n": 6,
               "titre": "Épreuve 7 (évaluation)",
+              "curseur": "Évaluation, épreuve 7.",
               "objectif": "Réussir la démonstration technique.",
               "situation": "Au départ de l'épreuve 5, depuis 3 m, au signal du jury.",
               "critere": "Critères de descente et de stabilisation du MFT respectés, aucune variation de plus de 2 m. Correspond aux modalités d'évaluation du MFT."
@@ -1240,6 +1391,7 @@
             {
               "n": 1,
               "titre": "Bilan : remontée au gilet seul",
+              "curseur": "Point de départ.",
               "objectif": "Contrôler sa propre vitesse au gilet et à la ventilation.",
               "situation": "Remontée seul depuis 15 m, profil linéaire.",
               "critere": "Vitesse régulière sans palmes."
@@ -1247,6 +1399,7 @@
             {
               "n": 2,
               "titre": "Binôme solidaire depuis 15 m",
+              "curseur": "Seul → binôme solidaire, depuis 15 m.",
               "objectif": "Gérer seul les deux gilets.",
               "situation": "Face à face, saisie de l'évaluateur, remontée à 10-12 m/min, purges et ventilation.",
               "critere": "Profil linéaire, aucun regonflage, pas de palmage propulsif."
@@ -1254,6 +1407,7 @@
             {
               "n": 3,
               "titre": "Depuis 25 m",
+              "curseur": "15 m → 25 m.",
               "objectif": "Tenir la vitesse de référence sur toute la remontée.",
               "situation": "Départ stabilisé à 25 m en pleine eau, remontée sur le signe « remonte ».",
               "critere": "Départ sans délai, vitesse de 10 à 12 m/min, jamais de redescente de plus de 2 m.",
@@ -1262,6 +1416,7 @@
             {
               "n": 4,
               "titre": "Arrêt, parachute et désaturation",
+              "curseur": "Remontée → arrêt, parachute et désaturation.",
               "objectif": "Finir la DTMR en zone de palier.",
               "situation": "Arrêt franc entre 8 et 6 m, tour d'horizon, désolidarisation, parachute gonflé au détendeur de secours, gestion de la désaturation, au moins 1 minute à 6 m.",
               "critere": "Tour d'horizon complet et stabilisé, parachute efficace, profondeur d'arrêt maintenue.",
@@ -1270,6 +1425,7 @@
             {
               "n": 5,
               "titre": "Épreuve 8 (évaluation)",
+              "curseur": "Évaluation, épreuve 8.",
               "objectif": "Réussir la DTMR.",
               "situation": "Binôme solidaire depuis 25 m.",
               "critere": "Critères techniques du MFT respectés, aucun critère éliminatoire. Correspond aux modalités d'évaluation du MFT (aptitude A3)."
@@ -1293,6 +1449,7 @@
             {
               "n": 1,
               "titre": "Remorquer le mannequin",
+              "curseur": "Point de départ.",
               "objectif": "Maîtriser la prise classique et le remorquage.",
               "situation": "Remorquage sur le dos, bras sous l'aisselle, main sur la poitrine, tête du mannequin sur l'épaule, sur des distances croissantes.",
               "critere": "Voies aériennes du mannequin toujours hors de l'eau.",
@@ -1301,6 +1458,7 @@
             {
               "n": 2,
               "titre": "Apnée en déplacement à 4-6 m",
+              "curseur": "Nouvelle partie, l'apnée en déplacement à 4-6 m.",
               "objectif": "Tenir 20 secondes d'apnée en déplacement.",
               "situation": "Canard, descente entre 4 et 6 m, déplacement en apnée, récupération courte en surface.",
               "critere": "20 secondes tenues, récupération de 10 secondes au maximum.",
@@ -1309,6 +1467,7 @@
             {
               "n": 3,
               "titre": "Enchaînement partiel",
+              "curseur": "Parties séparées → enchaînement partiel.",
               "objectif": "Relier les parties de l'épreuve.",
               "situation": "100 m PMT, apnée, récupération du mannequin, signal de détresse.",
               "critere": "Enchaînement sans arrêt.",
@@ -1317,6 +1476,7 @@
             {
               "n": 4,
               "titre": "Parcours complet chronométré",
+              "curseur": "Enchaînement partiel → parcours complet chronométré.",
               "objectif": "Réaliser le parcours en moins de 8 minutes.",
               "situation": "Parcours complet défini par le moniteur, chronométré.",
               "critere": "Moins de 8 minutes, aucun critère éliminatoire.",
@@ -1325,6 +1485,7 @@
             {
               "n": 5,
               "titre": "Épreuve 1 (évaluation)",
+              "curseur": "Évaluation, épreuve 1.",
               "objectif": "Réussir l'épreuve du mannequin.",
               "situation": "Parcours défini par le jury, une seule tentative.",
               "critere": "Moins de 8 minutes, apnée de 20 s tenue, récupération de 10 s maximum, face du mannequin jamais immergée 5 s. Correspond aux modalités d'évaluation du MFT."
@@ -1341,6 +1502,7 @@
             {
               "n": 1,
               "titre": "Bilan",
+              "curseur": "Point de départ.",
               "objectif": "Mesurer son niveau de départ.",
               "situation": "Nage PMT chronométrée sur une distance connue.",
               "critere": "Temps de référence noté."
@@ -1348,6 +1510,7 @@
             {
               "n": 2,
               "titre": "Entraînement aérobie",
+              "curseur": "Distance → rythme, en entraînement aérobie.",
               "objectif": "Développer l'endurance.",
               "situation": "Séances régulières de nage PMT, distances et rythme croissants.",
               "critere": "Progression du temps d'une séance à l'autre."
@@ -1355,6 +1518,7 @@
             {
               "n": 3,
               "titre": "800 m chronométré",
+              "curseur": "Entraînement → 800 m chronométré.",
               "objectif": "Se situer sur le barème du MFT.",
               "situation": "800 m chronométrés en milieu naturel.",
               "critere": "Temps comparé au barème (10/20 à 15 min 30 pour les hommes, 16 min 30 pour les femmes)."
@@ -1362,6 +1526,7 @@
             {
               "n": 4,
               "titre": "Épreuve 2 (évaluation)",
+              "curseur": "Évaluation, épreuve 2.",
               "objectif": "Réussir la nage PMT de 800 m.",
               "situation": "Départ groupé, parcours déterminé de 800 m.",
               "critere": "Note selon le barème du MFT. Correspond aux modalités d'évaluation du MFT (aptitude A4)."
@@ -1378,6 +1543,7 @@
             {
               "n": 1,
               "titre": "Apnée stabilisée à 5 m",
+              "curseur": "Point de départ.",
               "objectif": "Descendre et se stabiliser en apnée.",
               "situation": "Canard efficace, stabilisation face au moniteur à 5 m, signe OK.",
               "critere": "Stabilisation calme, remontée avec tour d'horizon.",
@@ -1386,6 +1552,7 @@
             {
               "n": 2,
               "titre": "Vers 8 m",
+              "curseur": "5 m → 8 m.",
               "objectif": "Augmenter la profondeur progressivement.",
               "situation": "Même protocole à des profondeurs croissantes.",
               "critere": "Aisance au fond et remontée maîtrisée.",
@@ -1393,15 +1560,26 @@
             },
             {
               "n": 3,
-              "titre": "À 10 m, protocole complet",
+              "titre": "Protocole complet à 8 m",
+              "curseur": "Stabilisation → protocole de sortie complet.",
+              "objectif": "Enchaîner tout le protocole de l'épreuve.",
+              "situation": "À 8 m : stabilisation, signe OK, identification, remontée avec tour d'horizon, tuba hors de la bouche, signe OK en surface, 30 s sous contrôle.",
+              "critere": "Protocole complet sans oubli, aucun signe de perte de contrôle.",
+              "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation. Le moniteur est à 8 m."
+            },
+            {
+              "n": 4,
+              "titre": "À 10 m",
+              "curseur": "8 m → 10 m.",
               "objectif": "Réaliser l'épreuve dans son déroulement complet.",
-              "situation": "Descente jusqu'à l'examinateur à 10 m, stabilisation, signe OK, identification, remontée avec tour d'horizon, tuba hors de la bouche, signe OK en surface, 30 s sous contrôle.",
+              "situation": "Même protocole, avec l'examinateur à 10 m.",
               "critere": "Protocole complet, aucun signe de perte de contrôle.",
               "securite": "Apnée toujours en binôme, un plongeur surveille depuis la surface. Pas d'hyperventilation. L'examinateur ou le moniteur est à 10 m."
             },
             {
-              "n": 4,
+              "n": 5,
               "titre": "Épreuve 3 (évaluation)",
+              "curseur": "Évaluation, épreuve 3.",
               "objectif": "Réussir la plongée libre à 10 m.",
               "situation": "Un seul essai.",
               "critere": "10 m atteints, stabilisation et retour en surface en sécurité. Ni perte de contrôle moteur ni syncope. Correspond aux modalités d'évaluation du MFT."
@@ -1418,6 +1596,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis N3",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la nage capelée de 300 m.",
               "situation": "300 m capelé.",
               "critere": "Sans essoufflement."
@@ -1425,6 +1604,7 @@
             {
               "n": 2,
               "titre": "Technique de l'épreuve",
+              "curseur": "Nage libre → technique de l'épreuve.",
               "objectif": "Nager capelé sur le tuba, sans les bras.",
               "situation": "Scaphandre sur le dos, bouteille ouverte, détendeur en main, nage ventrale, distances croissantes.",
               "critere": "Pas d'aide des bras, pas d'utilisation du scaphandre.",
@@ -1433,6 +1613,7 @@
             {
               "n": 3,
               "titre": "500 m chronométré",
+              "curseur": "Sans chrono → 500 m chronométré.",
               "objectif": "Nager 500 m en moins de 16 minutes.",
               "situation": "500 m chronométrés en milieu naturel.",
               "critere": "Moins de 16 minutes."
@@ -1440,6 +1621,7 @@
             {
               "n": 4,
               "titre": "Épreuve 9 (évaluation)",
+              "curseur": "Évaluation, épreuve 9.",
               "objectif": "Réussir la nage capelée.",
               "situation": "Départ groupé, parcours déterminé de 500 m.",
               "critere": "Fait en moins de 16 minutes. Correspond aux modalités d'évaluation du MFT (aptitude A4)."
@@ -1463,6 +1645,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis N3",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier les connaissances des niveaux précédents.",
               "situation": "Questions sur les accidents vus au N3.",
               "critere": "Réponses justes. Sinon, révision ciblée."
@@ -1470,6 +1653,7 @@
             {
               "n": 2,
               "titre": "Oreille et ventilation",
+              "curseur": "Nouveau thème, l'oreille et la ventilation.",
               "objectif": "Comprendre l'oreille en plongée et l'installation de l'essoufflement.",
               "situation": "Anatomie simple de l'appareil ventilatoire, mécanique ventilatoire, rétention de CO2, cercle vicieux de l'essoufflement.",
               "critere": "Il explique l'essoufflement avec un schéma et dit ce que fait le GP."
@@ -1477,6 +1661,7 @@
             {
               "n": 3,
               "titre": "Narcose, OPI, apnée, froid, déshydratation",
+              "curseur": "Nouveau thème, narcose, OPI, apnée, froid, déshydratation.",
               "objectif": "Connaître les autres accidents et le rôle du GP.",
               "situation": "Symptômes, facteurs favorisants, prévention. Premiers signes de narcose et crise narcotique. Syncope thermo-différentielle.",
               "critere": "Pour chaque accident, il cite les situations et les comportements adaptés du GP."
@@ -1484,6 +1669,7 @@
             {
               "n": 4,
               "titre": "Accidents de désaturation",
+              "curseur": "Nouveau thème, les accidents de désaturation.",
               "objectif": "Comprendre les mécanismes et la prévention.",
               "situation": "Mécanismes, symptômes, FOP, shunts pulmonaires, facteurs de prévention, profils à risques. Traitement limité au RIFAP.",
               "critere": "Il explique la prévention en tant que GP, schéma à l'appui."
@@ -1491,6 +1677,7 @@
             {
               "n": 5,
               "titre": "Épreuves 10 et 11 (évaluation)",
+              "curseur": "Évaluation, épreuves 10 et 11.",
               "objectif": "Répondre en tant que GP.",
               "situation": "Écrits de 30 minutes, études de cas pratiques.",
               "critere": "Réponses justes, orientées sur le rôle du GP. Correspond aux modalités d'évaluation du MFT."
@@ -1506,6 +1693,7 @@
             {
               "n": 1,
               "titre": "Dissolution de l'azote",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les états de saturation.",
               "situation": "Transport et diffusion des gaz, sous-saturation, saturation, sursaturation, sursaturation critique.",
               "critere": "Réponses justes selon les phases de la plongée."
@@ -1513,6 +1701,7 @@
             {
               "n": 2,
               "titre": "Modèles",
+              "curseur": "Saturation → modèles.",
               "objectif": "Comprendre la modélisation des ordinateurs.",
               "situation": "Jeux de paramètres haldaniens (ZHL-16C), absence de certification des logiciels.",
               "critere": "Il explique le principe et ses limites."
@@ -1520,6 +1709,7 @@
             {
               "n": 3,
               "titre": "Ordinateurs",
+              "curseur": "Modèles → ordinateurs.",
               "objectif": "Lire, paramétrer et utiliser les ordinateurs courants.",
               "situation": "Captures d'écran, courbes de plongée : affichages, conservatisme, planification, carnet. GF à l'air entre 85 et 90 %, pas de paliers profonds à l'air. Préconisations fédérales et procédures de rattrapage.",
               "critere": "Analyse juste de chaque capture, comportement adapté en tant que GP."
@@ -1527,6 +1717,7 @@
             {
               "n": 4,
               "titre": "Procédures différentes dans une palanquée",
+              "curseur": "Ordinateurs → procédures différentes dans une palanquée.",
               "objectif": "Gérer des plongeurs aux moyens et conservatismes différents.",
               "situation": "Cas : niveaux de saturation, marques, modèles et conservatismes différents.",
               "critere": "Situation identifiée avant la plongée, action adaptée avant ou pendant."
@@ -1534,6 +1725,7 @@
             {
               "n": 5,
               "titre": "Épreuve 10 (évaluation)",
+              "curseur": "Évaluation, épreuve 10.",
               "objectif": "Réussir l'écrit de désaturation.",
               "situation": "Écrit de 30 minutes : connaissances et études de cas.",
               "critere": "Réponses justes. Correspond aux modalités d'évaluation du MFT."
@@ -1549,6 +1741,7 @@
             {
               "n": 1,
               "titre": "Responsabilité du GP",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la responsabilité civile et pénale du GP.",
               "situation": "Obligations de moyens et de résultat, mise en danger d'autrui, exemples concrets.",
               "critere": "Il applique ces notions à des cas de plongée."
@@ -1556,6 +1749,7 @@
             {
               "n": 2,
               "titre": "La FFESSM",
+              "curseur": "Responsabilités → FFESSM.",
               "objectif": "Connaître la structure et les obligations fédérales.",
               "situation": "Commissions, comité directeur, licence, assurances, CACI, diplômes FFESSM et CMAS, honorabilité, signalement des violences, REX, carnet de plongée numérique.",
               "critere": "Réponses justes et succinctes."
@@ -1563,6 +1757,7 @@
             {
               "n": 3,
               "titre": "Code du sport",
+              "curseur": "FFESSM → Code du sport.",
               "objectif": "Connaître les prérogatives du GP et le rôle du DP.",
               "situation": "Prérogatives en autonomie et en encadrement, matériel obligatoire, rôle du DP.",
               "critere": "Il situe ses prérogatives dans chaque situation."
@@ -1570,6 +1765,7 @@
             {
               "n": 4,
               "titre": "Les normes",
+              "curseur": "Code du sport → normes.",
               "objectif": "Comprendre le principe de protection des normes.",
               "situation": "Définition, obligations des fabricants, maintien des caractéristiques d'origine.",
               "critere": "Il explique le principe de protection."
@@ -1577,6 +1773,7 @@
             {
               "n": 5,
               "titre": "Épreuve 12 (évaluation)",
+              "curseur": "Évaluation, épreuve 12.",
               "objectif": "Réussir l'écrit de réglementation.",
               "situation": "Écrit de 30 minutes.",
               "critere": "Réponses justes dans le cadre des prérogatives du GP. Correspond aux modalités d'évaluation du MFT."
@@ -1593,6 +1790,7 @@
             {
               "n": 1,
               "titre": "Compresseur et blocs",
+              "curseur": "Point de départ.",
               "objectif": "Connaître le gonflage et les blocs.",
               "situation": "Schéma de principe du compresseur, gonflage en sécurité, pannes courantes. Inspection visuelle, requalification, robinet.",
               "critere": "Il commente un schéma et cite les règles de sécurité.",
@@ -1601,6 +1799,7 @@
             {
               "n": 2,
               "titre": "Détendeurs",
+              "curseur": "Compresseur et blocs → détendeurs.",
               "objectif": "Expliquer le fonctionnement d'un détendeur.",
               "situation": "Siège, clapet, pressions, compensation. Premiers étages à piston et à membrane, deuxièmes étages, surcompensation, Venturi, Vortex, givrage.",
               "critere": "Il décrit les forces qui ouvrent et ferment le clapet, sans calcul."
@@ -1608,6 +1807,7 @@
             {
               "n": 3,
               "titre": "Manomètre, gilet, ordinateur",
+              "curseur": "Détendeurs → manomètre, gilet, ordinateur.",
               "objectif": "Connaître les autres équipements.",
               "situation": "Principe du manomètre, modèles de gilets, fonctions et réglages de son ordinateur.",
               "critere": "Il décrit son ordinateur et justifie ses choix, lit les écrans courants."
@@ -1615,6 +1815,7 @@
             {
               "n": 4,
               "titre": "Épreuve 13 (évaluation)",
+              "curseur": "Évaluation, épreuve 13, à l'oral.",
               "objectif": "Réussir l'oral de matériel.",
               "situation": "Oral à partir de planches, de dessins ou d'éclatés.",
               "critere": "Explications justes et simples. Correspond aux modalités d'évaluation du MFT."
