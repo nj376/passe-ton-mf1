@@ -5,6 +5,3 @@
 
 # --- Python ---
 __pycache__/
-
-# --- Documents de travail temporaires (supports de stage initial, à supprimer en fin de travail : jamais commités) ---
-/_stage-initial/
