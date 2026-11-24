@@ -20,6 +20,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier qu'il sait extraire les consignes d'un briefing du DP.",
               "situation": "Après un briefing réel du DP, l'élève restitue les consignes : durée, profondeur maximale, pression de fin de plongée, paliers éventuels, durée totale de remontée maximale.",
               "critere": "Restitution complète et exacte, sans aide. Sinon, on reprend la planification PA20."
@@ -27,6 +28,7 @@
             {
               "n": 2,
               "titre": "Consignes de la zone 20-40 m",
+              "curseur": "Consignes de la zone 0-20 m → consignes de la zone 20-40 m.",
               "objectif": "Traduire les consignes du DP en limites concrètes pour la palanquée.",
               "situation": "Le DP fixe un cadre pour une plongée entre 20 et 40 m, avec des consignes sur les paliers et le retour en surface. L'élève en tire les limites de sa palanquée : profondeur maximale, temps, pression de demi-tour et de début de remontée.",
               "critere": "Les limites qu'il fixe restent strictement dans le cadre du DP et il sait d'où vient chaque chiffre.",
@@ -35,6 +37,7 @@
             {
               "n": 3,
               "titre": "Consignes incomplètes",
+              "curseur": "Consignes complètes → consignes à compléter.",
               "objectif": "Repérer ce qui manque pour planifier et aller le chercher.",
               "situation": "Exercice annoncé : le moniteur, dans le rôle du DP, donne un briefing incomplet (rien sur le site, rien sur les paliers ou le retour en surface). L'élève doit retrouver ce qui manque.",
               "critere": "Il identifie les informations manquantes et pose les bonnes questions avant de planifier."
@@ -42,6 +45,7 @@
             {
               "n": 4,
               "titre": "Contrainte forte",
+              "curseur": "Cadre large → contrainte forte imposée.",
               "objectif": "Adapter la planification quand le DP resserre le cadre.",
               "situation": "Le DP impose une contrainte qui change le plan initial : profondeur maximale réduite, temps plus court, plongée sans palier obligatoire, horaire de retour fixe.",
               "critere": "Il refait sa planification sans dépasser le nouveau cadre et explique ce qui a changé."
@@ -49,6 +53,7 @@
             {
               "n": 5,
               "titre": "Présenter et argumenter (évaluation)",
+              "curseur": "Évaluation, « je respecte » → « j'argumente ».",
               "objectif": "Montrer que chaque choix de la planification découle des consignes du DP.",
               "situation": "Plusieurs plongées de formation dans la zone 20-40 m, avec des consignes différentes. L'élève présente sa planification au moniteur et répond à ses « pourquoi ».",
               "critere": "Respect strict des consignes, choix argumentés. Correspond aux modalités d'évaluation du MFT."
@@ -67,6 +72,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier l'usage du compas et le suivi d'un trajet simple.",
               "situation": "Plongée de formation peu profonde : aller-retour au compas sur 20 à 30 m, puis court trajet prédéfini.",
               "critere": "Aller-retour réussi et trajet suivi sans aide.",
@@ -75,6 +81,7 @@
             {
               "n": 2,
               "titre": "Lire le site",
+              "curseur": "Nouveau contenu, lire un site sur un croquis.",
               "objectif": "Tirer des informations du site les contraintes et les repères utiles.",
               "situation": "À partir des informations du DP et d'un croquis du site (relief, tombant, zones de profondeur, courant habituel), l'élève repère les points remarquables et les contraintes.",
               "critere": "Il place sur le croquis son parcours, ses repères et les zones à éviter."
@@ -82,6 +89,7 @@
             {
               "n": 3,
               "titre": "Choisir ses moyens d'orientation",
+              "curseur": "Orientation imposée → moyens d'orientation choisis.",
               "objectif": "Décider pour chaque partie du parcours comment s'orienter.",
               "situation": "Même croquis. Pour chaque branche du parcours, l'élève dit s'il s'oriente avec le milieu (relief, lumière, courant, points remarquables) ou avec un instrument, et pourquoi.",
               "critere": "Choix adaptés au site et justifiés.",
@@ -90,6 +98,7 @@
             {
               "n": 4,
               "titre": "Du plan au terrain",
+              "curseur": "Sur le papier → sur le site.",
               "objectif": "Confronter sa planification à la plongée réelle.",
               "situation": "La palanquée de formation plonge le parcours planifié. Au débriefing, l'élève compare le prévu et le réalisé.",
               "critere": "Il retrouve la zone d'intérêt et revient à proximité du bateau. Il explique les écarts.",
@@ -98,6 +107,7 @@
             {
               "n": 5,
               "titre": "Site inconnu",
+              "curseur": "Site connu → site inconnu.",
               "objectif": "Planifier l'orientation sur un site qu'il n'a jamais plongé.",
               "situation": "L'élève ne dispose que des informations du DP et des documents disponibles sur le site.",
               "critere": "Planification d'orientation cohérente, repères et moyens choisis sans aide."
@@ -105,6 +115,7 @@
             {
               "n": 6,
               "titre": "Présenter et argumenter (évaluation)",
+              "curseur": "Évaluation, sites variés dans la zone 20-40 m.",
               "objectif": "Intégrer la topologie du site dans une planification complète.",
               "situation": "Plusieurs plongées dans la zone 20-40 m, sur des sites variés.",
               "critere": "Les contraintes du site sont prises en compte, les moyens d'orientation sont justifiés. Correspond aux modalités d'évaluation du MFT."
@@ -123,6 +134,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la planification d'un profil simple et les calculs de base.",
               "situation": "Cas concret sur papier : plongée à 20 m. L'élève propose un profil, un protocole de contrôle des consommations et un calcul simple de consommation et d'autonomie.",
               "critere": "Profil cohérent et calcul juste, en l/min et en bar/min."
@@ -130,6 +142,7 @@
             {
               "n": 2,
               "titre": "Profil dans la zone 20-40 m",
+              "curseur": "Profil sans palier à 20 m → profil dans la zone 20-40 m.",
               "objectif": "Construire un profil adapté à la zone et au cadre du DP.",
               "situation": "Avec ses équipiers, l'élève définit profondeur maximale, durée et forme du profil. Il s'aide du mode planification de son ordinateur pour anticiper les paliers.",
               "critere": "Profil cohérent avec le cadre du DP. Il explique pourquoi il ne choisit ni profil inversé ni yoyo.",
@@ -138,6 +151,7 @@
             {
               "n": 3,
               "titre": "Calculs adaptés à la zone",
+              "curseur": "Nouvel élément, les calculs adaptés à la zone 20-40 m.",
               "objectif": "Calculer consommation et autonomie pour la profondeur prévue et pour les paliers.",
               "situation": "À partir du profil de l'étape précédente : consommation au fond et au palier, pression de demi-tour, marge de sécurité.",
               "critere": "Calculs justes en l/min et en bar/min. Il en tire une décision concrète (pression de remontée, durée au fond).",
@@ -146,6 +160,7 @@
             {
               "n": 4,
               "titre": "Plusieurs moyens de désaturation",
+              "curseur": "Un seul moyen de désaturation → plusieurs dans la palanquée.",
               "objectif": "Anticiper la cohabitation de moyens de désaturation différents.",
               "situation": "Palanquée avec des ordinateurs différents (modèles ou GF différents). Avant la plongée, l'élève propose avec ses équipiers une règle commune pour la vitesse de remontée et les paliers.",
               "critere": "Il identifie la situation avant la plongée et propose une règle commune cohérente.",
@@ -154,6 +169,7 @@
             {
               "n": 5,
               "titre": "Retour en surface ordinaire et avec incident",
+              "curseur": "Retour ordinaire → retour avec incident.",
               "objectif": "Prévoir le protocole de contrôle des consommations et le retour en surface, normal ou non.",
               "situation": "Le moniteur pose des « et si » : consommation plus forte que prévu, perte de palanquée, ordinateur qui s'arrête, paliers plus longs que prévu. L'élève intègre une réponse à sa planification.",
               "critere": "Une procédure prévue et argumentée pour chaque cas, compatible avec les consignes du DP."
@@ -161,6 +177,7 @@
             {
               "n": 6,
               "titre": "Présenter et argumenter (évaluation)",
+              "curseur": "Évaluation, calcul seul et argumenté, sur plongées réelles.",
               "objectif": "Présenter la planification complète d'une plongée entre 20 et 40 m.",
               "situation": "En cours de formation, sur plusieurs plongées réelles et des situations variées. L'élève présente profil, calculs, règle de désaturation commune et procédures de retour.",
               "critere": "Planification complète, argumentée, calculs adaptés à la zone. Correspond aux modalités d'évaluation du MFT."
@@ -186,6 +203,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier l'aller-retour au compas et le suivi d'un court trajet.",
               "situation": "Plongée peu profonde : aller-retour au compas sur 20 à 30 m, puis court trajet prédéfini.",
               "critere": "Les deux sont réussis sans aide. Sinon, on reprend la progression PA20."
@@ -193,37 +211,50 @@
             {
               "n": 2,
               "titre": "S'orienter avec le milieu",
+              "curseur": "Compas → milieu, sans instrument.",
               "objectif": "Utiliser le relief, le courant, la lumière et les points remarquables.",
               "situation": "Site connu, faible profondeur, sans instrument. Le moniteur demande régulièrement à l'élève de montrer la direction du bateau.",
               "critere": "Il montre la bonne direction et revient près du point de départ en s'appuyant sur le milieu."
             },
             {
               "n": 3,
-              "titre": "Milieu et instrument sur un parcours varié",
+              "titre": "Milieu et instrument",
+              "curseur": "Milieu seul → milieu et instrument.",
+              "objectif": "Combiner le milieu et le compas pour s'orienter.",
+              "situation": "Site connu, faible profondeur, trajet court : il combine repères naturels et compas.",
+              "critere": "Il passe d'un moyen à l'autre selon le besoin et revient près du point de départ."
+            },
+            {
+              "n": 4,
+              "titre": "Parcours varié",
+              "curseur": "Trajet court → parcours varié.",
               "objectif": "Combiner les deux moyens sur un parcours à plusieurs branches.",
               "situation": "Parcours plus long, avec changements de direction, repères naturels et compas.",
               "critere": "Il rejoint la zone d'intérêt efficacement, se situe à tout moment et revient à proximité du bateau.",
               "theorie": "Perfectionnement de l'utilisation d'un instrument d'orientation sur des parcours variés."
             },
             {
-              "n": 4,
+              "n": 5,
               "titre": "Vers 40 m",
+              "curseur": "Faible profondeur → environ 40 m.",
               "objectif": "Garder la maîtrise de son itinéraire en zone plus profonde.",
               "situation": "Mêmes parcours, profondeur augmentée progressivement jusqu'à environ 40 m.",
               "critere": "Même maîtrise qu'en zone peu profonde, contrôles de cap plus fréquents.",
               "securite": "Accoutumance progressive à la profondeur, dans l'espace 0-40 m avec un E3 minimum. La narcose peut altérer le jugement : plan d'orientation simple."
             },
             {
-              "n": 5,
+              "n": 6,
               "titre": "Visibilité réduite ou courant",
+              "curseur": "Conditions favorables → visibilité réduite ou courant.",
               "objectif": "S'orienter quand les conditions se compliquent.",
               "situation": "Plongée avec une visibilité réduite ou un courant, sur un parcours connu puis nouveau.",
               "critere": "Il garde son cap, adapte son itinéraire et revient près du bateau.",
               "securite": "Les conditions restent celles que le DP juge compatibles."
             },
             {
-              "n": 6,
+              "n": 7,
               "titre": "Proche de 40 m (évaluation)",
+              "curseur": "Évaluation, proche de 40 m, au moins deux situations.",
               "objectif": "Maîtriser son itinéraire dans au moins deux situations différentes.",
               "situation": "Évaluation à une profondeur proche de 40 m, au moins deux situations différentes.",
               "critere": "Efficacité pour rejoindre la zone d'intérêt, capacité à se situer, retour à proximité du bateau. Correspond aux modalités d'évaluation du MFT."
@@ -241,6 +272,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la cohésion d'une palanquée autonome dans la zone 0-20 m.",
               "situation": "Plongée en autonomie à 20 m, encadrant dans la palanquée.",
               "critere": "Communication régulière, surveillance mutuelle, palanquée groupée."
@@ -248,6 +280,7 @@
             {
               "n": 2,
               "titre": "Communication et surveillance vers 40 m",
+              "curseur": "20 m → profondeur croissante vers 40 m.",
               "objectif": "Renforcer la co-responsabilité dans la zone 20-40 m.",
               "situation": "Profondeur augmentée progressivement. Contrôles de l'air et de la désaturation plus fréquents, chacun garde ses équipiers en vue.",
               "critere": "Échanges spontanés et plus fréquents qu'à 20 m, aucun équipier perdu de vue.",
@@ -257,6 +290,7 @@
             {
               "n": 3,
               "titre": "Imprévu humain",
+              "curseur": "Plongée sans imprévu → imprévu humain annoncé.",
               "objectif": "Adapter le déroulement de la plongée à un problème d'équipier.",
               "situation": "Scénario annoncé avant la plongée : à un moment donné, un équipier (le moniteur) simule froid, fatigue ou consommation trop forte.",
               "critere": "Décision collective rapide et adaptée : écourter, remonter, changer de parcours."
@@ -264,6 +298,7 @@
             {
               "n": 4,
               "titre": "Imprévu environnemental ou matériel",
+              "curseur": "Imprévu humain → imprévu environnemental ou matériel.",
               "objectif": "Réagir quand le milieu ou le matériel impose une contrainte.",
               "situation": "Courant qui se lève, visibilité qui baisse, ou panne d'ordinateur simulée selon un scénario annoncé.",
               "critere": "La palanquée adapte sa plongée sans sortir du cadre du DP."
@@ -271,6 +306,7 @@
             {
               "n": 5,
               "titre": "Éviter les comportements à risques et finir en sécurité",
+              "curseur": "Nouveau contenu, éviter les comportements à risques et finir en sécurité.",
               "objectif": "Plonger sans profil à risque et sécuriser la fin de plongée.",
               "situation": "Ni profil inversé ni yoyo. Paliers en pleine eau signalés au parachute, arrêt et tour d'horizon à 3 m.",
               "critere": "Aucun comportement à risque. Parachute lancé au palier, arrêt et tour d'horizon à 3 m faits sans rappel.",
@@ -279,6 +315,7 @@
             {
               "n": 6,
               "titre": "Proche de 40 m (évaluation)",
+              "curseur": "Évaluation, proche de 40 m, au moins deux situations.",
               "objectif": "Évoluer en autonomie dans le souci de la sécurité de la palanquée.",
               "situation": "Évaluation à une profondeur proche de 40 m, au moins deux situations différentes.",
               "critere": "Communication, surveillance et cohésion maintenues, imprévus gérés, comportements adaptés. Correspond aux modalités d'évaluation du MFT."
@@ -297,6 +334,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la lecture des paramètres de son ordinateur.",
               "situation": "Au sec, sur son ordinateur.",
               "critere": "Il lit et explique durée, profondeur, durée sans palier, paliers, durée de remontée, alarmes."
@@ -304,6 +342,7 @@
             {
               "n": 2,
               "titre": "Maîtriser son ordinateur",
+              "curseur": "Lecture des paramètres → maîtrise de son ordinateur.",
               "objectif": "Connaître le fonctionnement et les règles d'utilisation de son ordinateur.",
               "situation": "Au sec, sur son ordinateur et sur des captures d'écran : principe de fonctionnement, profils, nombre de plongées, mode planification.",
               "critere": "Il interprète une capture d'écran et dit ce qu'il fait.",
@@ -312,6 +351,7 @@
             {
               "n": 3,
               "titre": "Paliers obligatoires dans la zone 20-40 m",
+              "curseur": "Au sec → en plongée avec paliers.",
               "objectif": "Appliquer vitesse de remontée et paliers en palanquée.",
               "situation": "Plongées avec paliers obligatoires dans le cadre du DP.",
               "critere": "Vitesse respectée, paliers effectués complets, palanquée groupée.",
@@ -320,6 +360,7 @@
             {
               "n": 4,
               "titre": "Plusieurs moyens de désaturation",
+              "curseur": "Un moyen de désaturation → plusieurs dans la palanquée.",
               "objectif": "Appliquer une règle commune en plongée.",
               "situation": "Palanquée avec des ordinateurs différents : règle convenue avant la plongée, appliquée à la remontée et aux paliers.",
               "critere": "Règle appliquée sans hésitation, aucun équipier ne sort de son propre cadre.",
@@ -328,6 +369,7 @@
             {
               "n": 5,
               "titre": "Cas concrets et captures d'écran",
+              "curseur": "Situation normale → cas concrets à analyser.",
               "objectif": "Réagir à une situation anormale affichée par l'ordinateur.",
               "situation": "Au sec : captures d'écran de paliers non faits, remontée trop rapide, plongées successives, alarmes.",
               "critere": "Analyse juste et comportement adapté pour chaque cas."
@@ -335,6 +377,7 @@
             {
               "n": 6,
               "titre": "Proche de 40 m (évaluation)",
+              "curseur": "Évaluation, proche de 40 m, et sur cas concrets.",
               "objectif": "Gérer la désaturation en autonomie.",
               "situation": "Évaluation à une profondeur proche de 40 m, au moins deux situations différentes. Usage de l'ordinateur évalué sur cas concrets et captures d'écran.",
               "critere": "Vitesse, paliers et cohésion maîtrisés, diversité des moyens prise en compte, analyses de cas justes. Correspond aux modalités d'évaluation du MFT."
@@ -360,6 +403,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier une assistance complète dans la zone 0-20 m.",
               "situation": "Assistance intégrale depuis 20 m : interprétation, prise en charge, remontée, arrêt entre 5 et 3 m, sortie d'eau.",
               "critere": "Assistance complète et sûre. Sinon, on reprend la progression PA20.",
@@ -368,6 +412,7 @@
             {
               "n": 2,
               "titre": "Manifestations sans signe en profondeur",
+              "curseur": "Signe conventionnel → manifestation sans signe, entre 20 et 30 m.",
               "objectif": "Reconnaître une difficulté propre à la zone profonde.",
               "situation": "Entre 20 et 30 m, le moniteur simule perte de vigilance, ventilation anormale, agitation ou inconscience.",
               "critere": "Interprétation juste et réaction immédiate, sans brutalité.",
@@ -376,6 +421,7 @@
             {
               "n": 3,
               "titre": "Assistance depuis 30 m",
+              "curseur": "20 m → 30 m.",
               "objectif": "Remonter l'assisté à vitesse régulière depuis plus profond.",
               "situation": "Prise en charge à 30 m, remontée aux gilets, arrêt marqué entre 5 et 3 m, sortie d'eau sécurisée.",
               "critere": "Vitesse régulière adaptée aux moyens de désaturation, arrêt marqué, gilets bien utilisés.",
@@ -384,6 +430,7 @@
             {
               "n": 4,
               "titre": "Assistance depuis 40 m, avec palier",
+              "curseur": "30 m → 40 m, avec palier si le moyen de désaturation l'impose.",
               "objectif": "Assister depuis la profondeur maximale du PA40.",
               "situation": "Prise en charge à 40 m. Sortie rapide de la zone d'évolution jusqu'à 30 m possible, puis régulation de la vitesse, palier si le moyen de désaturation l'impose.",
               "critere": "Vitesse régulée après 30 m, palier maîtrisé en situation d'assistance, arrêt entre 5 et 3 m.",
@@ -392,6 +439,7 @@
             {
               "n": 5,
               "titre": "Vers 300 m de nage capelée",
+              "curseur": "Nouveau contenu, la condition physique (nage capelée).",
               "objectif": "Développer la condition physique de la plongée profonde.",
               "situation": "Nage capelée en surface, distances croissantes d'une séance à l'autre jusqu'à 300 m.",
               "critere": "Parcours terminé dans de bonnes conditions physiques, sans essoufflement.",
@@ -400,6 +448,7 @@
             {
               "n": 6,
               "titre": "À 40 m et 300 m capelé (évaluation)",
+              "curseur": "Évaluation, à 40 m et 300 m capelé.",
               "objectif": "Montrer une assistance complète à 40 m et une condition physique suffisante.",
               "situation": "À 40 m, au moins deux situations différentes, chacune réalisée intégralement au moins deux fois. Nage capelée de 300 m, non chronométrée.",
               "critere": "Interprétation juste, prise en charge rapide et efficace, remontée régulière, arrêt marqué entre 5 et 3 m, sortie d'eau sécurisée, gilets privilégiés. 300 m capelé en bonnes conditions physiques. Correspond aux modalités d'évaluation du MFT."
@@ -423,6 +472,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PE40",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la stabilisation acquise au PE40.",
               "situation": "Stabilisation à la descente, au fond et au palier, jusqu'à 20 m puis 30 m.",
               "critere": "Stabilisation rapide et efficace, gilet et poumon ballast combinés."
@@ -430,6 +480,7 @@
             {
               "n": 2,
               "titre": "Descente équilibrée vers 40 m",
+              "curseur": "30 m → vers 40 m, pendant la descente.",
               "objectif": "Compenser l'effet croissant de la profondeur pendant la descente.",
               "situation": "Descente progressive vers 40 m, injections régulières, arrêt à la profondeur visée.",
               "critere": "Arrivée au fond équilibré, sans palmer pour se rattraper.",
@@ -439,6 +490,7 @@
             {
               "n": 3,
               "titre": "Au fond, en profondeur",
+              "curseur": "Descente → phase de fond.",
               "objectif": "Évoluer équilibré dans la durée, vers 40 m.",
               "situation": "Phase de fond à une profondeur proche de 40 m, déplacements et arrêts.",
               "critere": "Niveau stable, évolution sans effort, consommation maîtrisée."
@@ -446,6 +498,7 @@
             {
               "n": 4,
               "titre": "Remontée et palier depuis la profondeur",
+              "curseur": "Phase de fond → remontée et paliers.",
               "objectif": "Remonter et tenir ses paliers sans s'emballer.",
               "situation": "Remontée depuis environ 40 m, purges anticipées, paliers en pleine eau.",
               "critere": "Vitesse régulière, paliers tenus à la bonne profondeur pendant toute leur durée.",
@@ -454,6 +507,7 @@
             {
               "n": 5,
               "titre": "Jusqu'à 40 m, puis vers 60 m (évaluation)",
+              "curseur": "Évaluation, à 40 m maximum, puis zone 40-60 m avec un E4.",
               "objectif": "Évoluer équilibré à toutes les phases de la plongée en profondeur.",
               "situation": "Évaluation en situation pratique à 40 m maximum par un E3. Ensuite, la zone 40-60 m est abordée progressivement lors de plongées encadrées par un E4.",
               "critere": "Évolution équilibrée à la descente, au fond, à la remontée et au palier. Correspond aux modalités d'évaluation du MFT.",
@@ -471,6 +525,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PE40",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier ventilation, déplacement, communication et relai.",
               "situation": "Plongée de formation jusqu'à 30 m, techniques PE40 enchaînées.",
               "critere": "Techniques maîtrisées, sans stress."
@@ -478,6 +533,7 @@
             {
               "n": 2,
               "titre": "Ventilation et déplacement en profondeur",
+              "curseur": "30 m → vers 40 m, ventilation et déplacement.",
               "objectif": "Garder une ventilation calme et un effort mesuré vers 40 m.",
               "situation": "Déplacements à effort modéré vers 40 m, contrôle de la consommation.",
               "critere": "Ventilation régulée, aucun essoufflement, consommation conforme au prévu.",
@@ -486,6 +542,7 @@
             {
               "n": 3,
               "titre": "Communication spécifique",
+              "curseur": "Ventilation → communication.",
               "objectif": "Communiquer avec le GP et ses équipiers sur les contraintes de la zone profonde.",
               "situation": "Signes de narcose, de consommation et de désaturation. Contrôle de la consommation plus fréquent, ressenti signalé.",
               "critere": "Informations données spontanément, au bon moment, réactions rapides."
@@ -493,6 +550,7 @@
             {
               "n": 4,
               "titre": "Relai en profondeur",
+              "curseur": "Communication → relai.",
               "objectif": "Intervenir en relai auprès d'un équipier vers 40 m.",
               "situation": "Passage du deuxième détendeur, maintien de la profondeur, déplacement jusqu'au GP, vers 40 m.",
               "critere": "Réaction rapide, profondeur maintenue, assisté conduit jusqu'au GP.",
@@ -501,6 +559,7 @@
             {
               "n": 5,
               "titre": "Retour en surface et désaturation",
+              "curseur": "Relai → retour en surface et désaturation.",
               "objectif": "Gérer sa désaturation sur une plongée profonde.",
               "situation": "Remontée et paliers d'une plongée proche de 40 m, paramètres communiqués au GP et restitués au DP.",
               "critere": "Procédure de désaturation respectée, paramètres communiqués et restitués."
@@ -508,6 +567,7 @@
             {
               "n": 6,
               "titre": "Jusqu'à 40 m, puis vers 60 m (évaluation)",
+              "curseur": "Évaluation, à 40 m maximum, puis zone 40-60 m avec un E4.",
               "objectif": "Mettre en œuvre toutes les techniques du PE40 en zone profonde.",
               "situation": "Évaluation en situation pratique à 40 m maximum par un E3, théorie intégrée à la pratique. Ensuite, mise en œuvre progressive dans la zone 40-60 m lors de plongées encadrées par un E4.",
               "critere": "Techniques maîtrisées, comportements identiques à ceux du PE40, contraintes de la zone profonde prises en compte. Correspond aux modalités d'évaluation du MFT.",
@@ -534,6 +594,7 @@
             {
               "n": 1,
               "titre": "Lire la météo",
+              "curseur": "Point de départ.",
               "objectif": "Tirer d'un bulletin les informations utiles à la plongée.",
               "situation": "À terre, sur un bulletin météo marine : vent, houle, courant, évolution dans la journée.",
               "critere": "Il résume les conditions et dit si elles permettent de plonger, et où.",
@@ -542,6 +603,7 @@
             {
               "n": 2,
               "titre": "Analyser un site connu",
+              "curseur": "Lire la météo → analyser un site connu.",
               "objectif": "Relier les particularités d'un site aux conditions du jour.",
               "situation": "Site déjà plongé : topologie, exposition au vent et au courant, marée, possibilités de mouillage.",
               "critere": "Il explique dans quelles conditions ce site est plongeable."
@@ -549,6 +611,7 @@
             {
               "n": 3,
               "titre": "Conditions réglementaires du site",
+              "curseur": "Conditions → réglementation.",
               "objectif": "Vérifier qu'on a le droit de plonger et de mouiller là.",
               "situation": "Recherche des restrictions de mouillage, zones protégées ou interdites, auprès des sources officielles.",
               "critere": "Il trouve et cite les règles qui s'appliquent au site.",
@@ -557,6 +620,7 @@
             {
               "n": 4,
               "titre": "Choisir entre plusieurs sites",
+              "curseur": "Guidé → choix seul et justifié entre plusieurs sites.",
               "objectif": "Retenir le site adapté au jour et à la palanquée.",
               "situation": "Plusieurs sites possibles, météo du jour. Il choisit et justifie devant le moniteur.",
               "critere": "Choix faisable et pertinent, justifié par la météo, le site et la palanquée."
@@ -564,6 +628,7 @@
             {
               "n": 5,
               "titre": "Site inconnu",
+              "curseur": "Site connu → site inconnu.",
               "objectif": "Préparer une plongée sur un site jamais plongé.",
               "situation": "Il recueille seul les informations (clubs locaux, autorités, documents) avant de proposer le site.",
               "critere": "Informations suffisantes recueillies, choix argumenté."
@@ -571,6 +636,7 @@
             {
               "n": 6,
               "titre": "Dans 2 ou 3 situations (évaluation)",
+              "curseur": "Évaluation, organisation complète, dans 2 ou 3 situations.",
               "objectif": "Choisir le site dans une organisation complète de plongée.",
               "situation": "Mise en œuvre complète d'une organisation de plongée, dans 2 ou 3 situations différentes au minimum.",
               "critere": "Choix du site faisable et pertinent. Correspond aux modalités d'évaluation du MFT."
@@ -588,6 +654,7 @@
             {
               "n": 1,
               "titre": "Observer une organisation",
+              "curseur": "Point de départ.",
               "objectif": "Repérer les choix qui font une plongée organisée.",
               "situation": "Sortie organisée par un DP. L'élève note les choix faits : surveillance en surface, rotation des palanquées, horaires.",
               "critere": "Il décrit au débriefing les choix d'organisation et leur raison."
@@ -595,6 +662,7 @@
             {
               "n": 2,
               "titre": "Météo le jour même",
+              "curseur": "Nouvel élément, la météo du jour sur place.",
               "objectif": "Confirmer sur place que la plongée prévue reste possible.",
               "situation": "Le matin de la plongée : nouvelle prise d'informations météorologiques et observation du plan d'eau.",
               "critere": "Il confirme, adapte ou annule la plongée avec des raisons claires."
@@ -602,6 +670,7 @@
             {
               "n": 3,
               "titre": "Vérifier l'embarcation",
+              "curseur": "À terre → en embarcation, sa conformité.",
               "objectif": "S'assurer que l'embarcation utilisée est conforme.",
               "situation": "Si une embarcation est utilisée, vérification de sa conformité à la réglementation, avec la liste présentée par le moniteur.",
               "critere": "Vérification complète, tout défaut signalé."
@@ -609,6 +678,7 @@
             {
               "n": 4,
               "titre": "Choisir les modalités de plongée",
+              "curseur": "Observer une organisation → la mener.",
               "objectif": "Décider de la surveillance en surface et de la rotation des palanquées.",
               "situation": "Selon le nombre de plongeurs et l'embarcation, il propose qui reste en surface, l'ordre et les horaires des palanquées.",
               "critere": "Organisation cohérente, sécurité en surface assurée en permanence."
@@ -616,6 +686,7 @@
             {
               "n": 5,
               "titre": "Dans 2 ou 3 situations (évaluation)",
+              "curseur": "Évaluation, organisation complète, dans 2 ou 3 situations.",
               "objectif": "Organiser complètement les conditions de la plongée.",
               "situation": "Mise en œuvre complète d'une organisation de plongée, dans 2 ou 3 situations différentes au minimum.",
               "critere": "Organisation faisable et pertinente. Correspond aux modalités d'évaluation du MFT.",
@@ -633,6 +704,7 @@
             {
               "n": 1,
               "titre": "Matériel de secours et communication",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier que les secours sont prêts.",
               "situation": "Avant la plongée : matériel de secours et d'oxygénothérapie, moyens de communication, en lien avec le RIFA Plongée.",
               "critere": "Matériel complet et fonctionnel, moyens d'alerte connus et testés.",
@@ -641,6 +713,7 @@
             {
               "n": 2,
               "titre": "Rédiger la fiche de sécurité",
+              "curseur": "Vérifier le matériel → rédiger la fiche de sécurité.",
               "objectif": "Tenir la fiche de sécurité de la plongée.",
               "situation": "Fiche remplie avant, pendant et après la plongée : palanquées, paramètres prévus et réalisés, horaires.",
               "critere": "Fiche complète, exacte et à jour."
@@ -648,6 +721,7 @@
             {
               "n": 3,
               "titre": "Signaler la plongée",
+              "curseur": "Rédiger la fiche → signaler la plongée.",
               "objectif": "Utiliser le pavillon alpha.",
               "situation": "Hissage du pavillon alpha pendant toute la durée où des plongeurs sont à l'eau.",
               "critere": "Pavillon en place au bon moment, il explique ce qu'il signifie."
@@ -655,6 +729,7 @@
             {
               "n": 4,
               "titre": "Adapter aux conditions",
+              "curseur": "Conditions stables → conditions qui changent.",
               "objectif": "Modifier ou arrêter la plongée quand l'environnement change.",
               "situation": "Scénario annoncé ou réel : vent qui se lève, courant qui forcit. Il décide et explique.",
               "critere": "Décision sûre et argumentée, y compris le renoncement."
@@ -662,6 +737,7 @@
             {
               "n": 5,
               "titre": "Dans 2 ou 3 situations (évaluation)",
+              "curseur": "Évaluation, organisation complète, dans 2 ou 3 situations.",
               "objectif": "Sécuriser complètement l'activité.",
               "situation": "Mise en œuvre complète d'une organisation de plongée, dans 2 ou 3 situations différentes au minimum.",
               "critere": "Sécurisation faisable et pertinente, rigueur et respect de la réglementation. Correspond aux modalités d'évaluation du MFT.",
@@ -687,6 +763,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA40",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier l'orientation sur parcours variés jusqu'à 40 m.",
               "situation": "Parcours varié, milieu et instrument, vers 40 m.",
               "critere": "Zone d'intérêt rejointe, retour près du bateau. Sinon, on reprend la progression PA40."
@@ -694,6 +771,7 @@
             {
               "n": 2,
               "titre": "S'orienter en zone profonde",
+              "curseur": "Orientation PA40 → orientation en zone profonde.",
               "objectif": "Garder la maîtrise de son itinéraire quand la narcose peut gêner.",
               "situation": "Vers 40 m : plan d'orientation volontairement simple, contrôles de cap plus fréquents.",
               "critere": "Itinéraire tenu, il se situe à tout moment.",
@@ -702,6 +780,7 @@
             {
               "n": 3,
               "titre": "Profil avec grande variation de profondeur",
+              "curseur": "Profil simple → profil avec grande variation de profondeur.",
               "objectif": "Organiser son retour vers le bateau en remontant.",
               "situation": "Départ en profondeur, retour vers le bateau en remontant progressivement le long du relief.",
               "critere": "Retour près du bateau en respectant le profil et la gestion du temps prévus."
@@ -709,6 +788,7 @@
             {
               "n": 4,
               "titre": "Entre 40 et 60 m, encadré",
+              "curseur": "0-40 m → 40-60 m, encadré par un E4.",
               "objectif": "Mettre en œuvre son orientation dans la zone 40-60 m.",
               "situation": "Plongées en formation dans la zone 40-60 m, sous la responsabilité d'un E4.",
               "critere": "Même maîtrise de l'itinéraire qu'en zone 0-40 m.",
@@ -717,6 +797,7 @@
             {
               "n": 5,
               "titre": "Au moins deux situations (évaluation)",
+              "curseur": "Évaluation, au moins deux situations.",
               "objectif": "Maîtriser son itinéraire avec un comportement adapté à la zone 40-60 m.",
               "situation": "Au moins deux situations différentes. Si l'évaluation se fait à 40 m maximum, le comportement attendu est celui de la zone 40-60 m.",
               "critere": "Itinéraire maîtrisé, comportement adapté aux exigences de la zone 40-60 m. Correspond aux modalités d'évaluation du MFT."
@@ -734,6 +815,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA40",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier communication, surveillance et gestion des imprévus jusqu'à 40 m.",
               "situation": "Plongée en autonomie vers 40 m.",
               "critere": "Cohésion maintenue, imprévus gérés."
@@ -741,6 +823,7 @@
             {
               "n": 2,
               "titre": "Consommation en zone profonde",
+              "curseur": "Cohésion PA40 → consommation en zone profonde.",
               "objectif": "Surveiller l'air avec des marges adaptées à la profondeur.",
               "situation": "Contrôles plus fréquents, seuils de retour et de remontée relevés, compte tenu des paliers.",
               "critere": "Seuils respectés, aucun équipier en dessous de la marge prévue.",
@@ -749,6 +832,7 @@
             {
               "n": 3,
               "titre": "Risques accrus",
+              "curseur": "Consommation → risques accrus.",
               "objectif": "Prévenir et repérer narcose, froid et essoufflement.",
               "situation": "Vers 40 m, surveillance mutuelle renforcée, signes spécifiques, conduite à tenir convenue avant la plongée.",
               "critere": "Il repère et signale chez lui comme chez ses équipiers les premiers signes, et applique la conduite prévue."
@@ -756,6 +840,7 @@
             {
               "n": 4,
               "titre": "Co-gestion et imprévus en zone profonde",
+              "curseur": "Risques accrus → co-gestion des imprévus.",
               "objectif": "Décider ensemble, vite, en zone profonde.",
               "situation": "Scénario annoncé avant la plongée : imprévu humain, environnemental ou matériel vers 40 m.",
               "critere": "Décision collégiale rapide et sûre, adaptée aux contraintes de la profondeur."
@@ -763,6 +848,7 @@
             {
               "n": 5,
               "titre": "Entre 40 et 60 m, encadré",
+              "curseur": "0-40 m → 40-60 m, encadré par un E4.",
               "objectif": "Mettre en œuvre ces comportements dans la zone 40-60 m.",
               "situation": "Plongées en formation dans la zone 40-60 m, sous la responsabilité d'un E4.",
               "critere": "Comportements maintenus, communication et cohésion intactes.",
@@ -771,6 +857,7 @@
             {
               "n": 6,
               "titre": "Au moins deux situations (évaluation)",
+              "curseur": "Évaluation, au moins deux situations.",
               "objectif": "Évoluer en autonomie avec un comportement adapté à la zone 0-60 m.",
               "situation": "Au moins deux situations différentes. Si l'évaluation se fait à 40 m maximum, le comportement attendu est celui de la zone 40-60 m.",
               "critere": "Attention portée à la consommation, à la désaturation, aux risques accrus et à la co-gestion. Correspond aux modalités d'évaluation du MFT."
@@ -788,6 +875,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA40",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier la maîtrise de son ordinateur et des paliers jusqu'à 40 m.",
               "situation": "Cas concrets sur captures d'écran, puis plongée avec paliers.",
               "critere": "Analyses justes, paliers maîtrisés."
@@ -795,6 +883,7 @@
             {
               "n": 2,
               "titre": "Ordinateur et mode planification",
+              "curseur": "Maîtrise PA40 → mode planification d'une plongée profonde.",
               "objectif": "Utiliser toutes les fonctions utiles de son ordinateur.",
               "situation": "Au sec : affichages et paramètres, critères de conservatisme, mode planification pour une plongée profonde.",
               "critere": "Il planifie une plongée profonde sur son ordinateur et explique les paliers obtenus.",
@@ -803,6 +892,7 @@
             {
               "n": 3,
               "titre": "Planifier la désaturation d'une plongée profonde",
+              "curseur": "Lire le plan → planifier toute la désaturation.",
               "objectif": "Anticiper paliers, durée de remontée et air nécessaire.",
               "situation": "Cas concret : paliers prévus, durée totale de remontée, air nécessaire jusqu'à la surface.",
               "critere": "Planification cohérente, avec une réserve d'air pour les paliers."
@@ -810,6 +900,7 @@
             {
               "n": 4,
               "titre": "Paliers importants en palanquée",
+              "curseur": "Au sec → en plongée, avec des paliers importants.",
               "objectif": "Appliquer la procédure prévue en plongée.",
               "situation": "Plongée profonde avec des paliers plus longs, palanquée groupée, parachute au palier.",
               "critere": "Vitesse et paliers respectés, palanquée groupée jusqu'en surface.",
@@ -818,6 +909,7 @@
             {
               "n": 5,
               "titre": "Plusieurs moyens de désaturation en zone profonde",
+              "curseur": "Un moyen de désaturation → plusieurs en zone profonde.",
               "objectif": "Gérer la désaturation d'une palanquée aux moyens différents.",
               "situation": "Ordinateurs différents dans la palanquée, plongée profonde : règle commune convenue et appliquée.",
               "critere": "Règle cohérente, appliquée sans hésitation."
@@ -825,6 +917,7 @@
             {
               "n": 6,
               "titre": "Au moins deux situations (évaluation)",
+              "curseur": "Évaluation, au moins deux situations.",
               "objectif": "Gérer la désaturation en autonomie dans la zone 0-60 m.",
               "situation": "Au moins deux situations différentes. Si l'évaluation se fait à 40 m maximum, le comportement attendu est celui de la zone 40-60 m.",
               "critere": "Planification et gestion de la désaturation maîtrisées, diversité des moyens prise en compte. Correspond aux modalités d'évaluation du MFT."
@@ -849,6 +942,7 @@
             {
               "n": 1,
               "titre": "Bilan des acquis PA20",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier les déplacements équilibrés et la connaissance des espèces courantes.",
               "situation": "Plongée en milieu naturel.",
               "critere": "Aucun contact, espèces courantes nommées."
@@ -856,6 +950,7 @@
             {
               "n": 2,
               "titre": "Discrétion en zone profonde",
+              "curseur": "Zone peu profonde → zone profonde.",
               "objectif": "Limiter son impact quand l'éclairage devient nécessaire.",
               "situation": "Plongées plus profondes : lampe dirigée sans éblouir la faune, bruit limité, distance gardée.",
               "critere": "Faune observée sans la déranger. Il refuse le nourrissage.",
@@ -864,6 +959,7 @@
             {
               "n": 3,
               "titre": "Stable sur un tombant ou dans le courant",
+              "curseur": "Eau calme → tombant ou léger courant.",
               "objectif": "Rester sans contact quand le milieu complique la stabilisation.",
               "situation": "Tombant, léger courant : palmage et stabilisation adaptés.",
               "critere": "Aucun contact avec le fond ou le vivant, pas de sédiment soulevé."
@@ -871,6 +967,7 @@
             {
               "n": 4,
               "titre": "Développer son observation",
+              "curseur": "Observer → développer sa capacité d'observation.",
               "objectif": "Reconnaître et décrire les espèces des différentes zones de profondeur.",
               "situation": "Au fil des plongées, il repère, nomme et décrit les espèces fréquentes, y compris celles des zones plus profondes.",
               "critere": "Il décrit et nomme les espèces les plus fréquentes rencontrées.",
@@ -879,6 +976,7 @@
             {
               "n": 5,
               "titre": "Comportement en plongée (évaluation)",
+              "curseur": "Évaluation, en milieu naturel.",
               "objectif": "Montrer un comportement éco-responsable et une connaissance du milieu.",
               "situation": "Plongées en milieu naturel.",
               "critere": "Comportement respectueux et responsable, espèces fréquentes décrites et nommées. Correspond aux modalités d'évaluation du MFT."

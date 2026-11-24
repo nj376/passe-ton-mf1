@@ -121,10 +121,10 @@ PA40-autonomie:
       adapter:
         - "Le bilan échoue : on reprend la progression PA20."
         - "Il ne s'appuie que sur le compas : on travaille l'étape 2, « S'orienter avec le milieu »."
-        - "Il combine déjà milieu et instrument en zone peu profonde : on passe à l'étape 3, puis à l'étape 4, « Vers 40 m »."
-        - "Il s'est déjà senti perdu en profondeur : à l'étape 4, on garde un plan d'orientation simple et on augmente la profondeur très progressivement."
+        - "Il combine déjà milieu et instrument en zone peu profonde : on vérifie l'étape 3, puis on passe à l'étape 4, « Parcours varié », et à l'étape 5, « Vers 40 m »."
+        - "Il s'est déjà senti perdu en profondeur : à l'étape 5, on garde un plan d'orientation simple et on augmente la profondeur très progressivement."
     bilan:
-      situation: "l'étape 6 : proche de 40 m, au moins deux situations différentes (évaluation)"
+      situation: "l'étape 7 : proche de 40 m, au moins deux situations différentes (évaluation)"
       criteres:
         - "Il rejoint efficacement la zone d'intérêt."
         - "Il sait se situer à tout moment."
@@ -133,7 +133,7 @@ PA40-autonomie:
         - "Accoutumance progressive à la profondeur, dans l'espace 0-40 m avec un E3 minimum."
         - "La narcose peut altérer le jugement : le plan d'orientation reste simple."
         - "Les conditions de plongée restent celles que le DP juge compatibles."
-      eca: "perd son cap quand la visibilité baisse → reprendre l'étape 5"
+      eca: "perd son cap quand la visibilité baisse → reprendre l'étape 6"
   "Évolution subaquatique":
     evaluer:
       question: "Comment l'élève vit-il aujourd'hui la co-responsabilité dans une palanquée autonome ?"
