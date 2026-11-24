@@ -29,7 +29,7 @@ Commence par lire le sujet pour savoir dans quelle famille il tombe : c’est e
 
 | Type de sujet | Exemples | Ce que le jury attend |
 |---|---|---|
-| **Une plongée ou une sortie** | Sortie multiniveaux, plongée d’exploration difficile, baptêmes, gestion du bateau | **Rôle de DP.** Choix du site, palanquées, paramètres, fiche de sécurité, consignes, sécurité et secours, planning. |
+| **Une plongée ou une sortie** | Sortie multiniveaux, plongée d’exploration difficile, [baptêmes](/ressources/encadrer-un-bapteme/), gestion du bateau | **Rôle de DP.** Choix du site, palanquées, paramètres, fiche de sécurité, consignes, sécurité et secours, planning. |
 | **Une partie de cursus** | Une séance, une journée, un week-end, un stage | **Rôle de E3**, et de DP pour les plongées. Positionnement des élèves, prérequis, objectifs, progression, critères, répartition encadrants et élèves, paramètres et sécurité, planning. |
 | **Un cursus complet** | Une formation N1, N2, N3, GP-N4 ou DP-N5 sur une saison | **Rôle de E3.** Objectif final, compétences, découpage dans le temps, progression détaillée sur une ou deux compétences, moyens humains et matériels, suivi des élèves. |
 

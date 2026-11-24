@@ -1,0 +1,31 @@
+{{- /* Schéma « profil du baptême » : les sept temps d’un baptême posés sur la courbe de plongée (même dessin que « séance pratique »).
+       Le dessin ne porte que les numéros : la légende détaillée est la liste qui suit (lisible au lecteur d’écran et sur téléphone). */ -}}
+{{- $etapes := slice
+  (dict "n" "1" "x" 34 "y" 36 "t" "Accueil" "d" "Discuter et observer : motivation, appréhensions, aisance dans l’eau, santé, contraintes administratives.")
+  (dict "n" "2" "x" 90 "y" 36 "t" "Briefing" "d" "Court, avec des mots simples : respirer, équilibrer les oreilles, trois ou quatre signes, le déroulé de la plongée. Le baptisé essaie le détendeur au sec.")
+  (dict "n" "3" "x" 146 "y" 64 "t" "Mise à l’eau" "d" "Équiper dans l’eau si possible, gilet gonflé. Respirer sur le détendeur visage dans l’eau, refaire les signes. On ne descend que quand le baptisé est prêt.")
+  (dict "n" "4" "x" 196 "y" 122 "t" "Descente" "d" "Lente, face à face, en tenant le baptisé. Tu gères le gilet. Oreilles : on demande souvent, on remonte un peu au moindre souci, on n’insiste jamais.")
+  (dict "n" "5" "x" 270 "y" 160 "t" "Découverte" "d" "Profondeur adaptée au ressenti et à l’âge, sans chercher les 6 m. Tu restes à côté et tu tiens le baptisé, discrètement ou franchement selon le public.")
+  (dict "n" "6" "x" 348 "y" 112 "t" "Remontée" "d" "Lente et contrôlée, face au baptisé, en surveillant qu’il expire. En surface, gilet gonflé tout de suite.")
+  (dict "n" "7" "x" 444 "y" 36 "t" "Débriefing" "d" "Son ressenti d’abord, puis toute gêne (oreilles, sinus, froid). Valoriser, et présenter la suite : PE12, Niveau 1, jeunes plongeurs.")
+-}}
+<figure class="ress-schema">
+  <svg class="schema-courbe" viewBox="0 0 480 196" role="img" aria-labelledby="schema-bapteme-titre">
+    <title id="schema-bapteme-titre">Un baptême en sept temps, sur la courbe de plongée : deux au sec avant, quatre dans l’eau, le débriefing au sec après.</title>
+    <rect class="schema-courbe__eau" x="0" y="64" width="480" height="132" rx="0"></rect>
+    <line class="schema-courbe__surface" x1="0" y1="64" x2="480" y2="64"></line>
+    <text class="schema-courbe__zone" x="8" y="14">Au sec</text>
+    <text class="schema-courbe__zone" x="472" y="14" text-anchor="end">Au sec</text>
+    <text class="schema-courbe__zone schema-courbe__zone--eau" x="8" y="188">0 à 6 m au plus</text>
+    <path class="schema-courbe__trace" d="M146 64 L222 160 L318 160 L398 64"></path>
+    {{- range $etapes }}
+    <g class="schema-courbe__point"><circle cx="{{ .x }}" cy="{{ .y }}" r="15"></circle><text x="{{ .x }}" y="{{ add .y 5 }}" text-anchor="middle">{{ .n }}</text></g>
+    {{- end }}
+  </svg>
+  <ol class="schema-legende">
+    {{- range $etapes }}
+    <li><span class="schema-legende__num" aria-hidden="true">{{ .n }}</span><span><strong>{{ .t }}.</strong> {{ .d }}</span></li>
+    {{- end }}
+  </ol>
+  <figcaption>Pendant toute la descente et la remontée : la prévention des barotraumatismes. Un baptême réussi, c’est un baptisé qui ressort en sécurité, en confiance, et qui a envie de revenir.</figcaption>
+</figure>

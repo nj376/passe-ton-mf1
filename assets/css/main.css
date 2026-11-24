@@ -2208,6 +2208,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ress-schema { margin: 10px 0 22px; padding: 20px; border-radius: 12px; background: var(--bleu-tres-clair); border: 1px solid var(--bordure-bleu-pale); }
 .ress-schema figcaption { margin-top: 14px; font-size: 14px; line-height: 1.55; color: var(--texte-4); }
 .ress-fiche .ress-schema ol, .ress-fiche .ress-schema ul { max-width: none; }
+/* Dans un encadré (encart, pistes), le texte occupe toute la largeur de la boîte. */
+.ress-fiche .ress-encart :is(p, ul, ol), .ress-fiche .ress-pistes :is(p, ul, ol) { max-width: none; }
 
 /* QQCOQP : six cases numérotées */
 .ress-fiche .schema-qq { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
