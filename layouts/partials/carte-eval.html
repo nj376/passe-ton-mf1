@@ -15,7 +15,7 @@
   <div class="etape__carte">
     <button type="button" class="etape__bouton" aria-expanded="{{ if $evaluer }}true{{ else }}false{{ end }}" aria-controls="{{ .uid }}" data-etape-bouton>
       <span class="etape__entete">
-        <span class="etape__ligne"><span class="etape__titre">{{ if $evaluer }}Évaluer l’élève{{ else }}Bilan{{ end }}</span><span class="badge-stagiaire">Proposition de stagiaire (hors MFT)</span></span>
+        <span class="etape__ligne"><span class="etape__titre">{{ if $evaluer }}Évaluer l’élève{{ else }}Bilan{{ end }}</span><span class="pastille-methode pastille-methode--carte">{{ if $evaluer }}Évaluation initiale{{ else }}Évaluation finale{{ end }}</span><span class="badge-stagiaire">Proposition de stagiaire (hors MFT)</span></span>
         <span class="etape__objectif">{{ if $evaluer }}{{ partial "typo.html" $ev.evaluer.question }}{{ else }}Acquis (A), en cours d’acquisition (ECA) ou non travaillé (NT) ?{{ end }}</span>
       </span>
       <span class="etape__chevron">{{ $chevron }}</span>

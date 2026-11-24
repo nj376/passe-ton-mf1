@@ -2399,3 +2399,15 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .trame__contenu { padding: 2px 14px 14px; grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .trame__chevron { transition: none; } }
+
+/* Progression : vocabulaire de la fiche « Concevoir une progression » (encart « La méthode », pastilles) */
+.trame__temps li > span:last-child { display: flex; flex-direction: column; }
+.trame__fort { font-weight: 600; color: var(--texte); }
+.trame__ici { font-size: 13.5px; color: var(--texte-4); }
+.pastille-methode { align-self: flex-start; margin: 0; display: inline-block; padding: 2px 9px; border-radius: 999px; background: var(--bleu-clair); color: var(--bleu-fonce); font-size: 12px; font-weight: 600; letter-spacing: .02em; white-space: nowrap; }
+.pastille-methode--techniques { margin: 6px 0 2px; }
+.pastille-methode--carte { font-size: 11.5px; }
+.etape__objectif-libelle { font-weight: 600; color: var(--texte-3); }
+/* Encart « La méthode » sous « Techniques associées » : de l’air avant et après. */
+.trame--methode { margin: 14px 0 18px; }
+@media (max-width: 900px) { .trame--methode { margin: 10px 0 14px; } }

@@ -1,0 +1,28 @@
+{{- /* Encart replié « La méthode » de la page Progression : la démarche de la fiche Ressources « Concevoir une progression »,
+       rapportée aux blocs de la page. Mêmes styles que le pense-bête de « S’entraîner » (classes « trame »). */ -}}
+{{- $chaine := slice
+  (dict "t" "Les prérogatives" "ici" "le bloc en haut de la page")
+  (dict "t" "La compétence = objectif final" "ici" "le Point d’arrivée, fixé par le MFT")
+  (dict "t" "Les capacités = objectifs intermédiaires" "ici" "les techniques associées")
+  (dict "t" "Les objectifs de séance" "ici" "les étapes de la frise")
+-}}
+<details class="carte trame trame--methode">
+  <summary class="trame__titre">La méthode <span class="trame__epreuve">· des prérogatives à l’objectif de séance</span><span class="trame__chevron" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span></summary>
+  <div class="trame__contenu">
+    <div class="trame__bloc">
+      <h3 class="trame__sous-titre">Du plus général au plus précis</h3>
+      <ol class="trame__temps">{{ range $i, $c := $chaine }}<li><span class="trame__num" aria-hidden="true">{{ add $i 1 }}</span><span><strong class="trame__fort">{{ $c.t }}</strong><span class="trame__ici">Ici : {{ $c.ici }}</span></span></li>{{ end }}</ol>
+    </div>
+    <div class="trame__bloc">
+      <h3 class="trame__sous-titre">Les règles</h3>
+      <ul class="trame__rappels">
+        <li>Commence par <strong>évaluer l’élève</strong> : c’est l’évaluation initiale, elle te dit à quelle étape commencer.</li>
+        <li>D’une étape à l’autre, <strong>un seul curseur à la fois</strong>.</li>
+        <li>Chaque étape a son <strong>critère pour passer à la suite</strong>.</li>
+        <li>Répartis les étapes en séances : une étape peut occuper une séance, ou plusieurs étapes tenir dans une seule.</li>
+        <li>Termine par le <strong>bilan</strong> : c’est l’évaluation finale.</li>
+      </ul>
+    </div>
+    <p class="trame__liens"><a class="lien-texte" href="{{ "/ressources/concevoir-une-progression/" | relURL }}">Lire la fiche « Concevoir une progression » →</a></p>
+  </div>
+</details>

@@ -88,6 +88,7 @@
     {{- range $x := $n.liste }}
     {{- $p := $x.p }}{{ $cle := lower $x.c.id }}
     <section class="carte cote-bloc prog-arrivee" data-prog-arrivee="{{ $cle }}" aria-label="Point d’arrivée : {{ partial "typo.html" $x.c.competence }}"{{ if ne $x.c.id $premier.c.id }} hidden{{ end }}>
+      <p class="pastille-methode">Objectif final</p>
       <h2 class="cote-bloc__titre">{{ with $n.o.arrivee }}{{ . }}{{ else }}Point d’arrivée : l’évaluation du MFT{{ end }} <span class="prog-arrivee__comp">· {{ partial "typo.html" $x.c.competence }}</span></h2>
       {{- if gt (len $p.evaluation_mft) 500 }}
       {{- /* Texte long (N4 : critères d'épreuves assemblés) : replié, avec un bouton pour le déplier. */ -}}
@@ -161,6 +162,9 @@
         <div class="volet-prog__principal">
           <div class="volet-prog__techniques">
             <h3 id="lbl-tech-{{ $cle }}" class="prog-sous-titre">{{ if $brevets }}Brevets associés{{ else }}Techniques associées{{ end }}</h3>
+            {{- if not $brevets }}<p class="pastille-methode pastille-methode--techniques">Capacités : objectifs intermédiaires</p>{{ end }}
+            {{- /* Encart « La méthode », sous le sous-titre (répété dans chaque compétence, une seule est visible). */}}
+            {{ partial "methode-progression.html" . }}
             <div class="techniques" role="group" aria-labelledby="lbl-tech-{{ $cle }}">
               {{- range $k, $t := $p.techniques }}
               <button type="button" class="technique" aria-pressed="{{ if eq $k 0 }}true{{ else }}false{{ end }}" data-technique="{{ $k }}">{{ partial "typo.html" $t.nom }}</button>
@@ -189,7 +193,7 @@
                 <button type="button" class="etape__bouton" aria-expanded="{{ if and (eq $m 0) (not $ev) }}true{{ else }}false{{ end }}" aria-controls="{{ $uid }}" data-etape-bouton>
                   <span class="etape__entete">
                     <span class="etape__ligne"><span class="etape__titre">{{ partial "typo.html" $titre }}</span>{{ if $eval }}<span class="badge-evaluation">{{ $badge }}</span>{{ end }}</span>
-                    <span class="etape__objectif">{{ partial "typo.html" $e.objectif }}</span>
+                    <span class="etape__objectif"><span class="etape__objectif-libelle">Objectif de séance :</span> {{ partial "typo.html" $e.objectif }}</span>
                   </span>
                   <span class="etape__chevron">{{ $chevron }}</span>
                 </button>
