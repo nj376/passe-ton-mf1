@@ -2369,3 +2369,11 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .ress-fiche .schema-zoom__ligne { grid-template-columns: 1fr; gap: 6px; }
   .schema-zoom__barre > span { font-size: 12px; padding: 8px 2px; }
 }
+
+/* Pistes de réflexion repliées sous un cas pratique (layouts/shortcodes/pistes.html) */
+.ress-pistes { margin: 6px 0 22px; border-radius: 10px; border: 1px solid var(--vert-bordure); background: var(--vert-encart); }
+.ress-pistes > summary { padding: 10px 16px; cursor: pointer; font-size: 15px; font-weight: 600; color: var(--vert-texte); }
+.ress-pistes > summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.ress-pistes__contenu { padding: 0 16px 12px; font-size: 15px; color: var(--texte-2); }
+.ress-pistes__contenu ul { margin: 0; }
+.ress-fiche h3 + p > em:only-child { color: var(--texte); }

@@ -1,0 +1,19 @@
+{{- /* Schéma « la journée du DP » : cinq temps, repris des objectifs « Organiser et sécuriser l’activité » du MFT MF1. */ -}}
+{{- $temps := slice
+  (dict "n" "1" "t" "Préparer" "d" (slice "Choisir un site adapté aux plongeurs et aux conditions" "Météo, marée, courant" "Matériel de secours et plan de secours"))
+  (dict "n" "2" "t" "Accueillir" "d" (slice "Licences, brevets, carnets" "Évaluer les aptitudes" "Recueillir les attentes"))
+  (dict "n" "3" "t" "Organiser" "d" (slice "Composer les palanquées" "Fixer les paramètres" "Remplir la fiche de sécurité" "Présenter le site"))
+  (dict "n" "4" "t" "Surveiller" "d" (slice "Sécurité surface" "Mises à l’eau et récupération" "Réagir en cas d’accident"))
+  (dict "n" "5" "t" "Clôturer" "d" (slice "Paramètres réalisés sur la fiche" "Bilan avec les encadrants" "Fiche conservée un an"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-etapes">
+    {{- range $temps }}
+    <li class="schema-etapes__etape">
+      <span class="schema-etapes__tete"><span class="schema-etapes__num" aria-hidden="true">{{ .n }}</span>{{ .t }}</span>
+      <ul class="schema-etapes__points">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Le DP est présent sur le lieu de mise à l’eau du début à la fin : c’est lui qui décide, et c’est lui qui répond de l’organisation.</figcaption>
+</figure>

@@ -1,0 +1,6 @@
+{{- /* Pistes de réflexion repliées sous un cas pratique (fiches Ressources) : {{< pistes >}}texte en Markdown{{< /pistes >}}.
+       Fermées par défaut, pour chercher d’abord par soi-même. */ -}}
+<details class="ress-pistes">
+  <summary>Pistes de réflexion</summary>
+  <div class="ress-pistes__contenu">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</details>
