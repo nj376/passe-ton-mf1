@@ -20,7 +20,7 @@ Le Code du sport (article A322-72) en fait le responsable de la plongée. Le DP�
 - **fixe les caractéristiques de la plongée** ;
 - **établit la fiche de sécurité** : nom, aptitudes et fonction de chaque plongeur, paramètres prévus et réalisés. Elle est conservée un an.
 
-La qualification minimale pour être DP est E3 (MF1) pour l’enseignement et l’exploration à l’air ou au nitrox, ou DP-N5 pour l’exploration seule. Le Code du sport confie aussi au DP plusieurs décisions : autoriser l’autonomie des plongeurs, et évaluer les aptitudes d’un plongeur qui n’a pas de justificatif. Retrouve les articles détaillés sur la page [Explore le Code du sport](/explore-le-cds/).
+La qualification minimale pour être DP est E3 (MF1) pour l’enseignement et l’exploration à l’air ou au nitrox, ou DP-N5 pour l’exploration seule. Aux mélanges, nitrox compris, le DP justifie aussi de l’aptitude PN-C ou PTH-120 correspondant au mélange utilisé. Le Code du sport confie aussi au DP plusieurs décisions : autoriser l’autonomie des plongeurs, et évaluer les aptitudes d’un plongeur qui n’a pas de justificatif. Retrouve les articles détaillés sur la page [Explore le Code du sport](/explore-le-cds/).
 
 ## 1. Tes responsabilités
 
@@ -76,7 +76,7 @@ Cherche d’abord ta réponse, puis ouvre les pistes. Il n’y a pas une seule b
 
 {{< pistes >}}
 - Un N1 est **PE-20** : encadré par un E2, un GP ou un P4, jusqu’à 20 m, 4 plongeurs au plus par encadrant.
-- Un N2 est **PE-40 et PA-20** : encadré jusqu’à 40 m par un E3, un GP ou un P4, ou autonome à 3 jusqu’à 20 m, sur ta décision.
+- Un N2 est **PE-40 et PA-20** : encadré jusqu’à 40 m par un E3, un GP ou un P4, ou autonome à 3 jusqu’à 20 m, sur ta décision, dès 16 ans.
 - Si tu plonges, qui reste en surface pour la sécurité ?
 - Sur la fiche : indique si la durée fixée est un temps au fond ou une durée totale de plongée, et prévois la place des paramètres réalisés.
 {{< /pistes >}}
@@ -86,7 +86,7 @@ Cherche d’abord ta réponse, puis ouvre les pistes. Il n’y a pas une seule b
 *Sortie sur une épave à 50 m, exposée au courant, avec paliers en pleine eau en dérivante. Sont inscrits : des N3 qui veulent plonger en autonomie à 60 m, des N2 encadrés à 40 m par un E3, et un élève N2 en fin de formation qui a déjà fait une plongée à 35 m. Que décides-tu, et pourquoi ?*
 
 {{< pistes >}}
-- Tout le monde est dans ses prérogatives sur le papier. La question est de savoir si les **conditions du jour** le permettent.
+- Sur le papier, chacun est dans ses prérogatives, à condition que les N3 soient majeurs : l’autonomie à 60 m est réservée aux PA-60 majeurs. La question est de savoir si les **conditions du jour** le permettent.
 - Courant et paliers en pleine eau : parachute par palanquée, consignes de dérive, bateau prêt à récupérer les palanquées éloignées, sécurité surface renforcée.
 - Pour l’élève : un site exposé, avec palier en pleine eau, est-il le bon endroit pour poursuivre la découverte de la profondeur ? Tu peux limiter la profondeur ou choisir un autre site pour sa palanquée.
 - Ta décision doit pouvoir s’expliquer en une phrase : c’est ce que le jury te demandera.

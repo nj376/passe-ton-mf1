@@ -94,7 +94,7 @@ tip:"Étude de cas fréquente : un plongeur qui fait des apnées en attendant l
 "Mécanismes":["Vasoconstriction périphérique : le sang se concentre au centre du corps.","Frissons : production de chaleur par les muscles.","Diurèse accrue : on urine plus, d’où la déshydratation."]}},
 {id:"hypothermie",name:"Signes et conduite à tenir",alt:"De la gêne à l’hypothermie",tags:["Frissons, confusion"],s:{
 "Signes":["Frissons, crampes, lèvres bleues, gestes maladroits.","Puis confusion, somnolence, arrêt des frissons quand l’hypothermie s’aggrave."],
-"Conduite à tenir":["Fin de plongée, sortir, sécher, vêtements secs, couverture isothermique, abri.","Boisson chaude et sucrée si la personne est consciente, ni alcool ni frictions.","Le froid favorise essoufflement, narcose et ADD : surveiller."]}},
+"Conduite à tenir":["Fin de plongée, sortir, sécher, vêtements secs, couverture isothermique, abri.","Boisson chaude non sucrée si la personne est consciente, ni alcool ni frictions.","Le froid favorise essoufflement, narcose et ADD : surveiller."]}},
 {id:"syncope-thermo",name:"Syncope thermo-différentielle",alt:"L’hydrocution",tags:["Choc thermique"],s:{
 "Mécanisme":["Entrée brutale dans une eau froide, surtout après soleil, repas copieux ou effort : réaction réflexe cardio-vasculaire.","Perte de connaissance immédiate, risque de noyade."],
 "Prévention":["Entrer progressivement, se mouiller nuque et visage, éviter de s’équiper longtemps au soleil."]}},

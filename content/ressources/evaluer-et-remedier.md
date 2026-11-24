@@ -27,7 +27,7 @@ Le MFT distingue trois évaluations. Elles s’appliquent à la séance, à la c
 | **La compétence** | En l’abordant, tous ses prérequis sont-ils acquis ? | Les capacités s’acquièrent-elles comme prévu ? Sinon, on adapte les séances. | Toutes les capacités sont acquises : la compétence est validée. |
 | **Le niveau** | Les compétences du niveau précédent sont-elles acquises ? | Les compétences s’acquièrent-elles comme prévu ? | Toutes les compétences sont acquises : le niveau est validé. |
 
-Jusqu’au N3, la validation se fait en formation continue ; le GP-N4 et les niveaux d’encadrement passent par un système de notation.
+Jusqu’au N3, la validation se fait en formation continue ; le GP-N4 et les examens de moniteur passent par un système de notation, et le DP-N5 est délivré en évaluation continue des compétences.
 
 ## 2. Quand remédier, et sur quoi s’interroger
 

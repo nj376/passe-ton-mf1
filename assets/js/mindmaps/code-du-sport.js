@@ -14,14 +14,14 @@ cats:[
 "Réponse":["Le DP est responsable technique, sur le site, de l’organisation, des moyens et de la sécurité, et du déclenchement des secours.","Il fixe les caractéristiques de la plongée et tient la fiche de sécurité (noms, aptitudes, paramètres prévus et réalisés), conservée un an par l’établissement.","Il est titulaire d’une qualification de l’annexe III-15a ; aux mélanges, il justifie aussi des aptitudes PN-C ou PTH-120."]},
 tip:"Le DP doit être présent sur le site de plongée : il ne peut pas diriger depuis la terre une plongée faite au départ d’un bateau."},
 {id:"q-e1e4",name:"Qui est E1, E2, E3, E4 ?",alt:"A322-74, annexe III-15b",tags:["Arrêté du 24/11/2025"],s:{
-"Réponse":["E1 : initiateur. E2 : initiateur également GP (à la FFESSM, avec le module 6-20 m). E3 : MF1, moniteur 2 étoiles CMAS, BEES 1, DEJEPS. E4 : MF2, BEES 2, DESJEPS, et désormais le BEPPA.","Les guides (GP ou P4) encadrent en exploration, pas en enseignement.","L’encadrant de la palanquée est responsable du déroulement de la plongée en milieu naturel."]},
-tip:"Depuis l’arrêté du 24 novembre 2025, le BEPPA donne à un E3 les prérogatives E4 (enseignement à l’air dans la zone 40-60 m)."},
+"Réponse":["E1 : initiateur. E2 : initiateur et guide de palanquée (GP), ou stagiaire pédagogique MF1. E3 : MF1, moniteur 2 étoiles CMAS, BEES 1, DEJEPS. E4 : MF2, BEES 2, DESJEPS, et désormais le BEPPA.","Les guides (GP ou P4) encadrent en exploration, pas en enseignement.","L’encadrant de la palanquée est responsable du déroulement de la plongée en milieu naturel."]},
+tip:"Le BEPPA est classé E4 dans les annexes III-15a et III-15b depuis l’arrêté du 17 octobre 2025 : enseignement à l’air dans la zone 40-60 m."},
 {id:"q-autonomie",name:"Qui peut plonger en autonomie ?",alt:"A322-73, A322-89, A322-99",tags:["16 ans PA-12/20","17 ans PA-40"],s:{
 "Réponse":["Sur décision du DP : dès 16 ans avec PA-12 (0-12 m) ou PA-20 (0-20 m), dès 17 ans avec PA-40 (0-40 m).","Les majeurs avec PA-60 peuvent évoluer en autonomie dans l’espace 0-60 m sur décision du DP.","Pour les mineurs, l’autonomie est limitée à l’air et au nitrox.","Palanquée autonome : 3 plongeurs maximum.","A322-99 : sur décision de l’exploitant, une palanquée de plongeurs PA-60 peut évoluer en 0-40 m sans DP."]},
 tip:"L’ancienne phrase « les mineurs ne sont pas autorisés à évoluer en autonomie » a disparu en octobre 2025, et l’article A322-88 est abrogé : beaucoup de supports ne sont pas à jour."},
 {id:"q-secours",name:"Quel matériel de secours ?",alt:"A322-78-1, A322-78-2",tags:["Plan de secours"],s:{
 "Secours (A322-78-1)":["Plan de secours écrit, adapté au lieu, connu du DP, des encadrants et des autonomes.","Moyen d’alerte (VHF en mer depuis une embarcation), eau douce potable.","BAVU avec 3 masques, masque haute concentration, oxygénothérapie normobare.","Couverture isothermique, fiches d’évacuation (annexe III-19)."],
-"Assistance (A322-78-2)":["Bouteille de secours avec détendeur, moyen de rappel des plongeurs depuis la surface.","Tablette de notation immergeable, tables de décompression au-delà de 6 m en milieu naturel."]},
+"Assistance (A322-78-2)":["Bouteille de secours avec détendeur, moyen de rappel des plongeurs au départ d’une embarcation.","Tablette de notation immergeable, tables de décompression au-delà de 6 m en milieu naturel."]},
 tip:"Pas d’aspirine dans le Code du sport : la fédération l’a aussi retirée de ses référentiels de secourisme."},
 {id:"q-equipement",name:"Quel équipement par plongeur ?",alt:"A322-80 (et A322-74 pour l’encadrant)",tags:["Parachute par palanquée"],s:{
 "Réponse":["Chaque bouteille a un manomètre.","En milieu naturel, chaque plongeur en circuit ouvert a un système gonflable pour regagner la surface.","Au-delà de 20 m encadré et en autonomie : une source d’air de secours pour dépanner sans partage d’embout et des instruments de contrôle de la plongée.","Chaque palanquée a un parachute de palier.","L’encadrant : deux sorties indépendantes avec deux détendeurs complets, un système gonflable et des instruments de contrôle."]}},
@@ -45,14 +45,14 @@ tip:"Pas d’aspirine dans le Code du sport : la fédération l’a aussi retir
 tip:"Dès qu’il y a un acte d’enseignement (même une seule compétence), on bascule dans les tableaux d’enseignement."}]},
 {id:"aptitudes",name:"Espaces et aptitudes",law:"A322-76, A322-77",items:[
 {id:"a76",name:"A322-76 Espaces et limites",alt:"Espaces d’évolution et limites",tags:["0-6 à 120 m"],s:{
-"Ce que dit le texte":["Espaces : 0-6, 0-12, 0-20, 0-40, 0-60, 0-80 m, et au-delà.","Air limité à 60 m ; nitrox à 60 m, l’espace dépendant de la teneur en O2.","Trimix et héliox : 80 m en encadrement, 120 m en autonomie."]}},
+"Ce que dit le texte":["Espaces : 0-6, 0-12, 0-20, 0-40, 0-60, 0-70, 0-80 m, et au-delà.","Air limité à 60 m ; nitrox à 60 m, l’espace dépendant de la teneur en O2.","Trimix et héliox : 80 m en encadrement, 120 m en autonomie."]}},
 {id:"a77",name:"A322-77 Aptitudes",alt:"Justifier ses aptitudes",tags:["PE, PA, PN, PTH"],s:{
 "Ce que dit le texte":["Le plongeur justifie de ses aptitudes auprès du DP ; à défaut, le DP l’évalue.","PE : encadré à l’air ; PA : autonome à l’air ; PN : nitrox ; PTH : trimix ou héliox.","Entre 0 et 40 m, une personne en situation de handicap peut bénéficier d’une assistance adaptée pour les aptitudes PE-12 à PE-40 et nitrox."]}}]},
 {id:"secours",name:"Secours et équipement",law:"A322-78 à A322-81",items:[
 {id:"a78-1",name:"A322-78-1 Matériel de secours",alt:"Plan et matériel de secours",tags:["Oxygène","VHF"],s:{
 "Ce que dit le texte":["Sur le lieu de mise à l’eau : plan de secours écrit et matériel de secours.","Moyen d’alerte, VHF en mer depuis une embarcation ; eau douce potable.","BAVU avec 3 masques, masque haute concentration, kit d’oxygénothérapie normobare.","Couverture isothermique, fiches d’évacuation (annexe III-19)."]}},
 {id:"a78-2",name:"A322-78-2 Matériel d’assistance",alt:"Matériel d’assistance",tags:["Bouteille de secours"],s:{
-"Ce que dit le texte":["Bouteille d’air de secours avec détendeur, et bouteilles adaptées pour les mélanges.","Moyen de rappel des plongeurs depuis la surface en milieu naturel.","Tablette de notation immergeable ; tables de décompression au-delà de 6 m en milieu naturel."]}},
+"Ce que dit le texte":["Bouteille d’air de secours avec détendeur, et bouteilles adaptées pour les mélanges.","Moyen de rappeler un plongeur en immersion depuis la surface, en milieu naturel au départ d’une embarcation.","Tablette de notation immergeable ; tables de décompression au-delà de 6 m en milieu naturel."]}},
 {id:"a78-3",name:"A322-78-3/79 Entretien, signalisation",alt:"Entretien, signalisation",tags:["Pavillon"],s:{
 "Ce que dit le texte":["Le matériel de secours est vérifié et entretenu régulièrement.","L’activité de plongée est matérialisée selon la réglementation en vigueur (pavillon, bouée)."]}},
 {id:"a80",name:"A322-80 Équipement",alt:"Équipement des plongeurs",tags:["Parachute de palier"],s:{
@@ -81,7 +81,7 @@ tip:"Le tableau complet est en haut de cette page : apprends-le dans les deux s
 {id:"a92",name:"A322-92 PpO2",alt:"Pression partielle d’oxygène",tags:["0,16 à 1,6 bar"],s:{
 "Ce que dit le texte":["En immersion, la PpO2 du gaz inspiré est comprise entre 0,16 et 1,6 bar."]}},
 {id:"a93",name:"A322-93 Bouteilles",alt:"Identification des bouteilles",tags:["Fiche d’analyse"],s:{
-"Ce que dit le texte":["Les bouteilles de mélange sont identifiées : % d’O2 analysé, composition, date d’analyse, nom de l’analyste.","Avant la plongée, l’utilisateur complète : pression, composition, profondeur maximale, date et initiales."]}},
+"Ce que dit le texte":["Les bouteilles de mélange sont identifiées : % d’O2 analysé, composition, date d’analyse, nom du fabricant ou du distributeur.","Avant la plongée, l’utilisateur complète : pression, composition, profondeur maximale, date et initiales."]}},
 {id:"a94",name:"A322-94 Recycleurs",alt:"Recycleurs",tags:["Secours en circuit ouvert"],s:{
 "Ce que dit le texte":["Recycleur certifié, utilisateur formé à ce matériel.","Au-delà de 6 m, un système de secours en circuit ouvert accessible ; pour l’encadrant en milieu naturel, indépendant du recycleur."]}},
 {id:"a95",name:"A322-95 Nitrox",alt:"Nitrox",tags:["Annexes III-17"],s:{
@@ -96,14 +96,14 @@ tip:"Le tableau complet est en haut de cette page : apprends-le dans les deux s
 {id:"a100",name:"A322-100 Prévention hyperbare",alt:"Conseiller à la prévention hyperbare",tags:["Plongée professionnelle"],s:{
 "Ce que dit le texte":["Fixe les diplômes du conseiller à la prévention hyperbare : jusqu’à 40 m (BEES 1, DEJEPS, DESJEPS plongée) et au-delà (BEES 2, DEJEPS ou DESJEPS mention plongée)."]}},
 {id:"a101",name:"A322-101 Apnée",alt:"Apnée",tags:["Annexes III-20"],s:{
-"Ce que dit le texte":["L’apnée n’est soumise qu’aux règles d’entretien et de matériel de secours.","En apnée de 0 à 6 m, seuls un moyen d’alerte et des fiches d’évacuation sont exigés."]}}]},
+"Ce que dit le texte":["L’apnée n’est soumise qu’aux règles d’entretien et de matériel de secours.","En apnée de 0 à 6 m, seuls un plan de secours, un moyen d’alerte et des fiches d’évacuation sont exigés."]}}]},
 {id:"annexes",name:"Les annexes",law:"III-14 à III-20",items:[
 {id:"x14",name:"III-14a/b Aptitudes",alt:"Aptitudes et brevets",tags:["PE, PA"],s:{
 "Contenu":["III-14a : définition des aptitudes PE-12 à PE-60 et PA-12 à PA-60.","III-14b : brevets (FFESSM, FSGT, UCPA, ANMP, SNMP, CMAS…) qui donnent ces aptitudes."]}},
 {id:"x15a",name:"III-15a DP",alt:"Qualification du DP",tags:["Modifiée en 2025"],s:{
 "Contenu":["Qualification minimale du DP en milieu naturel, par type de plongée : air ou nitrox en exploration, en enseignement, trimix ou héliox.","Exploration : P5 (DP) minimum ; enseignement : E3 minimum.","Le BEPPA y figure pour la direction de plongée au trimix depuis 2025."]}},
 {id:"x15b",name:"III-15b Encadrants",alt:"Qualification de l’encadrant",tags:["E1 à E4, GP"],s:{
-"Contenu":["Tableau des fonctions (GP ou P4, E1, E2, E3, E4) avec les brevets fédéraux, CMAS et diplômes d’État.","Version remplacée par l’arrêté du 24 novembre 2025, en vigueur depuis janvier 2026 : le BEPPA y est classé E4."]}},
+"Contenu":["Tableau des fonctions (GP ou P4, E1, E2, E3, E4) avec les brevets fédéraux, CMAS et diplômes d’État.","Version remplacée par l’arrêté du 24 novembre 2025, en vigueur depuis janvier 2026. Le BEPPA y est classé E4 depuis l’arrêté du 17 octobre 2025."]}},
 {id:"x16",name:"III-16a/b Air",alt:"Tableaux de l’air",tags:["Enseignement, exploration"],s:{
 "Contenu":["Pour chaque espace : aptitudes des plongeurs, encadrant minimal, effectif maximal.","Encadré : 4 plongeurs (encadrant non compris) ; autonome : 3 plongeurs."]}},
 {id:"x17-18",name:"III-17/18 Mélanges",alt:"Nitrox, trimix, héliox",tags:["PN, PN-C, PTH"],s:{
