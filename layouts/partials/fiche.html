@@ -63,6 +63,8 @@
       <span><span class="bureau">{{ with $onglet.sourceBureau }}{{ . }}{{ else }}D’après le MFT {{ $onglet.chapitre }}, version consultée en{{ end }} {{ site.Params.mftConsulte }}</span><span class="mobile">{{ with $onglet.sourceMobile }}{{ . }}{{ else }}MFT {{ $onglet.chapitre }}, consulté en{{ end }} {{ site.Params.mftConsulte }}</span></span>
       <span class="fiche__liens">
       {{- if not $aProgression }}{{ with index site.Data.complements_progression $c.id }}{{ if .renvoi }}<a class="fiche__progression" href="{{ "/progression/" | relURL }}#{{ lower .renvoi }}">{{ .renvoiTexte }}</a>{{ end }}{{ end }}{{ end }}
+      {{- /* Fiches RIFAP sur la réaction face à l’accident et l’oxygène : renvoi vers la mindmap Accidents de plongée. */ -}}
+      {{- if in (slice "RIFAP-C5" "RIFAP-C6") $c.id }}<a class="fiche__progression" href="{{ "/accidents-de-plongee/" | relURL }}">Réviser les accidents de plongée →</a>{{ end }}
       <a class="fiche__signaler" href="{{ "/contact/" | relURL }}?sujet={{ $sujet }}"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-1.5 4L16 12H5"></path></svg>Signaler une erreur</a>
       </span>
     </div>
