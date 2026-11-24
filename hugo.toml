@@ -21,7 +21,7 @@ enableRobotsTXT = true
   # pistes : onglets de la page Pistes (identifiants de data/onglets.yaml et data/jeunes.yaml).
   # canvas : pastilles de niveau du Canvas (identifiants de data/canvas.json).
   masquesPistes = []
-  masquesCanvas = ["jp"]
+  masquesCanvas = []
   # Mesure d'audience Umami (instance de Philippe, relayée par Caddy sur /stats/, voir serveur/mf1.caddy).
   # La balise n'est posée qu'en production (hugo, pas hugo server) ; l'identifiant est public par nature.
   # Vider umamiId pour couper la mesure.

@@ -88,7 +88,7 @@
     if (g === "théorie") return "Toute la théorie";
     return "Tous les " + g;
   }
-  function libelleOnglet(groupe) { return groupe === "Connaissances théoriques" ? "Théorie" : groupe; }
+  function libelleOnglet(groupe) { return { "Connaissances théoriques": "Théorie", "Gestes techniques": "Gestes" }[groupe] || groupe; }
 
   /* ---------- État ---------- */
   var store = { version: VERSION, ouverte: null, astuce: false, seances: [] };
