@@ -18,6 +18,7 @@
             {
               "n": 1,
               "titre": "Observer un responsable technique",
+              "curseur": "Point de départ.",
               "objectif": "Repérer ce qui guide le choix d'une Randosub.",
               "situation": "Sortie Randosub du club : l'élève accompagne le responsable technique.",
               "critere": "Il cite au débriefing les critères de choix (site, niveau, conditions)."
@@ -25,20 +26,31 @@
             {
               "n": 2,
               "titre": "Site équipé",
+              "curseur": "Observer → organiser, sur un site équipé avec un groupe débutant.",
               "objectif": "Préparer une sortie sur un sentier sous-marin.",
               "situation": "Sentier balisé, groupe débutant.",
               "critere": "Parcours et paramètres adaptés au groupe."
             },
             {
               "n": 3,
+              "titre": "Groupe de niveaux variés",
+              "curseur": "Groupe débutant → niveaux variés.",
+              "objectif": "Adapter le parcours à des randonneurs de niveaux différents.",
+              "situation": "Sentier balisé, randonneurs de niveaux variés.",
+              "critere": "Parcours et zone d'évolution adaptés à chaque niveau."
+            },
+            {
+              "n": 4,
               "titre": "Site non balisé",
+              "curseur": "Site équipé → site non balisé.",
               "objectif": "Choisir un parcours sur un site sans équipement.",
               "situation": "Site naturel, niveaux variés, conditions du jour.",
               "critere": "Parcours sûr, zone d'évolution adaptée au niveau."
             },
             {
-              "n": 4,
+              "n": 5,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles variées.",
               "objectif": "Choisir site, parcours et paramètres.",
               "situation": "Sorties réelles variées.",
               "critere": "Choix adaptés aux randonneurs et aux conditions. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -54,6 +66,7 @@
             {
               "n": 1,
               "titre": "Support flottant",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre l'intérêt d'un support par groupe.",
               "situation": "Au sec : appui (bateau, canoë, planche) ou simple signalisation (bouée).",
               "critere": "Il dit quel support choisir selon le niveau et les conditions."
@@ -61,6 +74,7 @@
             {
               "n": 2,
               "titre": "Équiper un groupe",
+              "curseur": "Au sec → équiper un groupe sur un site non balisé.",
               "objectif": "Préparer le matériel d'un groupe.",
               "situation": "Sortie sur un site non balisé.",
               "critere": "Support adapté prêt avant la mise à l'eau."
@@ -68,6 +82,7 @@
             {
               "n": 3,
               "titre": "Plusieurs groupes",
+              "curseur": "Un groupe → plusieurs groupes.",
               "objectif": "Organiser le matériel de toute la sortie.",
               "situation": "Plusieurs groupes, absence de navire support à proximité.",
               "critere": "Chaque groupe a son support."
@@ -75,6 +90,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles hors sentier équipé.",
               "objectif": "Organiser matériellement une Randosub.",
               "situation": "Sorties réelles hors sentier équipé.",
               "critere": "Matériel prévu et en place pour chaque groupe. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -90,6 +106,7 @@
             {
               "n": 1,
               "titre": "Le pavillon A",
+              "curseur": "Point de départ.",
               "objectif": "Connaître la zone de protection du pavillon A.",
               "situation": "Au sec, à partir du RIPAM.",
               "critere": "Il explique la zone et sa signification."
@@ -97,6 +114,7 @@
             {
               "n": 2,
               "titre": "La sécurité surface",
+              "curseur": "Comprendre → organiser la sécurité surface.",
               "objectif": "Organiser la surveillance par une personne en sécurité surface.",
               "situation": "Sortie avec un navire support.",
               "critere": "Surveillance en place avant la mise à l'eau.",
@@ -105,6 +123,7 @@
             {
               "n": 3,
               "titre": "Coordonner",
+              "curseur": "Randosub seule → sortie mixte avec du scaphandre.",
               "objectif": "Coordonner randonneurs et plongeurs du bateau.",
               "situation": "Sortie mixte scaphandre et Randosub.",
               "critere": "Zones et horaires clairs pour tous."
@@ -112,6 +131,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles avec navire support.",
               "objectif": "Autoriser l'évolution près d'un navire support.",
               "situation": "Sorties réelles avec navire support.",
               "critere": "Évolution autorisée dans de bonnes conditions de surveillance. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -127,6 +147,7 @@
             {
               "n": 1,
               "titre": "Les conditions",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les conditions de l'autonomie.",
               "situation": "Au sec : attestation de randonneur ou aptitude démontrée, licence, mineurs de 16 ans et plus, présence d'un représentant légal sous 16 ans.",
               "critere": "Il cite toutes les conditions."
@@ -134,6 +155,7 @@
             {
               "n": 2,
               "titre": "Évaluer l'aptitude",
+              "curseur": "Connaître → évaluer l'aptitude.",
               "objectif": "Juger si un randonneur peut évoluer en autonomie.",
               "situation": "Observation de randonneurs lors d'une sortie encadrée.",
               "critere": "Décision argumentée."
@@ -141,6 +163,7 @@
             {
               "n": 3,
               "titre": "Fixer la zone d'évolution",
+              "curseur": "Évaluer → décider de la zone d'évolution.",
               "objectif": "Adapter la zone au niveau des randonneurs autonomes.",
               "situation": "Sortie avec des binômes autonomes.",
               "critere": "Zone fixée et comprise par chacun."
@@ -148,6 +171,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Autoriser l'autonomie en respectant les préconisations.",
               "situation": "Sorties réelles.",
               "critere": "Autonomie accordée à bon escient, préconisations respectées. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -171,6 +195,7 @@
             {
               "n": 1,
               "titre": "Préparer le groupe",
+              "curseur": "Point de départ.",
               "objectif": "Vérifier l'équipement et briefer.",
               "situation": "Avant la mise à l'eau : vêtement néoprène ou gilet de flottabilité, pas de lestage, consignes simples.",
               "critere": "Groupe équipé et informé.",
@@ -179,6 +204,7 @@
             {
               "n": 2,
               "titre": "Petit groupe",
+              "curseur": "Au sec → dans l'eau, avec un petit groupe.",
               "objectif": "Encadrer quelques randonneurs.",
               "situation": "Groupe réduit, zone proche de la surface.",
               "critere": "Groupe groupé, chacun en vue."
@@ -186,6 +212,7 @@
             {
               "n": 3,
               "titre": "Huit débutants",
+              "curseur": "Petit groupe → huit débutants au plus.",
               "objectif": "Encadrer un groupe complet.",
               "situation": "Huit randonneurs débutants au plus.",
               "critere": "Cohésion et surveillance maintenues.",
@@ -194,6 +221,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Encadrer un groupe de randonneurs.",
               "situation": "Sorties réelles.",
               "critere": "Groupe encadré en sécurité, effectif adapté au niveau. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -209,6 +237,7 @@
             {
               "n": 1,
               "titre": "Lire les participants",
+              "curseur": "Point de départ.",
               "objectif": "Repérer le niveau et l'aisance de chacun.",
               "situation": "Début de sortie : observation des randonneurs.",
               "critere": "Il identifie les randonneurs à surveiller de près."
@@ -216,6 +245,7 @@
             {
               "n": 2,
               "titre": "Adapter le parcours",
+              "curseur": "Observer → adapter le parcours.",
               "objectif": "Ajuster distance et rythme.",
               "situation": "Pendant la sortie, selon la fatigue et le froid.",
               "critere": "Parcours adapté sans mettre personne en difficulté."
@@ -223,6 +253,7 @@
             {
               "n": 3,
               "titre": "Conditions qui changent",
+              "curseur": "Conditions stables → conditions qui changent.",
               "objectif": "Réagir à un changement de conditions.",
               "situation": "Clapot, courant, froid.",
               "critere": "Décision sûre : raccourcir, rentrer, regrouper."
@@ -230,6 +261,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Veiller au bon déroulement.",
               "situation": "Sorties réelles.",
               "critere": "Conditions toujours adaptées aux circonstances et aux participants. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -245,6 +277,7 @@
             {
               "n": 1,
               "titre": "Faire découvrir les PMT",
+              "curseur": "Point de départ.",
               "objectif": "Mettre les randonneurs à l'aise avec palmes, masque et tuba.",
               "situation": "Début de sortie, petits exercices ludiques.",
               "critere": "Randonneurs à l'aise, respiration calme sur tuba."
@@ -252,6 +285,7 @@
             {
               "n": 2,
               "titre": "Faire découvrir le milieu vivant",
+              "curseur": "Le matériel → le milieu vivant.",
               "objectif": "Montrer et expliquer ce qu'on voit.",
               "situation": "Pendant la balade : espèces, comportements, respect du milieu.",
               "critere": "Les randonneurs observent sans toucher."
@@ -259,6 +293,7 @@
             {
               "n": 3,
               "titre": "Faire découvrir l'apnée et la FFESSM",
+              "curseur": "Le milieu → l'apnée et la FFESSM, pour donner envie.",
               "objectif": "Initier à de courtes apnées et présenter la Fédération.",
               "situation": "Apnées courtes, puis présentation de la FFESSM et de l'ATP Pass Découverte.",
               "critere": "Apnées sereines, randonneurs informés.",
@@ -267,6 +302,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Animer une sortie attrayante et confortable.",
               "situation": "Sorties réelles.",
               "critere": "Découverte des PMT, de l'apnée et du milieu vivant réussie. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -289,6 +325,7 @@
             {
               "n": 1,
               "titre": "Découvrir le matériel",
+              "curseur": "Point de départ.",
               "objectif": "Connaître palmes, masque, tuba, vêtement néoprène ou gilet.",
               "situation": "Au sec : rôle de chaque élément, essai du masque par aspiration.",
               "critere": "Matériel choisi et ajusté."
@@ -296,6 +333,7 @@
             {
               "n": 2,
               "titre": "Lestage éventuel",
+              "curseur": "Découvrir → régler le lest.",
               "objectif": "Garder une flottabilité positive en surface.",
               "situation": "Si le randonneur utilise un lest, réglage en surface.",
               "critere": "Flottabilité positive vérifiée en surface.",
@@ -304,6 +342,7 @@
             {
               "n": 3,
               "titre": "Entretenir",
+              "curseur": "Régler → entretenir.",
               "objectif": "Rincer et ranger son matériel.",
               "situation": "Après chaque sortie.",
               "critere": "Matériel rincé et rangé sans rappel."
@@ -311,6 +350,7 @@
             {
               "n": 4,
               "titre": "Utiliser son matériel (aptitude visée)",
+              "curseur": "Évaluation, sortie en autonomie sous le regard du formateur.",
               "objectif": "Utiliser son matériel en autonomie.",
               "situation": "Sortie en autonomie sous le regard du formateur.",
               "critere": "Matériel adapté, réglé et entretenu. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -327,6 +367,7 @@
             {
               "n": 1,
               "titre": "Ventiler sur tuba",
+              "curseur": "Point de départ.",
               "objectif": "Respirer calmement et vider son tuba.",
               "situation": "Visage dans l'eau, puis après une immersion.",
               "critere": "Ventilation calme, tuba vidé, inspiration prudente."
@@ -334,6 +375,7 @@
             {
               "n": 2,
               "titre": "Palmer",
+              "curseur": "Ventiler → palmer sur des distances croissantes.",
               "objectif": "Palmer efficacement en surface.",
               "situation": "Distances croissantes.",
               "critere": "Palmage régulier sans essoufflement."
@@ -341,6 +383,7 @@
             {
               "n": 3,
               "titre": "Conditions variées",
+              "curseur": "Eau calme → conditions variées, en milieu naturel.",
               "objectif": "S'adapter au clapot et au courant.",
               "situation": "Sortie en milieu naturel.",
               "critere": "Il garde une ventilation calme et adapte son effort."
@@ -348,6 +391,7 @@
             {
               "n": 4,
               "titre": "Techniques et ventilation (aptitude visée)",
+              "curseur": "Évaluation, sortie en autonomie sous le regard du formateur.",
               "objectif": "Évoluer en autonomie avec aisance.",
               "situation": "Sortie en autonomie sous le regard du formateur.",
               "critere": "Techniques et ventilation adaptées à l'autonomie. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -363,6 +407,7 @@
             {
               "n": 1,
               "titre": "Préparer l'apnée",
+              "curseur": "Point de départ.",
               "objectif": "Connaître les règles de l'apnée.",
               "situation": "Au sec : pas d'hyperventilation, récupération en surface, jamais seul.",
               "critere": "Il cite les règles."
@@ -370,6 +415,7 @@
             {
               "n": 2,
               "titre": "S'immerger",
+              "curseur": "Au sec → s'immerger à faible profondeur.",
               "objectif": "Faire un canard et équilibrer ses oreilles.",
               "situation": "Faible profondeur, eau calme.",
               "critere": "Immersion efficace, oreilles équilibrées.",
@@ -378,6 +424,7 @@
             {
               "n": 3,
               "titre": "Courte apnée",
+              "curseur": "S'immerger → courte apnée, surveillé par le binôme.",
               "objectif": "Observer quelques secondes au fond et remonter.",
               "situation": "Faible profondeur, binôme qui surveille.",
               "critere": "Apnée calme, remontée en regardant la surface, récupération.",
@@ -386,6 +433,7 @@
             {
               "n": 4,
               "titre": "Apnée en faible profondeur (aptitude visée)",
+              "curseur": "Évaluation, sortie en autonomie, en binôme.",
               "objectif": "Réaliser une apnée en sécurité.",
               "situation": "Sortie en autonomie, binôme.",
               "critere": "Apnée en faible profondeur réalisée en sécurité. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -401,6 +449,7 @@
             {
               "n": 1,
               "titre": "Le rôle du binôme",
+              "curseur": "Point de départ.",
               "objectif": "Comprendre la surveillance mutuelle.",
               "situation": "Au sec : l'un plonge, l'autre surveille en surface.",
               "critere": "Il explique le principe."
@@ -408,6 +457,7 @@
             {
               "n": 2,
               "titre": "En binôme accompagné",
+              "curseur": "Au sec → binôme accompagné.",
               "objectif": "Évoluer en binôme près du formateur.",
               "situation": "Sortie encadrée.",
               "critere": "Surveillance mutuelle constante."
@@ -415,6 +465,7 @@
             {
               "n": 3,
               "titre": "En binôme autonome",
+              "curseur": "Accompagné → binôme autonome.",
               "objectif": "Évoluer seul avec son binôme.",
               "situation": "Zone fixée par le responsable technique.",
               "critere": "Binôme groupé, apnées alternées et surveillées."
@@ -422,6 +473,7 @@
             {
               "n": 4,
               "titre": "En binôme (aptitude visée)",
+              "curseur": "Évaluation, sortie en autonomie.",
               "objectif": "Évoluer en binôme en autonomie.",
               "situation": "Sortie en autonomie.",
               "critere": "Binôme efficace, sécurité mutuelle assurée. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -444,6 +496,7 @@
             {
               "n": 1,
               "titre": "La trousse de secours",
+              "curseur": "Point de départ.",
               "objectif": "Connaître l'obligation.",
               "situation": "Au sec, à partir du Code du sport cité par la fiche.",
               "critere": "Il cite l'obligation."
@@ -451,6 +504,7 @@
             {
               "n": 2,
               "titre": "Vérifier la trousse",
+              "curseur": "Connaître → vérifier la trousse.",
               "objectif": "Contrôler son contenu.",
               "situation": "Avant une sortie.",
               "critere": "Contenu vérifié, manques signalés."
@@ -458,6 +512,7 @@
             {
               "n": 3,
               "titre": "La localiser",
+              "curseur": "Vérifier → localiser sur le lieu de mise à l'eau.",
               "objectif": "Savoir où elle est sur le site.",
               "situation": "Sur le lieu de mise à l'eau.",
               "critere": "Il la montre et la rend accessible."
@@ -465,6 +520,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Disposer de la trousse de secours.",
               "situation": "Sorties réelles.",
               "critere": "Trousse présente et complète à chaque sortie. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -480,6 +536,7 @@
             {
               "n": 1,
               "titre": "Le plan de secours",
+              "curseur": "Point de départ.",
               "objectif": "Connaître et mettre à jour le plan de secours écrit.",
               "situation": "Au sec : modalités d'alerte, coordonnées des secours, procédures d'urgence en surface.",
               "critere": "Plan adapté au lieu et à jour."
@@ -487,6 +544,7 @@
             {
               "n": 2,
               "titre": "Le moyen de communication",
+              "curseur": "Plan de secours → moyen de communication.",
               "objectif": "Prévoir un moyen d'alerter les secours.",
               "situation": "VHF en mer au départ d'une embarcation.",
               "critere": "Moyen d'alerte disponible et testé."
@@ -494,6 +552,7 @@
             {
               "n": 3,
               "titre": "Les fiches d'évacuation",
+              "curseur": "Préparer → vérifier les fiches d'évacuation.",
               "objectif": "Avoir les fiches d'évacuation du modèle réglementaire.",
               "situation": "Avant la sortie.",
               "critere": "Fiches présentes."
@@ -501,6 +560,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles.",
               "objectif": "Réunir le matériel de l'espace 0-6 m.",
               "situation": "Sorties réelles.",
               "critere": "Plan de secours, moyen d'alerte et fiches d'évacuation présents. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
@@ -516,6 +576,7 @@
             {
               "n": 1,
               "titre": "La liste",
+              "curseur": "Point de départ.",
               "objectif": "Connaître le matériel supplémentaire.",
               "situation": "Eau douce potable, ballon auto-remplisseur avec sac de réserve et trois masques, masque à haute concentration, oxygénothérapie normobare, couverture isothermique.",
               "critere": "Il cite toute la liste."
@@ -523,6 +584,7 @@
             {
               "n": 2,
               "titre": "Vérifier",
+              "curseur": "Connaître → vérifier.",
               "objectif": "Contrôler l'état et le fonctionnement.",
               "situation": "Avant la sortie : oxygène, ballon, masques.",
               "critere": "Matériel complet et fonctionnel."
@@ -530,6 +592,7 @@
             {
               "n": 3,
               "titre": "Utiliser",
+              "curseur": "Vérifier → utiliser.",
               "objectif": "Savoir mettre en œuvre l'oxygénothérapie.",
               "situation": "En lien avec le RIFAP ou le RIFAA.",
               "critere": "Mise en œuvre correcte en exercice."
@@ -537,6 +600,7 @@
             {
               "n": 4,
               "titre": "En situation (aptitude visée)",
+              "curseur": "Évaluation, sorties réelles avec immersions au-delà de 6 m.",
               "objectif": "Disposer du matériel exigé au-delà de 6 m.",
               "situation": "Sorties réelles avec immersions au-delà de 6 m.",
               "critere": "Tout le matériel présent et vérifié. Correspond à ce que décrit la fiche conseil (pas de modalités d'évaluation dans ce document)."
