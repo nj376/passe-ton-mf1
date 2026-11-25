@@ -30,10 +30,19 @@ groupes:
     intro: "Ta responsabilité d’encadrant, le club comme établissement d’APS, et l’organisation de la fédération."
   - nom: "Comprendre et enseigner la théorie"
     ancre: "theorie"
-    intro: "Des fiches théoriques complètes, une par branche des mindmaps du capacitaire : comprendre la notion, réussir les calculs, et surtout savoir l’enseigner à tes élèves."
-    cartes:
-      - titre: "Comprendre et enseigner la théorie"
-        resume: "Flottabilité, compressibilité des gaz, pressions partielles, optique, acoustique : comprendre la notion, réussir l’écrit du capacitaire, et savoir l’enseigner, du N1 au GP-N4."
-        url: "/theorie/"
-        epreuves: ["theorique"]
+    intro: "Des fiches théoriques complètes, une par branche des mindmaps du capacitaire : comprendre la notion, réussir l’écrit, et surtout savoir l’enseigner à tes élèves."
+    souscartes:
+      - titre: "Écrit 2 : aspects théoriques de l’activité"
+        cartes:
+          - titre: "Les fiches de l’écrit 2"
+            resume: "Flottabilité, compressibilité des gaz, pressions partielles, optique, acoustique : comprendre la notion, réussir les calculs du capacitaire, et savoir l’enseigner, du N1 au GP-N4."
+            url: "/theorie/#ecrit-2"
+            epreuves: ["theorique"]
+      - titre: "Écrit 3 : anatomie, physiologie, physiopathologie"
+        cartes:
+          - titre: "L’oreille et la plongée"
+            resume: "Anatomie de l’oreille, audition et équilibre, barotraumatismes, vertige alternobarique, manœuvres d’équilibrage : comprendre les mécanismes, et apprendre à tes élèves à équilibrer tôt, souvent et sans forcer."
+            url: "/theorie/oreille/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---

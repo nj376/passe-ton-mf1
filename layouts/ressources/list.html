@@ -2,7 +2,7 @@
 {{- /* Ressources : sommaire des fiches (content/ressources/*.md), en sections dans l’ordre de « groupes » (content/ressources/_index.md).
        Chaque section : un titre avec ancre, une phrase d’introduction, les fiches par « weight ». Les fiches qui ont « sousgroupe »
        (modèles à télécharger) forment une sous-partie marquée d’une icône. « sujets: true » ajoute la carte des sujets régionaux,
-       « cartes » des cartes vers d’autres pages (collection Théorie). */ -}}
+       « cartes » des cartes vers d’autres pages, « souscartes » des sous-parties titrées de cartes (collection Théorie, par écrit). */ -}}
 {{- $libelles := dict "pratique" "Pratique" "theorique" "Théorique" "orga" "Orga" }}
 {{- $icone := `<svg class="ress-carte__icone" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>` | safeHTML -}}
 <div class="capa">
@@ -12,10 +12,11 @@
   {{ partial "aide-page.html" "ressources" }}
   {{- range $i, $g := .Params.groupes }}
   {{- $fiches := where $.Pages "Params.groupe" $g.nom }}
-  {{- if or $fiches $g.cartes }}
+  {{- if or $fiches $g.cartes $g.souscartes }}
   <section class="ress-groupe" aria-labelledby="{{ $g.ancre }}">
     <h2 id="{{ $g.ancre }}" class="prog-sous-titre"><span class="ress-groupe__num">{{ add $i 1 }}.</span> {{ $g.nom }}</h2>
     {{- with $g.intro }}<p class="ress-groupe__intro">{{ partial "typo.html" . }}</p>{{ end }}
+    {{- if or (where $fiches "Params.sousgroupe" "eq" nil) $g.cartes $g.sujets }}
     <ul class="ress-fiches">
       {{- range where $fiches.ByWeight "Params.sousgroupe" "eq" nil }}
       <li><a class="carte ress-carte" href="{{ .RelPermalink }}">
@@ -41,6 +42,20 @@
       </button></li>
       {{- end }}
     </ul>
+    {{- end }}
+    {{- range $g.souscartes }}
+    <h3 class="ress-sous-titre">{{ partial "typo.html" .titre }}</h3>
+    <ul class="ress-fiches">
+      {{- range .cartes }}
+      <li><a class="carte ress-carte" href="{{ .url | relURL }}">
+        <span class="ress-carte__titre">{{ partial "typo.html" .titre }}</span>
+        <span class="ress-carte__resume">{{ partial "typo.html" .resume }}</span>
+        {{- with .epreuves }}<span class="ress-etiquettes"><span class="visuellement-cache">Épreuves : </span>{{ range . }}<span class="ress-etiquette ress-etiquette--{{ . }}">{{ index $libelles . }}</span>{{ end }}</span>{{ end }}
+        <span class="ress-carte__lire">{{ .lien | default "Voir les fiches →" }}</span>
+      </a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
     {{- $sous := where $fiches.ByWeight "Params.sousgroupe" "ne" nil }}
     {{- with $sous }}
     {{- $nomSous := (index . 0).Params.sousgroupe }}

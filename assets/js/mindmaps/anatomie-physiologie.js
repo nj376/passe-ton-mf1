@@ -9,22 +9,22 @@ search:"Rechercher : trompe, ADH, VO2max, samba…",
 start:"anatomie-oreille",
 cats:[
 {id:"oreille",name:"Oreille et plongée",law:"Audition, équilibre",items:[
-{id:"anatomie-oreille",name:"Anatomie de l’oreille",alt:"Externe, moyenne, interne",tags:["Trompe d’Eustache"],s:{
+{id:"anatomie-oreille",fiche:"/theorie/oreille/#anatomie-oreille",name:"Anatomie de l’oreille",alt:"Externe, moyenne, interne",tags:["Trompe d’Eustache"],s:{
 "Oreille externe":["Pavillon et conduit auditif, fermé par le tympan."],
 "Oreille moyenne":["Caisse du tympan remplie d’air, chaîne des osselets (marteau, enclume, étrier).","Reliée au rhinopharynx par la trompe d’Eustache, qui permet l’équilibrage."],
 "Oreille interne":["Cochlée : audition.","Vestibule et canaux semi-circulaires : équilibre.","Communique avec l’oreille moyenne par les fenêtres ovale (étrier) et ronde."]}},
-{id:"audition-equilibre",name:"Audition et équilibre",alt:"Rôle de chaque partie",tags:["Conduction osseuse"],s:{
+{id:"audition-equilibre",fiche:"/theorie/oreille/#audition-equilibre",name:"Audition et équilibre",alt:"Rôle de chaque partie",tags:["Conduction osseuse"],s:{
 "Audition":["Le son fait vibrer le tympan, les osselets le transmettent à la cochlée qui le transforme en influx nerveux.","Sous l’eau, la conduction osseuse domine : on entend moins bien et on ne localise plus."],
 "Équilibre":["Le vestibule renseigne sur la position de la tête et les accélérations ; les canaux semi-circulaires sur les rotations.","Il travaille avec la vue et les capteurs du corps : sous l’eau, la vue et l’appui manquent."]}},
-{id:"baro-oreille",name:"Barotraumatismes de l’oreille",alt:"Externe, moyenne, interne",tags:["Descente surtout"],s:{
+{id:"baro-oreille",fiche:"/theorie/oreille/#baro-oreille",name:"Barotraumatismes de l’oreille",alt:"Externe, moyenne, interne",tags:["Descente surtout"],s:{
 "Mécanismes":["Moyenne : trompe fermée, le volume d’air diminue à la descente et le tympan est aspiré (Mariotte).","Interne : Valsalva forcé ou tardif, rupture de fenêtre, fistule périlymphatique.","Externe : cagoule trop serrée ou bouchon de cérumen qui piègent de l’air."],
 "Signes":["Douleur, oreille bouchée, otorragie si perforation.","Interne : vertiges, nausées, acouphènes, surdité brutale."],
 "Conduite à tenir":["Stopper la descente, remonter un peu, rééquilibrer doucement, sinon fin de plongée.","Signes d’oreille interne : traiter comme un ADD (O2, alerte), avis ORL urgent."],
 "Prévention":["Équilibrer tôt et sans forcer, ne pas plonger enrhumé, éviter les vasoconstricteurs."]}},
-{id:"vertige-alternobarique",name:"Vertige alternobarique",alt:"Équilibrage asymétrique",tags:["Remontée"],s:{
+{id:"vertige-alternobarique",fiche:"/theorie/oreille/#vertige-alternobarique",name:"Vertige alternobarique",alt:"Équilibrage asymétrique",tags:["Remontée"],s:{
 "Mécanisme":["Les deux oreilles s’équilibrent de façon inégale, souvent à la remontée : le cerveau reçoit des informations différentes."],
 "Signes et conduite":["Vertige bref en remontée, parfois nausées.","S’arrêter, se tenir à un repère, attendre la fin du vertige, puis remonter lentement."]}},
-{id:"manoeuvres",name:"Manœuvres d’équilibrage",alt:"Valsalva, BTV, Frenzel, Toynbee",tags:["Sans forcer"],s:{
+{id:"manoeuvres",fiche:"/theorie/oreille/#manoeuvres",name:"Manœuvres d’équilibrage",alt:"Valsalva, BTV, Frenzel, Toynbee",tags:["Sans forcer"],s:{
 "Les techniques":["Valsalva : expirer nez pincé, la plus connue mais la plus agressive si on force.","BTV (béance tubaire volontaire) : ouvrir les trompes par contraction musculaire, sans pression.","Frenzel : pousser l’air avec la langue, glotte fermée.","Toynbee : déglutir nez pincé."]},
 tip:"Savoir expliquer pourquoi un Valsalva forcé peut léser l’oreille interne est un grand classique."}]},
 {id:"baro",name:"Barotraumatismes",law:"Poumons, sinus, dents, masque",items:[

@@ -2966,3 +2966,63 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .dp-courant-tete { fill: var(--bleu-fonce); }
 .dp-parachute { fill: #E8822A; stroke: #B85A12; stroke-width: 1.5; }
 .dp-bulle { fill: none; stroke: var(--bleu); stroke-width: 1.5; }
+
+/* Théorie, écrit 3 : charte des schémas anatomiques (préfixe « ana- »). Air en bleu, liquides en violet, os en beige, nerfs en jaune, tissus en rose. */
+.ana-dessin { display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto; font-family: var(--police); }
+.ana-sans-fond { fill: none; }
+.ana-os-fond { fill: #F3EBD3; } .ana-os { fill: #E9D9A8; } .ana-osselet { fill: #FFFDF6; }
+.ana-tissu { fill: #F6E4E1; } .ana-tissu-plein { fill: #F6E1DC; } .ana-crane { fill: #E9EDF1; }
+.ana-peau { fill: #F0D2B6; } .ana-peau-fonce { fill: #DDB08C; } .ana-cartilage { fill: #B9C3CE; }
+.ana-conduit { fill: #E3EEF8; } .ana-air { fill: #9CC4EB; } .ana-air-plein { fill: #BCD7F2; }
+.ana-tympan { fill: #E8822A; } .ana-liquide { fill: #C3AEE0; } .ana-liquide-fonce { fill: #7D5BB5; }
+.ana-nerf { fill: #F2D35E; } .ana-vaisseau { fill: #D9A0A0; } .ana-reflet { fill: #FFFFFF; }
+.ana-contour { stroke: var(--texte-4); } .ana-nerf-trait { stroke: #A87A12; } .ana-liquide-trait { stroke: #4B2E83; }
+.ana-peau-trait { stroke: #9A5B3C; } .ana-trompe-trait { stroke: var(--bleu-fonce); } .ana-ligament { stroke: var(--fleche-douce); }
+.ana-tympan-trait { stroke: #B85A12; }
+.ana-tympan-trait-fort { fill: none; stroke: #E8822A; stroke-width: 5; stroke-linecap: round; }
+.ana-paroi { fill: none; stroke: var(--texte-4); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.ana-congestion { fill: var(--rouge); }
+.ana-rappel { stroke: var(--texte); stroke-width: 1.5; }
+.ana-rappel-point { fill: var(--texte); }
+.ana-pastille { fill: var(--bleu); stroke: var(--blanc); stroke-width: 2.5; }
+.ana-pastille-num { fill: var(--blanc); font-size: 22px; font-weight: 700; }
+.ana-zone { fill: none; stroke: var(--texte-4); stroke-width: 2; }
+.ana-zone-txt { fill: var(--texte); font-size: 22px; font-weight: 600; }
+.ana-legende { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px 22px; margin: 16px 0 0; }
+.ana-legende__titre { display: block; margin-bottom: 4px; font-size: 14.5px; color: var(--texte); }
+.ress-fiche .ana-legende__liste, .ana-legende__liste { margin: 0; padding-left: 26px; font-size: 14px; line-height: 1.5; color: var(--texte-3); }
+.ana-legende__liste li::marker { font-weight: 700; color: var(--bleu); }
+.ana-credit { margin: 10px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--texte-4); }
+.ana-dessin--moyen { max-width: 520px; }
+.ana-dessin--haut { max-width: 480px; }
+.ana-pastille-num--s { font-size: 14px; }
+.ana-pastille-num--l { font-size: 38px; }
+.ana-endolymphe { fill: #DCD3F0; } .ana-macule { fill: #F3EFD9; }
+.ana-trait-os { stroke: #B8A26A; stroke-width: 3; } .ana-trait-air { stroke: var(--bleu-fonce); stroke-width: 3; }
+.ana-tissu-fonce { fill: #E9A79B; } .ana-muscle { fill: #C9705F; } .ana-disque { fill: #D5E2EF; }
+.ana-dent { fill: var(--blanc); stroke: var(--fleche-douce); stroke-width: 2; }
+.ana-cartilage-clair { fill: #CFE0EE; stroke: var(--fleche-douce); stroke-width: 2; }
+.ana-bourrelet { fill: #E9A79B; stroke: #9A5B3C; stroke-width: 3; } .ana-orifice { fill: var(--bleu-fonce); }
+.ana-trait-fin { fill: none; stroke: #8A3B2E; stroke-width: 3; }
+.ana-osselet-trait { fill: none; stroke: var(--texte-4); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.ana-fenetre { fill: none; stroke: #4B2E83; stroke-width: 3; }
+.ana-fenetre-rompue { fill: none; stroke: var(--rouge); stroke-width: 3; stroke-linejoin: round; }
+.ana-goutte { fill: #8E6BC4; }
+.ana-pression { stroke: var(--rouge); stroke-width: 3; stroke-linecap: round; } .ana-pression-tete { fill: var(--rouge); }
+.ana-air-fleche { stroke: var(--bleu); stroke-width: 3; stroke-linecap: round; } .ana-air-fleche-tete { fill: var(--bleu); }
+.ana-trajet { stroke: var(--bleu-fonce); stroke-width: 3; stroke-linecap: round; } .ana-trajet-tete { fill: var(--bleu-fonce); }
+.ana-trajet-faible { stroke: var(--bleu-fonce); stroke-width: 2; stroke-dasharray: 4 4; opacity: .5; } .ana-trajet-faible-tete { fill: var(--bleu-fonce); opacity: .5; }
+.ana-info { stroke: var(--vert); stroke-width: 3; stroke-linecap: round; } .ana-info-tete { fill: var(--vert); }
+.ana-info-faible { stroke: var(--fleche-douce); stroke-width: 2; stroke-dasharray: 5 4; } .ana-info-faible-tete { fill: var(--fleche-douce); }
+.ana-boite { fill: var(--blanc); stroke: var(--vert); stroke-width: 2; } .ana-boite--faible { stroke: var(--fleche-douce); stroke-dasharray: 5 4; }
+.ana-cerveau { fill: var(--vert); }
+.ana-txt-blanc { fill: var(--blanc); font-size: 12px; } .ana-txt-clair { fill: #4B2E83; } .ana-txt-rouge { fill: var(--rouge); font-size: 20px; }
+.ana-cochlee { fill: none; stroke: #4B2E83; stroke-width: 4; stroke-linecap: round; }
+.ana-onde { fill: none; stroke: var(--bleu-courbe); stroke-width: 2.5; }
+.ana-cagoule { fill: var(--nuit); opacity: .85; }
+.ana-bulle { fill: var(--blanc); stroke: var(--bleu); stroke-width: 1.5; }
+.ana-legende-liquides { margin-top: 12px; }
+.ana-legende__peri::before { background: #C3AEE0; height: 12px !important; width: 18px; }
+.ana-legende__endo::before { background: #DCD3F0; height: 12px !important; width: 18px; border: 1px solid #B9A8DA; }
+.ana-legende__pression::before { background: var(--rouge); }
+@media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }
