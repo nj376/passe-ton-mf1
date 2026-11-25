@@ -70,7 +70,7 @@ Pose ta séance sur la courbe de plongée : chaque temps a sa place, et tu n’
 | Pendant | **Formative** | L’exercice fonctionne-t-il pour cet élève ? Faut-il simplifier, répéter, changer de situation ? |
 | Fin de séance | **Finale** (ou sommative) | L’objectif est-il atteint, selon les critères annoncés ? |
 
-Si l’exercice ne marche pas, cherche la cause avant de répéter : l’élève n’a pas compris la consigne, il ne ressent pas le geste, il a peur, ou le matériel le gêne. Chaque cause appelle une réponse différente : réexpliquer autrement, revenir à un exercice plus simple, rassurer, adapter le matériel. Détails dans la fiche [Évaluer et remédier](/ressources/evaluer-et-remedier/).
+Si l’exercice ne marche pas, cherche la cause avant de répéter : l’élève n’a pas compris la consigne, il ne ressent pas le geste, il a peur, ou le matériel le gêne. Chaque cause appelle une réponse différente : réexpliquer autrement, revenir à un exercice plus simple, rassurer, adapter le matériel. Détails dans la fiche [Évaluer, remédier et certifier](/ressources/evaluer-remedier-et-certifier/).
 
 ## Les pièges classiques
 

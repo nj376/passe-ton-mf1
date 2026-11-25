@@ -2779,3 +2779,6 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .schema-echelons__ligne { grid-template-columns: 1fr; gap: 6px; }
   .schema-echelons__niveau { justify-content: flex-start; }
 }
+
+/* Ressources : évaluer, remédier et certifier, domaine de l’apprenant sur les cartes des causes d’échec */
+.schema-causes__domaine { font-size: 12.5px; font-weight: 600; color: var(--texte-4); }

@@ -1,15 +1,16 @@
 {{- /* Schéma « causes d’échec et réponses » : quatre familles de causes, l’exemple d’une remontée assistée ratée, la réponse. */ -}}
 {{- $causes := slice
-  (dict "t" "Comprendre" "s" "connaissances, compréhension, communication" "ex" "Il n’a pas bien écouté l’explication." "r" "Réexpliquer autrement, changer d’environnement, revenir aux prérequis.")
-  (dict "t" "Ressentir et coordonner" "s" "sensations, coordination, dissociation des gestes" "ex" "Il ne sent pas que la vitesse ralentit." "r" "Des repères pour prendre conscience du geste et le corriger, puis répéter.")
-  (dict "t" "Émotions" "s" "peur, stress, motivation" "ex" "Il a peur que la remontée s’emballe." "r" "Rassurer, motiver, revenir à une étape où il réussit.")
-  (dict "t" "Matériel et physique" "s" "équipement, condition physique" "ex" "Sa purge lente se coince régulièrement." "r" "Adapter le matériel, ou l’effort demandé.")
+  (dict "t" "Comprendre" "dom" "Savoir" "domc" "savoir" "domt" "domaine cognitif" "s" "connaissances, compréhension, communication" "ex" "Il n’a pas bien écouté l’explication." "r" "Réexpliquer autrement, changer d’environnement, revenir aux prérequis.")
+  (dict "t" "Ressentir et coordonner" "dom" "Savoir-faire" "domc" "faire" "domt" "domaine sensori-moteur" "s" "sensations, coordination, dissociation des gestes" "ex" "Il ne sent pas que la vitesse ralentit." "r" "Des repères pour prendre conscience du geste et le corriger, puis répéter.")
+  (dict "t" "Émotions" "dom" "Savoir-être" "domc" "etre" "domt" "domaine affectif" "s" "peur, stress, motivation" "ex" "Il a peur que la remontée s’emballe." "r" "Rassurer, motiver, revenir à une étape où il réussit.")
+  (dict "t" "Matériel et physique" "dom" "" "domc" "" "domt" "hors de l’apprenant" "s" "équipement, condition physique" "ex" "Sa purge lente se coince régulièrement." "r" "Adapter le matériel, ou l’effort demandé.")
 -}}
 <figure class="ress-schema">
   <ul class="schema-causes">
     {{- range $causes }}
     <li class="schema-causes__carte">
       <strong class="schema-causes__titre">{{ .t }}</strong>
+      <span class="schema-causes__domaine">{{ if .dom }}<span class="fac__mot fac__mot--{{ .domc }}">{{ .dom }}</span> {{ end }}{{ .domt }}</span>
       <span class="schema-causes__sous">{{ .s }}</span>
       <span class="schema-causes__ex"><span class="schema-causes__lib">Remontée assistée ratée :</span> {{ .ex }}</span>
       <span class="schema-causes__rep"><span class="schema-causes__lib">Réponse :</span> {{ .r }}</span>

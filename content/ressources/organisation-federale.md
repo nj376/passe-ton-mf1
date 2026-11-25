@@ -108,7 +108,7 @@ Les clubs, eux, ont leurs propres statuts : voir [Le club, un établissement d�
 {{< pistes >}}
 - **Une licence FFESSM** en cours de validité et un **CACI** de moins d’un an : sans eux, pas de formation.
 - **Son brevet** : le MFT N2 accepte le N1 ou une certification dont les aptitudes sont jugées équivalentes, avec au moins quatre plongées en milieu naturel attestées. Regarde son carnet.
-- **Une évaluation de départ** dans l’eau, pour situer ses acquis : voir [Évaluer et remédier](/ressources/evaluer-et-remedier/).
+- **Une évaluation de départ** dans l’eau, pour situer ses acquis : voir [Évaluer, remédier et certifier](/ressources/evaluer-remedier-et-certifier/).
 {{< /pistes >}}
 
 ### Ta première session d’examen

@@ -62,7 +62,7 @@ La capacité, c’est le geste ou le comportement visé. La condition, c’est l
 | **PA20 (N2)** | Intervenir sur un équipier en difficulté | Fond de 20 m, en déplacement | Prise en charge en moins de 3 s, remontée régulière à la vitesse prévue, arrêt marqué entre 5 et 3 m. |
 | **PA40 (N3)** | Intervenir sur un équipier en difficulté | Stabilisé à 40 m | Prise en charge rapide, remontée régulée (une sortie rapide jusqu’à 30 m est acceptée si elle est suivie d’une régulation), gilet privilégié, arrêt marqué entre 5 et 3 m. |
 
-La même capacité, le vidage de masque, donne deux objectifs très différents au N1 et au PE60 : ce sont la condition et le critère qui font le niveau. Les seuils chiffrés sont des exemples, à caler sur les modalités d’évaluation du MFT. Les familles de critères sont détaillées dans [Évaluer et remédier](/ressources/evaluer-et-remedier/).
+La même capacité, le vidage de masque, donne deux objectifs très différents au N1 et au PE60 : ce sont la condition et le critère qui font le niveau. Les seuils chiffrés sont des exemples, à caler sur les modalités d’évaluation du MFT. Les familles de critères sont détaillées dans [Évaluer, remédier et certifier](/ressources/evaluer-remedier-et-certifier/).
 
 ## 4. Choisir une méthode pédagogique
 
