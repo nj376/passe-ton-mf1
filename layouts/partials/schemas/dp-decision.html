@@ -1,0 +1,26 @@
+{{- /* Schéma « maintenir ou annuler » : les six familles de facteurs que le DP analyse avant de fixer la plongée.
+       Repris d’un support de stage initial MF1, rédigé pour le site. Classes schema-qq (cartes) et schema-decision. */ -}}
+{{- $familles := slice
+  (dict "n" "1" "q" "Les plongeurs" "t" (slice "Niveaux, aptitudes, qualifications" "Expérience récente, attentes" "État physique et psychique du jour" "Licence, certificat médical, carnet"))
+  (dict "n" "2" "q" "Les conditions" "t" (slice "Vent, houle, courant, marée" "Visibilité, température" "Évolution annoncée dans la journée"))
+  (dict "n" "3" "q" "Le site" "t" (slice "Distance, coordonnées, accès" "Profondeur, topographie, points d’intérêt" "Spécificités : épave, tombant, dérivante"))
+  (dict "n" "4" "q" "L’encadrement" "t" (slice "Encadrants disponibles et leurs qualifications" "Qui assure la sécurité surface"))
+  (dict "n" "5" "q" "Le matériel et la logistique" "t" (slice "Bateau, pilote, places" "Matériel de secours et de sécurité" "Équipement des plongeurs"))
+  (dict "n" "6" "q" "La réglementation" "t" (slice "Code du sport, MFT" "Règles locales : mairie, capitainerie, affaires maritimes, zones protégées"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $familles }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <div class="schema-decision" role="note">
+    <span class="schema-decision__fleche" aria-hidden="true">↓</span>
+    <strong>Ta décision :</strong> maintenir, adapter (autre site, profondeur réduite, palanquées recomposées) ou annuler. Puis fixer les paramètres de chaque palanquée.
+  </div>
+  <figcaption>Le DP croise ces six familles avant de décider. Un seul facteur défavorable peut suffire à changer de site ou à annuler.</figcaption>
+</figure>

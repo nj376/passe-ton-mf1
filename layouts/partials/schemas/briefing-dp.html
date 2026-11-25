@@ -1,0 +1,26 @@
+{{- /* Schéma « le briefing du DP » : six blocs de consignes, puis le retour de plongée.
+       Repris d’un support de stage initial MF1, rédigé pour le site. Classes schema-qq et schema-decision. */ -}}
+{{- $blocs := slice
+  (dict "n" "1" "q" "La sécurité" "t" (slice "Matériel de secours et d’assistance, sa place" "Sécurité surface, moyen de rappel" "Bloc de secours, pendeur, ligne de vie, bouées" "Points de largage et de récupération"))
+  (dict "n" "2" "q" "Le matériel du plongeur" "t" (slice "Rappel du matériel obligatoire" "Contrôle mutuel avant la mise à l’eau" "Matériel conseillé : lampe, parachute, coupe-fil"))
+  (dict "n" "3" "q" "L’environnement" "t" (slice "Météo, mer, courant, visibilité, température" "Le site : schéma, fond, points d’intérêt, trajets" "Orientation, faune et flore"))
+  (dict "n" "4" "q" "Le déroulement" "t" (slice "Organisation en surface, mise à l’eau" "Immersion, descente, fond, retour" "Paliers, retour au bateau, récupération"))
+  (dict "n" "5" "q" "La prévention" "t" (slice "Oreilles, froid, effort, essoufflement, narcose" "Ventilation, consommation" "Perte de palanquée, panne d’ordinateur, givrage" "Risques du jour : nuit, épave, dérivante, courant"))
+  (dict "n" "6" "q" "Les palanquées" "t" (slice "Composition et encadrant" "Trajet, profondeur et durée maximales" "Décompression, gestion des ordinateurs" "Communication : signes, parachute, lampes"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $blocs }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <div class="schema-decision" role="note">
+    <span class="schema-decision__fleche" aria-hidden="true">↓</span>
+    <strong>Au retour :</strong> compte les plongeurs, contrôle le respect des consignes, complète la fiche de sécurité avec les paramètres réalisés. Elle est conservée un an.
+  </div>
+  <figcaption>Tout ne se dit pas à chaque plongée : adapte le briefing au site, au public et au type de plongée. Les consignes propres à chaque palanquée se donnent à son encadrant.</figcaption>
+</figure>

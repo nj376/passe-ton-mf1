@@ -2756,3 +2756,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ress-fiche .schema-etapes-liste { margin: 0 0 14px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; max-width: none; }
 .ress-fiche .schema-etapes-liste li { margin: 0; display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); font-size: 15px; color: var(--texte); }
 .tri-acquis__titre { display: block; font-size: 12.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--texte-4); }
+
+/* Ressources : rôle du DP, décision et retour de plongée sous les cartes schema-qq */
+.schema-decision { margin-top: 14px; padding: 10px 14px 10px 40px; position: relative; border-radius: 10px; background: var(--vert-fond); border: 1px solid #8CC4A0; font-size: 14.5px; line-height: 1.5; color: var(--vert-texte); }
+.schema-decision strong { color: var(--vert-texte); }
+.schema-decision__fleche { position: absolute; left: 14px; top: 9px; font-weight: 700; font-size: 16px; }

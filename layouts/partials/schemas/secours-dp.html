@@ -1,0 +1,20 @@
+{{- /* Schéma « déclencher les secours » : cinq actions du DP, selon le plan de secours de la structure.
+       Repris d’un support de stage initial MF1, rédigé pour le site. Classes schema-etapes (cinq colonnes). */ -}}
+{{- $temps := slice
+  (dict "n" "1" "t" "Prendre en charge" "d" (slice "Les gestes du RIFAP" "Oxygène, trousse de secours" "Ne jamais laisser la victime seule"))
+  (dict "n" "2" "t" "Rappeler, récupérer" "d" (slice "Rappel des palanquées à l’eau" "Compter les plongeurs" "Surveiller la palanquée de la victime"))
+  (dict "n" "3" "t" "Alerter" "d" (slice "Selon ton plan de secours" "En mer : VHF canal 16 ou 196" "À terre : 15 ou 112"))
+  (dict "n" "4" "t" "Renseigner" "d" (slice "Fiche d’évacuation" "Paramètres de la plongée" "Heure des signes, soins donnés"))
+  (dict "n" "5" "t" "Évacuer et suivre" "d" (slice "Transmission aux secours, avec la fiche" "Retour au port ou au site" "Retour d’expérience"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-etapes">
+    {{- range $temps }}
+    <li class="schema-etapes__etape">
+      <span class="schema-etapes__tete"><span class="schema-etapes__num" aria-hidden="true">{{ .n }}</span>{{ .t }}</span>
+      <ul class="schema-etapes__points">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Dans la réalité, plusieurs actions se mènent en même temps : répartis les rôles avant la plongée (qui s’occupe de la victime, qui alerte, qui récupère les palanquées).</figcaption>
+</figure>
