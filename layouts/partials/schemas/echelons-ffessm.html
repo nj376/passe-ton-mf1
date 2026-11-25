@@ -1,0 +1,24 @@
+{{- /* Schéma « les trois échelons de la FFESSM » : à chaque niveau, un comité (association, personnalité morale)
+       et ses commissions (sans personnalité juridique). Exemple de la technique : CTN, CTR, CTD. Classes « schema-echelons ». */ -}}
+{{- $niveaux := slice
+  (dict "n" "National" "c" "La fédération" "cd" "Assemblée générale et comité directeur national, élu pour 4 ans. Siège à Marseille." "m" "Commissions nationales" "md" "La commission technique nationale (CTN) écrit le MFT.")
+  (dict "n" "Région" "c" "Le comité régional" "cd" "Organe déconcentré : son AG, ses élus. Distribue licences, brevets et fournitures." "m" "Commissions régionales" "md" "La commission technique régionale (CTR) organise les formations et examens de cadres, dont ton MF1.")
+  (dict "n" "Département" "c" "Le comité départemental (CODEP)" "cd" "Son AG, ses élus. Relais des clubs : formations, stages, événements, avis sur les subventions." "m" "Commissions départementales" "md" "La commission technique départementale (CTD) peut organiser des stages, dont un stage initial MF1, avec l’accord de la CTR.")
+-}}
+<figure class="ress-schema">
+  <div class="schema-echelons" role="table" aria-label="Les trois échelons de la FFESSM">
+    <div class="schema-echelons__tete" role="row">
+      <span role="columnheader"></span>
+      <span role="columnheader">Les comités<small>associations loi 1901, avec personnalité morale</small></span>
+      <span role="columnheader">Leurs commissions<small>sans personnalité juridique, contrôlées par le comité</small></span>
+    </div>
+    {{- range $niveaux }}
+    <div class="schema-echelons__ligne" role="row">
+      <span class="schema-echelons__niveau" role="rowheader">{{ .n }}</span>
+      <span class="schema-echelons__case" role="cell"><strong>{{ .c }}</strong>{{ .cd }}</span>
+      <span class="schema-echelons__case schema-echelons__case--commission" role="cell"><strong>{{ .m }}</strong>{{ .md }}</span>
+    </div>
+    {{- end }}
+  </div>
+  <figcaption>À chaque échelon, l’assemblée générale réunit les présidents des clubs et des SCA concernés, et élit ses dirigeants pour quatre ans. Les commissions proposent et donnent des avis ; le comité décide.</figcaption>
+</figure>

@@ -2761,3 +2761,21 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .schema-decision { margin-top: 14px; padding: 10px 14px 10px 40px; position: relative; border-radius: 10px; background: var(--vert-fond); border: 1px solid #8CC4A0; font-size: 14.5px; line-height: 1.5; color: var(--vert-texte); }
 .schema-decision strong { color: var(--vert-texte); }
 .schema-decision__fleche { position: absolute; left: 14px; top: 9px; font-weight: 700; font-size: 16px; }
+
+/* Ressources : organisation fédérale, trois échelons (comités et commissions) et quatre familles d’activités */
+.ress-fiche .schema-qq--quatre { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.schema-echelons { display: grid; gap: 8px; }
+.schema-echelons__tete, .schema-echelons__ligne { display: grid; grid-template-columns: 120px minmax(0, 1fr) minmax(0, 1fr); gap: 10px; align-items: stretch; }
+.schema-echelons__tete span { display: flex; flex-direction: column; font-size: 14px; font-weight: 700; color: var(--texte); }
+.schema-echelons__tete small { font-size: 12px; font-weight: 500; color: var(--texte-4); }
+.schema-echelons__niveau { display: flex; align-items: center; justify-content: center; padding: 8px; border-radius: 10px; background: var(--bleu-fonce); color: var(--blanc); font-size: 14px; font-weight: 600; text-align: center; }
+.schema-echelons__case { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); border-left: 4px solid var(--bleu); font-size: 13.5px; line-height: 1.45; color: var(--texte-2); }
+.schema-echelons__case strong { font-size: 15px; color: var(--texte); }
+.schema-echelons__case--commission { border-left-color: var(--bleu-courbe); border-style: dashed solid dashed solid; border-left-style: solid; }
+@media (max-width: 1000px) { .ress-fiche .schema-qq--quatre { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) {
+  .ress-fiche .schema-qq--quatre { grid-template-columns: 1fr; }
+  .schema-echelons__tete { display: none; }
+  .schema-echelons__ligne { grid-template-columns: 1fr; gap: 6px; }
+  .schema-echelons__niveau { justify-content: flex-start; }
+}

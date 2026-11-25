@@ -1,0 +1,19 @@
+{{- /* Schéma « une fédération, toutes les activités » : commissions et activités de la FFESSM, regroupées par famille. Classes schema-qq. */ -}}
+{{- $familles := slice
+  (dict "n" "1" "q" "Plonger et découvrir" "t" (slice "Technique (plongée en scaphandre)" "Plongée souterraine" "Archéologie subaquatique" "Biologie et environnement" "Photo et vidéo"))
+  (dict "n" "2" "q" "Les sports" "t" (slice "Apnée" "Nage avec palmes, nage en eau vive" "Hockey subaquatique" "Tir sur cible, orientation subaquatique" "Plongée sportive en piscine, pêche sous-marine"))
+  (dict "n" "3" "q" "Les services" "t" (slice "Juridique" "Médicale et prévention"))
+  (dict "n" "4" "q" "Les publics" "t" (slice "Activités jeunes" "Handisub, pour les personnes en situation de handicap" "Randonnée subaquatique"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq schema-qq--quatre">
+    {{- range $familles }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Chaque activité a sa commission, à l’échelon national, régional et souvent départemental. La plongée en scaphandre relève de la commission technique.</figcaption>
+</figure>
