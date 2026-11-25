@@ -1215,7 +1215,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .accueil-pourquoi__texte { flex: 2 1 480px; max-width: 640px; display: flex; flex-direction: column; gap: 16px; }
 .accueil-pourquoi__texte p { margin: 0; font-size: 18px; line-height: 1.65; color: var(--texte-2); }
 /* Zone 3 */
-.accueil-profils { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.accueil-profils { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
 .accueil-profil { padding: 32px; display: flex; flex-direction: column; gap: 16px; }
 .accueil-profil__titre { margin: 0; font-size: 22px; font-weight: 600; }
 .accueil-profil__texte { margin: 0; font-size: 16px; line-height: 1.6; color: var(--texte-3); }
