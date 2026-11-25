@@ -3,7 +3,7 @@ title: "Passe-ton-MF1 · Le rôle du Directeur de Plongée"
 description: "Le rôle du Directeur de Plongée pour le MF1 : ce que disent le Code du sport et le MFT, responsabilités, déroulé d’une journée, matériel de secours et cas pratiques."
 classePrincipal: "principal--interieur principal--capa"
 titre: "Le rôle du Directeur de Plongée"
-resume: "Ce que le Code du sport et le MFT attendent du DP, ses responsabilités, et des cas pratiques pour t’y préparer."
+resume: "Ce que le Code du sport et le MFT attendent du DP, ses responsabilités, les plongées particulières (jeunes, nuit, dérivante) et des cas pratiques pour t’y préparer."
 groupe: "Organiser et sécuriser l’activité"
 weight: 10
 epreuves: ["orga", "theorique"]
