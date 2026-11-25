@@ -4,8 +4,9 @@ description: "Ce qu'est le MFT de la FFESSM, comment un livret de niveau est con
 classePrincipal: "principal--interieur principal--capa"
 titre: "Le MFT, mode d’emploi"
 resume: "Ce que contient le MFT, comment un livret de niveau est construit, ce qu’il ne dit pas et comment t’en servir pour tes cours comme à l’examen."
-groupe: "Méthode"
-weight: 12
+groupe: "Les bases : le MFT et ton parcours"
+weight: 10
+epreuves: ["pratique", "theorique", "orga"]
 sources: "MFT de la FFESSM : Plongeur Niveau 1, version décembre 2025 ; Plongeur Niveau 2, version mai 2026 ; Plongeur Niveau 3, version décembre 2025 ; MF1, version juillet 2026 ; supports de stages initiaux MF1"
 ---
 

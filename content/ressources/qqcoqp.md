@@ -4,8 +4,9 @@ description: "La méthode QQCOQP (Qui, Quoi, Comment, Où, Quand, Pourquoi) pour
 classePrincipal: "principal--interieur principal--capa"
 titre: "La méthode QQCOQP"
 resume: "Six questions pour ne rien oublier quand tu conçois une séance, un cours ou une organisation."
-groupe: "Méthode"
+groupe: "Concevoir un enseignement"
 weight: 10
+epreuves: ["pratique", "theorique", "orga"]
 ---
 
 ## Six questions pour concevoir

@@ -4,8 +4,10 @@ description: "La fiche d'évacuation de plongeur à télécharger, selon le mod�
 classePrincipal: "principal--interieur principal--capa"
 titre: "Fiche d’évacuation de plongeur"
 resume: "Le modèle type du Code du sport, à imprimer en plusieurs exemplaires : une fiche par victime, remise aux secours."
-groupe: "À télécharger"
-weight: 30
+groupe: "Organiser et sécuriser l’activité"
+weight: 50
+epreuves: ["orga"]
+sousgroupe: "Outils à imprimer"
 sources: "Code du sport, article A322-78-1 et annexe III-19 (extrait du MFT, version juin 2026) ; MFT RIFAP de la FFESSM, version mai 2026"
 ---
 

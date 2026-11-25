@@ -4,8 +4,9 @@ description: "Le rôle du Directeur de Plongée pour le MF1 : ce que disent le 
 classePrincipal: "principal--interieur principal--capa"
 titre: "Le rôle du Directeur de Plongée"
 resume: "Ce que le Code du sport et le MFT attendent du DP, ses responsabilités, et des cas pratiques pour t’y préparer."
-groupe: "Organisation et sécurité"
-weight: 50
+groupe: "Organiser et sécuriser l’activité"
+weight: 10
+epreuves: ["orga"]
 sources: "Code du sport, articles A322-71 et suivants (extrait du MFT, version juin 2026), MFT MF1 de la FFESSM, version juillet 2026, MFT Niveau 5 - Directeur de plongée, version mai 2026, et supports de stages initiaux MF1"
 ---
 

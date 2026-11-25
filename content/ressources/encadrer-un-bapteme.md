@@ -4,8 +4,9 @@ description: "Encadrer et organiser un baptême de plongée au MF1 : ce que dis
 classePrincipal: "principal--interieur principal--capa"
 titre: "Encadrer un baptême"
 resume: "Le MFT en parle peu : le cadre, l’adaptation au public et le déroulé d’un baptême, de l’accueil au débriefing."
-groupe: "Organisation et sécurité"
-weight: 60
+groupe: "Organiser et sécuriser l’activité"
+weight: 20
+epreuves: ["orga"]
 sources: "Code du sport, articles A322-71 et suivants et annexe III-16a (extrait du MFT, version juin 2026), MFT Jeunes plongeurs (juin 2026), MFT N1 (décembre 2025), généralités du MFT, et supports de stages initiaux MF1"
 ---
 

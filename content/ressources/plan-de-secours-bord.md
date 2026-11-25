@@ -4,8 +4,10 @@ description: "Modèle de plan de secours à télécharger pour les plongées du 
 classePrincipal: "principal--interieur principal--capa"
 titre: "Plan de secours, plongées du bord"
 resume: "Un modèle à imprimer et à compléter pour chaque site du bord : le site, les secours, le matériel, et la conduite à tenir au verso."
-groupe: "À télécharger"
-weight: 10
+groupe: "Organiser et sécuriser l’activité"
+weight: 30
+epreuves: ["orga"]
+sousgroupe: "Outils à imprimer"
 sources: "Code du sport, articles A322-72, A322-78-1 et R322-6 (extrait du MFT, version juin 2026) ; MFT RIFAP de la FFESSM, version mai 2026"
 ---
 

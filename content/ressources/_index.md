@@ -1,7 +1,30 @@
 ---
 title: "Passe-ton-MF1 · Ressources"
-description: "Fiches méthode pour préparer les épreuves de pédagogie du MF1 : QQCOQP et trames des pédagogies pratique, théorique et organisationnelle."
+description: "Fiches pour préparer le MF1, dans l'ordre du parcours : le MFT et le livret, concevoir un enseignement, évaluer, les trames de l'examen, organiser et sécuriser l'activité, le cadre réglementaire et fédéral."
 classePrincipal: "principal--interieur principal--capa"
-# Ordre d’affichage des groupes du sommaire (paramètre « groupe » de chaque fiche).
-groupes: ["Méthode", "Trames des épreuves", "Organisation et sécurité", "Le parcours MF1", "À télécharger"]
+# Sections du sommaire, dans l’ordre du cheminement d’un stagiaire. Chaque fiche se range par son paramètre « groupe »
+# (égal à « nom ») et, dans une section, par « weight ». Une fiche qui a « sousgroupe » s’affiche dans une sous-partie.
+# ancre : identifiant de la section dans la page (liens depuis l’accueil ou les fiches).
+# Une fiche peut porter « epreuves » (pratique, theorique, orga) : des étiquettes sur sa carte, pour les épreuves de pédagogie qu’elle prépare.
+# sujets : true ajoute la carte « Sujets d’examen régionaux » (fenêtre des vrais sujets) à la fin de la section.
+groupes:
+  - nom: "Les bases : le MFT et ton parcours"
+    ancre: "les-bases"
+    intro: "Le point d’entrée : comprendre le MFT, savoir lire une compétence, et suivre ton stage en situation avec le livret pédagogique."
+  - nom: "Concevoir un enseignement"
+    ancre: "concevoir"
+    intro: "Du général au précis : poser le sujet avec QQCOQP, situer la séance dans le cursus, construire la progression, choisir l’angle V.É.P., puis concevoir la séance elle-même."
+  - nom: "Évaluer et faire progresser"
+    ancre: "evaluer"
+    intro: "L’évaluation est l’un des trois temps de l’acte d’enseignement. Cette fiche va au-delà des trames : remédier quand ça bloque, et certifier."
+  - nom: "Les trames attendues à l’examen"
+    ancre: "trames"
+    intro: "En théorie, la trame est indicative. En pratique, le jury l’attend, et ne pas la suivre coûte des points."
+    sujets: true
+  - nom: "Organiser et sécuriser l’activité"
+    ancre: "organiser"
+    intro: "Le rôle de directeur de plongée que te donne le MF1, l’encadrement des baptêmes, et les documents à imprimer pour le jour J."
+  - nom: "Le cadre : droit et institutions"
+    ancre: "le-cadre"
+    intro: "Ta responsabilité d’encadrant, le club comme établissement d’APS, et l’organisation de la fédération."
 ---

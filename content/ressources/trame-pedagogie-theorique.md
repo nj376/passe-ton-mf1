@@ -4,8 +4,9 @@ description: "Trame pour préparer et animer un cours théorique au MF1 : fiche
 classePrincipal: "principal--interieur principal--capa"
 titre: "Trame de la pédagogie théorique"
 resume: "Préparer puis animer un cours en salle : la fiche à remplir, le plan du cours et les techniques d’animation."
-groupe: "Trames des épreuves"
-weight: 30
+groupe: "Les trames attendues à l’examen"
+weight: 20
+epreuves: ["theorique"]
 ---
 
 ## Ce que dit le MFT
@@ -62,6 +63,8 @@ En théorie, le MFT rappelle que les contenus sont **des outils au service d’u
 - **Au début** (évaluation initiale) : quelques questions sur les prérequis.
 - **Pendant** (évaluation formative) : repère les élèves qui décrochent, comprends ce qui bloque, change d’explication ou d’outil si celui-ci ne marche pas.
 - **À la fin** (évaluation finale) : des questions ciblées ou un exercice d’application qui montrent si l’objectif est atteint.
+
+Pour aller plus loin (critères, biais de l’évaluateur, remédiation), voir [Évaluer et remédier](/ressources/evaluer-et-remedier/).
 
 ## Les pièges classiques
 

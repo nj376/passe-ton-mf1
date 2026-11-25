@@ -4,8 +4,10 @@ description: "Modèle de fiche de sécurité à télécharger : ce que demande 
 classePrincipal: "principal--interieur principal--capa"
 titre: "Fiche de sécurité"
 resume: "Le document du DP : qui plonge, avec quelle aptitude et quelle fonction, ce qui est prévu et ce qui a été réalisé. Conservée un an."
-groupe: "À télécharger"
-weight: 40
+groupe: "Organiser et sécuriser l’activité"
+weight: 60
+epreuves: ["orga"]
+sousgroupe: "Outils à imprimer"
 sources: "Code du sport, articles A322-72 et A322-98 (extrait du MFT, version juin 2026)"
 ---
 

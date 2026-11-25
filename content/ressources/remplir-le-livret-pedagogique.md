@@ -4,8 +4,8 @@ description: "Le livret pédagogique MF1 expliqué pas à pas : les sept module
 classePrincipal: "principal--interieur principal--capa"
 titre: "Remplir le livret pédagogique"
 resume: "Sept modules, trois codes et une règle : cinq séances complètes dont deux validées. Le livret pas à pas, avec une page remplie en exemple."
-groupe: "Le parcours MF1"
-weight: 10
+groupe: "Les bases : le MFT et ton parcours"
+weight: 30
 sources: "MFT MF1 de la FFESSM, version juillet 2026 (accès au stage pédagogique en situation, grilles des modules), et livret pédagogique MF1 de la FFESSM (avril 2022)"
 ---
 

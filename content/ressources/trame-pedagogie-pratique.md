@@ -4,8 +4,9 @@ description: "Trame pour préparer et mener une séance de pédagogie pratique a
 classePrincipal: "principal--interieur principal--capa"
 titre: "Trame de la pédagogie pratique"
 resume: "Préparer puis mener une séance dans l’eau : la fiche à remplir et le déroulé, du briefing au débriefing."
-groupe: "Trames des épreuves"
-weight: 20
+groupe: "Les trames attendues à l’examen"
+weight: 10
+epreuves: ["pratique"]
 ---
 
 ## Ce que dit le MFT
@@ -103,7 +104,7 @@ Des échanges constructifs et bienveillants, en trois volets.
 | Pendant | **Formative** | L’exercice fonctionne-t-il pour cet élève ? Faut-il simplifier, répéter, changer de situation ? |
 | Fin de séance | **Finale** (ou sommative) | L’objectif est-il atteint, selon les critères annoncés ? |
 
-Si l’exercice ne marche pas, cherche la cause avant de répéter : l’élève n’a pas compris la consigne, il ne ressent pas le geste, il a peur, ou le matériel le gêne. Chaque cause appelle une réponse différente : réexpliquer autrement, revenir à un exercice plus simple, rassurer, adapter le matériel. Détails dans la fiche [Évaluer, remédier et certifier](/ressources/evaluer-remedier-et-certifier/).
+Si l’exercice ne marche pas, cherche la cause avant de répéter : l’élève n’a pas compris la consigne, il ne ressent pas le geste, il a peur, ou le matériel le gêne. Chaque cause appelle une réponse différente : réexpliquer autrement, revenir à un exercice plus simple, rassurer, adapter le matériel. Détails dans la fiche [Évaluer et remédier](/ressources/evaluer-et-remedier/).
 
 ## Les pièges classiques
 

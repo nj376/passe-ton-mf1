@@ -4,8 +4,9 @@ description: "La méthode V.É.P. pour le MF1 : ventilation, équilibre, propul
 classePrincipal: "principal--interieur principal--capa"
 titre: "Les trois pôles : ventilation, équilibre, propulsion"
 resume: "Toute technique sollicite surtout un pôle : isole-le d’abord, ajoute les autres ensuite, et ta progression se construit presque seule."
-groupe: "Méthode"
-weight: 21
+groupe: "Concevoir un enseignement"
+weight: 40
+epreuves: ["pratique"]
 sources: "MFT Plongeur Niveau 1 de la FFESSM, version décembre 2025 ; supports de stages initiaux MF1"
 ---
 

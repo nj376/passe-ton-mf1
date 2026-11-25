@@ -4,8 +4,9 @@ description: "Situer un enseignement dans un cursus de plongée grâce aux acqui
 classePrincipal: "principal--interieur principal--capa"
 titre: "Situer un enseignement dans un cursus"
 resume: "Avant d’enseigner, sache ce qui vient avant et ce qui vient après : les acquis et les prérequis fixent la place de chaque séance."
-groupe: "Méthode"
-weight: 25
+groupe: "Concevoir un enseignement"
+weight: 20
+epreuves: ["pratique", "theorique", "orga"]
 sources: "MFT de la FFESSM : MF1, version juillet 2026, Plongeur Niveau 1, version décembre 2025, et Plongeur Niveau 2, version mai 2026 ; supports de stages initiaux MF1"
 ---
 

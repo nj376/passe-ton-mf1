@@ -4,8 +4,8 @@ description: "Les statistiques de la FFESSM pour le MF1 : licences sur cinq sai
 classePrincipal: "principal--interieur principal--capa"
 titre: "La FFESSM en chiffres"
 resume: "Combien de licenciés, qui sont-ils, combien de brevets chaque saison : les chiffres de la fédération, et ce qu’ils disent au futur moniteur."
-groupe: "Organisation et sécurité"
-weight: 76
+groupe: "Le cadre : droit et institutions"
+weight: 40
 sources: "Bilans fédéraux FFESSM des saisons 2020-2021 à 2024-2025, présentés en stage initial MF1 (CODEP 01, décembre 2025) ; INSEE, d’après INJEP-MEDES, recensement des licences et clubs sportifs, données 2025 (publiées le 14 octobre 2026)"
 ---
 

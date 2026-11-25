@@ -4,8 +4,8 @@ description: "La FFESSM pour le MF1 : fédération délégataire et membre de l
 classePrincipal: "principal--interieur principal--capa"
 titre: "La FFESSM, organisation fédérale"
 resume: "Qui est la FFESSM, comment elle s’organise du national au département, et ce que ça change pour toi : licence, CACI, brevets, examens."
-groupe: "Organisation et sécurité"
-weight: 75
+groupe: "Le cadre : droit et institutions"
+weight: 30
 sources: "MFT de la FFESSM : MF1, version juillet 2026 ; Brevets fédéraux, généralités, version janvier 2025 ; Formation, délivrance, certification, version janvier 2025 ; Pack découverte, version 2019 ; statuts de la FFESSM, article 12.1.1 ; supports de stages initiaux MF1"
 ---
 
@@ -90,6 +90,8 @@ Le MFT le fixe dans son chapitre « Formation, délivrance, certification ».
 | **Délivrer les autres certifications** | Un encadrant E3 au minimum, sur le site de la FFESSM, sous la responsabilité du président. C’est la structure où la **dernière compétence** est validée qui délivre. |
 | **Éditer la carte** | Le siège national, qui édite la carte double face et les duplicatas. |
 
+Côté moniteur, ce qu’il faut vérifier avant de valider et de délivrer est dans la fiche [Certifier](/ressources/certifier/).
+
 ## 7. Les textes qui régissent la fédération
 
 - **Les statuts et le règlement intérieur** : l’organisation, les AG, les élections.
@@ -108,7 +110,7 @@ Les clubs, eux, ont leurs propres statuts : voir [Le club, un établissement d�
 {{< pistes >}}
 - **Une licence FFESSM** en cours de validité et un **CACI** de moins d’un an : sans eux, pas de formation.
 - **Son brevet** : le MFT N2 accepte le N1 ou une certification dont les aptitudes sont jugées équivalentes, avec au moins quatre plongées en milieu naturel attestées. Regarde son carnet.
-- **Une évaluation de départ** dans l’eau, pour situer ses acquis : voir [Évaluer, remédier et certifier](/ressources/evaluer-remedier-et-certifier/).
+- **Une évaluation de départ** dans l’eau, pour situer ses acquis : voir [Évaluer et remédier](/ressources/evaluer-et-remedier/).
 {{< /pistes >}}
 
 ### Ta première session d’examen

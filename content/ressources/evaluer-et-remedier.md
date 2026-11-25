@@ -1,13 +1,14 @@
 ---
-title: "Passe-ton-MF1 · Évaluer, remédier et certifier"
-description: "Évaluer, remédier et certifier au MF1 : types d'évaluation, critères mesurables, biais de l'évaluateur, causes d'échec et remédiation, évaluation continue, examens, validation et délivrance des brevets."
+title: "Passe-ton-MF1 · Évaluer et remédier"
+description: "Évaluer et remédier au MF1 : types d'évaluation, construire une évaluation, critères mesurables, biais de l'évaluateur, causes d'échec et remédiation en sécurité."
 classePrincipal: "principal--interieur principal--capa"
-titre: "Évaluer, remédier et certifier"
-resume: "L’évaluation te dit quand remédier, la cause te dit comment, et la certification dit quand c’est acquis pour de bon."
-groupe: "Méthode"
-weight: 30
-aliases: ["/ressources/evaluer-et-remedier/"]
-sources: "MFT de la FFESSM : MF1, version juillet 2026 ; Plongeur Niveau 1, version décembre 2025 ; Plongeur Niveau 2, version mai 2026 ; GP-N4, version mai 2026 ; Formation, délivrance, certification, version janvier 2025 ; Brevets fédéraux, généralités, version janvier 2025 ; supports de stages initiaux MF1"
+titre: "Évaluer et remédier"
+resume: "Quand un élève n’y arrive pas, trouve la cause avant de répéter : l’évaluation te dit quand remédier, la cause te dit comment."
+groupe: "Évaluer et faire progresser"
+weight: 10
+epreuves: ["pratique", "theorique"]
+aliases: ["/ressources/evaluer-remedier-et-certifier/"]
+sources: "MFT de la FFESSM : MF1, version juillet 2026 ; Plongeur Niveau 1, version décembre 2025 ; Plongeur Niveau 2, version mai 2026 ; Brevets fédéraux, généralités, version janvier 2025 ; supports de stages initiaux MF1"
 ---
 
 ## Ce que dit le MFT
@@ -17,7 +18,7 @@ Remédier fait partie de la phase « Réaliser » : **mettre en place des rem
 - **En pratique**, identifier les dysfonctionnements (situation trop complexe, lieu inadapté, appréhension inattendue de l’élève), les analyser et réajuster les situations d’apprentissage, toujours en sécurité.
 - **En théorie**, s’assurer de la compréhension au fil du cours, et changer d’outil d’explication quand il ne marche pas.
 
-C’est l’**évaluation formative** qui déclenche la remédiation : le MFT y voit un travail d’observation, de réactivité et d’adaptabilité du moniteur. Et c’est l’évaluation, continue ou par examen, qui aboutit à la **certification** : la délivrance du brevet.
+C’est l’**évaluation formative** qui déclenche la remédiation : le MFT y voit un travail d’observation, de réactivité et d’adaptabilité du moniteur. Et c’est l’évaluation, continue ou par examen, qui aboutit à la **certification** : la délivrance du brevet, traitée dans la fiche [Certifier](/ressources/certifier/).
 
 ## 1. Évaluer : pourquoi, quoi, quand
 
@@ -42,7 +43,7 @@ C’est l’**évaluation formative** qui déclenche la remédiation : le MFT y
 
 L’évaluation formative est au cœur des apprentissages : quand l’élève **connaît les critères**, il peut s’auto-évaluer.
 
-À ces trois évaluations s’ajoute l’évaluation **certificative**, qui aboutit à la délivrance du brevet : par **évaluation continue** pour les brevets de plongeur, par **examen** pour les cadres. Elle a sa propre section plus bas.
+À ces trois évaluations s’ajoute l’évaluation **certificative**, qui aboutit à la délivrance du brevet : par **évaluation continue** pour les brevets de plongeur, par **examen** pour les cadres. Elle a sa propre fiche : [Certifier](/ressources/certifier/).
 
 L’évaluation est **interne** quand c’est toi, le moniteur de la formation, qui évalues. Elle est **externe** quand des évaluateurs extérieurs à la formation s’en chargent, comme un jury d’examen.
 
@@ -162,63 +163,6 @@ Et toujours :
 - **Ne force jamais** : si l’élève stresse, on arrête, on rassure, on reprend plus tard.
 - **Note ce qui reste à travailler** : au bilan, une capacité « en cours d’acquisition » indique l’étape à reprendre. C’est ce que propose la carte « Bilan » de la page [Progression](/progression/).
 
-## 8. Certifier
-
-Certifier, c’est attester qu’un plongeur a acquis toutes les compétences d’un brevet, et le lui délivrer. Le MFT en fixe les règles dans ses chapitres « Formation, délivrance, certification » et « Brevets fédéraux, généralités ».
-
-### Deux façons de certifier
-
-| | L’évaluation continue | L’examen |
-|---|---|---|
-| **Pour quels brevets** | Les brevets de plongeur : N1, N2, N3 et les qualifications PE et PA. Le MFT la privilégie. | Les brevets de cadres : initiateur, GP-N4, MF1, MF2. |
-| **Comment** | Chaque compétence est validée en formation, sans chronologie imposée. Une plongée d’évaluation globale en fin de formation reste possible. | Des épreuves décrites par le MFT, notées avec des coefficients et des moyennes par groupe. Certaines sont seulement « faites » ou « non faites ». |
-| **Les limites** | Toutes les compétences en **15 mois** au plus, à partir de la première validée. | Une épreuve « non faite » est **éliminatoire**. |
-
-Pour un brevet de plongeur, l’examen ponctuel est autorisé, mais le MFT ne l’encourage pas. Le DP-N5 est lui aussi délivré en évaluation continue, en situation réelle.
-
-### Valider, puis délivrer
-
-- **Seul un encadrant licencié à la FFESSM** valide une compétence. Le même encadrant la forme et la valide, et signe avec son nom, son niveau et son numéro d’encadrant.
-- **Les compétences d’un même brevet** peuvent être validées par des encadrants différents, et dans des clubs ou des SCA différents.
-- **C’est la structure où la dernière compétence est validée qui délivre** : le président du club pour le N1, un encadrant E3 au minimum pour les autres brevets, sur le site de la FFESSM. Le siège édite ensuite la carte double face.
-
-Le détail est dans la fiche [La FFESSM, organisation fédérale](/ressources/organisation-federale/).
-
-### Avant de certifier, vérifie
-
-- **La licence** en cours de validité et le **certificat médical** : les jurys peuvent demander les pièces originales.
-- **La carte RIFAP**, obligatoire pour tout examen à partir du N3 et de l’initiateur. Le MFT demande de la vérifier « sans préjuger que le candidat en est déjà titulaire ».
-- **L’autorisation parentale** pour un mineur.
-- **Le délai de 15 mois**, pour une certification en évaluation continue.
-
-### Au jury d’examen
-
-Le MFT demande à chaque membre de jury :
-
-- de respecter **l’esprit et la hiérarchie des brevets** : bon sens et logique, sans surenchère ;
-- de n’exiger que les **signes officiels** de la FFESSM ;
-- de faire les épreuves pratiques **en milieu naturel**, sauf pour le N1 et l’initiateur ;
-- de veiller aux **documents d’enregistrement** : l’organisateur tient à disposition du jury les bordereaux et les feuilles de notes.
-
-### Un modèle de critères : le GP-N4 à 40 m
-
-L’épreuve « Descente, stabilisation et vidage de masque à 40 m » du GP-N4 montre ce que donne une évaluation certificative bien construite : une capacité décrite, un déroulement imposé et des critères hiérarchisés. Le candidat descend de 3 à 40 m, tête en bas, se stabilise, puis retire son masque, fait 3 cycles ventilatoires, le remet et le vide. L’évaluateur ne doit pas lui servir de repère de profondeur.
-
-| Phase | Critère du MFT | Famille |
-|---|---|---|
-| Descente | Verticalité et absence de vrille | Qualité du geste |
-| Descente | Vitesse entre 20 et 30 m/min, constante, éventuellement plus lente sur la fin | Vitesse |
-| Descente | Retournement pas avant 35 m | Distance |
-| Stabilisation | Temps nécessaire pour se stabiliser à 40 m | Temps |
-| Stabilisation | Précision du maintien de la profondeur pendant toute la phase | Distance |
-| Stabilisation | Stabilisation au poumon ballast et au gilet ; seul un léger palmage de positionnement est permis | Qualité du geste |
-| Vidage | Rapidité du retrait du masque sur signe | Temps |
-| Vidage | Régularité de la ventilation et respect des 3 cycles imposés | Comportement |
-| Vidage | Masque vidé entièrement en une seule fois | Quantité |
-| **Éliminatoire** | **Une variation de plus ou moins 2 m autour de la profondeur plancher** | **Distance** |
-
-Les six familles de critères s’y retrouvent, avec un seul critère éliminatoire, lié à la sécurité.
-
 ## Les pièges classiques
 
 - **Répéter l’exercice à l’identique** en espérant que ça passe.
@@ -226,8 +170,7 @@ Les six familles de critères s’y retrouvent, avec un seul critère éliminato
 - **Remédier trop tard** : une erreur répétée devient une habitude.
 - **Oublier la sécurité** pendant que tu corriges.
 - **Évaluer sans critères écrits**, ou les découvrir en même temps que l’élève.
-- **Délivrer un brevet sans vérifier** la licence, le certificat médical, le RIFAP ou le délai de 15 mois.
 
 {{< encart "orange" >}}
-**Cette fiche est une aide, pas une réponse type.** Chaque élève est différent : observe-le, adapte ta réponse, et pour certifier, suis le MFT en vigueur.
+**Cette fiche est une aide, pas une réponse type.** Chaque élève est différent : observe-le, et adapte ta réponse.
 {{< /encart >}}

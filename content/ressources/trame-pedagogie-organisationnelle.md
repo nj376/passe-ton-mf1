@@ -4,8 +4,9 @@ description: "Trame pour préparer l’épreuve de pédagogie organisationnelle 
 classePrincipal: "principal--interieur principal--capa"
 titre: "Trame de la pédagogie organisationnelle"
 resume: "Reconnaître le type de sujet, n’oublier aucun élément de l’organisation et présenter clairement en dix minutes."
-groupe: "Trames des épreuves"
-weight: 40
+groupe: "Les trames attendues à l’examen"
+weight: 30
+epreuves: ["orga"]
 sources: "MFT MF1 de la FFESSM, version juillet 2026 ; MFT Plongeur Niveau 1, version décembre 2025 ; Code du sport, annexe III-16a (extrait du MFT, version juin 2026) ; supports de stages initiaux MF1"
 ---
 
@@ -109,6 +110,8 @@ C’est la **programmation** : répartir ta progression dans le calendrier, en 
 ### 5. Communiquer et suivre
 
 Une formation se mène en équipe. **Avant**, une réunion avec les encadrants pour valider l’organisation, puis une réunion de présentation aux élèves. **Pendant**, une fiche ou un livret de suivi, et des points réguliers entre encadrants. **Après**, le bilan de la formation.
+
+Pour le suivi des élèves, voir [Évaluer et remédier](/ressources/evaluer-et-remedier/) ; pour leur validation et la délivrance du brevet, voir [Certifier](/ressources/certifier/).
 
 ## 5. Un exemple : un N1 en dix séances de piscine
 

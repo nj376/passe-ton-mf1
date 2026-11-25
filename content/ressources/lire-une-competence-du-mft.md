@@ -4,8 +4,9 @@ description: "Lire une page de compétence du MFT pour en tirer objectif, capaci
 classePrincipal: "principal--interieur principal--capa"
 titre: "Lire une compétence du MFT"
 resume: "Chaque page de compétence du MFT a la même structure : apprends à y trouver ton objectif, tes capacités et tes critères."
-groupe: "Méthode"
-weight: 15
+groupe: "Les bases : le MFT et ton parcours"
+weight: 20
+epreuves: ["pratique", "theorique", "orga"]
 sources: "MFT de la FFESSM : MF1, version juillet 2026 ; Plongeur Niveau 1, version décembre 2025 ; Plongeur Niveau 2, version mai 2026 ; supports de stages initiaux MF1"
 ---
 

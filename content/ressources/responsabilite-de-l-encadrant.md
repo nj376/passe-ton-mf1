@@ -4,8 +4,9 @@ description: "La responsabilité de l'encadrant de plongée pour le MF1 : respo
 classePrincipal: "principal--interieur principal--capa"
 titre: "La responsabilité de l’encadrant"
 resume: "Pénale, civile, disciplinaire : ce que tu risques en encadrant, comment les juges raisonnent, et les quatre réflexes qui te protègent."
-groupe: "Organisation et sécurité"
-weight: 55
+groupe: "Le cadre : droit et institutions"
+weight: 10
+epreuves: ["orga"]
 sources: "MFT MF1 de la FFESSM, version juillet 2026 ; Code pénal, articles 121-3, 221-6, 222-19 et suivants, 223-1 ; Code du sport, articles L212-1, L212-8 et annexe III-16a ; Code civil ; Code de la justice pénale des mineurs ; charte du moniteur fédéral 1er degré ; fiches de justice.fr ; supports de stages initiaux MF1"
 ---
 

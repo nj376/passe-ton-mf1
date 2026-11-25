@@ -4,8 +4,8 @@ description: "Le club de plongée vu par le MF1 : établissement d'APS, obligat
 classePrincipal: "principal--interieur principal--capa"
 titre: "Le club, un établissement d’APS"
 resume: "Ce qu’est un établissement d’APS, les obligations du club, la station de gonflage, et comment une association se crée et fonctionne."
-groupe: "Organisation et sécurité"
-weight: 70
+groupe: "Le cadre : droit et institutions"
+weight: 20
 sources: "MFT MF1 de la FFESSM, version juillet 2026 ; MFT, Station de gonflage, version octobre 2023 ; Code du sport, articles L212-1, L212-9, L321-1 et suivants, L322-1 et L322-2, R322-4 à R322-9 ; loi du 1er juillet 1901 ; ordonnance n° 2015-904 du 23 juillet 2015 ; fiches des services de l’État sur les établissements d’APS ; dossier d’affiliation FFESSM ; supports de stages initiaux MF1"
 ---
 

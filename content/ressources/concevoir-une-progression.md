@@ -4,8 +4,9 @@ description: "Concevoir une progression au MF1 : des prérogatives aux objectif
 classePrincipal: "principal--interieur principal--capa"
 titre: "Concevoir une progression"
 resume: "Des prérogatives de l’élève jusqu’à l’exercice du jour : dans quel ordre enseigner, et comment faire monter la difficulté."
-groupe: "Méthode"
-weight: 20
+groupe: "Concevoir un enseignement"
+weight: 30
+epreuves: ["pratique"]
 sources: "MFT de la FFESSM : MF1, version juillet 2026 ; Plongeur Niveau 1, version décembre 2025 ; Plongeur Niveau 2, version mai 2026 ; supports de stages initiaux MF1"
 ---
 

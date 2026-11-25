@@ -2825,3 +2825,19 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ress-fiche .cellule--right { text-align: right; font-variant-numeric: tabular-nums; }
 .ress-fiche .cellule--center { text-align: center; }
 @media (max-width: 900px) { .ress-fiche td.cellule--right, .ress-fiche td.cellule--center { text-align: left; } }
+
+/* Ressources : sections numérotées avec introduction, sous-partie « à imprimer », carte des sujets régionaux */
+.ress-groupe__num { color: var(--bleu); }
+.ress-groupe__intro { margin: -6px 0 2px; font-size: 15.5px; line-height: 1.55; color: var(--texte-3); }
+.ress-sous-titre { margin: 10px 0 0; display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 600; color: var(--texte); }
+.ress-sous-titre .ress-carte__icone { color: var(--bleu); }
+.ress-carte--telecharger .ress-carte__titre { display: flex; align-items: flex-start; gap: 8px; }
+.ress-carte__icone { flex: none; margin-top: 3px; color: var(--bleu); }
+.ress-carte--bouton { width: 100%; text-align: left; font: inherit; cursor: pointer; background: var(--blanc); }
+
+/* Ressources : étiquettes des épreuves de pédagogie préparées par une fiche (Pratique, Théorique, Orga) */
+.ress-etiquettes { display: flex; flex-wrap: wrap; gap: 6px; }
+.ress-etiquette { display: inline-block; padding: 1px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: .02em; border: 1px solid transparent; }
+.ress-etiquette--pratique { background: var(--bleu-clair); color: var(--bleu-fonce); border-color: #C5DAF0; }
+.ress-etiquette--theorique { background: var(--vert-fond); color: var(--vert-texte); border-color: #B9DCC5; }
+.ress-etiquette--orga { background: var(--orange-fond); color: var(--orange-texte); border-color: var(--orange-bordure); }

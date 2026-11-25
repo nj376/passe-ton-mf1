@@ -4,8 +4,10 @@ description: "Modèle de plan de secours à télécharger pour les plongées en 
 classePrincipal: "principal--interieur principal--capa"
 titre: "Plan de secours, mer et bateau"
 resume: "Un modèle pour les plongées depuis un bateau : position du site, embarcation, alerte par VHF, ASN ou téléphone, et conduite à tenir."
-groupe: "À télécharger"
-weight: 20
+groupe: "Organiser et sécuriser l’activité"
+weight: 40
+epreuves: ["orga"]
+sousgroupe: "Outils à imprimer"
 sources: "Code du sport, articles A322-72, A322-78-1, A322-78-2 et R322-6 (extrait du MFT, version juin 2026) ; MFT RIFAP de la FFESSM, version mai 2026"
 ---
 
