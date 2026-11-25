@@ -1,5 +1,6 @@
 /* Données de la mindmap « aspects-theoriques » (page /capacitaire/aspects-theoriques/), reprises du fichier d’origine mindmaps-mf1/aspects-theoriques.html (version du 24/11/2026).
-   Seule la typographie a été adaptée (apostrophes, espaces insécables). */
+   Seule la typographie a été adaptée (apostrophes, espaces insécables). Champ facultatif « fiche » : bouton « Voir la fiche didactique »
+   vers la collection Théorie (branches Flottabilité et Compressibilité des gaz). */
 const PAGE={
 title:"Aspects théoriques de l’activité",
 root:"Théorie de l’activité",
@@ -9,34 +10,34 @@ search:"Rechercher : Archimède, Charles, réfraction…",
 start:"archimede",
 cats:[
 {id:"flottabilite",name:"Flottabilité",law:"Principe d’Archimède",items:[
-{id:"archimede",name:"Poussée d’Archimède",alt:"Tout corps plongé dans un liquide…",tags:["Volume × masse volumique"],s:{
+{id:"archimede",fiche:"/theorie/flottabilite/#archimede",name:"Poussée d’Archimède",alt:"Tout corps plongé dans un liquide…",tags:["Volume × masse volumique"],s:{
 "Énoncé":["Tout corps plongé dans un liquide reçoit une poussée verticale, dirigée vers le haut, égale au poids du volume de liquide déplacé."],
 "En pratique":["Poussée (kg) ≈ volume immergé (L) × masse volumique du liquide (kg/L).","Eau douce : 1 kg/L. Eau de mer : environ 1,025 à 1,03 kg/L.","Un même objet est donc mieux porté en mer qu’en lac."]}},
-{id:"poids-apparent",name:"Poids réel et apparent",alt:"Ce qu’on « sent » sous l’eau",tags:["Papp = Préel − PA"],s:{
+{id:"poids-apparent",fiche:"/theorie/flottabilite/#poids-apparent",name:"Poids réel et apparent",alt:"Ce qu’on « sent » sous l’eau",tags:["Papp = Préel − PA"],s:{
 "Formule":["Poids apparent = poids réel − poussée d’Archimède."],
 "Trois cas":["Papp > 0 : flottabilité négative, l’objet coule.","Papp < 0 : flottabilité positive, il remonte.","Papp = 0 : flottabilité neutre, c’est l’équilibre recherché."],
 "Exemple":["Une ancre de 30 kg de 4 L en mer : 30 − 4 × 1,03 ≈ 25,9 kg apparents."]}},
-{id:"masse-volumique",name:"Masse volumique et densité",alt:"Deux notions voisines",tags:["kg/L","Sans unité"],s:{
+{id:"masse-volumique",fiche:"/theorie/flottabilite/#masse-volumique",name:"Masse volumique et densité",alt:"Deux notions voisines",tags:["kg/L","Sans unité"],s:{
 "Définitions":["Masse volumique : masse par unité de volume (kg/L ou kg/m³).","Densité : rapport entre la masse volumique d’un corps et celle de l’eau, sans unité.","Un corps de densité supérieure à celle du liquide coule, inférieure il flotte."]}},
-{id:"lestage",name:"Lestage",alt:"Ce qui fait varier la flottabilité",tags:["Mer vs douce","Bloc qui s’allège"],s:{
+{id:"lestage",fiche:"/theorie/flottabilite/#lestage",name:"Lestage",alt:"Ce qui fait varier la flottabilité",tags:["Mer vs douce","Bloc qui s’allège"],s:{
 "Ce qui change en plongée":["La combinaison s’écrase en profondeur : on perd de la flottabilité en descendant.","Le bloc s’allège en se vidant : 12 L à 200 bar contiennent 2 400 L d’air, soit environ 3 kg.","Passer de l’eau douce à la mer demande plus de lest."],
 "Bon lestage":["Pouvoir tenir un palier à 3 m avec un bloc presque vide, gilet vide.","Un surlestage oblige à gonfler le gilet, augmente l’effort et l’essoufflement."]}},
-{id:"relevage",name:"Problèmes pratiques",alt:"Relevage, parachute",tags:["Exemple chiffré"],s:{
+{id:"relevage",fiche:"/theorie/flottabilite/#relevage",name:"Problèmes pratiques",alt:"Relevage, parachute",tags:["Exemple chiffré"],s:{
 "Méthode":["Calculer le poids apparent de l’objet, puis le volume d’air à injecter pour l’annuler.","Penser à Mariotte : le volume du parachute augmente à la remontée, il faut purger."],
 "Exemple":["Moteur de 50 kg, 20 L, en mer : Papp = 50 − 20 × 1,03 = 29,4 kg.","Il faut donc environ 29,4 L d’air dans le parachute, quelle que soit la profondeur ; à 30 m cela représente 29,4 × 4 ≈ 118 L pris dans le bloc."]},
 tip:"Les sujets restent simples : un calcul de poids apparent, un volume de parachute, un ajustement de lest."}]},
 {id:"compressibilite",name:"Compressibilité des gaz",law:"Mariotte, Charles",items:[
-{id:"mariotte",name:"Loi de Mariotte",alt:"P × V = constante",tags:["Température constante"],s:{
+{id:"mariotte",fiche:"/theorie/compressibilite/#mariotte",name:"Loi de Mariotte",alt:"P × V = constante",tags:["Température constante"],s:{
 "Énoncé":["À température constante, le volume d’un gaz est inversement proportionnel à la pression : P1 × V1 = P2 × V2."],
 "Pression absolue":["Pabs = Patm + Phydro, soit environ 1 bar + 1 bar par 10 m.","10 m : 2 bar ; 20 m : 3 bar ; 30 m : 4 bar ; 40 m : 5 bar."],
 "Conséquence":["Les plus fortes variations relatives de volume ont lieu entre 0 et 10 m : le volume double."]}},
-{id:"consommation",name:"Consommation et autonomie",alt:"Surface et immersion",tags:["Conso × Pabs"],s:{
+{id:"consommation",fiche:"/theorie/compressibilite/#consommation",name:"Consommation et autonomie",alt:"Surface et immersion",tags:["Conso × Pabs"],s:{
 "Formules":["Consommation à la profondeur = consommation en surface × Pabs.","Air disponible = volume du bloc × (pression de départ − réserve).","Autonomie = air disponible ÷ consommation à la profondeur."],
 "Exemple":["Bloc 12 L à 200 bar, réserve 50 bar : 12 × 150 = 1 800 L.","20 L/min en surface, à 30 m : 20 × 4 = 80 L/min.","Autonomie au fond : 1 800 ÷ 80 ≈ 22 min (sans compter la remontée)."]}},
-{id:"densite-gaz",name:"Densité du gaz respiré",alt:"Effet de la profondeur",tags:["Essoufflement"],s:{
+{id:"densite-gaz",fiche:"/theorie/compressibilite/#densite-gaz",name:"Densité du gaz respiré",alt:"Effet de la profondeur",tags:["Essoufflement"],s:{
 "Principe":["La masse volumique de l’air augmente avec la pression : à 40 m, l’air est 5 fois plus dense qu’en surface."],
 "Conséquences":["Écoulement plus difficile dans les voies aériennes et le détendeur : travail ventilatoire accru.","Facteur favorisant de l’essoufflement et de la rétention de CO2."]}},
-{id:"temperature-bloc",name:"Température et pression",alt:"Loi de Charles",tags:["T en kelvins"],s:{
+{id:"temperature-bloc",fiche:"/theorie/compressibilite/#temperature-bloc",name:"Température et pression",alt:"Loi de Charles",tags:["T en kelvins"],s:{
 "Énoncé":["À volume constant, la pression d’un gaz est proportionnelle à sa température absolue : P1/T1 = P2/T2, T en kelvins (T = t °C + 273)."],
 "Exemple":["Bloc gonflé à 230 bar à 50 °C, refroidi à 15 °C : 230 × 288 ÷ 323 ≈ 205 bar.","Inversement, un bloc laissé au soleil voit sa pression monter."]},
 tip:"Oublier de passer en kelvins est l’erreur la plus fréquente."}]},

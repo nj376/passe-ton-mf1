@@ -2845,3 +2845,70 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 /* Accueil, zone 4 : les fiches (lien vers toutes les fiches) */
 .accueil-fiches__tout { align-self: flex-start; }
 }
+
+/* Théorie : liens de retour (collection et mindmap), carte des sujets d’examen en fin de fiche */
+.theo-retours { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.sujets-carte { margin: 24px 0 8px; padding: 18px 22px; border-radius: 12px; background: var(--bleu-tres-clair); border: 1px solid var(--bordure-bleu-pale); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
+.sujets-carte__texte { display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.5; color: var(--texte-3); flex: 1 1 320px; }
+.sujets-carte__titre { font-size: 17px; color: var(--texte); }
+.sujets-carte__bouton { flex: none; }
+
+/* Théorie : schémas de la fiche Flottabilité (panneaux SVG + texte HTML, empilés sur téléphone ; ardoises « au tableau ») */
+.ress-fiche .flot-panneaux { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; max-width: none; }
+.flot-panneau { margin: 0; padding: 12px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); display: flex; flex-direction: column; gap: 4px; }
+.flot-dessin { display: block; width: 100%; max-width: 260px; height: auto; margin: 0 auto 6px; font-family: var(--police); border-radius: 6px; overflow: hidden; }
+.flot-panneau__titre { font-size: 15.5px; color: var(--texte); }
+.flot-panneau__texte { font-size: 14px; line-height: 1.5; color: var(--texte-3); }
+.flot-eau { fill: var(--bleu-clair); }
+.flot-eau--mer { fill: #D3E5F7; }
+.flot-ligne-eau { stroke: var(--bleu-courbe); stroke-width: 2; }
+.flot-objet { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 2; }
+.flot-deplace { fill: #C5DAF0; stroke: var(--bleu); stroke-width: 2; stroke-dasharray: 6 4; }
+.flot-pierre { fill: #A9B4BF; stroke: var(--texte-4); stroke-width: 2; }
+.flot-bouchon { fill: #E2B07A; stroke: #8A5A2B; stroke-width: 2; }
+.flot-poisson { fill: #F2C14E; stroke: #A87A12; stroke-width: 1.5; }
+.flot-oeil { fill: var(--texte); }
+.flot-poids { stroke: var(--rouge); stroke-width: 3.5; stroke-linecap: round; }
+.flot-poids-tete { fill: var(--rouge); }
+.flot-poussee { stroke: var(--bleu); stroke-width: 3.5; stroke-linecap: round; }
+.flot-poussee-tete { fill: var(--bleu); }
+.flot-air { stroke: var(--texte-4); stroke-width: 2.5; stroke-dasharray: 4 3; stroke-linecap: round; }
+.flot-air-tete { fill: var(--texte-4); }
+.flot-txt { font-size: 14px; fill: var(--texte); }
+.flot-txt--fort { font-weight: 600; }
+.flot-txt--doux { font-size: 13px; fill: var(--texte-4); }
+.flot-bloc { fill: #8FA3B6; stroke: var(--texte-4); stroke-width: 1.5; }
+.flot-bloc--vide { fill: #D5DEE7; }
+.flot-combi { fill: var(--nuit); opacity: .85; }
+.flot-combi--ecrasee { opacity: .95; }
+.flot-tete { fill: #F0D2B6; stroke: var(--texte-4); stroke-width: 1.5; }
+.flot-parachute { fill: #F28C38; stroke: #B85A12; stroke-width: 1.5; }
+.flot-corde { stroke: var(--texte-4); stroke-width: 1.5; }
+.flot-moteur { fill: #6F7D8A; stroke: var(--texte); stroke-width: 1.5; }
+.flot-legende { margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13.5px; color: var(--texte-3); }
+.flot-legende span::before { content: ""; display: inline-block; width: 18px; height: 3px; margin-right: 6px; vertical-align: middle; border-radius: 2px; }
+.flot-legende__poids::before { background: var(--rouge); }
+.flot-legende__poussee::before { background: var(--bleu); }
+.flot-tableau .flot-dessin--ardoise { max-width: 420px; }
+.flot-ardoise { fill: #22403A; }
+.flot-craie { fill: none; stroke: #F4F2EA; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.flot-craie--jaune { stroke: #F3D46B; }
+.flot-craie-txt { font-size: 15px; fill: #F4F2EA; font-family: var(--police); }
+.flot-tableau figcaption { text-align: center; }
+/* Théorie : bloc « L’enseigner » par niveau */
+.ress-fiche .flot-niveau { margin: 10px 0 16px; padding: 14px 18px; border-radius: 10px; border: 1px solid var(--bordure); border-left: 4px solid var(--vert); background: var(--blanc); }
+
+/* Mindmaps du capacitaire : lien vers la fiche didactique (collection Théorie), mesuré par Umami (événement fiche-complete) */
+.acc .mmc-fiche { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; margin-top: 16px; padding: 10px 16px; box-sizing: border-box; border-radius: 8px; background: var(--bleu); color: var(--blanc); font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; }
+.acc .mmc-fiche:hover, .acc .mmc-fiche:focus-visible { background: var(--bleu-survol); color: var(--blanc); }
+
+/* Théorie, Compressibilité des gaz : éléments propres aux schémas (le reste reprend les classes « flot- ») */
+.flot-dessin.comp-large { max-width: 640px; }
+.comp-ballon { fill: #F28C38; stroke: #B85A12; stroke-width: 2; }
+.comp-poumon { fill: #F6D3D3; stroke: #B3261E; stroke-width: 2; }
+.comp-molecule { fill: var(--bleu); }
+.comp-boite { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 2; }
+.comp-bloc { stroke: var(--texte-4); stroke-width: 2; }
+.comp-bloc--chaud { fill: #F2B48A; }
+.comp-bloc--froid { fill: #A9C8E6; }
+.comp-robinet { fill: #8FA3B6; stroke: var(--texte-4); stroke-width: 1.5; }

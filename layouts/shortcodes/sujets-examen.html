@@ -1,0 +1,9 @@
+{{- /* Carte « S’entraîner sur de vrais sujets d’examen » en fin de fiche : {{< sujets-examen >}}.
+       Elle ouvre la fenêtre commune du site (partials/fenetres/vrais-sujets.html) : la liste des régions reste unique (params.ctr dans hugo.toml). */ -}}
+<div class="sujets-carte">
+  <div class="sujets-carte__texte">
+    <strong class="sujets-carte__titre">S’entraîner sur de vrais sujets d’examen</strong>
+    <span>{{ partial "typo.html" "Plusieurs commissions techniques régionales publient leurs sujets de pédagogie MF1. À travailler avec tes tuteurs." }}</span>
+  </div>
+  <button type="button" class="bouton-contour sujets-carte__bouton" aria-haspopup="dialog" data-ouvrir="fenetre-vrais-sujets">Voir les sujets</button>
+</div>

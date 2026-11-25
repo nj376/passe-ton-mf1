@@ -6,6 +6,7 @@ classePrincipal: "principal--interieur principal--capa"
 # (égal à « nom ») et, dans une section, par « weight ». Une fiche qui a « sousgroupe » s’affiche dans une sous-partie.
 # ancre : identifiant de la section dans la page (liens depuis l’accueil ou les fiches).
 # Une fiche peut porter « epreuves » (pratique, theorique, orga) : des étiquettes sur sa carte, pour les épreuves de pédagogie qu’elle prépare.
+# cartes : cartes vers d’autres pages du site (titre, resume, url, epreuves), pour une section qui ne contient pas de fiche Ressources.
 # sujets : true ajoute la carte « Sujets d’examen régionaux » (fenêtre des vrais sujets) à la fin de la section.
 groupes:
   - nom: "Les bases : le MFT et ton parcours"
@@ -27,4 +28,12 @@ groupes:
   - nom: "Le cadre : droit et institutions"
     ancre: "le-cadre"
     intro: "Ta responsabilité d’encadrant, le club comme établissement d’APS, et l’organisation de la fédération."
+  - nom: "Comprendre et enseigner la théorie"
+    ancre: "theorie"
+    intro: "Des fiches théoriques complètes, une par branche des mindmaps du capacitaire : comprendre la notion, réussir les calculs, et surtout savoir l’enseigner à tes élèves."
+    cartes:
+      - titre: "Comprendre et enseigner la théorie"
+        resume: "Flottabilité, puis compressibilité des gaz : comprendre la notion, réussir les calculs du capacitaire, et savoir l’enseigner, du N1 au GP-N4."
+        url: "/theorie/"
+        epreuves: ["theorique"]
 ---

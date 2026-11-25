@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- /* Une fiche de la collection « Comprendre et enseigner la théorie » (content/theorie/<branche>.md) : une fiche par branche
+       d’une mindmap du capacitaire, une partie par notion (ancres = identifiants des notions de la mindmap).
+       Même charte que les fiches Ressources (classes « ress- », shortcodes schema, encart, pistes, sujets-examen).
+       Paramètres : « mindmap » (nom de la mindmap du capacitaire, pour le lien de retour), « sources ». */ -}}
+{{- $retour := `<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>` | safeHTML -}}
+{{- $mindmap := "" }}{{ with .Params.mindmap }}{{ with site.GetPage (printf "/capacitaire/%s" .) }}{{ $mindmap = . }}{{ end }}{{ end }}
+<div class="capa ress">
+  <div class="theo-retours">
+    <a class="retour" href="{{ "/theorie/" | relURL }}">{{ $retour }}Comprendre et enseigner la théorie</a>
+    {{- with $mindmap }}
+    <a class="retour" href="{{ .RelPermalink }}">{{ $retour }}Mindmap « {{ .Title | replaceRE "^Passe-ton-MF1 · " "" }} »</a>
+    {{- end }}
+  </div>
+  <section class="capa-entete">
+    <span class="ress-surtitre">Comprendre et enseigner la théorie</span>
+    <h1 class="capa-titre">{{ partial "typo.html" .Params.titre }}</h1>
+    <p class="capa-accroche">{{ partial "typo.html" .Params.resume }}</p>
+  </section>
+  <article class="carte ress-fiche">
+    {{ partial "typo.html" (string .Content) | safeHTML }}
+  </article>
+  <p class="ress-source">Sources : {{ .Params.sources }}. Cette fiche est une aide, pas une réponse d’examen : en cas de doute, c’est le MFT et ta CTR qui font foi.</p>
+  <div class="theo-retours">
+    <a class="retour ress-retour-bas" href="{{ "/ressources/" | relURL }}">{{ $retour }}Toutes les fiches</a>
+    {{- with $mindmap }}
+    <a class="retour ress-retour-bas" href="{{ .RelPermalink }}">{{ $retour }}Revenir à la mindmap</a>
+    {{- end }}
+  </div>
+</div>
+{{ end }}
