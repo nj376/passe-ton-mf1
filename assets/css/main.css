@@ -3075,4 +3075,19 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ana-legende__mort::before { background: #C9D1D9; height: 12px !important; } .ana-legende__alv::before { background: var(--bleu); height: 12px !important; }
 .ana-cercle { fill: none; stroke: var(--bordure-rouge); stroke-width: 3; stroke-dasharray: 8 6; }
 .ana-boite--alerte { stroke: var(--rouge); }
+/* Théorie, écrit 3 : schémas de la fiche L’œdème pulmonaire d’immersion (même charte « ana- ») */
+.ana-corps { fill: #F0D2B6; stroke: #C99A78; stroke-width: 2; }
+.ana-coeur-d { fill: #2E5E9E; } .ana-coeur-g { fill: #C8312A; }
+.ana-sang-bleu { stroke: #2E5E9E; stroke-width: 4; stroke-linecap: round; } .ana-sang-bleu-tete { fill: #2E5E9E; }
+.ana-sang-rouge { stroke: #C8312A; stroke-width: 4; stroke-linecap: round; } .ana-sang-rouge-tete { fill: #C8312A; }
+.ana-legende__rouge::before { background: #C8312A; } .ana-legende__bleu::before { background: #2E5E9E; }
+.ana-sang-thorax { fill: #C8312A; opacity: .45; }
+.ana-eau-pousse { stroke: var(--bleu-courbe); stroke-width: 3; stroke-linecap: round; } .ana-eau-pousse-tete { fill: var(--bleu-courbe); }
+.ana-capillaire-plein { fill: #E8A39C; } .ana-capillaire-plein--fort { fill: #C8312A; opacity: .8; }
+.ana-liquide-opi { fill: #F3D9A6; stroke: #C99A3C; stroke-width: 2; }
+.ana-f1, .ana-f2, .ana-f3, .ana-f4, .ana-f5, .ana-f6 { stroke: var(--blanc); stroke-width: 2; }
+.ana-f1 { fill: #BCD7F2; } .ana-f2 { fill: #9CC4EB; } .ana-f3 { fill: #F2B48A; } .ana-f4 { fill: #F3D46B; } .ana-f5 { fill: #C9D1D9; } .ana-f6 { fill: #E9A79B; }
+.ana-seuil { fill: none; stroke: var(--rouge); stroke-width: 3; stroke-dasharray: 10 6; }
+.ana-txt-rouge-s { fill: var(--rouge); }
+.ana-frise-1 { fill: #8796A5; } .ana-frise-2 { fill: var(--rouge); } .ana-frise-3 { fill: #B46A1C; } .ana-frise-4 { fill: var(--bleu); }
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

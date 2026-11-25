@@ -55,4 +55,9 @@ groupes:
             url: "/theorie/ventilation-essoufflement/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "L’œdème pulmonaire d’immersion"
+            resume: "Les deux circulations, le sang qui reflue vers le thorax, les facteurs qui s’additionnent, l’essoufflement qui ne passe pas : comprendre l’OPI, le distinguer des autres accidents et réussir l’étude de cas."
+            url: "/theorie/oedeme-pulmonaire-immersion/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---

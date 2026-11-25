@@ -66,14 +66,14 @@ tip:"Les valeurs de pressions partielles des gaz du sang ne sont pas exigibles."
 "Conduite à tenir":["Stopper l’effort, tenir le plongeur, le faire expirer à fond, remonter de quelques mètres, fin de plongée."],
 "Prévention":["Lestage juste, matériel entretenu, palmage souple, anticipation du courant et du froid."]}}]},
 {id:"opi",name:"Œdème pulmonaire d’immersion",law:"OPI, étude de cas",items:[
-{id:"opi-causes",name:"Causes et mécanisme",alt:"Pourquoi l’eau passe dans les alvéoles",tags:["Retour veineux"],s:{
+{id:"opi-causes",fiche:"/theorie/oedeme-pulmonaire-immersion/#opi-causes",name:"Causes et mécanisme",alt:"Pourquoi l’eau passe dans les alvéoles",tags:["Retour veineux"],s:{
 "Mécanisme":["L’immersion et le froid chassent le sang de la périphérie vers le thorax.","La pression augmente dans les capillaires pulmonaires ; l’effort et la respiration contre résistance l’aggravent.","Du liquide passe des capillaires vers les alvéoles : les échanges gazeux s’effondrent."]}},
-{id:"opi-facteurs",name:"Facteurs favorisants",alt:"Qui est exposé",tags:["Froid + effort"],s:{
+{id:"opi-facteurs",fiche:"/theorie/oedeme-pulmonaire-immersion/#opi-facteurs",name:"Facteurs favorisants",alt:"Qui est exposé",tags:["Froid + effort"],s:{
 "Liste":["Eau froide, effort intense, stress.","Âge, hypertension artérielle, maladie cardiaque.","Hydratation excessive juste avant la plongée.","Combinaison trop serrée, détendeur dur, surlestage.","Antécédent d’OPI : risque de récidive."]}},
-{id:"opi-signes-cat",name:"Signes et conduite à tenir",alt:"Reconnaître et agir",tags:["Semi-assis"],s:{
+{id:"opi-signes-cat",fiche:"/theorie/oedeme-pulmonaire-immersion/#opi-signes-cat",name:"Signes et conduite à tenir",alt:"Reconnaître et agir",tags:["Semi-assis"],s:{
 "Signes":["Essoufflement inhabituel, toux, crachats mousseux parfois rosés.","Peut se confondre avec un essoufflement ou une surpression pulmonaire."],
 "Conduite à tenir":["Fin de plongée, sortir de l’eau, position assise ou semi-assise, ne pas allonger contre son gré.","O2 15 L/min, alerte, évacuation."]}},
-{id:"opi-cas",name:"Exemple d’étude de cas",alt:"S’entraîner à raisonner",tags:["Diagnostic différentiel"],s:{
+{id:"opi-cas",fiche:"/theorie/oedeme-pulmonaire-immersion/#opi-cas",name:"Exemple d’étude de cas",alt:"S’entraîner à raisonner",tags:["Diagnostic différentiel"],s:{
 "Énoncé type":["Plongeuse de 58 ans, hypertendue, eau à 14 °C, palmage contre le courant. À la remontée, elle tousse et crache mousseux."],
 "Raisonnement attendu":["Hypothèse : OPI (froid, effort, âge, HTA), à différencier d’une surpression pulmonaire.","Conduite : sortie, position semi-assise, O2, alerte.","Prévention : avis médical, éviter l’effort au froid, protection thermique."]}}]},
 {id:"apnee",name:"Accidents de l’apnée",law:"Syncope, samba, étude de cas",items:[
