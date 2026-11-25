@@ -1,0 +1,21 @@
+{{- /* Bloc « à télécharger » d’une fiche Ressources :
+       {{< telecharger fichier="plan-secours-bord.pdf" titre="Plan de secours, plongées du bord" pages="2" >}}
+       Le PDF et son aperçu (apercu-<nom>.jpg) sont dans static/telechargements/, générés par outils/telechargements/. */ -}}
+{{- $fichier := .Get "fichier" }}
+{{- $nom := strings.TrimSuffix ".pdf" $fichier }}
+{{- $chemin := printf "telechargements/%s" $fichier }}
+{{- $taille := (os.Stat (printf "static/%s" $chemin)).Size }}
+{{- $ko := math.Round (div (float $taille) 1024) }}
+{{- $apercu := printf "telechargements/apercu-%s.jpg" $nom }}
+{{- $dim := images.Config (printf "static/%s" $apercu) }}
+<figure class="telecharger">
+  <a class="telecharger__apercu" href="{{ $chemin | relURL }}" download>
+    <img src="{{ $apercu | relURL }}" width="{{ $dim.Width }}" height="{{ $dim.Height }}" alt="Aperçu de la première page : {{ .Get "titre" }}" loading="lazy">
+  </a>
+  <figcaption class="telecharger__texte">
+    <strong class="telecharger__titre">{{ .Get "titre" }}</strong>
+    <span class="telecharger__meta">PDF, format A4, {{ .Get "pages" }} page{{ if gt (int (.Get "pages")) 1 }}s{{ end }}, {{ $ko }} Ko</span>
+    <a class="bouton bouton--principal telecharger__bouton" href="{{ $chemin | relURL }}" download><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>Télécharger le PDF</a>
+    <span class="telecharger__note">À imprimer et à compléter. Modèle à adapter à ta structure.</span>
+  </figcaption>
+</figure>

@@ -25,7 +25,7 @@ La **Fédération française d’études et de sports sous-marins** est une asso
 
 - **Ses structures de base** sont les **clubs associatifs**, affiliés, et les **structures commerciales agréées (SCA)**, les professionnels. Pour les brevets, une SCA a les mêmes prérogatives qu’un club.
 - **Elle est membre de la CMAS**, la Confédération mondiale des activités subaquatiques. C’est ce qui fait de ta carte de brevet une carte double face FFESSM et internationale, reconnue à l’étranger.
-- **Quelques ordres de grandeur** donnés en stage initial fin 2025 : environ 138 000 licenciés, plus de 2 000 clubs et près de 400 SCA, en métropole et outre-mer.
+- **Quelques ordres de grandeur** donnés en stage initial fin 2025 : environ 138 000 licenciés, plus de 2 000 clubs et près de 400 SCA, en métropole et outre-mer. Le détail est dans [La FFESSM en chiffres](/ressources/ffessm-en-chiffres/).
 
 Le site de la fédération : [ffessm.fr](https://ffessm.fr).
 

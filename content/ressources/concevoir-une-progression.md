@@ -15,7 +15,7 @@ Dans la phase « Concevoir », le MFT demande de **distinguer compétence et c
 
 Il définit la progression sous deux angles : **la gestion de la difficulté** et **la gestion du volume de l’apprentissage**. C’est de là que viennent les notions de séance et de séquence (une suite de séances sur un même apprentissage).
 
-Le positionnement de l’enseignement s’appuie sur **les acquis et les prérequis**. En pratique, les prérequis suivent le déroulement chronologique des apprentissages ; en théorie, ils se choisissent selon leur utilité. Pour un cursus, le MFT distingue la **programmation** (organiser les contenus dans le temps : le calendrier) de la **progression** (l’ordre imposé par les acquis et les prérequis).
+Le positionnement de l’enseignement s’appuie sur **les acquis et les prérequis**. En pratique, les prérequis suivent le déroulement chronologique des apprentissages ; en théorie, ils se choisissent selon leur utilité. Pour un cursus, le MFT distingue la **programmation** (organiser les contenus dans le temps : le calendrier) de la **progression** (l’ordre imposé par les acquis et les prérequis). La progression ne dépend donc pas de la durée de la formation : on la conçoit d’abord, puis on la répartit dans le calendrier disponible.
 
 ## 1. Des prérogatives à l’objectif de séance
 

@@ -1,0 +1,7 @@
+{{- /* Graphique : part des femmes parmi les licenciés FFESSM sur cinq saisons (data/ffessm_stats.yaml). */ -}}
+<figure class="ress-schema">
+  <p class="barres__titre">Part des femmes parmi les licenciés</p>
+  {{ partial "barres-svg.html" (dict "donnees" site.Data.ffessm_stats.femmes "cle" "part" "max" 40 "pas" 10 "format" "pourcent" "titre" "Part des femmes parmi les licenciés FFESSM, de 31,7 % en 2020-2021 à 34 % en 2024-2025" "version" "large") }}
+  {{ partial "barres-svg.html" (dict "donnees" site.Data.ffessm_stats.femmes "cle" "part" "max" 40 "pas" 10 "format" "pourcent" "titre" "Part des femmes parmi les licenciés FFESSM, de 31,7 % en 2020-2021 à 34 % en 2024-2025" "version" "etroit") }}
+  <figcaption>Un peu plus d’un licencié sur trois est une femme, une part qui progresse lentement depuis 2020-2021.</figcaption>
+</figure>

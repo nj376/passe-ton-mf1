@@ -1,0 +1,36 @@
+{{- /* Graphique en barres verticales, une seule série, en SVG (aucun script) :
+       partial "barres-svg.html" (dict "donnees" <liste> "cle" "n" "max" 160000 "pas" 40000 "unite" "" "titre" "…" "format" "milliers|pourcent")
+       Barres à coins arrondis en haut (4 px), quadrillage discret, étiquette de valeur sur la dernière barre et la plus haute,
+       infobulle native (<title>) sur chaque barre. Paramètre "version" : "large" (ordinateur, 1000 × 300) ou "etroit"
+       (téléphone, 420 × 300), pour garder des textes lisibles à toutes les largeurs. Styles : classes « barres » dans assets/css/main.css. */ -}}
+{{- $d := .donnees }}{{ $cle := .cle }}{{ $max := float .max }}{{ $pas := float .pas }}
+{{- $large := ne .version "etroit" }}
+{{- $L := cond $large 1000.0 420.0 }}{{ $H := 300.0 }}{{ $g := cond $large 74.0 64.0 }}{{ $dr := 12.0 }}{{ $h := 18.0 }}{{ $b := 36.0 }}
+{{- $zone := sub (sub $L $g) $dr }}{{ $hz := sub (sub $H $h) $b }}
+{{- $n := len $d }}{{ $col := div $zone (float $n) }}{{ $lb := math.Min (cond $large 96.0 44.0) (mul $col 0.55) }}
+{{- $plus := 0.0 }}{{ range $d }}{{ $plus = math.Max $plus (float (index . $cle)) }}{{ end }}
+{{- $fmt := .format }}
+{{- $dernier := float (index (index $d (sub (len $d) 1)) $cle) }}
+<svg class="barres barres--{{ cond $large "large" "etroit" }}" viewBox="0 0 {{ $L }} {{ $H }}" role="img" aria-label="{{ .titre }}">
+  {{- $t := 0.0 }}
+  {{- range seq 0 (int (div $max $pas)) }}
+    {{- $v := mul (float .) $pas }}{{ $y := sub (add $h $hz) (mul $hz (div $v $max)) }}
+  <line class="barres__grille{{ if eq . 0 }} barres__grille--zero{{ end }}" x1="{{ $g }}" x2="{{ sub $L $dr }}" y1="{{ $y }}" y2="{{ $y }}"></line>
+  <text class="barres__axe" x="{{ sub $g 8 }}" y="{{ add $y 4 }}" text-anchor="end">{{ if eq $fmt "pourcent" }}{{ $v }} %{{ else }}{{ lang.FormatNumberCustom 0 $v "- , ." | replaceRE "\\." " " }}{{ end }}</text>
+  {{- end }}
+  {{- range $i, $e := $d }}
+    {{- $v := float (index $e $cle) }}{{ $hb := mul $hz (div $v $max) }}
+    {{- $x := add $g (add (mul (float $i) $col) (div (sub $col $lb) 2)) }}{{ $y := sub (add $h $hz) $hb }}
+    {{- $r := 4.0 }}
+    {{- $txt := cond (eq $fmt "pourcent") (printf "%.1f %%" $v | replaceRE "\\." ",") (lang.FormatNumberCustom 0 $v "- , ." | replaceRE "\\." " ") }}
+  <g class="barres__barre">
+    <title>{{ $e.saison }} : {{ $txt }}</title>
+    <path d="M{{ $x }},{{ add $y $hb }} V{{ add $y $r }} Q{{ $x }},{{ $y }} {{ add $x $r }},{{ $y }} H{{ sub (add $x $lb) $r }} Q{{ add $x $lb }},{{ $y }} {{ add $x $lb }},{{ add $y $r }} V{{ add $y $hb }} Z"></path>
+    <rect class="barres__cible" x="{{ sub $x 8 }}" y="{{ $h }}" width="{{ add $lb 16 }}" height="{{ $hz }}"></rect>
+    {{- if or (eq $i (sub $n 1)) (and (eq $v $plus) (ne $v $dernier)) }}
+    <text class="barres__valeur" x="{{ add $x (div $lb 2) }}" y="{{ sub $y 7 }}" text-anchor="middle">{{ $txt }}</text>
+    {{- end }}
+    <text class="barres__axe" x="{{ add $x (div $lb 2) }}" y="{{ sub $H 14 }}" text-anchor="middle">{{ if $large }}{{ $e.saison }}{{ else }}{{ replaceRE `^20(\d\d)-20(\d\d)$` "$1-$2" $e.saison }}{{ end }}</text>
+  </g>
+  {{- end }}
+</svg>

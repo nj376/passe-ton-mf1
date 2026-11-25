@@ -1,0 +1,15 @@
+# Statistiques FFESSM, pour la fiche Ressources « La FFESSM en chiffres ».
+# Source : support de stage initial MF1 (CODEP 01, décembre 2025), d’après les bilans fédéraux ;
+# recoupé avec l’INSEE / INJEP-MEDES (données 2025, publiées le 14/10/2026).
+licences:
+  - { saison: "2020-2021", n: 108693 }
+  - { saison: "2021-2022", n: 127874 }
+  - { saison: "2022-2023", n: 132717 }
+  - { saison: "2023-2024", n: 134745 }
+  - { saison: "2024-2025", n: 133757 }
+femmes:
+  - { saison: "2020-2021", n: 34477, part: 31.7 }
+  - { saison: "2021-2022", n: 41858, part: 32.7 }
+  - { saison: "2022-2023", n: 44093, part: 33.2 }
+  - { saison: "2023-2024", n: 45631, part: 34.0 }
+  - { saison: "2024-2025", n: 45359, part: 34.0 }

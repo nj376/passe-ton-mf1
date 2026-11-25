@@ -6,6 +6,7 @@ titre: "Trame de la pédagogie organisationnelle"
 resume: "Reconnaître le type de sujet, n’oublier aucun élément de l’organisation et présenter clairement en dix minutes."
 groupe: "Trames des épreuves"
 weight: 40
+sources: "MFT MF1 de la FFESSM, version juillet 2026 ; MFT Plongeur Niveau 1, version décembre 2025 ; Code du sport, annexe III-16a (extrait du MFT, version juin 2026) ; supports de stages initiaux MF1"
 ---
 
 ## Ce que dit le MFT
@@ -23,9 +24,17 @@ Tu as **30 minutes pour préparer**, **10 minutes au plus pour exposer**, puis l
 
 L’épreuve fait appel aux deux compétences d’organisation du MFT : **organiser et sécuriser l’activité**, ton futur rôle de Directeur de Plongée, et **organiser un cursus de formation**, ton rôle de moniteur E3.
 
-## 1. Reconnaître le type de sujet
+## 1. Analyser le sujet, puis reconnaître son type
 
-Commence par lire le sujet pour savoir dans quelle famille il tombe : c’est elle qui dit ce que le jury attend.
+Les premières minutes de préparation servent à lire, pas à écrire. Prends le sujet crayon en main :
+
+1. **Surligne les mots-clés** : le niveau, le nombre de plongeurs, le lieu, la durée, la saison.
+2. **Identifie l’objectif** : quel type de formation, sur quelle durée, en entier ou seulement une partie ?
+3. **Repère si le sujet est ouvert ou fermé** : tout est imposé, ou tu dois faire des choix ? Quels textes s’appliquent (Code du sport, MFT, cursus jeunes) ?
+4. **Liste les contraintes**, explicites et implicites : le public, la réglementation, le milieu, les horaires, la qualification et le nombre d’encadrants.
+5. **Déduis-en tes besoins** en matériel, en logistique et en encadrement, puis organise des **moyens réalistes**. Le jury peut te donner des informations complémentaires : demande-les.
+
+Le sujet te dit aussi dans quelle famille il tombe, et c’est elle qui dit ce que le jury attend.
 
 | Type de sujet | Exemples | Ce que le jury attend |
 |---|---|---|
@@ -53,7 +62,7 @@ Ici, « Pourquoi ? » vient après « Comment ? » : il sert à justifier
 
 Pour la réglementation (normes d’encadrement, matériel obligatoire, rôle du Directeur de Plongée), appuie-toi sur le [Code du sport](/explore-le-cds/).
 
-Pour le « Avec quoi ? », passe en revue les trois appuis de la sécurité :
+Pour le « Avec quoi ? », passe en revue les trois appuis de la sécurité :
 
 {{< schema "triangle-securite" >}}
 
@@ -67,20 +76,99 @@ En dix minutes, ton tableau parle autant que toi. Prépare-le comme si tu t’ad
 - **Montre ta progression** quand le sujet porte sur une formation : c’est ce qui fait la différence.
 - **Justifie tes choix** au fil de l’exposé : le jury évalue ton raisonnement autant que ton organisation.
 
-## 4. Pour un cursus : la méthode pas à pas
+## 4. Pour un cursus : la méthode en cinq temps
 
-1. **Lis le sujet** : quel cursus, pour qui, avec quelles contraintes (durée, lieu, nombre d’élèves).
-2. **Ouvre le MFT et le Code du sport** : les compétences du niveau, les prérogatives visées, les contraintes réglementaires. Par exemple, le MFT cite les 15 mois dont disposent les élèves pour acquérir l’ensemble des compétences du N3.
-3. **Liste les compétences et capacités** du niveau, en lisant chaque page du MFT bloc par bloc (voir [Lire une compétence du MFT](/ressources/lire-une-competence-du-mft/)) : objectifs, acquis et prérequis, liens avec la théorie, modalités d’évaluation. Quand le niveau délivre plusieurs aptitudes, sépare les compétences communes et spécifiques, et ajoute les connaissances théoriques du niveau.
+Organiser, c’est anticiper : préparer chaque élément selon un plan, pour que l’ensemble soit cohérent et adapté à son but. Pour un cursus, cinq temps se suivent.
+
+### 1. Concevoir la progression
+
+C’est le cœur de ton exposé, et elle **ne dépend pas de la durée** de la formation : tu la conçois d’abord, tu la répartis ensuite dans le temps disponible.
+
+1. **Ouvre le MFT et le Code du sport** : les compétences du niveau, les prérogatives visées, les contraintes réglementaires. Par exemple, le MFT cite les 15 mois dont disposent les élèves pour acquérir l’ensemble des compétences du N3.
+2. **Liste les compétences et capacités** du niveau, en lisant chaque page du MFT bloc par bloc (voir [Lire une compétence du MFT](/ressources/lire-une-competence-du-mft/)) : objectifs, acquis et prérequis, liens avec la théorie, modalités d’évaluation. Quand le niveau délivre plusieurs aptitudes, sépare les compétences communes et spécifiques, et ajoute les connaissances théoriques du niveau.
 
    {{< schema "competences-n2" >}}
 
-4. **Place-les dans le temps** : ce sont les prérequis qui fixent l’ordre (voir [Situer un enseignement dans un cursus](/ressources/situer-un-enseignement-dans-un-cursus/)).
-5. **Détaille la progression d’une ou deux compétences** : objectifs intermédiaires, exercices, critères. Ne cherche pas à tout détailler en dix minutes.
-6. **Définis les moyens** : matériel (bateau, ateliers, matériel de secours, salle) et encadrement, en nombre suffisant.
-7. **Prévois le suivi des élèves** : fiche ou livret de suivi, réunions de l’équipe pédagogique.
+3. **Place-les dans le temps** : ce sont les prérequis qui fixent l’ordre (voir [Situer un enseignement dans un cursus](/ressources/situer-un-enseignement-dans-un-cursus/)).
+4. **Détaille la progression d’une ou deux compétences** : objectifs intermédiaires, exercices, critères. Ne cherche pas à tout détailler en dix minutes.
 
 {{< schema "cursus-phases" >}}
+
+### 2. Identifier les moyens matériels
+
+Pour chaque besoin, note aussi la contrainte : la réglementation, la piscine ou le site (créneaux, ligne d’eau, fosse), les blocs disponibles, le transport, le bateau, le matériel de secours, l’hygiène, le matériel pédagogique, la salle.
+
+### 3. Identifier les moyens humains
+
+La qualification et le nombre d’encadrants, au regard du public et des normes d’encadrement du Code du sport. Prévois aussi qui fait quoi : qui dirige, qui encadre, qui fait la théorie.
+
+### 4. Planifier
+
+C’est la **programmation** : répartir ta progression dans le calendrier, en tenant compte de tes choix pédagogiques et de tes contraintes humaines et matérielles. Un tableau avec les séances en colonnes est le support le plus lisible.
+
+### 5. Communiquer et suivre
+
+Une formation se mène en équipe. **Avant**, une réunion avec les encadrants pour valider l’organisation, puis une réunion de présentation aux élèves. **Pendant**, une fiche ou un livret de suivi, et des points réguliers entre encadrants. **Après**, le bilan de la formation.
+
+## 5. Un exemple : un N1 en dix séances de piscine
+
+*Le cadre : 5 adultes, dossiers complets, baptême fait. Une séance par semaine pendant trois mois, de 20 h à 22 h, avec une ligne d’eau et une fosse de 4 m. Quatre encadrants, dont un E3, et 6 puis 4 blocs. Certification N1 en milieu artificiel.*
+
+**Une soirée type**
+
+| Horaire | Ce qui se passe |
+|---|---|
+| 20 h 00 | Accueil et briefing, consignes de la piscine (20 min) |
+| 20 h 20 | Deux groupes en rotation : PMT d’un côté, scaphandre de l’autre (2 × 30 min, 5 min pour changer) |
+| 21 h 25 | Théorie, en lien avec la séance du jour (20 min) |
+| 21 h 45 | Rangement, hygiène des détendeurs, douches (15 min) |
+
+**La progression, séance par séance**
+
+| Séance | En scaphandre | En PMT | Théorie | Encadrement |
+|---|---|---|---|---|
+| 1 | S’équiper, mise à l’eau du bord, gilet en surface, première immersion et signes, balade au poumon ballast, remontée en expiration contrôlée avec tour d’horizon | Palmage, apnées inspiratoire et expiratoire | La pression, les accidents à prévenir | 1 pour 1 |
+| 2 | Révision, puis stabilisation, lâcher et reprise d’embout | Le tuba | Pression et volume, les barotraumatismes | 1 pour 1 |
+| 3 | Respirer par la bouche sans le nez, vidage de masque | Saut droit, apnée | Poids, volume, flottabilité | 1 pour 1 |
+| 4 | Saut droit, reprise d’embout avec la purge, stabilisation | Le canard | Le froid | 1 pour 1 |
+| 5 | Panne d’air, palier, vidage de masque | Bascule arrière | L’environnement | 1 pour 3 |
+| 6 | Palmage respectueux ; panne d’air : demander, recevoir, aller chercher l’air | Palmage, apnée | Prévenir l’accident de désaturation | 1 pour 3 |
+| 7 | Intervention en relais sur une panne d’air, communication et contrôles | Palmage, apnée | Les moyens de désaturation | 1 pour 3 |
+| 8 | Intervention en relais : « ça ne va pas », essoufflement | Palmage, apnée | L’essoufflement | 1 pour 3 |
+| 9 | Remontée isolée, palier, révision des interventions | Palmage, apnée | Utiliser son ordinateur | 1 pour 3 |
+| 10 | Séance de validation | | Quiz oral | 1 pour 2 |
+
+Trois choses à remarquer :
+
+- **L’encadrement suit la progression** : un encadrant par élève à l’initiation, un pour trois au perfectionnement, un pour deux pour valider. Le Code du sport permet jusqu’à 4 débutants par E1 dans l’espace de 0 à 6 m.
+- **La théorie accompagne la pratique** : les barotraumatismes dès les premières immersions, la flottabilité quand arrive le vidage de masque, l’essoufflement le soir de l’intervention en relais.
+- **La certification en milieu artificiel** est permise par le MFT N1, à condition de réaliser au moins 4 plongées en milieu naturel dans les 12 mois.
+
+Ce planning n’est qu’un exemple : ce sont tes choix pédagogiques et tes critères de progression (sécurité, puis réussite) qui fixent le tien.
+
+## 6. Ce que regarde le jury
+
+Les critères utilisés en stage initial donnent une bonne idée des attentes.
+
+| Sur le fond | Sur la forme |
+|---|---|
+| Le thème, le cadre et l’objectif du sujet sont respectés. | L’exposé est clair. |
+| La progression est cohérente, et respecte les prérequis de sécurité et de réussite. | Le tableau reflète ton organisation, d’un coup d’œil. |
+| L’organisation est faisable et crédible : encadrement, lieu, matériel réalistes. | Tu tiens les dix minutes. |
+| La sécurité est présente partout (Code du sport, MFT). | Tu restes à l’écoute et argumentes pendant l’entretien. |
+| **Chacun de tes choix est argumenté.** | |
+
+## 7. Cas pratique pour t’entraîner
+
+*Tu es responsable de la formation N1 de ton club, qui accueille 5 plongeurs. Présente ton organisation et ta démarche avec l’équipe pédagogique pour assurer le suivi de la formation et des stagiaires.*
+
+{{< pistes >}}
+- **Le sujet est centré sur l’équipe et le suivi**, pas seulement sur le planning : c’est le cinquième temps de la méthode qui doit dominer.
+- **Avant** : une réunion des encadrants pour valider la progression, les critères et le rôle de chacun ; une réunion de présentation aux élèves (objectifs, calendrier, documents à fournir).
+- **Pendant** : une fiche de suivi par élève, remplie après chaque séance, et la même grille de critères pour tous les encadrants. Des points réguliers, pour adapter la suite et organiser des remédiations.
+- **Après** : la validation, l’enregistrement de la certification, le bilan avec l’équipe.
+- **Le tableau** : le calendrier des séances, et en regard qui encadre, ce qu’on évalue et quand l’équipe se réunit.
+{{< /pistes >}}
 
 ## Les pièges classiques
 

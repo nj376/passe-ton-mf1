@@ -1,0 +1,7 @@
+{{- /* Graphique : nombre de licences FFESSM sur cinq saisons (data/ffessm_stats.yaml). */ -}}
+<figure class="ress-schema">
+  <p class="barres__titre">Licences délivrées par saison</p>
+  {{ partial "barres-svg.html" (dict "donnees" site.Data.ffessm_stats.licences "cle" "n" "max" 160000 "pas" 40000 "format" "milliers" "titre" "Licences FFESSM par saison, de 108 693 en 2020-2021 à 133 757 en 2024-2025" "version" "large") }}
+  {{ partial "barres-svg.html" (dict "donnees" site.Data.ffessm_stats.licences "cle" "n" "max" 160000 "pas" 40000 "format" "milliers" "titre" "Licences FFESSM par saison, de 108 693 en 2020-2021 à 133 757 en 2024-2025" "version" "etroit") }}
+  <figcaption>Une forte reprise après la crise sanitaire, un pic en 2023-2024, puis un léger recul (−0,7 %). Survole une barre pour lire sa valeur ; le détail est dans le tableau ci-dessous.</figcaption>
+</figure>

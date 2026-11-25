@@ -1,15 +1,17 @@
 {{- /* Tableaux Markdown (fiches Ressources) : chaque cellule porte l’en-tête de sa colonne (data-label),
-       pour que le tableau reste lisible sur téléphone quand ses lignes deviennent des blocs. */ -}}
+       pour que le tableau reste lisible sur téléphone quand ses lignes deviennent des blocs.
+       L’alignement Markdown (---: à droite, :---: au centre) devient une classe (aucun style en ligne, CSP) :
+       à utiliser pour les colonnes de chiffres. */ -}}
 {{- $entetes := slice }}{{ range .THead }}{{ range . }}{{ $entetes = $entetes | append (.Text | plainify | htmlUnescape) }}{{ end }}{{ end -}}
 <table class="tableau-texte tableau-texte--{{ len $entetes }}-colonnes">
   <thead>
     {{- range .THead }}
-    <tr>{{ range . }}<th scope="col">{{ .Text }}</th>{{ end }}</tr>
+    <tr>{{ range . }}<th scope="col"{{ with .Alignment }} class="cellule--{{ . }}"{{ end }}>{{ .Text }}</th>{{ end }}</tr>
     {{- end }}
   </thead>
   <tbody>
     {{- range .TBody }}
-    <tr>{{ range $i, $c := . }}<td data-label="{{ index $entetes $i }}">{{ $c.Text }}</td>{{ end }}</tr>
+    <tr>{{ range $i, $c := . }}<td data-label="{{ index $entetes $i }}"{{ with $c.Alignment }} class="cellule--{{ . }}"{{ end }}>{{ $c.Text }}</td>{{ end }}</tr>
     {{- end }}
   </tbody>
 </table>
