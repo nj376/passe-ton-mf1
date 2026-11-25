@@ -52,6 +52,8 @@ Le MFT inscrit ces notions au programme du cadre réglementaire du MF1.
 | **Obligation de moyens** | Mettre en œuvre tout ce qui est raisonnable pour assurer la sécurité : humains, matériel, choix du site. En matière de sécurité, c’est en général ce qu’on attend de l’encadrant. |
 | **Obligation de résultat** | Garantir le résultat lui-même. Elle peut s’appliquer à des points précis, par exemple le bon état du matériel fourni. |
 
+Pour aller plus loin, avec des exemples et des cas pratiques : [La responsabilité de l’encadrant](/ressources/responsabilite-de-l-encadrant/).
+
 {{< encart "bleu" >}}
 **À retenir :** la sécurité prime sur tout le reste. Avant chaque décision, prends le temps d’analyser la situation, et tiens-toi informé des évolutions de la réglementation (Légifrance, site de la FFESSM, MFT).
 {{< /encart >}}

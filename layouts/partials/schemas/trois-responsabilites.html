@@ -1,0 +1,20 @@
+{{- /* Schéma « trois responsabilités » : pénale, civile, disciplinaire. Qui juge, pour quoi, quelle sanction, assurable ou non.
+       D’après le Code pénal, le Code civil, le règlement disciplinaire de la FFESSM et un support de stage initial MF1. Classes schema-qq. */ -}}
+{{- $resp := slice
+  (dict "n" "1" "q" "Pénale" "s" "répondre d’une infraction" "t" (slice "Jugée par le tribunal, saisi par le procureur ou la victime" "Pour une infraction prévue par un texte : Code pénal, Code du sport" "Sanction : amende, prison, interdiction d’exercer" "Personnelle : elle ne s’assure pas"))
+  (dict "n" "2" "q" "Civile" "s" "réparer un dommage" "t" (slice "Jugée par le tribunal, à la demande de la victime ou de ses proches" "Pour un dommage causé à autrui : corporel, matériel ou moral" "Sanction : des dommages et intérêts, parfois très élevés" "Elle s’assure : licence, assurance du club"))
+  (dict "n" "3" "q" "Disciplinaire" "s" "répondre à sa fédération" "t" (slice "Jugée par l’organe disciplinaire de la FFESSM" "Pour un manquement aux règlements fédéraux ou à la charte du moniteur" "Sanction : avertissement, blâme, suspension, jusqu’à la radiation" "Indépendante des deux autres"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $resp }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="schema-qq__sujet">{{ .s }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Un même accident peut déclencher les trois à la fois : une condamnation pénale n’empêche pas une action au civil, ni une procédure disciplinaire.</figcaption>
+</figure>
