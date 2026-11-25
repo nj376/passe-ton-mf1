@@ -1,0 +1,20 @@
+{{- /* Schéma « la boucle P.É.D.A. » : perception, évaluation, décision, action, appliquée à l’équilibre.
+       D’après un support de stage initial MF1. Classes schema-apprendre (quatre cartes reliées par des flèches). */ -}}
+{{- $etapes := slice
+  (dict "n" "1" "t" "Perception" "d" (slice "Ce que je vois : le fond, une paroi, les bulles" "Ce que je sens : je monte, je descends" "Ce que j’entends : la ventilation, le gilet"))
+  (dict "n" "2" "t" "Évaluation" "d" (slice "J’analyse ces informations" "Je monte ? Je descends ? Je suis stabilisé ?"))
+  (dict "n" "3" "t" "Décision" "d" (slice "J’utilise mon poumon ballast : inspirer ou expirer ?" "J’utilise mon gilet : gonfler ou purger ?"))
+  (dict "n" "4" "t" "Action" "d" (slice "Je sais où est mon direct system" "Je sais gonfler et purger" "Puis je perçois à nouveau le résultat"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-apprendre">
+    {{- range $etapes }}
+    <li class="schema-apprendre__etape">
+      <span class="schema-apprendre__num" aria-hidden="true">{{ .n }}</span>
+      <strong class="schema-apprendre__titre">{{ .t }}</strong>
+      <ul class="schema-apprendre__liste">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>La boucle ne s’arrête jamais : après chaque action, l’élève perçoit le résultat et recommence. Pour l’enseigner, aide-le à percevoir (des repères visuels, un fond, un pendeur) avant de lui demander d’agir.</figcaption>
+</figure>

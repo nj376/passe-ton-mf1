@@ -1,0 +1,20 @@
+{{- /* Schéma « les trois pôles V.É.P. » : ventilation, équilibre, propulsion, et ce que chacun recouvre.
+       D’après un support de stage initial MF1. Classes schema-qq, pastilles « vep ». */ -}}
+{{- $poles := slice
+  (dict "l" "V" "c" "v" "q" "Ventilation" "s" "la seule que le moniteur ne peut pas faire à la place de l’élève" "t" (slice "Respirer par la bouche, sur tuba et sur détendeur" "Vidage de masque, lâcher et reprise d’embout" "Poumon ballast, apnée, remontée en expiration contrôlée" "Donner et recevoir de l’air"))
+  (dict "l" "É" "c" "e" "q" "Équilibre" "s" "des sensations, qui ne se démontrent pas" "t" (slice "Lestage, poumon ballast, gilet" "Stabilisation à toutes les profondeurs, palier" "Descente dans le bleu, remontée isolée" "Canard, phoque, positions dans l’eau"))
+  (dict "l" "P" "c" "p" "q" "Propulsion" "s" "se déplacer dans les trois dimensions" "t" (slice "Palmage en surface et en immersion" "En PMT, en sustentation" "En scaphandre, sur le ventre et sur le dos" "La technique avant la force"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $poles }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num vep vep--{{ .c }}" aria-hidden="true">{{ .l }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="schema-qq__sujet">{{ .s }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Toute technique de plongée sollicite les trois pôles, mais l’un d’eux domine. Les trois s’influencent : l’effort de propulsion change la ventilation, la ventilation change l’équilibre.</figcaption>
+</figure>

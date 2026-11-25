@@ -1,0 +1,21 @@
+{{- /* Schéma « une progression en trois temps » : isoler le pôle principal, en intégrer un deuxième, mobiliser les trois.
+       D’après un support de stage initial MF1. Classes schema-qq, pastilles « vep ». */ -}}
+{{- $temps := slice
+  (dict "n" "1" "q" "Isoler le pôle principal" "p" (slice "v") "t" "Un premier exercice qui ne sollicite que lui : les deux autres sont neutralisés (posé au fond, sans déplacement).")
+  (dict "n" "2" "q" "Intégrer un deuxième pôle" "p" (slice "v" "p") "t" "On ajoute un pôle, et un seul : par exemple le déplacement, près du fond.")
+  (dict "n" "3" "q" "Mobiliser les trois pôles" "p" (slice "v" "p" "e") "t" "L’exercice se rapproche de la plongée réelle : en déplacement et stabilisé, jusqu’à l’objectif de séance.")
+-}}
+{{- $lettres := dict "v" "V" "e" "É" "p" "P" }}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $temps }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="vep-groupe">{{ range .p }}<span class="vep vep--{{ . }}">{{ index $lettres . }}</span>{{ end }}</span>
+      <span class="schema-qq__texte">{{ .t }}</span>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Exemple avec le lâcher et la reprise d’embout, une technique surtout de ventilation : posé à genoux, puis en déplacement près du fond, puis en déplacement et stabilisé.</figcaption>
+</figure>

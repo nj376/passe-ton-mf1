@@ -135,7 +135,7 @@ Cherche la **difficulté juste** : un exercice trop facile ennuie et n’appren
 1. **Pars de l’arrivée** : la compétence et ses critères d’évaluation dans le MFT. C’est ta dernière marche.
 2. **Situe l’élève** par une évaluation initiale : ce qu’il sait déjà, ou croit savoir, son vécu, son état d’esprit. C’est ta première marche.
 3. **Liste les capacités** à travailler et range-les selon leurs prérequis.
-4. **Pour chaque capacité, choisis les curseurs** et tourne-les un à un. Donne à chaque marche un critère de passage.
+4. **Pour chaque capacité, choisis les curseurs** et tourne-les un à un. Donne à chaque marche un critère de passage. La méthode des [trois pôles V.É.P.](/ressources/trois-poles-vep/) te donne un ordre : isole d’abord le pôle principal de la technique.
 5. **Répartis les marches en séances**, en gardant de la place pour la remédiation et pour l’évaluation finale.
 
 {{< encart "bleu" >}}

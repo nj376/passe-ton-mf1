@@ -12,7 +12,7 @@ weight: 20
 
 L’épreuve (coefficient 4) évalue **une séance de plongée faite à un ou plusieurs élèves**, avec les conseils, remarques ou consignes nécessaires avant l’immersion. Le sujet, tiré au sort, fixe le thème, les conditions et le niveau des élèves : du débutant au Niveau 3, les qualifications PA20, PE40, PA40 et PE60, le GP-N4, le DP-N5 et la randonnée subaquatique.
 
-Tu as **30 minutes pour préparer**, puis **30 minutes pour exposer, réaliser la séance dans l’eau et répondre aux questions** du jury. Le MFT non annoté est autorisé pour préparer.
+Tu as **30 minutes pour préparer**, puis **30 minutes pour exposer, réaliser la séance dans l’eau et répondre aux questions** du jury. Le MFT non annoté est autorisé pour préparer.
 
 Comme toute séance, elle passe par trois phases : **concevoir, réaliser, évaluer**.
 
@@ -28,7 +28,7 @@ Remplis-la au brouillon pendant la préparation, en t’aidant de la [méthode Q
 | **Élèves et positionnement** | Niveau, place dans le cursus (début, milieu, fin de formation), numéro de séance si le thème en demande plusieurs. |
 | **Objectif final** | La compétence du MFT visée. |
 | **Objectif intermédiaire** | La capacité travaillée aujourd’hui. |
-| **Objectif de séance** | « À la fin de la séance, tu seras capable de… », avec des critères mesurables, observables, quantifiables. |
+| **Objectif de séance** | « À la fin de la séance, tu seras capable de… », avec des critères mesurables, observables, quantifiables. |
 | **Justification** | Pourquoi l’élève en a besoin, au regard de ses prérogatives et des risques réels. |
 | **Prérequis** | Technique (indispensable pour réussir l’exercice) et de sécurité (indispensable pour ne pas se mettre en danger). |
 | **Exercices** | Deux ou trois exercices progressifs, chacun avec ses critères de réalisation. |
@@ -40,7 +40,7 @@ Remplis-la au brouillon pendant la préparation, en t’aidant de la [méthode Q
 | **Suite** | La prochaine séance, dans la logique de la progression. |
 
 {{< encart "bleu" >}}
-**Prérequis technique ou de sécurité ?** Pour un vidage de masque à 6 m, savoir dissocier la respiration bouche et nez est un prérequis technique. Savoir remonter en expirant en est un de sécurité : si l’élève lâche l’exercice, il doit pouvoir regagner la surface sans danger.
+**Prérequis technique ou de sécurité ?** Pour un vidage de masque à 6 m, savoir dissocier la respiration bouche et nez est un prérequis technique. Savoir remonter en expirant en est un de sécurité : si l’élève lâche l’exercice, il doit pouvoir regagner la surface sans danger.
 {{< /encart >}}
 
 ## 2. Réaliser : la séance sur la courbe de plongée
@@ -49,18 +49,51 @@ Pose ta séance sur la courbe de plongée : chaque temps a sa place, et tu n’
 
 {{< schema "seance-pratique" >}}
 
-### Le briefing, en trois temps
+### Le briefing : 5 à 10 minutes, pas plus
 
-1. **Faire connaissance** : son parcours de plongeur, ses sensations, et la vérification orale des prérequis.
-2. **Présenter la séance** : l’objectif et sa justification, puis les exercices dans l’ordre, avec leurs critères, les signes et les consignes de sécurité. Une communication simple et adaptée.
+1. **Faire connaissance** : l’accueil, son parcours de plongeur, ses sensations, et la vérification orale des prérequis et des acquis. Rappelle l’objectif final : le brevet qu’il prépare et ses prérogatives.
+2. **Présenter la séance** : le sujet, l’objectif de séance et sa justification, puis les exercices dans l’ordre. Une communication simple et adaptée.
 3. **Faire reformuler** : l’élève redit ce qui l’attend. Une démonstration au sec peut aider.
+4. **Donner les consignes**, de quatre sortes :
+   - **les critères de réalisation** : à quoi il saura qu’il a réussi ;
+   - **l’organisation et la communication** : la mise à l’eau, la place de chacun, les signes en plus de ceux qu’il connaît ;
+   - **la décompression** : profondeur, durée, palier éventuel ;
+   - **la sécurité** : rester à portée de bras, légèrement au-dessus à la descente et en dessous à la remontée, équilibrer ses oreilles, ne jamais bloquer sa respiration.
+
+{{< encart "bleu" >}}
+**Un exemple de briefing, à adapter au niveau et à la séance.**
+*« Bonjour, je suis X, je serai ton moniteur aujourd’hui. Comment vas-tu ? La dernière fois, tu as vu… Peux-tu me rappeler comment on fait ? Parfait. Aujourd’hui, on poursuit ta formation de plongeur N1 : à la fin, tu pourras plonger jusqu’à 20 m avec un guide. Cette séance porte sur… C’est important, parce qu’en plongée tu devras être capable de… À la fin de la séance, tu sauras le faire de telle manière, en tant de temps. D’abord, on fera…, puis…, et enfin… En plus des signes que tu connais, on utilisera… Je me mettrai à l’eau en premier, tu me rejoindras par…, et on s’immergera ici. Tu resteras à un bras de moi. On s’arrêtera à 3 m pour vérifier que tout va bien. Pense à équilibrer tes oreilles et à respirer tout le temps. »*
+{{< /encart >}}
+
+### Le corps de séance
+
+**S’équiper et se mettre à l’eau** : l’élève grée-t-il seul, ou faut-il l’accompagner ? Précise le lieu de mise à l’eau (l’arrière, le côté du bateau, le bord) et la technique (bascule arrière, saut droit, équipement dans l’eau).
+
+**Dans l’eau, tu es garant de la sécurité** :
+
+- **un contact visuel permanent** avec l’élève ;
+- **un placement au plus près**, qui te permet d’intervenir ;
+- **une profondeur qui évolue** avec la séance, sans surprise ;
+- **de l’anticipation** : tu vois venir la difficulté avant l’élève.
+
+**Enseigner, c’est répéter ; apprendre, c’est recommencer.** Vérifie d’abord le prérequis, puis fais évoluer tes exercices jusqu’à l’objectif de séance, en jouant sur trois types de critères :
+
+- **les conditions de réalisation** : posé au fond, puis stabilisé, puis en déplacement ;
+- **la performance** : en une seule fois, à son initiative, sur demande ;
+- **l’autonomie** : il peut se faire aider, puis il doit réaliser seul.
+
+En cas d’échec, remédie tout de suite si c’est possible et sans danger, et **termine toujours sur une réussite**. Pour choisir l’ordre de tes exercices, la méthode des [trois pôles V.É.P.](/ressources/trois-poles-vep/) peut t’aider.
 
 ### Le débriefing
 
-- **L’élève parle en premier** : son ressenti, ce qu’il pense avoir réussi.
-- **Puis toi**, en reprenant la séance dans l’ordre de la courbe : un point positif, ce qui reste à travailler, un point positif.
-- **L’évaluation** : objectif atteint ou non, au regard des critères annoncés.
-- **La suite** : la prochaine séance, en quelques mots.
+Des échanges constructifs et bienveillants, en trois volets.
+
+- **Le bilan** :
+  - **l’élève parle en premier** : son ressenti, ce qu’il pense avoir réussi ;
+  - **puis toi**, en reprenant la séance dans l’ordre de la courbe : un point positif, ce qui reste à travailler, un point positif. Rappelle les points clés ;
+  - **l’évaluation** : objectif atteint ou non, au regard des critères annoncés. Une démonstration de l’élève, au sec, peut la compléter.
+- **La suite** : la prochaine séance, en quelques mots, en lien avec la compétence du jour.
+- **La sécurité après la plongée** : pas d’apnée ni d’effort sportif intense juste après, pas de vol en avion ni de montée en altitude trop tôt. Rappelle les délais recommandés.
 
 ## 3. Évaluer, tout au long
 
@@ -74,7 +107,7 @@ Si l’exercice ne marche pas, cherche la cause avant de répéter : l’élèv
 
 ## Les pièges classiques
 
-- **Un briefing trop long** : l’élève retient peu d’informations à la fois. Va à l’essentiel, il peut tout redire.
+- **Un briefing trop long** : l’élève retient peu d’informations à la fois. 5 à 10 minutes, l’essentiel, et il peut tout redire.
 - **Des exercices non annoncés** au briefing, ou dans un autre ordre sous l’eau.
 - **Oublier de vérifier le prérequis** au fond.
 - **Un débriefing où tu parles seul** : l’élève s’exprime d’abord.
