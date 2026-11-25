@@ -1,0 +1,31 @@
+{{- /* Schéma « les étapes d’un apprentissage » : démonstration, initiation, perfectionnement, maîtrise,
+       avec l’évaluation qui situe l’élève et la remédiation qui fait revenir en arrière.
+       Repris d’un support de stage initial MF1, rédigé pour le site. Styles : classes « schema-apprendre ». */ -}}
+{{- $etapes := slice
+  (dict "n" "1" "t" "La démonstration" "d" (slice "Réussie et utile : observable et reproductible." "Sans risque pour la sécurité." "Inutile pour un exercice fondé sur les sensations."))
+  (dict "n" "2" "t" "L’initiation" "d" (slice "La découverte d’un nouveau geste." "Tu le décortiques étape par étape."))
+  (dict "n" "3" "t" "Le perfectionnement" "d" (slice "Tu ajoutes les difficultés une à une." "Des objectifs atteignables." "Sur plusieurs séances, dans différents milieux et situations."))
+  (dict "n" "4" "t" "La maîtrise" "d" (slice "Le geste est réussi plusieurs fois, dans des situations et des contextes variés." "Il est acquis."))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-apprendre">
+    {{- range $etapes }}
+    <li class="schema-apprendre__etape">
+      <span class="schema-apprendre__num" aria-hidden="true">{{ .n }}</span>
+      <strong class="schema-apprendre__titre">{{ .t }}</strong>
+      <ul class="schema-apprendre__liste">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <div class="schema-apprendre__boucles">
+    <div class="schema-apprendre__boucle schema-apprendre__boucle--eval">
+      <strong>L’évaluation, tout du long</strong>
+      <span>Elle te dit où en est l’élève : prêt à passer au perfectionnement, à constater la maîtrise, ou à reprendre l’initiation.</span>
+    </div>
+    <div class="schema-apprendre__boucle schema-apprendre__boucle--remed">
+      <strong>La remédiation, si ça bloque</strong>
+      <span>Tu reviens en arrière, tu expliques ou tu montres autrement, puis tu repars vers le perfectionnement.</span>
+    </div>
+  </div>
+  <figcaption>Les quatre étapes se suivent dans cet ordre, mais pas toujours en une ligne droite : l’évaluation décide de la suite, et la remédiation fait partie du chemin.</figcaption>
+</figure>

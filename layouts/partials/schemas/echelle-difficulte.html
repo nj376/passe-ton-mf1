@@ -1,5 +1,5 @@
-{{- /* Schéma « échelle de difficulté » : un escalier où l’on tourne un seul curseur à chaque marche
-       (exemple : vidage de masque, compétence N1 « Se ventiler » ; curseurs repris de data/mft_data.json, rédigés pour le site). */ -}}
+{{- /* Schéma « échelle de difficulté » : un escalier où l’on tourne un seul curseur à chaque marche
+       (exemple : vidage de masque, compétence N1 « Se ventiler » ; curseurs repris de data/mft_data.json, rédigés pour le site). */ -}}
 {{- $marches := slice
   (dict "n" "1" "t" "Masque entrouvert" "d" "à genoux au fond, à 3 m" "c" "Point de départ")
   (dict "n" "2" "t" "Masque à moitié plein" "d" "à genoux au fond" "c" "Curseur tourné : la quantité d’eau")
@@ -18,5 +18,6 @@
     </li>
     {{- end }}
   </ol>
+  <div class="schema-escalier__remediation" role="note"><strong>Marche trop haute ?</strong> L’élève échoue : n’insiste pas. Redescends d’une marche, ou coupe la marche en deux en adaptant l’objectif. C’est la remédiation.</div>
   <figcaption>Un seul curseur change d’une marche à l’autre : si l’élève bloque, tu sais exactement ce qui a rendu l’exercice plus difficile.</figcaption>
 </figure>

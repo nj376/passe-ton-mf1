@@ -1,0 +1,21 @@
+{{- /* Exercice « acquis ou prérequis ? » : trois situations de la panne d’air au N1 (MFT N1, décembre 2025 :
+       « Évoluer en sécurité », utilisation de l’octopus du GP et intervention en relais) et les éléments à ranger.
+       Inspiré d’un support de stage initial MF1. Réponse dans {{< pistes >}} sous le schéma. */ -}}
+{{- $situations := slice
+  "Recevoir de l’air de l’octopus du moniteur, posé sur un fond de 2 m."
+  "Aller chercher de l’air en déplacement, jusqu’à l’octopus du moniteur."
+  "Donner de l’air à un équipier, en équilibre à 2 m (intervention en relais)."
+-}}
+{{- $elements := slice "S’équiper" "Se propulser" "Lâcher et reprise d’embout" "S’immerger" "Apnée expiratoire" "Équilibre (gilet, poumon ballast)" "Propulsion et ventilation" "Présenter son octopus" "Recevoir de l’air" -}}
+<figure class="ress-schema">
+  <ol class="schema-etapes-liste">
+    {{- range $i, $s := $situations }}
+    <li><span class="schema-apprendre__num" aria-hidden="true">{{ add $i 1 }}</span> {{ $s }}</li>
+    {{- end }}
+  </ol>
+  <span class="tri-acquis__titre">Les éléments à ranger</span>
+  <ul class="tri-acquis">
+    {{- range $elements }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  <figcaption>Pour chaque situation, range chaque élément utile : est-ce un acquis (l’élève le sait déjà faire, et ça aide) ou un prérequis (sans lui, l’exercice est impossible ou dangereux) ?</figcaption>
+</figure>

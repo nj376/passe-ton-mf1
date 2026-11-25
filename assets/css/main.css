@@ -2724,3 +2724,35 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .fac__intitule { font-size: 15px; letter-spacing: .08em; }
   .ress-fiche .fac__technique tbody th { width: 40%; }
 }
+
+/* =================================================================
+   Ressources : Concevoir une progression
+   - schema-apprendre : démonstration, initiation, perfectionnement, maîtrise (schéma etapes-apprentissage)
+   - schema-escalier__remediation : note « marche trop haute » sous l’escalier de difficulté
+   - tri-acquis : liste d’éléments à ranger (exercice acquis ou prérequis)
+   ================================================================= */
+.ress-fiche .schema-apprendre { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.schema-apprendre__etape { position: relative; margin: 0; padding: 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); border-top: 4px solid var(--bleu); display: flex; flex-direction: column; gap: 6px; }
+.schema-apprendre__etape:nth-child(4) { border-top-color: var(--vert); }
+.schema-apprendre__etape + .schema-apprendre__etape::before { content: "→"; position: absolute; left: -19px; top: 50%; transform: translateY(-50%); color: var(--bleu-courbe); font-weight: 700; font-size: 16px; }
+.schema-apprendre__num { width: 24px; height: 24px; border-radius: 50%; background: var(--bleu); color: var(--blanc); font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+.schema-apprendre__etape:nth-child(4) .schema-apprendre__num { background: var(--vert); }
+.schema-apprendre__titre { font-size: 15.5px; color: var(--texte); }
+.ress-fiche .schema-apprendre__liste { margin: 0; padding-left: 16px; font-size: 13.5px; line-height: 1.45; color: var(--texte-2); }
+.ress-fiche .schema-apprendre__liste li { margin: 0 0 3px; }
+.schema-apprendre__boucles { margin-top: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.schema-apprendre__boucle { padding: 10px 14px; border-radius: 10px; display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.45; color: var(--texte-2); }
+.schema-apprendre__boucle strong { color: var(--texte); }
+.schema-apprendre__boucle--eval { background: var(--bleu-clair); border: 1px dashed var(--bleu-courbe); }
+.schema-apprendre__boucle--remed { background: var(--orange-fond); border: 1px dashed var(--orange-bordure); }
+.schema-escalier__remediation { margin-top: 14px; padding: 10px 14px; border-radius: 10px; background: var(--orange-fond); border: 1px dashed var(--orange-bordure); font-size: 14px; line-height: 1.5; color: var(--orange-texte); }
+.ress-fiche .tri-acquis { margin: 6px 0 14px; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; max-width: none; }
+.ress-fiche .tri-acquis li { margin: 0; padding: 4px 12px; border-radius: 999px; background: var(--blanc); border: 1px solid var(--bordure-bouton); font-size: 14px; color: var(--texte-2); }
+@media (max-width: 900px) {
+  .ress-fiche .schema-apprendre { grid-template-columns: 1fr; gap: 20px; }
+  .schema-apprendre__etape + .schema-apprendre__etape::before { content: "↓"; left: 50%; top: -20px; transform: translateX(-50%); line-height: 1; }
+  .schema-apprendre__boucles { grid-template-columns: 1fr; }
+}
+.ress-fiche .schema-etapes-liste { margin: 0 0 14px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; max-width: none; }
+.ress-fiche .schema-etapes-liste li { margin: 0; display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); font-size: 15px; color: var(--texte); }
+.tri-acquis__titre { display: block; font-size: 12.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--texte-4); }

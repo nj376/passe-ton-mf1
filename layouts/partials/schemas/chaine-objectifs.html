@@ -1,10 +1,28 @@
-{{- /* Schéma « des prérogatives à l’objectif de séance » : qui fixe quoi, avec l’exemple du vidage de masque au N1. */ -}}
-{{- $niveaux := slice
-  (dict "qui" "Code du sport" "t" "Les prérogatives" "d" "Ce que le plongeur aura le droit de faire." "ex" "N1 : plongeur encadré jusqu’à 20 m.")
-  (dict "qui" "MFT" "t" "La compétence = objectif final" "d" "Ce qu’il doit savoir faire pour exercer ses prérogatives." "ex" "« Se ventiler » : réagir sereinement à une entrée d’eau dans le masque.")
-  (dict "qui" "MFT" "t" "Les capacités = objectifs intermédiaires" "d" "Les savoir-faire qui, ensemble, font la compétence." "ex" "Vider son masque, lâcher et reprendre l’embout, ventiler sur tuba.")
-  (dict "qui" "Toi" "t" "Les objectifs de séance" "d" "Les étapes que tu choisis : c’est ta liberté pédagogique." "ex" "Séance 1 : vider un masque entrouvert, à genoux, à 3 m.")
+{{- /* Schéma « des prérogatives à l’exercice » : qui fixe quoi, du Code du sport à l’exercice du jour.
+       Deux exemples au choix : {{< schema "chaine-objectifs" >}} (vidage de masque, MFT N1, décembre 2025)
+       ou {{< schema "chaine-objectifs" "pa20" >}} (orientation au compas, MFT N2, compétence PA20, mai 2026). */ -}}
+{{- $ex := .Get 1 | default "n1" }}
+{{- $niveaux := slice }}
+{{- $legende := "" }}
+{{- if eq $ex "pa20" }}
+{{- $niveaux = slice
+  (dict "qui" "Code du sport" "t" "Les prérogatives" "d" "Ce que le plongeur aura le droit de faire." "ex" "PA20 : plongeur autonome jusqu’à 20 m, avec un ou deux équipiers.")
+  (dict "qui" "MFT" "t" "La compétence = objectif final" "d" "Ce qu’il doit savoir faire pour exercer ses prérogatives." "ex" "« Planifier la plongée en fonction des consignes du DP ».")
+  (dict "qui" "MFT" "t" "Les capacités = objectifs intermédiaires" "d" "Les savoir-faire qui, ensemble, font la compétence." "ex" "« Compréhension de la topologie du site de plongée, orientation » : repères, utilisation d’un compas.")
+  (dict "qui" "Toi" "t" "L’objectif de séance" "d" "L’étape que tu choisis : c’est ta liberté pédagogique." "ex" "« Aujourd’hui, tu vas apprendre à t’orienter avec ton compas. »")
+  (dict "qui" "Toi" "t" "L’exercice, avec son critère" "d" "Ce que l’élève fait dans l’eau, et à quoi tu vois qu’il a réussi." "ex" "« Tu nous ramènes au point de départ » : aller-retour au compas sur 25 m, stabilisé à 10 m.")
 -}}
+{{- $legende = "l’exemple du PA20 et de l’orientation (MFT N2, version mai 2026). Le MFT évalue un aller-retour au compas sur une distance courte, de 20 à 30 m." }}
+{{- else }}
+{{- $niveaux = slice
+  (dict "qui" "Code du sport" "t" "Les prérogatives" "d" "Ce que le plongeur aura le droit de faire." "ex" "N1 : plongeur encadré jusqu’à 20 m.")
+  (dict "qui" "MFT" "t" "La compétence = objectif final" "d" "Ce qu’il doit savoir faire pour exercer ses prérogatives." "ex" "« Se ventiler » : réagir sereinement à une entrée d’eau dans le masque.")
+  (dict "qui" "MFT" "t" "Les capacités = objectifs intermédiaires" "d" "Les savoir-faire qui, ensemble, font la compétence." "ex" "Vider son masque, lâcher et reprendre l’embout, ventiler sur tuba.")
+  (dict "qui" "Toi" "t" "L’objectif de séance" "d" "L’étape que tu choisis : c’est ta liberté pédagogique." "ex" "« À la fin de la séance, tu sauras vider ton masque en une fois, à genoux au fond. »")
+  (dict "qui" "Toi" "t" "L’exercice, avec son critère" "d" "Ce que l’élève fait dans l’eau, et à quoi tu vois qu’il a réussi." "ex" "Premier exercice : masque entrouvert, à genoux, à 3 m. Réussi quand l’eau est chassée en une seule expiration.")
+-}}
+{{- $legende = "l’exemple du vidage de masque au N1 (MFT N1, version décembre 2025)." }}
+{{- end }}
 <figure class="ress-schema">
   <ol class="schema-chaine">
     {{- range $niveaux }}
@@ -15,5 +33,5 @@
     </li>
     {{- end }}
   </ol>
-  <figcaption>De haut en bas, on passe de ce que le plongeur aura le droit de faire à ce que tu lui fais faire aujourd’hui. Colonne de droite : l’exemple du vidage de masque au N1.</figcaption>
+  <figcaption>De haut en bas, on passe de ce que le plongeur aura le droit de faire à ce que tu lui fais faire aujourd’hui. Colonne de droite : {{ $legende }}</figcaption>
 </figure>
