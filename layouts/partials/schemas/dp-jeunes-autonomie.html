@@ -1,0 +1,20 @@
+{{- /* Schéma « jeunes : les âges clés » : MFT Jeunes plongeurs (juin 2026) et Code du sport, article A322-88 modifié (autonomie des mineurs). */ -}}
+{{- $ages := slice
+  (dict "n" "8" "t" "8 ans" "d" (slice "Premières plongées en scaphandre" "Cursus jeunes plongeurs, jusqu’à 12 ans"))
+  (dict "n" "12" "t" "12 ans" "d" (slice "Accès au Niveau 1" "Jusqu’à 12 ans : une plongée par jour"))
+  (dict "n" "14" "t" "14 ans" "d" (slice "Accès au PE40"))
+  (dict "n" "16" "t" "16 ans" "d" (slice "Autonomie PA-12 et PA-20" "Sur décision du DP"))
+  (dict "n" "17" "t" "17 ans" "d" (slice "Autonomie PA-40" "Sur décision du DP"))
+  (dict "n" "18" "t" "18 ans" "d" (slice "Autonomie PA-60, réservée aux majeurs"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-etapes">
+    {{- range $ages }}
+    <li class="schema-etapes__etape">
+      <span class="schema-etapes__tete"><span class="schema-etapes__num" aria-hidden="true">{{ .n }}</span>{{ .t }}</span>
+      <ul class="schema-etapes__points">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Les âges s’entendent à la date anniversaire. Pour les mineurs, l’autonomie se limite à l’air et au nitrox.</figcaption>
+</figure>

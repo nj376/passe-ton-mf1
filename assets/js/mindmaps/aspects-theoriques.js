@@ -1,6 +1,6 @@
 /* Données de la mindmap « aspects-theoriques » (page /capacitaire/aspects-theoriques/), reprises du fichier d’origine mindmaps-mf1/aspects-theoriques.html (version du 24/11/2026).
    Seule la typographie a été adaptée (apostrophes, espaces insécables). Champ facultatif « fiche » : bouton « Voir la fiche didactique »
-   vers la collection Théorie (branches Flottabilité et Compressibilité des gaz). */
+   vers la collection Théorie (branches Flottabilité, Compressibilité des gaz, Pressions partielles, Optique et Acoustique) ; la branche Directeur de plongée pointe vers la fiche Ressources « Le rôle du Directeur de Plongée ». */
 const PAGE={
 title:"Aspects théoriques de l’activité",
 root:"Théorie de l’activité",
@@ -42,48 +42,48 @@ tip:"Les sujets restent simples : un calcul de poids apparent, un volume de par
 "Exemple":["Bloc gonflé à 230 bar à 50 °C, refroidi à 15 °C : 230 × 288 ÷ 323 ≈ 205 bar.","Inversement, un bloc laissé au soleil voit sa pression monter."]},
 tip:"Oublier de passer en kelvins est l’erreur la plus fréquente."}]},
 {id:"pp",name:"Pressions partielles",law:"Loi de Dalton",items:[
-{id:"dalton",name:"Loi de Dalton",alt:"Pp = Pabs × fraction",tags:["Air : 21 % O2, 79 % N2"],s:{
+{id:"dalton",fiche:"/theorie/pressions-partielles/#dalton",name:"Loi de Dalton",alt:"Pp = Pabs × fraction",tags:["Air : 21 % O2, 79 % N2"],s:{
 "Énoncé":["La pression d’un mélange est la somme des pressions partielles de ses gaz ; chaque Pp = Pabs × fraction du gaz."],
 "Exemple":["À 30 m à l’air : PpO2 = 4 × 0,21 = 0,84 bar ; PpN2 = 4 × 0,79 = 3,16 bar."]}},
-{id:"limites-toxicite",name:"Seuils de toxicité",alt:"O2 et N2 selon la profondeur",tags:["PpO2 1,6","PpN2 ≈ 3,2"],s:{
+{id:"limites-toxicite",fiche:"/theorie/pressions-partielles/#limites-toxicite",name:"Seuils de toxicité",alt:"O2 et N2 selon la profondeur",tags:["PpO2 1,6","PpN2 ≈ 3,2"],s:{
 "Oxygène":["Hypoxie sous environ 0,16 à 0,17 bar.","Hyperoxie neurologique au-delà de 1,6 bar : atteint vers 66 m à l’air."],
 "Azote":["Narcose sensible vers 3,2 bar de PpN2, soit environ 30 m à l’air, puis croissante.","La limite réglementaire de 60 m à l’air correspond à une PpN2 d’environ 5,5 bar."]},
 tip:"Le programme écarte les mélanges autres que l’air : les calculs portent sur l’air seul."},
-{id:"gonflage",name:"Gonflage et qualité de l’air",alt:"Polluants sous pression",tags:["CO, huile, eau"],s:{
+{id:"gonflage",fiche:"/theorie/pressions-partielles/#gonflage",name:"Gonflage et qualité de l’air",alt:"Polluants sous pression",tags:["CO, huile, eau"],s:{
 "Principe":["Un polluant agit selon sa pression partielle : sa toxicité est multipliée par la Pabs.","Exemple : une concentration de CO tolérable en surface devient 5 fois plus agressive à 40 m."],
 "Prévention":["Prise d’air du compresseur à l’abri des gaz d’échappement.","Filtres et purges entretenus, contrôle régulier de la qualité de l’air (norme EN 12021)."]}}]},
 {id:"optique",name:"Optique",law:"Lumière sous l’eau",items:[
-{id:"absorption",name:"Absorption des couleurs",alt:"Le rouge part en premier",tags:["Profondeur et distance"],s:{
+{id:"absorption",fiche:"/theorie/optique/#absorption",name:"Absorption des couleurs",alt:"Le rouge part en premier",tags:["Profondeur et distance"],s:{
 "Ordre de disparition":["Rouge dès les premiers mètres (vers 5 m), puis orange, puis jaune vers 20 à 30 m.","Il reste surtout du bleu et du vert en profondeur."],
 "Conséquences":["Le sang paraît vert ou noir en profondeur.","Une lampe restitue les couleurs à courte distance.","L’eau absorbe aussi sur la distance horizontale."]}},
-{id:"refraction",name:"Réfraction",alt:"Le masque déforme",tags:["Plus gros, plus proche"],s:{
+{id:"refraction",fiche:"/theorie/optique/#refraction",name:"Réfraction",alt:"Le masque déforme",tags:["Plus gros, plus proche"],s:{
 "Principe":["La lumière change de direction en passant de l’eau (indice 1,33) à l’air du masque (indice 1)."],
 "Conséquences":["Les objets paraissent environ un tiers plus gros et un quart plus proches.","Erreurs d’estimation des distances, surtout chez les débutants."]}},
-{id:"reflexion",name:"Réflexion et diffusion",alt:"Jour et nuit",tags:["Effet miroir"],s:{
+{id:"reflexion",fiche:"/theorie/optique/#reflexion",name:"Réflexion et diffusion",alt:"Jour et nuit",tags:["Effet miroir"],s:{
 "De jour":["Vue d’en dessous, la surface agit comme un miroir au-delà d’un certain angle (réflexion totale) : on ne voit le ciel que dans une fenêtre au-dessus de soi.","Les particules diffusent la lumière : eau trouble, contraste réduit."],
 "De nuit":["Le faisceau du phare se réfléchit sur les particules : tenir la lampe écartée des yeux.","Signes lumineux codifiés, lampe de secours, repère lumineux sur le bateau."]}},
-{id:"champ-visuel",name:"Champ visuel",alt:"Rétréci par le masque",tags:["Vigilance palanquée"],s:{
+{id:"champ-visuel",fiche:"/theorie/optique/#champ-visuel",name:"Champ visuel",alt:"Rétréci par le masque",tags:["Vigilance palanquée"],s:{
 "Conséquences":["Le masque et la réfraction réduisent le champ de vision, surtout latéral et vers le bas.","Le guide doit tourner la tête pour surveiller sa palanquée ; positionner les élèves dans son champ."]},
 tip:"Pas de calcul ni de trigonométrie en optique : on attend des explications et leurs conséquences pratiques."}]},
 {id:"acoustique",name:"Acoustique",law:"Son dans l’eau",items:[
-{id:"vitesse-son",name:"Vitesse du son",alt:"Environ 4,5 fois plus rapide",tags:["340 m/s","1 500 m/s"],s:{
+{id:"vitesse-son",fiche:"/theorie/acoustique/#vitesse-son",name:"Vitesse du son",alt:"Environ 4,5 fois plus rapide",tags:["340 m/s","1 500 m/s"],s:{
 "Chiffres":["Dans l’air : environ 340 m/s. Dans l’eau : environ 1 500 m/s."],
 "Exemple de calcul":["Un bateau à 300 m : le son arrive en 0,2 s sous l’eau, contre près de 0,9 s dans l’air."]}},
-{id:"localisation",name:"Conséquences en plongée",alt:"On entend sans localiser",tags:["Danger bateau"],s:{
+{id:"localisation",fiche:"/theorie/acoustique/#localisation",name:"Conséquences en plongée",alt:"On entend sans localiser",tags:["Danger bateau"],s:{
 "Pourquoi":["L’oreille localise grâce au décalage d’arrivée entre les deux oreilles ; sous l’eau ce décalage devient trop faible.","Sous l’eau, le son passe surtout par conduction osseuse."],
 "Conséquences":["Un moteur de bateau semble venir de partout : remonter le long du mouillage, parachute, tour d’horizon.","Les signaux sonores (tapoter le bloc, avertisseur) servent à attirer l’attention, pas à guider vers une direction."]}}]},
 {id:"dp",name:"Directeur de plongée",law:"Organisation, études de cas",items:[
-{id:"organisation-dp",name:"Organisation théorique",alt:"Avant, pendant, après",tags:["Fiche de sécurité"],s:{
+{id:"organisation-dp",fiche:"/ressources/role-du-directeur-de-plongee/#organisation",name:"Organisation théorique",alt:"Avant, pendant, après",tags:["Fiche de sécurité"],s:{
 "Avant":["Site, météo, marée, courant, visibilité ; règles locales.","Vérifier aptitudes, CACI, matériel ; constituer les palanquées ; fixer profondeur et durée.","Fiche de sécurité, plan de secours, matériel de secours, briefing."],
 "Pendant":["Surveillance de surface, heures de mise à l’eau et de sortie, sécurité surface.","Gestion des imprévus et décision d’alerte."],
 "Après":["Contrôle des sorties et des paramètres, observation des plongeurs.","Débriefing, archivage de la fiche de sécurité."]}},
-{id:"plongee-jeunes",name:"Plongée avec des jeunes",alt:"Plongée particulière",tags:["Mineurs"],s:{
+{id:"plongee-jeunes",fiche:"/ressources/role-du-directeur-de-plongee/#jeunes",name:"Plongée avec des jeunes",alt:"Plongée particulière",tags:["Mineurs"],s:{
 "Points clés":["Autonomie seulement dès 16 ans (PA-12, PA-20) ou 17 ans (PA-40), sur décision du DP ; profondeurs et durées adaptées à l’âge et au brevet.","Matériel à leur taille, protection thermique renforcée, plongées courtes.","Encadrant habitué aux enfants, consignes simples, attention à la fatigue."]}},
-{id:"plongee-nuit",name:"Plongée de nuit",alt:"Plongée particulière",tags:["Phare + secours"],s:{
+{id:"plongee-nuit",fiche:"/ressources/role-du-directeur-de-plongee/#nuit",name:"Plongée de nuit",alt:"Plongée particulière",tags:["Phare + secours"],s:{
 "Points clés":["Site connu, idéalement reconnu de jour ; conditions calmes.","Chaque plongeur a un phare principal et une lampe de secours ; repère lumineux sur le bateau ou la sortie.","Briefing des signes lumineux, palanquées réduites, durée et profondeur prudentes."]}},
-{id:"plongee-derivante",name:"Plongée dérivante",alt:"Plongée particulière",tags:["Bateau suiveur"],s:{
+{id:"plongee-derivante",fiche:"/ressources/role-du-directeur-de-plongee/#derivante",name:"Plongée dérivante",alt:"Plongée particulière",tags:["Bateau suiveur"],s:{
 "Points clés":["Mise à l’eau groupée et descente rapide, pas de mouillage.","Un parachute par palanquée au minimum, à sortir pour la remontée ; le pilote suit les bulles.","Plongeurs expérimentés, briefing sur la séparation et la récupération."]}},
-{id:"etude-cas-dp",name:"Méthode d’étude de cas",alt:"Comment répondre",tags:["Justifier"],s:{
+{id:"etude-cas-dp",fiche:"/ressources/role-du-directeur-de-plongee/#etude-de-cas",name:"Méthode d’étude de cas",alt:"Comment répondre",tags:["Justifier"],s:{
 "Démarche":["Relever niveaux, âges, aptitudes, conditions et contraintes du sujet.","Appliquer les tableaux du Code du sport et les règles fédérales.","Proposer des palanquées, profondeurs et durées, puis justifier chaque choix.","Prévoir la sécurité : secours, consignes, plan B."]},
 tip:"Une réponse juste mais non justifiée rapporte peu : cite la règle qui fonde chaque décision."}]}
 ],

@@ -45,6 +45,8 @@ Au capacitaire, l’écrit 2 demande des problèmes « dont les données chiffr
 
 La même loi explique pourquoi la combinaison s’écrase et le gilet se vide en descendant : ses effets sur l’équilibre du plongeur sont détaillés dans la fiche [Flottabilité](/theorie/flottabilite/#lestage).
 
+La pression absolue sert aussi à calculer la pression de chaque gaz que tu respires : c’est la loi de Dalton, dans la fiche [Pressions partielles](/theorie/pressions-partielles/#dalton).
+
 [L’enseigner →](#enseigner-mariotte)
 
 ### La consommation et l’autonomie {#consommation}
@@ -75,6 +77,8 @@ Pour le plongeur, cela change deux choses :
 
 - **respirer demande plus d’effort** : un air plus dense s’écoule moins facilement dans le détendeur et dans les voies respiratoires ;
 - **le risque d’essoufflement augmente** : l’effort pour respirer favorise l’accumulation de gaz carbonique. Voir l’[essoufflement](/accidents-de-plongee/#essoufflement) sur la page des accidents.
+
+Avec la narcose et la toxicité de l’oxygène, la densité de l’air est l’une des trois raisons de la limite des 60 m à l’air : voir [Pressions partielles](/theorie/pressions-partielles/#limites-toxicite).
 
 [L’enseigner →](#enseigner-densite)
 

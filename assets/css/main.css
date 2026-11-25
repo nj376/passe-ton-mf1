@@ -2912,3 +2912,57 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .comp-bloc--chaud { fill: #F2B48A; }
 .comp-bloc--froid { fill: #A9C8E6; }
 .comp-robinet { fill: #8FA3B6; stroke: var(--texte-4); stroke-width: 1.5; }
+
+/* Théorie, Pressions partielles : éléments propres aux schémas (le reste reprend les classes « flot- » et « comp- ») */
+.pp-oxygene { fill: #2E8B57; }
+.pp-azote { fill: var(--bleu); }
+.pp-co { fill: #6F7D8A; }
+.flot-grille { stroke: var(--texte-4); stroke-width: 1; }
+.pp-axe { stroke: var(--texte-4); stroke-width: 2; }
+.pp-seuil { stroke-width: 3; stroke-dasharray: 8 5; }
+.pp-seuil--n2 { stroke: var(--bleu-fonce); }
+.pp-seuil--limite { stroke: var(--texte); stroke-dasharray: none; }
+.pp-seuil--o2 { stroke: var(--rouge); }
+.pp-legende::before { content: ""; display: inline-block; width: 14px; height: 14px; margin-right: 6px; vertical-align: -2px; border-radius: 3px; }
+.pp-legende--o2::before { background: #2E8B57; }
+.pp-legende--n2::before { background: var(--bleu); }
+
+/* Théorie, Optique : éléments propres aux schémas (le reste reprend les classes « flot- », « comp- » et « pp- ») */
+.flot-dessin.opt-moyen { max-width: 420px; }
+.opt-eau { fill: #DCEAF6; }
+.opt-rouge { fill: #C8312A; } .opt-orange { fill: #E8822A; } .opt-jaune { fill: #E9C33C; } .opt-vert { fill: #2E8B57; } .opt-bleu { fill: var(--bleu); }
+.opt-flou { opacity: .85; }
+.opt-masque-air { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 1.5; }
+.opt-vitre { stroke: var(--bleu-fonce); stroke-width: 4; }
+.opt-oeil { fill: var(--blanc); stroke: var(--texte); stroke-width: 1.5; }
+.opt-reel { fill: #F2C14E; stroke: #A87A12; stroke-width: 1.5; }
+.opt-apparent { fill: none; stroke: #A87A12; stroke-width: 2; stroke-dasharray: 5 4; }
+.opt-rayon { stroke: #E9A23B; stroke-width: 2.5; }
+.opt-rayon-virtuel { stroke: #E9A23B; stroke-width: 2; stroke-dasharray: 4 4; }
+.opt-fenetre { fill: #FFFFFF; opacity: .7; stroke: var(--bleu-courbe); stroke-width: 1.5; }
+.opt-nuit { fill: #13212E; }
+.opt-particule { fill: #C8D3DE; }
+.opt-lampe { fill: #E9C33C; }
+.opt-faisceau { fill: #F3D46B; opacity: .35; }
+.opt-cible { fill: #E8822A; }
+.opt-champ { fill: #F3D46B; opacity: .55; stroke: #C9A227; stroke-width: 1.5; }
+.opt-txt-nuit { font-size: 13px; fill: #F4F2EA; font-family: var(--police); }
+
+/* Théorie, Acoustique : éléments propres aux schémas */
+.aco-air { fill: #F4F7FA; }
+.aco-trajet { stroke: var(--texte-4); stroke-width: 2; stroke-dasharray: 6 5; }
+.aco-onde { fill: none; stroke: #E8822A; stroke-width: 2; opacity: .8; }
+.aco-onde--eau { stroke: var(--bleu); }
+.aco-oreille { fill: #E7B998; stroke: var(--texte-4); stroke-width: 1.2; }
+.aco-bateau { fill: var(--blanc); stroke: var(--texte); stroke-width: 2; }
+.aco-bateau--autre { fill: #F2B48A; }
+.aco-mouillage { stroke: var(--texte-4); stroke-width: 2; }
+.aco-bras { stroke: #E7B998; stroke-width: 5; stroke-linecap: round; }
+
+/* Fiche DP, plongées particulières : éléments propres aux schémas nuit et dérivante */
+.dp-feu { fill: #F3D46B; }
+.dp-secours { fill: #F4F2EA; }
+.dp-courant { stroke: var(--bleu-fonce); stroke-width: 2.5; stroke-dasharray: 10 6; }
+.dp-courant-tete { fill: var(--bleu-fonce); }
+.dp-parachute { fill: #E8822A; stroke: #B85A12; stroke-width: 1.5; }
+.dp-bulle { fill: none; stroke: var(--bleu); stroke-width: 1.5; }

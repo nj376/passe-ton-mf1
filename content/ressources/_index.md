@@ -33,7 +33,7 @@ groupes:
     intro: "Des fiches théoriques complètes, une par branche des mindmaps du capacitaire : comprendre la notion, réussir les calculs, et surtout savoir l’enseigner à tes élèves."
     cartes:
       - titre: "Comprendre et enseigner la théorie"
-        resume: "Flottabilité, puis compressibilité des gaz : comprendre la notion, réussir les calculs du capacitaire, et savoir l’enseigner, du N1 au GP-N4."
+        resume: "Flottabilité, compressibilité des gaz, pressions partielles, optique, acoustique : comprendre la notion, réussir l’écrit du capacitaire, et savoir l’enseigner, du N1 au GP-N4."
         url: "/theorie/"
         epreuves: ["theorique"]
 ---

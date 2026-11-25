@@ -1,0 +1,18 @@
+{{- /* Schéma « méthode d’étude de cas » : les quatre étapes de la mini-fiche de la mindmap (branche Directeur de plongée), développées pour la fiche DP. */ -}}
+{{- $etapes := slice
+  (dict "n" "1" "t" "Relever" "d" (slice "Niveaux, aptitudes, âges des plongeurs" "Encadrants disponibles" "Site, conditions, contraintes du sujet"))
+  (dict "n" "2" "t" "Appliquer la règle" "d" (slice "Tableaux du Code du sport" "Règles fédérales du MFT" "Règles locales"))
+  (dict "n" "3" "t" "Proposer et justifier" "d" (slice "Palanquées, profondeurs, durées" "Une règle citée pour chaque choix" "Ce que tu refuses, et pourquoi"))
+  (dict "n" "4" "t" "Sécuriser" "d" (slice "Secours, sécurité surface" "Consignes du briefing" "Un plan B si les conditions changent"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-etapes">
+    {{- range $etapes }}
+    <li class="schema-etapes__etape">
+      <span class="schema-etapes__tete"><span class="schema-etapes__num" aria-hidden="true">{{ .n }}</span>{{ .t }}</span>
+      <ul class="schema-etapes__points">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Une réponse juste mais non justifiée rapporte peu : chaque décision s’appuie sur une règle que tu cites.</figcaption>
+</figure>
