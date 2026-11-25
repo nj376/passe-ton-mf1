@@ -3057,4 +3057,22 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ana-pression-sang { stroke: #8A1C17; stroke-width: 3; stroke-dasharray: 6 4; } .ana-pression-sang-tete { fill: #8A1C17; }
 .ana-oeil { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 1.5; }
 .ana-masque { fill: #2F3E4C; opacity: .85; } .ana-masque-air { fill: #BCD7F2; }
+/* Théorie, écrit 3 : schémas de la fiche Ventilation et essoufflement (même charte « ana- ») */
+.ana-diaphragme { fill: none; stroke: #B5523F; stroke-width: 8; stroke-linecap: round; }
+.ana-cote { fill: none; stroke: #C9B27A; stroke-width: 4; stroke-linecap: round; }
+.ana-spiro { fill: none; stroke: var(--bleu); stroke-width: 3; stroke-linejoin: round; }
+.ana-accolade { fill: none; stroke: var(--texte-4); stroke-width: 2; }
+.ana-zone-vri { fill: #EAF2FB; } .ana-zone-vre { fill: #F3F0E6; }
+.ana-air-vicie { fill: #C9D1D9; } .ana-tuba { fill: none; stroke: #F28C38; stroke-width: 4; }
+.ana-paroi-ac { fill: #F2B9B3; } .ana-sang-clair { fill: #F8DCD8; } .ana-globule { fill: #C8312A; opacity: .85; }
+.ana-o2 { fill: #2E8B57; stroke: #2E8B57; stroke-width: 3; stroke-linecap: round; } .ana-o2-tete { fill: #2E8B57; }
+.ana-co2 { stroke: #B46A1C; stroke-width: 3; stroke-linecap: round; } .ana-co2-tete { fill: #B46A1C; }
+.ana-txt-o2 { fill: #1D5A35; } .ana-txt-co2 { fill: #8A4E12; }
+.ana-taxi { fill: #F2C14E; stroke: #A87A12; stroke-width: 2; } .ana-roue { fill: var(--texte-4); } .ana-co { fill: #3A4A59; }
+.ana-barre-gaz { fill: #BCD7F2; stroke: var(--bleu-fonce); stroke-width: 1.5; } .ana-barre-co2 { fill: #B46A1C; }
+.ana-legende__gaz::before { background: #BCD7F2; height: 12px !important; } .ana-legende__co2::before { background: #B46A1C; height: 12px !important; }
+.ana-barre-mort { fill: #C9D1D9; } .ana-barre-alv { fill: var(--bleu); }
+.ana-legende__mort::before { background: #C9D1D9; height: 12px !important; } .ana-legende__alv::before { background: var(--bleu); height: 12px !important; }
+.ana-cercle { fill: none; stroke: var(--bordure-rouge); stroke-width: 3; stroke-dasharray: 8 6; }
+.ana-boite--alerte { stroke: var(--rouge); }
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

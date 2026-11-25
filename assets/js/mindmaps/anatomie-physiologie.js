@@ -45,22 +45,22 @@ tip:"Savoir expliquer pourquoi un Valsalva forcé peut léser l’oreille intern
 "Dents":["Air piégé sous une carie ou un soin : douleur, plombage descellé.","Prévention : soins dentaires à jour."],
 "Placage de masque":["Le masque fait ventouse à la descente si on n’y souffle pas.","Yeux rouges, pétéchies ; prévention : expirer par le nez."]}}]},
 {id:"essoufflement",name:"Essoufflement",law:"Ventilation, échanges gazeux",items:[
-{id:"appareil-ventilatoire",name:"Appareil ventilatoire",alt:"Voies aériennes et muscles",tags:["Diaphragme"],s:{
+{id:"appareil-ventilatoire",fiche:"/theorie/ventilation-essoufflement/#appareil-ventilatoire",name:"Appareil ventilatoire",alt:"Voies aériennes et muscles",tags:["Diaphragme"],s:{
 "Composants":["Voies aériennes supérieures (nez, bouche, pharynx, larynx) et inférieures (trachée, bronches).","Poumons et plèvre.","Muscles : diaphragme surtout, intercostaux, muscles accessoires à l’effort."]}},
-{id:"mecanique-ventilatoire",name:"Mécanique respiratoire",alt:"Inspiration, expiration, commande",tags:["Chémorécepteurs"],s:{
+{id:"mecanique-ventilatoire",fiche:"/theorie/ventilation-essoufflement/#mecanique-ventilatoire",name:"Mécanique respiratoire",alt:"Inspiration, expiration, commande",tags:["Chémorécepteurs"],s:{
 "Mouvements":["Inspiration active : le diaphragme s’abaisse, le thorax s’agrandit, l’air entre.","Expiration passive au repos, active à l’effort."],
 "Commande":["Centres respiratoires du tronc cérébral.","Les chémorécepteurs réagissent surtout à la hausse du CO2 : c’est lui qui déclenche l’envie de respirer."]}},
-{id:"volumes",name:"Volumes pulmonaires",alt:"Valeurs moyennes d’un adulte",tags:["Espace mort"],s:{
+{id:"volumes",fiche:"/theorie/ventilation-essoufflement/#volumes",name:"Volumes pulmonaires",alt:"Valeurs moyennes d’un adulte",tags:["Espace mort"],s:{
 "Valeurs":["Volume courant : environ 0,5 L.","Volume de réserve inspiratoire : 2,5 à 3 L ; expiratoire : 1 à 1,5 L.","Volume résiduel : environ 1,2 L, il reste toujours dans les poumons.","Capacité vitale : 4 à 5 L ; capacité pulmonaire totale : environ 6 L."],
 "Espace mort":["Air qui ne participe pas aux échanges : environ 150 mL dans les voies aériennes, augmenté par le tuba ou le détendeur.","D’où l’intérêt d’une ventilation lente et ample."]}},
-{id:"echanges-gazeux",name:"Échanges gazeux",alt:"O2, CO2, CO",tags:["Diffusion"],s:{
+{id:"echanges-gazeux",fiche:"/theorie/ventilation-essoufflement/#echanges-gazeux",name:"Échanges gazeux",alt:"O2, CO2, CO",tags:["Diffusion"],s:{
 "Au niveau des alvéoles":["Les gaz diffusent selon les différences de pression partielle entre alvéole et sang."],
 "Transport":["O2 : fixé surtout sur l’hémoglobine des globules rouges.","CO2 : transporté surtout sous forme de bicarbonates, puis rejeté par les poumons.","CO : se fixe sur l’hémoglobine environ 200 à 250 fois plus que l’O2 et bloque le transport d’oxygène."]},
 tip:"Les valeurs de pressions partielles des gaz du sang ne sont pas exigibles."},
-{id:"ventilation-immersion",name:"Ventilation en immersion",alt:"Ce qui change sous l’eau",tags:["Air plus dense"],s:{
+{id:"ventilation-immersion",fiche:"/theorie/ventilation-essoufflement/#ventilation-immersion",name:"Ventilation en immersion",alt:"Ce qui change sous l’eau",tags:["Air plus dense"],s:{
 "Modifications":["Air plus dense en profondeur : résistance accrue dans les voies aériennes et le détendeur.","Pression hydrostatique sur le thorax et le détendeur : travail ventilatoire modifié.","Espace mort augmenté par le matériel."],
 "Adaptation":["Ventiler lentement et profondément, en insistant sur l’expiration."]}},
-{id:"retention-co2",name:"Rétention de CO2",alt:"Le cercle vicieux de l’essoufflement",tags:["Cause, CAT, prévention"],s:{
+{id:"retention-co2",fiche:"/theorie/ventilation-essoufflement/#retention-co2",name:"Rétention de CO2",alt:"Le cercle vicieux de l’essoufflement",tags:["Cause, CAT, prévention"],s:{
 "Mécanisme":["Effort, froid, stress, matériel inadapté : ventilation rapide et superficielle, le CO2 s’accumule.","Le CO2 accélère la respiration, qui devient encore moins efficace : cercle vicieux."],
 "Signes":["Respiration rapide, sensation de manque d’air, angoisse, panique ; céphalées après la plongée."],
 "Conduite à tenir":["Stopper l’effort, tenir le plongeur, le faire expirer à fond, remonter de quelques mètres, fin de plongée."],

@@ -50,4 +50,9 @@ groupes:
             url: "/theorie/barotraumatismes/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Ventilation et essoufflement"
+            resume: "Mécanique et commande de la respiration, volumes et espace mort, échanges gazeux, ventilation en immersion, cercle vicieux du CO2 : comprendre l’essoufflement, faire les calculs, et apprendre à tes élèves à le casser."
+            url: "/theorie/ventilation-essoufflement/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---
