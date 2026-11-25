@@ -3025,4 +3025,36 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ana-legende__peri::before { background: #C3AEE0; height: 12px !important; width: 18px; }
 .ana-legende__endo::before { background: #DCD3F0; height: 12px !important; width: 18px; border: 1px solid #B9A8DA; }
 .ana-legende__pression::before { background: var(--rouge); }
+/* Théorie, écrit 3 : schémas de la fiche Les barotraumatismes (même charte « ana- ») */
+.ana-dessin--etroit { max-width: 420px; }
+.ana-pastille-num--xs { font-size: 11px; } .ana-pastille-num--xl { font-size: 44px; }
+.ana-poumon { fill: #F2B9B3; } .ana-poumon-fonce { fill: #E9A39C; } .ana-poumon-clair { fill: #F8D3CE; } .ana-poumon-trait { stroke: #C77B86; }
+.ana-poumon-forme { fill: #F2B9B3; stroke: #C77B86; stroke-width: 2; }
+.ana-bronche { fill: #7FA9DA; } .ana-bronche-trait { stroke: #5B86BE; } .ana-reflet-trait { stroke: var(--blanc); }
+.ana-muscle-clair { fill: #D9826A; } .ana-conjonctif { fill: #EEF1F4; }
+.ana-glande { fill: #E8A04B; } .ana-glande-trait { stroke: #B46A1C; }
+.ana-sang { fill: #C8312A; } .ana-sang-fonce { fill: #8A1C17; } .ana-veine { fill: #2E5E9E; } .ana-veine-fonce { fill: #1D3D6B; } .ana-veine-trait { stroke: #1D3D6B; }
+.ana-capillaire { fill: none; stroke: #C8312A; stroke-width: 8; stroke-linecap: round; opacity: .55; }
+.ana-alveole { fill: #F8D3CE; stroke: #C77B86; stroke-width: 3; }
+.ana-dechirure { fill: none; stroke: var(--rouge); stroke-width: 3; stroke-linejoin: round; }
+.ana-coeur { fill: #C8312A; opacity: .75; }
+.ana-rupture { fill: var(--rouge); stroke: var(--blanc); stroke-width: 2; }
+.ana-visage-trait { fill: none; stroke: #C99A78; stroke-width: 4; stroke-linecap: round; }
+.ana-muqueuse { fill: #E9A79B; stroke: #E9A79B; stroke-width: 12; stroke-linejoin: round; }
+.ana-muqueuse--fine { stroke-width: 0; } .ana-muqueuse--epaisse { stroke: #D9826A; fill: #D9826A; stroke-width: 6; }
+.ana-sinus { fill: #9CC4EB; stroke: var(--bleu-fonce); stroke-width: 2; }
+.ana-fosse { fill: #BCD7F2; stroke: var(--bleu-fonce); stroke-width: 2; }
+.ana-cornet { fill: none; stroke: #C9705F; stroke-width: 6; stroke-linecap: round; }
+.ana-ostium { fill: none; stroke: var(--bleu-fonce); stroke-width: 6; stroke-linecap: round; }
+.ana-os--plein { fill: #EADDB3; }
+.ana-gencive { fill: #E9A0B0; }
+.ana-dentine { fill: #F7EBD5; } .ana-email { fill: var(--blanc); } .ana-pulpe { fill: #D9758C; }
+.ana-vaisseau-pulpe { fill: none; stroke: #8A1C17; stroke-width: 10; stroke-linecap: round; opacity: .6; }
+.ana-contour-dent { fill: none; stroke: var(--texte-4); stroke-width: 6; }
+.ana-plombage { fill: #8A96A3; stroke: var(--texte-4); stroke-width: 6; }
+.ana-bulle-air { fill: #9CC4EB; stroke: var(--bleu-fonce); stroke-width: 6; }
+.ana-artere { fill: none; stroke: #C8312A; stroke-width: 5; stroke-linecap: round; opacity: .7; }
+.ana-pression-sang { stroke: #8A1C17; stroke-width: 3; stroke-dasharray: 6 4; } .ana-pression-sang-tete { fill: #8A1C17; }
+.ana-oeil { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 1.5; }
+.ana-masque { fill: #2F3E4C; opacity: .85; } .ana-masque-air { fill: #BCD7F2; }
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

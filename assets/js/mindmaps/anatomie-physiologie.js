@@ -28,20 +28,20 @@ cats:[
 "Les techniques":["Valsalva : expirer nez pincé, la plus connue mais la plus agressive si on force.","BTV (béance tubaire volontaire) : ouvrir les trompes par contraction musculaire, sans pression.","Frenzel : pousser l’air avec la langue, glotte fermée.","Toynbee : déglutir nez pincé."]},
 tip:"Savoir expliquer pourquoi un Valsalva forcé peut léser l’oreille interne est un grand classique."}]},
 {id:"baro",name:"Barotraumatismes",law:"Poumons, sinus, dents, masque",items:[
-{id:"anatomie-poumon",name:"Anatomie des poumons",alt:"Voies aériennes et alvéoles",tags:["~300 millions d’alvéoles"],s:{
+{id:"anatomie-poumon",fiche:"/theorie/barotraumatismes/#anatomie-poumon",name:"Anatomie des poumons",alt:"Voies aériennes et alvéoles",tags:["~300 millions d’alvéoles"],s:{
 "Structure":["Trachée, bronches, bronchioles, puis alvéoles au contact des capillaires.","Surface d’échange de l’ordre de 70 à 100 m².","Les poumons sont enveloppés par la plèvre, qui les solidarise à la cage thoracique."]}},
-{id:"surpression",name:"Surpression pulmonaire",alt:"Barotraumatisme pulmonaire",tags:["Remontée","Caisson"],s:{
+{id:"surpression",fiche:"/theorie/barotraumatismes/#surpression",name:"Surpression pulmonaire",alt:"Barotraumatisme pulmonaire",tags:["Remontée","Caisson"],s:{
 "Mécanisme":["À la remontée, l’air pulmonaire se dilate ; si l’expiration est bloquée, les alvéoles se distendent et se déchirent.","L’air gagne la plèvre, le médiastin, la peau ou les artères (embolie gazeuse)."],
 "Signes":["Douleur thoracique, toux, crachats sanglants mousseux, gêne respiratoire.","Emphysème sous-cutané, voix modifiée, pneumothorax.","Embolie : troubles neurologiques, perte de connaissance."],
 "Conduite à tenir":["O2 15 L/min, position adaptée, alerte, évacuation vers un caisson, jamais de réimmersion."],
 "Prévention":["Expirer pendant toute la remontée, vitesse maîtrisée, encadrement rigoureux des exercices de remontée."]}},
-{id:"anatomie-sinus",name:"Anatomie des sinus",alt:"Cavités de la face",tags:["Ostium"],s:{
+{id:"anatomie-sinus",fiche:"/theorie/barotraumatismes/#anatomie-sinus",name:"Anatomie des sinus",alt:"Cavités de la face",tags:["Ostium"],s:{
 "Structure":["Sinus frontaux, maxillaires, ethmoïdaux et sphénoïdaux : cavités osseuses aériques.","Ils communiquent avec les fosses nasales par de fins canaux (ostiums)."]}},
-{id:"baro-sinus",name:"Barotraumatisme des sinus",alt:"Blocage à la descente ou à la remontée",tags:["Rhume"],s:{
+{id:"baro-sinus",fiche:"/theorie/barotraumatismes/#baro-sinus",name:"Barotraumatisme des sinus",alt:"Blocage à la descente ou à la remontée",tags:["Rhume"],s:{
 "Mécanisme":["Ostium bouché (rhume, sinusite, polype) : dépression à la descente, surpression à la remontée."],
 "Signes":["Douleur frontale ou maxillaire, saignement de nez."],
 "Conduite et prévention":["Stopper, remonter un peu, fin de plongée si persistant, avis ORL.","Ne pas plonger enrhumé."]}},
-{id:"baro-dents-masque",name:"Dents et masque",alt:"Barodontalgie, placage",tags:["Bénins"],s:{
+{id:"baro-dents-masque",fiche:"/theorie/barotraumatismes/#baro-dents-masque",name:"Dents et masque",alt:"Barodontalgie, placage",tags:["Bénins"],s:{
 "Dents":["Air piégé sous une carie ou un soin : douleur, plombage descellé.","Prévention : soins dentaires à jour."],
 "Placage de masque":["Le masque fait ventouse à la descente si on n’y souffle pas.","Yeux rouges, pétéchies ; prévention : expirer par le nez."]}}]},
 {id:"essoufflement",name:"Essoufflement",law:"Ventilation, échanges gazeux",items:[

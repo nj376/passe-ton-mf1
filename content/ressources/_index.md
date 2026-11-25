@@ -45,4 +45,9 @@ groupes:
             url: "/theorie/oreille/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Les barotraumatismes"
+            resume: "Anatomie des poumons et des sinus, surpression pulmonaire, sinus, dents et masque : comprendre pourquoi chaque poche d’air se blesse, et apprendre à tes élèves à ne jamais bloquer leur respiration en remontant."
+            url: "/theorie/barotraumatismes/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---
