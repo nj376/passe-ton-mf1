@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{- /* Accueil (maquette maquette-accueil.html, textes : brief-page-accueil.md). Cinq zones, fonds alternés, conteneur de 1080 px :
-       accroche, pourquoi, par où commencer, confiance, parcours (frise : data/parcours.yaml). Styles : classes « accueil- » et « frise- ». */ -}}
+{{- /* Accueil (maquette maquette-accueil.html, textes : brief-page-accueil.md). Six zones, fonds alternés, conteneur de 1080 px :
+       accroche, pourquoi, par où commencer, confiance, parcours (frise : data/parcours.yaml), fiches (sections de la page Ressources). Styles : classes « accueil- » et « frise- ». */ -}}
 {{- $P := site.Data.parcours -}}
 {{- $fleche := `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>` | safeHTML -}}
 
@@ -49,15 +49,25 @@
           <li><a href="{{ "/s-entrainer/" | relURL }}"><span>Tirer un thème et préparer une séance en 30 min</span>{{ $fleche }}</a></li>
           <li><a href="{{ "/progression/" | relURL }}"><span>Construire une progression, technique par technique</span>{{ $fleche }}</a></li>
           <li><a href="{{ "/reviser/" | relURL }}"><span>Réviser avec les flashcards et la recherche chronométrée</span>{{ $fleche }}</a></li>
-          <li><a href="{{ "/ressources/" | relURL }}"><span>Les fiches pratiques</span>{{ $fleche }}</a></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-{{/* Zone 4 : confiance, grille 2 × 2 */}}
-<section id="confiance" class="accueil-zone" aria-labelledby="confiance-titre">
+{{/* Zone 4 : les fiches Ressources (introduction et lien vers la page) */}}
+<section id="fiches" class="accueil-zone" aria-labelledby="fiches-titre">
+  <div class="accueil-conteneur accueil-pile">
+    <div class="accueil-entete">
+      <h2 id="fiches-titre" class="accueil-h2">Les fiches pour t’aider</h2>
+      <p class="accueil-intro">{{ partial "typo.html" "Une vingtaine de fiches pour comprendre le MFT, concevoir tes séances et préparer tes épreuves." }}</p>
+    </div>
+    <a class="bouton-contour accueil-bouton accueil-fiches__tout" href="{{ "/ressources/" | relURL }}">Voir toutes les fiches</a>
+  </div>
+</section>
+
+{{/* Zone 5 : confiance, grille 2 × 2 */}}
+<section id="confiance" class="accueil-zone accueil-zone--pale" aria-labelledby="confiance-titre">
   <div class="accueil-conteneur accueil-pile">
     <h2 id="confiance-titre" class="accueil-h2">Puis-je faire confiance à ce site ?</h2>
     <div class="accueil-confiance">
@@ -82,8 +92,8 @@
   </div>
 </section>
 
-{{/* Zone 5 : le parcours jusqu’au MF1 (frise verticale) */}}
-<section id="parcours" class="accueil-zone accueil-zone--pale" aria-labelledby="parcours-titre">
+{{/* Zone 6 : le parcours jusqu’au MF1 (frise verticale) */}}
+<section id="parcours" class="accueil-zone" aria-labelledby="parcours-titre">
   <div class="accueil-conteneur accueil-pile">
     <div class="accueil-entete">
       <h2 id="parcours-titre" class="accueil-h2">Le parcours jusqu’au MF1</h2>
@@ -148,4 +158,5 @@
     </div>
   </div>
 </section>
+
 {{ end }}
