@@ -77,14 +77,14 @@ tip:"Les valeurs de pressions partielles des gaz du sang ne sont pas exigibles."
 "Énoncé type":["Plongeuse de 58 ans, hypertendue, eau à 14 °C, palmage contre le courant. À la remontée, elle tousse et crache mousseux."],
 "Raisonnement attendu":["Hypothèse : OPI (froid, effort, âge, HTA), à différencier d’une surpression pulmonaire.","Conduite : sortie, position semi-assise, O2, alerte.","Prévention : avis médical, éviter l’effort au froid, protection thermique."]}}]},
 {id:"apnee",name:"Accidents de l’apnée",law:"Syncope, samba, étude de cas",items:[
-{id:"syncope-hypoxique",name:"Syncope hypoxique",alt:"Rendez-vous syncopal",tags:["Hyperventilation"],s:{
+{id:"syncope-hypoxique",fiche:"/theorie/apnee/#syncope-hypoxique",name:"Syncope hypoxique",alt:"Rendez-vous syncopal",tags:["Hyperventilation"],s:{
 "Mécanisme":["L’hyperventilation abaisse le CO2 et retarde l’envie de respirer, sans augmenter les réserves d’O2.","À la remontée, la pression ambiante chute et avec elle la PpO2 : perte de connaissance près de la surface."],
 "Signes":["Souvent aucun signe avant-coureur ; perte de connaissance en fin de remontée ou en surface."],
 "Conduite à tenir":["Voies aériennes hors de l’eau, retirer le masque, stimuler.","Pas de reprise : insufflations, RCP si besoin, O2, alerte."]}},
-{id:"samba",name:"Perte de contrôle moteur",alt:"La samba",tags:["Avant la syncope"],s:{
+{id:"samba",fiche:"/theorie/apnee/#samba",name:"Perte de contrôle moteur",alt:"La samba",tags:["Avant la syncope"],s:{
 "Signes":["Tremblements, mouvements désordonnés, regard vague juste après la sortie de l’eau."],
 "Conduite":["Maintenir les voies aériennes hors de l’eau, parler, rassurer, surveiller : la syncope peut suivre."]}},
-{id:"prevention-apnee",name:"Prévention",alt:"Règles d’or",tags:["Un en bas, un en haut"],s:{
+{id:"prevention-apnee",fiche:"/theorie/apnee/#prevention-apnee",name:"Prévention",alt:"Règles d’or",tags:["Un en bas, un en haut"],s:{
 "Règles":["Jamais d’hyperventilation.","Toujours un binôme qui surveille depuis la surface pendant toute l’apnée et environ 30 s après la sortie.","Récupération suffisante entre deux apnées, pas d’apnée après une plongée en scaphandre (risque d’ADD)."]},
 tip:"Étude de cas fréquente : un plongeur qui fait des apnées en attendant le bateau après sa plongée bouteille."}]},
 {id:"froid",name:"Incidents liés au froid",law:"Thermorégulation",items:[

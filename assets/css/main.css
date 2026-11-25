@@ -3090,4 +3090,16 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ana-seuil { fill: none; stroke: var(--rouge); stroke-width: 3; stroke-dasharray: 10 6; }
 .ana-txt-rouge-s { fill: var(--rouge); }
 .ana-frise-1 { fill: #8796A5; } .ana-frise-2 { fill: var(--rouge); } .ana-frise-3 { fill: #B46A1C; } .ana-frise-4 { fill: var(--bleu); }
+/* Théorie, écrit 3 : schémas de la fiche Les accidents de l’apnée (même charte « ana- ») */
+.ana-seuil-envie { fill: none; stroke: var(--vert); stroke-width: 2; stroke-dasharray: 6 5; }
+.ana-seuil-syncope { fill: none; stroke: var(--rouge); stroke-width: 2.5; stroke-dasharray: 8 5; }
+.ana-courbe-o2 { fill: none; stroke: #2E8B57; stroke-width: 4; stroke-linecap: round; }
+.ana-courbe-co2 { fill: none; stroke: #B46A1C; stroke-width: 4; stroke-linecap: round; }
+.ana-point-alerte { fill: var(--rouge); } .ana-point-ok { fill: var(--vert); } .ana-txt-vert { fill: var(--vert); }
+.ana-legende__o2::before { background: #2E8B57; } .ana-legende__co2c::before { background: #B46A1C; }
+.ana-barre-o2 { fill: #2E8B57; opacity: .85; }
+.ana-etape-1 { fill: #2E8B57; } .ana-etape-2 { fill: #8796A5; } .ana-etape-3 { fill: #E8822A; } .ana-etape-4 { fill: var(--rouge); } .ana-etape-5 { fill: #5A1E0A; }
+.ana-rupture-ligne { fill: none; stroke: var(--vert); stroke-width: 3; stroke-dasharray: 6 4; }
+.ana-regard { fill: none; stroke: var(--texte-4); stroke-width: 2; stroke-dasharray: 3 5; }
+.ana-chrono { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 2; } .ana-chrono-aiguille { fill: none; stroke: var(--texte); stroke-width: 2; stroke-linecap: round; }
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

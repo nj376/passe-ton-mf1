@@ -60,4 +60,9 @@ groupes:
             url: "/theorie/oedeme-pulmonaire-immersion/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Les accidents de l’apnée"
+            resume: "Syncope hypoxique, piège de l’hyperventilation et de la remontée, samba, règles de sécurité : comprendre pourquoi la syncope frappe sans prévenir, et faire de « un en bas, un en haut » un réflexe pour tes élèves."
+            url: "/theorie/apnee/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---
