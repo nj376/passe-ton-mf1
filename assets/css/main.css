@@ -3102,4 +3102,32 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ana-rupture-ligne { fill: none; stroke: var(--vert); stroke-width: 3; stroke-dasharray: 6 4; }
 .ana-regard { fill: none; stroke: var(--texte-4); stroke-width: 2; stroke-dasharray: 3 5; }
 .ana-chrono { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 2; } .ana-chrono-aiguille { fill: none; stroke: var(--texte); stroke-width: 2; stroke-linecap: round; }
+/* Théorie, écrit 3 : schémas de la fiche Les incidents liés au froid (même charte « ana- ») */
+.ana-combi { fill: #2F3E4C; } .ana-palme { fill: #2F3E4C; opacity: .8; }
+.ana-chaleur { stroke: #E8822A; stroke-width: 4; stroke-linecap: round; } .ana-chaleur-tete { fill: #E8822A; }
+.ana-num-froid { fill: var(--bleu); stroke: var(--blanc); stroke-width: 2; }
+.ana-coque { fill: #F0D2B6; stroke: var(--texte-4); stroke-width: 1.5; } .ana-coque--froide { fill: #C9D6E6; }
+.ana-noyau { fill: #E8822A; opacity: .75; }
+.ana-ht-1 { fill: #8796A5; } .ana-ht-2 { fill: #5B86BE; } .ana-ht-3 { fill: var(--bleu); } .ana-ht-4 { fill: #4B2E83; } .ana-ht-5 { fill: var(--rouge); }
+.ana-froid-centre { fill: var(--bleu); }
+.ana-soleil { fill: #F3D46B; stroke: #E8A04B; stroke-width: 2; }
+.ana-gouttes { fill: #7FB2E5; }
+/* Théorie, écrit 3 : schémas de la fiche La déshydratation (même charte « ana- ») */
+.ana-eau-sortie { stroke: #5B86BE; stroke-width: 4; stroke-linecap: round; } .ana-eau-sortie-tete { fill: #5B86BE; }
+.ana-fleau { fill: none; stroke: var(--texte-4); stroke-width: 4; stroke-linecap: round; }
+.ana-plateau-entree { fill: var(--bleu); } .ana-plateau-sortie { fill: #E8822A; }
+/* Théorie, écrit 3 : schémas de la fiche L’entraînement physique (même charte « ana- ») */
+.ana-fil-alac, .ana-fil-lac, .ana-fil-aero { fill: none; stroke-width: 4; stroke-linecap: round; }
+.ana-fil-alac { stroke: var(--rouge); } .ana-fil-lac { stroke: #E8822A; } .ana-fil-aero { stroke: var(--bleu); }
+.ana-txt-alac { fill: var(--rouge); } .ana-txt-lac { fill: #A65A12; } .ana-txt-aero { fill: var(--bleu); }
+.ana-legende__alac::before { background: var(--rouge); } .ana-legende__lac::before { background: #E8822A; } .ana-legende__aero::before { background: var(--bleu); }
+.ana-repere-epreuve { fill: none; stroke: var(--texte-4); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.ana-barre-repos { fill: #8796A5; } .ana-barre-effort { fill: var(--bleu); }
+.ana-zone-1 { fill: #C9D3DC; } .ana-zone-2 { fill: #2E8B57; } .ana-zone-3 { fill: #8CB9A0; } .ana-zone-4 { fill: #E8822A; } .ana-zone-5 { fill: var(--rouge); }
+.ana-niveau { fill: none; stroke: var(--texte-4); stroke-width: 1.5; stroke-dasharray: 6 5; }
+.ana-courbe-forme { fill: none; stroke: #2E8B57; stroke-width: 4; stroke-linecap: round; }
+.ana-courbe-fatigue { fill: none; stroke: var(--rouge); stroke-width: 4; stroke-linecap: round; }
+.ana-legende__charge::before { background: var(--rouge); } .ana-legende__niveau::before { background: repeating-linear-gradient(90deg, var(--texte-4) 0 5px, transparent 5px 9px); }
+.ana-cycle-1 { fill: #8796A5; } .ana-cycle-2 { fill: #2E8B57; } .ana-cycle-3 { fill: var(--bleu); } .ana-cycle-4 { fill: #E8822A; }
+.ana-drapeau-mat { fill: none; stroke: var(--texte-4); stroke-width: 3; stroke-linecap: round; } .ana-drapeau { fill: var(--rouge); }
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

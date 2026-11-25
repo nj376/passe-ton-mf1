@@ -88,44 +88,44 @@ tip:"Les valeurs de pressions partielles des gaz du sang ne sont pas exigibles."
 "Règles":["Jamais d’hyperventilation.","Toujours un binôme qui surveille depuis la surface pendant toute l’apnée et environ 30 s après la sortie.","Récupération suffisante entre deux apnées, pas d’apnée après une plongée en scaphandre (risque d’ADD)."]},
 tip:"Étude de cas fréquente : un plongeur qui fait des apnées en attendant le bateau après sa plongée bouteille."}]},
 {id:"froid",name:"Incidents liés au froid",law:"Thermorégulation",items:[
-{id:"pertes-caloriques",name:"Pertes caloriques",alt:"Comment on se refroidit",tags:["Eau : ×25"],s:{
+{id:"pertes-caloriques",fiche:"/theorie/froid/#pertes-caloriques",name:"Pertes caloriques",alt:"Comment on se refroidit",tags:["Eau : ×25"],s:{
 "Modes":["Conduction : l’eau évacue la chaleur environ 25 fois plus vite que l’air.","Convection : l’eau qui circule dans la combinaison se renouvelle.","Respiration : l’air détendu est froid et sec, il faut le réchauffer et l’humidifier.","Rayonnement et évaporation, plus faibles sous l’eau."]}},
-{id:"thermoregulation",name:"Réponses du corps",alt:"Thermorégulation",tags:["Vasoconstriction"],s:{
+{id:"thermoregulation",fiche:"/theorie/froid/#thermoregulation",name:"Réponses du corps",alt:"Thermorégulation",tags:["Vasoconstriction"],s:{
 "Mécanismes":["Vasoconstriction périphérique : le sang se concentre au centre du corps.","Frissons : production de chaleur par les muscles.","Diurèse accrue : on urine plus, d’où la déshydratation."]}},
-{id:"hypothermie",name:"Signes et conduite à tenir",alt:"De la gêne à l’hypothermie",tags:["Frissons, confusion"],s:{
+{id:"hypothermie",fiche:"/theorie/froid/#hypothermie",name:"Signes et conduite à tenir",alt:"De la gêne à l’hypothermie",tags:["Frissons, confusion"],s:{
 "Signes":["Frissons, crampes, lèvres bleues, gestes maladroits.","Puis confusion, somnolence, arrêt des frissons quand l’hypothermie s’aggrave."],
 "Conduite à tenir":["Fin de plongée, sortir, sécher, vêtements secs, couverture isothermique, abri.","Boisson chaude non sucrée si la personne est consciente, ni alcool ni frictions.","Le froid favorise essoufflement, narcose et ADD : surveiller."]}},
-{id:"syncope-thermo",name:"Syncope thermo-différentielle",alt:"L’hydrocution",tags:["Choc thermique"],s:{
+{id:"syncope-thermo",fiche:"/theorie/froid/#syncope-thermo",name:"Syncope thermo-différentielle",alt:"L’hydrocution",tags:["Choc thermique"],s:{
 "Mécanisme":["Entrée brutale dans une eau froide, surtout après soleil, repas copieux ou effort : réaction réflexe cardio-vasculaire.","Perte de connaissance immédiate, risque de noyade."],
 "Prévention":["Entrer progressivement, se mouiller nuque et visage, éviter de s’équiper longtemps au soleil."]}},
-{id:"froid-cas",name:"Exemple d’étude de cas",alt:"S’entraîner à raisonner",tags:["Élève fin"],s:{
+{id:"froid-cas",fiche:"/theorie/froid/#froid-cas",name:"Exemple d’étude de cas",alt:"S’entraîner à raisonner",tags:["Élève fin"],s:{
 "Énoncé type":["Élève mince en combinaison de 5 mm, eau à 13 °C, troisième exercice au fond ; il tremble et rate ses gestes."],
 "Raisonnement attendu":["Signes de refroidissement qui altèrent la sécurité et l’apprentissage.","Interrompre la séance, réchauffer, adapter l’équipement et la durée la prochaine fois."]}}]},
 {id:"deshydratation",name:"Déshydratation",law:"Diurèse, prévention",items:[
-{id:"diurese-immersion",name:"Diurèse d’immersion",alt:"Pourquoi on urine sous l’eau",tags:["ADH"],s:{
+{id:"diurese-immersion",fiche:"/theorie/deshydratation/#diurese-immersion",name:"Diurèse d’immersion",alt:"Pourquoi on urine sous l’eau",tags:["ADH"],s:{
 "Mécanisme":["L’immersion ramène du sang vers le thorax ; le corps croit à un excès de volume sanguin.","La sécrétion d’hormone antidiurétique (ADH) baisse : les reins produisent plus d’urine."]}},
-{id:"diurese-froid",name:"Diurèse liée au froid",alt:"Même effet, autre cause",tags:["Vasoconstriction"],s:{
+{id:"diurese-froid",fiche:"/theorie/deshydratation/#diurese-froid",name:"Diurèse liée au froid",alt:"Même effet, autre cause",tags:["Vasoconstriction"],s:{
 "Mécanisme":["La vasoconstriction due au froid augmente aussi le volume sanguin central et donc la diurèse."]}},
-{id:"autres-causes",name:"Autres causes",alt:"Ce qui assèche le plongeur",tags:["Air sec"],s:{
+{id:"autres-causes",fiche:"/theorie/deshydratation/#autres-causes",name:"Autres causes",alt:"Ce qui assèche le plongeur",tags:["Air sec"],s:{
 "Liste":["Air du bloc très sec à réchauffer et humidifier.","Transpiration dans la combinaison, au soleil, à l’effort.","Mal de mer et vomissements, alcool, café."]}},
-{id:"deshydratation-consequences",name:"Conséquences et rôle du GP",alt:"Prévenir sur le bateau",tags:["Favorise l’ADD"],s:{
+{id:"deshydratation-consequences",fiche:"/theorie/deshydratation/#deshydratation-consequences",name:"Conséquences et rôle du GP",alt:"Prévenir sur le bateau",tags:["Favorise l’ADD"],s:{
 "Conséquences":["Sang plus visqueux, élimination de l’azote moins efficace : risque d’ADD accru.","Fatigue, crampes, maux de tête."],
 "Conduite à tenir du GP":["Faire boire de l’eau avant et après la plongée, par petites quantités.","Repérer les signes (soif, urines foncées, céphalées) et les signaler au DP.","En cas de signe suspect après plongée, penser ADD et appliquer le protocole RIFAP."]},
 tip:"Étude de cas classique : troisième plongée de la journée, en été, plongeur qui n’a bu que du café."}]},
 {id:"entrainement",name:"Entraînement physique",law:"Préparation des plongeurs",items:[
-{id:"filieres",name:"Filières énergétiques",alt:"D’où vient l’énergie",tags:["ATP"],s:{
+{id:"filieres",fiche:"/theorie/entrainement-physique/#filieres",name:"Filières énergétiques",alt:"D’où vient l’énergie",tags:["ATP"],s:{
 "Trois filières":["Anaérobie alactique (ATP et phosphocréatine) : effort très intense, moins de 10 à 15 s.","Anaérobie lactique : effort intense de 15 s à 1 ou 2 min, production de lactates.","Aérobie : effort prolongé au-delà de 2 à 3 min, utilise l’oxygène, c’est la filière de l’endurance."],
 "En plongée":["Palmage long : surtout aérobie. Sprint vers un plongeur en difficulté ou apnée : anaérobie."]}},
-{id:"adaptation-effort",name:"Adaptation à l’effort",alt:"Cœur et poumons",tags:["Débit cardiaque"],s:{
+{id:"adaptation-effort",fiche:"/theorie/entrainement-physique/#adaptation-effort",name:"Adaptation à l’effort",alt:"Cœur et poumons",tags:["Débit cardiaque"],s:{
 "Cœur":["Débit cardiaque = fréquence cardiaque × volume d’éjection systolique ; les deux augmentent à l’effort.","L’entraînement augmente le volume d’éjection et abaisse la FC de repos."],
 "Respiration":["Le débit ventilatoire augmente, la VO2max (consommation maximale d’O2) progresse avec l’entraînement."]}},
-{id:"frequences",name:"Fréquences cardiaques",alt:"Piloter l’intensité",tags:["220 − âge"],s:{
+{id:"frequences",fiche:"/theorie/entrainement-physique/#frequences",name:"Fréquences cardiaques",alt:"Piloter l’intensité",tags:["220 − âge"],s:{
 "Repères":["FC max estimée ≈ 220 − âge (estimation grossière).","FC de réserve = FC max − FC de repos (méthode de Karvonen).","Endurance fondamentale : environ 60 à 70 % de FC max ; travail au seuil vers 80 à 90 %."]}},
-{id:"endurance-intensite",name:"Endurance et intensité",alt:"Principes d’entraînement",tags:["Surcompensation"],s:{
+{id:"endurance-intensite",fiche:"/theorie/entrainement-physique/#endurance-intensite",name:"Endurance et intensité",alt:"Principes d’entraînement",tags:["Surcompensation"],s:{
 "Principes":["Progressivité, régularité, spécificité (nager avec palmes pour progresser en plongée).","Alterner endurance fondamentale et fractionné.","Surcompensation : la progression se fait pendant la récupération qui suit la charge."]}},
-{id:"recuperation",name:"Récupération",alt:"Partie de l’entraînement",tags:["Sommeil"],s:{
+{id:"recuperation",fiche:"/theorie/entrainement-physique/#recuperation",name:"Récupération",alt:"Partie de l’entraînement",tags:["Sommeil"],s:{
 "Leviers":["Récupération active (effort léger), sommeil, hydratation, alimentation.","Éviter l’effort violent juste après une plongée."]}},
-{id:"planification",name:"Planifier une préparation",alt:"Niveaux et épreuves GP-N4",tags:["Cycles"],s:{
+{id:"planification",fiche:"/theorie/entrainement-physique/#planification",name:"Planifier une préparation",alt:"Niveaux et épreuves GP-N4",tags:["Cycles"],s:{
 "Méthode":["Évaluer le niveau de départ du plongeur et la date de l’examen.","Construire des cycles : développement de l’endurance, puis travail spécifique et intensité, puis affûtage.","Adapter aux épreuves visées (nage avec et sans matériel, apnée, sauvetage)."]},
 tip:"Pour les barèmes et le détail des épreuves physiques du GP-N4, reprends le MFT à jour."}]}
 ],

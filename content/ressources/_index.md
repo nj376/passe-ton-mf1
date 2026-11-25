@@ -65,4 +65,19 @@ groupes:
             url: "/theorie/apnee/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Les incidents liés au froid"
+            resume: "Les trois fuites de chaleur, les défenses du corps, l’hypothermie qui s’installe sans bruit, la syncope thermo-différentielle : comprendre le froid et organiser tes plongées en conséquence, en guide comme en directeur de plongée."
+            url: "/theorie/froid/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
+          - titre: "La déshydratation"
+            resume: "Diurèse d’immersion, diurèse liée au froid, air sec du bloc, soleil, mal de mer : comprendre par où le plongeur perd son eau, le lien avec l’accident de désaturation, et faire boire ta palanquée comme un vrai guide."
+            url: "/theorie/deshydratation/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
+          - titre: "L’entraînement physique"
+            resume: "Filières énergétiques, cœur et poumons à l’effort, zones de fréquence cardiaque, endurance, récupération : comprendre comment on progresse, et savoir planifier la préparation d’un futur GP jusqu’aux épreuves physiques."
+            url: "/theorie/entrainement-physique/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---
