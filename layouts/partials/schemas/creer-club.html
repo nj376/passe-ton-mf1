@@ -1,0 +1,20 @@
+{{- /* Schéma « créer un club » : cinq étapes, de l’assemblée constitutive à l’affiliation FFESSM.
+       Loi du 1er juillet 1901, ordonnance n° 2015-904 (affiliation valant agrément), dossier d’affiliation FFESSM. Classes schema-etapes. */ -}}
+{{- $temps := slice
+  (dict "n" "1" "t" "Se réunir" "d" (slice "Assemblée générale constitutive" "Adoption des statuts" "Élection des dirigeants" "Procès-verbal daté et signé"))
+  (dict "n" "2" "t" "Déclarer" "d" (slice "En préfecture, ou en ligne" "Statuts et procès-verbal signés" "Récépissé et numéro RNA"))
+  (dict "n" "3" "t" "Publier" "d" (slice "Extrait au Journal officiel des associations" "L’association acquiert sa capacité juridique"))
+  (dict "n" "4" "t" "Ouvrir un compte" "d" (slice "Bancaire ou postal" "Signatures des responsables"))
+  (dict "n" "5" "t" "S’affilier" "d" (slice "Dossier auprès de la FFESSM" "Statuts avec les clauses fédérales" "Dirigeants et liste des encadrants" "L’affiliation vaut agrément sport"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-etapes">
+    {{- range $temps }}
+    <li class="schema-etapes__etape">
+      <span class="schema-etapes__tete"><span class="schema-etapes__num" aria-hidden="true">{{ .n }}</span>{{ .t }}</span>
+      <ul class="schema-etapes__points">{{ range .d }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Ensuite, tout changement de dirigeants ou de statuts se déclare en préfecture dans les trois mois, et se signale à la FFESSM et au comité régional.</figcaption>
+</figure>

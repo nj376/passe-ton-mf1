@@ -1,0 +1,20 @@
+{{- /* Schéma « établissement d’APS » : les trois éléments qui suffisent à le définir.
+       D’après les fiches des services de l’État (préfectures) et un support de stage initial MF1. Classes schema-qq. */ -}}
+{{- $elements := slice
+  (dict "n" "1" "q" "Un équipement" "s" "fixe ou mobile" "t" (slice "Un local, une piscine, une fosse" "Un bateau, un compresseur" "Le matériel prêté aux pratiquants"))
+  (dict "n" "2" "q" "Une activité physique ou sportive" "s" "quel que soit le but" "t" (slice "Enseignement, encadrement, animation, entraînement" "Loisir ou compétition" "À titre bénévole ou lucratif"))
+  (dict "n" "3" "q" "Une certaine durée" "s" "pas un événement isolé" "t" (slice "Continue : toute l’année" "Régulière : chaque semaine" "Saisonnière : l’été"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $elements }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="schema-qq__sujet">{{ .s }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Réunis, ces trois éléments font un établissement d’activités physiques et sportives, quelle que soit sa forme : association, société, collectivité ou travailleur indépendant. Un club de plongée en est un.</figcaption>
+</figure>

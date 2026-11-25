@@ -1,0 +1,20 @@
+{{- /* Schéma « les organes d’une association » : assemblée générale, comité directeur, bureau.
+       Leur composition et leurs pouvoirs exacts dépendent des statuts du club. Classes schema-qq. */ -}}
+{{- $organes := slice
+  (dict "n" "1" "q" "L’assemblée générale" "s" "tous les adhérents" "t" (slice "Approuve le rapport moral et le rapport financier" "Élit le comité directeur" "AG ordinaire chaque année ; AG extraordinaire pour modifier les statuts ou dissoudre"))
+  (dict "n" "2" "q" "Le comité directeur" "s" "élu par l’AG" "t" (slice "Applique les décisions de l’AG" "Gère le club au quotidien, prépare le budget" "Élit ou désigne le bureau, selon les statuts"))
+  (dict "n" "3" "q" "Le bureau" "s" "l’exécutif" "t" (slice "Président : représente le club, signe les contrats" "Secrétaire : courriers, convocations, procès-verbaux, archives" "Trésorier : budget, comptabilité, banque"))
+-}}
+<figure class="ress-schema">
+  <ol class="schema-qq">
+    {{- range $organes }}
+    <li class="schema-qq__case">
+      <span class="schema-qq__num" aria-hidden="true">{{ .n }}</span>
+      <span class="schema-qq__question">{{ .q }}</span>
+      <span class="schema-qq__sujet">{{ .s }}</span>
+      <ul class="schema-qq__liste">{{ range .t }}<li>{{ . }}</li>{{ end }}</ul>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Le schéma le plus courant. Ce sont les statuts du club qui fixent la composition, la durée des mandats et les pouvoirs de chaque organe.</figcaption>
+</figure>
