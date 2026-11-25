@@ -6,7 +6,7 @@ titre: "Lire une compétence du MFT"
 resume: "Chaque page de compétence du MFT a la même structure : apprends à y trouver ton objectif, tes capacités et tes critères."
 groupe: "Méthode"
 weight: 15
-sources: "MFT de la FFESSM : MF1, version juillet 2026, et Plongeur Niveau 2, version mai 2026 ; supports de stages initiaux MF1"
+sources: "MFT de la FFESSM : MF1, version juillet 2026 ; Plongeur Niveau 1, version décembre 2025 ; Plongeur Niveau 2, version mai 2026 ; supports de stages initiaux MF1"
 ---
 
 ## Une page, toujours la même structure
@@ -15,10 +15,14 @@ Dans le MFT, chaque compétence d’un niveau de plongeur tient sur une page, co
 
 {{< schema "lecture-mft" >}}
 
+**Une compétence, c’est trois choses à la fois** : des techniques (savoir-faire), un comportement (savoir-être) et la théorie qui va avec (savoirs). La page les présente dans cet ordre, mais tu les enseignes ensemble.
+
+Pour situer cette page dans le livret du niveau (prérogatives, cadre, connaissances théoriques, fiche de suivi), lis d’abord [Le MFT, mode d’emploi](/ressources/le-mft-mode-d-emploi/), qui montre aussi une page de compétence annotée.
+
 ## Pour une séance
 
 1. **Le titre et la compétence attendue** te donnent l’objectif final. Ne le recopie pas comme objectif de séance : il décrit l’arrivée, pas l’étape du jour.
-2. **Le bloc Technique** liste les capacités. Ta séance en travaille une, rarement plus : c’est ton objectif intermédiaire.
+2. **Le bloc Technique** liste les capacités, chacune avec deux colonnes. À gauche, son nom ; à droite, ses précisions : conditions, gestes, exigences (par exemple « sans erreur » au gréage du N1). Chaque capacité est un objectif intermédiaire, et sa colonne de droite te donne la matière de ton objectif opérationnel. Ta séance en travaille une, rarement plus.
 3. **Le bloc Comportement** te dit ce que tu observes en plus du geste : calme, attention aux équipiers, respect des consignes. Glisse-le dans tes critères.
 4. **Le bloc Théorie** te donne la notion à glisser au briefing ou au débriefing, au bon niveau de détail.
 5. **Les modalités d’évaluation** te donnent les critères de la dernière marche. Tes critères de séance s’en approchent pas à pas.
@@ -35,7 +39,7 @@ Dans le MFT, chaque compétence d’un niveau de plongeur tient sur une page, co
 {{< schema "competences-n2" >}}
 
 3. **Pour chaque compétence**, relève dans sa page les capacités, le comportement, la théorie et les modalités d’évaluation : c’est la matière de ton cursus.
-4. **Ajoute les connaissances théoriques du niveau** : le MFT leur consacre des pages à part (par exemple « Connaissances théoriques PA20 » et « PE40 »), à relier aux capacités pratiques.
+4. **Ajoute les connaissances théoriques du niveau** : le MFT leur consacre des pages à part (par exemple « Connaissances théoriques PA20 » et « PE40 »), à relier aux capacités pratiques. Chacune rappelle que **les connaissances des niveaux antérieurs sont considérées comme maîtrisées**. La méthode pour croiser programme et compétences est dans [Le MFT, mode d’emploi](/ressources/le-mft-mode-d-emploi/#5-la-théorie-se-lit-à-deux-endroits).
 5. **Place ensuite les capacités dans le temps**, selon leurs prérequis : voir [Situer un enseignement dans un cursus](/ressources/situer-un-enseignement-dans-un-cursus/).
 
 ## Les pièges classiques

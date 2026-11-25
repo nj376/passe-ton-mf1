@@ -2627,3 +2627,100 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 }
 /* Le nom de la phase reste visible quand la grille défile à l'horizontale. */
 .livret-grille__phase-nom { position: sticky; left: 8px; }
+
+/* =================================================================
+   Ressources : Le MFT, mode d’emploi
+   - livret-pages : miniatures des rubriques d’un livret (schéma livret-pages)
+   - fac : fac-similé annoté d’une page du MFT (schémas page-competence-mft et page-theorie-mft)
+   ================================================================= */
+.ress-fiche .livret-pages { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.livret-pages__page { margin: 0; display: flex; gap: 12px; align-items: flex-start; padding: 12px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); }
+.livret-pages__textes { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.livret-pages__num { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--bleu); }
+.livret-pages__nom { font-size: 15px; line-height: 1.3; color: var(--texte); }
+.livret-pages__dit { font-size: 13.5px; line-height: 1.45; color: var(--texte-3); }
+/* Miniature : une feuille A4 schématique, quatre traits dont l’aspect varie selon la rubrique. */
+.mini { flex: none; position: relative; width: 46px; height: 64px; padding: 7px 6px; border-radius: 3px; background: var(--blanc); border: 1px solid var(--bordure-bouton); display: flex; flex-direction: column; gap: 4px; }
+.mini span { display: block; height: 3px; border-radius: 2px; background: var(--bordure); }
+.mini span:first-child { width: 70%; background: var(--bleu-courbe); }
+.mini--couv { background: var(--bleu-fonce); border-color: var(--bleu-fonce); justify-content: flex-end; }
+.mini--couv span { background: var(--bleu-courbe); }
+.mini--couv span:first-child { width: 100%; height: 6px; background: var(--blanc); }
+.mini--archi span:not(:first-child) { height: 9px; width: 60%; margin-left: 20%; border-radius: 4px; background: var(--bleu-clair); border: 1px solid var(--bleu-courbe); }
+.mini--comp { box-shadow: 3px 3px 0 -1px var(--blanc), 3px 3px 0 0 var(--bordure-bouton), 6px 6px 0 -1px var(--blanc), 6px 6px 0 0 var(--bordure-bouton); }
+.mini--comp span:nth-child(2) { height: 3px; width: 85%; background: var(--rouge); opacity: .6; }
+.mini--comp span:nth-child(3) { height: 14px; background: var(--bleu-fonce); }
+.mini--comp span:nth-child(4) { height: 8px; background: transparent; border: 1px solid var(--bordure-bouton); }
+.mini--theo span:not(:first-child) { height: 9px; background: linear-gradient(90deg, var(--bleu-clair) 0 38%, transparent 38% 42%, var(--puce) 42%); }
+.mini--suivi span:not(:first-child) { height: 9px; background: repeating-linear-gradient(90deg, var(--bordure-bouton) 0 1px, transparent 1px 6px); border: 1px solid var(--bordure-bouton); }
+.mini--modifs span:not(:first-child) { width: 80%; margin-left: 10%; }
+
+.fac-figure { overflow: hidden; }
+.fac { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); column-gap: 30px; row-gap: 0; }
+.fac__page { position: relative; padding: 12px 22px 12px 26px; background: var(--blanc); border-left: 1px solid var(--bordure-bouton); border-right: 1px solid var(--bordure-bouton); font-size: 13.5px; line-height: 1.5; color: var(--bleu-fonce); }
+.fac__page--haut { padding-top: 22px; border-top: 1px solid var(--bordure-bouton); border-radius: 6px 6px 0 0; }
+.fac__page--bas { padding-bottom: 22px; border-bottom: 1px solid var(--bordure-bouton); border-radius: 0 0 6px 6px; }
+.fac__repere, .fac__num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--postit-fond); border: 2px solid #E0B400; color: var(--postit-texte); font-size: 12px; font-weight: 700; line-height: 1; flex: none; }
+.fac__repere { position: absolute; left: -11px; top: 14px; }
+.fac__page--haut .fac__repere { top: 24px; }
+.fac__repere--droite { left: auto; right: -11px; }
+.fac__intitule { display: block; text-align: center; font-size: 17px; letter-spacing: .14em; text-transform: uppercase; color: var(--bleu); }
+.fac__tiret { margin-right: 14px; color: var(--rouge); letter-spacing: 0; }
+.fac__chapeau { display: block; margin-top: 10px; text-align: center; font-weight: 600; }
+.fac__attendue { display: block; color: var(--bleu); }
+.fac__rouge { font-weight: 700; color: var(--rouge); }
+.fac__n { font-weight: 300; margin-right: 6px; }
+.ress-fiche .fac__technique { width: 100%; margin: 0; border-collapse: collapse; font-size: 12.5px; line-height: 1.45; display: table; }
+.ress-fiche .fac__technique thead { display: table-header-group; position: static; width: auto; height: auto; overflow: visible; clip: auto; }
+.ress-fiche .fac__technique tbody { display: table-row-group; }
+.ress-fiche .fac__technique tr { display: table-row; }
+.ress-fiche .fac__technique th, .ress-fiche .fac__technique td { display: table-cell; padding: 6px 10px; border: 1px solid var(--bordure-bouton); vertical-align: middle; text-align: left; }
+.ress-fiche .fac__technique thead th { background: var(--bleu-fonce); color: var(--blanc); font-size: 13.5px; border-color: var(--bleu-fonce); }
+.ress-fiche .fac__technique tbody th { width: 42%; background: var(--bleu-fonce); color: var(--blanc); font-weight: 500; border-color: #3B6C9E; }
+.ress-fiche .fac__technique td { color: var(--texte); }
+.ress-fiche .fac__technique--theorie thead th { width: auto; }
+.ress-fiche .fac__technique--theorie tbody th { width: 30%; }
+.ress-fiche .fac__technique .fac__suite th, .ress-fiche .fac__technique .fac__suite td { background: var(--puce); color: var(--texte-4); font-style: italic; border-color: var(--bordure-bouton); }
+.fac__boite { display: block; border: 1px solid var(--bordure-bouton); padding: 8px 12px 10px; font-size: 12.5px; color: var(--texte); }
+.fac__boite-titre { display: block; margin: -8px -12px 8px; padding: 6px 12px; border-bottom: 1px solid var(--bordure-bouton); font-size: 13.5px; font-weight: 700; color: var(--bleu-fonce); }
+.fac__modalites { display: block; padding: 10px 14px; border: 1.5px solid var(--bleu-courbe); border-radius: 14px; font-size: 12.5px; font-weight: 600; color: var(--bleu-fonce); }
+.fac__modalites-titre { display: block; margin-bottom: 4px; color: var(--bleu); font-weight: 600; }
+.fac__coche { color: var(--bleu-courbe); margin-right: 4px; }
+/* Étiquettes des trois savoirs, sur la page et dans les notes. */
+.fac__savoir { position: absolute; top: 4px; right: 22px; padding: 1px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.fac__savoir--faire { background: var(--bleu-clair); color: var(--bleu-fonce); border: 1px solid var(--bleu-courbe); }
+.fac__savoir--etre { background: var(--vert-fond); color: var(--vert-texte); border: 1px solid #8CC4A0; }
+.fac__savoir--savoir { background: var(--orange-fond); color: var(--orange-texte); border: 1px solid var(--orange-bordure); }
+.fac__page:has(.fac__savoir) { padding-top: 26px; }
+.fac__boite--etre { border-left: 4px solid var(--vert); }
+.fac__boite--savoir { border-left: 4px solid #D9822B; }
+.fac__mot { padding: 0 5px; border-radius: 4px; white-space: nowrap; }
+.fac__mot--faire { background: var(--bleu-clair); color: var(--bleu-fonce); }
+.fac__mot--etre { background: var(--vert-fond); color: var(--vert-texte); }
+.fac__mot--savoir { background: var(--orange-fond); color: var(--orange-texte); }
+/* Notes : en face du bloc, reliées par un trait pointillé. */
+.fac__note { position: relative; align-self: center; display: grid; grid-template-columns: 22px minmax(0, 1fr); column-gap: 10px; row-gap: 10px; padding: 8px 0; font-size: 14px; line-height: 1.5; color: var(--texte-2); }
+.fac__note::before { content: ""; position: absolute; left: -30px; top: 50%; width: 24px; border-top: 2px dotted #E0B400; }
+.fac__texte { min-width: 0; }
+.fac__quoi { display: block; color: var(--texte); font-size: 14.5px; }
+/* Formule : compétence = savoir-faire + savoir-être + savoir. */
+.fac__formule { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.fac__terme { display: inline-flex; flex-direction: column; align-items: center; padding: 6px 14px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); font-size: 16px; font-weight: 700; color: var(--texte); line-height: 1.25; }
+.fac__terme small { font-size: 11.5px; font-weight: 500; color: var(--texte-4); }
+.fac__terme--faire { background: var(--bleu-clair); border-color: var(--bleu-courbe); color: var(--bleu-fonce); }
+.fac__terme--etre { background: var(--vert-fond); border-color: #8CC4A0; color: var(--vert-texte); }
+.fac__terme--savoir { background: var(--orange-fond); border-color: var(--orange-bordure); color: var(--orange-texte); }
+.fac__signe { font-size: 20px; font-weight: 700; color: var(--texte-4); }
+
+@media (max-width: 900px) {
+  /* Téléphone : chaque bloc de la page, puis sa note juste en dessous. */
+  .fac { grid-template-columns: minmax(0, 1fr); }
+  .fac__page { padding-left: 20px; padding-right: 16px; border: 1px solid var(--bordure-bouton); border-radius: 6px; }
+  .fac__page--haut, .fac__page--bas { padding-top: 14px; padding-bottom: 14px; }
+  .fac__page:has(.fac__savoir) { padding-top: 26px; }
+  .fac__repere--droite { right: -9px; }
+  .fac__note { margin: 0 0 14px; padding: 8px 10px; border-radius: 0 0 8px 8px; background: var(--postit-fond); }
+  .fac__note::before { display: none; }
+  .fac__intitule { font-size: 15px; letter-spacing: .08em; }
+  .ress-fiche .fac__technique tbody th { width: 40%; }
+}

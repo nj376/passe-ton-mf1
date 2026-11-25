@@ -1,0 +1,26 @@
+{{- /* Schéma « le livret d’un niveau, page par page » : miniatures des rubriques du MFT Plongeur Niveau 1 (PE20),
+       version décembre 2025, avec leurs numéros de page. Chaque miniature est dessinée en CSS (classes « mini »). */ -}}
+{{- $pages := slice
+  (dict "p" "Page 1" "nom" "Couverture" "dit" "La version du livret. Vérifie-la avant tout." "m" "couv")
+  (dict "p" "Page 2" "nom" "Architecture" "dit" "Toutes les compétences du niveau sur une page." "m" "archi")
+  (dict "p" "Page 3" "nom" "Prérogatives, accès, organisation et délivrance" "dit" "Le cadre : qui enseigne, où, jusqu’à quelle profondeur, en combien de temps." "m" "cadre")
+  (dict "p" "Pages 4 à 13" "nom" "Une page par compétence" "dit" "Le contenu à enseigner : savoir-faire, savoir-être, savoir et critères." "m" "comp")
+  (dict "p" "Page 14" "nom" "Connaissances théoriques" "dit" "Le programme de théorie et son niveau de détail." "m" "theo")
+  (dict "p" "Page 15" "nom" "Fiche de suivi" "dit" "Une grille proposée pour le contrôle continu, à adapter." "m" "suivi")
+  (dict "p" "Page 16" "nom" "Liste des modifications" "dit" "Ce qui a changé, à quelle page et quand." "m" "modifs")
+-}}
+<figure class="ress-schema">
+  <ol class="livret-pages">
+    {{- range $pages }}
+    <li class="livret-pages__page">
+      <span class="mini mini--{{ .m }}" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span class="livret-pages__textes">
+        <span class="livret-pages__num">{{ .p }}</span>
+        <strong class="livret-pages__nom">{{ .nom }}</strong>
+        <span class="livret-pages__dit">{{ .dit }}</span>
+      </span>
+    </li>
+    {{- end }}
+  </ol>
+  <figcaption>Le livret du N1 (MFT, version décembre 2025). Les autres livrets suivent le même ordre ; au N2 et au N3, le cadre tient sur deux pages et la théorie est présentée par aptitude (PA20, PE40…).</figcaption>
+</figure>
