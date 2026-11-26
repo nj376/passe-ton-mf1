@@ -1,0 +1,64 @@
+{{- /* Calculateur « Gestion de l’air » (page /outils/gestion-air/), piloté par assets/js/outils/gestion-air.js.
+       Le bloc, la consommation, la façon de fixer la réserve, puis le profil en segments (phase, profondeur moyenne, durée).
+       data-exemple : segments séparés par « | », valeurs « phase;profondeur;durée ». Le premier exemple sert au chargement. */ -}}
+<div class="outil" data-outil="gestion-air">
+  <noscript><p class="outil-erreur">Active JavaScript pour utiliser le calculateur. Les explications et l’exercice corrigé restent lisibles plus bas.</p></noscript>
+  <form class="outil-form" novalidate data-form>
+    <fieldset class="outil-champs">
+      <legend class="visuellement-cache">Le bloc et la consommation</legend>
+      {{ partial "outils/champ.html" (dict "libelle" "Volume du bloc" "nom" "volume" "valeur" "15" "unite" "L") }}
+      {{ partial "outils/champ.html" (dict "libelle" "Pression au départ" "nom" "depart" "valeur" "200" "unite" "bar") }}
+      {{ partial "outils/champ.html" (dict "libelle" "Consommation en surface" "nom" "surface" "valeur" "20" "unite" "L/min") }}
+    </fieldset>
+
+    <fieldset class="outil-choix">
+      <legend class="outil-choix__titre">La réserve</legend>
+      <label class="outil-choix__option"><input type="radio" name="methode" value="fixe" checked> <span><strong>Une réserve fixe</strong>, à garder au début de la remontée</span></label>
+      <label class="outil-choix__option"><input type="radio" name="methode" value="tiers"> <span><strong>La règle des tiers</strong>&nbsp;: un tiers de la pression de départ à la sortie</span></label>
+      <label class="outil-choix__option"><input type="radio" name="methode" value="deux"> <span><strong>De quoi remonter à deux</strong> sur ce seul bloc, à garder au début de la remontée</span></label>
+      <div class="outil-champs" data-option="fixe">
+        {{ partial "outils/champ.html" (dict "libelle" "Réserve" "nom" "reserve" "valeur" "50" "unite" "bar") }}
+      </div>
+      <div class="outil-champs" data-option="deux" hidden>
+        {{ partial "outils/champ.html" (dict "libelle" "Consommation de chacun en surface pendant la remontée" "nom" "surfaceRemontee" "valeur" "20" "unite" "L/min") }}
+      </div>
+    </fieldset>
+
+    <h3 class="outil-sous-titre">Le profil de la plongée</h3>
+    <p class="outil-consigne">Dans l’ordre&nbsp;: le fond, puis la remontée et les paliers. Pour chaque segment, la profondeur moyenne et la durée.</p>
+    <ol class="outil-segments" data-segments></ol>
+    <div class="outil-exemples">
+      <button type="button" class="outil-ajouter" data-ajouter>+ Ajouter un segment</button>
+    </div>
+    <div class="outil-exemples">
+      <span class="outil-exemples__libelle">Exemples&nbsp;:</span>
+      <button type="button" class="mm-pastille" data-exemple="fond;30;25|remontee;16;2|remontee;3;4">25 min à 30 m</button>
+      <button type="button" class="mm-pastille" data-exemple="fond;20;40|remontee;10;2">40 min à 20 m</button>
+      <button type="button" class="mm-pastille" data-exemple="fond;12;60|remontee;6;1">60 min à 12 m</button>
+    </div>
+  </form>
+  <template data-modele>
+    <li class="outil-segment" data-segment>
+      <span class="outil-segment__numero" data-numero>Segment</span>
+      <div class="outil-champs outil-champs--segment">
+        <label class="outil-champ"><span class="outil-champ__libelle">Phase</span><span class="outil-champ__saisie"><select class="outil-champ__entree outil-champ__liste" data-seg="phase" data-libelle="Phase"><option value="fond">Fond</option><option value="remontee">Remontée ou palier</option></select></span></label>
+        <label class="outil-champ"><span class="outil-champ__libelle">Profondeur moyenne</span><span class="outil-champ__saisie"><input class="outil-champ__entree" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-seg="profondeur" data-libelle="Profondeur moyenne"><span class="outil-champ__unite">m</span></span></label>
+        <label class="outil-champ"><span class="outil-champ__libelle">Durée</span><span class="outil-champ__saisie"><input class="outil-champ__entree" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-seg="duree" data-libelle="Durée"><span class="outil-champ__unite">min</span></span></label>
+      </div>
+      <button type="button" class="outil-retirer" data-retirer aria-label="Retirer ce segment">Retirer</button>
+    </li>
+  </template>
+
+  <div class="outil-resultats" aria-live="polite">
+    <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">Pression au début de la remontée</span><span class="outil-resultat__valeur" data-r="remontee">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">Pression à la sortie</span><span class="outil-resultat__valeur" data-r="sortie">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">Signe « mi-pression »</span><span class="outil-resultat__valeur" data-r="mi">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">Réserve, atteinte</span><span class="outil-resultat__valeur" data-r="res">–</span></div>
+  </div>
+  <p class="outil-bilan" role="status" data-bilan hidden></p>
+  <p class="outil-erreur" role="alert" data-erreur hidden></p>
+  <div class="outil-pasapas">
+    <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+    <ol class="outil-pasapas__etapes" data-pasapas></ol>
+  </div>
+</div>

@@ -3230,7 +3230,19 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .outil-segment .outil-retirer { height: 34px; }
   .outil-champs--segment .outil-champ__unite { padding: 0 6px; }
   .outil-champs--segment .outil-champ__entree { padding: 0 8px; }
+  .outil-champs--segment .outil-champ:has(select) { grid-column: 1 / -1; }
 }
+
+/* Outils de calcul : choix d’une option, sous-titre, liste déroulante, bilan (outil Gestion de l’air) */
+.outil-choix { margin: 0; padding: 14px 16px; border: 1px solid var(--bordure); border-radius: 10px; background: var(--blanc); min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.outil-choix__titre { padding: 0 4px; font-size: 15px; font-weight: 600; color: var(--bleu); }
+.outil-choix__option { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.45; color: var(--texte-2); cursor: pointer; }
+.outil-choix__option input { width: 18px; height: 18px; margin: 2px 0 0; flex: none; accent-color: var(--bleu); }
+.ress-fiche h3.outil-sous-titre { margin: 6px 0 0; font-size: 17px; font-weight: 600; color: var(--texte); }
+.outil-champ__liste { font-family: var(--police); font-size: 15px; cursor: pointer; }
+.ress-fiche p.outil-bilan { margin: 0; padding: 12px 16px; border-radius: 10px; font-size: 15px; line-height: 1.5; font-weight: 500; }
+.ress-fiche p.outil-bilan--ok { background: var(--vert-fond); border: 1px solid #B9DCC5; color: var(--vert-texte); }
+.ress-fiche p.outil-bilan--alerte { background: #FBEDEA; border: 1px solid var(--bordure-rouge); color: var(--rouge-titre); }
 
 /* Théorie, écrit 4 : schémas de la fiche Les accidents de désaturation (préfixe « des- ») */
 .des-sang { fill: #F2B9B3; } .des-plaquette { fill: #E8822A; }
