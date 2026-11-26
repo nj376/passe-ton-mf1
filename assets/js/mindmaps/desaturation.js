@@ -36,19 +36,19 @@ tip:"Les questions restent simples : savoir dérouler la démarche et expliquer
 "Comparaison":["Haldane : compartiments indépendants en parallèle, chacun avec sa période et son seuil.","DCIEM : compartiments en série, la désaturation des tissus profonds est retardée par les autres.","Le DCIEM est réputé plus conservateur sur les plongées répétées."]},
 tip:"La question type demande de schématiser les deux architectures et d’en déduire une conséquence."}]},
 {id:"bulles",name:"Bulles",law:"Formation, croissance, préconisations",items:[
-{id:"micronoyaux",name:"Micronoyaux",alt:"Germes gazeux",tags:["Avant la plongée"],s:{
+{id:"micronoyaux",fiche:"/theorie/bulles-desaturation/#micronoyaux",name:"Micronoyaux",alt:"Germes gazeux",tags:["Avant la plongée"],s:{
 "Principe":["Des micro-bulles stables existent dans l’organisme avant toute plongée.","À la décompression, l’azote en excès diffuse vers ces germes, qui grossissent en bulles.","L’effort, les mouvements articulaires et la cavitation peuvent en créer."]}},
-{id:"bulles-circulantes",name:"Bulles circulantes",alt:"Bulles « silencieuses »",tags:["Filtre pulmonaire"],s:{
+{id:"bulles-circulantes",fiche:"/theorie/bulles-desaturation/#bulles-circulantes",name:"Bulles circulantes",alt:"Bulles « silencieuses »",tags:["Filtre pulmonaire"],s:{
 "À retenir":["Des bulles veineuses sont fréquentes après une plongée normale, sans symptôme.","Le poumon les filtre et les élimine.","Le danger vient de leur nombre, de leur passage côté artériel ou de leur croissance."]}},
-{id:"prt",name:"Charge en azote : index Prt",alt:"Estimer le risque d’un profil",tags:["P × √t"],s:{
+{id:"prt",fiche:"/theorie/bulles-desaturation/#prt",name:"Charge en azote : index Prt",alt:"Estimer le risque d’un profil",tags:["P × √t"],s:{
 "Principe":["Index proposé par Hennessy : Prt = P × √t, avec P la profondeur et t la durée en minutes (définition du MFT MF1).","Plus l’index est élevé, plus la charge en azote et le risque de bulles augmentent."]},
 tip:"Le MFT MF1 le définit ainsi : « Prt index = profondeur x racine carrée du temps »."},
-{id:"remontees-yoyo",name:"Remontées rapides et yoyo",alt:"Profils à risque",tags:["Bulles artérielles"],s:{
+{id:"remontees-yoyo",fiche:"/theorie/bulles-desaturation/#remontees-yoyo",name:"Remontées rapides et yoyo",alt:"Profils à risque",tags:["Bulles artérielles"],s:{
 "Pourquoi c’est dangereux":["Une remontée rapide ne laisse pas le temps à l’azote de s’éliminer : production massive de bulles.","Le yoyo recomprime et réexpanse les bulles et favorise leur passage côté artériel."],
 "Yoyo (CTN du 14/09/2024)":["Fortement déconseillé en plongée d’exploration.","En formation, possible en veillant à ne pas dépasser une profondeur plafond de 6 m."],"Ateliers verticaux (CTN du 20/09/2008)":["Par séance, hors procédures de sécurité : 4 cycles maximum dans la zone des 20 m, 3 entre 20 et 30 m, 2 au-delà de 30 m.","Encadrants : 3 cycles maximum au-delà de 30 m, jusqu’à 40 m au nitrox.","Ces limites baissent en cas de courant, froid, faible visibilité ou méforme."]}},
-{id:"acclimatation",name:"Acclimatation et réadaptation",alt:"Reprendre progressivement",tags:["Début de saison"],s:{
+{id:"acclimatation",fiche:"/theorie/bulles-desaturation/#acclimatation",name:"Acclimatation et réadaptation",alt:"Reprendre progressivement",tags:["Début de saison"],s:{
 "À retenir":["Des plongées régulières semblent réduire la production de bulles : on parle d’acclimatation.","Après une interruption, reprendre par des plongées peu profondes et courtes : plongées de réadaptation.","À l’inverse, une série de plongées intenses accumule la fatigue."]}},
-{id:"rattrapage",name:"Procédures de rattrapage",alt:"Préconisations fédérales 2024",tags:["CTN du 14/09/2024","Plongée à l’ordinateur"],s:{
+{id:"rattrapage",fiche:"/theorie/bulles-desaturation/#rattrapage",name:"Procédures de rattrapage",alt:"Préconisations fédérales 2024",tags:["CTN du 14/09/2024","Plongée à l’ordinateur"],s:{
 "Remontée rapide":["Définition : plus de 15 m/min sur au moins 10 m, entre 30 m et la surface.","Redescendre en moins de 3 min au moins à mi-profondeur, y faire un palier de 5 min, puis au moins 1 min à 6 m et 5 min à 3 m.","Réimmersion impossible : oxygène et évacuation."],
 "Palier interrompu":["Se réimmerger en moins de 3 min, suivre son ordinateur et ajouter 3 min à 3 m, quel que soit le temps de palier manqué.","Réimmersion impossible, aucun signe et 3 min de palier manquées au plus : surveillance 3 h et pas de plongée pendant 24 h.","Plus de 3 min manquées ou le moindre signe : oxygène et secours."]},
 tip:"Ces procédures (CTN du 14/09/2024) valent pour les plongées à l’ordinateur, en l’absence de signe d’accident. Au moindre signe pouvant évoquer un accident, on déclenche les secours."}]},

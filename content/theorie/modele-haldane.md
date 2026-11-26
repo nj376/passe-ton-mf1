@@ -150,7 +150,7 @@ L’ordinateur applique le modèle **en temps réel**, à partir de ton profil r
 
 Le **Reduced Gradient Bubble Model**, développé par Bruce Wienke, part du même socle de compartiments, mais **réduit les gradients admis** pour tenir compte de la formation de bulles. Concrètement, il pénalise les profils à risque : remontées en yoyo, remontées rapides, plongées successives rapprochées, intervalles courts, plongées répétées sur plusieurs jours. Il équipe plusieurs marques d’ordinateurs.
 
-Le MFT du MF1 le range parmi les jeux de paramètres haldaniens, avec la MN90 et Bühlmann. D’autres supports le présentent plutôt comme un modèle « à bulles » : retiens qu’il garde les compartiments de Haldane et qu’il y ajoute des pénalités liées aux bulles. Pour les bulles elles-mêmes, voir la branche [Bulles](/capacitaire/desaturation/#micronoyaux) de la mindmap.
+Le MFT du MF1 le range parmi les jeux de paramètres haldaniens, avec la MN90 et Bühlmann. D’autres supports le présentent plutôt comme un modèle « à bulles » : retiens qu’il garde les compartiments de Haldane et qu’il y ajoute des pénalités liées aux bulles. Pour les bulles elles-mêmes, voir la fiche [Formation et croissance des bulles](/theorie/bulles-desaturation/#micronoyaux).
 
 [L’enseigner →](#enseigner-rgbm)
 
@@ -175,7 +175,7 @@ Si la deuxième plongée finit plus profond que prévu, on garde la majoration d
 
 Un autre modèle, le DCIEM, gère les successives de lui-même, avec des compartiments en série : voir la fiche [Le modèle DCIEM](/theorie/modele-dciem/#dciem-successives).
 
-Les procédures de rattrapage (remontée rapide, palier interrompu) et les préconisations fédérales sont traitées dans la branche [Bulles](/capacitaire/desaturation/#rattrapage) de la mindmap.
+Les procédures de rattrapage (remontée rapide, palier interrompu) et les préconisations fédérales sont traitées dans la fiche [Formation et croissance des bulles](/theorie/bulles-desaturation/#rattrapage).
 
 [L’enseigner →](#enseigner-successives)
 

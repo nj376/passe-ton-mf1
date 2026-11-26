@@ -42,7 +42,7 @@ Cette fiche suppose connus les principes du modèle de Haldane : compartiments,
 
 **Ce qui décide de la remontée.** Chez Haldane, chaque compartiment a sa propre limite de sursaturation, et c’est le plus contraignant, le compartiment directeur, qui fixe le palier. Dans le DCIEM, selon les sources consultées, la limite porte sur les **deux premiers compartiments** de la chaîne, ceux qui sont au contact du sang.
 
-**Des tables testées au Doppler.** Les tables DCIEM ont été vérifiées sur des milliers de plongées, en écoutant au Doppler les bulles qui circulent dans le sang au retour en surface. Le Doppler permet de juger une table non seulement sur les accidents, mais aussi sur les bulles détectées. Les bulles circulantes sont traitées dans la branche [Bulles](/capacitaire/desaturation/#bulles-circulantes) de la mindmap.
+**Des tables testées au Doppler.** Les tables DCIEM ont été vérifiées sur des milliers de plongées, en écoutant au Doppler les bulles qui circulent dans le sang au retour en surface. Le Doppler permet de juger une table non seulement sur les accidents, mais aussi sur les bulles détectées. Les bulles circulantes sont traitées dans la fiche [Formation et croissance des bulles](/theorie/bulles-desaturation/#bulles-circulantes).
 
 [L’enseigner →](#enseigner-principe)
 

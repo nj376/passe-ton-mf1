@@ -92,4 +92,9 @@ groupes:
             url: "/theorie/modele-dciem/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Formation et croissance des bulles"
+            resume: "Micronoyaux, bulles circulantes et filtre pulmonaire, index Prt, remontées rapides et yoyo, acclimatation, procédures de rattrapage de la CTN : comprendre d’où viennent les bulles et les règles qui en découlent, et savoir l’expliquer à tes élèves."
+            url: "/theorie/bulles-desaturation/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---

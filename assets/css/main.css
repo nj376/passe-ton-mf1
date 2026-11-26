@@ -3152,4 +3152,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .des-profil-a { fill: none; stroke: #E8822A; stroke-width: 3; stroke-linejoin: round; }
 .des-profil-b { fill: none; stroke: var(--bleu); stroke-width: 3; stroke-linejoin: round; }
 .des-coude { fill: none; stroke: var(--vert); stroke-width: 3; stroke-linejoin: round; }
+/* Théorie, écrit 4 : schémas de la fiche Formation et croissance des bulles (préfixe « des- ») */
+.des-legende__vert::before { background: var(--vert); }
+
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }
