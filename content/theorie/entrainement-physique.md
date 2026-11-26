@@ -117,7 +117,7 @@ Deux erreurs opposées :
 
 **Les leviers de la récupération** : la récupération active (un effort léger, qui aide à éliminer la fatigue), le sommeil, l’hydratation (voir la fiche [La déshydratation](/theorie/deshydratation/#autres-causes)) et l’alimentation.
 
-**Après une plongée**, pas d’effort violent : l’effort favorise l’accident de désaturation tant que le corps élimine l’azote. Ne cale donc pas une séance de fractionné ou un remorquage intense juste après une plongée (voir la mindmap [Désaturation](/capacitaire/desaturation/#add-prevention)).
+**Après une plongée**, pas d’effort violent : l’effort favorise l’accident de désaturation tant que le corps élimine l’azote. Ne cale donc pas une séance de fractionné ou un remorquage intense juste après une plongée (voir la mindmap [Désaturation](/capacitaire/desaturation/#add-prevention) et la fiche [Les accidents de désaturation](/theorie/accidents-desaturation/#add-prevention)).
 
 [L’enseigner →](#enseigner-recuperation)
 

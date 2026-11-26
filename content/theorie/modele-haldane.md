@@ -63,7 +63,7 @@ Au début du XXᵉ siècle, le physiologiste écossais John Scott Haldane est ch
 
 **La désaturation** suit la même loi : à chaque période, le compartiment se débarrasse de la moitié de l’excès qui lui reste. C’est pour cela qu’il faut des heures pour que les compartiments lents reviennent à l’équilibre.
 
-**Ce que le modèle ne voit pas.** Le modèle est une simplification. Il ignore le débit cardiaque de chacun, le froid, l’effort, la fatigue, la déshydratation, les bulles déjà présentes, et les écarts entre deux personnes. C’est pourquoi on répète qu’un modèle n’est qu’une aide : il ne peut garantir l’absence d’accident, et le dépasser n’entraîne pas forcément un accident. Voir la fiche [La déshydratation](/theorie/deshydratation/#deshydratation-consequences) et la mindmap des [accidents de désaturation](/capacitaire/desaturation/#add-prevention).
+**Ce que le modèle ne voit pas.** Le modèle est une simplification. Il ignore le débit cardiaque de chacun, le froid, l’effort, la fatigue, la déshydratation, les bulles déjà présentes, et les écarts entre deux personnes. C’est pourquoi on répète qu’un modèle n’est qu’une aide : il ne peut garantir l’absence d’accident, et le dépasser n’entraîne pas forcément un accident. Voir la fiche [La déshydratation](/theorie/deshydratation/#deshydratation-consequences) et la mindmap des [accidents de désaturation](/theorie/accidents-desaturation/#add-prevention).
 
 [L’enseigner →](#enseigner-principes)
 

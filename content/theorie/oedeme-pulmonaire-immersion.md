@@ -101,7 +101,7 @@ Les signes apparaissent en général **au fond ou pendant la plongée**, et s’
 
 - **l’essoufflement** se calme quand on arrête l’effort et qu’on expire à fond ; l’OPI, non. Voir [la rétention de CO2](/theorie/ventilation-essoufflement/#retention-co2) ;
 - **la surpression pulmonaire** se révèle à la sortie, après une remontée rapide ou une expiration bloquée : voir [la surpression](/theorie/barotraumatismes/#surpression) ;
-- **l’accident de désaturation** apparaît souvent après la plongée, parfois des heures plus tard : voir la mindmap [Désaturation](/capacitaire/desaturation/#add-symptomes) ;
+- **l’accident de désaturation** apparaît souvent après la plongée, parfois des heures plus tard : voir la mindmap [Désaturation](/capacitaire/desaturation/#add-symptomes) et la fiche [Les accidents de désaturation](/theorie/accidents-desaturation/#add-symptomes) ;
 - **la noyade** suppose que de l’eau a été inhalée ; dans l’OPI, le liquide vient du sang.
 
 {{< schema "ana-chronologie" >}}

@@ -3155,4 +3155,14 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 /* Théorie, écrit 4 : schémas de la fiche Formation et croissance des bulles (préfixe « des- ») */
 .des-legende__vert::before { background: var(--vert); }
 
+/* Théorie, écrit 4 : schémas de la fiche Les accidents de désaturation (préfixe « des- ») */
+.des-sang { fill: #F2B9B3; } .des-plaquette { fill: #E8822A; }
+.des-paroi-lesee { fill: none; stroke: var(--rouge); stroke-width: 4; stroke-dasharray: 5 4; stroke-linecap: round; }
+.des-fop-repere { fill: none; stroke: #E8822A; stroke-width: 3; }
+.des-renvoi { fill: none; stroke: var(--texte-4); stroke-width: 1.5; }
+.des-cloison { fill: none; stroke: #6B4A3A; stroke-width: 6; stroke-linecap: round; }
+.des-capillaire { fill: none; stroke: #8E5A8C; stroke-width: 2; }
+.des-shunt { fill: none; stroke: #8E5A8C; stroke-width: 10; stroke-linecap: round; opacity: .55; }
+.des-moelle { fill: none; stroke: #E0B81F; stroke-width: 4; stroke-dasharray: 6 4; }
+
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

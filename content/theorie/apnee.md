@@ -72,7 +72,7 @@ La syncope ne prévient pas : toute la sécurité repose donc sur la préventio
 - **S’échauffer progressivement** : quelques apnées courtes et des descentes à faible profondeur avant d’aller plus loin, en commençant aussi par bien équilibrer ses oreilles. C’est ce que le MFT GP-N4 appelle « l’importance de l’échauffement ».
 - **Ne pas forcer en fin de remontée** : ne pas souffler son air avant d’arriver en surface, ce qui ferait chuter l’oxygène encore plus vite, et éviter de relever brusquement la tête vers la surface.
 - **Se protéger du froid**, qui augmente la consommation d’oxygène.
-- **Pas d’apnée après une plongée en scaphandre** : l’azote encore présent dans les tissus et les efforts répétés augmentent le risque d’accident de désaturation. Voir la mindmap [Désaturation](/capacitaire/desaturation/#add-prevention).
+- **Pas d’apnée après une plongée en scaphandre** : l’azote encore présent dans les tissus et les efforts répétés augmentent le risque d’accident de désaturation. Voir la mindmap [Désaturation](/capacitaire/desaturation/#add-prevention) et la fiche [Les accidents de désaturation](/theorie/accidents-desaturation/#add-prevention).
 - **Jamais d’air d’un détendeur pour un apnéiste en profondeur** : s’il remonte sans expirer, c’est la [surpression pulmonaire](/theorie/barotraumatismes/#surpression).
 
 {{< schema "ana-apnee-binome" >}}

@@ -68,7 +68,7 @@ La diurèse n’est pas la seule fuite.
 **Les conséquences.** Avec moins d’eau dans le corps, le sang devient plus concentré.
 
 - **Fatigue, crampes, maux de tête** : les signes les plus fréquents, avec la soif, la bouche sèche, et des urines rares et foncées.
-- **L’accident de désaturation** : un sang plus concentré et une circulation moins efficace élimineraient moins bien l’azote. La déshydratation est retenue comme un facteur favorisant de l’ADD par la plupart des organismes de plongée, même si les preuves directes restent discutées. Retiens-la comme un facteur qui s’ajoute aux autres, rarement comme une cause unique. Voir la mindmap [Désaturation](/capacitaire/desaturation/#add-prevention).
+- **L’accident de désaturation** : un sang plus concentré et une circulation moins efficace élimineraient moins bien l’azote. La déshydratation est retenue comme un facteur favorisant de l’ADD par la plupart des organismes de plongée, même si les preuves directes restent discutées. Retiens-la comme un facteur qui s’ajoute aux autres, rarement comme une cause unique. Voir la mindmap [Désaturation](/capacitaire/desaturation/#add-prevention) et la fiche [Les accidents de désaturation](/theorie/accidents-desaturation/#add-prevention).
 
 {{< schema "ana-desh-consequences" >}}
 

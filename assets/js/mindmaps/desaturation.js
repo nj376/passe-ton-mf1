@@ -53,26 +53,26 @@ tip:"Le MFT MF1 le définit ainsi : « Prt index = profondeur x racine carrée
 "Palier interrompu":["Se réimmerger en moins de 3 min, suivre son ordinateur et ajouter 3 min à 3 m, quel que soit le temps de palier manqué.","Réimmersion impossible, aucun signe et 3 min de palier manquées au plus : surveillance 3 h et pas de plongée pendant 24 h.","Plus de 3 min manquées ou le moindre signe : oxygène et secours."]},
 tip:"Ces procédures (CTN du 14/09/2024) valent pour les plongées à l’ordinateur, en l’absence de signe d’accident. Au moindre signe pouvant évoquer un accident, on déclenche les secours."}]},
 {id:"add",name:"Accidents de désaturation",law:"Mécanismes, cœur, prévention",items:[
-{id:"add-mecanismes",name:"Mécanismes",alt:"Effets des bulles",tags:["Mécanique + biochimique"],s:{
+{id:"add-mecanismes",fiche:"/theorie/accidents-desaturation/#add-mecanismes",name:"Mécanismes",alt:"Effets des bulles",tags:["Mécanique + biochimique"],s:{
 "Effets mécaniques":["Obstruction des vaisseaux, compression ou étirement des tissus par les bulles."],
 "Effets biochimiques":["Les bulles abîment la paroi des vaisseaux, activent plaquettes et coagulation, déclenchent une inflammation.","D’où des signes qui peuvent s’aggraver même après la sortie de l’eau."]}},
-{id:"add-symptomes",name:"Symptômes",alt:"Type I et type II",tags:["Délai : souvent < 1 h"],s:{
+{id:"add-symptomes",fiche:"/theorie/accidents-desaturation/#add-symptomes",name:"Symptômes",alt:"Type I et type II",tags:["Délai : souvent < 1 h"],s:{
 "Formes":["Cutanées : puces (démangeaisons), moutons (marbrures).","Ostéo-arthro-musculaires : douleur articulaire profonde.","Neurologiques : médullaires (dos, jambes, vessie) ou cérébrales (vision, parole, paralysie).","Vestibulaires : vertige, nausées, acouphènes.","Cardio-pulmonaires : douleur thoracique, gêne respiratoire."],
 "Délai":["La plupart des signes apparaissent dans l’heure, parfois jusqu’à 24 h."]}},
-{id:"coeur-fop",name:"Cœur et FOP",alt:"Foramen ovale perméable",tags:["Shunt droit-gauche"],s:{
+{id:"coeur-fop",fiche:"/theorie/accidents-desaturation/#coeur-fop",name:"Cœur et FOP",alt:"Foramen ovale perméable",tags:["Shunt droit-gauche"],s:{
 "Rappel anatomique":["Cœur droit vers les poumons (qui filtrent les bulles), cœur gauche vers tout l’organisme."],
 "FOP":["Persistance d’un passage entre les deux oreillettes, présent chez environ un quart de la population.","Une hausse de pression dans le cœur droit (Valsalva, effort, toux) peut l’ouvrir : des bulles veineuses passent côté artériel.","Associé aux ADD neurologiques, vestibulaires et cutanés de type moutons."]}},
-{id:"shunts-pulmonaires",name:"Shunts pulmonaires",alt:"Le filtre qui laisse passer",tags:["Effort"],s:{
+{id:"shunts-pulmonaires",fiche:"/theorie/accidents-desaturation/#shunts-pulmonaires",name:"Shunts pulmonaires",alt:"Le filtre qui laisse passer",tags:["Effort"],s:{
 "À retenir":["Des communications entre artères et veines pulmonaires peuvent s’ouvrir, notamment à l’effort.","Les bulles contournent alors le filtre pulmonaire : même risque de passage artériel qu’avec un FOP."]}},
-{id:"add-prevention",name:"Prévention et profils à risque",alt:"Réduire le risque",tags:["Avant, pendant, après"],s:{
+{id:"add-prevention",fiche:"/theorie/accidents-desaturation/#add-prevention",name:"Prévention et profils à risque",alt:"Réduire le risque",tags:["Avant, pendant, après"],s:{
 "Profils à risque":["Plongées profondes, longues, avec paliers ; successives ; profils inversés ou en yoyo ; remontées rapides."],
 "Facteurs individuels":["Fatigue, froid, déshydratation, âge, surpoids, FOP, méforme."],
 "Après la plongée":["Pas d’effort, pas d’apnée, pas de Valsalva forcé ; attendre avant l’avion ou l’altitude."]}},
-{id:"add-rifap",name:"Prise en charge RIFAP",alt:"Ce qu’on attend au MF1",tags:["O2 15 L/min"],s:{
+{id:"add-rifap",fiche:"/theorie/accidents-desaturation/#add-rifap",name:"Prise en charge RIFAP",alt:"Ce qu’on attend au MF1",tags:["O2 15 L/min"],s:{
 "Gestes":["Sortir, bilan, O2 au masque haute concentration à 15 L/min.","Eau plate sans sucre, 1 L sur la première heure en petites quantités ; ne pas faire boire une victime peu coopérative ou inconsciente, qui a des nausées ou vomit, ou si on soupçonne une lésion du tube digestif.","Alerte (CROSS VHF 16 ou 196 en mer, 15 ou 112 à terre), fiche d’évacuation, ordinateur avec la victime.","Protéger du froid, surveiller, surveiller aussi le reste de la palanquée."],
 "À savoir":["L’aspirine a été retirée des référentiels de secourisme fédéraux (CDN n°476 du 9 février 2020)."]},
 tip:"Le traitement en caisson n’est pas au programme : on s’arrête à la prise en charge vue au RIFAP."},
-{id:"add-cas",name:"Exemple d’étude de cas",alt:"S’entraîner à raisonner",tags:["Analyse de profil"],s:{
+{id:"add-cas",fiche:"/theorie/accidents-desaturation/#add-cas",name:"Exemple d’étude de cas",alt:"S’entraîner à raisonner",tags:["Analyse de profil"],s:{
 "Énoncé type":["Deuxième plongée à 35 m, profil en yoyo pour un exercice, remontée accélérée sur les 10 derniers mètres. 40 min après, fourmillements dans les jambes."],
 "Raisonnement attendu":["Hypothèse : ADD médullaire, facteurs : successive, yoyo, remontée rapide.","Conduite RIFAP immédiate, alerte, évacuation.","Prévention : respect des cycles CTN, procédure de rattrapage, vitesse de remontée."]}}]}
 ],

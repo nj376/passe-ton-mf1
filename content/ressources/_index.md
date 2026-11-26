@@ -97,4 +97,9 @@ groupes:
             url: "/theorie/bulles-desaturation/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Les accidents de désaturation"
+            resume: "Mécanismes et formes, cœur et FOP, shunts pulmonaires, prévention, prise en charge selon le RIFAP et trois études de cas : reconnaître un ADD, raisonner sur un cas, et savoir l’expliquer à tes élèves."
+            url: "/theorie/accidents-desaturation/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---

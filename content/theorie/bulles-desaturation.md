@@ -52,7 +52,7 @@ Le MFT parle de « Micronoyaux gazeux pré-existants » : c’est le point de
 
 - **Leur nombre** : en très grand nombre, elles dépassent ce que le filtre peut gérer.
 - **Leur croissance** : toutes les bulles ne circulent pas. Certaines se forment et grossissent dans les tissus eux-mêmes, où elles compriment et abîment.
-- **Leur passage du côté artériel** : par un foramen ovale perméable (FOP), dans le cœur, ou par des shunts dans les poumons, des bulles peuvent rejoindre les artères sans être filtrées, et aller vers le cerveau ou la moelle. Ces passages, et les efforts qui les favorisent, sont traités avec les accidents : [cœur et FOP](/capacitaire/desaturation/#coeur-fop), [shunts pulmonaires](/capacitaire/desaturation/#shunts-pulmonaires).
+- **Leur passage du côté artériel** : par un foramen ovale perméable (FOP), dans le cœur, ou par des shunts dans les poumons, des bulles peuvent rejoindre les artères sans être filtrées, et aller vers le cerveau ou la moelle. Ces passages, et les efforts qui les favorisent, sont traités avec les accidents : [cœur et FOP](/theorie/accidents-desaturation/#coeur-fop), [shunts pulmonaires](/theorie/accidents-desaturation/#shunts-pulmonaires).
 
 **Un même plongeur, des résultats variables.** Pour le même profil, la quantité de bulles varie beaucoup d’une plongée à l’autre chez une même personne. Le Doppler compare des procédures sur de nombreux plongeurs ; il ne dit pas si une plongée donnée était « sûre ».
 
