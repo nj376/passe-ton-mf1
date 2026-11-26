@@ -1,0 +1,24 @@
+{{- /* Table des profondeurs maximales d’utilisation des nitrox, calculée à la construction du site : {{< table-mod >}}.
+       MOD = 10 × (PpO2 maximale ÷ fraction d’oxygène − 1), arrondie au mètre inférieur ; au-delà de 60 m, la limite
+       du Code du sport pour le nitrox (A322-76) s’applique. Même calcul que assets/js/outils/nitrox.js. */ -}}
+{{- $melanges := slice 21 22 24 26 28 30 32 34 36 38 40 -}}
+<div class="outil-table-defile">
+<table class="outil-table">
+  <caption>Profondeur maximale d’utilisation selon la PpO2 maximale retenue</caption>
+  <thead><tr><th scope="col">Mélange</th><th scope="col">Oxygène</th><th scope="col">PpO2 1,4&nbsp;bar</th><th scope="col">PpO2 1,6&nbsp;bar</th></tr></thead>
+  <tbody>
+  {{- range $melanges }}
+  {{- $f := div (float .) 100 }}
+  {{- $m14 := math.Floor (add (mul 10 (sub (div 1.4 $f) 1)) 0.000000001) }}
+  {{- $m16 := math.Floor (add (mul 10 (sub (div 1.6 $f) 1)) 0.000000001) }}
+  <tr>
+    <th scope="row">{{ if eq . 21 }}Air{{ else }}EAN{{ . }}{{ end }}</th>
+    <td>{{ . }}&nbsp;%</td>
+    <td>{{ if gt $m14 60 }}60&nbsp;m<sup>*</sup>{{ else }}{{ int $m14 }}&nbsp;m{{ end }}</td>
+    <td>{{ if gt $m16 60 }}60&nbsp;m<sup>*</sup>{{ else }}{{ int $m16 }}&nbsp;m{{ end }}</td>
+  </tr>
+  {{- end }}
+  </tbody>
+</table>
+</div>
+<p class="outil-note"><sup>*</sup>&nbsp;Le calcul donne davantage, mais le Code du sport limite la plongée à l’air et au nitrox à 60&nbsp;m.</p>

@@ -1,0 +1,67 @@
+{{- /* Calculateur « Nitrox et profondeurs maximales » (page /outils/nitrox/), piloté par assets/js/outils/nitrox.js.
+       Deux onglets : un mélange à une profondeur, le meilleur mélange pour une profondeur. Puis la table des profondeurs
+       maximales, calculée ici au moment de la construction du site (lisible sans JavaScript). */ -}}
+<div class="outil" data-outil="nitrox">
+  <noscript><p class="outil-erreur">Active JavaScript pour utiliser le calculateur. La table des profondeurs maximales et les formules restent lisibles plus bas.</p></noscript>
+  <div class="mm-onglets outil-onglets" role="tablist" aria-label="Calcul à faire">
+    <button type="button" class="mm-onglet" role="tab" id="on-onglet-melange" aria-controls="on-melange" aria-selected="true" data-onglet="melange">Un mélange, une profondeur</button>
+    <button type="button" class="mm-onglet" role="tab" id="on-onglet-meilleur" aria-controls="on-meilleur" aria-selected="false" tabindex="-1" data-onglet="meilleur">Le meilleur mélange</button>
+  </div>
+
+  <div class="outil-panneau" id="on-melange" role="tabpanel" aria-labelledby="on-onglet-melange" data-panneau="melange">
+    <p class="outil-consigne">Pour un mélange et une profondeur donnés&nbsp;: les pressions partielles, la profondeur maximale d’utilisation et la profondeur à lire dans les tables MN90.</p>
+    <form class="outil-form" novalidate data-form>
+      <fieldset class="outil-champs">
+        <legend class="visuellement-cache">Le mélange et la plongée</legend>
+        {{ partial "outils/champ.html" (dict "libelle" "Oxygène du mélange (analysé)" "nom" "o2" "valeur" "32" "unite" "%") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Profondeur" "nom" "profondeur" "valeur" "30" "unite" "m") }}
+        {{ partial "outils/champ.html" (dict "libelle" "PpO2 maximale" "nom" "ppo2max" "valeur" "1,6" "unite" "bar") }}
+      </fieldset>
+      <div class="outil-exemples">
+        <span class="outil-exemples__libelle">PpO2 maximale&nbsp;:</span>
+        <button type="button" class="mm-pastille" data-ppo2="1.6">1,6 bar</button>
+        <button type="button" class="mm-pastille" data-ppo2="1.4">1,4 bar</button>
+      </div>
+    </form>
+    <div class="outil-resultats" aria-live="polite" data-resultats>
+      <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">Profondeur maximale d’utilisation</span><span class="outil-resultat__valeur" data-r="mod">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">PpO2 à cette profondeur</span><span class="outil-resultat__valeur" data-r="ppo2">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">PpN2 à cette profondeur</span><span class="outil-resultat__valeur" data-r="ppn2">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Profondeur à lire dans la table MN90</span><span class="outil-resultat__valeur" data-r="pe">–</span></div>
+    </div>
+    <p class="outil-erreur outil-erreur--alerte" role="alert" data-alerte hidden></p>
+    <p class="outil-erreur" role="alert" data-erreur hidden></p>
+    <div class="outil-pasapas">
+      <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+      <ol class="outil-pasapas__etapes" data-pasapas></ol>
+    </div>
+  </div>
+
+  <div class="outil-panneau" id="on-meilleur" role="tabpanel" aria-labelledby="on-onglet-meilleur" data-panneau="meilleur" hidden>
+    <p class="outil-consigne">Pour une profondeur prévue&nbsp;: le mélange le plus riche en oxygène qui respecte la PpO2 maximale.</p>
+    <form class="outil-form" novalidate data-form>
+      <fieldset class="outil-champs">
+        <legend class="visuellement-cache">La plongée prévue</legend>
+        {{ partial "outils/champ.html" (dict "libelle" "Profondeur prévue" "nom" "profondeur" "valeur" "30" "unite" "m") }}
+        {{ partial "outils/champ.html" (dict "libelle" "PpO2 maximale" "nom" "ppo2max" "valeur" "1,6" "unite" "bar") }}
+      </fieldset>
+      <div class="outil-exemples">
+        <span class="outil-exemples__libelle">PpO2 maximale&nbsp;:</span>
+        <button type="button" class="mm-pastille" data-ppo2="1.6">1,6 bar</button>
+        <button type="button" class="mm-pastille" data-ppo2="1.4">1,4 bar</button>
+      </div>
+    </form>
+    <div class="outil-resultats" aria-live="polite" data-resultats>
+      <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">Mélange le plus riche</span><span class="outil-resultat__valeur" data-r="o2">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Sa PpO2 à cette profondeur</span><span class="outil-resultat__valeur" data-r="ppo2">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Sa profondeur maximale</span><span class="outil-resultat__valeur" data-r="mod">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Profondeur à lire dans la table MN90</span><span class="outil-resultat__valeur" data-r="pe">–</span></div>
+    </div>
+    <p class="outil-erreur outil-erreur--alerte" role="alert" data-alerte hidden></p>
+    <p class="outil-erreur" role="alert" data-erreur hidden></p>
+    <div class="outil-pasapas">
+      <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+      <ol class="outil-pasapas__etapes" data-pasapas></ol>
+    </div>
+  </div>
+</div>

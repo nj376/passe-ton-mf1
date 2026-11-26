@@ -3169,7 +3169,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .outil-panneau { display: flex; flex-direction: column; gap: 18px; }
 .ress-fiche p.outil-consigne { margin: 0; font-size: 15px; line-height: 1.55; color: var(--texte-3); }
 .outil-form { display: flex; flex-direction: column; gap: 14px; }
-.outil-champs { margin: 0; padding: 0; border: 0; min-width: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px 16px; }
+.outil-champs { margin: 0; padding: 0; border: 0; min-width: 0; align-items: end; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px 16px; }
 .outil-champ { display: flex; flex-direction: column; gap: 6px; }
 .outil-champ__libelle { font-size: 14px; font-weight: 500; line-height: 1.3; color: var(--texte-2); }
 .outil-champ__saisie { display: flex; align-items: stretch; height: 44px; border: 1px solid var(--bordure-champ); border-radius: 8px; background: var(--blanc); overflow: hidden; }
@@ -3196,6 +3196,21 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .outil-onglets .mm-onglet { height: auto; min-height: 40px; padding: 6px 8px; white-space: normal; line-height: 1.2; font-size: 14px; }
   .outil-champs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .outil-resultats { grid-template-columns: 1fr; }
+}
+
+/* Outils de calcul : table des profondeurs maximales (shortcode table-mod), notes */
+.outil-table-defile { overflow-x: auto; }
+.ress-fiche table.outil-table { margin: 4px 0 8px; font-variant-numeric: tabular-nums; }
+.ress-fiche table.outil-table caption { caption-side: top; text-align: left; padding: 0 0 8px; font-size: 14px; color: var(--texte-4); }
+.ress-fiche table.outil-table td:first-child { width: auto; }
+.ress-fiche table.outil-table th[scope="row"] { font-weight: 600; color: var(--texte); }
+.ress-fiche p.outil-note { margin: 0 0 18px; font-size: 14px; color: var(--texte-4); }
+@media (max-width: 600px) {
+  .ress-fiche table.outil-table { display: table; width: 100%; }
+  .ress-fiche table.outil-table thead { position: static; width: auto; height: auto; overflow: visible; clip: auto; display: table-header-group; }
+  .ress-fiche table.outil-table tbody { display: table-row-group; }
+  .ress-fiche table.outil-table tr { display: table-row; padding: 0; }
+  .ress-fiche table.outil-table th, .ress-fiche table.outil-table td { display: table-cell; padding: 8px 6px; border-bottom: 1px solid var(--bordure); font-size: 14px; }
 }
 
 /* Théorie, écrit 4 : schémas de la fiche Les accidents de désaturation (préfixe « des- ») */
