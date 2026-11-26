@@ -33,7 +33,7 @@ Au capacitaire, le MFT attend une **anatomie simple des poumons et des sinus**, 
 
 {{< schema "ana-alveoles" >}}
 
-**Ce qui entoure les poumons.** Les poumons n’ont pas de muscle. Ils sont enveloppés par la **plèvre**, faite de deux feuillets qui glissent l’un sur l’autre : l’un tapisse le poumon, l’autre la cage thoracique. C’est la plèvre qui « colle » le poumon à la cage thoracique et au **diaphragme**, si bien qu’il les suit à chaque respiration. Entre les deux poumons se trouve le **médiastin**, qui contient le cœur, les gros vaisseaux et la trachée.
+**Ce qui entoure les poumons.** Les poumons n’ont pas de muscle. Ils sont enveloppés par la **plèvre**, faite de deux feuillets qui glissent l’un sur l’autre : l’un tapisse le poumon, l’autre la cage thoracique. Entre ces deux feuillets, il n’y a pas d’air, seulement un mince film de liquide, maintenu en légère dépression : c’est lui qui « colle » le poumon à la cage thoracique et au **diaphragme**, si bien qu’il les suit à chaque respiration. Si de l’air s’infiltre entre les feuillets, ce lien est rompu et le poumon se rétracte sur lui-même, comme un ballon qu’on lâche : c’est le **pneumothorax**. Entre les deux poumons se trouve le **médiastin**, qui contient le cœur, les gros vaisseaux et la trachée.
 
 [L’enseigner →](#enseigner-poumon)
 
@@ -51,6 +51,8 @@ Ce blocage peut avoir plusieurs causes : une remontée en apnée, la panique, u
 
 {{< schema "ana-surpression-trajets" >}}
 
+**Le trajet de l’embolie gazeuse.** Quand la paroi alvéolo-capillaire se déchire, de l’air peut passer directement dans les capillaires qui entourent l’alvéole. Il suit alors le sang qui vient d’être oxygéné : les **veines pulmonaires**, l’**oreillette** puis le **ventricule gauches**, l’**aorte**, et les artères qui montent vers la tête. Les bulles se bloquent dans les petites artères du cerveau, qui ne reçoit plus de sang en aval. C’est la grande différence avec les bulles d’un accident de désaturation : celles-ci arrivent par les veines et sont en principe arrêtées par le poumon ; ici, l’air entre **après** ce filtre, et rien ne l’arrête. Le cœur et ses cavités sont présentés dans la fiche [Les accidents de désaturation](/theorie/accidents-desaturation/#coeur-fop).
+
 **Ce que les signes traduisent.** Chaque signe découle du trajet de l’air :
 
 - **une douleur dans la poitrine, une toux, des crachats sanglants et mousseux** traduisent les alvéoles déchirées et le saignement dans les poumons ;
@@ -59,6 +61,18 @@ Ce blocage peut avoir plusieurs causes : une remontée en apnée, la panique, u
 - **des troubles neurologiques** (un membre qui ne répond plus, une parole ou une vision troublées, un malaise allant jusqu’à la perte de connaissance) traduisent des bulles arrivées dans les artères du cerveau : c’est l’embolie gazeuse, la forme la plus grave.
 
 Les signes apparaissent en général vite, souvent dès la sortie de l’eau. La liste complète, la conduite à tenir et la prévention sont réunies dans la mindmap des accidents : [surpression pulmonaire](/accidents-de-plongee/#surpression-pulmonaire). La prise en charge suit le protocole du RIFAP, et on ne réimmerge jamais. Une embolie gazeuse et un accident de désaturation peuvent se ressembler, mais leur origine est différente : voir la mindmap [Désaturation](/capacitaire/desaturation/#add-mecanismes) et la fiche [Les accidents de désaturation](/theorie/accidents-desaturation/#add-mecanismes).
+
+#### Le calcul : pourquoi un ou deux mètres suffisent
+
+*Un plongeur a les poumons pleins, environ 6 L (la capacité pulmonaire totale, voir [les volumes pulmonaires](/theorie/ventilation-essoufflement/#volumes)). Il bloque sa respiration et remonte vers la surface. Quel volume son air voudrait-il occuper en arrivant ?*
+
+{{< pistes >}}
+- **Depuis 2 m** (1,2 bar) : 6 × 1,2 ÷ 1 = **7,2 L**, soit 20 % de plus que ce que ses poumons peuvent contenir.
+- **Depuis 1 m** (1,1 bar) : 6 × 1,1 ÷ 1 = **6,6 L**, soit 10 % de plus.
+- **Ce que ça montre** : des poumons déjà pleins ne peuvent pas s’étirer davantage. Le moindre volume en trop distend les alvéoles. D’après un cas publié, une différence de pression de l’ordre de celle d’un mètre d’eau suffit déjà à les léser, et DAN rappelle qu’une remontée d’environ 1,5 m en bloquant sa respiration peut provoquer une embolie gazeuse. La piscine n’est donc pas un lieu sans risque.
+{{< /pistes >}}
+
+**Et l’apnéiste ?** Un apnéiste qui descend avec l’air pris en surface ne fait pas de surpression : son air se comprime à la descente, puis retrouve à la remontée le volume qu’il avait au départ, sans le dépasser. Tout change s’il respire de l’air comprimé au fond, sur le détendeur d’un plongeur par exemple : il remonte alors avec plus d’air que ses poumons n’en contiennent en surface, exactement comme un plongeur en scaphandre qui bloquerait sa respiration. D’où la règle : on ne donne jamais d’air à un apnéiste en profondeur. Les accidents propres à l’apnée sont dans la fiche [Les accidents de l’apnée](/theorie/apnee/).
 
 **Le moment le plus exposé pour un moniteur.** Ce sont les exercices de remontée : la remontée en expiration contrôlée, dès le N1, et les remontées assistées. L’élève y remonte avec un embout en bouche ou sans, souvent stressé, et le moniteur doit contrôler son expiration et freiner la remontée.
 
@@ -74,6 +88,8 @@ Les sinus sont des **cavités pleines d’air creusées dans les os de la face**
 - les **cellules ethmoïdales**, de petites cavités entre les deux yeux ;
 - les **sinus maxillaires**, les plus grands, dans les joues, juste au-dessus des dents du haut ;
 - les **sinus sphénoïdaux**, plus en arrière, au fond des fosses nasales. On les voit sur la [coupe de profil de la fiche Oreille](/theorie/oreille/#manoeuvres).
+
+**À quoi servent-ils ?** Leur rôle est encore en partie discuté. On leur prête plusieurs fonctions : alléger les os de la face, donner sa résonance à la voix, protéger la base du crâne lors d’un choc au visage, et produire du monoxyde d’azote, un gaz qui freine les microbes. Pour le plongeur, l’essentiel est ailleurs : ce sont des cavités d’air aux parois rigides, qui doivent s’équilibrer avec la pression.
 
 Chaque sinus communique avec les fosses nasales par un canal fin, l’**ostium**. Tant que ce canal est ouvert, l’air passe et la pression s’équilibre **toute seule**, sans aucune manœuvre.
 
@@ -159,6 +175,7 @@ C’est la notion la plus importante de la fiche, celle que le MFT souligne dès
   - « La surpression, c’est pour les plongées profondes » : c’est près de la surface que le volume varie le plus, et l’accident peut survenir dès quelques mètres.
   - « Remonter en soufflant, c’est vider ses poumons » : on laisse sortir l’air qui se dilate, on ne force pas à vide.
   - « Si je remonte doucement, je peux retenir ma respiration » : même lentement, un poumon bloqué gonfle.
+  - « En piscine, à 2 m, je ne risque rien » : un ou deux mètres suffisent, poumons pleins.
 
 ### Les sinus, du N1 au N3 {#enseigner-sinus}
 
@@ -238,6 +255,9 @@ La méthode complète est dans la [trame de la pédagogie théorique](/ressource
 **Les références médicales consultées**, pour vérifier les mécanismes :
 
 - Manuel MSD, version pour professionnels de santé, [« Barotraumatisme pulmonaire »](https://www.msdmanuals.com/fr/professional/blessures-empoisonnement/lésions-liées-à-la-plongée-sous-marine-ou-au-travail-en-atmosphère-comprimée/barotraumatisme-pulmonaire), [« Revue générale des barotraumatismes »](https://www.msdmanuals.com/fr/professional/blessures-empoisonnement/lésions-liées-à-la-plongée-sous-marine-ou-au-travail-en-atmosphère-comprimée/revue-générale-des-barotraumatismes) et [« Barotraumatisme de l’oreille et des sinus »](https://www.msdmanuals.com/fr/professional/blessures-empoisonnement/lésions-liées-à-la-plongée-sous-marine-ou-au-travail-en-atmosphère-comprimée/barotraumatisme-de-oreille-et-des-sinus) (révisions de juin 2025) ;
+- DAN, J. Gessert, [« Shallow-Water Arterial Gas Embolisms »](https://world.dan.org/fr/?p=18868), *Alert Diver*, 2021, sur l’embolie gazeuse en eau peu profonde ;
+- Lindblom et Tosterud, [cas de barotraumatisme pulmonaire en piscine](https://pmc.ncbi.nlm.nih.gov/articles/PMC8349688/), sur la pression qui suffit à léser le poumon ;
+- [Paranasal sinuses](https://en.wikipedia.org/wiki/Paranasal_sinuses) (Wikipédia, en anglais), pour les fonctions proposées des sinus ;
 - DAN (Divers Alert Network), [« Unexpected Air Pockets »](https://dan.org/alert-diver/article/unexpected-air-pockets/), sur le barotraumatisme dentaire ;
 - García-Torres et Segura-Egea, [revue sur la barodontalgie](https://pmc.ncbi.nlm.nih.gov/articles/PMC11231889/) (2024) ;
 - commission médicale de la FFESSM, [tableau des contre-indications à la plongée](https://medical.ffessm.fr/uploads/media/default/0001/06/1904a71f65f35943591c7089313b0df54f63e350.pdf).
