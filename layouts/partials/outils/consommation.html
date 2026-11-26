@@ -1,0 +1,72 @@
+{{- /* Calculateur « Consommation et autonomie » (page /outils/consommation/), piloté par assets/js/outils/consommation.js.
+       Deux onglets : mesurer sa consommation en surface, prévoir son autonomie. Les exemples remplissent les champs
+       (data-exemple : valeurs séparées par « ; », dans l’ordre des champs du panneau). */ -}}
+<div class="outil" data-outil="consommation">
+  <noscript><p class="outil-erreur">Active JavaScript pour utiliser le calculateur. Les formules et l’exemple corrigé restent lisibles plus bas.</p></noscript>
+  <div class="mm-onglets outil-onglets" role="tablist" aria-label="Calcul à faire">
+    <button type="button" class="mm-onglet" role="tab" id="oc-onglet-mesurer" aria-controls="oc-mesurer" aria-selected="true" data-onglet="mesurer">Mesurer ma consommation</button>
+    <button type="button" class="mm-onglet" role="tab" id="oc-onglet-prevoir" aria-controls="oc-prevoir" aria-selected="false" tabindex="-1" data-onglet="prevoir">Prévoir mon autonomie</button>
+  </div>
+
+  <div class="outil-panneau" id="oc-mesurer" role="tabpanel" aria-labelledby="oc-onglet-mesurer" data-panneau="mesurer">
+    <p class="outil-consigne">Après une plongée : relève ce que tu as consommé pour connaître ta consommation ramenée à la surface.</p>
+    <form class="outil-form" novalidate data-form>
+      <fieldset class="outil-champs">
+        <legend class="visuellement-cache">Ta plongée</legend>
+        {{ partial "outils/champ.html" (dict "libelle" "Volume du bloc" "nom" "volume" "valeur" "15" "unite" "L") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Pression au départ" "nom" "depart" "valeur" "210" "unite" "bar") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Pression à la fin" "nom" "fin" "valeur" "90" "unite" "bar") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Profondeur moyenne" "nom" "profondeur" "valeur" "20" "unite" "m") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Durée de la plongée" "nom" "duree" "valeur" "45" "unite" "min") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Réserve" "nom" "reserve" "valeur" "50" "unite" "bar") }}
+      </fieldset>
+      <div class="outil-exemples">
+        <span class="outil-exemples__libelle">Exemples :</span>
+        <button type="button" class="mm-pastille" data-exemple="15;210;90;20;45;50">Plongée tranquille</button>
+        <button type="button" class="mm-pastille" data-exemple="12;200;60;25;25;50">Plongée avec effort</button>
+      </div>
+    </form>
+    <div class="outil-resultats" aria-live="polite" data-resultats>
+      <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">Consommation en surface</span><span class="outil-resultat__valeur" data-r="surface">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Air consommé</span><span class="outil-resultat__valeur" data-r="air">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Consommation à la profondeur</span><span class="outil-resultat__valeur" data-r="fond">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Au manomètre</span><span class="outil-resultat__valeur" data-r="barmin">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Il restait avant la réserve</span><span class="outil-resultat__valeur" data-r="restant">–</span></div>
+    </div>
+    <p class="outil-erreur" role="alert" data-erreur hidden></p>
+    <div class="outil-pasapas">
+      <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+      <ol class="outil-pasapas__etapes" data-pasapas></ol>
+    </div>
+  </div>
+
+  <div class="outil-panneau" id="oc-prevoir" role="tabpanel" aria-labelledby="oc-onglet-prevoir" data-panneau="prevoir" hidden>
+    <p class="outil-consigne">Avant une plongée : à partir de ta consommation en surface, calcule combien de temps tu peux rester à la profondeur prévue avant d’entamer ta réserve.</p>
+    <form class="outil-form" novalidate data-form>
+      <fieldset class="outil-champs">
+        <legend class="visuellement-cache">La plongée prévue</legend>
+        {{ partial "outils/champ.html" (dict "libelle" "Consommation en surface" "nom" "surface" "valeur" "20" "unite" "L/min") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Volume du bloc" "nom" "volume" "valeur" "12" "unite" "L") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Pression au départ" "nom" "depart" "valeur" "200" "unite" "bar") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Réserve" "nom" "reserve" "valeur" "50" "unite" "bar") }}
+        {{ partial "outils/champ.html" (dict "libelle" "Profondeur prévue" "nom" "profondeur" "valeur" "30" "unite" "m") }}
+      </fieldset>
+      <div class="outil-exemples">
+        <span class="outil-exemples__libelle">Exemples :</span>
+        <button type="button" class="mm-pastille" data-exemple="20;12;200;50;30">Bloc de 12 L à 30 m</button>
+        <button type="button" class="mm-pastille" data-exemple="20;15;200;50;40">Bloc de 15 L à 40 m</button>
+      </div>
+    </form>
+    <div class="outil-resultats" aria-live="polite" data-resultats>
+      <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">Autonomie avant la réserve</span><span class="outil-resultat__valeur" data-r="autonomie">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Air disponible</span><span class="outil-resultat__valeur" data-r="dispo">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Consommation à la profondeur</span><span class="outil-resultat__valeur" data-r="fond">–</span></div>
+      <div class="outil-resultat"><span class="outil-resultat__libelle">Au palier de 3 m</span><span class="outil-resultat__valeur" data-r="palier">–</span></div>
+    </div>
+    <p class="outil-erreur" role="alert" data-erreur hidden></p>
+    <div class="outil-pasapas">
+      <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+      <ol class="outil-pasapas__etapes" data-pasapas></ol>
+    </div>
+  </div>
+</div>

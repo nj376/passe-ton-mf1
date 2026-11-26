@@ -10,6 +10,15 @@
     <h1 class="capa-titre">Ressources</h1>
   </section>
   {{ partial "aide-page.html" "ressources" }}
+  {{- /* Outils : pages trouvées pour chaque groupe de « outils » (une page absente est ignorée). */ -}}
+  {{- $nbOutils := 0 }}
+  {{- range .Params.outils }}{{ range .pages }}{{ with site.GetPage . }}{{ $nbOutils = add $nbOutils 1 }}{{ end }}{{ end }}{{ end }}
+  {{- /* Commutateur Fiches / Outils : caché sans JavaScript, où les deux parties s’affichent l’une sous l’autre (assets/js/ressources.js). */ -}}
+  <div class="mm-onglets ress-commutateur" role="tablist" aria-label="Afficher" data-commutateur hidden>
+    <button type="button" class="mm-onglet" role="tab" id="onglet-fiches" aria-controls="panneau-fiches" aria-selected="true" data-onglet="fiches">Fiches</button>
+    <button type="button" class="mm-onglet" role="tab" id="onglet-outils" aria-controls="panneau-outils" aria-selected="false" tabindex="-1" data-onglet="outils">Outils de calcul ({{ $nbOutils }})</button>
+  </div>
+  <div class="ress-panneau" id="panneau-fiches" role="tabpanel" aria-labelledby="onglet-fiches" data-panneau="fiches">
   {{- range $i, $g := .Params.groupes }}
   {{- $fiches := where $.Pages "Params.groupe" $g.nom }}
   {{- if or $fiches $g.cartes $g.souscartes }}
@@ -74,5 +83,36 @@
   </section>
   {{- end }}
   {{- end }}
+  </div>
+  <div class="ress-panneau" id="panneau-outils" role="tabpanel" aria-labelledby="onglet-outils" data-panneau="outils">
+    <h2 id="outils" class="ress-panneau__titre">Outils de calcul</h2>
+    <p class="ress-groupe__intro">Des calculateurs pour vérifier tes calculs et comprendre la démarche : chaque outil déroule le calcul pas à pas, avec tes propres chiffres. Ce sont des outils pédagogiques : ils ne remplacent ni ta formation, ni ton ordinateur, ni les consignes du directeur de plongée.</p>
+    {{- $n := 0 }}
+    {{- range $og := .Params.outils }}
+    {{- $pages := slice }}{{ range $og.pages }}{{ with site.GetPage . }}{{ $pages = $pages | append . }}{{ end }}{{ end }}
+    {{- if $pages }}
+    {{- $n = add $n 1 }}
+    <section class="ress-groupe" aria-labelledby="{{ $og.ancre }}">
+      <h3 id="{{ $og.ancre }}" class="prog-sous-titre"><span class="ress-groupe__num">{{ $n }}.</span> {{ $og.nom }}</h3>
+      {{- with $og.intro }}<p class="ress-groupe__intro">{{ partial "typo.html" . }}</p>{{ end }}
+      <ul class="ress-fiches">
+        {{- range $pages }}
+        <li><a class="carte ress-carte" href="{{ .RelPermalink }}">
+          <span class="ress-carte__titre">{{ partial "typo.html" .Params.titre }}</span>
+          <span class="ress-carte__resume">{{ partial "typo.html" .Params.resume }}</span>
+          {{- with .Params.ecrit }}<span class="ress-etiquettes"><span class="ress-etiquette ress-etiquette--outil">{{ . }}</span></span>{{ end }}
+          <span class="ress-carte__lire">Ouvrir l’outil →</span>
+        </a></li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+    {{- end }}
+  </div>
 </div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $js := resources.Get "js/ressources.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 {{ end }}

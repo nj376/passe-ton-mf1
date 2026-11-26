@@ -1,0 +1,6 @@
+{{- /* Champ numérique d’un outil de calcul : dict « libelle », « nom », « valeur », « unite ».
+       Saisie en texte (virgule ou point acceptés), lue par le script de l’outil. */ -}}
+<label class="outil-champ">
+  <span class="outil-champ__libelle">{{ .libelle }}</span>
+  <span class="outil-champ__saisie"><input class="outil-champ__entree" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" name="{{ .nom }}" value="{{ .valeur }}" data-champ="{{ .nom }}"><span class="outil-champ__unite">{{ .unite }}</span></span>
+</label>

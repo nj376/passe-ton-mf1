@@ -1,0 +1,6 @@
+{{- /* Calculateur d’une page Outil : {{< outil "consommation" >}}.
+       Insère le formulaire (layouts/partials/outils/<nom>.html) et son script (assets/js/outils/<nom>.js). */ -}}
+{{- $nom := .Get 0 -}}
+{{ partial (printf "outils/%s.html" $nom) .Page }}
+{{- $js := resources.Get (printf "js/outils/%s.js" $nom) | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

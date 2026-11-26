@@ -3155,6 +3155,49 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 /* Théorie, écrit 4 : schémas de la fiche Formation et croissance des bulles (préfixe « des- ») */
 .des-legende__vert::before { background: var(--vert); }
 
+/* Ressources : commutateur Fiches / Outils de calcul (assets/js/ressources.js) */
+.ress-commutateur { align-self: flex-end; }
+.ress-panneau { display: flex; flex-direction: column; gap: 32px; }
+.ress-panneau__titre { margin: 0; font-size: 26px; line-height: 1.25; font-weight: 600; color: var(--texte); }
+.ress-panneau > .ress-groupe__intro { margin: -18px 0 0; max-width: 72ch; }
+.ress-etiquette--outil { background: var(--bleu-clair); color: var(--bleu-fonce); border-color: #C5DAF0; }
+@media (max-width: 600px) { .ress-commutateur { align-self: stretch; } .ress-panneau__titre { font-size: 22px; } }
+
+/* Outils de calcul (content/outils/, layouts/partials/outils/, assets/js/outils/) : préfixe « outil- » */
+.outil { margin: 8px 0 32px; padding: 22px 24px; border-radius: 14px; border: 1px solid var(--bordure); background: var(--bleu-tres-clair); display: flex; flex-direction: column; gap: 18px; }
+.outil-onglets { align-self: flex-start; }
+.outil-panneau { display: flex; flex-direction: column; gap: 18px; }
+.ress-fiche p.outil-consigne { margin: 0; font-size: 15px; line-height: 1.55; color: var(--texte-3); }
+.outil-form { display: flex; flex-direction: column; gap: 14px; }
+.outil-champs { margin: 0; padding: 0; border: 0; min-width: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px 16px; }
+.outil-champ { display: flex; flex-direction: column; gap: 6px; }
+.outil-champ__libelle { font-size: 14px; font-weight: 500; line-height: 1.3; color: var(--texte-2); }
+.outil-champ__saisie { display: flex; align-items: stretch; height: 44px; border: 1px solid var(--bordure-champ); border-radius: 8px; background: var(--blanc); overflow: hidden; }
+.outil-champ__saisie:focus-within { border-color: var(--bleu); box-shadow: 0 0 0 3px var(--bleu-clair); }
+.outil-champ__entree { flex: 1; min-width: 0; padding: 0 12px; border: 0; background: transparent; font: inherit; font-family: var(--police-mono); font-size: 16px; color: var(--texte); }
+.outil-champ__entree:focus { outline: none; }
+.outil-champ__unite { display: flex; align-items: center; padding: 0 12px; border-left: 1px solid var(--bordure); background: var(--puce); font-size: 14px; color: var(--texte-4); white-space: nowrap; }
+.outil-exemples { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.outil-exemples__libelle { font-size: 14px; font-weight: 500; color: var(--texte-3); }
+.outil-resultats { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.outil-resultat { padding: 14px 16px; border-radius: 10px; border: 1px solid var(--bordure); background: var(--blanc); display: flex; flex-direction: column; gap: 6px; }
+.outil-resultat--principal { border-color: var(--bleu); background: var(--bleu-clair); }
+.outil-resultat__libelle { font-size: 13px; font-weight: 500; line-height: 1.35; color: var(--texte-4); }
+.outil-resultat__valeur { font-family: var(--police-mono); font-size: 19px; font-weight: 600; line-height: 1.3; color: var(--texte); }
+.outil-resultat--principal .outil-resultat__valeur { font-size: 24px; color: var(--bleu-fonce); }
+.ress-fiche p.outil-erreur { margin: 0; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--bordure-rouge); background: #FBEDEA; font-size: 15px; color: var(--rouge-titre); }
+.outil-pasapas { padding: 16px 18px; border-radius: 10px; background: var(--blanc); border: 1px solid var(--bordure); }
+.ress-fiche h3.outil-pasapas__titre { margin: 0 0 8px; font-size: 16px; font-weight: 600; color: var(--bleu); }
+.ress-fiche ol.outil-pasapas__etapes { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.55; }
+.outil-pasapas__etapes strong { font-weight: 600; color: var(--texte); }
+@media (max-width: 600px) {
+  .outil { padding: 16px 14px; }
+  .outil-onglets { align-self: stretch; }
+  .outil-onglets .mm-onglet { height: auto; min-height: 40px; padding: 6px 8px; white-space: normal; line-height: 1.2; font-size: 14px; }
+  .outil-champs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .outil-resultats { grid-template-columns: 1fr; }
+}
+
 /* Théorie, écrit 4 : schémas de la fiche Les accidents de désaturation (préfixe « des- ») */
 .des-sang { fill: #F2B9B3; } .des-plaquette { fill: #E8822A; }
 .des-paroi-lesee { fill: none; stroke: var(--rouge); stroke-width: 4; stroke-dasharray: 5 4; stroke-linecap: round; }

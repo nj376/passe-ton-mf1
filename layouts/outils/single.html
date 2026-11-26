@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{- /* Une page « Outil de calcul » (content/outils/<outil>.md), listée dans l’onglet Outils de /ressources/.
+       Même charte que les fiches Ressources ; le calculateur est inséré par le shortcode {{< outil "<nom>" >}}.
+       Paramètres : « fiche » (adresse de la fiche théorique liée, pour le lien de retour), « ficheTitre », « sources ». */ -}}
+{{- $retour := `<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>` | safeHTML -}}
+<div class="capa ress">
+  <div class="theo-retours">
+    <a class="retour" href="{{ "/ressources/#outils" | relURL }}">{{ $retour }}Tous les outils</a>
+    {{- with .Params.fiche }}
+    <a class="retour" href="{{ . | relURL }}">{{ $retour }}Fiche « {{ $.Params.ficheTitre }} »</a>
+    {{- end }}
+  </div>
+  <section class="capa-entete">
+    <span class="ress-surtitre">Outil de calcul</span>
+    <h1 class="capa-titre">{{ partial "typo.html" .Params.titre }}</h1>
+    <p class="capa-accroche">{{ partial "typo.html" .Params.resume }}</p>
+  </section>
+  <article class="carte ress-fiche">
+    {{ partial "typo.html" (string .Content) | safeHTML }}
+  </article>
+  <p class="ress-source">Sources : {{ .Params.sources }}. Cet outil est une aide pédagogique : il ne remplace ni ta formation, ni ton ordinateur, ni les consignes du directeur de plongée.</p>
+  <div class="theo-retours">
+    <a class="retour ress-retour-bas" href="{{ "/ressources/#outils" | relURL }}">{{ $retour }}Tous les outils</a>
+  </div>
+</div>
+{{ end }}

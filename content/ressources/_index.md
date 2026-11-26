@@ -1,6 +1,6 @@
 ---
 title: "Passe-ton-MF1 · Ressources"
-description: "Fiches pour préparer le MF1, dans l'ordre du parcours : le MFT et le livret, concevoir un enseignement, évaluer, les trames de l'examen, organiser et sécuriser l'activité, comprendre et enseigner la théorie, le cadre réglementaire et fédéral."
+description: "Fiches pour préparer le MF1, dans l'ordre du parcours : le MFT et le livret, concevoir un enseignement, évaluer, les trames de l'examen, organiser et sécuriser l'activité, comprendre et enseigner la théorie, le cadre réglementaire et fédéral, et des outils de calcul."
 classePrincipal: "principal--interieur principal--capa"
 # Sections du sommaire, dans l’ordre du cheminement d’un stagiaire. Chaque fiche se range par son paramètre « groupe »
 # (égal à « nom ») et, dans une section, par « weight ». Une fiche qui a « sousgroupe » s’affiche dans une sous-partie.
@@ -102,4 +102,19 @@ groupes:
   - nom: "Le cadre : droit et institutions"
     ancre: "le-cadre"
     intro: "Ta responsabilité d’encadrant, le club comme établissement d’APS, et l’organisation de la fédération."
+# Onglet « Outils » : calculateurs (content/outils/*.md), rangés par groupe. « pages » : chemins des pages outils, dans l’ordre.
+# Une page absente du site est ignorée : on peut annoncer un outil avant de l’avoir écrit.
+outils:
+  - nom: "Gaz et consommation"
+    ancre: "outils-gaz"
+    intro: "Mesurer sa consommation, prévoir son autonomie, préparer l’air d’une plongée : les calculs de Mariotte de l’écrit 2, avec ton propre exemple."
+    pages: ["/outils/consommation", "/outils/gestion-air"]
+  - nom: "Nitrox et oxygène"
+    ancre: "outils-nitrox"
+    intro: "Pressions partielles, profondeurs maximales et exposition à l’oxygène : les calculs de Dalton appliqués au nitrox."
+    pages: ["/outils/nitrox", "/outils/cns-otu"]
+  - nom: "Désaturation"
+    ancre: "outils-desaturation"
+    intro: "La courbe de sécurité des tables MN90, comparée à celle d’un modèle d’ordinateur."
+    pages: ["/outils/sans-palier"]
 ---
