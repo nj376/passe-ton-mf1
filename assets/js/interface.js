@@ -97,11 +97,12 @@
 
   window.Interface = { ouvrirFenetre: ouvrirFenetre, fermerFenetre: fermerFenetre };
 
-  /* Retour en haut de la page : visible après un écran de défilement. */
+  /* Retour en haut de la page : visible dès que le menu (en-tête) est sorti de l'écran. */
   (function () {
     var haut = document.querySelector("[data-haut-page]");
     if (!haut) return;
-    var maj = function () { haut.hidden = window.scrollY < window.innerHeight * 0.8; };
+    var entete = document.querySelector(".en-tete");
+    var maj = function () { haut.hidden = window.scrollY < (entete ? entete.offsetHeight : window.innerHeight * 0.8); };
     window.addEventListener("scroll", maj, { passive: true });
     maj();
     haut.addEventListener("click", function (e) {

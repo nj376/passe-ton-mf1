@@ -1222,10 +1222,11 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .accueil-liens { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--bordure); }
 .accueil-liens li { border-bottom: 1px solid var(--bordure); }
 .accueil-liens li:last-child { border-bottom: 0; }
-.accueil-liens a { min-height: 48px; padding: 10px 0; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--bleu); font-weight: 500; text-decoration: none; }
-.accueil-liens a:hover { color: var(--bleu-survol); }
-.accueil-liens a:hover span { text-decoration: underline; }
+.accueil-liens a, .accueil-liens__bouton { min-height: 48px; padding: 10px 0; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--bleu); font-weight: 500; text-decoration: none; }
+.accueil-liens a:hover, .accueil-liens__bouton:hover { color: var(--bleu-survol); }
+.accueil-liens a:hover span, .accueil-liens__bouton:hover span { text-decoration: underline; }
 .accueil-liens svg { flex: 0 0 auto; }
+.accueil-liens__bouton { width: 100%; margin: 0; border: 0; background: none; font: inherit; font-weight: 500; text-align: left; cursor: pointer; }
 /* Zone 4 */
 .accueil-confiance { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 56px; }
 .accueil-gage { display: flex; gap: 16px; }
@@ -2146,7 +2147,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .barre-suivi--sans-bouton .barre-suivi__interieur { min-height: 50px; }
 
 /* ---------- Retour en haut de la page ---------- */
-.haut-page { position: fixed; right: 20px; bottom: 20px; z-index: 30; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--bordure-bleu-pale); background: var(--blanc); color: var(--bleu); display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--ombre-menu); text-decoration: none; }
+/* Bureau : juste à droite de la colonne de texte (largeur du site), jamais à moins de 20 px du bord de la fenêtre. */
+.haut-page { position: fixed; right: max(20px, calc((100vw - var(--largeur)) / 2 + var(--gouttiere) - 60px)); bottom: 20px; z-index: 30; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--bordure-bleu-pale); background: var(--blanc); color: var(--bleu); display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--ombre-menu); text-decoration: none; }
 .haut-page:hover { border-color: var(--bleu); background: var(--bleu-clair); color: var(--bleu-survol); }
 .haut-page[hidden] { display: none; }
 @media (max-width: 767px) { .haut-page { right: 16px; bottom: 16px; } }
