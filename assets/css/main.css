@@ -3130,4 +3130,26 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .ana-legende__charge::before { background: var(--rouge); } .ana-legende__niveau::before { background: repeating-linear-gradient(90deg, var(--texte-4) 0 5px, transparent 5px 9px); }
 .ana-cycle-1 { fill: #8796A5; } .ana-cycle-2 { fill: #2E8B57; } .ana-cycle-3 { fill: var(--bleu); } .ana-cycle-4 { fill: #E8822A; }
 .ana-drapeau-mat { fill: none; stroke: var(--texte-4); stroke-width: 3; stroke-linecap: round; } .ana-drapeau { fill: var(--rouge); }
+/* Théorie, écrit 4 : schémas de la fiche Le modèle de Haldane et ses dérivés (préfixe « des- », même charte) */
+.des-barre-pp { fill: #5B86BE; }
+.des-legende__pp::before { background: #5B86BE; } .des-legende__tension::before { background: #7D5BB5; }
+.des-ligne-100 { fill: none; stroke: var(--texte-4); stroke-width: 1.5; stroke-dasharray: 6 5; }
+.des-separation { fill: none; stroke: var(--texte-4); stroke-width: 1.5; stroke-dasharray: 3 4; }
+.des-courbe-sat { fill: none; stroke: #7D5BB5; stroke-width: 4; stroke-linejoin: round; }
+.des-courbe-desat { fill: none; stroke: #5B86BE; stroke-width: 4; stroke-linejoin: round; }
+.des-point { fill: var(--blanc); stroke: var(--texte-4); stroke-width: 2; }
+.des-tronc { fill: none; stroke: var(--bleu-fonce); stroke-width: 3; stroke-linecap: round; }
+.des-compart-fond { fill: var(--blanc); } .des-compart { fill: none; stroke: #4B2E83; stroke-width: 2; }
+.des-zone-toleree { fill: #FDF3E4; }
+.des-repere-surface { fill: none; stroke: var(--texte-4); stroke-width: 1; stroke-dasharray: 3 4; }
+.des-l-ambiante { stroke: var(--texte-4); stroke-width: 3; stroke-linecap: round; }
+.des-l-saturation { stroke: var(--bleu); stroke-width: 3; stroke-linecap: round; }
+.des-l-mvalue { stroke: var(--rouge); stroke-width: 3; stroke-linecap: round; }
+.des-l-gf { stroke: #E8822A; stroke-width: 3; stroke-dasharray: 8 5; stroke-linecap: round; }
+.des-point-gf { fill: #E8822A; }
+.des-legende__ambiante::before { background: var(--texte-4); } .des-legende__saturation::before { background: var(--bleu); }
+.des-legende__mvalue::before { background: var(--rouge); } .des-legende__gf::before { background: #E8822A; }
+.des-profil-a { fill: none; stroke: #E8822A; stroke-width: 3; stroke-linejoin: round; }
+.des-profil-b { fill: none; stroke: var(--bleu); stroke-width: 3; stroke-linejoin: round; }
+.des-coude { fill: none; stroke: var(--vert); stroke-width: 3; stroke-linejoin: round; }
 @media (max-width: 600px) { .ress-schema.ana-schema { padding: 10px; } }

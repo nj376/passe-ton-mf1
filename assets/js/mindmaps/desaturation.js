@@ -9,22 +9,22 @@ search:"Rechercher : période, M-value, FOP, yoyo…",
 start:"haldane-principes",
 cats:[
 {id:"haldane",name:"Haldane et dérivés",law:"Compartiments en parallèle",items:[
-{id:"haldane-principes",name:"Principes de Haldane",alt:"Le modèle fondateur (1907)",tags:["Période","Gradient"],s:{
+{id:"haldane-principes",fiche:"/theorie/modele-haldane/#haldane-principes",name:"Principes de Haldane",alt:"Le modèle fondateur (1907)",tags:["Période","Gradient"],s:{
 "Hypothèses":["L’organisme est découpé en compartiments théoriques, en parallèle, qui échangent tous directement avec le sang.","Chaque compartiment a une période : le temps pour faire la moitié du chemin vers la saturation.","La vitesse d’échange dépend du gradient entre la pression d’azote respirée et la tension du compartiment."],
 "Saturation":["Après 1 période : 50 % ; 2 : 75 % ; 3 : 87,5 % ; 4 : 93,75 % ; 5 : environ 97 % ; 6 : environ 98,4 %.","On considère un compartiment saturé au bout de 6 périodes. La désaturation suit la même loi."]},
 tip:"Question type : tension d’un compartiment de 20 min après 40 min à 30 m. Deux périodes : 75 % du chemin entre 0,79 et 3,16 bar, soit environ 2,57 bar."},
-{id:"conditions-remontee",name:"Conditions de remontée",alt:"Sc, M-values, facteurs de gradient",tags:["Sursaturation tolérée"],s:{
+{id:"conditions-remontee",fiche:"/theorie/modele-haldane/#conditions-remontee",name:"Conditions de remontée",alt:"Sc, M-values, facteurs de gradient",tags:["Sursaturation tolérée"],s:{
 "Sc":["Coefficient de sursaturation critique : rapport maximal toléré entre la tension d’un compartiment et la pression ambiante.","Plus le compartiment est rapide, plus il tolère une sursaturation élevée."],
 "M-values":["Tension maximale tolérée par compartiment à chaque profondeur (approche de Workman, puis Bühlmann).","Elles s’expriment par une droite : la tolérance augmente avec la profondeur."],
 "Facteurs de gradient":["Pourcentage de la M-value qu’on s’autorise : GF bas (premier palier) et GF haut (sortie), par exemple 30/85.","Un GF bas fait commencer les paliers plus profond ; un GF haut bas allonge les paliers près de la surface."]}},
-{id:"mn90",name:"Tables MN90",alt:"Marine nationale, 1990",tags:["12 compartiments","Sc 2,72 à 1,54"],s:{
+{id:"mn90",fiche:"/theorie/modele-haldane/#mn90",name:"Tables MN90",alt:"Marine nationale, 1990",tags:["12 compartiments","Sc 2,72 à 1,54"],s:{
 "Paramètres":["12 compartiments de période 5 à 120 min.","Sc de 2,72 pour le compartiment de 5 min à 1,54 pour celui de 120 min.","Vitesse de remontée de 15 à 17 m/min jusqu’au premier palier, 6 m/min entre les paliers et jusqu’à la surface.","Paliers de 3 en 3 m."],
 "Plongées successives":["Le compartiment de 120 min sert à calculer l’azote résiduel.","Intervalle de moins de 15 min : plongée consécutive (une seule plongée). Plus de 12 h : plongée isolée."]}},
-{id:"buhlmann",name:"Bühlmann ZHL-16C",alt:"Modèle des ordinateurs",tags:["16 compartiments"],s:{
+{id:"buhlmann",fiche:"/theorie/modele-haldane/#buhlmann",name:"Bühlmann ZHL-16C",alt:"Modèle des ordinateurs",tags:["16 compartiments"],s:{
 "Paramètres":["16 compartiments, de quelques minutes à environ 635 min.","Chaque compartiment a ses coefficients a et b qui définissent sa M-value.","Version C adaptée au calcul en temps réel ; souvent combinée aux facteurs de gradient."]}},
-{id:"rgbm",name:"RGBM",alt:"Modèle de Wienke",tags:["Gaz dissous + bulles"],s:{
+{id:"rgbm",fiche:"/theorie/modele-haldane/#rgbm",name:"RGBM",alt:"Modèle de Wienke",tags:["Gaz dissous + bulles"],s:{
 "Principes":["Reduced Gradient Bubble Model : le MFT MF1 le range parmi les jeux de paramètres haldaniens, avec la MN90 et Bühlmann (ZHL-16C). Il réduit les gradients admis pour tenir compte de la formation de bulles.","Pénalise les profils à risque : yoyo, remontées rapides, intervalles courts, plongées successives.","Utilisé dans plusieurs marques d’ordinateurs."]}},
-{id:"successives",name:"Successives et majoration",alt:"Calcul MN90",tags:["GPS, azote résiduel"],s:{
+{id:"successives",fiche:"/theorie/modele-haldane/#successives",name:"Successives et majoration",alt:"Calcul MN90",tags:["GPS, azote résiduel"],s:{
 "Démarche":["Lire le groupe de plongée successive (GPS) à la sortie.","Avec l’intervalle, trouver l’azote résiduel.","Avec la profondeur de la 2ᵉ plongée, trouver la majoration : temps fictif ajouté à la durée réelle.","Lire les paliers avec durée réelle + majoration."]},
 tip:"Les questions restent simples : savoir dérouler la démarche et expliquer pourquoi on majore."}]},
 {id:"dciem",name:"Autre modèle : DCIEM",law:"Compartiments en série",items:[

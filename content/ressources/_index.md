@@ -80,4 +80,11 @@ groupes:
             url: "/theorie/entrainement-physique/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+      - titre: "Écrit 4 : désaturation"
+        cartes:
+          - titre: "Le modèle de Haldane et ses dérivés"
+            resume: "Compartiments et périodes, Sc, M-values et facteurs de gradient, tables MN90, Bühlmann, RGBM, plongées successives : comprendre ce que calculent tables et ordinateurs, et savoir l’expliquer à tes élèves."
+            url: "/theorie/modele-haldane/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---

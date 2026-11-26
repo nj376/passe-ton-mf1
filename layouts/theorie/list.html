@@ -8,7 +8,7 @@
     <h1 class="capa-titre">{{ partial "typo.html" .Params.titre }}</h1>
     <p class="capa-accroche">{{ partial "typo.html" .Params.resume }}</p>
   </section>
-  {{- $ecrits := slice (dict "mindmap" "aspects-theoriques" "ancre" "ecrit-2" "titre" "Écrit 2 : aspects théoriques de l’activité") (dict "mindmap" "anatomie-physiologie" "ancre" "ecrit-3" "titre" "Écrit 3 : anatomie, physiologie, physiopathologie") }}
+  {{- $ecrits := slice (dict "mindmap" "aspects-theoriques" "ancre" "ecrit-2" "titre" "Écrit 2 : aspects théoriques de l’activité") (dict "mindmap" "anatomie-physiologie" "ancre" "ecrit-3" "titre" "Écrit 3 : anatomie, physiologie, physiopathologie") (dict "mindmap" "desaturation" "ancre" "ecrit-4" "titre" "Écrit 4 : désaturation") }}
   {{- range $ecrits }}
   {{- $ecrit := . }}
   {{- with where $.Pages "Params.mindmap" $ecrit.mindmap }}
