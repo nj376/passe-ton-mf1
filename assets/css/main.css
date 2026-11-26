@@ -3213,6 +3213,25 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .ress-fiche table.outil-table th, .ress-fiche table.outil-table td { display: table-cell; padding: 8px 6px; border-bottom: 1px solid var(--bordure); font-size: 14px; }
 }
 
+/* Outils de calcul : segments d’une plongée (outil CNS et OTU) */
+.ress-fiche ol.outil-segments { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.outil-segment { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; align-items: end; gap: 12px 16px; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--bordure); background: var(--blanc); }
+.outil-segment__numero { align-self: center; font-size: 14px; font-weight: 600; color: var(--bleu); }
+.outil-champs--segment { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.outil-ajouter, .outil-retirer { height: 40px; padding: 0 14px; border-radius: 8px; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.outil-ajouter { border: 1px solid var(--bleu); background: var(--blanc); color: var(--bleu); }
+.outil-ajouter:hover { background: var(--bleu-clair); }
+.outil-ajouter:disabled { opacity: .5; cursor: not-allowed; }
+.outil-retirer { height: 44px; border: 1px solid var(--bordure-bouton); background: var(--blanc); color: var(--texte-3); }
+.outil-retirer:hover { background: var(--puce); }
+@media (max-width: 600px) {
+  .outil-segment { grid-template-columns: minmax(0, 1fr) auto; }
+  .outil-segment .outil-champs--segment { grid-column: 1 / -1; grid-row: 2; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .outil-segment .outil-retirer { height: 34px; }
+  .outil-champs--segment .outil-champ__unite { padding: 0 6px; }
+  .outil-champs--segment .outil-champ__entree { padding: 0 8px; }
+}
+
 /* Théorie, écrit 4 : schémas de la fiche Les accidents de désaturation (préfixe « des- ») */
 .des-sang { fill: #F2B9B3; } .des-plaquette { fill: #E8822A; }
 .des-paroi-lesee { fill: none; stroke: var(--rouge); stroke-width: 4; stroke-dasharray: 5 4; stroke-linecap: round; }

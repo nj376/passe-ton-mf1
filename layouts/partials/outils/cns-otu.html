@@ -1,0 +1,41 @@
+{{- /* Calculateur « Exposition à l’oxygène : CNS et OTU » (page /outils/cns-otu/), piloté par assets/js/outils/cns-otu.js.
+       Une plongée = une liste de segments (profondeur, durée, oxygène), créés à partir du modèle <template>.
+       data-exemple : segments séparés par « | », valeurs « profondeur;durée;oxygène ». Le premier exemple sert au chargement. */ -}}
+<div class="outil" data-outil="cns-otu">
+  <noscript><p class="outil-erreur">Active JavaScript pour utiliser le calculateur. Les tables et les formules restent lisibles plus bas.</p></noscript>
+  <p class="outil-consigne">Découpe ta plongée en segments de profondeur et de mélange constants&nbsp;: le fond, puis chaque palier. Les paliers à l’oxygène ou au nitrox comptent aussi.</p>
+  <form class="outil-form" novalidate data-form>
+    <ol class="outil-segments" data-segments></ol>
+    <div class="outil-exemples">
+      <button type="button" class="outil-ajouter" data-ajouter>+ Ajouter un segment</button>
+    </div>
+    <div class="outil-exemples">
+      <span class="outil-exemples__libelle">Exemples&nbsp;:</span>
+      <button type="button" class="mm-pastille" data-exemple="30;40;32|3;5;32">EAN32 à 30 m</button>
+      <button type="button" class="mm-pastille" data-exemple="40;20;21|6;10;100|3;15;100">Air, paliers à l’oxygène</button>
+      <button type="button" class="mm-pastille" data-exemple="20;60;40">EAN40, longue plongée</button>
+    </div>
+  </form>
+  <template data-modele>
+    <li class="outil-segment" data-segment>
+      <span class="outil-segment__numero" data-numero>Segment</span>
+      <div class="outil-champs outil-champs--segment">
+        <label class="outil-champ"><span class="outil-champ__libelle">Profondeur</span><span class="outil-champ__saisie"><input class="outil-champ__entree" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-champ="profondeur" data-libelle="Profondeur"><span class="outil-champ__unite">m</span></span></label>
+        <label class="outil-champ"><span class="outil-champ__libelle">Durée</span><span class="outil-champ__saisie"><input class="outil-champ__entree" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-champ="duree" data-libelle="Durée"><span class="outil-champ__unite">min</span></span></label>
+        <label class="outil-champ"><span class="outil-champ__libelle">Oxygène</span><span class="outil-champ__saisie"><input class="outil-champ__entree" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-champ="o2" data-libelle="Oxygène"><span class="outil-champ__unite">%</span></span></label>
+      </div>
+      <button type="button" class="outil-retirer" data-retirer aria-label="Retirer ce segment">Retirer</button>
+    </li>
+  </template>
+  <div class="outil-resultats" aria-live="polite">
+    <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">CNS&nbsp;: part de la limite d’exposition unique</span><span class="outil-resultat__valeur" data-r="cns">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">Part de la limite sur 24 heures</span><span class="outil-resultat__valeur" data-r="cns24">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">Dose pour les poumons</span><span class="outil-resultat__valeur" data-r="otu">–</span></div>
+  </div>
+  <p class="outil-erreur outil-erreur--alerte" role="alert" data-alerte hidden></p>
+  <p class="outil-erreur" role="alert" data-erreur hidden></p>
+  <div class="outil-pasapas">
+    <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+    <ol class="outil-pasapas__etapes" data-pasapas></ol>
+  </div>
+</div>
