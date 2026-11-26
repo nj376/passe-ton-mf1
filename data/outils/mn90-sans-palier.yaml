@@ -1,0 +1,27 @@
+# Courbe de sécurité des tables fédérales FFESSM de plongée à l'air (MN90), lue dans _MFT/MN90.pdf (pages 4 et 5).
+# Pour chaque profondeur de la table : la plus longue durée (en minutes) sans palier obligatoire.
+# 6 et 8 m : aucun palier jusqu'à la dernière ligne de la table (6 h). À partir de 50 m, même 5 min imposent un palier.
+# Utilisé par le shortcode table-sans-palier et par l'outil /outils/sans-palier/ (assets/js/outils/sans-palier.js).
+- { profondeur: 6, duree: 360, finTable: true }
+- { profondeur: 8, duree: 360, finTable: true }
+- { profondeur: 10, duree: 330 }
+- { profondeur: 12, duree: 135 }
+- { profondeur: 15, duree: 75 }
+- { profondeur: 18, duree: 50 }
+- { profondeur: 20, duree: 40 }
+- { profondeur: 22, duree: 35 }
+- { profondeur: 25, duree: 20 }
+- { profondeur: 28, duree: 15 }
+- { profondeur: 30, duree: 10 }
+- { profondeur: 32, duree: 10 }
+- { profondeur: 35, duree: 10 }
+- { profondeur: 38, duree: 5 }
+- { profondeur: 40, duree: 5 }
+- { profondeur: 42, duree: 5 }
+- { profondeur: 45, duree: 5 }
+- { profondeur: 48, duree: 5 }
+- { profondeur: 50, duree: 0 }
+- { profondeur: 52, duree: 0 }
+- { profondeur: 55, duree: 0 }
+- { profondeur: 58, duree: 0 }
+- { profondeur: 60, duree: 0 }

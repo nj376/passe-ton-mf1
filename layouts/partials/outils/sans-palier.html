@@ -1,0 +1,39 @@
+{{- /* Calculateur « Courbe de sécurité » (page /outils/sans-palier/), piloté par assets/js/outils/sans-palier.js.
+       La courbe MN90 (data/outils/mn90-sans-palier.yaml) est transmise au script dans data-mn90. */ -}}
+{{- $courbe := index site.Data.outils "mn90-sans-palier" -}}
+<div class="outil" data-outil="sans-palier" data-mn90="{{ $courbe | jsonify }}">
+  <noscript><p class="outil-erreur">Active JavaScript pour utiliser le calculateur. La courbe des tables MN90 reste lisible plus bas.</p></noscript>
+  <p class="outil-consigne">Pour une plongée unique à profondeur constante&nbsp;: la plus longue durée sans palier obligatoire selon les tables fédérales, et selon le modèle de Bühlmann qui équipe de nombreux ordinateurs.</p>
+  <form class="outil-form" novalidate data-form>
+    <fieldset class="outil-champs">
+      <legend class="visuellement-cache">La plongée</legend>
+      {{ partial "outils/champ.html" (dict "libelle" "Profondeur" "nom" "profondeur" "valeur" "20" "unite" "m") }}
+      {{ partial "outils/champ.html" (dict "libelle" "Oxygène du mélange" "nom" "o2" "valeur" "21" "unite" "%") }}
+      {{ partial "outils/champ.html" (dict "libelle" "Facteur de gradient haut (Bühlmann)" "nom" "gf" "valeur" "85" "unite" "%") }}
+    </fieldset>
+    <div class="outil-exemples">
+      <span class="outil-exemples__libelle">GF haut&nbsp;:</span>
+      <button type="button" class="mm-pastille" data-gf="100">100&nbsp;%</button>
+      <button type="button" class="mm-pastille" data-gf="90">90&nbsp;%</button>
+      <button type="button" class="mm-pastille" data-gf="85">85&nbsp;%</button>
+      <button type="button" class="mm-pastille" data-gf="70">70&nbsp;%</button>
+    </div>
+    <div class="outil-exemples">
+      <span class="outil-exemples__libelle">Exemples&nbsp;:</span>
+      <button type="button" class="mm-pastille" data-exemple="20;21;85">Air à 20 m</button>
+      <button type="button" class="mm-pastille" data-exemple="30;21;85">Air à 30 m</button>
+      <button type="button" class="mm-pastille" data-exemple="30;32;85">EAN32 à 30 m</button>
+    </div>
+  </form>
+  <div class="outil-resultats" aria-live="polite">
+    <div class="outil-resultat outil-resultat--principal"><span class="outil-resultat__libelle">Tables MN90</span><span class="outil-resultat__valeur" data-r="mn90">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">Modèle de Bühlmann ZH-L16C</span><span class="outil-resultat__valeur" data-r="buhlmann">–</span></div>
+    <div class="outil-resultat"><span class="outil-resultat__libelle">PpO2 à cette profondeur</span><span class="outil-resultat__valeur" data-r="ppo2">–</span></div>
+  </div>
+  <p class="outil-erreur outil-erreur--alerte" role="alert" data-alerte hidden></p>
+  <p class="outil-erreur" role="alert" data-erreur hidden></p>
+  <div class="outil-pasapas">
+    <h3 class="outil-pasapas__titre">Le calcul pas à pas</h3>
+    <ol class="outil-pasapas__etapes" data-pasapas></ol>
+  </div>
+</div>

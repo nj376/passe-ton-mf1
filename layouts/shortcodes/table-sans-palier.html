@@ -1,0 +1,24 @@
+{{- /* Courbe de sécurité MN90 comparée au modèle de Bühlmann : {{< table-sans-palier >}}.
+       Colonne MN90 : data/outils/mn90-sans-palier.yaml (lisible sans JavaScript) ; colonnes Bühlmann remplies par
+       assets/js/outils/sans-palier.js (cellules data-buhlmann, à l’air, facteur de gradient haut data-gf-table). */ -}}
+{{- $courbe := index site.Data.outils "mn90-sans-palier" -}}
+<div class="outil-table-defile">
+<table class="outil-table">
+  <caption>Durée maximale sans palier obligatoire, plongée unique à l’air</caption>
+  <thead><tr><th scope="col">Profondeur</th><th scope="col">Tables MN90</th><th scope="col">Bühlmann, GF&nbsp;100&nbsp;%</th><th scope="col">GF&nbsp;85&nbsp;%</th><th scope="col">GF&nbsp;70&nbsp;%</th></tr></thead>
+  <tbody>
+  {{- range $courbe }}
+  {{- if le .profondeur 50 }}
+  <tr>
+    <th scope="row">{{ .profondeur }}&nbsp;m</th>
+    <td>{{ if .finTable }}plus de 6&nbsp;h{{ else if eq .duree 0 }}palier dès 5&nbsp;min{{ else if ge .duree 60 }}{{ div .duree 60 }}&nbsp;h{{ with mod .duree 60 }}&nbsp;{{ printf "%02d" . }}{{ end }}{{ else }}{{ .duree }}&nbsp;min{{ end }}</td>
+    <td data-buhlmann="{{ .profondeur }}" data-gf-table="1">–</td>
+    <td data-buhlmann="{{ .profondeur }}" data-gf-table="0.85">–</td>
+    <td data-buhlmann="{{ .profondeur }}" data-gf-table="0.7">–</td>
+  </tr>
+  {{- end }}
+  {{- end }}
+  </tbody>
+</table>
+</div>
+<p class="outil-note">Tables MN90&nbsp;: lecture des tables officielles. Bühlmann&nbsp;: calcul de l’outil, plongée unique, descente instantanée, surface à 1&nbsp;bar&nbsp;; colonnes vides sans JavaScript.</p>
