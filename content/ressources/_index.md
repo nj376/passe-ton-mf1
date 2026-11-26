@@ -1,6 +1,6 @@
 ---
 title: "Passe-ton-MF1 · Ressources"
-description: "Fiches pour préparer le MF1, dans l'ordre du parcours : le MFT et le livret, concevoir un enseignement, évaluer, les trames de l'examen, organiser et sécuriser l'activité, le cadre réglementaire et fédéral."
+description: "Fiches pour préparer le MF1, dans l'ordre du parcours : le MFT et le livret, concevoir un enseignement, évaluer, les trames de l'examen, organiser et sécuriser l'activité, comprendre et enseigner la théorie, le cadre réglementaire et fédéral."
 classePrincipal: "principal--interieur principal--capa"
 # Sections du sommaire, dans l’ordre du cheminement d’un stagiaire. Chaque fiche se range par son paramètre « groupe »
 # (égal à « nom ») et, dans une section, par « weight ». Une fiche qui a « sousgroupe » s’affiche dans une sous-partie.
@@ -25,9 +25,6 @@ groupes:
   - nom: "Organiser et sécuriser l’activité"
     ancre: "organiser"
     intro: "Le rôle de directeur de plongée que te donne le MF1, l’encadrement des baptêmes, et les documents à imprimer pour le jour J."
-  - nom: "Le cadre : droit et institutions"
-    ancre: "le-cadre"
-    intro: "Ta responsabilité d’encadrant, le club comme établissement d’APS, et l’organisation de la fédération."
   - nom: "Comprendre et enseigner la théorie"
     ancre: "theorie"
     intro: "Des fiches théoriques complètes, une par branche des mindmaps du capacitaire : comprendre la notion, réussir l’écrit, et surtout savoir l’enseigner à tes élèves."
@@ -102,4 +99,7 @@ groupes:
             url: "/theorie/accidents-desaturation/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+  - nom: "Le cadre : droit et institutions"
+    ancre: "le-cadre"
+    intro: "Ta responsabilité d’encadrant, le club comme établissement d’APS, et l’organisation de la fédération."
 ---
