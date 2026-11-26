@@ -28,11 +28,11 @@ tip:"Question type : tension d’un compartiment de 20 min après 40 min à 3
 "Démarche":["Lire le groupe de plongée successive (GPS) à la sortie.","Avec l’intervalle, trouver l’azote résiduel.","Avec la profondeur de la 2ᵉ plongée, trouver la majoration : temps fictif ajouté à la durée réelle.","Lire les paliers avec durée réelle + majoration."]},
 tip:"Les questions restent simples : savoir dérouler la démarche et expliquer pourquoi on majore."}]},
 {id:"dciem",name:"Autre modèle : DCIEM",law:"Compartiments en série",items:[
-{id:"dciem-principe",name:"Principe du DCIEM",alt:"Modèle canadien Kidd-Stubbs",tags:["4 compartiments en série"],s:{
+{id:"dciem-principe",fiche:"/theorie/modele-dciem/#dciem-principe",name:"Principe du DCIEM",alt:"Modèle canadien Kidd-Stubbs",tags:["4 compartiments en série"],s:{
 "Fonctionnement":["Modèle canadien issu des travaux de Kidd et Stubbs (années 1960-1970).","4 compartiments en série : l’azote passe de l’un à l’autre, seul le premier échange avec le sang.","Les tables ont été largement validées par détection de bulles au Doppler."]}},
-{id:"dciem-successives",name:"Plongées successives",alt:"Gestion native",tags:["Facteur de répétition"],s:{
+{id:"dciem-successives",fiche:"/theorie/modele-dciem/#dciem-successives",name:"Plongées successives",alt:"Gestion native",tags:["Facteur de répétition"],s:{
 "Fonctionnement":["Les successives sont gérées par un facteur de répétition qui multiplie la durée de la 2ᵉ plongée.","Ce facteur dépend du groupe de sortie et de l’intervalle."]}},
-{id:"dciem-differences",name:"Différences avec Haldane",alt:"Ce qu’il faut savoir comparer",tags:["Série ou parallèle"],s:{
+{id:"dciem-differences",fiche:"/theorie/modele-dciem/#dciem-differences",name:"Différences avec Haldane",alt:"Ce qu’il faut savoir comparer",tags:["Série ou parallèle"],s:{
 "Comparaison":["Haldane : compartiments indépendants en parallèle, chacun avec sa période et son seuil.","DCIEM : compartiments en série, la désaturation des tissus profonds est retardée par les autres.","Le DCIEM est réputé plus conservateur sur les plongées répétées."]},
 tip:"La question type demande de schématiser les deux architectures et d’en déduire une conséquence."}]},
 {id:"bulles",name:"Bulles",law:"Formation, croissance, préconisations",items:[

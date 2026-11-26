@@ -173,6 +173,8 @@ Si la deuxième plongée finit plus profond que prévu, on garde la majoration d
 
 **La plongée consécutive**, elle, ne passe pas par la majoration : une plongée de 25 minutes à 40 m, suivie moins de 15 minutes plus tard d’une plongée de 15 minutes à 10 m, se calcule comme une plongée de 40 minutes à 40 m. La table donne alors 13 minutes à 6 m et 40 minutes à 3 m.
 
+Un autre modèle, le DCIEM, gère les successives de lui-même, avec des compartiments en série : voir la fiche [Le modèle DCIEM](/theorie/modele-dciem/#dciem-successives).
+
 Les procédures de rattrapage (remontée rapide, palier interrompu) et les préconisations fédérales sont traitées dans la branche [Bulles](/capacitaire/desaturation/#rattrapage) de la mindmap.
 
 [L’enseigner →](#enseigner-successives)

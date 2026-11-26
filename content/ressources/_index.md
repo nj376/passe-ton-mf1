@@ -87,4 +87,9 @@ groupes:
             url: "/theorie/modele-haldane/"
             epreuves: ["theorique"]
             lien: "Lire la fiche →"
+          - titre: "Le modèle DCIEM"
+            resume: "Des compartiments en série plutôt qu’en parallèle, une désaturation retardée, des successives gérées par le modèle : comprendre les différences avec Haldane, et s’en servir pour enseigner la cohabitation des moyens de désaturation."
+            url: "/theorie/modele-dciem/"
+            epreuves: ["theorique"]
+            lien: "Lire la fiche →"
 ---
