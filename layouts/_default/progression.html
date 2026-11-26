@@ -55,15 +55,18 @@
   {{- else }}
 
   {{/* ---------- Niveaux ---------- */}}
+  {{- /* Niveau affiché par défaut : N1 s’il existe, sinon le premier onglet. */ -}}
+  {{- $defaut := (index $onglets 0).o.id }}
+  {{- range $onglets }}{{ if eq .o.id "N1" }}{{ $defaut = "N1" }}{{ end }}{{ end }}
   <h2 class="prog-sous-titre">Niveau</h2>
   <div class="onglets-niveau" role="tablist" aria-label="Niveau">
     {{- range $i, $n := $onglets }}
-    <button type="button" role="tab" class="onglet-niveau" id="prog-onglet-{{ $n.o.id }}" aria-controls="prog-niveau-{{ $n.o.id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}" data-prog-niveau="{{ $n.o.id }}">{{ $n.o.libelle }}</button>
+    <button type="button" role="tab" class="onglet-niveau" id="prog-onglet-{{ $n.o.id }}" aria-controls="prog-niveau-{{ $n.o.id }}" aria-selected="{{ if eq $n.o.id $defaut }}true{{ else }}false{{ end }}" tabindex="{{ if eq $n.o.id $defaut }}0{{ else }}-1{{ end }}" data-prog-niveau="{{ $n.o.id }}">{{ $n.o.libelle }}</button>
     {{- end }}
   </div>
 
   {{- range $i, $n := $onglets }}
-  <section class="prog-niveau" id="prog-niveau-{{ $n.o.id }}" role="tabpanel" aria-labelledby="prog-onglet-{{ $n.o.id }}" data-prog-panneau="{{ $n.o.id }}"{{ if ne $i 0 }} hidden{{ end }}>
+  <section class="prog-niveau" id="prog-niveau-{{ $n.o.id }}" role="tabpanel" aria-labelledby="prog-onglet-{{ $n.o.id }}" data-prog-panneau="{{ $n.o.id }}"{{ if ne $n.o.id $defaut }} hidden{{ end }}>
 
     {{- $premier := index $n.liste 0 }}
     {{- /* Prérogatives du niveau (RIFAP : conditions de candidature), mot pour mot du MFT : data/prerogatives.yaml.
